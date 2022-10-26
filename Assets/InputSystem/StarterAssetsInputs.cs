@@ -12,8 +12,8 @@ namespace StarterAssets
 		public Vector2 look;
 		public bool jump;
 		public bool sprint;
-		//added crounch state if we want to implement it
-		public bool crounch;
+		//added crouch state if we want to implement it
+		public bool crouch;
 
 		[Header("Movement Settings")]
 		public bool analogMovement;
