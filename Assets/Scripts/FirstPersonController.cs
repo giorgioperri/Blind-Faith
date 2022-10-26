@@ -15,7 +15,7 @@ namespace StarterAssets
 		[Tooltip("Move speed of the character in m/s")]
 		public float MoveSpeed = 4.0f;
 		[Tooltip("Sprint speed of the character in m/s")]
-		public float SprintSpeed = 6.0f;
+		public float SprintSpeed = 8.0f;
 		[Tooltip("Rotation speed of the character")]
 		public float RotationSpeed = 1.0f;
 		[Tooltip("Acceleration and deceleration")]
@@ -51,6 +51,20 @@ namespace StarterAssets
 		[Tooltip("How far in degrees can you move the camera down")]
 		public float BottomClamp = -90.0f;
 
+
+		//HeadBob parameters - added
+		[Header("HeadBob parameters")]
+		[SerializeField] private float walkBobSpeed = 12f;
+		[SerializeField] private float walkBobAmount = 0.03f;
+		[SerializeField] private float sprintBobSpeed = 14f;
+		[SerializeField] private float sprintBobAmount = 0.06f;
+		[SerializeField] private float crounchBobSpeed = 8f;
+		[SerializeField] private float crounchBobAmount = 0.025f;
+
+		//variables for HeadBob
+		private float defaultYpos = 0;
+		private float timer;
+	
 		// cinemachine
 		private float _cinemachineTargetPitch;
 
@@ -64,13 +78,14 @@ namespace StarterAssets
 		private float _jumpTimeoutDelta;
 		private float _fallTimeoutDelta;
 
-	
+
 #if ENABLE_INPUT_SYSTEM && STARTER_ASSETS_PACKAGES_CHECKED
 		private PlayerInput _playerInput;
 #endif
 		private CharacterController _controller;
 		private StarterAssetsInputs _input;
 		private GameObject _mainCamera;
+		private Vector3 moveDirection;
 
 		private const float _threshold = 0.01f;
 
@@ -78,11 +93,11 @@ namespace StarterAssets
 		{
 			get
 			{
-				#if ENABLE_INPUT_SYSTEM && STARTER_ASSETS_PACKAGES_CHECKED
+#if ENABLE_INPUT_SYSTEM && STARTER_ASSETS_PACKAGES_CHECKED
 				return _playerInput.currentControlScheme == "KeyboardMouse";
-				#else
+#else
 				return false;
-				#endif
+#endif
 			}
 		}
 
@@ -93,6 +108,9 @@ namespace StarterAssets
 			{
 				_mainCamera = GameObject.FindGameObjectWithTag("MainCamera");
 			}
+
+			// set default Y pos for HeadBob to camera's Y
+			defaultYpos = CinemachineCameraTarget.transform.localPosition.y;
 		}
 
 		private void Start()
@@ -112,6 +130,9 @@ namespace StarterAssets
 
 		private void Update()
 		{
+			// start HandleBob
+			HandleHeadBob();
+
 			JumpAndGravity();
 			GroundedCheck();
 			Move();
@@ -120,6 +141,21 @@ namespace StarterAssets
 		private void LateUpdate()
 		{
 			CameraRotation();
+		}
+
+		// Logic for handling headBob, if player is on ground then begin HeadBob, check the state (walk/sprint/crounch - if we want to implement it)
+		private void HandleHeadBob()
+		{
+			if (!_controller.isGrounded) return;
+
+			if (Mathf.Abs(moveDirection.x) > 0.1f || Mathf.Abs(moveDirection.z) > 0.1f)
+			{
+				timer += Time.deltaTime * (_input.crounch ? crounchBobSpeed : _input.sprint ? sprintBobSpeed : walkBobSpeed);
+				CinemachineCameraTarget.transform.localPosition = new Vector3(
+					CinemachineCameraTarget.transform.localPosition.x,
+					defaultYpos + Mathf.Sin(timer) * (_input.crounch ? crounchBobAmount : _input.sprint ? sprintBobAmount : walkBobAmount),
+					CinemachineCameraTarget.transform.localPosition.z);
+			}
 		}
 
 		private void GroundedCheck()
@@ -136,7 +172,7 @@ namespace StarterAssets
 			{
 				//Don't multiply mouse input by Time.deltaTime
 				float deltaTimeMultiplier = IsCurrentDeviceMouse ? 1.0f : Time.deltaTime;
-				
+
 				_cinemachineTargetPitch += _input.look.y * RotationSpeed * deltaTimeMultiplier;
 				_rotationVelocity = _input.look.x * RotationSpeed * deltaTimeMultiplier;
 
@@ -196,6 +232,9 @@ namespace StarterAssets
 
 			// move the player
 			_controller.Move(inputDirection.normalized * (_speed * Time.deltaTime) + new Vector3(0.0f, _verticalVelocity, 0.0f) * Time.deltaTime);
+
+			//assign inputDirection to moveDirection - it is used in HeadBob
+			moveDirection = inputDirection;
 		}
 
 		private void JumpAndGravity()
