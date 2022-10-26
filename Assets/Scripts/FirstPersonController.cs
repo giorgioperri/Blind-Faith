@@ -58,8 +58,8 @@ namespace StarterAssets
 		[SerializeField] private float walkBobAmount = 0.03f;
 		[SerializeField] private float sprintBobSpeed = 14f;
 		[SerializeField] private float sprintBobAmount = 0.06f;
-		[SerializeField] private float crounchBobSpeed = 8f;
-		[SerializeField] private float crounchBobAmount = 0.025f;
+		[SerializeField] private float crouchBobSpeed = 8f;
+		[SerializeField] private float crouchBobAmount = 0.025f;
 
 		//variables for HeadBob
 		private float defaultYpos = 0;
@@ -143,17 +143,17 @@ namespace StarterAssets
 			CameraRotation();
 		}
 
-		// Logic for handling headBob, if player is on ground then begin HeadBob, check the state (walk/sprint/crounch - if we want to implement it)
+		// Logic for handling headBob, if player is on ground then begin HeadBob, check the state (walk/sprint/crouch - if we want to implement it)
 		private void HandleHeadBob()
 		{
 			if (!_controller.isGrounded) return;
 
 			if (Mathf.Abs(moveDirection.x) > 0.1f || Mathf.Abs(moveDirection.z) > 0.1f)
 			{
-				timer += Time.deltaTime * (_input.crounch ? crounchBobSpeed : _input.sprint ? sprintBobSpeed : walkBobSpeed);
+				timer += Time.deltaTime * (_input.crouch ? crouchBobSpeed : _input.sprint ? sprintBobSpeed : walkBobSpeed);
 				CinemachineCameraTarget.transform.localPosition = new Vector3(
 					CinemachineCameraTarget.transform.localPosition.x,
-					defaultYpos + Mathf.Sin(timer) * (_input.crounch ? crounchBobAmount : _input.sprint ? sprintBobAmount : walkBobAmount),
+					defaultYpos + Mathf.Sin(timer) * (_input.crouch ? crouchBobAmount : _input.sprint ? sprintBobAmount : walkBobAmount),
 					CinemachineCameraTarget.transform.localPosition.z);
 			}
 		}
