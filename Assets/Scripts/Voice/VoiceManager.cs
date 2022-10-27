@@ -24,9 +24,12 @@ public class VoiceManager : MonoBehaviour
         _audioSource = gameObject.AddComponent<AudioSource>();
     }
 
-    public void Say(AudioClip voiceLineObject)
+    public void Say(VoiceLineSO voiceLineObject)
     {
         if (_audioSource.isPlaying) _audioSource.Stop();
-        _audioSource.PlayOneShot(voiceLineObject);
+        
+        _audioSource.PlayOneShot(voiceLineObject.voiceClip);
+        
+        SubtitlesUI.Instance.SetSubtitle(voiceLineObject.subtitle);
     }
 }

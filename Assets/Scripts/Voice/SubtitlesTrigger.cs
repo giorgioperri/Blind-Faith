@@ -5,7 +5,7 @@ using UnityEngine;
 
 public class SubtitlesTrigger : MonoBehaviour
 {
-    public AudioClip voiceLineObject;
+    public VoiceLineSO voiceLineObject;
 
     private void OnTriggerEnter(Collider other)
     {
