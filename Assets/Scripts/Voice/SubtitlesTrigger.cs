@@ -5,10 +5,10 @@ using UnityEngine;
 
 public class SubtitlesTrigger : MonoBehaviour
 {
-    public VoiceLineSO voiceLineObject;
+    public List<VoiceLineSO> voiceLineSequence;
 
     private void OnTriggerEnter(Collider other)
     {
-        if(other.CompareTag("Player")) VoiceManager.Instance.Say(voiceLineObject);
+        if(other.CompareTag("Player")) StartCoroutine(VoiceManager.Instance.SaySequence(voiceLineSequence));
     }
 }

@@ -24,12 +24,17 @@ public class VoiceManager : MonoBehaviour
         _audioSource = gameObject.AddComponent<AudioSource>();
     }
 
-    public void Say(VoiceLineSO voiceLineObject)
+    public IEnumerator SaySequence(List<VoiceLineSO> voiceLineSequence)
     {
         if (_audioSource.isPlaying) _audioSource.Stop();
+        foreach (var lineObject in voiceLineSequence)
+        {
+            SubtitlesUI.Instance.ActivateSubtitles();
+            SubtitlesUI.Instance.SetSubtitle(lineObject.subtitle);
+            _audioSource.PlayOneShot(lineObject.voiceClip);
+            yield return new WaitForSecondsRealtime(lineObject.clipDuration + lineObject.nextClipOffset);
+        }
         
-        _audioSource.PlayOneShot(voiceLineObject.voiceClip);
-        
-        SubtitlesUI.Instance.SetSubtitle(voiceLineObject.subtitle);
+        SubtitlesUI.Instance.DeactivateSubtitles();
     }
 }

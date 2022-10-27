@@ -139,6 +139,23 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 11400000, guid: d7f00b55a8f7c4024b1afa9bc8d7e58b,
         type: 2}
+    - target: {fileID: 321892689828383714, guid: b0d5393eb2d2449a98b38ed752d950ea,
+        type: 3}
+      propertyPath: voiceLineSequence.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 321892689828383714, guid: b0d5393eb2d2449a98b38ed752d950ea,
+        type: 3}
+      propertyPath: voiceLineSequence.Array.data[0]
+      value: 
+      objectReference: {fileID: 11400000, guid: d7f00b55a8f7c4024b1afa9bc8d7e58b,
+        type: 2}
+    - target: {fileID: 321892689828383714, guid: b0d5393eb2d2449a98b38ed752d950ea,
+        type: 3}
+      propertyPath: voiceLineSequence.Array.data[1]
+      value: 
+      objectReference: {fileID: 11400000, guid: 09d0f331fffd84f58b11921642356986,
+        type: 2}
     - target: {fileID: 321892689828383715, guid: b0d5393eb2d2449a98b38ed752d950ea,
         type: 3}
       propertyPath: m_RootOrder
@@ -1132,6 +1149,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1375716076365831535, guid: 5408a87d45e5c4e12b038f2410063baf,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1375716076857292362, guid: 5408a87d45e5c4e12b038f2410063baf,
         type: 3}
       propertyPath: m_Pivot.x

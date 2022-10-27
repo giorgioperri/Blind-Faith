@@ -22,4 +22,14 @@ public class SubtitlesUI : MonoBehaviour
     {
         _subtitleText.text = subtitle;
     }
+
+    public void ActivateSubtitles()
+    {
+        _subtitleText.gameObject.SetActive(true);
+    }
+    
+    public void DeactivateSubtitles()
+    {
+        _subtitleText.gameObject.SetActive(false);
+    }
 }
