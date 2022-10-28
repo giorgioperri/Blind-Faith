@@ -3,15 +3,15 @@ using UnityEngine.InputSystem;
  
 public class PlayerInputErrorWorkaround : MonoBehaviour
 {
-    private PlayerInput Input;
+    private PlayerInput _input;
    
     private void Start()
     {
-        Input = GetComponent<PlayerInput>();
+        _input = GetComponent<PlayerInput>();
     }
  
     private void OnDisable()
     {
-        Input.actions = null;
+        _input.actions = null;
     }
 }
