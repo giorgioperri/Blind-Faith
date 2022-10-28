@@ -9,6 +9,8 @@ public class VoiceManager : MonoBehaviour
     private AudioSource _audioSource;
     public static VoiceManager Instance;
 
+    private bool _isPlaying;
+
     private void Awake()
     {
         if (Instance != null)
@@ -24,12 +26,14 @@ public class VoiceManager : MonoBehaviour
         _audioSource = gameObject.AddComponent<AudioSource>();
     }
 
-    public IEnumerator SaySequence(List<VoiceLineSO> voiceLineSequence)
+    public IEnumerator SaySequence(VoiceLineSequenceSO voiceLineSequence)
     {
-        if (_audioSource.isPlaying) _audioSource.Stop();
-        foreach (var lineObject in voiceLineSequence)
+        _audioSource.Stop();
+        
+        foreach (var lineObject in voiceLineSequence.sequenceLines)
         {
-            SubtitlesUI.Instance.ActivateSubtitles();
+            if (_audioSource.isPlaying) break;
+            if(GameManager.Instance.areSubtitlesActivated) SubtitlesUI.Instance.ActivateSubtitles();
             SubtitlesUI.Instance.SetSubtitle(lineObject.subtitle);
             _audioSource.PlayOneShot(lineObject.voiceClip);
             yield return new WaitForSecondsRealtime(lineObject.clipDuration + lineObject.nextClipOffset);

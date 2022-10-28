@@ -119,6 +119,7 @@ namespace StarterAssets
 
 		private void LateUpdate()
 		{
+			if (GameManager.Instance.isPaused) return;
 			CameraRotation();
 		}
 
@@ -153,6 +154,7 @@ namespace StarterAssets
 
 		private void Move()
 		{
+			if (GameManager.Instance.isPaused) return;
 			// set target speed based on move speed, sprint speed and if sprint is pressed
 			float targetSpeed = _input.sprint ? SprintSpeed : MoveSpeed;
 
