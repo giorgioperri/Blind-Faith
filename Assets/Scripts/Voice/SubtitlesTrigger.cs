@@ -11,7 +11,7 @@ public class SubtitlesTrigger : MonoBehaviour
     {
         if (other.CompareTag("Player"))
         {
-            StartCoroutine(VoiceManager.Instance.SaySequence(voiceLineSequence));
+            VoiceManager.Instance.InitVoiceLineSequence(voiceLineSequence);
         }
     }   
 }

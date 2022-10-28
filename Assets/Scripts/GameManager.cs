@@ -31,17 +31,15 @@ public class GameManager : MonoBehaviour
         {
             isPaused = !isPaused;
             PauseManager.Instance.ToggleMenu(isPaused);
+            if (isPaused)
+            {
+                VoiceManager.Instance.audioSource.Pause();
+            }
+            else
+            {
+                VoiceManager.Instance.audioSource.UnPause();
+            }
             playerInput.pause = false;
         }
-    }
-
-    void ActivateSubtitles()
-    {
-        areSubtitlesActivated = true;
-    }
-    
-    void DeactivateSubtitles()
-    {
-        areSubtitlesActivated = false;
     }
 }
