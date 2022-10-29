@@ -13,6 +13,8 @@ namespace StarterAssets
 		public bool jump;
 		public bool pause;
 		public bool sprint;
+		//added crouch state if we want to implement it
+		public bool crouch;
 
 		[Header("Movement Settings")]
 		public bool analogMovement;

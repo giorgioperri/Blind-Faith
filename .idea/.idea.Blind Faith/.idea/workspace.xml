@@ -2,10 +2,19 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5374623f-f723-49c8-bd7b-db22ab670095" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Blind Faith/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Blind Faith/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/GameManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/GameManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Voice/SubtitlesTrigger.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Voice/SubtitlesTrigger.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Voice/VoiceManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Voice/VoiceManager.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.vsconfig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Environment/Art/Materials/Particle_Godray_Mat.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Environment/Art/Materials/Particle_Godray_Mat.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scenes/Scenes_Rafal.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scenes/Scenes_Rafal/Playground_Rafal.unity" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scenes/Scenes_Rafal/Playground_Rafal.unity.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/PullRequestTutorial.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RepositoryPolicy.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Environment/Art/Materials/ShaderGraphGrid_01_Mat.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Environment/Art/Materials/ShaderGraphGrid_01_Mat.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/InputSystem/StarterAssetsInputs.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/InputSystem/StarterAssetsInputs.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Playground.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Playground.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/FirstPersonController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/FirstPersonController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/UserSettings/Layouts/default-2021.dwlt" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/Layouts/default-2021.dwlt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -89,6 +98,7 @@
       <workItem from="1666701691496" duration="208000" />
       <workItem from="1666877216907" duration="4121000" />
       <workItem from="1666958573246" duration="18271000" />
+      <workItem from="1667046251413" duration="16000" />
     </task>
     <servers />
   </component>
