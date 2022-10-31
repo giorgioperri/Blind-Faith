@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using System;
+using UnityEngine;
 #if ENABLE_INPUT_SYSTEM && STARTER_ASSETS_PACKAGES_CHECKED
 using UnityEngine.InputSystem;
 #endif
@@ -61,10 +62,17 @@ namespace StarterAssets
 		[SerializeField] private float crouchBobSpeed = 8f;
 		[SerializeField] private float crouchBobAmount = 0.025f;
 
+		[Header("Interaction parameters")]
+		[SerializeField] private Vector3 _interactionRayPoint = default;
+		[SerializeField] private float _interactionDistance = default;
+		[SerializeField] private LayerMask _interactionLayer = default;
+		private Interactable _currentInteractable;
+
 		//variables for HeadBob
 		private float _defaultYpos = 0;
 		private float _timer;
 	
+
 		// cinemachine
 		private float _cinemachineTargetPitch;
 
@@ -133,12 +141,45 @@ namespace StarterAssets
 			// start HandleBob
 			HandleHeadBob();
 
+			//handle interaction
+			HandleInteractionCheck();
+			HandleInteractionInput();
+
 			JumpAndGravity();
 			GroundedCheck();
 			Move();
 		}
 
-		private void LateUpdate()
+        private void HandleInteractionCheck()
+        {
+            if(Physics.Raycast(_mainCamera.GetComponent<Camera>().ViewportPointToRay(_interactionRayPoint), out RaycastHit hit, _interactionDistance))
+            {
+				if(hit.collider.gameObject.layer == 10 && (_currentInteractable == null || hit.collider.gameObject.GetInstanceID() != _currentInteractable.GetInstanceID()))
+                {
+					hit.collider.TryGetComponent(out _currentInteractable);
+
+                    if (_currentInteractable)
+                    {
+						_currentInteractable.OnFocus();
+                    }
+                }
+            }
+			else if (_currentInteractable)
+			{
+				_currentInteractable.OnLoseFocus();
+				_currentInteractable = null;
+			}
+		}
+
+        private void HandleInteractionInput()
+        {
+            if(_input.interact && _currentInteractable != null && Physics.Raycast(_mainCamera.GetComponent<Camera>().ViewportPointToRay(_interactionRayPoint), out RaycastHit hit, _interactionDistance, _interactionLayer))
+            {
+				_currentInteractable.OnInteraction();
+            }
+        }
+
+        private void LateUpdate()
 		{
 			if (GameManager.Instance.isPaused) return;
 			CameraRotation();

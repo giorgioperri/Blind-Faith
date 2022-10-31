@@ -17,6 +17,7 @@ namespace StarterAssets
 		public bool crouch;
 		//added raiseLantern state
 		public bool hasRaisedLantern;
+		public bool interact;
 
 		[Header("Movement Settings")]
 		public bool analogMovement;
@@ -53,10 +54,13 @@ namespace StarterAssets
 		{
 			SprintInput(value.isPressed);
 		}
-
 		public void OnRaiseLantern(InputValue value)
 		{
 			RaiseLanternInput(value.isPressed);
+    }
+		public void OnInteract(InputValue value)
+		{
+			InteractInput(value.isPressed);
 		}
 #endif
 
@@ -65,6 +69,11 @@ namespace StarterAssets
 		{
 			move = newMoveDirection;
 		} 
+
+		public void InteractInput(bool isInteracting)
+		{
+			interact = isInteracting;
+		}
 
 		public void LookInput(Vector2 newLookDirection)
 		{
@@ -100,6 +109,8 @@ namespace StarterAssets
 		{
 			Cursor.lockState = newState ? CursorLockMode.Locked : CursorLockMode.None;
 		}
+
+
 	}
 	
 }
