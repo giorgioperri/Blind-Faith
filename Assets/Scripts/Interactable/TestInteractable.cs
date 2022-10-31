@@ -20,7 +20,7 @@ public class TestInteractable : Interactable
 
     public override void OnInteraction()
     { 
-        transform.Rotate(0f, 90 * Time.deltaTime, 0f, Space.Self);
+        transform.Rotate(0f, 45 * Time.deltaTime, 0f, Space.Self);
     }
 
     public override void OnLoseFocus()
