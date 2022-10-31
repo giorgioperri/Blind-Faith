@@ -222,11 +222,11 @@ MonoBehaviour:
   sprintBobAmount: 0.06
   crouchBobSpeed: 8
   crouchBobAmount: 0.025
-  _interactionRayPoint: {x: 0, y: 0, z: 0}
-  _interactionDistance: 0
+  _interactionRayPoint: {x: 0.5, y: 0.5, z: 0}
+  _interactionDistance: 2
   _interactionLayer:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 1024
 --- !u!114 &1978471637655604388
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -241,7 +241,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   pushLayers:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 1
   canPush: 0
   strength: 1.1
 --- !u!114 &5420857361349278248
