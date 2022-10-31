@@ -51,6 +51,15 @@
                     "initialStateCheck": false
                 },
                 {
+                    "name": "RaiseLantern",
+                    "type": "Button",
+                    "id": "6fdc7def-586f-4ec4-9d82-b5df0164268e",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
                     "name": "Interact",
                     "type": "PassThrough",
                     "id": "6b266f95-26bc-4818-a070-1a833a114661",
@@ -256,6 +265,17 @@
                     "processors": "",
                     "groups": "Gamepad",
                     "action": "Pause",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                 {
+                    "name": "",
+                    "id": "68d51b63-02dd-48a5-b2d9-e6bc788490dd",
+                    "path": "<Keyboard>/f",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "KeyboardMouse",
+                    "action": "RaiseLantern",
                     "isComposite": false,
                     "isPartOfComposite": false
                 },
