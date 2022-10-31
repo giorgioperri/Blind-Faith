@@ -15,6 +15,7 @@ namespace StarterAssets
 		public bool sprint;
 		//added crouch state if we want to implement it
 		public bool crouch;
+		public bool interact;
 
 		[Header("Movement Settings")]
 		public bool analogMovement;
@@ -51,6 +52,10 @@ namespace StarterAssets
 		{
 			SprintInput(value.isPressed);
 		}
+		public void OnInteract(InputValue value)
+		{
+			InteractInput(value.isPressed);
+		}
 #endif
 
 
@@ -58,6 +63,11 @@ namespace StarterAssets
 		{
 			move = newMoveDirection;
 		} 
+
+		public void InteractInput(bool isInteracting)
+		{
+			interact = isInteracting;
+		}
 
 		public void LookInput(Vector2 newLookDirection)
 		{
@@ -88,6 +98,8 @@ namespace StarterAssets
 		{
 			Cursor.lockState = newState ? CursorLockMode.Locked : CursorLockMode.None;
 		}
+
+
 	}
 	
 }
