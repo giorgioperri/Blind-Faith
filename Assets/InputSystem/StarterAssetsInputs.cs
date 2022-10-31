@@ -14,6 +14,8 @@ namespace StarterAssets
 		public bool sprint;
 		//added crouch state if we want to implement it
 		public bool crouch;
+		//added raiseLantern state
+		public bool raiseLantern;
 
 		[Header("Movement Settings")]
 		public bool analogMovement;
