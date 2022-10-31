@@ -14,6 +14,8 @@ namespace StarterAssets
 		public bool sprint;
 		//added crouch state if we want to implement it
 		public bool crouch;
+		//added raiseLantern state
+		public bool hasRaisedLantern;
 
 		[Header("Movement Settings")]
 		public bool analogMovement;
@@ -45,6 +47,11 @@ namespace StarterAssets
 		{
 			SprintInput(value.isPressed);
 		}
+
+		public void OnRaiseLantern(InputValue value)
+		{
+			RaiseLanternInput(value.isPressed);
+		}
 #endif
 
 
@@ -66,6 +73,11 @@ namespace StarterAssets
 		public void SprintInput(bool newSprintState)
 		{
 			sprint = newSprintState;
+		}
+
+		public void RaiseLanternInput(bool newRaiseLanternState)
+		{
+			hasRaisedLantern = newRaiseLanternState;
 		}
 		
 		private void OnApplicationFocus(bool hasFocus)
