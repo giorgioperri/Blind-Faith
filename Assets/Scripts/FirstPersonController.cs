@@ -62,8 +62,8 @@ namespace StarterAssets
 		[SerializeField] private float crouchBobAmount = 0.025f;
 
 		//variables for HeadBob
-		private float defaultYpos = 0;
-		private float timer;
+		private float _defaultYpos = 0;
+		private float _timer;
 	
 		// cinemachine
 		private float _cinemachineTargetPitch;
@@ -85,11 +85,11 @@ namespace StarterAssets
 		private CharacterController _controller;
 		private StarterAssetsInputs _input;
 		private GameObject _mainCamera;
-		private Vector3 moveDirection;
+		private Vector3 _moveDirection;
 
 		private const float _threshold = 0.01f;
 
-		private bool IsCurrentDeviceMouse
+		private bool _isCurrentDeviceMouse
 		{
 			get
 			{
@@ -110,7 +110,7 @@ namespace StarterAssets
 			}
 
 			// set default Y pos for HeadBob to camera's Y
-			defaultYpos = CinemachineCameraTarget.transform.localPosition.y;
+			_defaultYpos = CinemachineCameraTarget.transform.localPosition.y;
 		}
 
 		private void Start()
@@ -140,6 +140,7 @@ namespace StarterAssets
 
 		private void LateUpdate()
 		{
+			if (GameManager.Instance.isPaused) return;
 			CameraRotation();
 		}
 
@@ -148,12 +149,12 @@ namespace StarterAssets
 		{
 			if (!_controller.isGrounded) return;
 
-			if (Mathf.Abs(moveDirection.x) > 0.1f || Mathf.Abs(moveDirection.z) > 0.1f)
+			if (Mathf.Abs(_moveDirection.x) > 0.1f || Mathf.Abs(_moveDirection.z) > 0.1f)
 			{
-				timer += Time.deltaTime * (_input.crouch ? crouchBobSpeed : _input.sprint ? sprintBobSpeed : walkBobSpeed);
+				_timer += Time.deltaTime * (_input.crouch ? crouchBobSpeed : _input.sprint ? sprintBobSpeed : walkBobSpeed);
 				CinemachineCameraTarget.transform.localPosition = new Vector3(
 					CinemachineCameraTarget.transform.localPosition.x,
-					defaultYpos + Mathf.Sin(timer) * (_input.crouch ? crouchBobAmount : _input.sprint ? sprintBobAmount : walkBobAmount),
+					_defaultYpos + Mathf.Sin(_timer) * (_input.crouch ? crouchBobAmount : _input.sprint ? sprintBobAmount : walkBobAmount),
 					CinemachineCameraTarget.transform.localPosition.z);
 			}
 		}
@@ -171,7 +172,7 @@ namespace StarterAssets
 			if (_input.look.sqrMagnitude >= _threshold)
 			{
 				//Don't multiply mouse input by Time.deltaTime
-				float deltaTimeMultiplier = IsCurrentDeviceMouse ? 1.0f : Time.deltaTime;
+				float deltaTimeMultiplier = _isCurrentDeviceMouse ? 1.0f : Time.deltaTime;
 
 				_cinemachineTargetPitch += _input.look.y * RotationSpeed * deltaTimeMultiplier;
 				_rotationVelocity = _input.look.x * RotationSpeed * deltaTimeMultiplier;
@@ -189,6 +190,7 @@ namespace StarterAssets
 
 		private void Move()
 		{
+			if (GameManager.Instance.isPaused) return;
 			// set target speed based on move speed, sprint speed and if sprint is pressed
 			float targetSpeed = _input.sprint ? SprintSpeed : MoveSpeed;
 
@@ -234,7 +236,7 @@ namespace StarterAssets
 			_controller.Move(inputDirection.normalized * (_speed * Time.deltaTime) + new Vector3(0.0f, _verticalVelocity, 0.0f) * Time.deltaTime);
 
 			//assign inputDirection to moveDirection - it is used in HeadBob
-			moveDirection = inputDirection;
+			_moveDirection = inputDirection;
 		}
 
 		private void JumpAndGravity()

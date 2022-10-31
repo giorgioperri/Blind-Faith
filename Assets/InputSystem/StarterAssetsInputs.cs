@@ -11,6 +11,7 @@ namespace StarterAssets
 		public Vector2 move;
 		public Vector2 look;
 		public bool jump;
+		public bool pause;
 		public bool sprint;
 		//added crouch state if we want to implement it
 		public bool crouch;
@@ -42,6 +43,11 @@ namespace StarterAssets
 		{
 			JumpInput(value.isPressed);
 		}
+		
+		public void OnPause(InputValue value)
+		{
+			PauseInput(value.isPressed);
+		}
 
 		public void OnSprint(InputValue value)
 		{
@@ -68,6 +74,11 @@ namespace StarterAssets
 		public void JumpInput(bool newJumpState)
 		{
 			jump = newJumpState;
+		}
+		
+		public void PauseInput(bool newPauseState)
+		{
+			pause = newPauseState;
 		}
 
 		public void SprintInput(bool newSprintState)
