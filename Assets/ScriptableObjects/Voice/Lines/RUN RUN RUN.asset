@@ -10,9 +10,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 49a553acd80d24523b827f35acfeebb3, type: 3}
-  m_Name: WorshipMe
+  m_Name: RUN RUN RUN
   m_EditorClassIdentifier: 
-  voiceClip: {fileID: 8300000, guid: bc204eb15d0d54fb5bdc60598cd9c977, type: 3}
-  subtitle: wORsHip mEe
-  clipDuration: 1.6552708
+  voiceClip: {fileID: 8300000, guid: 52ab2211dac914393a5f60bb9d6fc0e5, type: 3}
+  subtitle: RUN RUN RUN
+  clipDuration: 0
   nextClipOffset: 0.5
