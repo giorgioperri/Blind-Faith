@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{405E6D03-D34E-40A5-8665-1A1025CDCBEB}" SchemaVersion="103">
+	<AudioObjects>
+		<WorkUnit Name="VA_Test_Unit" ID="{405E6D03-D34E-40A5-8665-1A1025CDCBEB}" PersistMode="Standalone">
+			<ChildrenList>
+				<ActorMixer Name="VA_Test" ID="{439926DB-1F01-4985-A9D8-349793EF5AC5}" ShortID="939040651">
+					<PropertyList>
+						<Property Name="3DSpatialization" Type="int16" Value="2"/>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="AttachableMixerInput">
+							<Custom>
+								<Effect Name="Resonance Audio Room Effects (Attached)" ID="{B764E25E-3B0E-4A47-A9C8-053B9EF8C2CF}" ShortID="340292654" PluginName="AttachableMixerInput" CompanyID="272" PluginID="201" PluginType="3"/>
+							</Custom>
+						</Reference>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{23AF77D7-3FEA-409B-8E44-F5B490014C61}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Room Effects Bus" ID="{BFBAEEFB-1F5A-4914-8B8E-7EA624100421}" WorkUnitID="{C91EB4C6-56DC-4541-96C4-29E948904D66}"/>
+						</Reference>
+						<Reference Name="UserAuxSend0">
+							<ObjectRef Name="Ambisonic_Aux_Mix" ID="{A272F385-8C7F-465B-AAA7-986B8FA7EEC7}" WorkUnitID="{C91EB4C6-56DC-4541-96C4-29E948904D66}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<RandomSequenceContainer Name="Intro" ID="{5F03D5ED-C7D6-4966-AF8D-F4D6A31A56C8}" ShortID="38524196">
+							<PropertyList>
+								<Property Name="3DSpatialization" Type="int16" Value="2"/>
+								<Property Name="OverrideEffect" Type="bool" Value="True"/>
+								<Property Name="OverrideOutput" Type="bool" Value="True"/>
+								<Property Name="PlayMechanismSpecialTransitions" Type="bool" Value="True"/>
+								<Property Name="PlayMechanismSpecialTransitionsType" Type="int16" Value="1"/>
+								<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
+								<Property Name="RandomOrSequence" Type="int16" Value="0"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{23AF77D7-3FEA-409B-8E44-F5B490014C61}"/>
+								</Reference>
+								<Reference Name="Effect0" PluginName="Wwise Peak Limiter" CompanyID="0" PluginID="110" PluginType="3">
+									<ObjectRef Name="Brick_Wall_Minus_1dB_Peak_Fast_Release" ID="{2144284E-7ADD-4341-86A4-4E468BEC9A2D}" WorkUnitID="{E8613F7D-BAD3-45CD-A3ED-505576F31277}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="AmbisonicsBus" ID="{398EAA2B-98EC-4204-8877-35963EA3A7D9}" WorkUnitID="{C91EB4C6-56DC-4541-96C4-29E948904D66}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<Sound Name="BF_VATest_s1" ID="{D55E2C9A-AA42-494D-83CA-E7377B37F402}" ShortID="775004626">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{23AF77D7-3FEA-409B-8E44-F5B490014C61}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C91EB4C6-56DC-4541-96C4-29E948904D66}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="BF_VATest_s1" ID="{4EE920AE-5E34-4903-9FF7-485A78BAD030}">
+											<Language>SFX</Language>
+											<AudioFile>BF_VATest_s1.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="574510173"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ObjectLists/>
+									<ActiveSourceList>
+										<ActiveSource Name="BF_VATest_s1" ID="{4EE920AE-5E34-4903-9FF7-485A78BAD030}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="BF_VATest_s1_1" ID="{B3A3D486-612B-41CA-8870-465FFD088651}" ShortID="885512475">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{23AF77D7-3FEA-409B-8E44-F5B490014C61}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C91EB4C6-56DC-4541-96C4-29E948904D66}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="BF_VATest_s1_1" ID="{0C69C751-A648-4C21-932D-817C6AA8C3C4}">
+											<Language>SFX</Language>
+											<AudioFile>BF_VATest_s1_1.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="640644510"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ObjectLists/>
+									<ActiveSourceList>
+										<ActiveSource Name="BF_VATest_s1_1" ID="{0C69C751-A648-4C21-932D-817C6AA8C3C4}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="BF_VATest_s1_2" ID="{76C9D00F-98FE-42E0-B785-F3AFE7234CC0}" ShortID="639578722">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{23AF77D7-3FEA-409B-8E44-F5B490014C61}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C91EB4C6-56DC-4541-96C4-29E948904D66}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="BF_VATest_s1_2" ID="{0D1756D4-02C5-416B-A00B-53FCBB09F82C}">
+											<Language>SFX</Language>
+											<AudioFile>BF_VATest_s1_2.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="996898778"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ObjectLists/>
+									<ActiveSourceList>
+										<ActiveSource Name="BF_VATest_s1_2" ID="{0D1756D4-02C5-416B-A00B-53FCBB09F82C}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="BF_VATest_s1_3" ID="{83195E39-177F-4C3A-B175-DF20C07E8BDE}" ShortID="755068610">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{23AF77D7-3FEA-409B-8E44-F5B490014C61}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C91EB4C6-56DC-4541-96C4-29E948904D66}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="BF_VATest_s1_3" ID="{104AE736-6777-4AF1-8717-A22C4019322E}">
+											<Language>SFX</Language>
+											<AudioFile>BF_VATest_s1_3.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="718473705"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ObjectLists/>
+									<ActiveSourceList>
+										<ActiveSource Name="BF_VATest_s1_3" ID="{104AE736-6777-4AF1-8717-A22C4019322E}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="BF_VATest_s1_4" ID="{A9D96DF4-7962-43C4-8A9C-B0E278D093D2}" ShortID="778190376">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{23AF77D7-3FEA-409B-8E44-F5B490014C61}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C91EB4C6-56DC-4541-96C4-29E948904D66}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="BF_VATest_s1_4" ID="{8B92EFBF-15D8-424B-8A95-ADE7923BEA3B}">
+											<Language>SFX</Language>
+											<AudioFile>BF_VATest_s1_4.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="161210346"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ObjectLists/>
+									<ActiveSourceList>
+										<ActiveSource Name="BF_VATest_s1_4" ID="{8B92EFBF-15D8-424B-8A95-ADE7923BEA3B}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+							</ChildrenList>
+							<ObjectLists/>
+							<Playlist>
+								<ItemRef Name="BF_VATest_s1" ID="{D55E2C9A-AA42-494D-83CA-E7377B37F402}"/>
+								<ItemRef Name="BF_VATest_s1_1" ID="{B3A3D486-612B-41CA-8870-465FFD088651}"/>
+								<ItemRef Name="BF_VATest_s1_2" ID="{76C9D00F-98FE-42E0-B785-F3AFE7234CC0}"/>
+								<ItemRef Name="BF_VATest_s1_3" ID="{83195E39-177F-4C3A-B175-DF20C07E8BDE}"/>
+								<ItemRef Name="BF_VATest_s1_4" ID="{A9D96DF4-7962-43C4-8A9C-B0E278D093D2}"/>
+							</Playlist>
+						</RandomSequenceContainer>
+					</ChildrenList>
+					<ObjectLists/>
+				</ActorMixer>
+			</ChildrenList>
+		</WorkUnit>
+	</AudioObjects>
+</WwiseDocument>

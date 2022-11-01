@@ -1,0 +1,13 @@
+Event	ID	Name			Wwise Object Path	Notes
+	3051364989	VA_Test			\Default Work Unit\VA_Test	
+
+Effect plug-ins	ID	Name	Type				Notes
+	1459522457	Brick_Wall_Minus_1dB_Peak_Fast_Release	Wwise Peak Limiter			
+
+In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
+	161210346	BF_VATest_s1_4	C:\Users\kille\Blind-Faith\Blind-Faith_WwiseProject\.cache\Mac\SFX\BF_VATest_s1_4_10C4C929.wem		\Actor-Mixer Hierarchy\VA_Test_Unit\VA_Test\Intro\BF_VATest_s1_4		584706
+	574510173	BF_VATest_s1	C:\Users\kille\Blind-Faith\Blind-Faith_WwiseProject\.cache\Mac\SFX\BF_VATest_s1_10C4C929.wem		\Actor-Mixer Hierarchy\VA_Test_Unit\VA_Test\Intro\BF_VATest_s1		246912
+	640644510	BF_VATest_s1_1	C:\Users\kille\Blind-Faith\Blind-Faith_WwiseProject\.cache\Mac\SFX\BF_VATest_s1_1_10C4C929.wem		\Actor-Mixer Hierarchy\VA_Test_Unit\VA_Test\Intro\BF_VATest_s1_1		547176
+	718473705	BF_VATest_s1_3	C:\Users\kille\Blind-Faith\Blind-Faith_WwiseProject\.cache\Mac\SFX\BF_VATest_s1_3_10C4C929.wem		\Actor-Mixer Hierarchy\VA_Test_Unit\VA_Test\Intro\BF_VATest_s1_3		557184
+	996898778	BF_VATest_s1_2	C:\Users\kille\Blind-Faith\Blind-Faith_WwiseProject\.cache\Mac\SFX\BF_VATest_s1_2_10C4C929.wem		\Actor-Mixer Hierarchy\VA_Test_Unit\VA_Test\Intro\BF_VATest_s1_2		330598
+

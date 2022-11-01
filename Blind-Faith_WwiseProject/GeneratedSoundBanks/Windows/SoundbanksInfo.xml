@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<SoundBanksInfo Platform="Windows" BasePlatform="Windows" SchemaVersion="12" SoundbankVersion="140">
+	<RootPaths>
+		<ProjectRoot>C:\Users\kille\Blind-Faith\Blind-Faith_WwiseProject\</ProjectRoot>
+		<SourceFilesRoot>C:\Users\kille\Blind-Faith\Blind-Faith_WwiseProject\.cache\Windows\</SourceFilesRoot>
+		<SoundBanksRoot>C:\Users\kille\Blind-Faith\Blind-Faith_WwiseProject\GeneratedSoundBanks\Windows\</SoundBanksRoot>
+		<ExternalSourcesInputFile></ExternalSourcesInputFile>
+		<ExternalSourcesOutputRoot>C:\Users\kille\Blind-Faith\Blind-Faith_WwiseProject\GeneratedSoundBanks\Windows</ExternalSourcesOutputRoot>
+	</RootPaths>
+	<DialogueEvents/>
+	<StreamedFiles/>
+	<MediaFilesNotInAnyBank/>
+	<SoundBanks>
+		<SoundBank Id="1355168291" Language="SFX" Hash="452181698">
+			<ObjectPath>Init</ObjectPath>
+			<ShortName>Init</ShortName>
+			<Path>Init.bnk</Path>
+			<IncludedAuxBusses>
+				<AuxBus Id="1767195844" Name="Ambisonic_Aux_Mix" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\AmbisonicsBus\Ambisonic_Aux_Mix"/>
+			</IncludedAuxBusses>
+		</SoundBank>
+		<SoundBank Id="1534528554" Language="SFX" Hash="3275101599">
+			<ObjectPath>\SoundBanks\Default Work Unit\VA</ObjectPath>
+			<ShortName>VA</ShortName>
+			<Path>VA.bnk</Path>
+			<IncludedEvents>
+				<Event Id="3051364989" Name="VA_Test" ObjectPath="\Events\Default Work Unit\VA_Test" DurationType="OneShot" DurationMin="2.797823" DurationMax="6.627687"/>
+			</IncludedEvents>
+			<IncludedMemoryFiles>
+				<File Id="161210346" Language="SFX">
+					<ShortName>BF_VATest_s1_4.wav</ShortName>
+					<Path>SFX\BF_VATest_s1_4_10C4C929.wem</Path>
+				</File>
+				<File Id="574510173" Language="SFX">
+					<ShortName>BF_VATest_s1.wav</ShortName>
+					<Path>SFX\BF_VATest_s1_10C4C929.wem</Path>
+				</File>
+				<File Id="640644510" Language="SFX">
+					<ShortName>BF_VATest_s1_1.wav</ShortName>
+					<Path>SFX\BF_VATest_s1_1_10C4C929.wem</Path>
+				</File>
+				<File Id="718473705" Language="SFX">
+					<ShortName>BF_VATest_s1_3.wav</ShortName>
+					<Path>SFX\BF_VATest_s1_3_10C4C929.wem</Path>
+				</File>
+				<File Id="996898778" Language="SFX">
+					<ShortName>BF_VATest_s1_2.wav</ShortName>
+					<Path>SFX\BF_VATest_s1_2_10C4C929.wem</Path>
+				</File>
+			</IncludedMemoryFiles>
+		</SoundBank>
+	</SoundBanks>
+</SoundBanksInfo>
