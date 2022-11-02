@@ -8,6 +8,7 @@ public class VoiceLineSO : ScriptableObject
     public string subtitle;
     public float clipDuration = 0;
     public float nextClipOffset = .5f;
+    public AK.Wwise.Switch wiseSwitch;
 
     private void Awake()
     {

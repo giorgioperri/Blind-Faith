@@ -6,10 +6,6 @@ Audio Bus	ID	Name			Wwise Object Path	Notes
 Auxiliary Bus	ID	Name			Wwise Object Path	Notes
 	1767195844	Ambisonic_Aux_Mix			\Default Work Unit\Master Audio Bus\AmbisonicsBus\Ambisonic_Aux_Mix	
 
-Effect plug-ins	ID	Name	Type				Notes
-	739135677	Resonance Audio Room Effects (Custom)	Resonance Audio Room Effects			
-	978070661	Resonance Audio Renderer (Custom)	Resonance Audio Renderer			
-
 Audio Devices	ID	Name	Type				Notes
 	2317455096	No_Output	No Output			
 	3859886410	System	System			

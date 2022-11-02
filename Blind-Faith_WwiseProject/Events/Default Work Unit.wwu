@@ -14,6 +14,31 @@
 						</Action>
 					</ChildrenList>
 				</Event>
+				<Event Name="VA_Test_Switch" ID="{8EBC1544-BA58-4848-A977-1366CDD39CEE}">
+					<ChildrenList>
+						<Action Name="" ID="{E23E9992-DA88-4144-8494-FD5301D78436}" ShortID="513255704">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="scene1_clerk_intro" ID="{A121B7B1-4770-4A5D-9163-13913FCCC563}" WorkUnitID="{405E6D03-D34E-40A5-8665-1A1025CDCBEB}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="New_Event" ID="{9E4F08EC-C6E6-4647-ADE1-923AAD80FAB3}">
+					<ChildrenList>
+						<Action Name="" ID="{F94D15A2-B4F7-41A1-ACEB-8DC6743E05D4}" ShortID="700043859">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="23"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="va1" ID="{3F3DC4F9-C73F-4E36-8828-E33FF6C7013B}" WorkUnitID="{78209012-2636-4D94-8763-1F9C3A93F8E0}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>
