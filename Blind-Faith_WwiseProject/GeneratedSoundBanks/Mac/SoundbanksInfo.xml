@@ -11,7 +11,7 @@
 	<StreamedFiles/>
 	<MediaFilesNotInAnyBank/>
 	<SoundBanks>
-		<SoundBank Id="1355168291" Language="SFX" Hash="1722650255">
+		<SoundBank Id="1355168291" Language="SFX" Hash="174338011">
 			<ObjectPath>Init</ObjectPath>
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
@@ -19,12 +19,14 @@
 				<AuxBus Id="1767195844" Name="Ambisonic_Aux_Mix" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\AmbisonicsBus\Ambisonic_Aux_Mix"/>
 			</IncludedAuxBusses>
 		</SoundBank>
-		<SoundBank Id="1534528554" Language="SFX" Hash="3616616508">
-			<ObjectPath>\SoundBanks\Default Work Unit\VA</ObjectPath>
-			<ShortName>VA</ShortName>
-			<Path>VA.bnk</Path>
+		<SoundBank Id="2662087701" Language="SFX" Hash="2764644917">
+			<ObjectPath>\SoundBanks\Default Work Unit\VoiceActing</ObjectPath>
+			<ShortName>VoiceActing</ShortName>
+			<Path>VoiceActing.bnk</Path>
 			<IncludedEvents>
-				<Event Id="3051364989" Name="VA_Test" ObjectPath="\Events\Default Work Unit\VA_Test" DurationType="OneShot" DurationMin="2.797823" DurationMax="6.202177"/>
+				<Event Id="4258275658" Name="PauseVA" ObjectPath="\Events\Default Work Unit\PauseVA" MaxAttenuation="0." DurationType="OneShot" DurationMin="0." DurationMax="0."/>
+				<Event Id="2063776535" Name="ResumeVA" ObjectPath="\Events\Default Work Unit\ResumeVA" MaxAttenuation="0." DurationType="OneShot" DurationMin="0." DurationMax="0."/>
+				<Event Id="175202686" Name="VA_ClerkIntro" ObjectPath="\Events\Default Work Unit\VA_ClerkIntro" DurationType="OneShot" DurationMin="2.797823" DurationMax="6.202177"/>
 			</IncludedEvents>
 			<IncludedMemoryFiles>
 				<File Id="523566726" Language="SFX">

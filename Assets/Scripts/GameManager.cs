@@ -9,6 +9,9 @@ public class GameManager : MonoBehaviour
     [HideInInspector] public StarterAssetsInputs playerInput;
     public static GameManager Instance;
 
+    public AK.Wwise.Event PauseVA;
+    public AK.Wwise.Event ResumeVA;
+
     private void Awake()
     {
         if (Instance != null)
@@ -33,11 +36,11 @@ public class GameManager : MonoBehaviour
             PauseManager.Instance.ToggleMenu(isPaused);
             if (isPaused)
             {
-                VoiceManager.Instance.audioSource.Pause();
+                PauseVA.Post(VoiceManager.Instance.gameObject);
             }
             else
             {
-                VoiceManager.Instance.audioSource.UnPause();
+                ResumeVA.Post(VoiceManager.Instance.gameObject);
             }
             playerInput.pause = false;
         }

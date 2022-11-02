@@ -9,10 +9,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 49a553acd80d24523b827f35acfeebb3, type: 3}
-  m_Name: WorshipMe
+  m_Script: {fileID: 11500000, guid: d0b283e4ef7b635458f37b0c79d86857, type: 3}
+  m_Name: D107BFC9-1262-4A70-96BF-EBFAB9F0E214
   m_EditorClassIdentifier: 
-  voiceClip: {fileID: 8300000, guid: bc204eb15d0d54fb5bdc60598cd9c977, type: 3}
-  subtitle: wORsHip mEe
-  clipDuration: 1.6552708
-  nextClipOffset: 0.5
+  objectName: PauseVA
+  id: 4258275658
+  guid: D107BFC9-1262-4A70-96BF-EBFAB9F0E214

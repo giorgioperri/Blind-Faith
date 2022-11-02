@@ -1,31 +1,33 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ValidationCache Version="1" SchemaVersion="103">
-	<ValidationCacheItem File="Y:\Desktop\ITU\Making Games\MakingGames22\Blind Faith\Blind-Faith_WwiseProject\Virtual Acoustics\Default Work Unit.wwu" DateLow="1667404628" DateHigh="0"/>
-	<ValidationCacheItem File="Y:\Desktop\ITU\Making Games\MakingGames22\Blind Faith\Blind-Faith_WwiseProject\Triggers\Default Work Unit.wwu" DateLow="1667404628" DateHigh="0"/>
-	<ValidationCacheItem File="Y:\Desktop\ITU\Making Games\MakingGames22\Blind Faith\Blind-Faith_WwiseProject\Switches\Default Work Unit.wwu" DateLow="1667406176" DateHigh="0"/>
-	<ValidationCacheItem File="Y:\Desktop\ITU\Making Games\MakingGames22\Blind Faith\Blind-Faith_WwiseProject\States\Default Work Unit.wwu" DateLow="1667404628" DateHigh="0"/>
-	<ValidationCacheItem File="Y:\Desktop\ITU\Making Games\MakingGames22\Blind Faith\Blind-Faith_WwiseProject\Soundcaster Sessions\Default Work Unit.wwu" DateLow="1667404628" DateHigh="0"/>
-	<ValidationCacheItem File="Y:\Desktop\ITU\Making Games\MakingGames22\Blind Faith\Blind-Faith_WwiseProject\SoundBanks\Default Work Unit.wwu" DateLow="1667404628" DateHigh="0"/>
-	<ValidationCacheItem File="Y:\Desktop\ITU\Making Games\MakingGames22\Blind Faith\Blind-Faith_WwiseProject\Queries\Factory Queries.wwu" DateLow="1667404628" DateHigh="0"/>
-	<ValidationCacheItem File="Y:\Desktop\ITU\Making Games\MakingGames22\Blind Faith\Blind-Faith_WwiseProject\Queries\Default Work Unit.wwu" DateLow="1667404628" DateHigh="0"/>
-	<ValidationCacheItem File="Y:\Desktop\ITU\Making Games\MakingGames22\Blind Faith\Blind-Faith_WwiseProject\Presets\Factory Spatial Audio.wwu" DateLow="1667404628" DateHigh="0"/>
-	<ValidationCacheItem File="Y:\Desktop\ITU\Making Games\MakingGames22\Blind Faith\Blind-Faith_WwiseProject\Presets\Default Work Unit.wwu" DateLow="1667404628" DateHigh="0"/>
-	<ValidationCacheItem File="Y:\Desktop\ITU\Making Games\MakingGames22\Blind Faith\Blind-Faith_WwiseProject\Modulators\Default Work Unit.wwu" DateLow="1667404628" DateHigh="0"/>
-	<ValidationCacheItem File="Y:\Desktop\ITU\Making Games\MakingGames22\Blind Faith\Blind-Faith_WwiseProject\Mixing Sessions\Default Work Unit.wwu" DateLow="1667404628" DateHigh="0"/>
-	<ValidationCacheItem File="Y:\Desktop\ITU\Making Games\MakingGames22\Blind Faith\Blind-Faith_WwiseProject\Metadata\Default Work Unit.wwu" DateLow="1667404628" DateHigh="0"/>
-	<ValidationCacheItem File="Y:\Desktop\ITU\Making Games\MakingGames22\Blind Faith\Blind-Faith_WwiseProject\Master-Mixer Hierarchy\Default Work Unit.wwu" DateLow="1667404628" DateHigh="0"/>
-	<ValidationCacheItem File="Y:\Desktop\ITU\Making Games\MakingGames22\Blind Faith\Blind-Faith_WwiseProject\Interactive Music Hierarchy\Default Work Unit.wwu" DateLow="1667404628" DateHigh="0"/>
-	<ValidationCacheItem File="Y:\Desktop\ITU\Making Games\MakingGames22\Blind Faith\Blind-Faith_WwiseProject\Game Parameters\Default Work Unit.wwu" DateLow="1667405789" DateHigh="0"/>
-	<ValidationCacheItem File="Y:\Desktop\ITU\Making Games\MakingGames22\Blind Faith\Blind-Faith_WwiseProject\Events\Default Work Unit.wwu" DateLow="1667406273" DateHigh="0"/>
-	<ValidationCacheItem File="Y:\Desktop\ITU\Making Games\MakingGames22\Blind Faith\Blind-Faith_WwiseProject\Effects\Factory Effects.wwu" DateLow="1667404628" DateHigh="0"/>
-	<ValidationCacheItem File="Y:\Desktop\ITU\Making Games\MakingGames22\Blind Faith\Blind-Faith_WwiseProject\Effects\Default Work Unit.wwu" DateLow="1667404628" DateHigh="0"/>
-	<ValidationCacheItem File="Y:\Desktop\ITU\Making Games\MakingGames22\Blind Faith\Blind-Faith_WwiseProject\Dynamic Dialogue\Default Work Unit.wwu" DateLow="1667404628" DateHigh="0"/>
-	<ValidationCacheItem File="Y:\Desktop\ITU\Making Games\MakingGames22\Blind Faith\Blind-Faith_WwiseProject\Conversion Settings\Factory Conversion Settings.wwu" DateLow="1667404628" DateHigh="0"/>
-	<ValidationCacheItem File="Y:\Desktop\ITU\Making Games\MakingGames22\Blind Faith\Blind-Faith_WwiseProject\Conversion Settings\Default Work Unit.wwu" DateLow="1667404628" DateHigh="0"/>
-	<ValidationCacheItem File="Y:\Desktop\ITU\Making Games\MakingGames22\Blind Faith\Blind-Faith_WwiseProject\Control Surface Sessions\Default Work Unit.wwu" DateLow="1667404628" DateHigh="0"/>
-	<ValidationCacheItem File="Y:\Desktop\ITU\Making Games\MakingGames22\Blind Faith\Blind-Faith_WwiseProject\Blind-Faith_WwiseProject.wproj" DateLow="1667404628" DateHigh="0"/>
-	<ValidationCacheItem File="Y:\Desktop\ITU\Making Games\MakingGames22\Blind Faith\Blind-Faith_WwiseProject\Audio Devices\Default Work Unit.wwu" DateLow="1667404628" DateHigh="0"/>
-	<ValidationCacheItem File="Y:\Desktop\ITU\Making Games\MakingGames22\Blind Faith\Blind-Faith_WwiseProject\Attenuations\Default Work Unit.wwu" DateLow="1667404628" DateHigh="0"/>
-	<ValidationCacheItem File="Y:\Desktop\ITU\Making Games\MakingGames22\Blind Faith\Blind-Faith_WwiseProject\Actor-Mixer Hierarchy\VA_Test_Unit.wwu" DateLow="1667405936" DateHigh="0"/>
-	<ValidationCacheItem File="Y:\Desktop\ITU\Making Games\MakingGames22\Blind Faith\Blind-Faith_WwiseProject\Actor-Mixer Hierarchy\Default Work Unit.wwu" DateLow="1667404628" DateHigh="0"/>
+	<ValidationCacheItem File="Y:\Desktop\ITU\Making Games\MakingGames22\Blind Faith\Blind-Faith_WwiseProject\Virtual Acoustics\Default Work Unit.wwu" DateLow="1667422333" DateHigh="0"/>
+	<ValidationCacheItem File="Y:\Desktop\ITU\Making Games\MakingGames22\Blind Faith\Blind-Faith_WwiseProject\Triggers\Default Work Unit.wwu" DateLow="1667422333" DateHigh="0"/>
+	<ValidationCacheItem File="Y:\Desktop\ITU\Making Games\MakingGames22\Blind Faith\Blind-Faith_WwiseProject\Switches\Default Work Unit.wwu" DateLow="1667422333" DateHigh="0"/>
+	<ValidationCacheItem File="Y:\Desktop\ITU\Making Games\MakingGames22\Blind Faith\Blind-Faith_WwiseProject\States\Default Work Unit.wwu" DateLow="1667422333" DateHigh="0"/>
+	<ValidationCacheItem File="Y:\Desktop\ITU\Making Games\MakingGames22\Blind Faith\Blind-Faith_WwiseProject\Soundcaster Sessions\Default Work Unit.wwu" DateLow="1667422333" DateHigh="0"/>
+	<ValidationCacheItem File="Y:\Desktop\ITU\Making Games\MakingGames22\Blind Faith\Blind-Faith_WwiseProject\SoundBanks\Default Work Unit.wwu" DateLow="1667431040" DateHigh="0"/>
+	<ValidationCacheItem File="Y:\Desktop\ITU\Making Games\MakingGames22\Blind Faith\Blind-Faith_WwiseProject\Queries\Factory Queries.wwu" DateLow="1667422333" DateHigh="0"/>
+	<ValidationCacheItem File="Y:\Desktop\ITU\Making Games\MakingGames22\Blind Faith\Blind-Faith_WwiseProject\Queries\Default Work Unit.wwu" DateLow="1667422333" DateHigh="0"/>
+	<ValidationCacheItem File="Y:\Desktop\ITU\Making Games\MakingGames22\Blind Faith\Blind-Faith_WwiseProject\Presets\Factory Spatial Audio.wwu" DateLow="1667422333" DateHigh="0"/>
+	<ValidationCacheItem File="Y:\Desktop\ITU\Making Games\MakingGames22\Blind Faith\Blind-Faith_WwiseProject\Presets\Default Work Unit.wwu" DateLow="1667422333" DateHigh="0"/>
+	<ValidationCacheItem File="Y:\Desktop\ITU\Making Games\MakingGames22\Blind Faith\Blind-Faith_WwiseProject\Modulators\Default Work Unit.wwu" DateLow="1667422333" DateHigh="0"/>
+	<ValidationCacheItem File="Y:\Desktop\ITU\Making Games\MakingGames22\Blind Faith\Blind-Faith_WwiseProject\Mixing Sessions\Default Work Unit.wwu" DateLow="1667422333" DateHigh="0"/>
+	<ValidationCacheItem File="Y:\Desktop\ITU\Making Games\MakingGames22\Blind Faith\Blind-Faith_WwiseProject\Metadata\Default Work Unit.wwu" DateLow="1667422333" DateHigh="0"/>
+	<ValidationCacheItem File="Y:\Desktop\ITU\Making Games\MakingGames22\Blind Faith\Blind-Faith_WwiseProject\Master-Mixer Hierarchy\Default Work Unit.wwu" DateLow="1667422333" DateHigh="0"/>
+	<ValidationCacheItem File="Y:\Desktop\ITU\Making Games\MakingGames22\Blind Faith\Blind-Faith_WwiseProject\Interactive Music Hierarchy\Default Work Unit.wwu" DateLow="1667422333" DateHigh="0"/>
+	<ValidationCacheItem File="Y:\Desktop\ITU\Making Games\MakingGames22\Blind Faith\Blind-Faith_WwiseProject\Game Parameters\Default Work Unit.wwu" DateLow="1667422333" DateHigh="0"/>
+	<ValidationCacheItem File="Y:\Desktop\ITU\Making Games\MakingGames22\Blind Faith\Blind-Faith_WwiseProject\Events\Default Work Unit.wwu" DateLow="1667430800" DateHigh="0"/>
+	<ValidationCacheItem File="Y:\Desktop\ITU\Making Games\MakingGames22\Blind Faith\Blind-Faith_WwiseProject\Effects\Factory Effects.wwu" DateLow="1667422333" DateHigh="0"/>
+	<ValidationCacheItem File="Y:\Desktop\ITU\Making Games\MakingGames22\Blind Faith\Blind-Faith_WwiseProject\Effects\Default Work Unit.wwu" DateLow="1667422333" DateHigh="0"/>
+	<ValidationCacheItem File="Y:\Desktop\ITU\Making Games\MakingGames22\Blind Faith\Blind-Faith_WwiseProject\Dynamic Dialogue\Default Work Unit.wwu" DateLow="1667422333" DateHigh="0"/>
+	<ValidationCacheItem File="Y:\Desktop\ITU\Making Games\MakingGames22\Blind Faith\Blind-Faith_WwiseProject\Conversion Settings\Factory Conversion Settings.wwu" DateLow="1667422333" DateHigh="0"/>
+	<ValidationCacheItem File="Y:\Desktop\ITU\Making Games\MakingGames22\Blind Faith\Blind-Faith_WwiseProject\Conversion Settings\Default Work Unit.wwu" DateLow="1667422333" DateHigh="0"/>
+	<ValidationCacheItem File="Y:\Desktop\ITU\Making Games\MakingGames22\Blind Faith\Blind-Faith_WwiseProject\Control Surface Sessions\Default Work Unit.wwu" DateLow="1667422333" DateHigh="0"/>
+	<ValidationCacheItem File="Y:\Desktop\ITU\Making Games\MakingGames22\Blind Faith\Blind-Faith_WwiseProject\Blind-Faith_WwiseProject.wproj" DateLow="1667426554" DateHigh="0"/>
+	<ValidationCacheItem File="Y:\Desktop\ITU\Making Games\MakingGames22\Blind Faith\Blind-Faith_WwiseProject\Blind-Faith_WwiseProject.crossover.wsettings" DateLow="1667430270" DateHigh="0"/>
+	<ValidationCacheItem File="Y:\Desktop\ITU\Making Games\MakingGames22\Blind Faith\Blind-Faith_WwiseProject\Audio Devices\Default Work Unit.wwu" DateLow="1667422333" DateHigh="0"/>
+	<ValidationCacheItem File="Y:\Desktop\ITU\Making Games\MakingGames22\Blind Faith\Blind-Faith_WwiseProject\Attenuations\Default Work Unit.wwu" DateLow="1667422333" DateHigh="0"/>
+	<ValidationCacheItem File="Y:\Desktop\ITU\Making Games\MakingGames22\Blind Faith\Blind-Faith_WwiseProject\Actor-Mixer Hierarchy\VA_Test_Unit.wwu" DateLow="1667399930" DateHigh="0"/>
+	<ValidationCacheItem File="Y:\Desktop\ITU\Making Games\MakingGames22\Blind Faith\Blind-Faith_WwiseProject\Actor-Mixer Hierarchy\VA.wwu" DateLow="1667426586" DateHigh="0"/>
+	<ValidationCacheItem File="Y:\Desktop\ITU\Making Games\MakingGames22\Blind Faith\Blind-Faith_WwiseProject\Actor-Mixer Hierarchy\Default Work Unit.wwu" DateLow="1667422333" DateHigh="0"/>
 </ValidationCache>

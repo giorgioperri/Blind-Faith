@@ -3,9 +3,9 @@
 	<SoundBanks>
 		<WorkUnit Name="Default Work Unit" ID="{C2F2F391-9FE8-4341-BD59-D41DC8510AB9}" PersistMode="Standalone">
 			<ChildrenList>
-				<SoundBank Name="VA" ID="{60F84D4F-BDB2-455B-B197-B9DCC70AA2D3}">
+				<SoundBank Name="VoiceActing" ID="{E4473486-1E47-4894-82D5-226D08221419}">
 					<ObjectInclusionList>
-						<ObjectRef Name="VA_Test_Unit" ID="{405E6D03-D34E-40A5-8665-1A1025CDCBEB}" WorkUnitID="{405E6D03-D34E-40A5-8665-1A1025CDCBEB}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="VA" ID="{405E6D03-D34E-40A5-8665-1A1025CDCBEB}" WorkUnitID="{405E6D03-D34E-40A5-8665-1A1025CDCBEB}" Origin="Manual" Filter="7"/>
 					</ObjectInclusionList>
 					<ObjectExclusionList/>
 					<GameSyncExclusionList/>

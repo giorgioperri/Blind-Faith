@@ -24,7 +24,7 @@ MonoBehaviour:
     ParentPath: Virtual Acoustics/Default Work Unit
     guid: 8157776944d252459e5c3d8483760091
     GuidInternal: 
-    m_lastTime: -8585342022572667836
+    m_lastTime: -8585341845523954083
     List: []
   AuxBusWwu:
   - PhysicalPath: Master-Mixer Hierarchy/Default Work Unit.wwu
@@ -38,7 +38,7 @@ MonoBehaviour:
     ParentPath: Master-Mixer Hierarchy/Default Work Unit
     guid: c6b41ec9dc56414596c429e948904d66
     GuidInternal: 
-    m_lastTime: -8585342022572884996
+    m_lastTime: -8585341845524168390
     List:
     - name: Ambisonic_Aux_Mix
       guid: 85f372a27f8c5b46aaa7986b8fa7eec7
@@ -121,11 +121,11 @@ MonoBehaviour:
     ParentPath: SoundBanks/Default Work Unit
     guid: 91f3f2c2e89f4143bd59d41dc8510ab9
     GuidInternal: 
-    m_lastTime: -8585342022572695325
+    m_lastTime: -8585341757426149869
     List:
-    - name: VA
-      guid: 4f4df860b2bd5b45b197b9dcc70aa2d3
-      id: 1534528554
+    - name: VoiceActing
+      guid: 863447e4471e944882d5226d08221419
+      id: 2662087701
       PathAndIcons:
       - ElementName: SoundBanks
         ObjectType: 5
@@ -133,10 +133,10 @@ MonoBehaviour:
       - ElementName: Default Work Unit
         ObjectType: 12
         guid: 91f3f2c2e89f4143bd59d41dc8510ab9
-      - ElementName: VA
+      - ElementName: VoiceActing
         ObjectType: 7
-        guid: 4f4df860b2bd5b45b197b9dcc70aa2d3
-      Path: SoundBanks/Default Work Unit/VA
+        guid: 863447e4471e944882d5226d08221419
+      Path: SoundBanks/Default Work Unit/VoiceActing
   EventWwu:
   - PhysicalPath: Events/Default Work Unit.wwu
     PathAndIcons:
@@ -149,11 +149,11 @@ MonoBehaviour:
     ParentPath: Events/Default Work Unit
     guid: 5eb490fb28343a4fbde7e5ca0bff7b1d
     GuidInternal: 
-    m_lastTime: -8585342006124264979
+    m_lastTime: -8585341760850392295
     List:
-    - name: VA_Test
-      guid: 4415bc8e58ba4848a9771366cdd39cee
-      id: 3051364989
+    - name: PauseVA
+      guid: c9bf07d16212704a96bfebfab9f0e214
+      id: 4258275658
       PathAndIcons:
       - ElementName: Events
         ObjectType: 5
@@ -161,10 +161,44 @@ MonoBehaviour:
       - ElementName: Default Work Unit
         ObjectType: 12
         guid: 5eb490fb28343a4fbde7e5ca0bff7b1d
-      - ElementName: VA_Test
+      - ElementName: PauseVA
+        ObjectType: 3
+        guid: c9bf07d16212704a96bfebfab9f0e214
+      Path: Events/Default Work Unit/PauseVA
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - name: ResumeVA
+      guid: ff552b59fb615f4e9a9d0a7a57d4f533
+      id: 2063776535
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 5eb490fb28343a4fbde7e5ca0bff7b1d
+      - ElementName: ResumeVA
+        ObjectType: 3
+        guid: ff552b59fb615f4e9a9d0a7a57d4f533
+      Path: Events/Default Work Unit/ResumeVA
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - name: VA_ClerkIntro
+      guid: 4415bc8e58ba4848a9771366cdd39cee
+      id: 175202686
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 5eb490fb28343a4fbde7e5ca0bff7b1d
+      - ElementName: VA_ClerkIntro
         ObjectType: 3
         guid: 4415bc8e58ba4848a9771366cdd39cee
-      Path: Events/Default Work Unit/VA_Test
+      Path: Events/Default Work Unit/VA_ClerkIntro
       maxAttenuation: 0
       maxDuration: 6.202177
       minDuration: 2.797823
@@ -180,7 +214,7 @@ MonoBehaviour:
     ParentPath: Game Parameters/Default Work Unit
     guid: 7f57676cb1f5124c98483947934c3f41
     GuidInternal: 
-    m_lastTime: -8585342010960724261
+    m_lastTime: -8585341845524267034
     List: []
   StateWwu:
   - PhysicalPath: States/Default Work Unit.wwu
@@ -194,7 +228,7 @@ MonoBehaviour:
     ParentPath: States/Default Work Unit
     guid: 15da347adefaa443abeba8e206daca95
     GuidInternal: 
-    m_lastTime: -8585342022572685367
+    m_lastTime: -8585341845523955470
     List: []
   SwitchWwu:
   - PhysicalPath: Switches/Default Work Unit.wwu
@@ -208,7 +242,7 @@ MonoBehaviour:
     ParentPath: Switches/Default Work Unit
     guid: 129020783626944d87631f9c3a93f8e0
     GuidInternal: 
-    m_lastTime: -8585342007085920570
+    m_lastTime: -8585341845523942129
     List: []
   TriggerWwu:
   - PhysicalPath: Triggers/Default Work Unit.wwu
@@ -222,7 +256,7 @@ MonoBehaviour:
     ParentPath: Triggers/Default Work Unit
     guid: 50b0bf7a09fe60448cd0a08f93cae076
     GuidInternal: 
-    m_lastTime: -8585342022572670008
+    m_lastTime: -8585341845523952726
     List:
     - name: New_Trigger
       guid: b52432610d4a47429784de539560cf52
@@ -256,7 +290,7 @@ MonoBehaviour:
         guid: 14a961bd002ffe41ba1f908602494c89
       Path: Triggers/Default Work Unit/VA_Test
   ExpandedFileSystemItemIds: 
-  ExpandedWaapiItemIds: 010000000200000004000000050000000600000007000000080000000a0000000b0000000c0000000d0000000e0000000f0000001000000012000000170000002a0000002b0000003200000033000000
+  ExpandedWaapiItemIds: 01000000050000000d0000000e000000
   AutoSyncSelection: 0
   autoPopulateEnabled: 1
   currentDataSource: 0

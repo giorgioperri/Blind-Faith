@@ -9,9 +9,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7c8931b652d6b8b42aabd266d9d6ad95, type: 3}
-  m_Name: 60F84D4F-BDB2-455B-B197-B9DCC70AA2D3
+  m_Script: {fileID: 11500000, guid: d0b283e4ef7b635458f37b0c79d86857, type: 3}
+  m_Name: 592B55FF-61FB-4E5F-9A9D-0A7A57D4F533
   m_EditorClassIdentifier: 
-  objectName: VA
-  id: 1534528554
-  guid: 60F84D4F-BDB2-455B-B197-B9DCC70AA2D3
+  objectName: ResumeVA
+  id: 2063776535
+  guid: 592B55FF-61FB-4E5F-9A9D-0A7A57D4F533
