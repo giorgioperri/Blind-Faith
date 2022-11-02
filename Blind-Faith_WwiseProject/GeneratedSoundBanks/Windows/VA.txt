@@ -1,21 +1,7 @@
 Event	ID	Name			Wwise Object Path	Notes
-	2016173308	VA_Test_Switch			\Default Work Unit\VA_Test_Switch	
 	3051364989	VA_Test			\Default Work Unit\VA_Test	
 
-Switch Group	ID	Name			Wwise Object Path	Notes
-	1858503677	scene1_clerk_intro			\Default Work Unit\scene1_clerk_intro	
-
-Switch	ID	Name	Switch Group			Notes
-	644359724	va2	scene1_clerk_intro			
-	644359727	va1	scene1_clerk_intro			
-
-Effect plug-ins	ID	Name	Type				Notes
-	1459522457	Brick_Wall_Minus_1dB_Peak_Fast_Release	Wwise Peak Limiter			
-
 In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
-	161210346	BF_VATest_s1_4	Y:\Desktop\ITU\Making Games\MakingGames22\Blind Faith\Blind-Faith_WwiseProject\.cache\Windows\SFX\BF_VATest_s1_4_10C4C929.wem		\Actor-Mixer Hierarchy\VA_Test_Unit\Intro\BF_VATest_s1_4		584706
-	574510173	BF_VATest_s1	Y:\Desktop\ITU\Making Games\MakingGames22\Blind Faith\Blind-Faith_WwiseProject\.cache\Windows\SFX\BF_VATest_s1_10C4C929.wem		\Actor-Mixer Hierarchy\VA_Test_Unit\Intro\BF_VATest_s1		246912
-	640644510	BF_VATest_s1_1	Y:\Desktop\ITU\Making Games\MakingGames22\Blind Faith\Blind-Faith_WwiseProject\.cache\Windows\SFX\BF_VATest_s1_1_10C4C929.wem		\Actor-Mixer Hierarchy\VA_Test_Unit\Intro\BF_VATest_s1_1		547176
-	718473705	BF_VATest_s1_3	Y:\Desktop\ITU\Making Games\MakingGames22\Blind Faith\Blind-Faith_WwiseProject\.cache\Windows\SFX\BF_VATest_s1_3_10C4C929.wem		\Actor-Mixer Hierarchy\VA_Test_Unit\Intro\BF_VATest_s1_3		557184
-	996898778	BF_VATest_s1_2	Y:\Desktop\ITU\Making Games\MakingGames22\Blind Faith\Blind-Faith_WwiseProject\.cache\Windows\SFX\BF_VATest_s1_2_10C4C929.wem		\Actor-Mixer Hierarchy\VA_Test_Unit\Intro\BF_VATest_s1_2		330598
+	523566726	BF_VATest_s1	Y:\Desktop\ITU\Making Games\MakingGames22\Blind Faith\Blind-Faith_WwiseProject\.cache\Windows\SFX\BF_VATest_s1_4E8A5591.wem		\Actor-Mixer Hierarchy\VA_Test_Unit\Intro\BF_VATest_s1		246896
+	640644510	BF_VATest_s1_1	Y:\Desktop\ITU\Making Games\MakingGames22\Blind Faith\Blind-Faith_WwiseProject\.cache\Windows\SFX\BF_VATest_s1_1_2456FF54.wem		\Actor-Mixer Hierarchy\VA_Test_Unit\Intro\BF_VATest_s1_1		547160
 

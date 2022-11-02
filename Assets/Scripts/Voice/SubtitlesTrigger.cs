@@ -12,17 +12,18 @@ public class SubtitlesTrigger : MonoBehaviour
     {
         if (other.CompareTag("Player"))
         {
-            VoiceManager.Instance.InitVoiceLineSequence(voiceLineSequence);
+            WwiseDialogue();
         }
     }   
     
     public void WwiseDialogue() {
-        dialogue.Post(gameObject, (uint)AkCallbackType.AK_Marker, WwiseLastDialogueEnd);
+        dialogue.Post(gameObject, (uint)AkCallbackType.AK_EndOfEvent, WwiseLastDialogueEnd);
     }
     public void WwiseLastDialogueEnd(object in_cookie, AkCallbackType in_type, object in_info) {
-        if (in_type == AkCallbackType.AK_Marker) {
-            AkMarkerCallbackInfo info = (AkMarkerCallbackInfo)in_info;
-            print(info.strLabel); // This prints the marker name          
+        if (in_type == AkCallbackType.AK_EndOfEvent) {
+            /*AkMarkerCallbackInfo info = (AkMarkerCallbackInfo)in_info;
+            print(info.strLabel); // This prints the marker name*/
+            Debug.Log("end");
         }
     }
     

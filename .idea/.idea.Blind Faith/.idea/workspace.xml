@@ -3,31 +3,42 @@
   <component name="ChangeListManager">
     <list default="true" id="5374623f-f723-49c8-bd7b-db22ab670095" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Blind Faith/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Blind Faith/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Scenes_Giorgio/Subtitles_Playground.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Scenes_Giorgio/Subtitles_Playground.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ScriptableObjects/Voice/Lines/RUN RUN RUN.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ScriptableObjects/Voice/Lines/RUN RUN RUN.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ScriptableObjects/Voice/Lines/Suffer.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ScriptableObjects/Voice/Lines/Suffer.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Voice/SubtitlesTrigger.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Voice/SubtitlesTrigger.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Voice/VoiceLineSO.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Voice/VoiceLineSO.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Wwise/API/Runtime/Plugins/Mac/DSP/libResonanceAudio.bundle.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Wwise/API/Runtime/Plugins/Mac/DSP/libResonanceAudio.bundle.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Wwise/API/Runtime/Plugins/Windows/x86/DSP/ResonanceAudio.dll.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Wwise/API/Runtime/Plugins/Windows/x86/DSP/ResonanceAudio.dll.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Wwise/API/Runtime/Plugins/Windows/x86_64/DSP/ResonanceAudio.dll.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Wwise/API/Runtime/Plugins/Windows/x86_64/DSP/ResonanceAudio.dll.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Wwise/Editor/ProjectData/AkWwiseProjectData.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Wwise/Editor/ProjectData/AkWwiseProjectData.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Wwise/ScriptableObjects/Event/44A7C9DB-9704-4E3F-B9B8-0EF5F6E23BF6.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Wwise/ScriptableObjects/Event/44A7C9DB-9704-4E3F-B9B8-0EF5F6E23BF6.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Wwise/ScriptableObjects/Switch/3F3DC4F9-C73F-4E36-8828-E33FF6C7013B.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Wwise/ScriptableObjects/Switch/3F3DC4F9-C73F-4E36-8828-E33FF6C7013B.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Wwise/ScriptableObjects/SwitchGroup/5D8E820E-74B0-4253-AB1D-960801757449.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Wwise/ScriptableObjects/SwitchGroup/5D8E820E-74B0-4253-AB1D-960801757449.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/WwiseSettings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/WwiseSettings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Blind-Faith_WwiseProject/.cache/Mac/SFX/Wwise.dat" beforeDir="false" afterPath="$PROJECT_DIR$/Blind-Faith_WwiseProject/.cache/Mac/SFX/Wwise.dat" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Blind-Faith_WwiseProject/.cache/SoundBankInfoCache.dat" beforeDir="false" afterPath="$PROJECT_DIR$/Blind-Faith_WwiseProject/.cache/SoundBankInfoCache.dat" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Blind-Faith_WwiseProject/.cache/Windows/SFX/Wwise.dat" beforeDir="false" afterPath="$PROJECT_DIR$/Blind-Faith_WwiseProject/.cache/Windows/SFX/Wwise.dat" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Blind-Faith_WwiseProject/Actor-Mixer Hierarchy/VA_Test_Unit.wwu" beforeDir="false" afterPath="$PROJECT_DIR$/Blind-Faith_WwiseProject/Actor-Mixer Hierarchy/VA_Test_Unit.wwu" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Blind-Faith_WwiseProject/Blind-Faith_WwiseProject.crossover.validationcache" beforeDir="false" afterPath="$PROJECT_DIR$/Blind-Faith_WwiseProject/Blind-Faith_WwiseProject.crossover.validationcache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Blind-Faith_WwiseProject/Events/Default Work Unit.wwu" beforeDir="false" afterPath="$PROJECT_DIR$/Blind-Faith_WwiseProject/Events/Default Work Unit.wwu" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Blind-Faith_WwiseProject/Game Parameters/Default Work Unit.wwu" beforeDir="false" afterPath="$PROJECT_DIR$/Blind-Faith_WwiseProject/Game Parameters/Default Work Unit.wwu" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Blind-Faith_WwiseProject/GeneratedSoundBanks/Mac/Init.bnk" beforeDir="false" afterPath="$PROJECT_DIR$/Blind-Faith_WwiseProject/GeneratedSoundBanks/Mac/Init.bnk" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Blind-Faith_WwiseProject/GeneratedSoundBanks/Mac/Init.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Blind-Faith_WwiseProject/GeneratedSoundBanks/Mac/Init.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Blind-Faith_WwiseProject/GeneratedSoundBanks/Mac/PluginInfo.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Blind-Faith_WwiseProject/GeneratedSoundBanks/Mac/PluginInfo.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Blind-Faith_WwiseProject/GeneratedSoundBanks/Mac/SoundbanksInfo.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Blind-Faith_WwiseProject/GeneratedSoundBanks/Mac/SoundbanksInfo.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Blind-Faith_WwiseProject/GeneratedSoundBanks/Mac/VA.bnk" beforeDir="false" afterPath="$PROJECT_DIR$/Blind-Faith_WwiseProject/GeneratedSoundBanks/Mac/VA.bnk" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Blind-Faith_WwiseProject/GeneratedSoundBanks/Mac/VA.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Blind-Faith_WwiseProject/GeneratedSoundBanks/Mac/VA.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Blind-Faith_WwiseProject/GeneratedSoundBanks/Windows/Init.bnk" beforeDir="false" afterPath="$PROJECT_DIR$/Blind-Faith_WwiseProject/GeneratedSoundBanks/Windows/Init.bnk" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Blind-Faith_WwiseProject/GeneratedSoundBanks/Windows/Init.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Blind-Faith_WwiseProject/GeneratedSoundBanks/Windows/Init.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Blind-Faith_WwiseProject/GeneratedSoundBanks/Windows/PluginInfo.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Blind-Faith_WwiseProject/GeneratedSoundBanks/Windows/PluginInfo.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Blind-Faith_WwiseProject/GeneratedSoundBanks/Windows/SoundbanksInfo.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Blind-Faith_WwiseProject/GeneratedSoundBanks/Windows/SoundbanksInfo.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Blind-Faith_WwiseProject/GeneratedSoundBanks/Windows/VA.bnk" beforeDir="false" afterPath="$PROJECT_DIR$/Blind-Faith_WwiseProject/GeneratedSoundBanks/Windows/VA.bnk" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Blind-Faith_WwiseProject/GeneratedSoundBanks/Windows/VA.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Blind-Faith_WwiseProject/GeneratedSoundBanks/Windows/VA.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Blind-Faith_WwiseProject/Switches/Default Work Unit.wwu" beforeDir="false" afterPath="$PROJECT_DIR$/Blind-Faith_WwiseProject/Switches/Default Work Unit.wwu" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserSettings/Layouts/CurrentMaximizeLayout.dwlt" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/Layouts/CurrentMaximizeLayout.dwlt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserSettings/Layouts/default-2021.dwlt" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/Layouts/default-2021.dwlt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -114,7 +125,7 @@
       <workItem from="1667388917683" duration="281000" />
       <workItem from="1667389218565" duration="1670000" />
       <workItem from="1667391013670" duration="4291000" />
-      <workItem from="1667400786214" duration="444000" />
+      <workItem from="1667400786214" duration="3854000" />
     </task>
     <servers />
   </component>

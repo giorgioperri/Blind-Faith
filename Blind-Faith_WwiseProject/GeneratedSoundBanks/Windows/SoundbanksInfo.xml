@@ -11,7 +11,7 @@
 	<StreamedFiles/>
 	<MediaFilesNotInAnyBank/>
 	<SoundBanks>
-		<SoundBank Id="1355168291" Language="SFX" Hash="2493200534">
+		<SoundBank Id="1355168291" Language="SFX" Hash="2112075897">
 			<ObjectPath>Init</ObjectPath>
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
@@ -19,44 +19,23 @@
 				<AuxBus Id="1767195844" Name="Ambisonic_Aux_Mix" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\AmbisonicsBus\Ambisonic_Aux_Mix"/>
 			</IncludedAuxBusses>
 		</SoundBank>
-		<SoundBank Id="1534528554" Language="SFX" Hash="1858123564">
+		<SoundBank Id="1534528554" Language="SFX" Hash="3616616508">
 			<ObjectPath>\SoundBanks\Default Work Unit\VA</ObjectPath>
 			<ShortName>VA</ShortName>
 			<Path>VA.bnk</Path>
 			<IncludedEvents>
-				<Event Id="3051364989" Name="VA_Test" ObjectPath="\Events\Default Work Unit\VA_Test" DurationType="OneShot" DurationMin="2.797823" DurationMax="6.627687"/>
-				<Event Id="2016173308" Name="VA_Test_Switch" ObjectPath="\Events\Default Work Unit\VA_Test_Switch" DurationType="OneShot" DurationMin="2.797823" DurationMax="6.202177"/>
+				<Event Id="3051364989" Name="VA_Test" ObjectPath="\Events\Default Work Unit\VA_Test" DurationType="OneShot" DurationMin="2.797823" DurationMax="6.202177"/>
 			</IncludedEvents>
 			<IncludedMemoryFiles>
-				<File Id="161210346" Language="SFX">
-					<ShortName>BF_VATest_s1_4.wav</ShortName>
-					<Path>SFX/BF_VATest_s1_4_10C4C929.wem</Path>
-				</File>
-				<File Id="574510173" Language="SFX">
+				<File Id="523566726" Language="SFX">
 					<ShortName>BF_VATest_s1.wav</ShortName>
-					<Path>SFX/BF_VATest_s1_10C4C929.wem</Path>
+					<Path>SFX/BF_VATest_s1_4E8A5591.wem</Path>
 				</File>
 				<File Id="640644510" Language="SFX">
 					<ShortName>BF_VATest_s1_1.wav</ShortName>
-					<Path>SFX/BF_VATest_s1_1_10C4C929.wem</Path>
-				</File>
-				<File Id="718473705" Language="SFX">
-					<ShortName>BF_VATest_s1_3.wav</ShortName>
-					<Path>SFX/BF_VATest_s1_3_10C4C929.wem</Path>
-				</File>
-				<File Id="996898778" Language="SFX">
-					<ShortName>BF_VATest_s1_2.wav</ShortName>
-					<Path>SFX/BF_VATest_s1_2_10C4C929.wem</Path>
+					<Path>SFX/BF_VATest_s1_1_2456FF54.wem</Path>
 				</File>
 			</IncludedMemoryFiles>
-			<SwitchGroups>
-				<SwitchGroup Id="1858503677" Name="scene1_clerk_intro" ObjectPath="\Switches\Default Work Unit\scene1_clerk_intro" GUID="{5D8E820E-74B0-4253-AB1D-960801757449}">
-					<Switches>
-						<Switch Id="644359727" Name="va1" ObjectPath="\Switches\Default Work Unit\scene1_clerk_intro\va1" GUID="{3F3DC4F9-C73F-4E36-8828-E33FF6C7013B}"/>
-						<Switch Id="644359724" Name="va2" ObjectPath="\Switches\Default Work Unit\scene1_clerk_intro\va2" GUID="{C81A9693-21D7-4188-B6FC-78626659BA6D}"/>
-					</Switches>
-				</SwitchGroup>
-			</SwitchGroups>
 		</SoundBank>
 	</SoundBanks>
 </SoundBanksInfo>

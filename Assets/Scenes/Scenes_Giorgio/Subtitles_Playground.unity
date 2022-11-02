@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 8900000, guid: 619e305f5165a9946b7f72464e44ca4a, type: 3}
   m_Sun: {fileID: 2114283754330233425}
-  m_IndirectSpecularColor: {r: 0.029152213, g: 0.064445764, b: 0.12695098, a: 1}
+  m_IndirectSpecularColor: {r: 0.029152099, g: 0.064445436, b: 0.1269502, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -152,6 +152,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 321892689828383714, guid: b0d5393eb2d2449a98b38ed752d950ea,
         type: 3}
+      propertyPath: dialogue.WwiseObjectReference
+      value: 
+      objectReference: {fileID: 11400000, guid: 99d960c13f3a14a92985fce129b7cf6d,
+        type: 2}
+    - target: {fileID: 321892689828383714, guid: b0d5393eb2d2449a98b38ed752d950ea,
+        type: 3}
       propertyPath: voiceLineSequence.Array.data[0]
       value: 
       objectReference: {fileID: 11400000, guid: d7f00b55a8f7c4024b1afa9bc8d7e58b,
@@ -236,36 +242,6 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 72202755}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &425952652
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 425952648}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 225580b7a7c212a45a2ae1d3046bd101, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  triggerList: d1bbb3b5
-  useOtherObject: 1
-  actionOnEventType: 0
-  curveInterpolation: 4
-  enableActionOnEvent: 0
-  data:
-    idInternal: 0
-    valueGuidInternal: 
-    WwiseObjectReference: {fileID: 11400000, guid: 943f6a1bbd212fd49a46f92fc36ca8d0,
-      type: 2}
-  useCallbacks: 0
-  Callbacks: []
-  playingId: 0
-  soundEmitterObject: {fileID: 0}
-  transitionDuration: 0
-  eventIdInternal: 0
-  valueGuidInternal: 
-  m_callbackDataInternal: {fileID: 0}
 --- !u!114 &425952653
 MonoBehaviour:
   m_ObjectHideFlags: 0
