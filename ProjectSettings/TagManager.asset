@@ -6,6 +6,7 @@ TagManager:
   tags:
   - CinemachineTarget
   - Mirror
+  - ChargingTarget
   layers:
   - Default
   - TransparentFX

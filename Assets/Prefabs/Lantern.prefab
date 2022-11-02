@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 1740090141593495960}
   - component: {fileID: 9070595531412921913}
   - component: {fileID: 8228641119191913749}
+  - component: {fileID: 2675792758667396758}
   m_Layer: 0
   m_Name: InnerRing
   m_TagString: Untagged
@@ -31,7 +32,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 5556877123323938471}
-  m_RootOrder: 0
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!33 &9070595531412921913
 MeshFilter:
@@ -83,6 +84,19 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!114 &2675792758667396758
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 599897941409568359}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4ca9c8eb89a904902b73c87f48d233ef, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _rotationAxis: 0
 --- !u!1 &2908874872184916923
 GameObject:
   m_ObjectHideFlags: 0
@@ -94,6 +108,7 @@ GameObject:
   - component: {fileID: 8994859525276158918}
   - component: {fileID: 3829325083750811264}
   - component: {fileID: 6449518337057222673}
+  - component: {fileID: 4173405365713392076}
   m_Layer: 0
   m_Name: OuterRing
   m_TagString: Untagged
@@ -166,6 +181,19 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!114 &4173405365713392076
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2908874872184916923}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4ca9c8eb89a904902b73c87f48d233ef, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _rotationAxis: 2
 --- !u!1 &5068289978019585053
 GameObject:
   m_ObjectHideFlags: 0
@@ -196,8 +224,8 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 1740090141593495960}
   - {fileID: 3701312108315895538}
+  - {fileID: 1740090141593495960}
   - {fileID: 6372690563841608656}
   - {fileID: 8994859525276158918}
   m_Father: {fileID: 0}
@@ -279,12 +307,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5608799773295247281}
   m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 0.5652065, y: 0.5652065, z: 0.5652065}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 5556877123323938471}
-  m_RootOrder: 1
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!33 &5314085314432353804
 MeshFilter:
@@ -347,6 +375,7 @@ GameObject:
   - component: {fileID: 6372690563841608656}
   - component: {fileID: 6423788778409385461}
   - component: {fileID: 610148471598541952}
+  - component: {fileID: 4663062653695275128}
   m_Layer: 0
   m_Name: MiddleRing
   m_TagString: Untagged
@@ -419,3 +448,16 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!114 &4663062653695275128
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6696507548308757757}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4ca9c8eb89a904902b73c87f48d233ef, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _rotationAxis: 1
