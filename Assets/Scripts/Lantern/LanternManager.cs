@@ -40,6 +40,7 @@ public class LanternManager : MonoBehaviour
             if (GameManager.Instance.isLookingAtAngel && _lanternCharge <= 1)
             {
                 //recharge
+                SoundManager.Instance.LanternCharging.Post(SoundManager.Instance.gameObject);
                 _lanternCharge += Time.deltaTime / _lanternRechargingTime;
             }
             return;

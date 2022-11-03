@@ -12,7 +12,7 @@ public class GameManager : MonoBehaviour
     
     public static GameManager Instance;
 
-    private bool _canPlayChargeEvent = false;
+    private bool _canPlayChargeEvent = true;
 
     public AK.Wwise.Event PauseVA;
     public AK.Wwise.Event ResumeVA;
@@ -60,10 +60,9 @@ public class GameManager : MonoBehaviour
         {
             if(hit.collider.CompareTag("ChargingTarget"))
             {
-                if (_canPlayChargeEvent && SoundManager.Instance.LanternCharging != null)
+                if (_canPlayChargeEvent)
                 {
                     _canPlayChargeEvent = false;
-                    SoundManager.Instance.LanternCharging.Post(SoundManager.Instance.gameObject);
                 }
                 isLookingAtAngel = true;
             }

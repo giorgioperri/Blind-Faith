@@ -121,7 +121,7 @@ MonoBehaviour:
     ParentPath: SoundBanks/Default Work Unit
     guid: 91f3f2c2e89f4143bd59d41dc8510ab9
     GuidInternal: 
-    m_lastTime: -8585340893568538701
+    m_lastTime: -8585340886769678862
     List:
     - name: SceneOne
       guid: 863447e4471e944882d5226d08221419
@@ -149,7 +149,7 @@ MonoBehaviour:
     ParentPath: Events/Default Work Unit
     guid: 5eb490fb28343a4fbde7e5ca0bff7b1d
     GuidInternal: 
-    m_lastTime: -8585340899272329403
+    m_lastTime: -8585340886769925593
     List: []
   - PhysicalPath: Events/SFX.wwu
     PathAndIcons:
@@ -162,7 +162,7 @@ MonoBehaviour:
     ParentPath: Events/SFX
     guid: 55664ecac6425a4daaa1e41d2047a4d9
     GuidInternal: 
-    m_lastTime: -8585340898792511178
+    m_lastTime: -8585340886769923770
     List:
     - name: ChargeLantern
       guid: 25536fc0a888f94ab8946add0b1d75d7
@@ -192,7 +192,7 @@ MonoBehaviour:
     ParentPath: Events/VA
     guid: 5f428d6daf7eb343ab7527033ef5cd2d
     GuidInternal: 
-    m_lastTime: -8585340890380208423
+    m_lastTime: -8585340886769922907
     List:
     - name: PauseVA
       guid: c9bf07d16212704a96bfebfab9f0e214
@@ -333,7 +333,7 @@ MonoBehaviour:
         guid: 14a961bd002ffe41ba1f908602494c89
       Path: Triggers/Default Work Unit/VA_Test
   ExpandedFileSystemItemIds: 
-  ExpandedWaapiItemIds: 0100000005000000060000000700000008000000090000000a000000
+  ExpandedWaapiItemIds: 0500000007000000
   AutoSyncSelection: 0
   autoPopulateEnabled: 1
   currentDataSource: 0
