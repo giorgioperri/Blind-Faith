@@ -152,12 +152,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 321892689828383714, guid: b0d5393eb2d2449a98b38ed752d950ea,
         type: 3}
-      propertyPath: dialogue.WwiseObjectReference
-      value: 
-      objectReference: {fileID: 11400000, guid: 99d960c13f3a14a92985fce129b7cf6d,
-        type: 2}
-    - target: {fileID: 321892689828383714, guid: b0d5393eb2d2449a98b38ed752d950ea,
-        type: 3}
       propertyPath: voiceLineSequence.Array.data[0]
       value: 
       objectReference: {fileID: 11400000, guid: d7f00b55a8f7c4024b1afa9bc8d7e58b,
@@ -236,34 +230,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b0d5393eb2d2449a98b38ed752d950ea, type: 3}
---- !u!1 &425952648 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 321892689828383725, guid: b0d5393eb2d2449a98b38ed752d950ea,
-    type: 3}
-  m_PrefabInstance: {fileID: 72202755}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &425952653
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 425952648}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c3ed696e4abb15b428f197aaaa8cf4f7, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_listeners:
-    initialListenerList: []
-    useDefaultListeners: 1
-  isEnvironmentAware: 1
-  isStaticObject: 0
-  m_positionOffsetData:
-    KeepMe: 0
-    positionOffset: {x: 0, y: 0, z: 0}
-  m_posOffsetData: {fileID: 0}
-  listenerMask: 1
 --- !u!1 &542508511
 GameObject:
   m_ObjectHideFlags: 0
@@ -1325,6 +1291,11 @@ PrefabInstance:
     - target: {fileID: 4946107207273120263, guid: 39b30fed8dbb54ed5b29578588d40292,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7895317906512925677, guid: 39b30fed8dbb54ed5b29578588d40292,
+        type: 3}
+      propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []

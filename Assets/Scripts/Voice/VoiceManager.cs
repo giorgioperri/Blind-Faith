@@ -6,10 +6,14 @@ using UnityEngine;
 
 public class VoiceManager : MonoBehaviour
 {
+    [HideInInspector] public AudioSource audioSource;
     public static VoiceManager Instance;
+
+    private bool _isPlaying;
     
     private int _currentSequenceIndex = 0;
     private VoiceLineSequenceSO _currentVoiceLineSequence;
+    private float _currentVoiceLineTime = 0;
 
     private void Awake()
     {
@@ -21,26 +25,27 @@ public class VoiceManager : MonoBehaviour
         Instance = this;
     }
 
-    public void InitVoiceLineSequence(VoiceLineSequenceSO voiceLineSequence)
+    private void Start()
     {
-        StopAllCoroutines();
-        _currentSequenceIndex = 0;
-        _currentVoiceLineSequence = voiceLineSequence;
-
-        if(GameManager.Instance.areSubtitlesActivated) SubtitlesUI.Instance.ActivateSubtitles();
-        SubtitlesUI.Instance.SetSubtitle(voiceLineSequence.sequenceLines[_currentSequenceIndex].subtitle);
-        voiceLineSequence.sequenceLines[_currentSequenceIndex].wwiseEvent.Post(gameObject, (uint)AkCallbackType.AK_EndOfEvent, WwiseEventEnd);
+        audioSource = gameObject.AddComponent<AudioSource>();
     }
-    
-    public void WwiseEventEnd(object in_cookie, AkCallbackType in_type, object in_info)
+
+    private void Update()
     {
-        if (in_type == AkCallbackType.AK_EndOfEvent) {
+        if (GameManager.Instance.isPaused || !_currentVoiceLineSequence || _currentSequenceIndex + 1 > _currentVoiceLineSequence.sequenceLines.Count) return;
+
+        _currentVoiceLineTime += Time.deltaTime;
+
+        if (_currentVoiceLineTime >= _currentVoiceLineSequence.sequenceLines[_currentSequenceIndex].clipDuration 
+            + _currentVoiceLineSequence.sequenceLines[_currentSequenceIndex].nextClipOffset)
+        {
             SubtitlesUI.Instance.DeactivateSubtitles();
+            _currentVoiceLineTime = 0;
             _currentSequenceIndex++;
 
             if (_currentSequenceIndex + 1 <= _currentVoiceLineSequence.sequenceLines.Count)
             {
-                StartCoroutine(WaitForOffset());
+                NextLine(_currentVoiceLineSequence.sequenceLines[_currentSequenceIndex]);
             }
             else
             {
@@ -49,17 +54,22 @@ public class VoiceManager : MonoBehaviour
         }
     }
 
-    private IEnumerator WaitForOffset()
+    public void InitVoiceLineSequence(VoiceLineSequenceSO voiceLineSequence)
     {
-        yield return new WaitForSecondsRealtime(_currentVoiceLineSequence.sequenceLines[_currentSequenceIndex -1 ].nextClipOffset);
-        yield return new WaitUntil(() => !GameManager.Instance.isPaused);
-        NextLine(_currentVoiceLineSequence.sequenceLines[_currentSequenceIndex]);
+        audioSource.Stop();
+        _currentSequenceIndex = 0;
+        _currentVoiceLineTime = 0;
+        _currentVoiceLineSequence = voiceLineSequence;
+
+        if(GameManager.Instance.areSubtitlesActivated) SubtitlesUI.Instance.ActivateSubtitles();
+        SubtitlesUI.Instance.SetSubtitle(voiceLineSequence.sequenceLines[_currentSequenceIndex].subtitle);
+        audioSource.PlayOneShot(voiceLineSequence.sequenceLines[_currentSequenceIndex].voiceClip);
     }
 
     public void NextLine(VoiceLineSO voiceLine)
     {
         if(GameManager.Instance.areSubtitlesActivated) SubtitlesUI.Instance.ActivateSubtitles();
         SubtitlesUI.Instance.SetSubtitle(voiceLine.subtitle);
-        voiceLine.wwiseEvent.Post(gameObject, (uint)AkCallbackType.AK_EndOfEvent, WwiseEventEnd);
+        audioSource.PlayOneShot(voiceLine.voiceClip);
     }
 }

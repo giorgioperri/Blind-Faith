@@ -6,13 +6,12 @@ using UnityEngine;
 public class SubtitlesTrigger : MonoBehaviour
 {
     public VoiceLineSequenceSO voiceLineSequence;
-    
+
     private void OnTriggerEnter(Collider other)
     {
         if (other.CompareTag("Player"))
         {
             VoiceManager.Instance.InitVoiceLineSequence(voiceLineSequence);
-            Destroy(gameObject);
         }
-    }
+    }   
 }

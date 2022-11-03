@@ -12,9 +12,6 @@ public class GameManager : MonoBehaviour
     
     public static GameManager Instance;
 
-    public AK.Wwise.Event PauseVA;
-    public AK.Wwise.Event ResumeVA;
-
     private void Awake()
     {
         if (Instance != null)
@@ -38,11 +35,11 @@ public class GameManager : MonoBehaviour
             PauseManager.Instance.ToggleMenu(isPaused);
             if (isPaused)
             {
-                PauseVA.Post(VoiceManager.Instance.gameObject);
+                VoiceManager.Instance.audioSource.Pause();
             }
             else
             {
-                ResumeVA.Post(VoiceManager.Instance.gameObject);
+                VoiceManager.Instance.audioSource.UnPause();
             }
             playerInput.pause = false;
         }
