@@ -5,22 +5,46 @@ using UnityEngine;
 
 public class LanternManager : MonoBehaviour
 {
-    private float _lanternCharge = 0;
-    [SerializeField] private float _lanternDepletingTime = 180;
-    private float _currentLanternTime = 0;
+    public float _lanternCharge = 0;
+    [HideInInspector] public float currentLanternDepleteTime = 0;
+    [HideInInspector] public float currentLanternRechargeTime = 0;
+    [SerializeField] private float _lanternDepletingTime = 60;
+    [SerializeField] private float _lanternRechargingTime = 3;
     [SerializeField] private Material lightMaterial;
+    
+    public static LanternManager Instance;
+
+    private void Awake()
+    {
+        if (Instance != null)
+        {
+            Destroy(this);
+        }
+        
+        Instance = this;
+    }
 
     private void Update()
     {
-        if (_lanternCharge >= 0 && _currentLanternTime <= _lanternDepletingTime)
+        lightMaterial.SetFloat("_Opacity", _lanternCharge);
+        
+        if (GameManager.Instance.isBathingInLight)
         {
-            _currentLanternTime += Time.deltaTime;
-            
-            _lanternCharge = Mathf.Lerp (1, 0, Mathf.InverseLerp (0, _lanternDepletingTime, _currentLanternTime));
-
-            lightMaterial.SetFloat("_Opacity", _lanternCharge);
+            if (GameManager.Instance.isLookingAtAngel && _lanternCharge <= 1)
+            {
+                currentLanternRechargeTime += Time.deltaTime;
+                _lanternCharge = Mathf.Lerp (0, 1, Mathf.InverseLerp (0, _lanternRechargingTime, currentLanternRechargeTime));
+            }
+            return;
+        }
+        
+        if (_lanternCharge >= 0 && currentLanternDepleteTime <= _lanternDepletingTime)
+        {
+            currentLanternDepleteTime += Time.deltaTime;
+            _lanternCharge = Mathf.Lerp (1, 0, Mathf.InverseLerp (0, _lanternDepletingTime, currentLanternDepleteTime));
         }
     }
+    
 
     private void OnApplicationQuit()
     {

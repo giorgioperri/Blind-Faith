@@ -1,12 +1,15 @@
+using System;
 using StarterAssets;
 using UnityEngine;
 
 public class GameManager : MonoBehaviour
 {
     [HideInInspector] public bool isPaused;
+    public bool isBathingInLight;
+    public bool isLookingAtAngel;
     public bool areSubtitlesActivated = true;
-    
     [HideInInspector] public StarterAssetsInputs playerInput;
+    
     public static GameManager Instance;
 
     private void Awake()
@@ -26,7 +29,6 @@ public class GameManager : MonoBehaviour
 
     void Update()
     {
-        //Pause functionality
         if (playerInput.pause)
         {
             isPaused = !isPaused;
@@ -40,6 +42,33 @@ public class GameManager : MonoBehaviour
                 VoiceManager.Instance.audioSource.UnPause();
             }
             playerInput.pause = false;
+        }
+    }
+
+    private void FixedUpdate()
+    {
+        Ray ray = Camera.main.ViewportPointToRay(new Vector3(0.5f, 0.5f, 0));
+        Debug.DrawRay(ray.origin, ray.direction *= 100, Color.green);
+        RaycastHit hit;   
+        
+        if (Physics.Raycast(ray, out hit, 100))
+        {
+            if(hit.collider.CompareTag("ChargingTarget"))
+            {
+                isLookingAtAngel = true;
+            }
+            else
+            {
+                isLookingAtAngel = false;
+            }
+        }
+        else if (isLookingAtAngel)
+        {
+            if (isBathingInLight)
+            {
+                //has exited target
+            }
+            isLookingAtAngel = false;
         }
     }
 }

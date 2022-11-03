@@ -12,7 +12,6 @@ public class RingRotator : MonoBehaviour
 {
     [SerializeField] private RotationAxis _rotationAxis;
     [SerializeField] private float _rotationSpeed = .2f;
-    private bool _align;
     private Quaternion originalRotation;
 
     private void Start()
@@ -34,21 +33,9 @@ public class RingRotator : MonoBehaviour
             distanceFromBathingAreaOffset = 1f / distanceFromBathingAreaOffset;
         }
 
-        Ray ray = Camera.main.ViewportPointToRay(new Vector3(0.5f, 0.5f, 0));
-        ray.direction *= 100;
-        
-        RaycastHit hit;
-        
-        if (Physics.Raycast(ray, out hit))
-        {
-            _align = hit.collider.CompareTag("ChargingTarget");
-        }
-
-        if(_align)
+        if(GameManager.Instance.isLookingAtAngel)
         {
             var step = 300 * Time.deltaTime;
-
-            // Rotate our transform a step closer to the target's.
             transform.rotation = Quaternion.RotateTowards(transform.rotation, originalRotation, step);
             return;
         }
