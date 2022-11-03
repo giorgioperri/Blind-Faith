@@ -65,6 +65,13 @@ public class LightBeam
 
             CastRay(pos, dir, laser);
         }
+        else if(hitInfo.collider.gameObject.tag == "Door")
+        {
+            //hitInfo.collider.gameObject.GetComponent<Renderer>().material.color = Color.green;
+            hitInfo.collider.gameObject.AddComponent<Door>();
+            Vector3 pos = hitInfo.point;
+            //CastRay(pos, direction, laser);
+        }
         else
         {
             _lightIndices.Add(hitInfo.point);

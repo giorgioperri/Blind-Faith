@@ -8,6 +8,7 @@ public class HandAnimatorController : MonoBehaviour
 {
     private Animator _animController;
     private StarterAssetsInputs _inputs;
+    public bool hasRaisedLantern;
     
     private void Awake()
     {
@@ -21,11 +22,13 @@ public class HandAnimatorController : MonoBehaviour
         {
             _animController.SetBool("hasRaisedLantern", true);
             _inputs.hasRaisedLantern = false;
+            hasRaisedLantern = true;
         }
         else if (_inputs.hasRaisedLantern && _animController.GetBool("hasRaisedLantern"))
         {
             _animController.SetBool("hasRaisedLantern", false);
             _inputs.hasRaisedLantern = false;
+            hasRaisedLantern = false;
         }
     }
 }

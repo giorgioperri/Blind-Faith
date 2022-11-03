@@ -177,6 +177,7 @@ namespace StarterAssets
             {
 				_currentInteractable.OnInteraction();
             }
+			
         }
 
         private void LateUpdate()

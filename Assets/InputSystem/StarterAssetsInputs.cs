@@ -57,13 +57,13 @@ namespace StarterAssets
 		public void OnRaiseLantern(InputValue value)
 		{
 			RaiseLanternInput(value.isPressed);
-    }
+		}
 		public void OnInteract(InputValue value)
 		{
-			InteractInput(value.isPressed);
+			InteractInput(value.isPressed);	
 		}
-#endif
 
+#endif
 
 		public void MoveInput(Vector2 newMoveDirection)
 		{

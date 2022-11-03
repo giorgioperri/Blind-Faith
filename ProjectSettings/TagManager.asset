@@ -6,6 +6,8 @@ TagManager:
   tags:
   - CinemachineTarget
   - Mirror
+  - Socket
+  - Door
   layers:
   - Default
   - TransparentFX
