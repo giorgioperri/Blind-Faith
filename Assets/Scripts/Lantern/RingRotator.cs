@@ -11,7 +11,7 @@ enum RotationAxis
 public class RingRotator : MonoBehaviour
 {
     [SerializeField] private RotationAxis _rotationAxis;
-    [SerializeField] private float _rotationSpeed = .2f;
+    [SerializeField] private float _rotationSpeed = .4f;
     private Quaternion originalRotation;
 
     private void Start()
@@ -21,6 +21,8 @@ public class RingRotator : MonoBehaviour
 
     void Update()
     {
+        if (LightBathingArea.Instance == null) return;
+        
         float distanceFromBathingAreaOffset = 
             Vector3.Distance(transform.position, LightBathingArea.Instance.transform.position);
 
@@ -30,7 +32,7 @@ public class RingRotator : MonoBehaviour
         }
         else
         {
-            distanceFromBathingAreaOffset = 1f / distanceFromBathingAreaOffset;
+            distanceFromBathingAreaOffset = .9f / distanceFromBathingAreaOffset;
         }
 
         if(GameManager.Instance.isLookingAtAngel)
