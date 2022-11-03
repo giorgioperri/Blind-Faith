@@ -2,20 +2,25 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5374623f-f723-49c8-bd7b-db22ab670095" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.vsconfig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Environment/Art/Materials/Particle_Godray_Mat.mat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Environment/Art/Materials/Particle_Godray_Mat.mat.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scenes/Scenes_Rafal.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scenes/Scenes_Rafal/Playground_Rafal.unity" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scenes/Scenes_Rafal/Playground_Rafal.unity.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/PullRequestTutorial.pdf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/RepositoryPolicy.pdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Environment/Art/Materials/ShaderGraphGrid_01_Mat.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Environment/Art/Materials/ShaderGraphGrid_01_Mat.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/InputSystem/StarterAssetsInputs.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/InputSystem/StarterAssetsInputs.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Playground.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Playground.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/FirstPersonController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/FirstPersonController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UserSettings/Layouts/default-2021.dwlt" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/Layouts/default-2021.dwlt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Blind Faith/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Blind Faith/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Scenes_Giorgio/Subtitles_Playground.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Scenes_Giorgio/Subtitles_Playground.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ScriptableObjects/Voice/Sequences/ClerkIntro.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ScriptableObjects/Voice/Sequences/ClerkIntro.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Voice/SubtitlesTrigger.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Voice/SubtitlesTrigger.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Voice/VoiceLineSequenceSO.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Voice/VoiceLineSequenceSO.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Voice/VoiceManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Voice/VoiceManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Wwise/Editor/ProjectData/AkWwiseProjectData.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Wwise/Editor/ProjectData/AkWwiseProjectData.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Blind-Faith_WwiseProject/.cache/SoundBankInfoCache.dat" beforeDir="false" afterPath="$PROJECT_DIR$/Blind-Faith_WwiseProject/.cache/SoundBankInfoCache.dat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Blind-Faith_WwiseProject/Blind-Faith_WwiseProject.crossover.validationcache" beforeDir="false" afterPath="$PROJECT_DIR$/Blind-Faith_WwiseProject/Blind-Faith_WwiseProject.crossover.validationcache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Blind-Faith_WwiseProject/Blind-Faith_WwiseProject.crossover.wsettings" beforeDir="false" afterPath="$PROJECT_DIR$/Blind-Faith_WwiseProject/Blind-Faith_WwiseProject.crossover.wsettings" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Blind-Faith_WwiseProject/Events/Default Work Unit.wwu" beforeDir="false" afterPath="$PROJECT_DIR$/Blind-Faith_WwiseProject/Events/Default Work Unit.wwu" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Blind-Faith_WwiseProject/GeneratedSoundBanks/Mac/Init.bnk" beforeDir="false" afterPath="$PROJECT_DIR$/Blind-Faith_WwiseProject/GeneratedSoundBanks/Mac/Init.bnk" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Blind-Faith_WwiseProject/GeneratedSoundBanks/Mac/SoundbanksInfo.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Blind-Faith_WwiseProject/GeneratedSoundBanks/Mac/SoundbanksInfo.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Blind-Faith_WwiseProject/GeneratedSoundBanks/Mac/VoiceActing.bnk" beforeDir="false" afterPath="$PROJECT_DIR$/Blind-Faith_WwiseProject/GeneratedSoundBanks/Mac/VoiceActing.bnk" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Blind-Faith_WwiseProject/GeneratedSoundBanks/Mac/VoiceActing.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Blind-Faith_WwiseProject/GeneratedSoundBanks/Mac/VoiceActing.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Blind-Faith_WwiseProject/GeneratedSoundBanks/Windows/Init.bnk" beforeDir="false" afterPath="$PROJECT_DIR$/Blind-Faith_WwiseProject/GeneratedSoundBanks/Windows/Init.bnk" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Blind-Faith_WwiseProject/GeneratedSoundBanks/Windows/SoundbanksInfo.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Blind-Faith_WwiseProject/GeneratedSoundBanks/Windows/SoundbanksInfo.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Blind-Faith_WwiseProject/GeneratedSoundBanks/Windows/VoiceActing.bnk" beforeDir="false" afterPath="$PROJECT_DIR$/Blind-Faith_WwiseProject/GeneratedSoundBanks/Windows/VoiceActing.bnk" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Blind-Faith_WwiseProject/GeneratedSoundBanks/Windows/VoiceActing.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Blind-Faith_WwiseProject/GeneratedSoundBanks/Windows/VoiceActing.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -99,6 +104,10 @@
       <workItem from="1666877216907" duration="4121000" />
       <workItem from="1666958573246" duration="18271000" />
       <workItem from="1667046251413" duration="16000" />
+      <workItem from="1667388917683" duration="281000" />
+      <workItem from="1667389218565" duration="1670000" />
+      <workItem from="1667391013670" duration="4291000" />
+      <workItem from="1667400786214" duration="3854000" />
     </task>
     <servers />
   </component>

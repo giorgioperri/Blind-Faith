@@ -50,6 +50,16 @@ MonoBehaviour:
   isPaused: 0
   areSubtitlesActivated: 1
   playerInput: {fileID: 0}
+  PauseVA:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 92d72fb4155b540db8375c877f26c9d4,
+      type: 2}
+  ResumeVA:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: d2ab51f5d8e064ab783f626e06948d63,
+      type: 2}
 --- !u!1001 &7634268730835033620
 PrefabInstance:
   m_ObjectHideFlags: 0
