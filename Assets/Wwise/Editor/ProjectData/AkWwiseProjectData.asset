@@ -24,7 +24,7 @@ MonoBehaviour:
     ParentPath: Virtual Acoustics/Default Work Unit
     guid: 8157776944d252459e5c3d8483760091
     GuidInternal: 
-    m_lastTime: -8585341207887820466
+    m_lastTime: -8585341042029008783
     List: []
   AuxBusWwu:
   - PhysicalPath: Master-Mixer Hierarchy/Default Work Unit.wwu
@@ -38,7 +38,7 @@ MonoBehaviour:
     ParentPath: Master-Mixer Hierarchy/Default Work Unit
     guid: c6b41ec9dc56414596c429e948904d66
     GuidInternal: 
-    m_lastTime: -8585341207888053428
+    m_lastTime: -8585341042029158260
     List:
     - name: Ambisonic_Aux_Mix
       guid: 85f372a27f8c5b46aaa7986b8fa7eec7
@@ -121,11 +121,11 @@ MonoBehaviour:
     ParentPath: SoundBanks/Default Work Unit
     guid: 91f3f2c2e89f4143bd59d41dc8510ab9
     GuidInternal: 
-    m_lastTime: -8585341207887827030
+    m_lastTime: -8585340893568538701
     List:
-    - name: VoiceActing
+    - name: SceneOne
       guid: 863447e4471e944882d5226d08221419
-      id: 2662087701
+      id: 2753938861
       PathAndIcons:
       - ElementName: SoundBanks
         ObjectType: 5
@@ -133,10 +133,10 @@ MonoBehaviour:
       - ElementName: Default Work Unit
         ObjectType: 12
         guid: 91f3f2c2e89f4143bd59d41dc8510ab9
-      - ElementName: VoiceActing
+      - ElementName: SceneOne
         ObjectType: 7
         guid: 863447e4471e944882d5226d08221419
-      Path: SoundBanks/Default Work Unit/VoiceActing
+      Path: SoundBanks/Default Work Unit/SceneOne
   EventWwu:
   - PhysicalPath: Events/Default Work Unit.wwu
     PathAndIcons:
@@ -149,7 +149,50 @@ MonoBehaviour:
     ParentPath: Events/Default Work Unit
     guid: 5eb490fb28343a4fbde7e5ca0bff7b1d
     GuidInternal: 
-    m_lastTime: -8585341203850095836
+    m_lastTime: -8585340899272329403
+    List: []
+  - PhysicalPath: Events/SFX.wwu
+    PathAndIcons:
+    - ElementName: Events
+      ObjectType: 5
+      guid: 00000000000000000000000000000000
+    - ElementName: SFX
+      ObjectType: 12
+      guid: 55664ecac6425a4daaa1e41d2047a4d9
+    ParentPath: Events/SFX
+    guid: 55664ecac6425a4daaa1e41d2047a4d9
+    GuidInternal: 
+    m_lastTime: -8585340898792511178
+    List:
+    - name: ChargeLantern
+      guid: 25536fc0a888f94ab8946add0b1d75d7
+      id: 3336309979
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: SFX
+        ObjectType: 12
+        guid: 55664ecac6425a4daaa1e41d2047a4d9
+      - ElementName: ChargeLantern
+        ObjectType: 3
+        guid: 25536fc0a888f94ab8946add0b1d75d7
+      Path: Events/SFX/ChargeLantern
+      maxAttenuation: 0
+      maxDuration: 3.428571
+      minDuration: 3.428571
+  - PhysicalPath: Events/VA.wwu
+    PathAndIcons:
+    - ElementName: Events
+      ObjectType: 5
+      guid: 00000000000000000000000000000000
+    - ElementName: VA
+      ObjectType: 12
+      guid: 5f428d6daf7eb343ab7527033ef5cd2d
+    ParentPath: Events/VA
+    guid: 5f428d6daf7eb343ab7527033ef5cd2d
+    GuidInternal: 
+    m_lastTime: -8585340890380208423
     List:
     - name: PauseVA
       guid: c9bf07d16212704a96bfebfab9f0e214
@@ -158,13 +201,13 @@ MonoBehaviour:
       - ElementName: Events
         ObjectType: 5
         guid: 00000000000000000000000000000000
-      - ElementName: Default Work Unit
+      - ElementName: VA
         ObjectType: 12
-        guid: 5eb490fb28343a4fbde7e5ca0bff7b1d
+        guid: 5f428d6daf7eb343ab7527033ef5cd2d
       - ElementName: PauseVA
         ObjectType: 3
         guid: c9bf07d16212704a96bfebfab9f0e214
-      Path: Events/Default Work Unit/PauseVA
+      Path: Events/VA/PauseVA
       maxAttenuation: 0
       maxDuration: 0
       minDuration: 0
@@ -175,13 +218,13 @@ MonoBehaviour:
       - ElementName: Events
         ObjectType: 5
         guid: 00000000000000000000000000000000
-      - ElementName: Default Work Unit
+      - ElementName: VA
         ObjectType: 12
-        guid: 5eb490fb28343a4fbde7e5ca0bff7b1d
+        guid: 5f428d6daf7eb343ab7527033ef5cd2d
       - ElementName: ResumeVA
         ObjectType: 3
         guid: ff552b59fb615f4e9a9d0a7a57d4f533
-      Path: Events/Default Work Unit/ResumeVA
+      Path: Events/VA/ResumeVA
       maxAttenuation: 0
       maxDuration: 0
       minDuration: 0
@@ -192,13 +235,13 @@ MonoBehaviour:
       - ElementName: Events
         ObjectType: 5
         guid: 00000000000000000000000000000000
-      - ElementName: Default Work Unit
+      - ElementName: VA
         ObjectType: 12
-        guid: 5eb490fb28343a4fbde7e5ca0bff7b1d
+        guid: 5f428d6daf7eb343ab7527033ef5cd2d
       - ElementName: VA_ClerkIntro
         ObjectType: 3
         guid: 4415bc8e58ba4848a9771366cdd39cee
-      Path: Events/Default Work Unit/VA_ClerkIntro
+      Path: Events/VA/VA_ClerkIntro
       maxAttenuation: 0
       maxDuration: 6.202177
       minDuration: 2.797823
@@ -214,7 +257,7 @@ MonoBehaviour:
     ParentPath: Game Parameters/Default Work Unit
     guid: 7f57676cb1f5124c98483947934c3f41
     GuidInternal: 
-    m_lastTime: -8585341207888270528
+    m_lastTime: -8585341042029432423
     List: []
   StateWwu:
   - PhysicalPath: States/Default Work Unit.wwu
@@ -228,7 +271,7 @@ MonoBehaviour:
     ParentPath: States/Default Work Unit
     guid: 15da347adefaa443abeba8e206daca95
     GuidInternal: 
-    m_lastTime: -8585341207887825192
+    m_lastTime: -8585341042029011704
     List: []
   SwitchWwu:
   - PhysicalPath: Switches/Default Work Unit.wwu
@@ -242,7 +285,7 @@ MonoBehaviour:
     ParentPath: Switches/Default Work Unit
     guid: 129020783626944d87631f9c3a93f8e0
     GuidInternal: 
-    m_lastTime: -8585341207887822461
+    m_lastTime: -8585341042029010761
     List: []
   TriggerWwu:
   - PhysicalPath: Triggers/Default Work Unit.wwu
@@ -256,7 +299,7 @@ MonoBehaviour:
     ParentPath: Triggers/Default Work Unit
     guid: 50b0bf7a09fe60448cd0a08f93cae076
     GuidInternal: 
-    m_lastTime: -8585341207887821341
+    m_lastTime: -8585341042029009791
     List:
     - name: New_Trigger
       guid: b52432610d4a47429784de539560cf52
@@ -290,7 +333,7 @@ MonoBehaviour:
         guid: 14a961bd002ffe41ba1f908602494c89
       Path: Triggers/Default Work Unit/VA_Test
   ExpandedFileSystemItemIds: 
-  ExpandedWaapiItemIds: 010000000600000007000000
+  ExpandedWaapiItemIds: 0100000005000000060000000700000008000000090000000a000000
   AutoSyncSelection: 0
   autoPopulateEnabled: 1
   currentDataSource: 0

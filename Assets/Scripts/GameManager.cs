@@ -12,6 +12,8 @@ public class GameManager : MonoBehaviour
     
     public static GameManager Instance;
 
+    private bool _canPlayChargeEvent = false;
+
     public AK.Wwise.Event PauseVA;
     public AK.Wwise.Event ResumeVA;
 
@@ -38,11 +40,11 @@ public class GameManager : MonoBehaviour
             PauseManager.Instance.ToggleMenu(isPaused);
             if (isPaused)
             {
-                PauseVA.Post(VoiceManager.Instance.gameObject);
+                PauseVA.Post(SoundManager.Instance.gameObject);
             }
             else
             {
-                ResumeVA.Post(VoiceManager.Instance.gameObject);
+                ResumeVA.Post(SoundManager.Instance.gameObject);
             }
             playerInput.pause = false;
         }
@@ -58,6 +60,11 @@ public class GameManager : MonoBehaviour
         {
             if(hit.collider.CompareTag("ChargingTarget"))
             {
+                if (_canPlayChargeEvent && SoundManager.Instance.LanternCharging != null)
+                {
+                    _canPlayChargeEvent = false;
+                    SoundManager.Instance.LanternCharging.Post(SoundManager.Instance.gameObject);
+                }
                 isLookingAtAngel = true;
             }
             else
@@ -67,11 +74,8 @@ public class GameManager : MonoBehaviour
         }
         else if (isLookingAtAngel)
         {
-            //has exited target
-            if (isBathingInLight)
-            {
-                
-            }
+            //has exited charging target
+            _canPlayChargeEvent = true;
             isLookingAtAngel = false;
         }
     }

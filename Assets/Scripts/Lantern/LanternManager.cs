@@ -50,6 +50,12 @@ public class LanternManager : MonoBehaviour
             //deplete
             _lanternCharge -= Time.deltaTime / _lanternDepletingTime;
         }
+
+        if (_lanternCharge <= 0)
+        {
+            if(SoundManager.Instance.LanternDischarged != null) 
+                SoundManager.Instance.LanternDischarged.Post(SoundManager.Instance.gameObject);
+        }
     }
     
     private void OnApplicationQuit()

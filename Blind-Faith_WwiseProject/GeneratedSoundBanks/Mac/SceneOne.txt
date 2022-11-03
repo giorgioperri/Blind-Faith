@@ -7,5 +7,5 @@ Event	ID	Name			Wwise Object Path	Notes
 In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	523566726	BF_VATest_s1	Y:\Desktop\ITU\Making Games\MakingGames22\Blind Faith\Blind-Faith_WwiseProject\.cache\Mac\SFX\BF_VATest_s1_4E8A5591.wem		\Actor-Mixer Hierarchy\VA\VA_Mixer\ClerkIntro\BF_VATest_s1		246896
 	640644510	BF_VATest_s1_1	Y:\Desktop\ITU\Making Games\MakingGames22\Blind Faith\Blind-Faith_WwiseProject\.cache\Mac\SFX\BF_VATest_s1_1_2456FF54.wem		\Actor-Mixer Hierarchy\VA\VA_Mixer\ClerkIntro\BF_VATest_s1_1		547160
-	718686453	Charge	Y:\Desktop\ITU\Making Games\MakingGames22\Blind Faith\Blind-Faith_WwiseProject\.cache\Mac\SFX\charge_7BD311D1.wem		\Actor-Mixer Hierarchy\SFX\Charge		604864
+	718686453	Charge	Y:\Desktop\ITU\Making Games\MakingGames22\Blind Faith\Blind-Faith_WwiseProject\.cache\Mac\SFX\charge_BFE563B8.wem		\Actor-Mixer Hierarchy\SFX\Charge		604864
 

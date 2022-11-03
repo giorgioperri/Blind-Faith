@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{CA4E6655-42C6-4D5A-AAA1-E41D2047A4D9}" SchemaVersion="103">
+	<Events>
+		<WorkUnit Name="SFX" ID="{CA4E6655-42C6-4D5A-AAA1-E41D2047A4D9}" PersistMode="Standalone">
+			<ChildrenList>
+				<Event Name="ChargeLantern" ID="{C06F5325-88A8-4AF9-B894-6ADD0B1D75D7}">
+					<ChildrenList>
+						<Action Name="" ID="{E5FAFAF3-C138-4DC5-A62A-06F2CB3E8F91}" ShortID="693722027">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Charge" ID="{BD23C3CF-6732-4572-A9B3-FEE09A213E15}" WorkUnitID="{F6E86FAD-370E-4204-8E4C-D9E6BC3FFC59}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+			</ChildrenList>
+		</WorkUnit>
+	</Events>
+</WwiseDocument>

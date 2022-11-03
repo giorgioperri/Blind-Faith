@@ -4,12 +4,23 @@ using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEngine;
 
-public class VoiceManager : MonoBehaviour
+public class SoundManager : MonoBehaviour
 {
-    public static VoiceManager Instance;
+    public static SoundManager Instance;
     
     private int _currentSequenceIndex = 0;
     private VoiceLineSequenceSO _currentVoiceLineSequence;
+
+    #region SoundEvents
+
+    public AK.Wwise.Event EquipLantern;
+    public AK.Wwise.Event UnequipLantern;
+    public AK.Wwise.Event LanternCharging;
+    public AK.Wwise.Event LanternDischarged;
+    public AK.Wwise.Event LanternLoop;
+    public AK.Wwise.Event StopLanternLoop;
+
+    #endregion
 
     private void Awake()
     {

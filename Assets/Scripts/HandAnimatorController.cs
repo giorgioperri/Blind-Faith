@@ -20,11 +20,19 @@ public class HandAnimatorController : MonoBehaviour
         if (_inputs.hasRaisedLantern && !_animController.GetBool("hasRaisedLantern"))
         {
             _animController.SetBool("hasRaisedLantern", true);
+            if(SoundManager.Instance.EquipLantern != null) 
+                SoundManager.Instance.EquipLantern.Post(SoundManager.Instance.gameObject);
+            if(SoundManager.Instance.LanternLoop != null) 
+                SoundManager.Instance.LanternLoop.Post(SoundManager.Instance.gameObject);
             _inputs.hasRaisedLantern = false;
         }
         else if (_inputs.hasRaisedLantern && _animController.GetBool("hasRaisedLantern"))
         {
             _animController.SetBool("hasRaisedLantern", false);
+            if(SoundManager.Instance.UnequipLantern != null) 
+                SoundManager.Instance.UnequipLantern.Post(SoundManager.Instance.gameObject);
+            if(SoundManager.Instance.StopLanternLoop != null) 
+                SoundManager.Instance.StopLanternLoop.Post(SoundManager.Instance.gameObject);
             _inputs.hasRaisedLantern = false;
         }
     }
