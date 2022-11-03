@@ -3,12 +3,10 @@
   <component name="ChangeListManager">
     <list default="true" id="5374623f-f723-49c8-bd7b-db22ab670095" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Blind Faith/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Blind Faith/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Lantern.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Lantern.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/Scenes_Giorgio/Lantern_Playground.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Scenes_Giorgio/Lantern_Playground.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/GameManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/GameManager.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Lantern/LanternManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Lantern/LanternManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Lantern/LightBathingArea.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Lantern/LightBathingArea.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Lantern/RingRotator.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Lantern/RingRotator.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UserSettings/Layouts/CurrentMaximizeLayout.dwlt" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/Layouts/CurrentMaximizeLayout.dwlt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

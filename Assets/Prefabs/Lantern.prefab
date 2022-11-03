@@ -380,7 +380,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0add58f91c72c486eb08d2944525dac8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _lanternDepletingTime: 180
+  _lanternCharge: 0
+  _lanternDepletingTime: 60
+  _lanternRechargingTime: 3
   lightMaterial: {fileID: 2100000, guid: bd03a89517ead4916a3a52fb9f9a90b9, type: 2}
 --- !u!1 &5608799773295247281
 GameObject:

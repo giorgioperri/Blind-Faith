@@ -64,9 +64,10 @@ public class GameManager : MonoBehaviour
         }
         else if (isLookingAtAngel)
         {
+            //has exited target
             if (isBathingInLight)
             {
-                //has exited target
+                
             }
             isLookingAtAngel = false;
         }
