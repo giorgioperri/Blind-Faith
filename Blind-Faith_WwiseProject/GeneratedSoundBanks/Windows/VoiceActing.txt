@@ -1,5 +1,6 @@
 Event	ID	Name			Wwise Object Path	Notes
 	175202686	VA_ClerkIntro			\Default Work Unit\VA_ClerkIntro	
+	556177649	VA_ClerkIntroClear			\Default Work Unit\VA_ClerkIntroClear	
 	2063776535	ResumeVA			\Default Work Unit\ResumeVA	
 	4258275658	PauseVA			\Default Work Unit\PauseVA	
 

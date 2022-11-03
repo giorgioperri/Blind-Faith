@@ -149,7 +149,7 @@ MonoBehaviour:
     ParentPath: Events/Default Work Unit
     guid: 5eb490fb28343a4fbde7e5ca0bff7b1d
     GuidInternal: 
-    m_lastTime: -8585341760850392295
+    m_lastTime: -8585341668906553534
     List:
     - name: PauseVA
       guid: c9bf07d16212704a96bfebfab9f0e214
@@ -202,6 +202,23 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: 6.202177
       minDuration: 2.797823
+    - name: VA_ClerkIntroClear
+      guid: 5bae7039f673574c83043f942a3fef7d
+      id: 556177649
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 5eb490fb28343a4fbde7e5ca0bff7b1d
+      - ElementName: VA_ClerkIntroClear
+        ObjectType: 3
+        guid: 5bae7039f673574c83043f942a3fef7d
+      Path: Events/Default Work Unit/VA_ClerkIntroClear
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
   RtpcWwu:
   - PhysicalPath: Game Parameters/Default Work Unit.wwu
     PathAndIcons:
@@ -214,7 +231,7 @@ MonoBehaviour:
     ParentPath: Game Parameters/Default Work Unit
     guid: 7f57676cb1f5124c98483947934c3f41
     GuidInternal: 
-    m_lastTime: -8585341845524267034
+    m_lastTime: -8585341668906464092
     List: []
   StateWwu:
   - PhysicalPath: States/Default Work Unit.wwu
@@ -290,7 +307,7 @@ MonoBehaviour:
         guid: 14a961bd002ffe41ba1f908602494c89
       Path: Triggers/Default Work Unit/VA_Test
   ExpandedFileSystemItemIds: 
-  ExpandedWaapiItemIds: 01000000050000000d0000000e000000
+  ExpandedWaapiItemIds: 010000000500000006000000070000000d0000000e000000140000001500000016000000
   AutoSyncSelection: 0
   autoPopulateEnabled: 1
   currentDataSource: 0

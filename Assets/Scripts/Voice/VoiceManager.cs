@@ -23,6 +23,7 @@ public class VoiceManager : MonoBehaviour
 
     public void InitVoiceLineSequence(VoiceLineSequenceSO voiceLineSequence)
     {
+        StopAllCoroutines();
         _currentSequenceIndex = 0;
         _currentVoiceLineSequence = voiceLineSequence;
 
@@ -31,11 +32,9 @@ public class VoiceManager : MonoBehaviour
         voiceLineSequence.sequenceLines[_currentSequenceIndex].wwiseEvent.Post(gameObject, (uint)AkCallbackType.AK_EndOfEvent, WwiseEventEnd);
     }
     
-    public void WwiseEventEnd(object in_cookie, AkCallbackType in_type, object in_info) {
+    public void WwiseEventEnd(object in_cookie, AkCallbackType in_type, object in_info)
+    {
         if (in_type == AkCallbackType.AK_EndOfEvent) {
-
-            Debug.Log("end");
-            
             SubtitlesUI.Instance.DeactivateSubtitles();
             _currentSequenceIndex++;
 
@@ -53,6 +52,7 @@ public class VoiceManager : MonoBehaviour
     private IEnumerator WaitForOffset()
     {
         yield return new WaitForSecondsRealtime(_currentVoiceLineSequence.sequenceLines[_currentSequenceIndex -1 ].nextClipOffset);
+        yield return new WaitUntil(() => !GameManager.Instance.isPaused);
         NextLine(_currentVoiceLineSequence.sequenceLines[_currentSequenceIndex]);
     }
 
