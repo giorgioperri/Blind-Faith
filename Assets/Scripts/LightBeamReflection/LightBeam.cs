@@ -10,6 +10,8 @@ public class LightBeam
     private GameObject _lightObj;
     private LineRenderer _lightLaser;
     private List<Vector3> _lightIndices = new List<Vector3>();
+
+    
     public LightBeam(Vector3 position, Vector3 direction, Material material)
     {
         _lightLaser = new LineRenderer();
@@ -58,6 +60,7 @@ public class LightBeam
 
     void CheckHit(RaycastHit hitInfo, Vector3 direction, LineRenderer laser)
     {
+
         if(hitInfo.collider.gameObject.tag == "Mirror")
         {
             Vector3 pos = hitInfo.point;
@@ -67,10 +70,12 @@ public class LightBeam
         }
         else if(hitInfo.collider.gameObject.tag == "Door")
         {
-            //hitInfo.collider.gameObject.GetComponent<Renderer>().material.color = Color.green;
-            hitInfo.collider.gameObject.AddComponent<Door>();
-            Vector3 pos = hitInfo.point;
-            //CastRay(pos, direction, laser);
+            if(hitInfo.collider.gameObject.GetComponent<Door>() == null)
+            {
+                hitInfo.collider.gameObject.AddComponent<Door>();
+            }
+            _lightIndices.Add(hitInfo.point);
+            UpdateLaser();
         }
         else
         {

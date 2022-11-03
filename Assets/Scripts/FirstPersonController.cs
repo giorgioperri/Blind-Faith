@@ -176,9 +176,14 @@ namespace StarterAssets
             if(_input.interact && _currentInteractable != null && Physics.Raycast(_mainCamera.GetComponent<Camera>().ViewportPointToRay(_interactionRayPoint), out RaycastHit hit, _interactionDistance, _interactionLayer))
             {
 				_currentInteractable.OnInteraction();
+				
             }
-			
-        }
+			else if(_input.pressedQ && _currentInteractable != null && Physics.Raycast(_mainCamera.GetComponent<Camera>().ViewportPointToRay(_interactionRayPoint),out  hit, _interactionDistance, _interactionLayer))
+			{
+				_currentInteractable.OnPressQ();
+			}
+
+		}
 
         private void LateUpdate()
 		{

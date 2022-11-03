@@ -52,4 +52,9 @@ public class Socket : Interactable
     public override void OnLoseFocus()
     {
     }
+
+    public override void OnPressQ()
+    {
+            
+    }
 }

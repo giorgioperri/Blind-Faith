@@ -11,4 +11,6 @@ public abstract class Interactable : MonoBehaviour
     public abstract void OnInteraction();
     public abstract void OnFocus();
     public abstract void OnLoseFocus();
+
+    public abstract void OnPressQ();
 }

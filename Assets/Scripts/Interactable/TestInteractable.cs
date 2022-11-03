@@ -28,4 +28,8 @@ public class TestInteractable : Interactable
         Debug.Log(" stopped looking at:" + gameObject.name);
     }
 
+    public override void OnPressQ()
+    {
+        transform.Rotate(0f, -45 * Time.deltaTime, 0f, Space.Self);
+    }
 }
