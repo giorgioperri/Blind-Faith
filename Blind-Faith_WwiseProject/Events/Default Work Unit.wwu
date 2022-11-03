@@ -8,7 +8,7 @@
 						<Action Name="" ID="{2312D1EC-0FD9-49A7-A9BD-C58F73ED2233}" ShortID="910157626">
 							<ReferenceList>
 								<Reference Name="Target">
-									<ObjectRef Name="Intro" ID="{9FE4C1F4-0295-4857-896C-B7DD5670F34B}" WorkUnitID="{405E6D03-D34E-40A5-8665-1A1025CDCBEB}"/>
+									<ObjectRef Name="ClerkIntro" ID="{9FE4C1F4-0295-4857-896C-B7DD5670F34B}" WorkUnitID="{405E6D03-D34E-40A5-8665-1A1025CDCBEB}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>
@@ -37,32 +37,6 @@
 							<ReferenceList>
 								<Reference Name="Target">
 									<ObjectRef Name="VA_Mixer" ID="{5B7ACCA4-E7B7-4BA0-8AF5-F7599629886C}" WorkUnitID="{405E6D03-D34E-40A5-8665-1A1025CDCBEB}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
-					</ChildrenList>
-				</Event>
-				<Event Name="VA_ClerkIntroClear" ID="{3970AE5B-73F6-4C57-8304-3F942A3FEF7D}">
-					<ChildrenList>
-						<Action Name="" ID="{9376A6C2-473B-45D9-8F97-61D10A229C22}" ShortID="896117596">
-							<PropertyList>
-								<Property Name="ActionType" Type="int16" Value="2"/>
-								<Property Name="Scope" Type="int16" Value="1"/>
-							</PropertyList>
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="VA_Mixer" ID="{5B7ACCA4-E7B7-4BA0-8AF5-F7599629886C}" WorkUnitID="{405E6D03-D34E-40A5-8665-1A1025CDCBEB}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
-						<Action Name="" ID="{DABF14A2-BC59-4D26-A53D-8B3CFDF088DB}" ShortID="584304963">
-							<PropertyList>
-								<Property Name="ActionType" Type="int16" Value="42"/>
-								<Property Name="Scope" Type="int16" Value="1"/>
-							</PropertyList>
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="Intro" ID="{9FE4C1F4-0295-4857-896C-B7DD5670F34B}" WorkUnitID="{405E6D03-D34E-40A5-8665-1A1025CDCBEB}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>

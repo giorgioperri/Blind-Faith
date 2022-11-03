@@ -13,7 +13,7 @@
 						</Reference>
 					</ReferenceList>
 					<ChildrenList>
-						<RandomSequenceContainer Name="Intro" ID="{9FE4C1F4-0295-4857-896C-B7DD5670F34B}" ShortID="1041599717">
+						<RandomSequenceContainer Name="ClerkIntro" ID="{9FE4C1F4-0295-4857-896C-B7DD5670F34B}" ShortID="1041599717">
 							<PropertyList>
 								<Property Name="RandomOrSequence" Type="int16" Value="0"/>
 							</PropertyList>

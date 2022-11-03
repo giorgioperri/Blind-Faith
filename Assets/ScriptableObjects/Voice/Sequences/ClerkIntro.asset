@@ -12,11 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e23f4fe30a8ce45fc9625af385fab37c, type: 3}
   m_Name: ClerkIntro
   m_EditorClassIdentifier: 
-  clearEvent:
-    idInternal: 0
-    valueGuidInternal: 
-    WwiseObjectReference: {fileID: 11400000, guid: 9a8fcd5730e98431381fc1eb9cda72d3,
-      type: 2}
   sequenceLines:
   - {fileID: 11400000, guid: 09d0f331fffd84f58b11921642356986, type: 2}
   - {fileID: 11400000, guid: 70da171933cd3447b8810b3742fd94c5, type: 2}
