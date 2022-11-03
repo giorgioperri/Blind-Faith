@@ -7,8 +7,8 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: LanternOrb
-  m_Shader: {fileID: -6465566751694194690, guid: 69eeecf171d5b462f95c58fc5380130e,
+  m_Name: LanternGlass
+  m_Shader: {fileID: -6465566751694194690, guid: d883dce4045bc43a2b8d60495e5c24ea,
     type: 3}
   m_ValidKeywords: []
   m_InvalidKeywords: []
@@ -35,19 +35,11 @@ Material:
         m_Offset: {x: 0, y: 0}
     m_Ints: []
     m_Floats:
-    - _ElectricityAmount: 3
-    - _ElectricityScale: 70
-    - _ElectricityThickness: 4
-    - _Opacity: 1
     - _QueueControl: 0
     - _QueueOffset: 0
-    m_Colors:
-    - _BaseColor: {r: 0.2735849, g: 0.20334013, b: 0, a: 1}
-    - _Color: {r: 2, g: 1.9372549, b: 1.3647059, a: 1}
-    - _ElectricitySpeed: {r: 0.1, g: 0.1, b: 0, a: 0}
-    - _NoiseSpeed: {r: 0.2, g: -0.1, b: 0, a: 0}
+    m_Colors: []
   m_BuildTextureStacks: []
---- !u!114 &6689187151753056158
+--- !u!114 &7454658142584401045
 MonoBehaviour:
   m_ObjectHideFlags: 11
   m_CorrespondingSourceObject: {fileID: 0}
