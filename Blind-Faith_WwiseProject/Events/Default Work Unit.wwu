@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{FB90B45E-3428-4F3A-BDE7-E5CA0BFF7B1D}" SchemaVersion="103">
+	<Events>
+		<WorkUnit Name="Default Work Unit" ID="{FB90B45E-3428-4F3A-BDE7-E5CA0BFF7B1D}" PersistMode="Standalone">
+			<ChildrenList>
+				<Event Name="VA_ClerkIntro" ID="{8EBC1544-BA58-4848-A977-1366CDD39CEE}">
+					<ChildrenList>
+						<Action Name="" ID="{2312D1EC-0FD9-49A7-A9BD-C58F73ED2233}" ShortID="910157626">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="ClerkIntro" ID="{9FE4C1F4-0295-4857-896C-B7DD5670F34B}" WorkUnitID="{405E6D03-D34E-40A5-8665-1A1025CDCBEB}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="PauseVA" ID="{D107BFC9-1262-4A70-96BF-EBFAB9F0E214}">
+					<ChildrenList>
+						<Action Name="" ID="{67D497D7-833B-488E-B825-AE2FA2CA78D7}" ShortID="431683553">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="7"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="VA_Mixer" ID="{5B7ACCA4-E7B7-4BA0-8AF5-F7599629886C}" WorkUnitID="{405E6D03-D34E-40A5-8665-1A1025CDCBEB}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="ResumeVA" ID="{592B55FF-61FB-4E5F-9A9D-0A7A57D4F533}">
+					<ChildrenList>
+						<Action Name="" ID="{B2AF1D39-DBFF-443D-9DF4-FA4F54B64383}" ShortID="74367978">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="9"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="VA_Mixer" ID="{5B7ACCA4-E7B7-4BA0-8AF5-F7599629886C}" WorkUnitID="{405E6D03-D34E-40A5-8665-1A1025CDCBEB}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+			</ChildrenList>
+		</WorkUnit>
+	</Events>
+</WwiseDocument>
