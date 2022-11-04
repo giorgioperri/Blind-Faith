@@ -12,8 +12,6 @@ public class GameManager : MonoBehaviour
     
     public static GameManager Instance;
 
-    private bool _canPlayChargeEvent = true;
-
     public AK.Wwise.Event PauseVA;
     public AK.Wwise.Event ResumeVA;
 
@@ -40,11 +38,11 @@ public class GameManager : MonoBehaviour
             PauseManager.Instance.ToggleMenu(isPaused);
             if (isPaused)
             {
-                PauseVA.Post(SoundManager.Instance.gameObject);
+                PauseVA.Post(PlayerSoundManager.Instance.gameObject);
             }
             else
             {
-                ResumeVA.Post(SoundManager.Instance.gameObject);
+                ResumeVA.Post(PlayerSoundManager.Instance.gameObject);
             }
             playerInput.pause = false;
         }

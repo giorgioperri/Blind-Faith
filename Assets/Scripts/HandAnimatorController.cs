@@ -20,19 +20,19 @@ public class HandAnimatorController : MonoBehaviour
         if (_inputs.hasRaisedLantern && !_animController.GetBool("hasRaisedLantern"))
         {
             _animController.SetBool("hasRaisedLantern", true);
-            if(SoundManager.Instance.EquipLantern != null) 
-                SoundManager.Instance.EquipLantern.Post(SoundManager.Instance.gameObject);
-            if(SoundManager.Instance.LanternLoop != null) 
-                SoundManager.Instance.LanternLoop.Post(SoundManager.Instance.gameObject);
+            if(PlayerSoundManager.Instance.EquipLantern != null) 
+                PlayerSoundManager.Instance.EquipLantern.Post(PlayerSoundManager.Instance.gameObject);
+            if(PlayerSoundManager.Instance.LanternLoop != null) 
+                PlayerSoundManager.Instance.LanternLoop.Post(PlayerSoundManager.Instance.gameObject);
             _inputs.hasRaisedLantern = false;
         }
         else if (_inputs.hasRaisedLantern && _animController.GetBool("hasRaisedLantern"))
         {
             _animController.SetBool("hasRaisedLantern", false);
-            if(SoundManager.Instance.UnequipLantern != null) 
-                SoundManager.Instance.UnequipLantern.Post(SoundManager.Instance.gameObject);
-            if(SoundManager.Instance.StopLanternLoop != null) 
-                SoundManager.Instance.StopLanternLoop.Post(SoundManager.Instance.gameObject);
+            if(PlayerSoundManager.Instance.UnequipLantern != null) 
+                PlayerSoundManager.Instance.UnequipLantern.Post(PlayerSoundManager.Instance.gameObject);
+            if(PlayerSoundManager.Instance.StopLanternLoop != null) 
+                PlayerSoundManager.Instance.StopLanternLoop.Post(PlayerSoundManager.Instance.gameObject);
             _inputs.hasRaisedLantern = false;
         }
     }
