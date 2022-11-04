@@ -3,51 +3,129 @@
 	<Events>
 		<WorkUnit Name="Default Work Unit" ID="{FB90B45E-3428-4F3A-BDE7-E5CA0BFF7B1D}" PersistMode="Standalone">
 			<ChildrenList>
-				<Event Name="VA_ClerkIntro" ID="{8EBC1544-BA58-4848-A977-1366CDD39CEE}">
-					<ChildrenList>
-						<Action Name="" ID="{2312D1EC-0FD9-49A7-A9BD-C58F73ED2233}" ShortID="910157626">
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="ClerkIntro" ID="{9FE4C1F4-0295-4857-896C-B7DD5670F34B}" WorkUnitID="{405E6D03-D34E-40A5-8665-1A1025CDCBEB}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
-					</ChildrenList>
-				</Event>
-				<Event Name="PauseVA" ID="{D107BFC9-1262-4A70-96BF-EBFAB9F0E214}">
-					<ChildrenList>
-						<Action Name="" ID="{67D497D7-833B-488E-B825-AE2FA2CA78D7}" ShortID="431683553">
-							<PropertyList>
-								<Property Name="ActionType" Type="int16" Value="7"/>
-							</PropertyList>
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="VA_Mixer" ID="{5B7ACCA4-E7B7-4BA0-8AF5-F7599629886C}" WorkUnitID="{405E6D03-D34E-40A5-8665-1A1025CDCBEB}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
-					</ChildrenList>
-				</Event>
-				<Event Name="ResumeVA" ID="{592B55FF-61FB-4E5F-9A9D-0A7A57D4F533}">
-					<ChildrenList>
-						<Action Name="" ID="{B2AF1D39-DBFF-443D-9DF4-FA4F54B64383}" ShortID="74367978">
-							<PropertyList>
-								<Property Name="ActionType" Type="int16" Value="9"/>
-							</PropertyList>
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="VA_Mixer" ID="{5B7ACCA4-E7B7-4BA0-8AF5-F7599629886C}" WorkUnitID="{405E6D03-D34E-40A5-8665-1A1025CDCBEB}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
-					</ChildrenList>
-				</Event>
 				<Event Name="FireLoop" ID="{5DFBBDFF-3C21-4D76-9869-7EA3CEE19CF0}">
 					<ChildrenList>
 						<Action Name="" ID="{84F257EB-E085-459B-9ABA-D11C9BED439C}" ShortID="220642073">
 							<ReferenceList>
 								<Reference Name="Target">
 									<ObjectRef Name="Fire_Furnace_Loop_PSEM_112" ID="{E4ED6E19-8E36-4DA8-ACED-AD2E1806E502}" WorkUnitID="{10A75CA5-3F55-455C-A103-004D7C43FEF2}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Folder Name="VA" ID="{F81C2C96-4E52-4DFA-9E07-284D538EA186}" ShortID="459486547">
+					<ChildrenList>
+						<Folder Name="VA_Clerk" ID="{E6A3E52D-343A-4497-AE1B-101991B7F261}" ShortID="646909935">
+							<ChildrenList>
+								<Event Name="VA_Clerk_Play" ID="{8EBC1544-BA58-4848-A977-1366CDD39CEE}">
+									<ChildrenList>
+										<Action Name="" ID="{F08465EA-CC6B-4EEC-9972-D4BE166F93D3}" ShortID="669647712">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="VA_Clerk_Switch_Container" ID="{D44CC410-BC7B-49F7-BF72-2CC2FED8D2DB}" WorkUnitID="{405E6D03-D34E-40A5-8665-1A1025CDCBEB}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="VA_Clerk_Set_Switch_Intro_1" ID="{7EA7607C-8D97-4C20-A8C9-A9352A1AE57B}">
+									<ChildrenList>
+										<Action Name="" ID="{AAF29022-6F3C-4146-A924-EF14A02C440D}" ShortID="982797447">
+											<PropertyList>
+												<Property Name="ActionType" Type="int16" Value="23"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="VA_Clerk_Intro_1" ID="{82AD2430-231F-4A0F-9382-CEE494A9DF9E}" WorkUnitID="{78209012-2636-4D94-8763-1F9C3A93F8E0}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+							</ChildrenList>
+						</Folder>
+						<Event Name="VA_Resume" ID="{592B55FF-61FB-4E5F-9A9D-0A7A57D4F533}">
+							<ChildrenList>
+								<Action Name="" ID="{B2AF1D39-DBFF-443D-9DF4-FA4F54B64383}" ShortID="74367978">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="9"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="VA_Mixer" ID="{5B7ACCA4-E7B7-4BA0-8AF5-F7599629886C}" WorkUnitID="{405E6D03-D34E-40A5-8665-1A1025CDCBEB}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="VA_Pause" ID="{D107BFC9-1262-4A70-96BF-EBFAB9F0E214}">
+							<ChildrenList>
+								<Action Name="" ID="{67D497D7-833B-488E-B825-AE2FA2CA78D7}" ShortID="431683553">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="7"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="VA_Mixer" ID="{5B7ACCA4-E7B7-4BA0-8AF5-F7599629886C}" WorkUnitID="{405E6D03-D34E-40A5-8665-1A1025CDCBEB}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+					</ChildrenList>
+				</Folder>
+				<Folder Name="SFX" ID="{C4B30AF5-20F8-48C4-96FF-11BAA26A0745}" ShortID="1063052780">
+					<ChildrenList>
+						<Folder Name="Player" ID="{7E1AB0F8-80E6-4008-9845-C82DBE000CFB}" ShortID="46868588">
+							<ChildrenList>
+								<Folder Name="Lanteren" ID="{75E1F59D-BADF-4217-BC76-42B96B7EB864}" ShortID="654851370">
+									<ChildrenList>
+										<Event Name="Lanteren_Undeploy" ID="{C39BA762-5454-47B8-BE61-A0506FA443EA}">
+											<ChildrenList>
+												<Action Name="" ID="{4FAC1E8A-594A-44E9-9D7C-D2DA2E9488ED}" ShortID="765230572">
+													<PropertyList>
+														<Property Name="ActionType" Type="int16" Value="2"/>
+														<Property Name="FadeTime" Type="Real64" Value="1"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Target">
+															<ObjectRef Name="Deploy_PH" ID="{64A1616D-4788-4A2F-963A-C6F151539BC5}" WorkUnitID="{10A75CA5-3F55-455C-A103-004D7C43FEF2}"/>
+														</Reference>
+													</ReferenceList>
+												</Action>
+												<Action Name="" ID="{29D05B47-F1DE-4407-B243-303130D176A9}" ShortID="585028681">
+													<ReferenceList>
+														<Reference Name="Target">
+															<ObjectRef Name="Undeploy_PH" ID="{C7D4928B-A459-4E8A-9F35-4CA2C819F547}" WorkUnitID="{10A75CA5-3F55-455C-A103-004D7C43FEF2}"/>
+														</Reference>
+													</ReferenceList>
+												</Action>
+											</ChildrenList>
+										</Event>
+										<Event Name="Lanteren_Deploy_Loop" ID="{61B90E09-878F-4EB3-8811-8081DEFED65F}">
+											<ChildrenList>
+												<Action Name="" ID="{6561CDB9-3BD3-440F-B80B-8B8A2DD7AD4F}" ShortID="405616046">
+													<ReferenceList>
+														<Reference Name="Target">
+															<ObjectRef Name="Deploy_PH" ID="{64A1616D-4788-4A2F-963A-C6F151539BC5}" WorkUnitID="{10A75CA5-3F55-455C-A103-004D7C43FEF2}"/>
+														</Reference>
+													</ReferenceList>
+												</Action>
+											</ChildrenList>
+										</Event>
+									</ChildrenList>
+								</Folder>
+							</ChildrenList>
+						</Folder>
+					</ChildrenList>
+				</Folder>
+				<Event Name="Amb_Church" ID="{D515D6DC-ED07-4A48-B7BC-43E13AA6D783}">
+					<ChildrenList>
+						<Action Name="" ID="{3DAB8D52-1543-4F48-B459-C008A67E0807}" ShortID="382885419">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Bluezone_BC0238_ambience_020" ID="{F5A94A59-EBFA-4225-9935-949603299B60}" WorkUnitID="{10A75CA5-3F55-455C-A103-004D7C43FEF2}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>

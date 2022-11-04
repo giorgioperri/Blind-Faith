@@ -1,11 +1,31 @@
 Event	ID	Name			Wwise Object Path	Notes
-	175202686	VA_ClerkIntro			\Default Work Unit\VA_ClerkIntro	
 	181700819	FireLoop			\Default Work Unit\FireLoop	
-	2063776535	ResumeVA			\Default Work Unit\ResumeVA	
-	4258275658	PauseVA			\Default Work Unit\PauseVA	
+	662947992	VA_Resume			\Default Work Unit\VA\VA_Resume	
+	740769089	Lanteren_Undeploy			\Default Work Unit\SFX\Player\Lanteren\Lanteren_Undeploy	
+	759350405	Lanteren_Deploy_Loop			\Default Work Unit\SFX\Player\Lanteren\Lanteren_Deploy_Loop	
+	938429017	VA_Pause			\Default Work Unit\VA\VA_Pause	
+	1398273777	VA_Clerk_Play			\Default Work Unit\VA\VA_Clerk\VA_Clerk_Play	
+	2840050639	Amb_Church			\Default Work Unit\Amb_Church	
+
+Switch Group	ID	Name			Wwise Object Path	Notes
+	232330383	VA_Clerk_Switch_Group			\Default Work Unit\VA\VA_Clerk_Switch_Group	
+
+Switch	ID	Name	Switch Group			Notes
+	1918899099	VA_Clerk_Intro_1	VA_Clerk_Switch_Group			
 
 In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
-	316983824	Fire_Furnace_Loop_PSEM_112	Y:\Desktop\ITU\Making Games\MakingGames22\Blind Faith\Blind-Faith_WwiseProject\.cache\Windows\SFX\Fire_Furnace_Loop_PSEM.112_D79FB2B7.wem		\Actor-Mixer Hierarchy\Default Work Unit\Fire_Furnace_Loop_PSEM_112		2498624
-	523566726	BF_VATest_s1	Y:\Desktop\ITU\Making Games\MakingGames22\Blind Faith\Blind-Faith_WwiseProject\.cache\Windows\SFX\BF_VATest_s1_4E8A5591.wem		\Actor-Mixer Hierarchy\VA\VA_Mixer\ClerkIntro\BF_VATest_s1		246896
-	640644510	BF_VATest_s1_1	Y:\Desktop\ITU\Making Games\MakingGames22\Blind Faith\Blind-Faith_WwiseProject\.cache\Windows\SFX\BF_VATest_s1_1_2456FF54.wem		\Actor-Mixer Hierarchy\VA\VA_Mixer\ClerkIntro\BF_VATest_s1_1		547160
+	9150397	Teleport	C:\Users\kille\Blind-Faith\Blind-Faith_WwiseProject\.cache\Windows\SFX\Teleport_D2B0A69F.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\PlayerActions\Lanteren\Undeploy_PH\Teleport		426620
+	156116196	Bluezone_BC0238_ambience_020	C:\Users\kille\Blind-Faith\Blind-Faith_WwiseProject\.cache\Windows\SFX\Bluezone_BC0238_ambience_020_5DFE2691.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ambience\Church_PH\Bluezone_BC0238_ambience_020		6953736
+	198540441	Powerup_Mutated_Drone	C:\Users\kille\Blind-Faith\Blind-Faith_WwiseProject\.cache\Windows\SFX\Powerup_Mutated_Drone_F80341E1.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\PlayerActions\Lanteren\Deploy_PH\Powerup_Mutated_Drone		508316
+	200631349	BF_VATest_s1_3	C:\Users\kille\Blind-Faith\Blind-Faith_WwiseProject\.cache\Windows\SFX\BF_VATest_s1_3_10C4C929.wem		\Actor-Mixer Hierarchy\VA\VA_Mixer\VA_Clerk_Switch_Container\ClerkIntro\BF_VATest_s1_3		557184
+	207267346	Mutated hammer	C:\Users\kille\Blind-Faith\Blind-Faith_WwiseProject\.cache\Windows\SFX\Mutated hammer_5B943112.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\PlayerActions\Lanteren\Undeploy_PH\Mutated hammer		540368
+	316983824	Fire_Furnace_Loop_PSEM_112	C:\Users\kille\Blind-Faith\Blind-Faith_WwiseProject\.cache\Windows\SFX\Fire_Furnace_Loop_PSEM.112_D79FB2B7.wem		\Actor-Mixer Hierarchy\Default Work Unit\Fire_Furnace_Loop_PSEM_112		2498624
+	353658067	BF_VATest_s1_4	C:\Users\kille\Blind-Faith\Blind-Faith_WwiseProject\.cache\Windows\SFX\BF_VATest_s1_4_10C4C929.wem		\Actor-Mixer Hierarchy\VA\VA_Mixer\VA_Clerk_Switch_Container\ClerkIntro\BF_VATest_s1_4		584706
+	523566726	BF_VATest_s1	C:\Users\kille\Blind-Faith\Blind-Faith_WwiseProject\.cache\Windows\SFX\BF_VATest_s1_4E8A5591.wem		\Actor-Mixer Hierarchy\VA\VA_Mixer\VA_Clerk_Switch_Container\ClerkIntro\BF_VATest_s1		246896
+	541704858	BF_VATest_s1_2	C:\Users\kille\Blind-Faith\Blind-Faith_WwiseProject\.cache\Windows\SFX\BF_VATest_s1_2_10C4C929.wem		\Actor-Mixer Hierarchy\VA\VA_Mixer\VA_Clerk_Switch_Container\ClerkIntro\BF_VATest_s1_2		330598
+	640644510	BF_VATest_s1_1	C:\Users\kille\Blind-Faith\Blind-Faith_WwiseProject\.cache\Windows\SFX\BF_VATest_s1_1_2456FF54.wem		\Actor-Mixer Hierarchy\VA\VA_Mixer\VA_Clerk_Switch_Container\ClerkIntro\BF_VATest_s1_1		547160
+	883270094	Texture	C:\Users\kille\Blind-Faith\Blind-Faith_WwiseProject\.cache\Windows\SFX\Switch weapon_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\PlayerActions\Lanteren\Deploy_PH\Texture		84418
+	929948901	Stinger_Metal_Silverware_Reversed	C:\Users\kille\Blind-Faith\Blind-Faith_WwiseProject\.cache\Windows\SFX\Stinger_Metal_Silverware_Reversed_4B9A62E7.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\PlayerActions\Lanteren\Undeploy_PH\Stinger_Metal_Silverware_Reversed		287488
+	937773785	Stinger_Metal_Silverware_Reversed	C:\Users\kille\Blind-Faith\Blind-Faith_WwiseProject\.cache\Windows\SFX\Stinger_Metal_Silverware_Reversed_9A766E4D.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\PlayerActions\Lanteren\Deploy_PH\Stinger_Metal_Silverware_Reversed		297260
+	974181242	Teleport	C:\Users\kille\Blind-Faith\Blind-Faith_WwiseProject\.cache\Windows\SFX\Teleport_E2C50CAA.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\PlayerActions\Lanteren\Deploy_PH\Teleport		513308
 
