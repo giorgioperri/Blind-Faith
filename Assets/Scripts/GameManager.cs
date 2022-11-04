@@ -38,11 +38,11 @@ public class GameManager : MonoBehaviour
             PauseManager.Instance.ToggleMenu(isPaused);
             if (isPaused)
             {
-                PauseVA.Post(PlayerSoundManager.Instance.gameObject);
+                PauseVA.Post(PlayerSoundController.Instance.gameObject);
             }
             else
             {
-                ResumeVA.Post(PlayerSoundManager.Instance.gameObject);
+                ResumeVA.Post(PlayerSoundController.Instance.gameObject);
             }
             playerInput.pause = false;
         }

@@ -577,7 +577,7 @@ PrefabInstance:
     - target: {fileID: 1518995303808600296, guid: 05aa5051364c84280bd69fe5908395d4,
         type: 3}
       propertyPath: m_Name
-      value: SoundManager
+      value: PlayerSoundController
       objectReference: {fileID: 0}
     - target: {fileID: 1518995303808600302, guid: 05aa5051364c84280bd69fe5908395d4,
         type: 3}
@@ -634,6 +634,12 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1518995303808600303, guid: 05aa5051364c84280bd69fe5908395d4,
+        type: 3}
+      propertyPath: LanternLoop.WwiseObjectReference
+      value: 
+      objectReference: {fileID: 11400000, guid: d6d7d3b77fed64e529389fff01da76f8,
+        type: 2}
     - target: {fileID: 1518995303808600303, guid: 05aa5051364c84280bd69fe5908395d4,
         type: 3}
       propertyPath: LanternCharging.WwiseObjectReference

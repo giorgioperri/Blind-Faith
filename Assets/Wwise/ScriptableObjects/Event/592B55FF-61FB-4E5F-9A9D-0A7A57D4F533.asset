@@ -12,6 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d0b283e4ef7b635458f37b0c79d86857, type: 3}
   m_Name: 592B55FF-61FB-4E5F-9A9D-0A7A57D4F533
   m_EditorClassIdentifier: 
-  objectName: VA_Resume
-  id: 662947992
+  objectName: ResumeVA
+  id: 2063776535
   guid: 592B55FF-61FB-4E5F-9A9D-0A7A57D4F533

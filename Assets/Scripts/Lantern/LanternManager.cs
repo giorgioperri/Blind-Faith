@@ -43,7 +43,7 @@ public class LanternManager : MonoBehaviour
                 //recharge
                 if (canPlayChargeSound)
                 {
-                    PlayerSoundManager.Instance.LanternCharging.Post(PlayerSoundManager.Instance.gameObject);
+                    PlayerSoundController.Instance.LanternCharging.Post(PlayerSoundController.Instance.gameObject);
                     canPlayChargeSound = false;
                 }
                 _lanternCharge += Time.deltaTime / _lanternRechargingTime;
@@ -59,8 +59,8 @@ public class LanternManager : MonoBehaviour
 
         if (_lanternCharge <= 0)
         {
-            if(PlayerSoundManager.Instance.LanternDischarged != null) 
-                PlayerSoundManager.Instance.LanternDischarged.Post(PlayerSoundManager.Instance.gameObject);
+            if(PlayerSoundController.Instance.LanternDischarged != null) 
+                PlayerSoundController.Instance.LanternDischarged.Post(PlayerSoundController.Instance.gameObject);
         }
     }
     

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<SoundBanksInfo Platform="Windows" BasePlatform="Windows" SchemaVersion="12" SoundbankVersion="140">
+	<RootPaths>
+		<ProjectRoot>/Users/giorgioperri/Library/Application Support/Wwise2019/Bottles/Wwise2019x64/dosdevices/y:/Desktop/ITU/Making Games/MakingGames22/Blind Faith/Blind-Faith_WwiseProject/</ProjectRoot>
+		<SourceFilesRoot>/Users/giorgioperri/Library/Application Support/Wwise2019/Bottles/Wwise2019x64/dosdevices/y:/Desktop/ITU/Making Games/MakingGames22/Blind Faith/Blind-Faith_WwiseProject/.cache/Windows/</SourceFilesRoot>
+		<SoundBanksRoot>/Users/giorgioperri/Library/Application Support/Wwise2019/Bottles/Wwise2019x64/dosdevices/y:/Desktop/ITU/Making Games/MakingGames22/Blind Faith/Blind-Faith_WwiseProject/GeneratedSoundBanks/Windows/</SoundBanksRoot>
+		<ExternalSourcesInputFile></ExternalSourcesInputFile>
+		<ExternalSourcesOutputRoot>/Users/giorgioperri/Library/Application Support/Wwise2019/Bottles/Wwise2019x64/dosdevices/y:/Desktop/ITU/Making Games/MakingGames22/Blind Faith/Blind-Faith_WwiseProject/GeneratedSoundBanks/Windows</ExternalSourcesOutputRoot>
+	</RootPaths>
+	<DialogueEvents/>
+	<StreamedFiles/>
+	<MediaFilesNotInAnyBank/>
+	<SoundBanks>
+		<SoundBank Id="1355168291" Language="SFX" Hash="4228992337">
+			<ObjectPath>Init</ObjectPath>
+			<ShortName>Init</ShortName>
+			<Path>Init.bnk</Path>
+			<IncludedAuxBusses>
+				<AuxBus Id="1584650008" Name="BinuralAux" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Binural\BinuralAux"/>
+				<AuxBus Id="2568407992" Name="Church" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Rooms\Church"/>
+				<AuxBus Id="2730119150" Name="Outdoors" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Rooms\Outdoors"/>
+				<AuxBus Id="2933838247" Name="SmallRoom" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Rooms\SmallRoom"/>
+			</IncludedAuxBusses>
+		</SoundBank>
+		<SoundBank Id="2662087701" Language="SFX" Hash="832203780">
+			<ObjectPath>\SoundBanks\Default Work Unit\VoiceActing</ObjectPath>
+			<ShortName>VoiceActing</ShortName>
+			<Path>VoiceActing.bnk</Path>
+			<IncludedEvents>
+				<Event Id="181700819" Name="FireLoop" ObjectPath="\Events\Default Work Unit\FireLoop" MaxAttenuation="20." DurationType="Infinite"/>
+				<Event Id="4258275658" Name="PauseVA" ObjectPath="\Events\Default Work Unit\PauseVA" MaxAttenuation="0." DurationType="OneShot" DurationMin="0." DurationMax="0."/>
+				<Event Id="2063776535" Name="ResumeVA" ObjectPath="\Events\Default Work Unit\ResumeVA" MaxAttenuation="0." DurationType="OneShot" DurationMin="0." DurationMax="0."/>
+				<Event Id="175202686" Name="VA_ClerkIntro" ObjectPath="\Events\Default Work Unit\VA_ClerkIntro" MaxAttenuation="20." DurationType="OneShot" DurationMin="2.797823" DurationMax="6.202177"/>
+			</IncludedEvents>
+			<IncludedMemoryFiles>
+				<File Id="316983824" Language="SFX">
+					<ShortName>Fire_Furnace_Loop_PSEM.112.wav</ShortName>
+					<Path>SFX/Fire_Furnace_Loop_PSEM.112_D79FB2B7.wem</Path>
+				</File>
+				<File Id="523566726" Language="SFX">
+					<ShortName>BF_VATest_s1.wav</ShortName>
+					<Path>SFX/BF_VATest_s1_4E8A5591.wem</Path>
+				</File>
+				<File Id="640644510" Language="SFX">
+					<ShortName>BF_VATest_s1_1.wav</ShortName>
+					<Path>SFX/BF_VATest_s1_1_2456FF54.wem</Path>
+				</File>
+			</IncludedMemoryFiles>
+		</SoundBank>
+	</SoundBanks>
+</SoundBanksInfo>
