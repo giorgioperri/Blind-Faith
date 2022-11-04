@@ -1,14 +1,19 @@
 Audio Bus	ID	Name			Wwise Object Path	Notes
-	297412052	Room Effects Bus			\Default Work Unit\Master Audio Bus\Room Effects Bus	
+	499593554	Binural			\Default Work Unit\Master Audio Bus\Binural	
+	1359360203	Rooms			\Default Work Unit\Master Audio Bus\Rooms	
 	3803692087	Master Audio Bus			\Default Work Unit\Master Audio Bus	
-	3867004631	AmbisonicsBus			\Default Work Unit\Master Audio Bus\AmbisonicsBus	
 
 Auxiliary Bus	ID	Name			Wwise Object Path	Notes
-	1767195844	Ambisonic_Aux_Mix			\Default Work Unit\Master Audio Bus\AmbisonicsBus\Ambisonic_Aux_Mix	
+	1584650008	BinuralAux			\Default Work Unit\Master Audio Bus\Binural\BinuralAux	
+	2568407992	Church			\Default Work Unit\Master Audio Bus\Rooms\Church	
+	2730119150	Outdoors			\Default Work Unit\Master Audio Bus\Rooms\Outdoors	
+	2933838247	SmallRoom			\Default Work Unit\Master Audio Bus\Rooms\SmallRoom	
 
 Effect plug-ins	ID	Name	Type				Notes
-	739135677	Resonance Audio Room Effects (Custom)	Resonance Audio Room Effects			
-	978070661	Resonance Audio Renderer (Custom)	Resonance Audio Renderer			
+	48620415	Have_U_Ever_Been_Outside	Wwise RoomVerb			
+	431288752	Resonance Audio Renderer (Custom)	Resonance Audio Renderer			
+	1159390747	Room_Medium_Tiled	Wwise RoomVerb			
+	2995775460	Room_Small	Wwise RoomVerb			
 
 Audio Devices	ID	Name	Type				Notes
 	2317455096	No_Output	No Output			

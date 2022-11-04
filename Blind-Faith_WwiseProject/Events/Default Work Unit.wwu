@@ -42,6 +42,17 @@
 						</Action>
 					</ChildrenList>
 				</Event>
+				<Event Name="FireLoop" ID="{5DFBBDFF-3C21-4D76-9869-7EA3CEE19CF0}">
+					<ChildrenList>
+						<Action Name="" ID="{84F257EB-E085-459B-9ABA-D11C9BED439C}" ShortID="220642073">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Fire_Furnace_Loop_PSEM_112" ID="{E4ED6E19-8E36-4DA8-ACED-AD2E1806E502}" WorkUnitID="{10A75CA5-3F55-455C-A103-004D7C43FEF2}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

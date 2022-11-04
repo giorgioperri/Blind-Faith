@@ -1,10 +1,11 @@
 Event	ID	Name			Wwise Object Path	Notes
 	175202686	VA_ClerkIntro			\Default Work Unit\VA_ClerkIntro	
-	556177649	VA_ClerkIntroClear			\Default Work Unit\VA_ClerkIntroClear	
+	181700819	FireLoop			\Default Work Unit\FireLoop	
 	2063776535	ResumeVA			\Default Work Unit\ResumeVA	
 	4258275658	PauseVA			\Default Work Unit\PauseVA	
 
 In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
-	523566726	BF_VATest_s1	Y:\Desktop\ITU\Making Games\MakingGames22\Blind Faith\Blind-Faith_WwiseProject\.cache\Mac\SFX\BF_VATest_s1_4E8A5591.wem		\Actor-Mixer Hierarchy\VA\VA_Mixer\Intro\BF_VATest_s1		246896
-	640644510	BF_VATest_s1_1	Y:\Desktop\ITU\Making Games\MakingGames22\Blind Faith\Blind-Faith_WwiseProject\.cache\Mac\SFX\BF_VATest_s1_1_2456FF54.wem		\Actor-Mixer Hierarchy\VA\VA_Mixer\Intro\BF_VATest_s1_1		547160
+	316983824	Fire_Furnace_Loop_PSEM_112	C:\Users\kille\Blind-Faith\Blind-Faith_WwiseProject\.cache\Mac\SFX\Fire_Furnace_Loop_PSEM.112_D79FB2B7.wem		\Actor-Mixer Hierarchy\Default Work Unit\Fire_Furnace_Loop_PSEM_112		2498624
+	523566726	BF_VATest_s1	C:\Users\kille\Blind-Faith\Blind-Faith_WwiseProject\.cache\Mac\SFX\BF_VATest_s1_4E8A5591.wem		\Actor-Mixer Hierarchy\VA\VA_Mixer\ClerkIntro\BF_VATest_s1		246896
+	640644510	BF_VATest_s1_1	C:\Users\kille\Blind-Faith\Blind-Faith_WwiseProject\.cache\Mac\SFX\BF_VATest_s1_1_2456FF54.wem		\Actor-Mixer Hierarchy\VA\VA_Mixer\ClerkIntro\BF_VATest_s1_1		547160
 

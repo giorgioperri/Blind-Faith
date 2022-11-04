@@ -13,25 +13,36 @@ namespace AK
 {
     namespace EVENTS
     {
-        static const AkUniqueID VA_TEST = 3051364989U;
+        static const AkUniqueID FIRELOOP = 181700819U;
+        static const AkUniqueID PAUSEVA = 4258275658U;
+        static const AkUniqueID RESUMEVA = 2063776535U;
+        static const AkUniqueID VA_CLERKINTRO = 175202686U;
     } // namespace EVENTS
+
+    namespace TRIGGERS
+    {
+        static const AkUniqueID NEW_TRIGGER = 4163741908U;
+    } // namespace TRIGGERS
 
     namespace BANKS
     {
         static const AkUniqueID INIT = 1355168291U;
-        static const AkUniqueID VA = 1534528554U;
+        static const AkUniqueID VOICEACTING = 2662087701U;
     } // namespace BANKS
 
     namespace BUSSES
     {
-        static const AkUniqueID AMBISONICSBUS = 3867004631U;
+        static const AkUniqueID BINURAL = 499593554U;
         static const AkUniqueID MASTER_AUDIO_BUS = 3803692087U;
-        static const AkUniqueID ROOM_EFFECTS_BUS = 297412052U;
+        static const AkUniqueID ROOMS = 1359360203U;
     } // namespace BUSSES
 
     namespace AUX_BUSSES
     {
-        static const AkUniqueID AMBISONIC_AUX_MIX = 1767195844U;
+        static const AkUniqueID BINURALAUX = 1584650008U;
+        static const AkUniqueID CHURCH = 2568407992U;
+        static const AkUniqueID OUTDOORS = 2730119150U;
+        static const AkUniqueID SMALLROOM = 2933838247U;
     } // namespace AUX_BUSSES
 
     namespace AUDIO_DEVICES
