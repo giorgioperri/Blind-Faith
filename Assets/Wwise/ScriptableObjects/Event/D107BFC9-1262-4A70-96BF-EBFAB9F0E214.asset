@@ -12,6 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d0b283e4ef7b635458f37b0c79d86857, type: 3}
   m_Name: D107BFC9-1262-4A70-96BF-EBFAB9F0E214
   m_EditorClassIdentifier: 
-  objectName: PauseVA
-  id: 4258275658
+  objectName: VA_Pause
+  id: 938429017
   guid: D107BFC9-1262-4A70-96BF-EBFAB9F0E214

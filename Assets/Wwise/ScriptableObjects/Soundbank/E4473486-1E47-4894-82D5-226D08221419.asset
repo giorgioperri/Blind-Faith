@@ -12,6 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7c8931b652d6b8b42aabd266d9d6ad95, type: 3}
   m_Name: E4473486-1E47-4894-82D5-226D08221419
   m_EditorClassIdentifier: 
-  objectName: VoiceActing
-  id: 2662087701
+  objectName: SCENE_INDEX
+  id: 3915164046
   guid: E4473486-1E47-4894-82D5-226D08221419
