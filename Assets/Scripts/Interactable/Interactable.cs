@@ -8,6 +8,7 @@ public abstract class Interactable : MonoBehaviour
     {
         gameObject.layer = 10;
     }
+
     public abstract void OnInteraction();
     public abstract void OnFocus();
     public abstract void OnLoseFocus();

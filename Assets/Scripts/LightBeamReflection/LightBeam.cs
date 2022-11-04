@@ -10,8 +10,8 @@ public class LightBeam
     private GameObject _lightObj;
     private LineRenderer _lightLaser;
     private List<Vector3> _lightIndices = new List<Vector3>();
+    public bool _hitTheDoor;
 
-    
     public LightBeam(Vector3 position, Vector3 direction, Material material)
     {
         _lightLaser = new LineRenderer();
@@ -70,15 +70,18 @@ public class LightBeam
         }
         else if(hitInfo.collider.gameObject.tag == "Door")
         {
-            if(hitInfo.collider.gameObject.GetComponent<Door>() == null)
+            _hitTheDoor = true;
+            if (hitInfo.collider.gameObject.GetComponent<Door>().enabled == false && _hitTheDoor)
             {
-                hitInfo.collider.gameObject.AddComponent<Door>();
+                hitInfo.collider.gameObject.GetComponent<Door>().enabled = true;
+                hitInfo.collider.gameObject.transform.GetChild(0).GetComponent<Renderer>().material.color = Color.green;
             }
             _lightIndices.Add(hitInfo.point);
             UpdateLaser();
         }
         else
         {
+            _hitTheDoor = false;
             _lightIndices.Add(hitInfo.point);
             UpdateLaser();
         }
