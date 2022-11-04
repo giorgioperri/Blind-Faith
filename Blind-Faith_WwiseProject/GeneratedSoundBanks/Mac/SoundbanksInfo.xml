@@ -19,12 +19,11 @@
 				<AuxBus Id="1767195844" Name="Ambisonic_Aux_Mix" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\AmbisonicsBus\Ambisonic_Aux_Mix"/>
 			</IncludedAuxBusses>
 		</SoundBank>
-		<SoundBank Id="2753938861" Language="SFX" Hash="3230271360">
+		<SoundBank Id="2753938861" Language="SFX" Hash="394179083">
 			<ObjectPath>\SoundBanks\Default Work Unit\SceneOne</ObjectPath>
 			<ShortName>SceneOne</ShortName>
 			<Path>SceneOne.bnk</Path>
 			<IncludedEvents>
-				<Event Id="3336309979" Name="ChargeLantern" ObjectPath="\Events\SFX\ChargeLantern" DurationType="OneShot" DurationMin="3.428571" DurationMax="3.428571"/>
 				<Event Id="4258275658" Name="PauseVA" ObjectPath="\Events\VA\PauseVA" MaxAttenuation="0." DurationType="OneShot" DurationMin="0." DurationMax="0."/>
 				<Event Id="2063776535" Name="ResumeVA" ObjectPath="\Events\VA\ResumeVA" MaxAttenuation="0." DurationType="OneShot" DurationMin="0." DurationMax="0."/>
 				<Event Id="175202686" Name="VA_ClerkIntro" ObjectPath="\Events\VA\VA_ClerkIntro" DurationType="OneShot" DurationMin="2.797823" DurationMax="6.202177"/>
@@ -37,10 +36,6 @@
 				<File Id="640644510" Language="SFX">
 					<ShortName>BF_VATest_s1_1.wav</ShortName>
 					<Path>SFX/BF_VATest_s1_1_2456FF54.wem</Path>
-				</File>
-				<File Id="718686453" Language="SFX">
-					<ShortName>charge.wav</ShortName>
-					<Path>SFX/charge_BFE563B8.wem</Path>
 				</File>
 			</IncludedMemoryFiles>
 		</SoundBank>

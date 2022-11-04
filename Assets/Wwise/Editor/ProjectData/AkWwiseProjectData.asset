@@ -162,25 +162,8 @@ MonoBehaviour:
     ParentPath: Events/SFX
     guid: 55664ecac6425a4daaa1e41d2047a4d9
     GuidInternal: 
-    m_lastTime: -8585340886769923770
-    List:
-    - name: ChargeLantern
-      guid: 25536fc0a888f94ab8946add0b1d75d7
-      id: 3336309979
-      PathAndIcons:
-      - ElementName: Events
-        ObjectType: 5
-        guid: 00000000000000000000000000000000
-      - ElementName: SFX
-        ObjectType: 12
-        guid: 55664ecac6425a4daaa1e41d2047a4d9
-      - ElementName: ChargeLantern
-        ObjectType: 3
-        guid: 25536fc0a888f94ab8946add0b1d75d7
-      Path: Events/SFX/ChargeLantern
-      maxAttenuation: 0
-      maxDuration: 3.428571
-      minDuration: 3.428571
+    m_lastTime: -8585340856015924830
+    List: []
   - PhysicalPath: Events/VA.wwu
     PathAndIcons:
     - ElementName: Events
@@ -333,7 +316,7 @@ MonoBehaviour:
         guid: 14a961bd002ffe41ba1f908602494c89
       Path: Triggers/Default Work Unit/VA_Test
   ExpandedFileSystemItemIds: 
-  ExpandedWaapiItemIds: 0500000007000000
+  ExpandedWaapiItemIds: 01000000050000000600000007000000
   AutoSyncSelection: 0
   autoPopulateEnabled: 1
   currentDataSource: 0

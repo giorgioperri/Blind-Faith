@@ -6,6 +6,7 @@ using UnityEngine;
 public class LanternManager : MonoBehaviour
 {
     public float _lanternCharge = 1;
+    public bool canPlayChargeSound = true;
     [SerializeField] private float _lanternDepletingTime = 60;
     [SerializeField] private float _lanternRechargingTime = 3;
     [SerializeField] private Material lightMaterial;
@@ -40,7 +41,11 @@ public class LanternManager : MonoBehaviour
             if (GameManager.Instance.isLookingAtAngel && _lanternCharge <= 1)
             {
                 //recharge
-                SoundManager.Instance.LanternCharging.Post(SoundManager.Instance.gameObject);
+                if (canPlayChargeSound)
+                {
+                    SoundManager.Instance.LanternCharging.Post(SoundManager.Instance.gameObject);
+                    canPlayChargeSound = false;
+                }
                 _lanternCharge += Time.deltaTime / _lanternRechargingTime;
             }
             return;

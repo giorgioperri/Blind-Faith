@@ -60,10 +60,6 @@ public class GameManager : MonoBehaviour
         {
             if(hit.collider.CompareTag("ChargingTarget"))
             {
-                if (_canPlayChargeEvent)
-                {
-                    _canPlayChargeEvent = false;
-                }
                 isLookingAtAngel = true;
             }
             else
@@ -74,7 +70,7 @@ public class GameManager : MonoBehaviour
         else if (isLookingAtAngel)
         {
             //has exited charging target
-            _canPlayChargeEvent = true;
+            LanternManager.Instance.canPlayChargeSound = true;
             isLookingAtAngel = false;
         }
     }
