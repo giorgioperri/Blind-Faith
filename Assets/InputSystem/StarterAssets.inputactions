@@ -67,6 +67,15 @@
                     "processors": "",
                     "interactions": "",
                     "initialStateCheck": false
+                },
+                {
+                    "name": "PressingQ",
+                    "type": "PassThrough",
+                    "id": "4e000eac-061c-46cd-89e4-7f33351bc485",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
                 }
             ],
             "bindings": [
@@ -268,7 +277,7 @@
                     "isComposite": false,
                     "isPartOfComposite": false
                 },
-                 {
+                {
                     "name": "",
                     "id": "68d51b63-02dd-48a5-b2d9-e6bc788490dd",
                     "path": "<Keyboard>/f",
@@ -287,6 +296,17 @@
                     "processors": "",
                     "groups": "",
                     "action": "Interact",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "3dcf6324-84fe-4507-9dbc-b195c7e91a39",
+                    "path": "<Keyboard>/q",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "PressingQ",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }

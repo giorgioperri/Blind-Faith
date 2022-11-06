@@ -18,6 +18,7 @@ namespace StarterAssets
 		//added raiseLantern state
 		public bool hasRaisedLantern;
 		public bool interact;
+		public bool pressedQ;
 
 		[Header("Movement Settings")]
 		public bool analogMovement;
@@ -57,14 +58,21 @@ namespace StarterAssets
 		public void OnRaiseLantern(InputValue value)
 		{
 			RaiseLanternInput(value.isPressed);
-    }
+		}
 		public void OnInteract(InputValue value)
 		{
-			InteractInput(value.isPressed);
+			InteractInput(value.isPressed);	
 		}
+		public void OnPressingQ(InputValue value)
+        {
+			PressingQInput(value.isPressed);
+        }
+
 #endif
-
-
+		public void PressingQInput(bool QisPressed)
+        {
+			pressedQ = QisPressed;
+        }
 		public void MoveInput(Vector2 newMoveDirection)
 		{
 			move = newMoveDirection;

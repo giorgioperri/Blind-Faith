@@ -8,6 +8,7 @@ public class HandAnimatorController : MonoBehaviour
 {
     private Animator _animController;
     private StarterAssetsInputs _inputs;
+    public bool hasRaisedLantern;
     
     private void Awake()
     {
@@ -25,6 +26,7 @@ public class HandAnimatorController : MonoBehaviour
             if(PlayerSoundController.Instance.LanternLoop != null) 
                 PlayerSoundController.Instance.LanternLoop.Post(PlayerSoundController.Instance.gameObject);
             _inputs.hasRaisedLantern = false;
+            hasRaisedLantern = true;
         }
         else if (_inputs.hasRaisedLantern && _animController.GetBool("hasRaisedLantern"))
         {
@@ -34,6 +36,7 @@ public class HandAnimatorController : MonoBehaviour
             if(PlayerSoundController.Instance.StopLanternLoop != null) 
                 PlayerSoundController.Instance.StopLanternLoop.Post(PlayerSoundController.Instance.gameObject);
             _inputs.hasRaisedLantern = false;
+            hasRaisedLantern = false;
         }
     }
 }
