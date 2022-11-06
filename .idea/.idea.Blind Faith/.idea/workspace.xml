@@ -2,20 +2,23 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5374623f-f723-49c8-bd7b-db22ab670095" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.vsconfig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Environment/Art/Materials/Particle_Godray_Mat.mat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Environment/Art/Materials/Particle_Godray_Mat.mat.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scenes/Scenes_Rafal.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scenes/Scenes_Rafal/Playground_Rafal.unity" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scenes/Scenes_Rafal/Playground_Rafal.unity.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/PullRequestTutorial.pdf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/RepositoryPolicy.pdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Environment/Art/Materials/ShaderGraphGrid_01_Mat.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Environment/Art/Materials/ShaderGraphGrid_01_Mat.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/InputSystem/StarterAssetsInputs.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/InputSystem/StarterAssetsInputs.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Playground.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Playground.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/FirstPersonController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/FirstPersonController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UserSettings/Layouts/default-2021.dwlt" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/Layouts/default-2021.dwlt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Blind Faith/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Blind Faith/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/GameManager.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/GameManager.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/PlayerCapsule.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/PlayerCapsule.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Sound/SoundManager.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Sound/SoundManager.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Scenes_Giorgio/Lantern_Playground.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Scenes_Giorgio/Lantern_Playground.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/GameManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/GameManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/HandAnimatorController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/HandAnimatorController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Lantern/LanternManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Lantern/LanternManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Sound/PlayerSoundManager.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Sound/PlayerSoundManager.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Sound/SubtitlesTrigger.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Sound/SubtitlesTrigger.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Wwise/ScriptableObjects/Event/592B55FF-61FB-4E5F-9A9D-0A7A57D4F533.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Wwise/ScriptableObjects/Event/592B55FF-61FB-4E5F-9A9D-0A7A57D4F533.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Wwise/ScriptableObjects/Event/8EBC1544-BA58-4848-A977-1366CDD39CEE.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Wwise/ScriptableObjects/Event/8EBC1544-BA58-4848-A977-1366CDD39CEE.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Wwise/ScriptableObjects/Event/D107BFC9-1262-4A70-96BF-EBFAB9F0E214.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Wwise/ScriptableObjects/Event/D107BFC9-1262-4A70-96BF-EBFAB9F0E214.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Wwise/ScriptableObjects/Soundbank/E4473486-1E47-4894-82D5-226D08221419.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Wwise/ScriptableObjects/Soundbank/E4473486-1E47-4894-82D5-226D08221419.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/WwiseSettings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/WwiseSettings.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -27,14 +30,18 @@
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/GameManager.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Lantern/LanternManager.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Lantern/LightBathingArea.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Lantern/LightRotator.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/PauseManager.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/PlayerInputErrorWorkaround.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Voice/SubtitlesUI.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Voice/VoiceLineSO.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Voice/VoiceLineSequenceSO.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Voice/VoiceManager.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Sound/PlayerSoundController.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.burst@1.7.3/Runtime/Intrinsics/v128.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.burst@1.7.3/Tests/Runtime/BurstJobTester.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.inputsystem@1.4.1/InputSystem/Actions/InputBindingResolver.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.inputsystem@1.4.1/InputSystem/Plugins/PlayerInput/PlayerInput.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.searcher@4.9.1/Tests/Editor/SearcherTreeUtilityTests.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.ugui@1.0.0/Tests/Runtime/Toggle/ToggleTests.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -99,6 +106,11 @@
       <workItem from="1666877216907" duration="4121000" />
       <workItem from="1666958573246" duration="18271000" />
       <workItem from="1667046251413" duration="16000" />
+      <workItem from="1667388917683" duration="281000" />
+      <workItem from="1667389218565" duration="1670000" />
+      <workItem from="1667391013670" duration="4291000" />
+      <workItem from="1667400786214" duration="3854000" />
+      <workItem from="1667560498668" duration="1765000" />
     </task>
     <servers />
   </component>

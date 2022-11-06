@@ -135,38 +135,9 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 321892689828383714, guid: b0d5393eb2d2449a98b38ed752d950ea,
         type: 3}
-      propertyPath: voiceLineObject
-      value: 
-      objectReference: {fileID: 11400000, guid: d7f00b55a8f7c4024b1afa9bc8d7e58b,
-        type: 2}
-    - target: {fileID: 321892689828383714, guid: b0d5393eb2d2449a98b38ed752d950ea,
-        type: 3}
       propertyPath: voiceLineSequence
       value: 
       objectReference: {fileID: 11400000, guid: 7b0ada64907754bbf9d7e30b4aa22d8a,
-        type: 2}
-    - target: {fileID: 321892689828383714, guid: b0d5393eb2d2449a98b38ed752d950ea,
-        type: 3}
-      propertyPath: voiceLineSequence.Array.size
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 321892689828383714, guid: b0d5393eb2d2449a98b38ed752d950ea,
-        type: 3}
-      propertyPath: voiceLineSequence.Array.data[0]
-      value: 
-      objectReference: {fileID: 11400000, guid: d7f00b55a8f7c4024b1afa9bc8d7e58b,
-        type: 2}
-    - target: {fileID: 321892689828383714, guid: b0d5393eb2d2449a98b38ed752d950ea,
-        type: 3}
-      propertyPath: voiceLineSequence.Array.data[1]
-      value: 
-      objectReference: {fileID: 11400000, guid: 09d0f331fffd84f58b11921642356986,
-        type: 2}
-    - target: {fileID: 321892689828383714, guid: b0d5393eb2d2449a98b38ed752d950ea,
-        type: 3}
-      propertyPath: voiceLineSequence.Array.data[2]
-      value: 
-      objectReference: {fileID: 11400000, guid: d7f00b55a8f7c4024b1afa9bc8d7e58b,
         type: 2}
     - target: {fileID: 321892689828383715, guid: b0d5393eb2d2449a98b38ed752d950ea,
         type: 3}
@@ -1293,11 +1264,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 7895317906512925677, guid: 39b30fed8dbb54ed5b29578588d40292,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 39b30fed8dbb54ed5b29578588d40292, type: 3}
 --- !u!1001 &5393215579111688471
@@ -1307,25 +1273,25 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 5393215578589016655, guid: c5efc39a8aaf6e64ea40e9ad573e9b47,
+    - target: {fileID: 8200156017770898394, guid: c5efc39a8aaf6e64ea40e9ad573e9b47,
         type: 3}
-      propertyPath: m_Enabled
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 5420857361349278248, guid: c5efc39a8aaf6e64ea40e9ad573e9b47,
-        type: 3}
-      propertyPath: cursorLocked
+      propertyPath: m_LocalPosition.x
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 5420857361349278248, guid: c5efc39a8aaf6e64ea40e9ad573e9b47,
+    - target: {fileID: 8200156017770898394, guid: c5efc39a8aaf6e64ea40e9ad573e9b47,
         type: 3}
-      propertyPath: cursorInputForLook
-      value: 1
+      propertyPath: m_LocalPosition.y
+      value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 8616685848737228371, guid: c5efc39a8aaf6e64ea40e9ad573e9b47,
+    - target: {fileID: 8200156017770898394, guid: c5efc39a8aaf6e64ea40e9ad573e9b47,
         type: 3}
-      propertyPath: RotationSpeed
-      value: 10
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8200156017770898396, guid: c5efc39a8aaf6e64ea40e9ad573e9b47,
+        type: 3}
+      propertyPath: m_Name
+      value: PlayerSoundManager
       objectReference: {fileID: 0}
     - target: {fileID: 8616685848737228372, guid: c5efc39a8aaf6e64ea40e9ad573e9b47,
         type: 3}
