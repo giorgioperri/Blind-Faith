@@ -265,6 +265,7 @@ MonoBehaviour:
   crouch: 0
   hasRaisedLantern: 0
   interact: 0
+  pressedQ: 0
   analogMovement: 0
   cursorLocked: 0
   cursorInputForLook: 1
@@ -446,6 +447,56 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8987822313379151921, guid: 5e5e50e497d2a4f3ba65113cd728cc0a,
+        type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.1338
+      objectReference: {fileID: 0}
+    - target: {fileID: 8987822313379151921, guid: 5e5e50e497d2a4f3ba65113cd728cc0a,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.1338
+      objectReference: {fileID: 0}
+    - target: {fileID: 8987822313379151921, guid: 5e5e50e497d2a4f3ba65113cd728cc0a,
+        type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.1338
+      objectReference: {fileID: 0}
+    - target: {fileID: 8987822313379151921, guid: 5e5e50e497d2a4f3ba65113cd728cc0a,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 8987822313379151921, guid: 5e5e50e497d2a4f3ba65113cd728cc0a,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8987822313379151921, guid: 5e5e50e497d2a4f3ba65113cd728cc0a,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 8987822313379151921, guid: 5e5e50e497d2a4f3ba65113cd728cc0a,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8987822313379151921, guid: 5e5e50e497d2a4f3ba65113cd728cc0a,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8987822313379151921, guid: 5e5e50e497d2a4f3ba65113cd728cc0a,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: -90
+      objectReference: {fileID: 0}
+    - target: {fileID: 8987822313379151921, guid: 5e5e50e497d2a4f3ba65113cd728cc0a,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5e5e50e497d2a4f3ba65113cd728cc0a, type: 3}
 --- !u!1001 &6641403014833219954
@@ -555,6 +606,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b8f22ff7c6346e142b26a3a26d1d0625, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  hasRaisedLantern: 0
 --- !u!4 &6602762659033697945 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: f63b66ce8364e54458cf547188546b38,
