@@ -3428,6 +3428,16 @@ PrefabInstance:
       propertyPath: m_RenderPostProcessing
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 6512503292507225526, guid: 2d3a85ecde41a8246a79669975912b74,
+        type: 3}
+      propertyPath: IdleAmplitude
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6512503292507225526, guid: 2d3a85ecde41a8246a79669975912b74,
+        type: 3}
+      propertyPath: IdleFrequency
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 9005220659476430818, guid: 2d3a85ecde41a8246a79669975912b74,
         type: 3}
       propertyPath: m_RootOrder
@@ -3503,7 +3513,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: MainCamera
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 3212672037237034339, guid: 2d3a85ecde41a8246a79669975912b74, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 2d3a85ecde41a8246a79669975912b74, type: 3}
 --- !u!114 &135756641613574975 stripped
 MonoBehaviour:

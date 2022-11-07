@@ -34,6 +34,7 @@ public class LanternManager : MonoBehaviour
 
     private void Update()
     {
+        lanternCharge = Mathf.Clamp01(lanternCharge);
         lightMaterial.SetFloat("_Opacity", lanternCharge);
         _orb.localScale = _originalOrbScale * lanternCharge;
         
@@ -41,8 +42,12 @@ public class LanternManager : MonoBehaviour
         {
             if (GameManager.Instance.isLookingAtAngel && lanternCharge <= 1)
             {
+                if (lanternCharge == 0)
+                {
+                    Camera.main.gameObject.GetComponent<CinemachineCameraShaker>().ShakeCamera(5,.2f,10);
+                }
                 //recharge
-                if (canPlayChargeSound)
+                if (canPlayChargeSound && lanternCharge == 0)
                 {
                     PlayerSoundController.Instance.LanternCharging.Post(PlayerSoundController.Instance.gameObject);
                     canPlayChargeSound = false;
