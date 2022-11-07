@@ -5,7 +5,7 @@ using UnityEngine;
 
 public class LanternManager : MonoBehaviour
 {
-    public float _lanternCharge = 1;
+    public float lanternCharge = 0;
     public bool canPlayChargeSound = true;
     [SerializeField] private float _lanternDepletingTime = 60;
     [SerializeField] private float _lanternRechargingTime = 3;
@@ -33,12 +33,12 @@ public class LanternManager : MonoBehaviour
 
     private void Update()
     {
-        lightMaterial.SetFloat("_Opacity", _lanternCharge);
-        _orb.localScale = _originalOrbScale * _lanternCharge;
+        lightMaterial.SetFloat("_Opacity", lanternCharge);
+        _orb.localScale = _originalOrbScale * lanternCharge;
         
         if (GameManager.Instance.isBathingInLight)
         {
-            if (GameManager.Instance.isLookingAtAngel && _lanternCharge <= 1)
+            if (GameManager.Instance.isLookingAtAngel && lanternCharge <= 1)
             {
                 //recharge
                 if (canPlayChargeSound)
@@ -46,18 +46,18 @@ public class LanternManager : MonoBehaviour
                     PlayerSoundController.Instance.LanternCharging.Post(PlayerSoundController.Instance.gameObject);
                     canPlayChargeSound = false;
                 }
-                _lanternCharge += Time.deltaTime / _lanternRechargingTime;
+                lanternCharge += Time.deltaTime / _lanternRechargingTime;
             }
             return;
         }
         
-        if (_lanternCharge >= 0)
+        if (lanternCharge >= 0)
         {
             //deplete
-            _lanternCharge -= Time.deltaTime / _lanternDepletingTime;
+            lanternCharge -= Time.deltaTime / _lanternDepletingTime;
         }
 
-        if (_lanternCharge <= 0)
+        if (lanternCharge <= 0)
         {
             if(PlayerSoundController.Instance.LanternDischarged != null) 
                 PlayerSoundController.Instance.LanternDischarged.Post(PlayerSoundController.Instance.gameObject);
