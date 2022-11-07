@@ -595,21 +595,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4182627866413699381, guid: babd556ec47a348c997d77b1cb6ec7a9,
         type: 3}
-      propertyPath: m_LocalScale.x
-      value: 0.06841
-      objectReference: {fileID: 0}
-    - target: {fileID: 4182627866413699381, guid: babd556ec47a348c997d77b1cb6ec7a9,
-        type: 3}
-      propertyPath: m_LocalScale.y
-      value: 0.06841
-      objectReference: {fileID: 0}
-    - target: {fileID: 4182627866413699381, guid: babd556ec47a348c997d77b1cb6ec7a9,
-        type: 3}
-      propertyPath: m_LocalScale.z
-      value: 0.06841
-      objectReference: {fileID: 0}
-    - target: {fileID: 4182627866413699381, guid: babd556ec47a348c997d77b1cb6ec7a9,
-        type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
       objectReference: {fileID: 0}
@@ -662,11 +647,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: LaserPointer
-      objectReference: {fileID: 0}
-    - target: {fileID: 4182627866413699390, guid: babd556ec47a348c997d77b1cb6ec7a9,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: babd556ec47a348c997d77b1cb6ec7a9, type: 3}
