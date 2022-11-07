@@ -5355,6 +5355,17 @@ PrefabInstance:
       propertyPath: _lanternDepletingTime
       value: 60
       objectReference: {fileID: 0}
+    - target: {fileID: 4198798774029224372, guid: c5efc39a8aaf6e64ea40e9ad573e9b47,
+        type: 3}
+      propertyPath: _lanternRechargingTime
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 8200156017770898395, guid: c5efc39a8aaf6e64ea40e9ad573e9b47,
+        type: 3}
+      propertyPath: LanternCharging.WwiseObjectReference
+      value: 
+      objectReference: {fileID: 11400000, guid: afe1c6946724a104fad0ab88879cadad,
+        type: 2}
     - target: {fileID: 8616685848737228372, guid: c5efc39a8aaf6e64ea40e9ad573e9b47,
         type: 3}
       propertyPath: m_Name

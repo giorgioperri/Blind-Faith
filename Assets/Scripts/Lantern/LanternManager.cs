@@ -7,6 +7,7 @@ public class LanternManager : MonoBehaviour
 {
     public float lanternCharge = 0;
     public bool canPlayChargeSound = true;
+    public bool canPlayDischargeSound;
     [SerializeField] private float _lanternDepletingTime = 60;
     [SerializeField] private float _lanternRechargingTime = 3;
     [SerializeField] private Material lightMaterial;
@@ -46,6 +47,7 @@ public class LanternManager : MonoBehaviour
                     PlayerSoundController.Instance.LanternCharging.Post(PlayerSoundController.Instance.gameObject);
                     canPlayChargeSound = false;
                 }
+                canPlayDischargeSound = true;
                 lanternCharge += Time.deltaTime / _lanternRechargingTime;
             }
             return;
@@ -57,8 +59,9 @@ public class LanternManager : MonoBehaviour
             lanternCharge -= Time.deltaTime / _lanternDepletingTime;
         }
 
-        if (lanternCharge <= 0)
+        if (lanternCharge <= 0 && canPlayDischargeSound)
         {
+            canPlayDischargeSound = false;
             if(PlayerSoundController.Instance.LanternDischarged != null) 
                 PlayerSoundController.Instance.LanternDischarged.Post(PlayerSoundController.Instance.gameObject);
         }
