@@ -14,6 +14,7 @@ namespace AK
     namespace EVENTS
     {
         static const AkUniqueID AMB_CHURCH = 2840050639U;
+        static const AkUniqueID DEBUG_HAMMER = 2618683459U;
         static const AkUniqueID FIRELOOP = 181700819U;
         static const AkUniqueID LANTEREN_CHARGING = 3651057560U;
         static const AkUniqueID LANTEREN_DEPLOY_LOOP = 759350405U;

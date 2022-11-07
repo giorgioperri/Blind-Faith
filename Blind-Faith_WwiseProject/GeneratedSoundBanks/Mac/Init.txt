@@ -16,12 +16,15 @@ Auxiliary Bus	ID	Name			Wwise Object Path	Notes
 	2933838247	SmallRoom			\Default Work Unit\Master Audio Bus\Rooms\SmallRoom	
 
 Effect plug-ins	ID	Name	Type				Notes
+	15426635	Hall_Large_Dark (Custom)	Wwise RoomVerb			
 	38665079	Resonance Audio Renderer (Custom)	Resonance Audio Renderer			
 	48620415	Have_U_Ever_Been_Outside	Wwise RoomVerb			
 	295351154	Wwise_RoomVerb_(Custom)	Wwise RoomVerb			
 	431288752	Resonance Audio Renderer (Custom)	Resonance Audio Renderer			
-	574609459	Wwise_RoomVerb_(Custom)	Wwise RoomVerb			
-	1159390747	Room_Medium_Tiled	Wwise RoomVerb			
+	509909872	Resonance Audio Renderer (Custom)	Resonance Audio Renderer			
+	744627467	Resonance Audio Renderer (Custom)	Resonance Audio Renderer			
+	836353278	Metal_Hangar (Custom)	Wwise RoomVerb			
+	957690521	Room_Medium_Tiled (Custom)	Wwise RoomVerb			
 	2995775460	Room_Small	Wwise RoomVerb			
 
 Audio Devices	ID	Name	Type				Notes

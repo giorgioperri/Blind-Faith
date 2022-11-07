@@ -24,11 +24,6 @@
 										<Value>528</Value>
 									</ValueList>
 								</Property>
-								<Property Name="BusVolume" Type="Real64">
-									<ValueList>
-										<Value>1</Value>
-									</ValueList>
-								</Property>
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Effect0">
@@ -40,9 +35,9 @@
 							<ChildrenList>
 								<AuxBus Name="BinuralAux" ID="{C1A480A7-AB40-4091-8843-AB735E7B9C82}">
 									<PropertyList>
-										<Property Name="BusVolume" Type="Real64">
+										<Property Name="BusChannelConfig" Type="int32">
 											<ValueList>
-												<Value>-1</Value>
+												<Value>528</Value>
 											</ValueList>
 										</Property>
 									</PropertyList>
@@ -53,9 +48,22 @@
 						</Bus>
 						<Bus Name="Rooms" ID="{F220833B-3FC1-4DC8-9CF3-6F367C8C1EDE}">
 							<PropertyList>
+								<Property Name="BusChannelConfig" Type="int32">
+									<ValueList>
+										<Value>528</Value>
+									</ValueList>
+								</Property>
+								<Property Name="Color" Type="int16" Value="26"/>
+								<Property Name="OverrideColor" Type="bool" Value="True"/>
 								<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
 							</PropertyList>
-							<ReferenceList/>
+							<ReferenceList>
+								<Reference Name="Effect0">
+									<Custom>
+										<Effect Name="Resonance Audio Renderer (Custom)" ID="{A791D036-BE10-44EA-A28C-368DB9B70098}" ShortID="509909872" PluginName="Resonance Audio Renderer" CompanyID="272" PluginID="100" PluginType="3"/>
+									</Custom>
+								</Reference>
+							</ReferenceList>
 							<ChildrenList>
 								<AuxBus Name="Church" ID="{02BB3702-378B-4041-A824-826D18544AAF}">
 									<PropertyList>
@@ -67,14 +75,28 @@
 									<ReferenceList>
 										<Reference Name="AttachableMixerInput">
 											<Custom>
-												<Effect Name="Resonance Audio Room Effects (Attached)" ID="{09DD228E-353D-425D-8497-1C86046E2128}" ShortID="715963291" PluginName="AttachableMixerInput" CompanyID="272" PluginID="201" PluginType="3"/>
+												<Effect Name="Resonance Audio Room Effects (Attached)" ID="{CCF19B6D-B4F6-4C53-9210-D4D8863D23FF}" ShortID="566149789" PluginName="AttachableMixerInput" CompanyID="272" PluginID="201" PluginType="3"/>
 											</Custom>
 										</Reference>
 										<Reference Name="Effect0">
-											<Custom>
-												<Effect Name="Wwise_RoomVerb_(Custom)" ID="{E0A51C5E-42D7-4A36-8A79-22CFC2FDBA40}" ShortID="574609459" PluginName="Wwise RoomVerb" CompanyID="0" PluginID="118" PluginType="3">
+											<Custom CreatedFrom="{0F6A7D6D-131C-4650-9561-FC05F5C7A37B}">
+												<Effect Name="Hall_Large_Dark (Custom)" ID="{F57FDA0D-80A2-4997-AB2A-FF27709D7FA9}" ShortID="15426635" PluginName="Wwise RoomVerb" CompanyID="0" PluginID="118" PluginType="3">
 													<PropertyList>
-														<Property Name="EnableEarlyReflections" Type="bool" Value="False"/>
+														<Property Name="DecayTime" Type="Real32" Value="5.2"/>
+														<Property Name="Density" Type="Real32" Value="70"/>
+														<Property Name="ERLevel" Type="Real32" Value="-25"/>
+														<Property Name="ERPattern" Type="int32" Value="11"/>
+														<Property Name="Filter1Freq" Type="Real32" Value="490"/>
+														<Property Name="Filter1Gain" Type="Real32" Value="4"/>
+														<Property Name="Filter1InsertPos" Type="int32" Value="2"/>
+														<Property Name="Filter3Freq" Type="Real32" Value="11000"/>
+														<Property Name="Filter3Gain" Type="Real32" Value="-11.5"/>
+														<Property Name="HFDamping" Type="Real32" Value="5.05"/>
+														<Property Name="PreDelay" Type="Real32" Value="75"/>
+														<Property Name="Quality" Type="int32" Value="16"/>
+														<Property Name="ReverbLevel" Type="Real32" Value="-25"/>
+														<Property Name="RoomShape" Type="Real32" Value="55"/>
+														<Property Name="RoomSize" Type="Real32" Value="73"/>
 													</PropertyList>
 												</Effect>
 											</Custom>
@@ -92,11 +114,32 @@
 									<ReferenceList>
 										<Reference Name="AttachableMixerInput">
 											<Custom>
-												<Effect Name="Resonance Audio Room Effects (Attached)" ID="{80EF6878-C16C-4445-B59B-13151518CA63}" ShortID="849237137" PluginName="AttachableMixerInput" CompanyID="272" PluginID="201" PluginType="3"/>
+												<Effect Name="Resonance Audio Room Effects (Attached)" ID="{D4077BA2-EDE4-47E4-9FF5-DF86587D866F}" ShortID="956952097" PluginName="AttachableMixerInput" CompanyID="272" PluginID="201" PluginType="3"/>
 											</Custom>
 										</Reference>
-										<Reference Name="Effect0" PluginName="Wwise RoomVerb" CompanyID="0" PluginID="118" PluginType="3">
-											<ObjectRef Name="Room_Small" ID="{577F1466-A63B-47F7-98BD-C56E433F8B5D}" WorkUnitID="{E8613F7D-BAD3-45CD-A3ED-505576F31277}"/>
+										<Reference Name="Effect0">
+											<Custom CreatedFrom="{0C0A3A92-A571-4FDB-AB40-ACFED04E0217}">
+												<Effect Name="Room_Medium_Tiled (Custom)" ID="{3AC6D175-1657-483D-913E-276B9F9EAA6D}" ShortID="957690521" PluginName="Wwise RoomVerb" CompanyID="0" PluginID="118" PluginType="3">
+													<PropertyList>
+														<Property Name="DecayTime" Type="Real32" Value="1.1"/>
+														<Property Name="Density" Type="Real32" Value="72"/>
+														<Property Name="Diffusion" Type="Real32" Value="72"/>
+														<Property Name="ERLevel" Type="Real32" Value="-23"/>
+														<Property Name="EnableEarlyReflections" Type="bool" Value="False"/>
+														<Property Name="Filter1Freq" Type="Real32" Value="590"/>
+														<Property Name="Filter2Freq" Type="Real32" Value="6000"/>
+														<Property Name="Filter3Freq" Type="Real32" Value="8440"/>
+														<Property Name="Filter3Gain" Type="Real32" Value="-2"/>
+														<Property Name="HFDamping" Type="Real32" Value="1.05"/>
+														<Property Name="PreDelay" Type="Real32" Value="26"/>
+														<Property Name="Quality" Type="int32" Value="10"/>
+														<Property Name="ReverbLevel" Type="Real32" Value="-22"/>
+														<Property Name="RoomShape" Type="Real32" Value="55"/>
+														<Property Name="RoomSize" Type="Real32" Value="44"/>
+														<Property Name="StereoWidth" Type="Real32" Value="135"/>
+													</PropertyList>
+												</Effect>
+											</Custom>
 										</Reference>
 									</ReferenceList>
 									<ObjectLists/>
@@ -176,16 +219,56 @@
 						</Bus>
 						<Bus Name="Rooms_docking" ID="{6ED14294-29EA-4AC9-82D5-39255BF161A4}">
 							<PropertyList>
+								<Property Name="BusChannelConfig" Type="int32">
+									<ValueList>
+										<Value>528</Value>
+									</ValueList>
+								</Property>
+								<Property Name="Color" Type="int16" Value="25"/>
+								<Property Name="OverrideColor" Type="bool" Value="True"/>
 								<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
 							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Effect0">
+									<Custom>
+										<Effect Name="Resonance Audio Renderer (Custom)" ID="{0D4E4AAE-EF5A-4BD2-A41A-D5BA2A69957B}" ShortID="744627467" PluginName="Resonance Audio Renderer" CompanyID="272" PluginID="100" PluginType="3"/>
+									</Custom>
+								</Reference>
+							</ReferenceList>
 							<ChildrenList>
 								<AuxBus Name="Church_01" ID="{E966FE82-88B1-4562-A770-2DDDD122CD84}">
 									<PropertyList>
+										<Property Name="3DSpatialization" Type="int16" Value="2"/>
+										<Property Name="EnableDiffraction" Type="bool" Value="True"/>
+										<Property Name="ListenerRelativeRouting" Type="bool" Value="True"/>
 										<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
 									</PropertyList>
 									<ReferenceList>
-										<Reference Name="Effect0" PluginName="Wwise RoomVerb" CompanyID="0" PluginID="118" PluginType="3">
-											<ObjectRef Name="Room_Medium_Tiled" ID="{0C0A3A92-A571-4FDB-AB40-ACFED04E0217}" WorkUnitID="{E8613F7D-BAD3-45CD-A3ED-505576F31277}"/>
+										<Reference Name="Effect0">
+											<Custom CreatedFrom="{C4A4605C-42EF-476A-B53C-E31C7A442C24}">
+												<Effect Name="Metal_Hangar (Custom)" ID="{4FCD6031-C6D1-4D27-9BA6-76412F020249}" ShortID="836353278" PluginName="Wwise RoomVerb" CompanyID="0" PluginID="118" PluginType="3">
+													<PropertyList>
+														<Property Name="DecayTime" Type="Real32" Value="6.2"/>
+														<Property Name="Density" Type="Real32" Value="94"/>
+														<Property Name="Diffusion" Type="Real32" Value="53"/>
+														<Property Name="ERLevel" Type="Real32" Value="-22"/>
+														<Property Name="ERPattern" Type="int32" Value="30"/>
+														<Property Name="Filter1Freq" Type="Real32" Value="590"/>
+														<Property Name="Filter1Gain" Type="Real32" Value="-7"/>
+														<Property Name="Filter2Freq" Type="Real32" Value="2200"/>
+														<Property Name="Filter2InsertPos" Type="int32" Value="0"/>
+														<Property Name="Filter2Q" Type="Real32" Value="0.1"/>
+														<Property Name="Filter3Freq" Type="Real32" Value="12000"/>
+														<Property Name="Filter3Gain" Type="Real32" Value="2.5"/>
+														<Property Name="HFDamping" Type="Real32" Value="5.65"/>
+														<Property Name="PreDelay" Type="Real32" Value="125"/>
+														<Property Name="Quality" Type="int32" Value="12"/>
+														<Property Name="RoomShape" Type="Real32" Value="0"/>
+														<Property Name="RoomSize" Type="Real32" Value="71"/>
+														<Property Name="StereoWidth" Type="Real32" Value="140"/>
+													</PropertyList>
+												</Effect>
+											</Custom>
 										</Reference>
 									</ReferenceList>
 									<ObjectLists/>
