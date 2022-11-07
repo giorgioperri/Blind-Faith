@@ -90,14 +90,14 @@
 													</PropertyList>
 													<ReferenceList>
 														<Reference Name="Target">
-															<ObjectRef Name="Deploy_PH" ID="{64A1616D-4788-4A2F-963A-C6F151539BC5}" WorkUnitID="{10A75CA5-3F55-455C-A103-004D7C43FEF2}"/>
+															<ObjectRef Name="Deploy" ID="{64A1616D-4788-4A2F-963A-C6F151539BC5}" WorkUnitID="{10A75CA5-3F55-455C-A103-004D7C43FEF2}"/>
 														</Reference>
 													</ReferenceList>
 												</Action>
 												<Action Name="" ID="{29D05B47-F1DE-4407-B243-303130D176A9}" ShortID="585028681">
 													<ReferenceList>
 														<Reference Name="Target">
-															<ObjectRef Name="Undeploy_PH" ID="{C7D4928B-A459-4E8A-9F35-4CA2C819F547}" WorkUnitID="{10A75CA5-3F55-455C-A103-004D7C43FEF2}"/>
+															<ObjectRef Name="Undeploy" ID="{C7D4928B-A459-4E8A-9F35-4CA2C819F547}" WorkUnitID="{10A75CA5-3F55-455C-A103-004D7C43FEF2}"/>
 														</Reference>
 													</ReferenceList>
 												</Action>
@@ -108,7 +108,29 @@
 												<Action Name="" ID="{6561CDB9-3BD3-440F-B80B-8B8A2DD7AD4F}" ShortID="405616046">
 													<ReferenceList>
 														<Reference Name="Target">
-															<ObjectRef Name="Deploy_PH" ID="{64A1616D-4788-4A2F-963A-C6F151539BC5}" WorkUnitID="{10A75CA5-3F55-455C-A103-004D7C43FEF2}"/>
+															<ObjectRef Name="Deploy" ID="{64A1616D-4788-4A2F-963A-C6F151539BC5}" WorkUnitID="{10A75CA5-3F55-455C-A103-004D7C43FEF2}"/>
+														</Reference>
+													</ReferenceList>
+												</Action>
+											</ChildrenList>
+										</Event>
+										<Event Name="Lanteren_Charging" ID="{010E8B8E-3178-48C6-A06F-41EA9F4E623C}">
+											<ChildrenList>
+												<Action Name="" ID="{3FE192F0-B1D9-4735-9239-62F8D4FAB4D2}" ShortID="126865898">
+													<ReferenceList>
+														<Reference Name="Target">
+															<ObjectRef Name="Charging" ID="{D09684ED-71D8-41FD-BFB6-F8F1F90552B2}" WorkUnitID="{10A75CA5-3F55-455C-A103-004D7C43FEF2}"/>
+														</Reference>
+													</ReferenceList>
+												</Action>
+											</ChildrenList>
+										</Event>
+										<Event Name="Lanteren_discharge" ID="{865E05B9-7DB4-4253-ABDF-5A1245400C54}">
+											<ChildrenList>
+												<Action Name="" ID="{6243EA34-529C-4F01-9DFC-BBD1CA672C43}" ShortID="612165047">
+													<ReferenceList>
+														<Reference Name="Target">
+															<ObjectRef Name="Discharge" ID="{E582913A-A713-40C7-84AD-F4C9C656779B}" WorkUnitID="{10A75CA5-3F55-455C-A103-004D7C43FEF2}"/>
 														</Reference>
 													</ReferenceList>
 												</Action>

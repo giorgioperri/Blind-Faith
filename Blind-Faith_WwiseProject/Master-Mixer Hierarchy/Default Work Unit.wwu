@@ -4,6 +4,13 @@
 		<WorkUnit Name="Default Work Unit" ID="{C91EB4C6-56DC-4541-96C4-29E948904D66}" PersistMode="Standalone">
 			<ChildrenList>
 				<Bus Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}">
+					<PropertyList>
+						<Property Name="BusVolume" Type="Real64">
+							<ValueList>
+								<Value>1</Value>
+							</ValueList>
+						</Property>
+					</PropertyList>
 					<ReferenceList>
 						<Reference Name="AudioDevice">
 							<ObjectRef Name="System" ID="{0B8C9E3B-5664-4EFE-8CF3-93771555D8F8}" WorkUnitID="{5DD6140A-18E1-4122-A147-13725C1FC8F6}"/>
@@ -19,7 +26,7 @@
 								</Property>
 								<Property Name="BusVolume" Type="Real64">
 									<ValueList>
-										<Value>-96</Value>
+										<Value>1</Value>
 									</ValueList>
 								</Property>
 							</PropertyList>
@@ -32,6 +39,13 @@
 							</ReferenceList>
 							<ChildrenList>
 								<AuxBus Name="BinuralAux" ID="{C1A480A7-AB40-4091-8843-AB735E7B9C82}">
+									<PropertyList>
+										<Property Name="BusVolume" Type="Real64">
+											<ValueList>
+												<Value>-1</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
 									<ObjectLists/>
 								</AuxBus>
 							</ChildrenList>
@@ -39,30 +53,48 @@
 						</Bus>
 						<Bus Name="Rooms" ID="{F220833B-3FC1-4DC8-9CF3-6F367C8C1EDE}">
 							<PropertyList>
-								<Property Name="BusVolume" Type="Real64">
-									<ValueList>
-										<Value>-1</Value>
-									</ValueList>
-								</Property>
 								<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
 							</PropertyList>
+							<ReferenceList/>
 							<ChildrenList>
 								<AuxBus Name="Church" ID="{02BB3702-378B-4041-A824-826D18544AAF}">
 									<PropertyList>
+										<Property Name="3DSpatialization" Type="int16" Value="2"/>
+										<Property Name="EnableDiffraction" Type="bool" Value="True"/>
+										<Property Name="ListenerRelativeRouting" Type="bool" Value="True"/>
 										<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
 									</PropertyList>
 									<ReferenceList>
-										<Reference Name="Effect0" PluginName="Wwise RoomVerb" CompanyID="0" PluginID="118" PluginType="3">
-											<ObjectRef Name="Room_Medium_Tiled" ID="{0C0A3A92-A571-4FDB-AB40-ACFED04E0217}" WorkUnitID="{E8613F7D-BAD3-45CD-A3ED-505576F31277}"/>
+										<Reference Name="AttachableMixerInput">
+											<Custom>
+												<Effect Name="Resonance Audio Room Effects (Attached)" ID="{09DD228E-353D-425D-8497-1C86046E2128}" ShortID="715963291" PluginName="AttachableMixerInput" CompanyID="272" PluginID="201" PluginType="3"/>
+											</Custom>
+										</Reference>
+										<Reference Name="Effect0">
+											<Custom>
+												<Effect Name="Wwise_RoomVerb_(Custom)" ID="{E0A51C5E-42D7-4A36-8A79-22CFC2FDBA40}" ShortID="574609459" PluginName="Wwise RoomVerb" CompanyID="0" PluginID="118" PluginType="3">
+													<PropertyList>
+														<Property Name="EnableEarlyReflections" Type="bool" Value="False"/>
+													</PropertyList>
+												</Effect>
+											</Custom>
 										</Reference>
 									</ReferenceList>
 									<ObjectLists/>
 								</AuxBus>
 								<AuxBus Name="SmallRoom" ID="{4839E92F-6483-4D55-BE5A-445C4E332457}">
 									<PropertyList>
+										<Property Name="3DSpatialization" Type="int16" Value="2"/>
+										<Property Name="EnableDiffraction" Type="bool" Value="True"/>
+										<Property Name="ListenerRelativeRouting" Type="bool" Value="True"/>
 										<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
 									</PropertyList>
 									<ReferenceList>
+										<Reference Name="AttachableMixerInput">
+											<Custom>
+												<Effect Name="Resonance Audio Room Effects (Attached)" ID="{80EF6878-C16C-4445-B59B-13151518CA63}" ShortID="849237137" PluginName="AttachableMixerInput" CompanyID="272" PluginID="201" PluginType="3"/>
+											</Custom>
+										</Reference>
 										<Reference Name="Effect0" PluginName="Wwise RoomVerb" CompanyID="0" PluginID="118" PluginType="3">
 											<ObjectRef Name="Room_Small" ID="{577F1466-A63B-47F7-98BD-C56E433F8B5D}" WorkUnitID="{E8613F7D-BAD3-45CD-A3ED-505576F31277}"/>
 										</Reference>
@@ -71,11 +103,25 @@
 								</AuxBus>
 								<AuxBus Name="Outdoors" ID="{13FCC188-7705-47B5-89D4-4EE6E6915B15}">
 									<PropertyList>
+										<Property Name="3DSpatialization" Type="int16" Value="2"/>
+										<Property Name="EnableDiffraction" Type="bool" Value="True"/>
+										<Property Name="ListenerRelativeRouting" Type="bool" Value="True"/>
 										<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
 									</PropertyList>
 									<ReferenceList>
-										<Reference Name="Effect0" PluginName="Wwise RoomVerb" CompanyID="0" PluginID="118" PluginType="3">
-											<ObjectRef Name="Have_U_Ever_Been_Outside" ID="{FE29AE8D-FD86-4652-A95D-68D32F5760EC}" WorkUnitID="{E8613F7D-BAD3-45CD-A3ED-505576F31277}"/>
+										<Reference Name="AttachableMixerInput">
+											<Custom>
+												<Effect Name="Resonance Audio Room Effects (Attached)" ID="{F53D6EF1-5FC3-4E8D-9FA9-272AF0597C33}" ShortID="730702616" PluginName="AttachableMixerInput" CompanyID="272" PluginID="201" PluginType="3"/>
+											</Custom>
+										</Reference>
+										<Reference Name="Effect0">
+											<Custom>
+												<Effect Name="Wwise_RoomVerb_(Custom)" ID="{4E84A181-5BBE-48B3-95EB-FD48F24A20F8}" ShortID="295351154" PluginName="Wwise RoomVerb" CompanyID="0" PluginID="118" PluginType="3">
+													<PropertyList>
+														<Property Name="EnableEarlyReflections" Type="bool" Value="False"/>
+													</PropertyList>
+												</Effect>
+											</Custom>
 										</Reference>
 									</ReferenceList>
 									<ObjectLists/>
@@ -92,7 +138,7 @@
 								</Property>
 								<Property Name="BusVolume" Type="Real64">
 									<ValueList>
-										<Value>-96</Value>
+										<Value>-1</Value>
 									</ValueList>
 								</Property>
 							</PropertyList>
@@ -105,6 +151,13 @@
 							</ReferenceList>
 							<ChildrenList>
 								<AuxBus Name="BinuralAux_docking" ID="{CEF64C40-F15A-4093-BE41-E226D92156B0}">
+									<PropertyList>
+										<Property Name="BusVolume" Type="Real64">
+											<ValueList>
+												<Value>1</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
 									<ObjectLists/>
 								</AuxBus>
 							</ChildrenList>
@@ -123,11 +176,6 @@
 						</Bus>
 						<Bus Name="Rooms_docking" ID="{6ED14294-29EA-4AC9-82D5-39255BF161A4}">
 							<PropertyList>
-								<Property Name="BusVolume" Type="Real64">
-									<ValueList>
-										<Value>-1</Value>
-									</ValueList>
-								</Property>
 								<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
 							</PropertyList>
 							<ChildrenList>

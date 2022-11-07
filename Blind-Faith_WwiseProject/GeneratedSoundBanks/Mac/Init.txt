@@ -18,7 +18,9 @@ Auxiliary Bus	ID	Name			Wwise Object Path	Notes
 Effect plug-ins	ID	Name	Type				Notes
 	38665079	Resonance Audio Renderer (Custom)	Resonance Audio Renderer			
 	48620415	Have_U_Ever_Been_Outside	Wwise RoomVerb			
+	295351154	Wwise_RoomVerb_(Custom)	Wwise RoomVerb			
 	431288752	Resonance Audio Renderer (Custom)	Resonance Audio Renderer			
+	574609459	Wwise_RoomVerb_(Custom)	Wwise RoomVerb			
 	1159390747	Room_Medium_Tiled	Wwise RoomVerb			
 	2995775460	Room_Small	Wwise RoomVerb			
 

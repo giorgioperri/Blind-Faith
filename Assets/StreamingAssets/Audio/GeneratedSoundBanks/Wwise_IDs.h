@@ -15,7 +15,9 @@ namespace AK
     {
         static const AkUniqueID AMB_CHURCH = 2840050639U;
         static const AkUniqueID FIRELOOP = 181700819U;
+        static const AkUniqueID LANTEREN_CHARGING = 3651057560U;
         static const AkUniqueID LANTEREN_DEPLOY_LOOP = 759350405U;
+        static const AkUniqueID LANTEREN_DISCHARGE = 1818726255U;
         static const AkUniqueID LANTEREN_UNDEPLOY = 740769089U;
         static const AkUniqueID VA_CLERK_PLAY = 1398273777U;
         static const AkUniqueID VA_PAUSE = 938429017U;
