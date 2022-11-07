@@ -44,3 +44,29 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6e61416b2bf014504805d8182f8c3b96, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  EquipLantern:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 10c4a248fd38cbb40b65fdb245aba361,
+      type: 2}
+  UnequipLantern:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: e4ccffdbd27e99e44a76de0cd7ce174e,
+      type: 2}
+  LanternCharging:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 0}
+  LanternDischarged:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 0}
+  LanternLoop:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 0}
+  StopLanternLoop:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 0}
