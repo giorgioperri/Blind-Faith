@@ -137,7 +137,7 @@ MonoBehaviour:
     m_Bits: 1
   m_VolumeTrigger: {fileID: 0}
   m_VolumeFrameworkUpdateModeOption: 2
-  m_RenderPostProcessing: 0
+  m_RenderPostProcessing: 1
   m_Antialiasing: 0
   m_AntialiasingQuality: 2
   m_StopNaN: 0
@@ -195,7 +195,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e0b8dd55d26b541e18d5d71deca728ad, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  IdleAmplitude: 0.1
-  IdleFrequency: 1
+  IdleAmplitude: 0
+  IdleFrequency: 0
   DefaultShakeAmplitude: 0.5
   DefaultShakeFrequency: 10

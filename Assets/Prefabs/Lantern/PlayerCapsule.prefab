@@ -380,6 +380,95 @@ MonoBehaviour:
   m_DefaultActionMap: Player
   m_SplitScreenIndex: -1
   m_Camera: {fileID: 0}
+--- !u!1001 &828726158096333716
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 9007082967714163933}
+    m_Modifications:
+    - target: {fileID: 4182413535706544745, guid: 5e5e50e497d2a4f3ba65113cd728cc0a,
+        type: 3}
+      propertyPath: _lanternRechargingTime
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 5068289978019585053, guid: 5e5e50e497d2a4f3ba65113cd728cc0a,
+        type: 3}
+      propertyPath: m_Name
+      value: Lantern
+      objectReference: {fileID: 0}
+    - target: {fileID: 5556877123323938471, guid: 5e5e50e497d2a4f3ba65113cd728cc0a,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5556877123323938471, guid: 5e5e50e497d2a4f3ba65113cd728cc0a,
+        type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.010051
+      objectReference: {fileID: 0}
+    - target: {fileID: 5556877123323938471, guid: 5e5e50e497d2a4f3ba65113cd728cc0a,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.010051
+      objectReference: {fileID: 0}
+    - target: {fileID: 5556877123323938471, guid: 5e5e50e497d2a4f3ba65113cd728cc0a,
+        type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.010051
+      objectReference: {fileID: 0}
+    - target: {fileID: 5556877123323938471, guid: 5e5e50e497d2a4f3ba65113cd728cc0a,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5556877123323938471, guid: 5e5e50e497d2a4f3ba65113cd728cc0a,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5556877123323938471, guid: 5e5e50e497d2a4f3ba65113cd728cc0a,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5556877123323938471, guid: 5e5e50e497d2a4f3ba65113cd728cc0a,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5556877123323938471, guid: 5e5e50e497d2a4f3ba65113cd728cc0a,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5556877123323938471, guid: 5e5e50e497d2a4f3ba65113cd728cc0a,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5556877123323938471, guid: 5e5e50e497d2a4f3ba65113cd728cc0a,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5556877123323938471, guid: 5e5e50e497d2a4f3ba65113cd728cc0a,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5556877123323938471, guid: 5e5e50e497d2a4f3ba65113cd728cc0a,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5556877123323938471, guid: 5e5e50e497d2a4f3ba65113cd728cc0a,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 5e5e50e497d2a4f3ba65113cd728cc0a, type: 3}
 --- !u!1001 &2825081657017192118
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -499,6 +588,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   hasRaisedLantern: 0
+--- !u!4 &9007082967714163933 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 6614418893033808491, guid: be9c39ffadf09b6439f2ff4eab4666ef,
+    type: 3}
+  m_PrefabInstance: {fileID: 2825081657017192118}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &7266628770780130100
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -576,7 +671,7 @@ PrefabInstance:
         type: 3}
       propertyPath: LanternCharging.WwiseObjectReference
       value: 
-      objectReference: {fileID: 11400000, guid: 607e5f8c20f7c4d2e9292c0b7b769dea,
+      objectReference: {fileID: 11400000, guid: afe1c6946724a104fad0ab88879cadad,
         type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 05aa5051364c84280bd69fe5908395d4, type: 3}
