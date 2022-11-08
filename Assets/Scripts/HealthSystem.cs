@@ -8,6 +8,10 @@ public class HealthSystem : MonoBehaviour
     [SerializeField]
     private Image _healthFadeEffect;
     private float _maxPlayerHealth = 100f;
+    [SerializeField]
+    private float _loseHealthSpeed = 1f;
+    [SerializeField]
+    private float _gainHealthSpeed = 10f;
     // Start is called before the first frame update
     void Start()
     {
@@ -33,7 +37,7 @@ public class HealthSystem : MonoBehaviour
         // Gain health when standing in the light
         if (GameManager.Instance.isBathingInLight)
         {
-            GameManager.Instance.health += Time.deltaTime;
+            GameManager.Instance.health += Time.deltaTime * _gainHealthSpeed;
         }
         // Don't take damage when holding the lantern that still has charged light
         else if(LanternManager.Instance.lanternCharge >= 0 && !LanternManager.Instance.isInsideSocket)
@@ -42,16 +46,15 @@ public class HealthSystem : MonoBehaviour
         }
         else
         {
-            GameManager.Instance.health -= Time.deltaTime;
+            GameManager.Instance.health -= Time.deltaTime*_loseHealthSpeed;
         }
     }
 
     void UpdateHealthFadeEffect()
     {
         Color healthFadeEffectColor = _healthFadeEffect.color;
-
         //Update alpha based on health
-        healthFadeEffectColor.a = (1 - (GameManager.Instance.health / _maxPlayerHealth))/10;
+        healthFadeEffectColor.a = 1 - (GameManager.Instance.health / _maxPlayerHealth);
         _healthFadeEffect.color = healthFadeEffectColor;
     }
 }
