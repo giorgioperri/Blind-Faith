@@ -57,16 +57,10 @@ MonoBehaviour:
   LanternCharging:
     idInternal: 0
     valueGuidInternal: 
-    WwiseObjectReference: {fileID: 0}
+    WwiseObjectReference: {fileID: 11400000, guid: afe1c6946724a104fad0ab88879cadad,
+      type: 2}
   LanternDischarged:
     idInternal: 0
     valueGuidInternal: 
-    WwiseObjectReference: {fileID: 0}
-  LanternLoop:
-    idInternal: 0
-    valueGuidInternal: 
-    WwiseObjectReference: {fileID: 0}
-  StopLanternLoop:
-    idInternal: 0
-    valueGuidInternal: 
-    WwiseObjectReference: {fileID: 0}
+    WwiseObjectReference: {fileID: 11400000, guid: 69a3e2a6596819d478742be5c39adecc,
+      type: 2}

@@ -17,8 +17,6 @@ public class PlayerSoundController : MonoBehaviour
     public AK.Wwise.Event UnequipLantern;
     public AK.Wwise.Event LanternCharging;
     public AK.Wwise.Event LanternDischarged;
-    public AK.Wwise.Event LanternLoop;
-    public AK.Wwise.Event StopLanternLoop;
 
     #endregion
 

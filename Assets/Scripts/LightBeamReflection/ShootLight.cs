@@ -6,11 +6,24 @@ public class ShootLight : MonoBehaviour
 {
     public Material material;
     private LightBeam _beam;
+    private GameObject _previousBeam;
+    public GameObject[] doors;
+    public bool hitTheDoor;
 
-    // Update is called once per frame
+
+    public void Start()
+    {
+        doors = GameObject.FindGameObjectsWithTag("Door");
+    }
+    
     void Update()
     {
-        Destroy(GameObject.Find("Light Beam"));
+        if(_previousBeam) Destroy(_previousBeam);
+
+        if (LanternManager.Instance.lanternCharge <= 0) return;
+        
         _beam = new LightBeam(gameObject.transform.position, gameObject.transform.right, material);
+        _previousBeam = _beam.lightObj;
+        hitTheDoor = _beam.hitTheDoor;
     }
 }
