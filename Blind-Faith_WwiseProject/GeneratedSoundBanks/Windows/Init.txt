@@ -1,17 +1,26 @@
 Audio Bus	ID	Name			Wwise Object Path	Notes
 	499593554	Binural			\Default Work Unit\Master Audio Bus\Binural	
+	532133889	Rooms_docking			\Default Work Unit\Master Audio Bus\Rooms_docking	
 	1359360203	Rooms			\Default Work Unit\Master Audio Bus\Rooms	
+	2022318020	Binural_docking			\Default Work Unit\Master Audio Bus\Binural_docking	
 	3803692087	Master Audio Bus			\Default Work Unit\Master Audio Bus	
 
 Auxiliary Bus	ID	Name			Wwise Object Path	Notes
+	741553742	Church_01			\Default Work Unit\Master Audio Bus\Rooms_docking\Church_01	
 	1584650008	BinuralAux			\Default Work Unit\Master Audio Bus\Binural\BinuralAux	
+	2030475388	Outdoors_01			\Default Work Unit\Master Audio Bus\Rooms_docking\Outdoors_01	
 	2568407992	Church			\Default Work Unit\Master Audio Bus\Rooms\Church	
+	2570349746	BinuralAux_docking			\Default Work Unit\Master Audio Bus\Binural_docking\BinuralAux_docking	
 	2730119150	Outdoors			\Default Work Unit\Master Audio Bus\Rooms\Outdoors	
+	2743004395	SmallRoom_01			\Default Work Unit\Master Audio Bus\Rooms_docking\SmallRoom_01	
 	2933838247	SmallRoom			\Default Work Unit\Master Audio Bus\Rooms\SmallRoom	
 
 Effect plug-ins	ID	Name	Type				Notes
+	38665079	Resonance Audio Renderer (Custom)	Resonance Audio Renderer			
 	48620415	Have_U_Ever_Been_Outside	Wwise RoomVerb			
+	295351154	Wwise_RoomVerb_(Custom)	Wwise RoomVerb			
 	431288752	Resonance Audio Renderer (Custom)	Resonance Audio Renderer			
+	574609459	Wwise_RoomVerb_(Custom)	Wwise RoomVerb			
 	1159390747	Room_Medium_Tiled	Wwise RoomVerb			
 	2995775460	Room_Small	Wwise RoomVerb			
 

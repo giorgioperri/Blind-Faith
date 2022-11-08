@@ -3,22 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="5374623f-f723-49c8-bd7b-db22ab670095" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Blind Faith/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Blind Faith/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/GameManager.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/GameManager.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/PlayerCapsule.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/PlayerCapsule.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Sound/SoundManager.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Sound/SoundManager.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Scenes_Giorgio/Lantern_Playground.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Scenes_Giorgio/Lantern_Playground.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/GameManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/GameManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/HandAnimatorController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/HandAnimatorController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/MainCamera.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/MainCamera.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Scenes_Releases/VerticalSliceDemo.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Scenes_Releases/VerticalSliceDemo.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Lantern/LanternManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Lantern/LanternManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Sound/PlayerSoundManager.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Sound/PlayerSoundManager.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Sound/SubtitlesTrigger.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Sound/SubtitlesTrigger.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Wwise/ScriptableObjects/Event/592B55FF-61FB-4E5F-9A9D-0A7A57D4F533.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Wwise/ScriptableObjects/Event/592B55FF-61FB-4E5F-9A9D-0A7A57D4F533.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Wwise/ScriptableObjects/Event/8EBC1544-BA58-4848-A977-1366CDD39CEE.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Wwise/ScriptableObjects/Event/8EBC1544-BA58-4848-A977-1366CDD39CEE.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Wwise/ScriptableObjects/Event/D107BFC9-1262-4A70-96BF-EBFAB9F0E214.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Wwise/ScriptableObjects/Event/D107BFC9-1262-4A70-96BF-EBFAB9F0E214.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Wwise/ScriptableObjects/Soundbank/E4473486-1E47-4894-82D5-226D08221419.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Wwise/ScriptableObjects/Soundbank/E4473486-1E47-4894-82D5-226D08221419.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/WwiseSettings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/WwiseSettings.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -29,6 +16,7 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/CinemachineCameraShaker.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/GameManager.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Lantern/LanternManager.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Lantern/LightBathingArea.cs" root0="FORCE_HIGHLIGHTING" />
@@ -111,6 +99,7 @@
       <workItem from="1667391013670" duration="4291000" />
       <workItem from="1667400786214" duration="3854000" />
       <workItem from="1667560498668" duration="1765000" />
+      <workItem from="1667834781557" duration="1498000" />
     </task>
     <servers />
   </component>

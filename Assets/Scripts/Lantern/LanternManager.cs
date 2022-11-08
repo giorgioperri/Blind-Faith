@@ -5,8 +5,9 @@ using UnityEngine;
 
 public class LanternManager : MonoBehaviour
 {
-    public float _lanternCharge = 1;
+    public float lanternCharge = 0;
     public bool canPlayChargeSound = true;
+    public bool canPlayDischargeSound;
     [SerializeField] private float _lanternDepletingTime = 60;
     [SerializeField] private float _lanternRechargingTime = 3;
     [SerializeField] private Material lightMaterial;
@@ -33,32 +34,39 @@ public class LanternManager : MonoBehaviour
 
     private void Update()
     {
-        lightMaterial.SetFloat("_Opacity", _lanternCharge);
-        _orb.localScale = _originalOrbScale * _lanternCharge;
+        lanternCharge = Mathf.Clamp01(lanternCharge);
+        lightMaterial.SetFloat("_Opacity", lanternCharge);
+        _orb.localScale = _originalOrbScale * lanternCharge;
         
         if (GameManager.Instance.isBathingInLight)
         {
-            if (GameManager.Instance.isLookingAtAngel && _lanternCharge <= 1)
+            if (GameManager.Instance.isLookingAtAngel && lanternCharge <= 1)
             {
+                if (lanternCharge == 0)
+                {
+                    Camera.main.gameObject.GetComponent<CinemachineCameraShaker>().ShakeCamera(5,.2f,10);
+                }
                 //recharge
-                if (canPlayChargeSound)
+                if (canPlayChargeSound && lanternCharge == 0)
                 {
                     PlayerSoundController.Instance.LanternCharging.Post(PlayerSoundController.Instance.gameObject);
                     canPlayChargeSound = false;
                 }
-                _lanternCharge += Time.deltaTime / _lanternRechargingTime;
+                canPlayDischargeSound = true;
+                lanternCharge += Time.deltaTime / _lanternRechargingTime;
             }
             return;
         }
         
-        if (_lanternCharge >= 0)
+        if (lanternCharge >= 0)
         {
             //deplete
-            _lanternCharge -= Time.deltaTime / _lanternDepletingTime;
+            lanternCharge -= Time.deltaTime / _lanternDepletingTime;
         }
 
-        if (_lanternCharge <= 0)
+        if (lanternCharge <= 0 && canPlayDischargeSound)
         {
+            canPlayDischargeSound = false;
             if(PlayerSoundController.Instance.LanternDischarged != null) 
                 PlayerSoundController.Instance.LanternDischarged.Post(PlayerSoundController.Instance.gameObject);
         }

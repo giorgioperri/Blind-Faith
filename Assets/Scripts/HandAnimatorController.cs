@@ -23,8 +23,6 @@ public class HandAnimatorController : MonoBehaviour
             _animController.SetBool("hasRaisedLantern", true);
             if(PlayerSoundController.Instance.EquipLantern != null) 
                 PlayerSoundController.Instance.EquipLantern.Post(PlayerSoundController.Instance.gameObject);
-            if(PlayerSoundController.Instance.LanternLoop != null) 
-                PlayerSoundController.Instance.LanternLoop.Post(PlayerSoundController.Instance.gameObject);
             _inputs.hasRaisedLantern = false;
             hasRaisedLantern = true;
         }
@@ -33,8 +31,6 @@ public class HandAnimatorController : MonoBehaviour
             _animController.SetBool("hasRaisedLantern", false);
             if(PlayerSoundController.Instance.UnequipLantern != null) 
                 PlayerSoundController.Instance.UnequipLantern.Post(PlayerSoundController.Instance.gameObject);
-            if(PlayerSoundController.Instance.StopLanternLoop != null) 
-                PlayerSoundController.Instance.StopLanternLoop.Post(PlayerSoundController.Instance.gameObject);
             _inputs.hasRaisedLantern = false;
             hasRaisedLantern = false;
         }
