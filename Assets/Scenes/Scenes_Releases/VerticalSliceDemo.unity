@@ -661,12 +661,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 474970139}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
---- !u!1 &478981734 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 612250498788688967, guid: c5efc39a8aaf6e64ea40e9ad573e9b47,
-    type: 3}
-  m_PrefabInstance: {fileID: 5393215579111688471}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &622969357 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6309955513800058099, guid: 89b57d7406d03e2439548be9758ff94a,
@@ -763,12 +757,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f0271df749728104eac22c3d897fd8ce, type: 3}
---- !u!1 &794310873 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 5051320448781840320, guid: c5efc39a8aaf6e64ea40e9ad573e9b47,
-    type: 3}
-  m_PrefabInstance: {fileID: 5393215579111688471}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &955861468
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1326,7 +1314,7 @@ PrefabInstance:
     - target: {fileID: 1904834870360981913, guid: 89b57d7406d03e2439548be9758ff94a,
         type: 3}
       propertyPath: m_VersionIndex
-      value: 11408
+      value: 11414
       objectReference: {fileID: 0}
     - target: {fileID: 1904834870360981913, guid: 89b57d7406d03e2439548be9758ff94a,
         type: 3}
@@ -2142,22 +2130,22 @@ PrefabInstance:
         type: 3}
       propertyPath: _lanternObject
       value: 
-      objectReference: {fileID: 794310873}
+      objectReference: {fileID: 0}
     - target: {fileID: 6309955514561078599, guid: 89b57d7406d03e2439548be9758ff94a,
         type: 3}
       propertyPath: _handController
       value: 
-      objectReference: {fileID: 2127549506}
+      objectReference: {fileID: 0}
     - target: {fileID: 6309955514561078599, guid: 89b57d7406d03e2439548be9758ff94a,
         type: 3}
       propertyPath: _lightSourceLantern
       value: 
-      objectReference: {fileID: 478981734}
+      objectReference: {fileID: 0}
     - target: {fileID: 6309955514561078599, guid: 89b57d7406d03e2439548be9758ff94a,
         type: 3}
       propertyPath: _lanternFollowSocket
       value: 
-      objectReference: {fileID: 2107440500}
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 89b57d7406d03e2439548be9758ff94a, type: 3}
 --- !u!1001 &1536958908
@@ -3133,19 +3121,13 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 39b30fed8dbb54ed5b29578588d40292, type: 3}
---- !u!1 &2107440500 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 3314811828368578619, guid: c5efc39a8aaf6e64ea40e9ad573e9b47,
-    type: 3}
-  m_PrefabInstance: {fileID: 5393215579111688471}
-  m_PrefabAsset: {fileID: 0}
 --- !u!43 &2124716844
 Mesh:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh-799206
+  m_Name: pb_Mesh-3172
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -3303,12 +3285,6 @@ Mesh:
     offset: 0
     size: 0
     path: 
---- !u!1 &2127549506 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 5830588164914975779, guid: c5efc39a8aaf6e64ea40e9ad573e9b47,
-    type: 3}
-  m_PrefabInstance: {fileID: 5393215579111688471}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &2142826723
 PrefabInstance:
   m_ObjectHideFlags: 0
