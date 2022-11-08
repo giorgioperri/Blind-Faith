@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <SoundBanksInfo Platform="Windows" BasePlatform="Windows" SchemaVersion="12" SoundbankVersion="140">
 	<RootPaths>
-		<ProjectRoot>C:\Users\kille\Blind-Faith\Blind-Faith_WwiseProject\</ProjectRoot>
-		<SourceFilesRoot>C:\Users\kille\Blind-Faith\Blind-Faith_WwiseProject\.cache\Windows\</SourceFilesRoot>
-		<SoundBanksRoot>C:\Users\kille\Blind-Faith\Blind-Faith_WwiseProject\GeneratedSoundBanks\Windows\</SoundBanksRoot>
+		<ProjectRoot>/Users/giorgioperri/Library/Application Support/Wwise2019/Bottles/Wwise2019x64/dosdevices/y:/Desktop/ITU/Making Games/MakingGames22/Blind Faith/Blind-Faith_WwiseProject/</ProjectRoot>
+		<SourceFilesRoot>/Users/giorgioperri/Library/Application Support/Wwise2019/Bottles/Wwise2019x64/dosdevices/y:/Desktop/ITU/Making Games/MakingGames22/Blind Faith/Blind-Faith_WwiseProject/.cache/Windows/</SourceFilesRoot>
+		<SoundBanksRoot>/Users/giorgioperri/Library/Application Support/Wwise2019/Bottles/Wwise2019x64/dosdevices/y:/Desktop/ITU/Making Games/MakingGames22/Blind Faith/Blind-Faith_WwiseProject/GeneratedSoundBanks/Windows/</SoundBanksRoot>
 		<ExternalSourcesInputFile></ExternalSourcesInputFile>
-		<ExternalSourcesOutputRoot>C:\Users\kille\Blind-Faith\Blind-Faith_WwiseProject\GeneratedSoundBanks\Windows</ExternalSourcesOutputRoot>
+		<ExternalSourcesOutputRoot>/Users/giorgioperri/Library/Application Support/Wwise2019/Bottles/Wwise2019x64/dosdevices/y:/Desktop/ITU/Making Games/MakingGames22/Blind Faith/Blind-Faith_WwiseProject/GeneratedSoundBanks/Windows</ExternalSourcesOutputRoot>
 	</RootPaths>
 	<DialogueEvents/>
 	<StreamedFiles/>
@@ -26,105 +26,247 @@
 				<AuxBus Id="2933838247" Name="SmallRoom" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Rooms\SmallRoom"/>
 			</IncludedAuxBusses>
 		</SoundBank>
-		<SoundBank Id="2662087701" Language="SFX" Hash="2997441916">
-			<ObjectPath>\SoundBanks\Default Work Unit\VoiceActing</ObjectPath>
-			<ShortName>VoiceActing</ShortName>
-			<Path>VoiceActing.bnk</Path>
+		<SoundBank Id="3569113157" Language="SFX" Hash="702162789">
+			<ObjectPath>\SoundBanks\Default Work Unit\Slice</ObjectPath>
+			<ShortName>Slice</ShortName>
+			<Path>Slice.bnk</Path>
 			<IncludedEvents>
-				<Event Id="2840050639" Name="Amb_Church" ObjectPath="\Events\Default Work Unit\Amb_Church" MaxAttenuation="10." DurationType="Infinite"/>
-				<Event Id="2618683459" Name="DEBUG_HAMMER" ObjectPath="\Events\Default Work Unit\DEBUG_HAMMER" MaxAttenuation="20." DurationType="Infinite"/>
-				<Event Id="181700819" Name="FireLoop" ObjectPath="\Events\Default Work Unit\FireLoop" MaxAttenuation="10." DurationType="Infinite"/>
-				<Event Id="3651057560" Name="Lanteren_Charging" ObjectPath="\Events\Default Work Unit\SFX\Player\Lanteren\Lanteren_Charging" MaxAttenuation="10." DurationType="Infinite"/>
-				<Event Id="759350405" Name="Lanteren_Deploy_Loop" ObjectPath="\Events\Default Work Unit\SFX\Player\Lanteren\Lanteren_Deploy_Loop" MaxAttenuation="10." DurationType="Infinite"/>
-				<Event Id="1818726255" Name="Lanteren_discharge" ObjectPath="\Events\Default Work Unit\SFX\Player\Lanteren\Lanteren_discharge" MaxAttenuation="10." DurationType="OneShot" DurationMin="3.185225" DurationMax="3.185225"/>
-				<Event Id="740769089" Name="Lanteren_Undeploy" ObjectPath="\Events\Default Work Unit\SFX\Player\Lanteren\Lanteren_Undeploy" MaxAttenuation="10." DurationType="OneShot" DurationMin="2.79757" DurationMax="2.79757"/>
-				<Event Id="1398273777" Name="VA_Clerk_Play" ObjectPath="\Events\Default Work Unit\VA\VA_Clerk\VA_Clerk_Play" MaxAttenuation="10." DurationType="Infinite"/>
+				<Event Id="2840050639" Name="Amb_Church" ObjectPath="\Events\Default Work Unit\Amb_Church" MaxAttenuation="10." DurationType="Infinite">
+					<IncludedMemoryFiles>
+						<File Id="156116196" Language="SFX">
+							<ShortName>Bluezone_BC0238_ambience_020.wav</ShortName>
+							<Path>SFX/Bluezone_BC0238_ambience_020_C769016E.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="2618683459" Name="DEBUG_HAMMER" ObjectPath="\Events\Default Work Unit\DEBUG_HAMMER" MaxAttenuation="20." DurationType="Infinite">
+					<IncludedMemoryFiles>
+						<File Id="65470773" Language="SFX">
+							<ShortName>Mutated hammer.wav</ShortName>
+							<Path>SFX/Mutated hammer_53C93DF0.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+					<AuxBusSends>
+						<AuxBus Id="1584650008" Name="BinuralAux" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Binural\BinuralAux"/>
+					</AuxBusSends>
+				</Event>
+				<Event Id="181700819" Name="FireLoop" ObjectPath="\Events\Default Work Unit\FireLoop" MaxAttenuation="10." DurationType="Infinite">
+					<IncludedMemoryFiles>
+						<File Id="316983824" Language="SFX">
+							<ShortName>Fire_Furnace_Loop_PSEM.112.wav</ShortName>
+							<Path>SFX/Fire_Furnace_Loop_PSEM.112_D79FB2B7.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="3651057560" Name="Lanteren_Charging" ObjectPath="\Events\Default Work Unit\SFX\Player\Lanteren\Lanteren_Charging" MaxAttenuation="10." DurationType="Infinite">
+					<IncludedMemoryFiles>
+						<File Id="786073262" Language="SFX">
+							<ShortName>Mutated hammer.wav</ShortName>
+							<Path>SFX/Mutated hammer_26E4CBA8.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+					<AuxBusSends>
+						<AuxBus Id="1584650008" Name="BinuralAux" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Binural\BinuralAux"/>
+					</AuxBusSends>
+				</Event>
+				<Event Id="759350405" Name="Lanteren_Deploy_Loop" ObjectPath="\Events\Default Work Unit\SFX\Player\Lanteren\Lanteren_Deploy_Loop" MaxAttenuation="10." DurationType="Infinite">
+					<IncludedMemoryFiles>
+						<File Id="198540441" Language="SFX">
+							<ShortName>Powerup_Mutated_Drone.wav</ShortName>
+							<Path>SFX/Powerup_Mutated_Drone_F80341E1.wem</Path>
+						</File>
+						<File Id="883270094" Language="SFX">
+							<ShortName>Switch weapon.wav</ShortName>
+							<Path>SFX/Switch weapon_10C4C929.wem</Path>
+						</File>
+						<File Id="937773785" Language="SFX">
+							<ShortName>Stinger_Metal_Silverware_Reversed.wav</ShortName>
+							<Path>SFX/Stinger_Metal_Silverware_Reversed_9A766E4D.wem</Path>
+						</File>
+						<File Id="974181242" Language="SFX">
+							<ShortName>Teleport.wav</ShortName>
+							<Path>SFX/Teleport_E2C50CAA.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="1818726255" Name="Lanteren_discharge" ObjectPath="\Events\Default Work Unit\SFX\Player\Lanteren\Lanteren_discharge" MaxAttenuation="10." DurationType="OneShot" DurationMin="3.185225" DurationMax="3.185225">
+					<IncludedMemoryFiles>
+						<File Id="446528560" Language="SFX">
+							<ShortName>Teleport.wav</ShortName>
+							<Path>SFX/Teleport_EBE10AA2.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+					<AuxBusSends>
+						<AuxBus Id="1584650008" Name="BinuralAux" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Binural\BinuralAux"/>
+					</AuxBusSends>
+				</Event>
+				<Event Id="740769089" Name="Lanteren_Undeploy" ObjectPath="\Events\Default Work Unit\SFX\Player\Lanteren\Lanteren_Undeploy" MaxAttenuation="10." DurationType="OneShot" DurationMin="2.79757" DurationMax="2.79757">
+					<IncludedMemoryFiles>
+						<File Id="9150397" Language="SFX">
+							<ShortName>Teleport.wav</ShortName>
+							<Path>SFX/Teleport_D2B0A69F.wem</Path>
+						</File>
+						<File Id="207267346" Language="SFX">
+							<ShortName>Mutated hammer.wav</ShortName>
+							<Path>SFX/Mutated hammer_84A83FD6.wem</Path>
+						</File>
+						<File Id="929948901" Language="SFX">
+							<ShortName>Stinger_Metal_Silverware_Reversed.wav</ShortName>
+							<Path>SFX/Stinger_Metal_Silverware_Reversed_4B9A62E7.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="1398273777" Name="VA_Clerk_Play" ObjectPath="\Events\Default Work Unit\VA\VA_Clerk\VA_Clerk_Play" MaxAttenuation="10." DurationType="Mixed" DurationMin="2.797823" DurationMax="Infinite">
+					<IncludedMemoryFiles>
+						<File Id="200631349" Language="SFX">
+							<ShortName>BF_VATest_s1_3.wav</ShortName>
+							<Path>SFX/BF_VATest_s1_3_10C4C929.wem</Path>
+						</File>
+						<File Id="353658067" Language="SFX">
+							<ShortName>BF_VATest_s1_4.wav</ShortName>
+							<Path>SFX/BF_VATest_s1_4_10C4C929.wem</Path>
+						</File>
+						<File Id="523566726" Language="SFX">
+							<ShortName>BF_VATest_s1.wav</ShortName>
+							<Path>SFX/BF_VATest_s1_4E8A5591.wem</Path>
+						</File>
+						<File Id="541704858" Language="SFX">
+							<ShortName>BF_VATest_s1_2.wav</ShortName>
+							<Path>SFX/BF_VATest_s1_2_10C4C929.wem</Path>
+						</File>
+						<File Id="640644510" Language="SFX">
+							<ShortName>BF_VATest_s1_1.wav</ShortName>
+							<Path>SFX/BF_VATest_s1_1_2456FF54.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+					<DefaultSwitchValue>{82AD2430-231F-4A0F-9382-CEE494A9DF9E}</DefaultSwitchValue>
+					<SwitchContainers>
+						<SwitchContainer SwitchValue="{82AD2430-231F-4A0F-9382-CEE494A9DF9E}">
+							<Media>
+								<File Id="200631349"/>
+								<File Id="353658067"/>
+								<File Id="523566726"/>
+								<File Id="541704858"/>
+								<File Id="640644510"/>
+							</Media>
+						</SwitchContainer>
+						<SwitchContainer SwitchValue="{2BEE6D73-59DB-4485-B333-80C53A3782FE}">
+							<Media>
+								<File Id="200631349"/>
+								<File Id="353658067"/>
+								<File Id="523566726"/>
+								<File Id="541704858"/>
+								<File Id="640644510"/>
+							</Media>
+						</SwitchContainer>
+					</SwitchContainers>
+					<AuxBusSends>
+						<AuxBus Id="1584650008" Name="BinuralAux" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Binural\BinuralAux"/>
+					</AuxBusSends>
+				</Event>
+				<Event Id="1421338019" Name="VA_Clerk_Set_Switch_Intro_1" ObjectPath="\Events\Default Work Unit\VA\VA_Clerk\VA_Clerk_Set_Switch_Intro_1" MaxAttenuation="0." DurationType="OneShot" DurationMin="0." DurationMax="0.">
+					<ActionSetSwitch>
+						<ActionSetSwitchEntry Id="1918899099" Name="VA_Clerk_Intro_1" ObjectPath="\Switches\Default Work Unit\VA\VA_Clerk_Switch_Group\VA_Clerk_Intro_1"/>
+					</ActionSetSwitch>
+				</Event>
+				<Event Id="1089733008" Name="VA_Clerk_Set_Switch_Intro_Step" ObjectPath="\Events\Default Work Unit\VA\VA_Clerk\VA_Clerk_Set_Switch_Intro_Step" MaxAttenuation="0." DurationType="OneShot" DurationMin="0." DurationMax="0.">
+					<ActionSetSwitch>
+						<ActionSetSwitchEntry Id="2798444792" Name="VA_Clerk_Intro_Step" ObjectPath="\Switches\Default Work Unit\VA\VA_Clerk_Switch_Group\VA_Clerk_Intro_Step"/>
+					</ActionSetSwitch>
+				</Event>
 				<Event Id="938429017" Name="VA_Pause" ObjectPath="\Events\Default Work Unit\VA\VA_Pause" MaxAttenuation="0." DurationType="OneShot" DurationMin="0." DurationMax="0."/>
 				<Event Id="662947992" Name="VA_Resume" ObjectPath="\Events\Default Work Unit\VA\VA_Resume" MaxAttenuation="0." DurationType="OneShot" DurationMin="0." DurationMax="0."/>
 			</IncludedEvents>
 			<IncludedMemoryFiles>
 				<File Id="9150397" Language="SFX">
 					<ShortName>Teleport.wav</ShortName>
-					<Path>SFX\Teleport_D2B0A69F.wem</Path>
+					<Path>SFX/Teleport_D2B0A69F.wem</Path>
 				</File>
 				<File Id="65470773" Language="SFX">
 					<ShortName>Mutated hammer.wav</ShortName>
-					<Path>SFX\Mutated hammer_1F6CB87A.wem</Path>
+					<Path>SFX/Mutated hammer_53C93DF0.wem</Path>
 				</File>
 				<File Id="156116196" Language="SFX">
 					<ShortName>Bluezone_BC0238_ambience_020.wav</ShortName>
-					<Path>SFX\Bluezone_BC0238_ambience_020_C769016E.wem</Path>
+					<Path>SFX/Bluezone_BC0238_ambience_020_C769016E.wem</Path>
 				</File>
 				<File Id="198540441" Language="SFX">
 					<ShortName>Powerup_Mutated_Drone.wav</ShortName>
-					<Path>SFX\Powerup_Mutated_Drone_F80341E1.wem</Path>
+					<Path>SFX/Powerup_Mutated_Drone_F80341E1.wem</Path>
 				</File>
 				<File Id="200631349" Language="SFX">
 					<ShortName>BF_VATest_s1_3.wav</ShortName>
-					<Path>SFX\BF_VATest_s1_3_10C4C929.wem</Path>
+					<Path>SFX/BF_VATest_s1_3_10C4C929.wem</Path>
 				</File>
 				<File Id="207267346" Language="SFX">
 					<ShortName>Mutated hammer.wav</ShortName>
-					<Path>SFX\Mutated hammer_84A83FD6.wem</Path>
+					<Path>SFX/Mutated hammer_84A83FD6.wem</Path>
 				</File>
 				<File Id="316983824" Language="SFX">
 					<ShortName>Fire_Furnace_Loop_PSEM.112.wav</ShortName>
-					<Path>SFX\Fire_Furnace_Loop_PSEM.112_D79FB2B7.wem</Path>
+					<Path>SFX/Fire_Furnace_Loop_PSEM.112_D79FB2B7.wem</Path>
 				</File>
 				<File Id="353658067" Language="SFX">
 					<ShortName>BF_VATest_s1_4.wav</ShortName>
-					<Path>SFX\BF_VATest_s1_4_10C4C929.wem</Path>
+					<Path>SFX/BF_VATest_s1_4_10C4C929.wem</Path>
 				</File>
 				<File Id="392707160" Language="SFX">
 					<ShortName>texture_medium_3.wav</ShortName>
-					<Path>SFX\texture_medium_3_10C4C929.wem</Path>
+					<Path>SFX/texture_medium_3_10C4C929.wem</Path>
 				</File>
 				<File Id="446528560" Language="SFX">
 					<ShortName>Teleport.wav</ShortName>
-					<Path>SFX\Teleport_EBE10AA2.wem</Path>
+					<Path>SFX/Teleport_EBE10AA2.wem</Path>
 				</File>
 				<File Id="523566726" Language="SFX">
 					<ShortName>BF_VATest_s1.wav</ShortName>
-					<Path>SFX\BF_VATest_s1_4E8A5591.wem</Path>
+					<Path>SFX/BF_VATest_s1_4E8A5591.wem</Path>
 				</File>
 				<File Id="541704858" Language="SFX">
 					<ShortName>BF_VATest_s1_2.wav</ShortName>
-					<Path>SFX\BF_VATest_s1_2_10C4C929.wem</Path>
+					<Path>SFX/BF_VATest_s1_2_10C4C929.wem</Path>
 				</File>
 				<File Id="640644510" Language="SFX">
 					<ShortName>BF_VATest_s1_1.wav</ShortName>
-					<Path>SFX\BF_VATest_s1_1_2456FF54.wem</Path>
+					<Path>SFX/BF_VATest_s1_1_2456FF54.wem</Path>
 				</File>
 				<File Id="786073262" Language="SFX">
 					<ShortName>Mutated hammer.wav</ShortName>
-					<Path>SFX\Mutated hammer_26E4CBA8.wem</Path>
+					<Path>SFX/Mutated hammer_26E4CBA8.wem</Path>
 				</File>
 				<File Id="883270094" Language="SFX">
 					<ShortName>Switch weapon.wav</ShortName>
-					<Path>SFX\Switch weapon_10C4C929.wem</Path>
+					<Path>SFX/Switch weapon_10C4C929.wem</Path>
 				</File>
 				<File Id="929948901" Language="SFX">
 					<ShortName>Stinger_Metal_Silverware_Reversed.wav</ShortName>
-					<Path>SFX\Stinger_Metal_Silverware_Reversed_4B9A62E7.wem</Path>
+					<Path>SFX/Stinger_Metal_Silverware_Reversed_4B9A62E7.wem</Path>
 				</File>
 				<File Id="937773785" Language="SFX">
 					<ShortName>Stinger_Metal_Silverware_Reversed.wav</ShortName>
-					<Path>SFX\Stinger_Metal_Silverware_Reversed_9A766E4D.wem</Path>
+					<Path>SFX/Stinger_Metal_Silverware_Reversed_9A766E4D.wem</Path>
 				</File>
 				<File Id="974181242" Language="SFX">
 					<ShortName>Teleport.wav</ShortName>
-					<Path>SFX\Teleport_E2C50CAA.wem</Path>
+					<Path>SFX/Teleport_E2C50CAA.wem</Path>
 				</File>
 				<File Id="1054677677" Language="SFX">
 					<ShortName>Switch weapon.wav</ShortName>
-					<Path>SFX\Switch weapon_C0BD21C5.wem</Path>
+					<Path>SFX/Switch weapon_C0BD21C5.wem</Path>
 				</File>
 			</IncludedMemoryFiles>
 			<SwitchGroups>
 				<SwitchGroup Id="232330383" Name="VA_Clerk_Switch_Group" ObjectPath="\Switches\Default Work Unit\VA\VA_Clerk_Switch_Group" GUID="{606D0EF6-200D-4481-B083-66F3C0D6C337}">
 					<Switches>
 						<Switch Id="1918899099" Name="VA_Clerk_Intro_1" ObjectPath="\Switches\Default Work Unit\VA\VA_Clerk_Switch_Group\VA_Clerk_Intro_1" GUID="{82AD2430-231F-4A0F-9382-CEE494A9DF9E}"/>
+						<Switch Id="2798444792" Name="VA_Clerk_Intro_Step" ObjectPath="\Switches\Default Work Unit\VA\VA_Clerk_Switch_Group\VA_Clerk_Intro_Step" GUID="{2BEE6D73-59DB-4485-B333-80C53A3782FE}"/>
 					</Switches>
+				</SwitchGroup>
+				<SwitchGroup Id="1918899099" Name="VA_Clerk_Intro_1" ObjectPath="\Switches\Default Work Unit\VA\VA_Clerk_Switch_Group\VA_Clerk_Intro_1" GUID="{82AD2430-231F-4A0F-9382-CEE494A9DF9E}">
+					<Switches/>
+				</SwitchGroup>
+				<SwitchGroup Id="2798444792" Name="VA_Clerk_Intro_Step" ObjectPath="\Switches\Default Work Unit\VA\VA_Clerk_Switch_Group\VA_Clerk_Intro_Step" GUID="{2BEE6D73-59DB-4485-B333-80C53A3782FE}">
+					<Switches/>
 				</SwitchGroup>
 			</SwitchGroups>
 		</SoundBank>

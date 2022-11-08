@@ -216,10 +216,187 @@
 										<ItemRef Name="BF_VATest_s1_4" ID="{04863995-ECD2-4463-8442-AA13FA2E8CC6}"/>
 									</Playlist>
 								</RandomSequenceContainer>
+								<RandomSequenceContainer Name="ClerkIntro_Step" ID="{08E89545-C43B-4EF8-ADEA-27D98D973BB1}" ShortID="433887587">
+									<PropertyList>
+										<Property Name="3DSpatialization" Type="int16" Value="2"/>
+										<Property Name="PlayMechanismLoop" Type="bool" Value="True"/>
+										<Property Name="RandomOrSequence" Type="int16" Value="0"/>
+										<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Attenuation">
+											<ObjectRef Name="10" ID="{CD38D13E-1D7D-46FA-AD0C-C7D5F9690547}" WorkUnitID="{47D4E814-D669-4A08-8AD2-F706566546E0}"/>
+										</Reference>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{23AF77D7-3FEA-409B-8E44-F5B490014C61}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Rooms" ID="{F220833B-3FC1-4DC8-9CF3-6F367C8C1EDE}" WorkUnitID="{C91EB4C6-56DC-4541-96C4-29E948904D66}"/>
+										</Reference>
+										<Reference Name="UserAuxSend0">
+											<ObjectRef Name="BinuralAux" ID="{C1A480A7-AB40-4091-8843-AB735E7B9C82}" WorkUnitID="{C91EB4C6-56DC-4541-96C4-29E948904D66}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<Sound Name="BF_VATest_s1" ID="{0FFD08B8-262B-4B65-AEDF-D0365C4FB20B}" ShortID="672292152">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{23AF77D7-3FEA-409B-8E44-F5B490014C61}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C91EB4C6-56DC-4541-96C4-29E948904D66}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="BF_VATest_s1" ID="{A13E1A51-229D-4CFA-AB9D-B1CD9C95BC4E}">
+													<PropertyList>
+														<Property Name="MarkerInputMode" Type="int16" Value="2"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>BF_VATest_s1.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="523566726"/>
+													</MediaIDList>
+													<PluginInnerObjectList>
+														<List Name="Markers">
+															<PluginInnerObject Name="" ID="{06D8E36D-342E-480C-885C-EAAADBCAA21D}" PluginName="Marker" CompanyID="0" PluginID="993">
+																<PropertyList>
+																	<Property Name="Label" Type="string" Value="end"/>
+																	<Property Name="Time" Type="Real64" Value="1.61615907901622"/>
+																</PropertyList>
+															</PluginInnerObject>
+														</List>
+													</PluginInnerObjectList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ObjectLists/>
+											<ActiveSourceList>
+												<ActiveSource Name="BF_VATest_s1" ID="{A13E1A51-229D-4CFA-AB9D-B1CD9C95BC4E}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="BF_VATest_s1_1" ID="{282D3B62-29EF-43E6-88CE-BD1678441E2D}" ShortID="1039996892">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{23AF77D7-3FEA-409B-8E44-F5B490014C61}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C91EB4C6-56DC-4541-96C4-29E948904D66}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="BF_VATest_s1_1" ID="{F832AAF0-9B42-4B33-9003-D76BDABD6FCC}">
+													<PropertyList>
+														<Property Name="MarkerInputMode" Type="int16" Value="2"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>BF_VATest_s1_1.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="640644510"/>
+													</MediaIDList>
+													<PluginInnerObjectList>
+														<List Name="Markers">
+															<PluginInnerObject Name="" ID="{09B3B1FD-010A-480F-97E1-E146E2BC505D}" PluginName="Marker" CompanyID="0" PluginID="993">
+																<PropertyList>
+																	<Property Name="Label" Type="string" Value="end"/>
+																	<Property Name="Time" Type="Real64" Value="5.90512050393452"/>
+																</PropertyList>
+															</PluginInnerObject>
+														</List>
+													</PluginInnerObjectList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ObjectLists/>
+											<ActiveSourceList>
+												<ActiveSource Name="BF_VATest_s1_1" ID="{F832AAF0-9B42-4B33-9003-D76BDABD6FCC}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="BF_VATest_s1_2" ID="{80F89FBE-4E00-4FA8-B915-5DE8D7D8B493}" ShortID="752565890">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{23AF77D7-3FEA-409B-8E44-F5B490014C61}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C91EB4C6-56DC-4541-96C4-29E948904D66}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="BF_VATest_s1_2" ID="{6890A713-F603-49F0-8847-FB703003339E}">
+													<Language>SFX</Language>
+													<AudioFile>BF_VATest_s1_2.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="541704858"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ObjectLists/>
+											<ActiveSourceList>
+												<ActiveSource Name="BF_VATest_s1_2" ID="{6890A713-F603-49F0-8847-FB703003339E}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="BF_VATest_s1_3" ID="{254E8A29-6EB8-4D8B-A296-1CBF8AA4F908}" ShortID="749120728">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{23AF77D7-3FEA-409B-8E44-F5B490014C61}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C91EB4C6-56DC-4541-96C4-29E948904D66}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="BF_VATest_s1_3" ID="{7C2BF25C-8D27-47D9-8B77-83E436280D98}">
+													<Language>SFX</Language>
+													<AudioFile>BF_VATest_s1_3.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="200631349"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ObjectLists/>
+											<ActiveSourceList>
+												<ActiveSource Name="BF_VATest_s1_3" ID="{7C2BF25C-8D27-47D9-8B77-83E436280D98}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="BF_VATest_s1_4" ID="{1BD134FB-965C-4A55-B4C0-235F175FAD9E}" ShortID="17424653">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{23AF77D7-3FEA-409B-8E44-F5B490014C61}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C91EB4C6-56DC-4541-96C4-29E948904D66}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="BF_VATest_s1_4" ID="{97769F6A-D807-4723-9B79-A30DBC9F144E}">
+													<Language>SFX</Language>
+													<AudioFile>BF_VATest_s1_4.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="353658067"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ObjectLists/>
+											<ActiveSourceList>
+												<ActiveSource Name="BF_VATest_s1_4" ID="{97769F6A-D807-4723-9B79-A30DBC9F144E}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+									</ChildrenList>
+									<ObjectLists/>
+									<Playlist>
+										<ItemRef Name="BF_VATest_s1" ID="{0FFD08B8-262B-4B65-AEDF-D0365C4FB20B}"/>
+										<ItemRef Name="BF_VATest_s1_1" ID="{282D3B62-29EF-43E6-88CE-BD1678441E2D}"/>
+										<ItemRef Name="BF_VATest_s1_2" ID="{80F89FBE-4E00-4FA8-B915-5DE8D7D8B493}"/>
+										<ItemRef Name="BF_VATest_s1_3" ID="{254E8A29-6EB8-4D8B-A296-1CBF8AA4F908}"/>
+										<ItemRef Name="BF_VATest_s1_4" ID="{1BD134FB-965C-4A55-B4C0-235F175FAD9E}"/>
+									</Playlist>
+								</RandomSequenceContainer>
 							</ChildrenList>
 							<ObjectLists/>
 							<GroupingInfo>
 								<GroupingBehaviorList>
+									<GroupingBehavior>
+										<ItemRef Name="ClerkIntro_Step" ID="{08E89545-C43B-4EF8-ADEA-27D98D973BB1}"/>
+									</GroupingBehavior>
 									<GroupingBehavior>
 										<ItemRef Name="ClerkIntro" ID="{9FE4C1F4-0295-4857-896C-B7DD5670F34B}"/>
 									</GroupingBehavior>
@@ -229,6 +406,12 @@
 										<SwitchRef Name="VA_Clerk_Intro_1" ID="{82AD2430-231F-4A0F-9382-CEE494A9DF9E}"/>
 										<ItemList>
 											<ItemRef Name="ClerkIntro" ID="{9FE4C1F4-0295-4857-896C-B7DD5670F34B}"/>
+										</ItemList>
+									</Grouping>
+									<Grouping>
+										<SwitchRef Name="VA_Clerk_Intro_Step" ID="{2BEE6D73-59DB-4485-B333-80C53A3782FE}"/>
+										<ItemList>
+											<ItemRef Name="ClerkIntro_Step" ID="{08E89545-C43B-4EF8-ADEA-27D98D973BB1}"/>
 										</ItemList>
 									</Grouping>
 								</GroupingList>

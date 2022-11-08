@@ -6,4 +6,5 @@ using UnityEngine;
 public class VoiceLineSequenceSO : ScriptableObject
 {
     public List<VoiceLineSO> sequenceLines;
+    public AK.Wwise.Event setSwitchEvent;
 }

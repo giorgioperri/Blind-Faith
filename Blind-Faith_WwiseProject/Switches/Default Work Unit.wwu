@@ -8,6 +8,7 @@
 						<SwitchGroup Name="VA_Clerk_Switch_Group" ID="{606D0EF6-200D-4481-B083-66F3C0D6C337}">
 							<ChildrenList>
 								<Switch Name="VA_Clerk_Intro_1" ID="{82AD2430-231F-4A0F-9382-CEE494A9DF9E}"/>
+								<Switch Name="VA_Clerk_Intro_Step" ID="{2BEE6D73-59DB-4485-B333-80C53A3782FE}"/>
 							</ChildrenList>
 						</SwitchGroup>
 					</ChildrenList>
