@@ -8,6 +8,7 @@ public class LanternManager : MonoBehaviour
     public float lanternCharge = 0;
     public bool canPlayChargeSound = true;
     public bool canPlayDischargeSound;
+    public bool isInsideSocket;
     [SerializeField] private float _lanternDepletingTime = 60;
     [SerializeField] private float _lanternRechargingTime = 3;
     [SerializeField] private Material lightMaterial;

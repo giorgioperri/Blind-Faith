@@ -15,7 +15,6 @@ public class Socket : Interactable
     [SerializeField]
     private GameObject _handController;
 
-    private bool _isInsideSocket;
     private GameObject _lightBeam;
 
     public override void OnFocus()
@@ -25,7 +24,7 @@ public class Socket : Interactable
     public override void OnInteraction()
     {
         // The implementation works for now, but probably needs improvements in future
-        if (!_isInsideSocket && _handController.GetComponent<HandAnimatorController>().hasRaisedLantern && 
+        if (!LanternManager.Instance.isInsideSocket && _handController.GetComponent<HandAnimatorController>().hasRaisedLantern && 
             (Keyboard.current.eKey.wasPressedThisFrame /*|| Gamepad.current.buttonWest.wasPressedThisFrame)*/))
         {
             
@@ -34,10 +33,11 @@ public class Socket : Interactable
             _lanternObject.transform.position = transform.position;
             _lanternObject.transform.rotation = transform.rotation;
 
-            _isInsideSocket = !_isInsideSocket;
+            
+            LanternManager.Instance.isInsideSocket = !LanternManager.Instance.isInsideSocket;
 
         }
-        else if (_isInsideSocket && _handController.GetComponent<HandAnimatorController>().hasRaisedLantern &&
+        else if (LanternManager.Instance.isInsideSocket && _handController.GetComponent<HandAnimatorController>().hasRaisedLantern &&
             (Keyboard.current.eKey.wasPressedThisFrame /*|| Gamepad.current.buttonWest.wasPressedThisFrame)*/))
         {
             _lightBeam = GameObject.Find("Light Beam");
@@ -46,7 +46,7 @@ public class Socket : Interactable
             _lanternObject.transform.parent = _lanternFollowSocket.transform;
             _lanternObject.transform.position = _lanternFollowSocket.transform.position;
             _lanternObject.transform.rotation = _lanternFollowSocket.transform.rotation;
-            _isInsideSocket = !_isInsideSocket;
+            LanternManager.Instance.isInsideSocket = !LanternManager.Instance.isInsideSocket;
         }
     }
     public override void OnLoseFocus()
