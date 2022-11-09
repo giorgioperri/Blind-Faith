@@ -9,6 +9,7 @@ public class LanternManager : MonoBehaviour
     public bool canPlayChargeSound = true;
     public bool canPlayDischargeSound;
     public bool isInsideSocket;
+    public bool lanternIsRaised;
     [SerializeField] private float _lanternDepletingTime = 60;
     [SerializeField] private float _lanternRechargingTime = 3;
     [SerializeField] private Material lightMaterial;
@@ -39,7 +40,7 @@ public class LanternManager : MonoBehaviour
         lightMaterial.SetFloat("_Opacity", lanternCharge);
         _orb.localScale = _originalOrbScale * lanternCharge;
         
-        if (GameManager.Instance.isBathingInLight)
+        if (GameManager.Instance.isBathingInLight && lanternIsRaised)
         {
             if (GameManager.Instance.isLookingAtAngel && lanternCharge <= 1)
             {
