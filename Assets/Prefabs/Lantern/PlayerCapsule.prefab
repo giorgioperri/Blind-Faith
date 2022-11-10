@@ -620,7 +620,7 @@ PrefabInstance:
     - target: {fileID: 1518995303808600296, guid: 05aa5051364c84280bd69fe5908395d4,
         type: 3}
       propertyPath: m_Name
-      value: PlayerSoundController
+      value: PlayerSoundManager
       objectReference: {fileID: 0}
     - target: {fileID: 1518995303808600302, guid: 05aa5051364c84280bd69fe5908395d4,
         type: 3}
@@ -630,17 +630,17 @@ PrefabInstance:
     - target: {fileID: 1518995303808600302, guid: 05aa5051364c84280bd69fe5908395d4,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -3.661258
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1518995303808600302, guid: 05aa5051364c84280bd69fe5908395d4,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -4.0484715
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1518995303808600302, guid: 05aa5051364c84280bd69fe5908395d4,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 12.554415
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1518995303808600302, guid: 05aa5051364c84280bd69fe5908395d4,
         type: 3}
