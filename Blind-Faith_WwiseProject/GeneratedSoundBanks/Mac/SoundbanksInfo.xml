@@ -26,14 +26,15 @@
 				<AuxBus Id="2933838247" Name="SmallRoom" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Rooms\SmallRoom"/>
 			</IncludedAuxBusses>
 		</SoundBank>
-		<SoundBank Id="3161908922" Language="SFX" Hash="1989896069">
+		<SoundBank Id="3161908922" Language="SFX" Hash="2245902667">
 			<ObjectPath>\SoundBanks\Default Work Unit\Main</ObjectPath>
 			<ShortName>Main</ShortName>
 			<Path>Main.bnk</Path>
 			<IncludedEvents>
 				<Event Id="3209221603" Name="DEBUG_AMB" ObjectPath="\Events\Default Work Unit\DEBUG_AMB" DurationType="Infinite"/>
 				<Event Id="2618683459" Name="DEBUG_HAMMER" ObjectPath="\Events\Default Work Unit\DEBUG_HAMMER" MaxAttenuation="20." DurationType="Infinite"/>
-				<Event Id="1866025847" Name="Footstep" ObjectPath="\Events\Default Work Unit\SFX\Player\Locomotion\Footstep" MaxAttenuation="10." DurationType="OneShot" DurationMin="0.199419" DurationMax="0.651027"/>
+				<Event Id="181700819" Name="FireLoop" ObjectPath="\Events\Default Work Unit\FireLoop" MaxAttenuation="10." DurationType="Infinite"/>
+				<Event Id="1866025847" Name="Footstep" ObjectPath="\Events\Default Work Unit\SFX\Player\Locomotion\Footstep" DurationType="OneShot" DurationMin="0.199419" DurationMax="0.651027"/>
 				<Event Id="3651057560" Name="Lanteren_Charging" ObjectPath="\Events\Default Work Unit\SFX\Player\Lanteren\Lanteren_Charging" MaxAttenuation="10." DurationType="Infinite"/>
 				<Event Id="759350405" Name="Lanteren_Deploy_Loop" ObjectPath="\Events\Default Work Unit\SFX\Player\Lanteren\Lanteren_Deploy_Loop" MaxAttenuation="10." DurationType="Infinite"/>
 				<Event Id="1818726255" Name="Lanteren_discharge" ObjectPath="\Events\Default Work Unit\SFX\Player\Lanteren\Lanteren_discharge" MaxAttenuation="10." DurationType="OneShot" DurationMin="3.185225" DurationMax="3.185225"/>
@@ -71,6 +72,10 @@
 					<ShortName>Mutated hammer.wav</ShortName>
 					<Path>SFX\Mutated hammer_84A83FD6.wem</Path>
 				</File>
+				<File Id="316983824" Language="SFX">
+					<ShortName>Fire_Furnace_Loop_PSEM.112.wav</ShortName>
+					<Path>SFX\Fire_Furnace_Loop_PSEM.112_D79FB2B7.wem</Path>
+				</File>
 				<File Id="353658067" Language="SFX">
 					<ShortName>BF_VATest_s1_4.wav</ShortName>
 					<Path>SFX\BF_VATest_s1_4_10C4C929.wem</Path>
@@ -81,7 +86,7 @@
 				</File>
 				<File Id="407002430" Language="SFX">
 					<ShortName>1806 - Footsteps - Sneakers on Carpet - 90 fpm - Loop.wav</ShortName>
-					<Path>SFX\1806 - Footsteps - Sneakers on Carpet - 90 fpm - Loop_CA7511B2.wem</Path>
+					<Path>SFX\1806 - Footsteps - Sneakers on Carpet - 90 fpm - Loop_8A92B7AF.wem</Path>
 				</File>
 				<File Id="446528560" Language="SFX">
 					<ShortName>Teleport.wav</ShortName>
@@ -117,7 +122,7 @@
 				</File>
 				<File Id="643727600" Language="SFX">
 					<ShortName>1806 - Footsteps - Sneakers on Carpet - 90 fpm - Loop.wav</ShortName>
-					<Path>SFX\1806 - Footsteps - Sneakers on Carpet - 90 fpm - Loop_AB9ADF10.wem</Path>
+					<Path>SFX\1806 - Footsteps - Sneakers on Carpet - 90 fpm - Loop_3AE39963.wem</Path>
 				</File>
 				<File Id="684596150" Language="SFX">
 					<ShortName>water3.wav</ShortName>
@@ -157,7 +162,7 @@
 				</File>
 				<File Id="989359785" Language="SFX">
 					<ShortName>1806 - Footsteps - Sneakers on Carpet - 90 fpm - Loop.wav</ShortName>
-					<Path>SFX\1806 - Footsteps - Sneakers on Carpet - 90 fpm - Loop_8EC53550.wem</Path>
+					<Path>SFX\1806 - Footsteps - Sneakers on Carpet - 90 fpm - Loop_F2E4E4FE.wem</Path>
 				</File>
 				<File Id="1052142959" Language="SFX">
 					<ShortName>water1.wav</ShortName>

@@ -140,7 +140,17 @@
 								</Folder>
 								<Folder Name="Locomotion" ID="{6834D557-86C4-41F1-A941-63074CF407FF}" ShortID="258937311">
 									<ChildrenList>
-										<Event Name="Footstep" ID="{5616B28F-929B-4E75-A895-55326FC46C90}"/>
+										<Event Name="Footstep" ID="{5616B28F-929B-4E75-A895-55326FC46C90}">
+											<ChildrenList>
+												<Action Name="" ID="{5A2A002D-3639-4313-82EC-3606322D2B92}" ShortID="583703534">
+													<ReferenceList>
+														<Reference Name="Target">
+															<ObjectRef Name="Footsteps" ID="{6FC38BCF-E0EC-4B08-B280-0A8F18E5BBA2}" WorkUnitID="{10A75CA5-3F55-455C-A103-004D7C43FEF2}"/>
+														</Reference>
+													</ReferenceList>
+												</Action>
+											</ChildrenList>
+										</Event>
 									</ChildrenList>
 								</Folder>
 							</ChildrenList>

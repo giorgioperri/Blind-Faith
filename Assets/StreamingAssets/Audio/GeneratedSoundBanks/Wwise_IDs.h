@@ -15,6 +15,7 @@ namespace AK
     {
         static const AkUniqueID DEBUG_AMB = 3209221603U;
         static const AkUniqueID DEBUG_HAMMER = 2618683459U;
+        static const AkUniqueID FIRELOOP = 181700819U;
         static const AkUniqueID FOOTSTEP = 1866025847U;
         static const AkUniqueID LANTEREN_CHARGING = 3651057560U;
         static const AkUniqueID LANTEREN_DEPLOY_LOOP = 759350405U;
