@@ -8,6 +8,10 @@ public class GameManager : MonoBehaviour
     public bool isBathingInLight;
     public bool isLookingAtAngel;
     public bool areSubtitlesActivated = true;
+
+    //health System implementation
+    public float health = 100; 
+
     [HideInInspector] public StarterAssetsInputs playerInput;
     
     public static GameManager Instance;
