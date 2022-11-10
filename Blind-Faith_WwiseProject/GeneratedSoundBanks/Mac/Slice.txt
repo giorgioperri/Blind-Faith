@@ -9,6 +9,7 @@ Event	ID	Name			Wwise Object Path	Notes
 	1818726255	Lanteren_discharge			\Default Work Unit\SFX\Player\Lanteren\Lanteren_discharge	
 	1866025847	Footstep			\Default Work Unit\SFX\Player\Locomotion\Footstep	
 	2618683459	DEBUG_HAMMER			\Default Work Unit\DEBUG_HAMMER	
+	2840050639	Amb_Church			\Default Work Unit\Amb_Church	
 	3209221603	DEBUG_AMB			\Default Work Unit\DEBUG_AMB	
 	3651057560	Lanteren_Charging			\Default Work Unit\SFX\Player\Lanteren\Lanteren_Charging	
 

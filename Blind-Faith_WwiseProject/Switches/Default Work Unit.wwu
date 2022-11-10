@@ -17,6 +17,7 @@
 						<SwitchGroup Name="Player_Footsteps" ID="{A706E7EA-CCEF-4788-AE6F-F3659BEF4932}">
 							<ChildrenList>
 								<Switch Name="Stone" ID="{2E3C3ED9-BC8E-4C45-959F-BA4228CA15E0}"/>
+								<Switch Name="Cloth" ID="{E9732CE8-4FF9-41FE-BD0F-8C37DC5FC301}"/>
 							</ChildrenList>
 						</SwitchGroup>
 					</ChildrenList>

@@ -15,14 +15,12 @@ namespace AK
     {
         static const AkUniqueID DEBUG_AMB = 3209221603U;
         static const AkUniqueID DEBUG_HAMMER = 2618683459U;
-        static const AkUniqueID FIRELOOP = 181700819U;
         static const AkUniqueID FOOTSTEP = 1866025847U;
         static const AkUniqueID LANTEREN_CHARGING = 3651057560U;
         static const AkUniqueID LANTEREN_DEPLOY_LOOP = 759350405U;
         static const AkUniqueID LANTEREN_DISCHARGE = 1818726255U;
         static const AkUniqueID LANTEREN_UNDEPLOY = 740769089U;
         static const AkUniqueID VA_CLERK_PLAY = 1398273777U;
-        static const AkUniqueID VA_CLERK_SET_SWITCH_INTRO_1 = 1421338019U;
         static const AkUniqueID VA_PAUSE = 938429017U;
         static const AkUniqueID VA_RESUME = 662947992U;
     } // namespace EVENTS
@@ -35,6 +33,7 @@ namespace AK
 
             namespace SWITCH
             {
+                static const AkUniqueID CLOTH = 1367384683U;
                 static const AkUniqueID STONE = 1216965916U;
             } // namespace SWITCH
         } // namespace PLAYER_FOOTSTEPS
@@ -59,7 +58,7 @@ namespace AK
     namespace BANKS
     {
         static const AkUniqueID INIT = 1355168291U;
-        static const AkUniqueID SLICE = 3569113157U;
+        static const AkUniqueID MAIN = 3161908922U;
     } // namespace BANKS
 
     namespace BUSSES

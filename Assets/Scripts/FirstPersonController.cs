@@ -34,6 +34,19 @@ namespace StarterAssets
 		[Tooltip("Time required to pass before entering the fall state. Useful for walking down stairs")]
 		public float FallTimeout = 0.15f;
 
+		[Header("Footstep Parameters")]
+		[SerializeField] private float baseStepSpeed = 0.5f;
+		//[SerializeField] private float crouchMultiplayer = 0.5f;
+		//[SerializeField] private float sprintMultiplayer = 0.5f;
+		[SerializeField] private float notGroundedMultiplayer = 0f;
+		public AK.Wwise.Event footstepPlayEvent;
+		public AK.Wwise.Switch setStoneSwitch;
+		public AK.Wwise.Switch setClothSwitch;
+		private float footstepTimer = 0;
+		private float GetCurrentOffset => Grounded ? baseStepSpeed * notGroundedMultiplayer : baseStepSpeed;
+		
+
+
 		[Header("Player Grounded")]
 		[Tooltip("If the character is grounded or not. Not part of the CharacterController built in grounded check")]
 		public bool Grounded = true;
@@ -148,6 +161,39 @@ namespace StarterAssets
 			JumpAndGravity();
 			GroundedCheck();
 			Move();
+			HandleFootsteps();
+		}
+
+        private void HandleFootsteps()
+        {
+			if (Grounded != true) return;
+			if (_speed <= 0) return;
+
+			//Set footstep tag and timer for footstep
+			footstepTimer -= Time.deltaTime;
+			if (footstepTimer < 0)
+			{
+				if (Physics.Raycast(this.transform.position, Vector3.down, out RaycastHit hit, 6))
+				{
+					Debug.Log(hit.collider.tag);
+					switch (hit.collider.tag)
+					{
+						case "Footsteps/Stone":
+							setStoneSwitch.SetValue(this.gameObject);
+							footstepPlayEvent.Post(gameObject);
+							Debug.Log("Footstep sound play");
+							break;
+						case "Footsteps/Cloth":
+							setClothSwitch.SetValue(this.gameObject);
+							footstepPlayEvent.Post(gameObject);
+							break;
+						default:
+							break;
+					}
+
+				}
+				footstepTimer = GetCurrentOffset;
+			}
 		}
 
         private void HandleInteractionCheck()
