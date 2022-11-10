@@ -3,7 +3,7 @@
 	<AudioObjects>
 		<WorkUnit Name="Default Work Unit" ID="{10A75CA5-3F55-455C-A103-004D7C43FEF2}" PersistMode="Standalone">
 			<ChildrenList>
-				<Sound Name="Fire_Furnace_Loop_PSEM_112" ID="{E4ED6E19-8E36-4DA8-ACED-AD2E1806E502}" ShortID="1059816193">
+				<Sound Name="DEBUG_FIRE" ID="{E4ED6E19-8E36-4DA8-ACED-AD2E1806E502}" ShortID="1059816193">
 					<PropertyList>
 						<Property Name="3DSpatialization" Type="int16" Value="2"/>
 						<Property Name="EnableDiffraction" Type="bool" Value="True"/>
@@ -58,7 +58,10 @@
 				<ActorMixer Name="Player" ID="{731D5E07-1F0B-4AAE-A0D8-195D31F04659}" ShortID="370529048">
 					<PropertyList>
 						<Property Name="3DSpatialization" Type="int16" Value="2"/>
+						<Property Name="Color" Type="int16" Value="2"/>
 						<Property Name="EnableDiffraction" Type="bool" Value="True"/>
+						<Property Name="OverrideColor" Type="bool" Value="True"/>
+						<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
 					</PropertyList>
 					<ReferenceList>
 						<Reference Name="AttachableMixerInput">
@@ -795,17 +798,406 @@
 									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C91EB4C6-56DC-4541-96C4-29E948904D66}"/>
 								</Reference>
 							</ReferenceList>
-							<ObjectLists/>
-						</ActorMixer>
-						<ActorMixer Name="PlayerVoice" ID="{41AAD2F7-EE15-478F-8B72-7878F6F18DA4}" ShortID="1060315493">
-							<ReferenceList>
-								<Reference Name="Conversion">
-									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{23AF77D7-3FEA-409B-8E44-F5B490014C61}"/>
-								</Reference>
-								<Reference Name="OutputBus">
-									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C91EB4C6-56DC-4541-96C4-29E948904D66}"/>
-								</Reference>
-							</ReferenceList>
+							<ChildrenList>
+								<SwitchContainer Name="Footsteps" ID="{6FC38BCF-E0EC-4B08-B280-0A8F18E5BBA2}" ShortID="614333517">
+									<PropertyList>
+										<Property Name="3DPosition" Type="int16" Value="1"/>
+										<Property Name="3DSpatialization" Type="int16" Value="2"/>
+										<Property Name="EnableDiffraction" Type="bool" Value="True"/>
+										<Property Name="OverridePositioning" Type="bool" Value="True"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{23AF77D7-3FEA-409B-8E44-F5B490014C61}"/>
+										</Reference>
+										<Reference Name="DefaultSwitchOrState">
+											<ObjectRef Name="Stone" ID="{2E3C3ED9-BC8E-4C45-959F-BA4228CA15E0}" WorkUnitID="{78209012-2636-4D94-8763-1F9C3A93F8E0}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C91EB4C6-56DC-4541-96C4-29E948904D66}"/>
+										</Reference>
+										<Reference Name="SwitchGroupOrStateGroup">
+											<ObjectRef Name="Player_Footsteps" ID="{A706E7EA-CCEF-4788-AE6F-F3659BEF4932}" WorkUnitID="{78209012-2636-4D94-8763-1F9C3A93F8E0}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<RandomSequenceContainer Name="Stone" ID="{7A7CC761-A137-4CA4-B8CE-19A284996E23}" ShortID="248210017">
+											<PropertyList>
+												<Property Name="Pitch" Type="int32">
+													<ModifierList>
+														<ModifierInfo>
+															<Modifier Name="" ID="{5AFA5768-2C25-47AE-9AF1-CFBF871F7EE2}">
+																<PropertyList>
+																	<Property Name="Enabled" Type="bool" Value="True"/>
+																	<Property Name="Min" Type="Real64" Value="-834"/>
+																</PropertyList>
+															</Modifier>
+														</ModifierInfo>
+													</ModifierList>
+												</Property>
+												<Property Name="Volume" Type="Real64">
+													<ModifierList>
+														<ModifierInfo>
+															<Modifier Name="" ID="{815034B9-74DE-4093-ADF3-18D709C0F3E0}">
+																<PropertyList>
+																	<Property Name="Enabled" Type="bool" Value="True"/>
+																	<Property Name="Min" Type="Real64" Value="-3"/>
+																</PropertyList>
+															</Modifier>
+														</ModifierInfo>
+													</ModifierList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{23AF77D7-3FEA-409B-8E44-F5B490014C61}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C91EB4C6-56DC-4541-96C4-29E948904D66}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<Sound Name="01 Stone Footsteps, Cobblestone Male, 30 Secs Each Slow, Medium, Fast" ID="{067866E8-9DC3-43F9-B62B-B8639BD91D7B}" ShortID="991130595">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{23AF77D7-3FEA-409B-8E44-F5B490014C61}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C91EB4C6-56DC-4541-96C4-29E948904D66}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="01 Stone Footsteps, Cobblestone Male, 30 Secs Each Slow, Medium, Fast" ID="{7DF31BDD-BDD7-4D81-A171-5B2AE5464132}">
+															<PropertyList>
+																<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																<Property Name="TrimBegin" Type="Real64" Value="31.4969777151656"/>
+																<Property Name="TrimEnd" Type="Real64" Value="31.6963971453607"/>
+															</PropertyList>
+															<Language>SFX</Language>
+															<AudioFile>01 Stone Footsteps, Cobblestone Male, 30 Secs Each Slow, Medium, Fast.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="861805956"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ObjectLists/>
+													<ActiveSourceList>
+														<ActiveSource Name="01 Stone Footsteps, Cobblestone Male, 30 Secs Each Slow, Medium, Fast" ID="{7DF31BDD-BDD7-4D81-A171-5B2AE5464132}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="01 Stone Footsteps, Cobblestone Male, 30 Secs Each Slow, Medium, Fast_01" ID="{20EE4546-D161-47A0-921C-A17575CF1CB6}" ShortID="1039745934">
+													<PropertyList>
+														<Property Name="3DSpatialization" Type="int16" Value="2"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Attenuation">
+															<ObjectRef Name="10" ID="{CD38D13E-1D7D-46FA-AD0C-C7D5F9690547}" WorkUnitID="{47D4E814-D669-4A08-8AD2-F706566546E0}"/>
+														</Reference>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{23AF77D7-3FEA-409B-8E44-F5B490014C61}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Rooms" ID="{F220833B-3FC1-4DC8-9CF3-6F367C8C1EDE}" WorkUnitID="{C91EB4C6-56DC-4541-96C4-29E948904D66}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="01 Stone Footsteps, Cobblestone Male, 30 Secs Each Slow, Medium, Fast" ID="{647073B6-5251-46B7-8C5A-5825D3253354}">
+															<PropertyList>
+																<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																<Property Name="TrimBegin" Type="Real64" Value="32.1313147778689"/>
+																<Property Name="TrimEnd" Type="Real64" Value="32.4549857976656"/>
+															</PropertyList>
+															<Language>SFX</Language>
+															<AudioFile>01 Stone Footsteps, Cobblestone Male, 30 Secs Each Slow, Medium, Fast.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="830999437"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ObjectLists/>
+													<ActiveSourceList>
+														<ActiveSource Name="01 Stone Footsteps, Cobblestone Male, 30 Secs Each Slow, Medium, Fast" ID="{647073B6-5251-46B7-8C5A-5825D3253354}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="01 Stone Footsteps, Cobblestone Male, 30 Secs Each Slow, Medium, Fast_02" ID="{FF00CFDB-B75B-432F-8658-85C301863498}" ShortID="41039573">
+													<PropertyList>
+														<Property Name="3DSpatialization" Type="int16" Value="2"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Attenuation">
+															<ObjectRef Name="10" ID="{CD38D13E-1D7D-46FA-AD0C-C7D5F9690547}" WorkUnitID="{47D4E814-D669-4A08-8AD2-F706566546E0}"/>
+														</Reference>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{23AF77D7-3FEA-409B-8E44-F5B490014C61}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Rooms" ID="{F220833B-3FC1-4DC8-9CF3-6F367C8C1EDE}" WorkUnitID="{C91EB4C6-56DC-4541-96C4-29E948904D66}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="01 Stone Footsteps, Cobblestone Male, 30 Secs Each Slow, Medium, Fast" ID="{38E648F2-8014-46AF-94DB-BEBE857F775B}">
+															<PropertyList>
+																<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																<Property Name="TrimBegin" Type="Real64" Value="32.7394936111824"/>
+																<Property Name="TrimEnd" Type="Real64" Value="33.1416393191485"/>
+															</PropertyList>
+															<Language>SFX</Language>
+															<AudioFile>01 Stone Footsteps, Cobblestone Male, 30 Secs Each Slow, Medium, Fast.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="113205331"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ObjectLists/>
+													<ActiveSourceList>
+														<ActiveSource Name="01 Stone Footsteps, Cobblestone Male, 30 Secs Each Slow, Medium, Fast" ID="{38E648F2-8014-46AF-94DB-BEBE857F775B}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="01 Stone Footsteps, Cobblestone Male, 30 Secs Each Slow, Medium, Fast_03" ID="{A8A111CA-355D-458D-814C-E7EBF969494A}" ShortID="69859040">
+													<PropertyList>
+														<Property Name="3DSpatialization" Type="int16" Value="2"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Attenuation">
+															<ObjectRef Name="10" ID="{CD38D13E-1D7D-46FA-AD0C-C7D5F9690547}" WorkUnitID="{47D4E814-D669-4A08-8AD2-F706566546E0}"/>
+														</Reference>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{23AF77D7-3FEA-409B-8E44-F5B490014C61}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Rooms" ID="{F220833B-3FC1-4DC8-9CF3-6F367C8C1EDE}" WorkUnitID="{C91EB4C6-56DC-4541-96C4-29E948904D66}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="01 Stone Footsteps, Cobblestone Male, 30 Secs Each Slow, Medium, Fast" ID="{9A328207-1F2F-43CB-AA91-BDE1B867DA75}">
+															<PropertyList>
+																<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																<Property Name="TrimBegin" Type="Real64" Value="33.4457658047076"/>
+																<Property Name="TrimEnd" Type="Real64" Value="33.7432785951145"/>
+															</PropertyList>
+															<Language>SFX</Language>
+															<AudioFile>01 Stone Footsteps, Cobblestone Male, 30 Secs Each Slow, Medium, Fast.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="485940681"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ObjectLists/>
+													<ActiveSourceList>
+														<ActiveSource Name="01 Stone Footsteps, Cobblestone Male, 30 Secs Each Slow, Medium, Fast" ID="{9A328207-1F2F-43CB-AA91-BDE1B867DA75}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="01 Stone Footsteps, Cobblestone Male, 30 Secs Each Slow, Medium, Fast_04" ID="{89ABC19E-3199-4A13-9374-50CDCBD50192}" ShortID="110384223">
+													<PropertyList>
+														<Property Name="3DSpatialization" Type="int16" Value="2"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Attenuation">
+															<ObjectRef Name="10" ID="{CD38D13E-1D7D-46FA-AD0C-C7D5F9690547}" WorkUnitID="{47D4E814-D669-4A08-8AD2-F706566546E0}"/>
+														</Reference>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{23AF77D7-3FEA-409B-8E44-F5B490014C61}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Rooms" ID="{F220833B-3FC1-4DC8-9CF3-6F367C8C1EDE}" WorkUnitID="{C91EB4C6-56DC-4541-96C4-29E948904D66}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="01 Stone Footsteps, Cobblestone Male, 30 Secs Each Slow, Medium, Fast" ID="{6A400E54-88B6-47E9-9AC1-A542C08082E7}">
+															<PropertyList>
+																<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																<Property Name="TrimBegin" Type="Real64" Value="34.0931819821058"/>
+																<Property Name="TrimEnd" Type="Real64" Value="34.3776156578178"/>
+															</PropertyList>
+															<Language>SFX</Language>
+															<AudioFile>01 Stone Footsteps, Cobblestone Male, 30 Secs Each Slow, Medium, Fast.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="524158007"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ObjectLists/>
+													<ActiveSourceList>
+														<ActiveSource Name="01 Stone Footsteps, Cobblestone Male, 30 Secs Each Slow, Medium, Fast" ID="{6A400E54-88B6-47E9-9AC1-A542C08082E7}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="01 Stone Footsteps, Cobblestone Male, 30 Secs Each Slow, Medium, Fast_05" ID="{C713FB2A-1120-425C-A571-18483961CECB}" ShortID="331681531">
+													<PropertyList>
+														<Property Name="3DSpatialization" Type="int16" Value="2"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Attenuation">
+															<ObjectRef Name="10" ID="{CD38D13E-1D7D-46FA-AD0C-C7D5F9690547}" WorkUnitID="{47D4E814-D669-4A08-8AD2-F706566546E0}"/>
+														</Reference>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{23AF77D7-3FEA-409B-8E44-F5B490014C61}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Rooms" ID="{F220833B-3FC1-4DC8-9CF3-6F367C8C1EDE}" WorkUnitID="{C91EB4C6-56DC-4541-96C4-29E948904D66}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="01 Stone Footsteps, Cobblestone Male, 30 Secs Each Slow, Medium, Fast" ID="{A01E7B73-14BA-4918-922A-8CEC5F5AE5D6}">
+															<PropertyList>
+																<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																<Property Name="TrimBegin" Type="Real64" Value="34.7285849926567"/>
+																<Property Name="TrimEnd" Type="Real64" Value="35.0130186683687"/>
+															</PropertyList>
+															<Language>SFX</Language>
+															<AudioFile>01 Stone Footsteps, Cobblestone Male, 30 Secs Each Slow, Medium, Fast.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="107980118"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ObjectLists/>
+													<ActiveSourceList>
+														<ActiveSource Name="01 Stone Footsteps, Cobblestone Male, 30 Secs Each Slow, Medium, Fast" ID="{A01E7B73-14BA-4918-922A-8CEC5F5AE5D6}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+											</ChildrenList>
+											<ObjectLists/>
+										</RandomSequenceContainer>
+										<RandomSequenceContainer Name="Cloth" ID="{A3ABF9D5-DAD4-4460-A475-D0918DAA8EF3}" ShortID="547291822">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{23AF77D7-3FEA-409B-8E44-F5B490014C61}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C91EB4C6-56DC-4541-96C4-29E948904D66}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<Sound Name="1806 - Footsteps - Sneakers on Carpet - 90 fpm - Loop" ID="{139425D4-3250-48FB-B31D-EB9B2467EA65}" ShortID="1019029459">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{23AF77D7-3FEA-409B-8E44-F5B490014C61}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C91EB4C6-56DC-4541-96C4-29E948904D66}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="1806 - Footsteps - Sneakers on Carpet - 90 fpm - Loop" ID="{AABD6252-E0C5-42EC-9C0B-3F6A00FFDAE3}">
+															<PropertyList>
+																<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																<Property Name="TrimBegin" Type="Real64" Value="10.8045190773753"/>
+																<Property Name="TrimEnd" Type="Real64" Value="11.2737234133936"/>
+															</PropertyList>
+															<Language>SFX</Language>
+															<AudioFile>1806 - Footsteps - Sneakers on Carpet - 90 fpm - Loop.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="643727600"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ObjectLists/>
+													<ActiveSourceList>
+														<ActiveSource Name="1806 - Footsteps - Sneakers on Carpet - 90 fpm - Loop" ID="{AABD6252-E0C5-42EC-9C0B-3F6A00FFDAE3}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="1806 - Footsteps - Sneakers on Carpet - 90 fpm - Loop_01" ID="{74C84896-BBFE-42C2-9457-FAB8072BC774}" ShortID="511451060">
+													<PropertyList>
+														<Property Name="3DSpatialization" Type="int16" Value="2"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Attenuation">
+															<ObjectRef Name="10" ID="{CD38D13E-1D7D-46FA-AD0C-C7D5F9690547}" WorkUnitID="{47D4E814-D669-4A08-8AD2-F706566546E0}"/>
+														</Reference>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{23AF77D7-3FEA-409B-8E44-F5B490014C61}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Rooms" ID="{F220833B-3FC1-4DC8-9CF3-6F367C8C1EDE}" WorkUnitID="{C91EB4C6-56DC-4541-96C4-29E948904D66}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="1806 - Footsteps - Sneakers on Carpet - 90 fpm - Loop" ID="{8AE5DF64-0796-4403-A9F1-5A485D6AD747}">
+															<PropertyList>
+																<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																<Property Name="TrimBegin" Type="Real64" Value="11.4631207558878"/>
+																<Property Name="TrimEnd" Type="Real64" Value="11.919536709799"/>
+															</PropertyList>
+															<Language>SFX</Language>
+															<AudioFile>1806 - Footsteps - Sneakers on Carpet - 90 fpm - Loop.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="407002430"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ObjectLists/>
+													<ActiveSourceList>
+														<ActiveSource Name="1806 - Footsteps - Sneakers on Carpet - 90 fpm - Loop" ID="{8AE5DF64-0796-4403-A9F1-5A485D6AD747}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="1806 - Footsteps - Sneakers on Carpet - 90 fpm - Loop_02" ID="{B00019AA-96C5-4F77-912C-2AEA274ED076}" ShortID="592139859">
+													<PropertyList>
+														<Property Name="3DSpatialization" Type="int16" Value="2"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Attenuation">
+															<ObjectRef Name="10" ID="{CD38D13E-1D7D-46FA-AD0C-C7D5F9690547}" WorkUnitID="{47D4E814-D669-4A08-8AD2-F706566546E0}"/>
+														</Reference>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{23AF77D7-3FEA-409B-8E44-F5B490014C61}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Rooms" ID="{F220833B-3FC1-4DC8-9CF3-6F367C8C1EDE}" WorkUnitID="{C91EB4C6-56DC-4541-96C4-29E948904D66}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="1806 - Footsteps - Sneakers on Carpet - 90 fpm - Loop" ID="{AD591765-7E02-40E9-B2CD-7D0A0D52DC54}">
+															<PropertyList>
+																<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																<Property Name="TrimBegin" Type="Real64" Value="12.0748165287238"/>
+																<Property Name="TrimEnd" Type="Real64" Value="12.7124756745865"/>
+															</PropertyList>
+															<Language>SFX</Language>
+															<AudioFile>1806 - Footsteps - Sneakers on Carpet - 90 fpm - Loop.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="989359785"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ObjectLists/>
+													<ActiveSourceList>
+														<ActiveSource Name="1806 - Footsteps - Sneakers on Carpet - 90 fpm - Loop" ID="{AD591765-7E02-40E9-B2CD-7D0A0D52DC54}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+											</ChildrenList>
+											<ObjectLists/>
+										</RandomSequenceContainer>
+									</ChildrenList>
+									<PositioningInfo>
+										<Position Name="" ID="{13A27FEF-04A3-4651-A450-A10B2A23A6BD}"/>
+									</PositioningInfo>
+									<ObjectLists/>
+									<GroupingInfo>
+										<GroupingBehaviorList>
+											<GroupingBehavior>
+												<ItemRef Name="Stone" ID="{7A7CC761-A137-4CA4-B8CE-19A284996E23}"/>
+											</GroupingBehavior>
+											<GroupingBehavior>
+												<ItemRef Name="Cloth" ID="{A3ABF9D5-DAD4-4460-A475-D0918DAA8EF3}"/>
+											</GroupingBehavior>
+										</GroupingBehaviorList>
+										<GroupingList>
+											<Grouping>
+												<SwitchRef Name="Stone" ID="{2E3C3ED9-BC8E-4C45-959F-BA4228CA15E0}"/>
+												<ItemList>
+													<ItemRef Name="Stone" ID="{7A7CC761-A137-4CA4-B8CE-19A284996E23}"/>
+												</ItemList>
+											</Grouping>
+											<Grouping>
+												<SwitchRef Name="Cloth" ID="{E9732CE8-4FF9-41FE-BD0F-8C37DC5FC301}"/>
+												<ItemList>
+													<ItemRef Name="Cloth" ID="{A3ABF9D5-DAD4-4460-A475-D0918DAA8EF3}"/>
+												</ItemList>
+											</Grouping>
+										</GroupingList>
+									</GroupingInfo>
+								</SwitchContainer>
+							</ChildrenList>
 							<ObjectLists/>
 						</ActorMixer>
 						<Sound Name="DEBUG_TEST" ID="{63DF9001-142B-47A5-BDA2-318F15A9F3CC}" ShortID="294541642">
@@ -876,6 +1268,10 @@
 					<ObjectLists/>
 				</ActorMixer>
 				<ActorMixer Name="Ambience" ID="{60AD6A78-7716-438B-B950-6ED15CC7DF49}" ShortID="547837392">
+					<PropertyList>
+						<Property Name="Color" Type="int16" Value="4"/>
+						<Property Name="OverrideColor" Type="bool" Value="True"/>
+					</PropertyList>
 					<ReferenceList>
 						<Reference Name="Conversion">
 							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{23AF77D7-3FEA-409B-8E44-F5B490014C61}"/>
@@ -885,34 +1281,17 @@
 						</Reference>
 					</ReferenceList>
 					<ChildrenList>
-						<ActorMixer Name="Church_PH" ID="{CC72F524-B4B7-492D-9E6C-83B68B86AABD}" ShortID="159328100">
-							<PropertyList>
-								<Property Name="3DSpatialization" Type="int16" Value="2"/>
-								<Property Name="EnableDiffraction" Type="bool" Value="True"/>
-								<Property Name="OverrideOutput" Type="bool" Value="True"/>
-								<Property Name="OverridePositioning" Type="bool" Value="True"/>
-								<Property Name="Volume" Type="Real64">
-									<ValueList>
-										<Value>-9</Value>
-									</ValueList>
-								</Property>
-							</PropertyList>
+						<ActorMixer Name="3D" ID="{C1CB306E-E300-406F-A917-51674E9A9522}" ShortID="815199757">
 							<ReferenceList>
-								<Reference Name="Attenuation">
-									<ObjectRef Name="10" ID="{CD38D13E-1D7D-46FA-AD0C-C7D5F9690547}" WorkUnitID="{47D4E814-D669-4A08-8AD2-F706566546E0}"/>
-								</Reference>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{23AF77D7-3FEA-409B-8E44-F5B490014C61}"/>
 								</Reference>
 								<Reference Name="OutputBus">
-									<ObjectRef Name="Rooms" ID="{F220833B-3FC1-4DC8-9CF3-6F367C8C1EDE}" WorkUnitID="{C91EB4C6-56DC-4541-96C4-29E948904D66}"/>
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C91EB4C6-56DC-4541-96C4-29E948904D66}"/>
 								</Reference>
 							</ReferenceList>
 							<ChildrenList>
-								<Sound Name="Bluezone_BC0238_ambience_020" ID="{F5A94A59-EBFA-4225-9935-949603299B60}" ShortID="965142196">
-									<PropertyList>
-										<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
-									</PropertyList>
+								<ActorMixer Name="Church_3D" ID="{3729CC24-97F3-454F-81D3-6068752ED089}" ShortID="272232359">
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{23AF77D7-3FEA-409B-8E44-F5B490014C61}"/>
@@ -922,26 +1301,606 @@
 										</Reference>
 									</ReferenceList>
 									<ChildrenList>
-										<AudioFileSource Name="Bluezone_BC0238_ambience_020" ID="{232F64C0-29DE-4C75-8025-933D1BBAFD1E}">
+										<RandomSequenceContainer Name="Well" ID="{2FC633D2-8136-45AC-8894-80D6F193E99A}" ShortID="843187205">
 											<PropertyList>
-												<Property Name="CrossfadeDuration" Type="Real64" Value="1684.211"/>
-												<Property Name="LoopBegin" Type="Real64" Value="2.80630914826498"/>
-												<Property Name="LoopEnd" Type="Real64" Value="37.9760252365931"/>
-												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
-												<Property Name="TrimEnd" Type="Real64" Value="39.4195583596214"/>
+												<Property Name="Pitch" Type="int32">
+													<ModifierList>
+														<ModifierInfo>
+															<Modifier Name="" ID="{55A3BFC2-A31F-47FB-B200-2C22679B383A}">
+																<PropertyList>
+																	<Property Name="Enabled" Type="bool" Value="True"/>
+																	<Property Name="Min" Type="Real64" Value="-278"/>
+																</PropertyList>
+															</Modifier>
+														</ModifierInfo>
+													</ModifierList>
+												</Property>
+												<Property Name="PlayMechanismLoop" Type="bool" Value="True"/>
+												<Property Name="PlayMechanismSpecialTransitions" Type="bool" Value="True"/>
+												<Property Name="PlayMechanismSpecialTransitionsType" Type="int16" Value="1"/>
+												<Property Name="PlayMechanismSpecialTransitionsValue" Type="Real64" Value="3">
+													<ModifierList>
+														<ModifierInfo>
+															<Modifier Name="" ID="{0013342A-B906-49DC-A866-AC4612E5ADA5}">
+																<PropertyList>
+																	<Property Name="Enabled" Type="bool" Value="True"/>
+																	<Property Name="Min" Type="Real64" Value="-2"/>
+																</PropertyList>
+															</Modifier>
+														</ModifierInfo>
+													</ModifierList>
+												</Property>
+												<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
+												<Property Name="Volume" Type="Real64">
+													<ModifierList>
+														<ModifierInfo>
+															<Modifier Name="" ID="{3E0D0827-038D-45BC-B60B-6221BD1F69BD}">
+																<PropertyList>
+																	<Property Name="Enabled" Type="bool" Value="True"/>
+																	<Property Name="Min" Type="Real64" Value="-5"/>
+																</PropertyList>
+															</Modifier>
+														</ModifierInfo>
+													</ModifierList>
+												</Property>
 											</PropertyList>
-											<Language>SFX</Language>
-											<AudioFile>Bluezone_BC0238_ambience_020.wav</AudioFile>
-											<MediaIDList>
-												<MediaID ID="156116196"/>
-											</MediaIDList>
-										</AudioFileSource>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{23AF77D7-3FEA-409B-8E44-F5B490014C61}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C91EB4C6-56DC-4541-96C4-29E948904D66}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<Sound Name="water1" ID="{73E55DB7-C714-4D59-BAFA-91AD7A1C3234}" ShortID="1041854492">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{23AF77D7-3FEA-409B-8E44-F5B490014C61}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C91EB4C6-56DC-4541-96C4-29E948904D66}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="water1" ID="{8D25DDEC-F101-41E8-8EFF-198C4494B201}">
+															<Language>SFX</Language>
+															<AudioFile>water1.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="1052142959"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ObjectLists/>
+													<ActiveSourceList>
+														<ActiveSource Name="water1" ID="{8D25DDEC-F101-41E8-8EFF-198C4494B201}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="water2" ID="{11250DD2-EB28-4811-B713-950D43D351B7}" ShortID="558267409">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{23AF77D7-3FEA-409B-8E44-F5B490014C61}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C91EB4C6-56DC-4541-96C4-29E948904D66}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="water2" ID="{CBD26A95-CA29-463E-A91D-12507FCE95D7}">
+															<Language>SFX</Language>
+															<AudioFile>water2.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="493705793"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ObjectLists/>
+													<ActiveSourceList>
+														<ActiveSource Name="water2" ID="{CBD26A95-CA29-463E-A91D-12507FCE95D7}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="water3" ID="{5F3A8A24-F153-4B4B-9E39-D872B74B88D6}" ShortID="431254926">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{23AF77D7-3FEA-409B-8E44-F5B490014C61}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C91EB4C6-56DC-4541-96C4-29E948904D66}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="water3" ID="{EBB176B2-EBD0-4962-8236-5AB9E387541D}">
+															<Language>SFX</Language>
+															<AudioFile>water3.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="684596150"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ObjectLists/>
+													<ActiveSourceList>
+														<ActiveSource Name="water3" ID="{EBB176B2-EBD0-4962-8236-5AB9E387541D}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+											</ChildrenList>
+											<ObjectLists/>
+										</RandomSequenceContainer>
 									</ChildrenList>
 									<ObjectLists/>
-									<ActiveSourceList>
-										<ActiveSource Name="Bluezone_BC0238_ambience_020" ID="{232F64C0-29DE-4C75-8025-933D1BBAFD1E}" Platform="Linked"/>
-									</ActiveSourceList>
-								</Sound>
+								</ActorMixer>
+							</ChildrenList>
+							<ObjectLists/>
+						</ActorMixer>
+						<ActorMixer Name="2D" ID="{E94B8AA3-D878-4E77-9049-BDB78EAA154F}" ShortID="791378860">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{23AF77D7-3FEA-409B-8E44-F5B490014C61}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C91EB4C6-56DC-4541-96C4-29E948904D66}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<ActorMixer Name="DEBUG_SHEPARDS GLASSANDO" ID="{34AA0CD2-28D2-4232-857A-17ADBAAB2F45}" ShortID="97950140">
+									<PropertyList>
+										<Property Name="Highpass" Type="int16">
+											<ValueList>
+												<Value>7</Value>
+											</ValueList>
+											<ModifierList>
+												<ModifierInfo>
+													<Modifier Name="" ID="{A5ED53EF-E87C-46A6-B5D3-9E99623108AB}"/>
+												</ModifierInfo>
+											</ModifierList>
+											<RTPCList>
+												<RTPC Name="" ID="{F56B813E-5087-4A4E-965B-B40E7CD75A92}" ShortID="375028793">
+													<ReferenceList>
+														<Reference Name="ControlInput">
+															<Custom>
+																<ModulatorLfo Name="Modulator LFO (Custom)" ID="{DDF42D45-D092-4227-B2AD-A9C3C62C9A03}" ShortID="793848167">
+																	<PropertyList>
+																		<Property Name="LfoAttack" Type="Real64" Value="1.47"/>
+																		<Property Name="LfoFrequency" Type="Real64" Value="0.86"/>
+																		<Property Name="LfoInitialPhase" Type="Real64" Value="42"/>
+																		<Property Name="LfoWaveform" Type="int32" Value="5"/>
+																	</PropertyList>
+																</ModulatorLfo>
+															</Custom>
+														</Reference>
+													</ReferenceList>
+													<Curve Name="" ID="{CF1D5AEB-F3F3-46A5-8AF7-5CD0914C7A48}">
+														<PropertyList>
+															<Property Name="Flags" Type="int32" Value="65537"/>
+														</PropertyList>
+														<PointList>
+															<Point>
+																<XPos>0</XPos>
+																<YPos>-1</YPos>
+																<Flags>21</Flags>
+															</Point>
+															<Point>
+																<XPos>1</XPos>
+																<YPos>-72</YPos>
+																<Flags>53</Flags>
+															</Point>
+														</PointList>
+													</Curve>
+												</RTPC>
+											</RTPCList>
+										</Property>
+										<Property Name="Lowpass" Type="int16">
+											<ValueList>
+												<Value>6</Value>
+											</ValueList>
+											<RTPCList>
+												<RTPC Name="" ID="{BF14D20A-A161-4443-8E91-B1B0484EE247}" ShortID="134643806">
+													<ReferenceList>
+														<Reference Name="ControlInput">
+															<Custom>
+																<ModulatorLfo Name="Modulator LFO (Custom)" ID="{FCB24688-4A3B-451E-8E5A-76E914810B18}" ShortID="434308355">
+																	<PropertyList>
+																		<Property Name="LfoAttack" Type="Real64" Value="1.47"/>
+																		<Property Name="LfoFrequency" Type="Real64" Value="0.86"/>
+																		<Property Name="LfoInitialPhase" Type="Real64" Value="42"/>
+																		<Property Name="LfoWaveform" Type="int32" Value="5"/>
+																	</PropertyList>
+																</ModulatorLfo>
+															</Custom>
+														</Reference>
+													</ReferenceList>
+													<Curve Name="" ID="{75AB71BB-C2C2-4734-9F10-2D94A067E6A6}">
+														<PropertyList>
+															<Property Name="Flags" Type="int32" Value="65537"/>
+														</PropertyList>
+														<PointList>
+															<Point>
+																<XPos>0</XPos>
+																<YPos>2</YPos>
+																<Flags>21</Flags>
+															</Point>
+															<Point>
+																<XPos>1</XPos>
+																<YPos>-73</YPos>
+																<Flags>53</Flags>
+															</Point>
+														</PointList>
+													</Curve>
+												</RTPC>
+											</RTPCList>
+										</Property>
+										<Property Name="MakeUpGain" Type="Real64">
+											<RTPCList>
+												<RTPC Name="" ID="{812CC726-DDFB-4AF1-A917-25B63BAD8C90}" ShortID="679225542">
+													<ReferenceList>
+														<Reference Name="ControlInput">
+															<Custom>
+																<ModulatorLfo Name="Modulator LFO (Custom)" ID="{2048875E-A12C-440C-88C9-F4ED12B3F6C9}" ShortID="974901057">
+																	<PropertyList>
+																		<Property Name="LfoAttack" Type="Real64" Value="1.47"/>
+																		<Property Name="LfoFrequency" Type="Real64" Value="0.86"/>
+																		<Property Name="LfoInitialPhase" Type="Real64" Value="42"/>
+																		<Property Name="LfoWaveform" Type="int32" Value="5"/>
+																	</PropertyList>
+																</ModulatorLfo>
+															</Custom>
+														</Reference>
+													</ReferenceList>
+													<Curve Name="" ID="{9A140895-0ED5-435A-835E-F8B6EB5647CF}">
+														<PropertyList>
+															<Property Name="Flags" Type="int32" Value="3"/>
+														</PropertyList>
+														<PointList>
+															<Point>
+																<XPos>0</XPos>
+																<YPos>0.23252</YPos>
+																<Flags>21</Flags>
+															</Point>
+															<Point>
+																<XPos>1</XPos>
+																<YPos>5.63932</YPos>
+																<Flags>53</Flags>
+															</Point>
+														</PointList>
+													</Curve>
+												</RTPC>
+											</RTPCList>
+										</Property>
+										<Property Name="OverrideEffect" Type="bool" Value="True"/>
+										<Property Name="Pitch" Type="int32">
+											<RTPCList>
+												<RTPC Name="" ID="{B1B052BF-B7DD-4147-B1E9-A29693235CEE}" ShortID="210301926">
+													<ReferenceList>
+														<Reference Name="ControlInput">
+															<Custom>
+																<ModulatorLfo Name="Modulator LFO (Custom)" ID="{27A24AA0-2D32-412A-8E10-FFED9C5746D0}" ShortID="426498588">
+																	<PropertyList>
+																		<Property Name="LfoAttack" Type="Real64" Value="4.95">
+																			<ModifierList>
+																				<ModifierInfo>
+																					<Modifier Name="" ID="{1ABED5D4-8A47-44B4-B344-C5A4F7D07FA7}">
+																						<PropertyList>
+																							<Property Name="Enabled" Type="bool" Value="True"/>
+																							<Property Name="Max" Type="Real64" Value="2"/>
+																							<Property Name="Min" Type="Real64" Value="-2"/>
+																						</PropertyList>
+																					</Modifier>
+																				</ModifierInfo>
+																			</ModifierList>
+																		</Property>
+																		<Property Name="LfoDepth" Type="Real64">
+																			<ModifierList>
+																				<ModifierInfo>
+																					<Modifier Name="" ID="{BEB06A9C-E159-45F9-B6C9-626818D11708}">
+																						<PropertyList>
+																							<Property Name="Enabled" Type="bool" Value="True"/>
+																							<Property Name="Min" Type="Real64" Value="-46"/>
+																						</PropertyList>
+																					</Modifier>
+																				</ModifierInfo>
+																			</ModifierList>
+																		</Property>
+																		<Property Name="LfoFrequency" Type="Real64" Value="0.2">
+																			<ModifierList>
+																				<ModifierInfo>
+																					<Modifier Name="" ID="{28D25909-9CA1-4AC9-9368-A5551F20F9D7}">
+																						<PropertyList>
+																							<Property Name="Enabled" Type="bool" Value="True"/>
+																							<Property Name="Max" Type="Real64" Value="1"/>
+																						</PropertyList>
+																					</Modifier>
+																				</ModifierInfo>
+																			</ModifierList>
+																		</Property>
+																		<Property Name="LfoInitialPhase" Type="Real64" Value="8"/>
+																		<Property Name="LfoWaveform" Type="int32" Value="5"/>
+																	</PropertyList>
+																</ModulatorLfo>
+															</Custom>
+														</Reference>
+													</ReferenceList>
+													<Curve Name="" ID="{1D20F30B-DDB6-4BD6-BF95-7CDF96E08DCC}">
+														<PropertyList>
+															<Property Name="Flags" Type="int32" Value="65537"/>
+														</PropertyList>
+														<PointList>
+															<Point>
+																<XPos>0</XPos>
+																<YPos>-4800</YPos>
+																<Flags>21</Flags>
+															</Point>
+															<Point>
+																<XPos>1</XPos>
+																<YPos>1703</YPos>
+																<Flags>53</Flags>
+															</Point>
+														</PointList>
+													</Curve>
+												</RTPC>
+											</RTPCList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{23AF77D7-3FEA-409B-8E44-F5B490014C61}"/>
+										</Reference>
+										<Reference Name="Effect0" PluginName="Wwise Matrix Reverb" CompanyID="0" PluginID="115" PluginType="3">
+											<ObjectRef Name="Tunnel1" ID="{CC44B890-9865-4157-965F-86FED27BC4C6}" WorkUnitID="{E8613F7D-BAD3-45CD-A3ED-505576F31277}"/>
+										</Reference>
+										<Reference Name="Effect1" PluginName="Wwise Peak Limiter" CompanyID="0" PluginID="110" PluginType="3">
+											<ObjectRef Name="Brick_Wall_Minus_1dB_Peak_Fast_Release" ID="{2144284E-7ADD-4341-86A4-4E468BEC9A2D}" WorkUnitID="{E8613F7D-BAD3-45CD-A3ED-505576F31277}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C91EB4C6-56DC-4541-96C4-29E948904D66}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<Sound Name="Church_General_PH" ID="{1F3A3311-2D4F-4001-96B2-F8C52EB7017F}" ShortID="476720551">
+											<PropertyList>
+												<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+												<Property Name="Pitch" Type="int32">
+													<RTPCList>
+														<RTPC Name="" ID="{297D0A50-9212-486F-8C4E-564906530FC3}" ShortID="955644902">
+															<ReferenceList>
+																<Reference Name="ControlInput">
+																	<ObjectRef Name="10sec" ID="{94BCA31E-12E6-473C-AE45-2E65B80128F2}" WorkUnitID="{06927402-0891-4579-8A17-812F2385F09C}"/>
+																</Reference>
+															</ReferenceList>
+															<Curve Name="" ID="{B7161A54-F589-4805-8D1B-48106ECD4325}">
+																<PropertyList>
+																	<Property Name="Flags" Type="int32" Value="65537"/>
+																</PropertyList>
+																<PointList>
+																	<Point>
+																		<XPos>0</XPos>
+																		<YPos>1000</YPos>
+																		<Flags>5</Flags>
+																	</Point>
+																	<Point>
+																		<XPos>10</XPos>
+																		<YPos>117</YPos>
+																		<Flags>37</Flags>
+																	</Point>
+																</PointList>
+															</Curve>
+														</RTPC>
+													</RTPCList>
+												</Property>
+												<Property Name="Volume" Type="Real64">
+													<RTPCList>
+														<RTPC Name="" ID="{26028087-18C9-423B-8DA3-A7A100391EE9}" ShortID="793825864">
+															<ReferenceList>
+																<Reference Name="ControlInput">
+																	<ObjectRef Name="10sec" ID="{94BCA31E-12E6-473C-AE45-2E65B80128F2}" WorkUnitID="{06927402-0891-4579-8A17-812F2385F09C}"/>
+																</Reference>
+															</ReferenceList>
+															<Curve Name="" ID="{9121F70A-88E6-48F3-9994-E3959FED5CB2}">
+																<PropertyList>
+																	<Property Name="Flags" Type="int32" Value="3"/>
+																</PropertyList>
+																<PointList>
+																	<Point>
+																		<XPos>0</XPos>
+																		<YPos>-200</YPos>
+																		<Flags>5</Flags>
+																	</Point>
+																	<Point>
+																		<XPos>0.550918196994991</XPos>
+																		<YPos>-0.492207824020798</YPos>
+																		<Flags>0</Flags>
+																	</Point>
+																	<Point>
+																		<XPos>10</XPos>
+																		<YPos>-200</YPos>
+																		<Flags>37</Flags>
+																	</Point>
+																</PointList>
+															</Curve>
+														</RTPC>
+													</RTPCList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{23AF77D7-3FEA-409B-8E44-F5B490014C61}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Rooms" ID="{F220833B-3FC1-4DC8-9CF3-6F367C8C1EDE}" WorkUnitID="{C91EB4C6-56DC-4541-96C4-29E948904D66}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Bluezone_BC0238_ambience_020" ID="{38BEEFA9-703C-45A5-A2C7-0456F01BD83A}">
+													<PropertyList>
+														<Property Name="CrossfadeDuration" Type="Real64" Value="1347.368"/>
+														<Property Name="LoopBegin" Type="Real64" Value="2"/>
+														<Property Name="LoopEnd" Type="Real64" Value="12"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimEnd" Type="Real64" Value="39.4195583596214"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>Bluezone_BC0238_ambience_020.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="541165543"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ObjectLists/>
+											<ActiveSourceList>
+												<ActiveSource Name="Bluezone_BC0238_ambience_020" ID="{38BEEFA9-703C-45A5-A2C7-0456F01BD83A}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Church_General_PH_02" ID="{44B45ACB-3DCC-4295-AB35-25BFA4FF8453}" ShortID="674857129">
+											<PropertyList>
+												<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+												<Property Name="Pitch" Type="int32">
+													<RTPCList>
+														<RTPC Name="" ID="{5890B385-6288-43DA-B4C3-22FB4D0AB692}" ShortID="435351672">
+															<ReferenceList>
+																<Reference Name="ControlInput">
+																	<ObjectRef Name="10sec" ID="{94BCA31E-12E6-473C-AE45-2E65B80128F2}" WorkUnitID="{06927402-0891-4579-8A17-812F2385F09C}"/>
+																</Reference>
+															</ReferenceList>
+															<Curve Name="" ID="{89007911-3BF6-4750-88B8-6AFA5700D6DD}">
+																<PropertyList>
+																	<Property Name="Flags" Type="int32" Value="65537"/>
+																</PropertyList>
+																<PointList>
+																	<Point>
+																		<XPos>0</XPos>
+																		<YPos>-2000</YPos>
+																		<Flags>5</Flags>
+																	</Point>
+																	<Point>
+																		<XPos>10</XPos>
+																		<YPos>-1000</YPos>
+																		<Flags>37</Flags>
+																	</Point>
+																</PointList>
+															</Curve>
+														</RTPC>
+													</RTPCList>
+												</Property>
+												<Property Name="Volume" Type="Real64">
+													<RTPCList>
+														<RTPC Name="" ID="{4BA29DAF-B838-4062-87A3-B8F214E5BB50}" ShortID="315814310">
+															<ReferenceList>
+																<Reference Name="ControlInput">
+																	<ObjectRef Name="10sec" ID="{94BCA31E-12E6-473C-AE45-2E65B80128F2}" WorkUnitID="{06927402-0891-4579-8A17-812F2385F09C}"/>
+																</Reference>
+															</ReferenceList>
+															<Curve Name="" ID="{F2780DE9-5D5D-4605-99FF-F70B7C988FFE}">
+																<PropertyList>
+																	<Property Name="Flags" Type="int32" Value="3"/>
+																</PropertyList>
+																<PointList>
+																	<Point>
+																		<XPos>0</XPos>
+																		<YPos>-200</YPos>
+																		<Flags>5</Flags>
+																	</Point>
+																	<Point>
+																		<XPos>10</XPos>
+																		<YPos>0</YPos>
+																		<Flags>37</Flags>
+																	</Point>
+																</PointList>
+															</Curve>
+														</RTPC>
+													</RTPCList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{23AF77D7-3FEA-409B-8E44-F5B490014C61}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Rooms" ID="{F220833B-3FC1-4DC8-9CF3-6F367C8C1EDE}" WorkUnitID="{C91EB4C6-56DC-4541-96C4-29E948904D66}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Bluezone_BC0238_ambience_020" ID="{9908F695-AF85-459D-9B17-1E7F7F9C417A}">
+													<PropertyList>
+														<Property Name="CrossfadeDuration" Type="Real64" Value="2021.053"/>
+														<Property Name="LoopBegin" Type="Real64" Value="2"/>
+														<Property Name="LoopEnd" Type="Real64" Value="12"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimEnd" Type="Real64" Value="39.4195583596214"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>Bluezone_BC0238_ambience_020.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="897522966"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ObjectLists/>
+											<ActiveSourceList>
+												<ActiveSource Name="Bluezone_BC0238_ambience_020" ID="{9908F695-AF85-459D-9B17-1E7F7F9C417A}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Church_General_PH_01" ID="{67482DBA-0E8F-4B18-997E-C408A06B4B4C}" ShortID="602373496">
+											<PropertyList>
+												<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+												<Property Name="Pitch" Type="int32">
+													<RTPCList>
+														<RTPC Name="" ID="{2A01B0F7-0264-4D4E-8A53-4BEFF9EE2345}" ShortID="254534392">
+															<ReferenceList>
+																<Reference Name="ControlInput">
+																	<ObjectRef Name="10sec" ID="{94BCA31E-12E6-473C-AE45-2E65B80128F2}" WorkUnitID="{06927402-0891-4579-8A17-812F2385F09C}"/>
+																</Reference>
+															</ReferenceList>
+															<Curve Name="" ID="{44CC0274-AFF4-4621-B934-84BBCFC8DC85}">
+																<PropertyList>
+																	<Property Name="Flags" Type="int32" Value="65537"/>
+																</PropertyList>
+																<PointList>
+																	<Point>
+																		<XPos>0</XPos>
+																		<YPos>0</YPos>
+																		<Flags>5</Flags>
+																	</Point>
+																	<Point>
+																		<XPos>10</XPos>
+																		<YPos>1000</YPos>
+																		<Flags>37</Flags>
+																	</Point>
+																</PointList>
+															</Curve>
+														</RTPC>
+													</RTPCList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{23AF77D7-3FEA-409B-8E44-F5B490014C61}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Rooms" ID="{F220833B-3FC1-4DC8-9CF3-6F367C8C1EDE}" WorkUnitID="{C91EB4C6-56DC-4541-96C4-29E948904D66}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Bluezone_BC0238_ambience_020" ID="{626D85C5-2467-4EEE-BA0F-3D92D173B2F1}">
+													<PropertyList>
+														<Property Name="CrossfadeDuration" Type="Real64" Value="2021.053"/>
+														<Property Name="LoopBegin" Type="Real64" Value="2"/>
+														<Property Name="LoopEnd" Type="Real64" Value="12"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimEnd" Type="Real64" Value="39.4195583596214"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>Bluezone_BC0238_ambience_020.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="897522966"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ObjectLists/>
+											<ActiveSourceList>
+												<ActiveSource Name="Bluezone_BC0238_ambience_020" ID="{626D85C5-2467-4EEE-BA0F-3D92D173B2F1}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+									</ChildrenList>
+									<ObjectLists/>
+								</ActorMixer>
 							</ChildrenList>
 							<ObjectLists/>
 						</ActorMixer>

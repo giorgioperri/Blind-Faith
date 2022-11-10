@@ -3,11 +3,10 @@
 	<SoundBanks>
 		<WorkUnit Name="Default Work Unit" ID="{C2F2F391-9FE8-4341-BD59-D41DC8510AB9}" PersistMode="Standalone">
 			<ChildrenList>
-				<SoundBank Name="Slice" ID="{27FAA522-624C-4DA8-93C7-8D5801F30F0D}">
+				<SoundBank Name="Main" ID="{27FAA522-624C-4DA8-93C7-8D5801F30F0D}">
 					<ObjectInclusionList>
 						<ObjectRef Name="VA" ID="{405E6D03-D34E-40A5-8665-1A1025CDCBEB}" WorkUnitID="{405E6D03-D34E-40A5-8665-1A1025CDCBEB}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Default Work Unit" ID="{10A75CA5-3F55-455C-A103-004D7C43FEF2}" WorkUnitID="{10A75CA5-3F55-455C-A103-004D7C43FEF2}" Origin="Manual" Filter="7"/>
-						<ObjectRef Name="Default Work Unit" ID="{FB90B45E-3428-4F3A-BDE7-E5CA0BFF7B1D}" WorkUnitID="{FB90B45E-3428-4F3A-BDE7-E5CA0BFF7B1D}" Origin="Manual" Filter="7"/>
 					</ObjectInclusionList>
 					<ObjectExclusionList/>
 					<GameSyncExclusionList/>

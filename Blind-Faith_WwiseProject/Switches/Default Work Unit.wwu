@@ -8,7 +8,16 @@
 						<SwitchGroup Name="VA_Clerk_Switch_Group" ID="{606D0EF6-200D-4481-B083-66F3C0D6C337}">
 							<ChildrenList>
 								<Switch Name="VA_Clerk_Intro_1" ID="{82AD2430-231F-4A0F-9382-CEE494A9DF9E}"/>
-								<Switch Name="VA_Clerk_Intro_Step" ID="{2BEE6D73-59DB-4485-B333-80C53A3782FE}"/>
+							</ChildrenList>
+						</SwitchGroup>
+					</ChildrenList>
+				</Folder>
+				<Folder Name="Locomotion" ID="{19748BEC-AACF-4DB5-BD4A-EE612FA66E6B}" ShortID="158732207">
+					<ChildrenList>
+						<SwitchGroup Name="Player_Footsteps" ID="{A706E7EA-CCEF-4788-AE6F-F3659BEF4932}">
+							<ChildrenList>
+								<Switch Name="Stone" ID="{2E3C3ED9-BC8E-4C45-959F-BA4228CA15E0}"/>
+								<Switch Name="Cloth" ID="{E9732CE8-4FF9-41FE-BD0F-8C37DC5FC301}"/>
 							</ChildrenList>
 						</SwitchGroup>
 					</ChildrenList>

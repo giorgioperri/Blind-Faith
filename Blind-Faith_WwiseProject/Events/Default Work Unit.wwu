@@ -8,7 +8,7 @@
 						<Action Name="" ID="{84F257EB-E085-459B-9ABA-D11C9BED439C}" ShortID="220642073">
 							<ReferenceList>
 								<Reference Name="Target">
-									<ObjectRef Name="Fire_Furnace_Loop_PSEM_112" ID="{E4ED6E19-8E36-4DA8-ACED-AD2E1806E502}" WorkUnitID="{10A75CA5-3F55-455C-A103-004D7C43FEF2}"/>
+									<ObjectRef Name="DEBUG_FIRE" ID="{E4ED6E19-8E36-4DA8-ACED-AD2E1806E502}" WorkUnitID="{10A75CA5-3F55-455C-A103-004D7C43FEF2}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>
@@ -38,20 +38,6 @@
 											<ReferenceList>
 												<Reference Name="Target">
 													<ObjectRef Name="VA_Clerk_Intro_1" ID="{82AD2430-231F-4A0F-9382-CEE494A9DF9E}" WorkUnitID="{78209012-2636-4D94-8763-1F9C3A93F8E0}"/>
-												</Reference>
-											</ReferenceList>
-										</Action>
-									</ChildrenList>
-								</Event>
-								<Event Name="VA_Clerk_Set_Switch_Intro_Step" ID="{0F5DC30C-E59B-4904-AFCB-483F2EBF3FBE}">
-									<ChildrenList>
-										<Action Name="" ID="{23C70CE2-D8D4-4690-96EA-59464FB4B679}" ShortID="1051431977">
-											<PropertyList>
-												<Property Name="ActionType" Type="int16" Value="23"/>
-											</PropertyList>
-											<ReferenceList>
-												<Reference Name="Target">
-													<ObjectRef Name="VA_Clerk_Intro_Step" ID="{2BEE6D73-59DB-4485-B333-80C53A3782FE}" WorkUnitID="{78209012-2636-4D94-8763-1F9C3A93F8E0}"/>
 												</Reference>
 											</ReferenceList>
 										</Action>
@@ -152,6 +138,21 @@
 										</Event>
 									</ChildrenList>
 								</Folder>
+								<Folder Name="Locomotion" ID="{6834D557-86C4-41F1-A941-63074CF407FF}" ShortID="258937311">
+									<ChildrenList>
+										<Event Name="Footstep" ID="{5616B28F-929B-4E75-A895-55326FC46C90}">
+											<ChildrenList>
+												<Action Name="" ID="{5A2A002D-3639-4313-82EC-3606322D2B92}" ShortID="583703534">
+													<ReferenceList>
+														<Reference Name="Target">
+															<ObjectRef Name="Footsteps" ID="{6FC38BCF-E0EC-4B08-B280-0A8F18E5BBA2}" WorkUnitID="{10A75CA5-3F55-455C-A103-004D7C43FEF2}"/>
+														</Reference>
+													</ReferenceList>
+												</Action>
+											</ChildrenList>
+										</Event>
+									</ChildrenList>
+								</Folder>
 							</ChildrenList>
 						</Folder>
 					</ChildrenList>
@@ -161,7 +162,7 @@
 						<Action Name="" ID="{3DAB8D52-1543-4F48-B459-C008A67E0807}" ShortID="382885419">
 							<ReferenceList>
 								<Reference Name="Target">
-									<ObjectRef Name="Bluezone_BC0238_ambience_020" ID="{F5A94A59-EBFA-4225-9935-949603299B60}" WorkUnitID="{10A75CA5-3F55-455C-A103-004D7C43FEF2}"/>
+									<ObjectRef Name="Church_General_PH" ID="{F5A94A59-EBFA-4225-9935-949603299B60}" WorkUnitID="{10A75CA5-3F55-455C-A103-004D7C43FEF2}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>
@@ -173,6 +174,31 @@
 							<ReferenceList>
 								<Reference Name="Target">
 									<ObjectRef Name="DEBUG_TEST" ID="{63DF9001-142B-47A5-BDA2-318F15A9F3CC}" WorkUnitID="{10A75CA5-3F55-455C-A103-004D7C43FEF2}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="DEBUG_AMB" ID="{26CEBDC6-C9ED-422E-AEBD-4655B4D51F6F}">
+					<ChildrenList>
+						<Action Name="" ID="{9FEEBBAF-5491-4EC5-A06A-45B367FD1B88}" ShortID="1065694253">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Church_General_PH" ID="{1F3A3311-2D4F-4001-96B2-F8C52EB7017F}" WorkUnitID="{10A75CA5-3F55-455C-A103-004D7C43FEF2}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{C9FC271C-7443-4DF4-9879-44E57CB416DF}" ShortID="105226570">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Church_General_PH_01" ID="{67482DBA-0E8F-4B18-997E-C408A06B4B4C}" WorkUnitID="{10A75CA5-3F55-455C-A103-004D7C43FEF2}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{3B5536DA-D5A3-4728-99BD-92BD66DB4EAB}" ShortID="668663143">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Church_General_PH_02" ID="{44B45ACB-3DCC-4295-AB35-25BFA4FF8453}" WorkUnitID="{10A75CA5-3F55-455C-A103-004D7C43FEF2}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>

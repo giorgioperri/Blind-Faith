@@ -209,6 +209,27 @@ MonoBehaviour:
   Gravity: -15
   JumpTimeout: 0.1
   FallTimeout: 0.15
+  baseStepSpeed: 0.5
+  notGroundedMultiplayer: 0
+  footstepPlayEvent:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 69df0ba7a5c1aca46a05847c9e027fd7,
+      type: 2}
+  setStoneSwitch:
+    idInternal: 0
+    valueGuidInternal: 
+    groupIdInternal: 0
+    groupGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: f1564afc3dba4b84ea20b9903e37d054,
+      type: 2}
+  setClothSwitch:
+    idInternal: 0
+    valueGuidInternal: 
+    groupIdInternal: 0
+    groupGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 8c48be2b1bb2e014380fcbd9f4be07b4,
+      type: 2}
   Grounded: 1
   GroundedOffset: -0.14
   GroundedRadius: 0.5
