@@ -13,20 +13,32 @@ namespace AK
 {
     namespace EVENTS
     {
-        static const AkUniqueID AMB_CHURCH = 2840050639U;
+        static const AkUniqueID DEBUG_AMB = 3209221603U;
         static const AkUniqueID DEBUG_HAMMER = 2618683459U;
         static const AkUniqueID FIRELOOP = 181700819U;
+        static const AkUniqueID FOOTSTEP = 1866025847U;
         static const AkUniqueID LANTEREN_CHARGING = 3651057560U;
         static const AkUniqueID LANTEREN_DEPLOY_LOOP = 759350405U;
         static const AkUniqueID LANTEREN_DISCHARGE = 1818726255U;
         static const AkUniqueID LANTEREN_UNDEPLOY = 740769089U;
         static const AkUniqueID VA_CLERK_PLAY = 1398273777U;
+        static const AkUniqueID VA_CLERK_SET_SWITCH_INTRO_1 = 1421338019U;
         static const AkUniqueID VA_PAUSE = 938429017U;
         static const AkUniqueID VA_RESUME = 662947992U;
     } // namespace EVENTS
 
     namespace SWITCHES
     {
+        namespace PLAYER_FOOTSTEPS
+        {
+            static const AkUniqueID GROUP = 1730208058U;
+
+            namespace SWITCH
+            {
+                static const AkUniqueID STONE = 1216965916U;
+            } // namespace SWITCH
+        } // namespace PLAYER_FOOTSTEPS
+
         namespace VA_CLERK_SWITCH_GROUP
         {
             static const AkUniqueID GROUP = 232330383U;
@@ -47,7 +59,7 @@ namespace AK
     namespace BANKS
     {
         static const AkUniqueID INIT = 1355168291U;
-        static const AkUniqueID VOICEACTING = 2662087701U;
+        static const AkUniqueID SLICE = 3569113157U;
     } // namespace BANKS
 
     namespace BUSSES

@@ -6,7 +6,9 @@
 				<ActorMixer Name="VA_Mixer" ID="{5B7ACCA4-E7B7-4BA0-8AF5-F7599629886C}" ShortID="516355222">
 					<PropertyList>
 						<Property Name="3DSpatialization" Type="int16" Value="2"/>
+						<Property Name="Color" Type="int16" Value="21"/>
 						<Property Name="EnableDiffraction" Type="bool" Value="True"/>
+						<Property Name="OverrideColor" Type="bool" Value="True"/>
 						<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
 					</PropertyList>
 					<ReferenceList>

@@ -188,7 +188,7 @@
 						</Effect>
 						<Effect Name="Brick_Wall_Minus_1dB_Peak_Fast_Release" ID="{2144284E-7ADD-4341-86A4-4E468BEC9A2D}" PluginName="Wwise Peak Limiter" CompanyID="0" PluginID="110" PluginType="3">
 							<PropertyList>
-								<Property Name="OutputGain" Type="Real32" Value="12.9"/>
+								<Property Name="OutputGain" Type="Real32" Value="2"/>
 								<Property Name="Ratio" Type="Real32" Value="50"/>
 								<Property Name="ReleaseTime" Type="Real32" Value="0.02"/>
 								<Property Name="Threshold" Type="Real32" Value="-1"/>
@@ -748,9 +748,47 @@
 						<Effect Name="Tunnel1" ID="{CC44B890-9865-4157-965F-86FED27BC4C6}" PluginName="Wwise Matrix Reverb" CompanyID="0" PluginID="115" PluginType="3">
 							<PropertyList>
 								<Property Name="HFRatio" Type="Real32" Value="9.5"/>
-								<Property Name="NumberOfDelays" Type="int32" Value="12"/>
+								<Property Name="NumberOfDelays" Type="int32" Value="4"/>
+								<Property Name="PreDelay" Type="Real32" Value="0.1"/>
 								<Property Name="ReverbTime" Type="Real32" Value="5"/>
-								<Property Name="WetLevel" Type="Real32" Value="-30"/>
+								<Property Name="WetLevel" Type="Real32" Value="-30">
+									<RTPCList>
+										<RTPC Name="" ID="{8F154516-0E28-495E-87AC-58BEEBDCB37E}" ShortID="844289749">
+											<ReferenceList>
+												<Reference Name="ControlInput">
+													<Custom>
+														<ModulatorLfo Name="Modulator LFO (Custom)" ID="{1954C5BB-3BF5-45FF-9C18-F0ADC4A2D0A0}" ShortID="636754647">
+															<PropertyList>
+																<Property Name="LfoAttack" Type="Real64" Value="1.26"/>
+																<Property Name="LfoDepth" Type="Real64" Value="70.5"/>
+																<Property Name="LfoFrequency" Type="Real64" Value="0.18"/>
+																<Property Name="LfoInitialPhase" Type="Real64" Value="23"/>
+																<Property Name="LfoWaveform" Type="int32" Value="5"/>
+															</PropertyList>
+														</ModulatorLfo>
+													</Custom>
+												</Reference>
+											</ReferenceList>
+											<Curve Name="" ID="{182E9C24-9A17-4BF9-BEF8-7B87F7F1B2EA}">
+												<PropertyList>
+													<Property Name="Flags" Type="int32" Value="3"/>
+												</PropertyList>
+												<PointList>
+													<Point>
+														<XPos>0</XPos>
+														<YPos>0.16473</YPos>
+														<Flags>21</Flags>
+													</Point>
+													<Point>
+														<XPos>1</XPos>
+														<YPos>7.98051</YPos>
+														<Flags>53</Flags>
+													</Point>
+												</PointList>
+											</Curve>
+										</RTPC>
+									</RTPCList>
+								</Property>
 							</PropertyList>
 						</Effect>
 						<Effect Name="Underground_Parking1" ID="{8DA66AA3-6CA0-41A0-B7A2-BB6FCABFCDA8}" PluginName="Wwise Matrix Reverb" CompanyID="0" PluginID="115" PluginType="3">
