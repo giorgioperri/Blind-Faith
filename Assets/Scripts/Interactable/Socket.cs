@@ -28,15 +28,16 @@ public class Socket : Interactable
         if (!_isInsideSocket && _handController.GetComponent<HandAnimatorController>().hasRaisedLantern && 
             (Keyboard.current.eKey.wasPressedThisFrame /*|| Gamepad.current.buttonWest.wasPressedThisFrame)*/))
         {
-            
             _lightSourceLantern.SetActive(true);
             _lanternObject.transform.parent = transform;
             _lanternObject.transform.position = transform.position;
             _lanternObject.transform.rotation = transform.rotation;
 
             _isInsideSocket = !_isInsideSocket;
-
+            
+            HandAnimatorController.Instance.LowerLantern();
         }
+        
         else if (_isInsideSocket && _handController.GetComponent<HandAnimatorController>().hasRaisedLantern &&
             (Keyboard.current.eKey.wasPressedThisFrame /*|| Gamepad.current.buttonWest.wasPressedThisFrame)*/))
         {
