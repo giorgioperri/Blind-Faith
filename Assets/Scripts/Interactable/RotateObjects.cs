@@ -11,7 +11,7 @@ public class RotateObjects : Interactable
 
     public override void OnInteraction()
     {
-        transform.Rotate(0f, 30 * Time.deltaTime, 0f, Space.Self);
+        transform.Rotate(0f, 22 * Time.deltaTime, 0f, Space.Self);
     }
 
     public override void OnLoseFocus()
@@ -20,6 +20,6 @@ public class RotateObjects : Interactable
 
     public override void OnPressQ()
     {
-        transform.Rotate(0f, -30 * Time.deltaTime, 0f, Space.Self);
+        transform.Rotate(0f, -22 * Time.deltaTime, 0f, Space.Self);
     }
 }

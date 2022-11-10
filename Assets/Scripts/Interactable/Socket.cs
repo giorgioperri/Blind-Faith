@@ -32,9 +32,9 @@ public class Socket : Interactable
             _lanternObject.transform.parent = transform;
             _lanternObject.transform.position = transform.position;
             _lanternObject.transform.rotation = transform.rotation;
-
-            
             LanternManager.Instance.isInsideSocket = !LanternManager.Instance.isInsideSocket;
+            
+            HandAnimatorController.Instance.LowerLantern();
 
         }
         else if (LanternManager.Instance.isInsideSocket && _handController.GetComponent<HandAnimatorController>().hasRaisedLantern &&
