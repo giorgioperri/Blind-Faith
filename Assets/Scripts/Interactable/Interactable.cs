@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.InputSystem;
 
 public abstract class Interactable : MonoBehaviour
 {
@@ -9,9 +10,8 @@ public abstract class Interactable : MonoBehaviour
         gameObject.layer = 10;
     }
 
-    public abstract void OnInteraction();
-    public abstract void OnFocus();
-    public abstract void OnLoseFocus();
-
-    public abstract void OnPressQ();
+    public virtual void OnInteraction() { }
+    public virtual void OnFocus() {}
+    public virtual void OnLoseFocus() {}
+    public virtual void OnAltInteraction() { }
 }

@@ -1,3 +1,4 @@
+using System;
 using StarterAssets;
 using System.Collections;
 using System.Collections.Generic;
@@ -6,26 +7,27 @@ using UnityEngine.InputSystem;
 
 public class Socket : Interactable
 {
-    [SerializeField]
     private GameObject _lanternObject;
-    [SerializeField]
     private GameObject _lanternFollowSocket;
-    [SerializeField]
     private GameObject _lightSourceLantern;
-    [SerializeField]
     private GameObject _handController;
 
     private GameObject _lightBeam;
 
-    public override void OnFocus()
+    private void Start()
     {
+        GameObject lantern = LanternManager.Instance.gameObject;
+        _lanternObject = lantern;
+        _lanternFollowSocket = lantern.transform.parent.gameObject;
+        _lightSourceLantern = lantern.transform.Find("LaserPointer").gameObject;
+        _handController = HandAnimatorController.Instance.gameObject;
     }
 
     public override void OnInteraction()
     {
         // The implementation works for now, but probably needs improvements in future
         if (!LanternManager.Instance.isInsideSocket && _handController.GetComponent<HandAnimatorController>().hasRaisedLantern && 
-            (Keyboard.current.eKey.wasPressedThisFrame /*|| Gamepad.current.buttonWest.wasPressedThisFrame)*/))
+            (Keyboard.current.fKey.wasPressedThisFrame /*|| Gamepad.current.buttonWest.wasPressedThisFrame)*/))
         {
             
             _lightSourceLantern.SetActive(true);
@@ -34,11 +36,11 @@ public class Socket : Interactable
             _lanternObject.transform.rotation = transform.rotation;
             LanternManager.Instance.isInsideSocket = !LanternManager.Instance.isInsideSocket;
             
-            HandAnimatorController.Instance.LowerLantern();
+            HandAnimatorController.Instance.HandleLanternInput(false);
 
         }
         else if (LanternManager.Instance.isInsideSocket && _handController.GetComponent<HandAnimatorController>().hasRaisedLantern &&
-            (Keyboard.current.eKey.wasPressedThisFrame /*|| Gamepad.current.buttonWest.wasPressedThisFrame)*/))
+            (Keyboard.current.fKey.wasPressedThisFrame /*|| Gamepad.current.buttonWest.wasPressedThisFrame)*/))
         {
             _lightBeam = GameObject.Find("Light Beam");
             Destroy(_lightBeam);
@@ -48,13 +50,5 @@ public class Socket : Interactable
             _lanternObject.transform.rotation = _lanternFollowSocket.transform.rotation;
             LanternManager.Instance.isInsideSocket = !LanternManager.Instance.isInsideSocket;
         }
-    }
-    public override void OnLoseFocus()
-    {
-    }
-
-    public override void OnPressQ()
-    {
-            
     }
 }

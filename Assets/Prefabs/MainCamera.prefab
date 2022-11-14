@@ -15,6 +15,9 @@ GameObject:
   - component: {fileID: 1041021496}
   - component: {fileID: 1041021497}
   - component: {fileID: 6512503292507225526}
+  - component: {fileID: 60889539378096552}
+  - component: {fileID: 60889539378096554}
+  - component: {fileID: 60889539378096555}
   m_Layer: 0
   m_Name: MainCamera
   m_TagString: MainCamera
@@ -62,7 +65,7 @@ Camera:
     height: 1
   near clip plane: 0.2
   far clip plane: 500
-  field of view: 40
+  field of view: 60
   orthographic: 0
   orthographic size: 10
   m_Depth: -1
@@ -199,3 +202,41 @@ MonoBehaviour:
   IdleFrequency: 0
   DefaultShakeAmplitude: 0.5
   DefaultShakeFrequency: 10
+--- !u!65 &60889539378096552
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9005220659476430823}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &60889539378096554
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9005220659476430823}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6ccffed8ce5ad9c4d836cf2fd15027f9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &60889539378096555
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9005220659476430823}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 215adfdfcd03fb84180250242d090faa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Collider: {fileID: 0}

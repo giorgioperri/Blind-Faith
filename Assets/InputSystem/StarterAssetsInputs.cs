@@ -17,8 +17,7 @@ namespace StarterAssets
 		public bool crouch;
 		//added raiseLantern state
 		public bool hasRaisedLantern;
-		public bool interact;
-		public bool pressedQ;
+		public bool isInteracting;
 
 		[Header("Movement Settings")]
 		public bool analogMovement;
@@ -63,16 +62,8 @@ namespace StarterAssets
 		{
 			InteractInput(value.isPressed);	
 		}
-		public void OnPressingQ(InputValue value)
-        {
-			PressingQInput(value.isPressed);
-        }
 
 #endif
-		public void PressingQInput(bool QisPressed)
-        {
-			pressedQ = QisPressed;
-        }
 		public void MoveInput(Vector2 newMoveDirection)
 		{
 			move = newMoveDirection;
@@ -80,7 +71,7 @@ namespace StarterAssets
 
 		public void InteractInput(bool isInteracting)
 		{
-			interact = isInteracting;
+			this.isInteracting = isInteracting;
 		}
 
 		public void LookInput(Vector2 newLookDirection)

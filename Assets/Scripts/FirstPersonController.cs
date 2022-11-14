@@ -79,7 +79,7 @@ namespace StarterAssets
 		[SerializeField] private Vector3 _interactionRayPoint = default;
 		[SerializeField] private float _interactionDistance = default;
 		[SerializeField] private LayerMask _interactionLayer = default;
-		private Interactable _currentInteractable;
+		[HideInInspector] public Interactable currentInteractable;
 
 		//variables for HeadBob
 		private float _defaultYpos = 0;
@@ -121,9 +121,19 @@ namespace StarterAssets
 #endif
 			}
 		}
+		
+		public static FirstPersonController Instance;
 
 		private void Awake()
 		{
+        
+			if (Instance != null)
+			{
+				Destroy(this);
+			}
+        
+			Instance = this;
+			
 			// get a reference to our main camera
 			if (_mainCamera == null)
 			{
@@ -200,36 +210,41 @@ namespace StarterAssets
         {
             if(Physics.Raycast(_mainCamera.GetComponent<Camera>().ViewportPointToRay(_interactionRayPoint), out RaycastHit hit, _interactionDistance))
             {
-				if(hit.collider.gameObject.layer == 10 && (_currentInteractable == null || hit.collider.gameObject.GetInstanceID() != _currentInteractable.GetInstanceID()))
+				if(hit.collider.gameObject.layer == 10 && (currentInteractable == null || hit.collider.gameObject.GetInstanceID() != currentInteractable.GetInstanceID()))
                 {
-					hit.collider.TryGetComponent(out _currentInteractable);
+					hit.collider.TryGetComponent(out currentInteractable);
 
-                    if (_currentInteractable)
+                    if (currentInteractable)
                     {
-						_currentInteractable.OnFocus();
+						currentInteractable.OnFocus();
                     }
                 }
             }
-			else if (_currentInteractable)
+			else if (currentInteractable)
 			{
-				_currentInteractable.OnLoseFocus();
-				_currentInteractable = null;
+				currentInteractable.OnLoseFocus();
+				currentInteractable = null;
 			}
 		}
 
         private void HandleInteractionInput()
         {
-            if(_input.interact && _currentInteractable != null && Physics.Raycast(_mainCamera.GetComponent<Camera>().ViewportPointToRay(_interactionRayPoint), out RaycastHit hit, _interactionDistance, _interactionLayer))
-            {
-				_currentInteractable.OnInteraction();
-				
-            }
-			else if(_input.pressedQ && _currentInteractable != null && Physics.Raycast(_mainCamera.GetComponent<Camera>().ViewportPointToRay(_interactionRayPoint),out  hit, _interactionDistance, _interactionLayer))
-			{
-				_currentInteractable.OnPressQ();
-			}
+	        if (currentInteractable == null ||
+	            !Physics.Raycast(_mainCamera.GetComponent<Camera>().ViewportPointToRay(_interactionRayPoint),
+		            out RaycastHit hit, _interactionDistance, _interactionLayer)) return;
 
-		}
+	        if(_input.isInteracting)
+            {
+	            if (Keyboard.current.eKey.isPressed || Keyboard.current.fKey.isPressed)
+	            {
+					currentInteractable.OnInteraction();
+	            } else if (Keyboard.current.qKey.isPressed)
+	            {
+		            currentInteractable.OnAltInteraction();
+	            }
+	            
+            }
+        }
 
         private void LateUpdate()
 		{

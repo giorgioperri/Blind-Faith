@@ -3,12 +3,13 @@ using System.Collections;
 using System.Collections.Generic;
 using StarterAssets;
 using UnityEngine;
+using UnityEngine.InputSystem;
 
 public class HandAnimatorController : MonoBehaviour
 {
     private Animator _animController;
     private StarterAssetsInputs _inputs;
-    public bool hasRaisedLantern;
+    [HideInInspector] public bool hasRaisedLantern;
     public static HandAnimatorController Instance;
     
     private void Awake()
@@ -26,29 +27,18 @@ public class HandAnimatorController : MonoBehaviour
 
     private void Update()
     {
-        if (_inputs.hasRaisedLantern && !_animController.GetBool("hasRaisedLantern"))
+        if (FirstPersonController.Instance.currentInteractable &&
+            FirstPersonController.Instance.currentInteractable.GetType() == typeof(Socket)) return;
+            
+        if (_inputs.hasRaisedLantern)
         {
-            RaiseLantern();
-        }
-        else if (_inputs.hasRaisedLantern && _animController.GetBool("hasRaisedLantern"))
-        {
-            LowerLantern();
+            HandleLanternInput(!_animController.GetBool("hasRaisedLantern"));
         }
     }
 
-    public void LowerLantern()
+    public void HandleLanternInput(bool isUp)
     {
-        _animController.SetBool("hasRaisedLantern", false);
-        if(PlayerSoundController.Instance.UnequipLantern != null) 
-            PlayerSoundController.Instance.UnequipLantern.Post(PlayerSoundController.Instance.gameObject);
-        _inputs.hasRaisedLantern = false;
-        hasRaisedLantern = false;
-        LanternManager.Instance.lanternIsRaised = false;
-    }
-
-    public void RaiseLantern()
-    {
-        _animController.SetBool("hasRaisedLantern", true);
+        _animController.SetBool("hasRaisedLantern", isUp);
         if(PlayerSoundController.Instance.EquipLantern != null) 
             PlayerSoundController.Instance.EquipLantern.Post(PlayerSoundController.Instance.gameObject);
         _inputs.hasRaisedLantern = false;

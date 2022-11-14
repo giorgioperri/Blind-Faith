@@ -51,15 +51,6 @@
                     "initialStateCheck": false
                 },
                 {
-                    "name": "RaiseLantern",
-                    "type": "Button",
-                    "id": "6fdc7def-586f-4ec4-9d82-b5df0164268e",
-                    "expectedControlType": "Button",
-                    "processors": "",
-                    "interactions": "",
-                    "initialStateCheck": false
-                },
-                {
                     "name": "Interact",
                     "type": "PassThrough",
                     "id": "6b266f95-26bc-4818-a070-1a833a114661",
@@ -69,9 +60,9 @@
                     "initialStateCheck": false
                 },
                 {
-                    "name": "PressingQ",
-                    "type": "PassThrough",
-                    "id": "4e000eac-061c-46cd-89e4-7f33351bc485",
+                    "name": "RaiseLantern",
+                    "type": "Button",
+                    "id": "6fdc7def-586f-4ec4-9d82-b5df0164268e",
                     "expectedControlType": "Button",
                     "processors": "",
                     "interactions": "",
@@ -301,12 +292,23 @@
                 },
                 {
                     "name": "",
-                    "id": "3dcf6324-84fe-4507-9dbc-b195c7e91a39",
+                    "id": "4a857df9-e853-4ff8-807b-6776a862c07c",
                     "path": "<Keyboard>/q",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
-                    "action": "PressingQ",
+                    "action": "Interact",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "9ddb2a2e-cc3c-434a-8995-cbb8cc3a6491",
+                    "path": "<Keyboard>/f",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Interact",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }
