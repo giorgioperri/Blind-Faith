@@ -9,6 +9,9 @@ public class GameManager : MonoBehaviour
     public bool isLookingAtAngel;
     public bool areSubtitlesActivated = true;
 
+    public bool areMirrorsStep;
+    public bool isInteractingWithMirror;
+
     //health System implementation
     public float health = 100; 
 

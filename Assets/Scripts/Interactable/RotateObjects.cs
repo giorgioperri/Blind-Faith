@@ -14,12 +14,13 @@ public class RotateObjects : Interactable
     private float _rate = 60;
 
     private bool _isTurning;
+    private bool _grabbedMirror;
    
     public override void OnInteraction()
     {
         if (Keyboard.current.fKey.isPressed) return;
         
-        if (Keyboard.current.eKey.wasPressedThisFrame && !_isTurning)
+        if (Keyboard.current.eKey.wasPressedThisFrame && !_isTurning && GameManager.Instance.areMirrorsStep)
         {
             _isTurning = true;
             _desiredAngle = transform.rotation.eulerAngles + new Vector3(0f, _angleOfRotation, 0f);
@@ -30,14 +31,36 @@ public class RotateObjects : Interactable
     {
         if (Keyboard.current.fKey.isPressed) return;
         
-        if (Keyboard.current.qKey.wasPressedThisFrame && !_isTurning)
+        if (Keyboard.current.qKey.wasPressedThisFrame && !_isTurning && GameManager.Instance.areMirrorsStep)
         {
             _isTurning = true;
             _desiredAngle = transform.rotation.eulerAngles - new Vector3(0f, _angleOfRotation, 0f);
             StartCoroutine(TurnTo());
         }
     }
-    
+
+    private void Update()
+    {
+        if (GameManager.Instance.areMirrorsStep) return;
+        
+        if ((Mouse.current.leftButton.isPressed && FirstPersonController.Instance.currentInteractable == this) || _grabbedMirror)
+        {
+            _grabbedMirror = true;
+            GameManager.Instance.isInteractingWithMirror = true;
+            transform.Rotate(0f, Mouse.current.delta.ReadValue().x, 0f, Space.Self);
+        }
+
+        if (Mouse.current.leftButton.wasReleasedThisFrame)
+        {
+            GameManager.Instance.isInteractingWithMirror = false;
+            
+            if (_grabbedMirror)
+            {
+                _grabbedMirror = false;
+            }
+        }
+    }
+
     IEnumerator TurnTo () 
     {
         Vector3 original_angle = transform.rotation.eulerAngles;
