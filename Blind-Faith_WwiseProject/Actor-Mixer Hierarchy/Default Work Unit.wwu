@@ -1883,15 +1883,58 @@
 									</ChildrenList>
 									<ObjectLists/>
 								</ActorMixer>
-								<Sound Name="AmbisonicWwiseTest_arach" ID="{5B6BCBAB-27AD-446C-8A9E-BF90B90823DB}" ShortID="718911609">
+								<RandomSequenceContainer Name="ChurchAmbienceSeq" ID="{798D6365-3F0C-4C29-B658-89C6D80F7FAC}" ShortID="162313340">
 									<PropertyList>
-										<Property Name="3DSpatialization" Type="int16" Value="2"/>
-										<Property Name="EnableDiffraction" Type="bool" Value="True"/>
-										<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+										<Property Name="Lowpass" Type="int16">
+											<RTPCList>
+												<RTPC Name="" ID="{E34C2A54-6B09-46C3-A56E-C557039AA0A3}" ShortID="280815162">
+													<ReferenceList>
+														<Reference Name="ControlInput">
+															<ObjectRef Name="45s" ID="{8D24E374-80DB-45E4-B80B-A3AE5E26C21D}" WorkUnitID="{06927402-0891-4579-8A17-812F2385F09C}"/>
+														</Reference>
+													</ReferenceList>
+													<Curve Name="" ID="{9D5AF26B-8E10-4C7F-B61A-BF52E9F51A43}">
+														<PropertyList>
+															<Property Name="Flags" Type="int32" Value="65537"/>
+														</PropertyList>
+														<PointList>
+															<Point>
+																<XPos>0</XPos>
+																<YPos>0</YPos>
+																<Flags>5</Flags>
+															</Point>
+															<Point>
+																<XPos>23.11916</XPos>
+																<YPos>31</YPos>
+																<Flags>0</Flags>
+															</Point>
+															<Point>
+																<XPos>45</XPos>
+																<YPos>-1</YPos>
+																<Flags>37</Flags>
+															</Point>
+														</PointList>
+													</Curve>
+												</RTPC>
+											</RTPCList>
+										</Property>
 										<Property Name="OverrideOutput" Type="bool" Value="True"/>
-										<Property Name="OverridePositioning" Type="bool" Value="True"/>
+										<Property Name="OverrideUserAuxSends" Type="bool" Value="True"/>
+										<Property Name="PlayMechanismResetPlaylistEachPlay" Type="bool" Value="False"/>
+										<Property Name="PlayMechanismSpecialTransitions" Type="bool" Value="True"/>
+										<Property Name="PlayMechanismSpecialTransitionsValue" Type="Real64" Value="3"/>
+										<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
+										<Property Name="RandomOrSequence" Type="int16" Value="0"/>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-11</Value>
+											</ValueList>
+										</Property>
 									</PropertyList>
 									<ReferenceList>
+										<Reference Name="Attenuation">
+											<ObjectRef Name="100Spread" ID="{A5BD6E03-D42D-496F-AE0F-BCC77F21EC97}" WorkUnitID="{47D4E814-D669-4A08-8AD2-F706566546E0}"/>
+										</Reference>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{23AF77D7-3FEA-409B-8E44-F5B490014C61}"/>
 										</Reference>
@@ -1900,19 +1943,68 @@
 										</Reference>
 									</ReferenceList>
 									<ChildrenList>
-										<AudioFileSource Name="AmbisonicWwiseTest_arach" ID="{07672A57-FEBB-4399-A525-38EEA446C74F}">
-											<Language>SFX</Language>
-											<AudioFile>AmbisonicWwiseTest_arach.wav</AudioFile>
-											<MediaIDList>
-												<MediaID ID="784043094"/>
-											</MediaIDList>
-										</AudioFileSource>
+										<Sound Name="ChurchAmbisonicAmbienceMain_Intro" ID="{F2E4F8B8-CE5B-42F7-9236-D0E8C86932ED}" ShortID="417650376">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{23AF77D7-3FEA-409B-8E44-F5B490014C61}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C91EB4C6-56DC-4541-96C4-29E948904D66}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="ChurchAmbisonicAmbienceMain_Intro" ID="{6F9B1C10-AFB9-42AD-82FD-8A5E2305D475}">
+													<Language>SFX</Language>
+													<AudioFile>ChurchAmbisonicAmbienceMain_Intro.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="195704639"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ObjectLists/>
+											<ActiveSourceList>
+												<ActiveSource Name="ChurchAmbisonicAmbienceMain_Intro" ID="{6F9B1C10-AFB9-42AD-82FD-8A5E2305D475}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="ChurchAmbisonicAmbienceMain_loopo" ID="{AE8D3806-2D74-45E9-86DC-1CB82CE22C22}" ShortID="823043993">
+											<PropertyList>
+												<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{23AF77D7-3FEA-409B-8E44-F5B490014C61}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C91EB4C6-56DC-4541-96C4-29E948904D66}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="ChurchAmbisonicAmbienceMain_loopo" ID="{55B771A1-3F7D-4FE3-8D54-05CD330EDBD6}">
+													<PropertyList>
+														<Property Name="CrossfadeDuration" Type="Real64" Value="1820.687"/>
+														<Property Name="LoopBegin" Type="Real64" Value="2.427"/>
+														<Property Name="LoopEnd" Type="Real64" Value="112.88217"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>ChurchAmbisonicAmbienceMain_loopo.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="169382249"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ObjectLists/>
+											<ActiveSourceList>
+												<ActiveSource Name="ChurchAmbisonicAmbienceMain_loopo" ID="{55B771A1-3F7D-4FE3-8D54-05CD330EDBD6}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
 									</ChildrenList>
 									<ObjectLists/>
-									<ActiveSourceList>
-										<ActiveSource Name="AmbisonicWwiseTest_arach" ID="{07672A57-FEBB-4399-A525-38EEA446C74F}" Platform="Linked"/>
-									</ActiveSourceList>
-								</Sound>
+									<Playlist>
+										<ItemRef Name="ChurchAmbisonicAmbienceMain_Intro" ID="{F2E4F8B8-CE5B-42F7-9236-D0E8C86932ED}"/>
+										<ItemRef Name="ChurchAmbisonicAmbienceMain_loopo" ID="{AE8D3806-2D74-45E9-86DC-1CB82CE22C22}"/>
+									</Playlist>
+								</RandomSequenceContainer>
 							</ChildrenList>
 							<ObjectLists/>
 						</ActorMixer>

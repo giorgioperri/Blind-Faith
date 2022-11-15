@@ -46,8 +46,8 @@ namespace AK
 
             namespace SWITCH
             {
-                static const AkUniqueID VA_CLERK_CHATTER = 3899735754U;
-                static const AkUniqueID VA_CLERK_INTRO_1 = 1918899099U;
+                static const AkUniqueID CLERKCHATTER = 1846884575U;
+                static const AkUniqueID CLERKINTRO = 1202250874U;
             } // namespace SWITCH
         } // namespace VA_CLERK_SWITCH_GROUP
 
@@ -61,7 +61,7 @@ namespace AK
     namespace BANKS
     {
         static const AkUniqueID INIT = 1355168291U;
-        static const AkUniqueID MAIN = 3161908922U;
+        static const AkUniqueID MAINS = 1764570813U;
     } // namespace BANKS
 
     namespace BUSSES

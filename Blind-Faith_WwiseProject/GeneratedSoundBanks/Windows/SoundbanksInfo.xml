@@ -11,7 +11,7 @@
 	<StreamedFiles/>
 	<MediaFilesNotInAnyBank/>
 	<SoundBanks>
-		<SoundBank Id="1355168291" Language="SFX" Hash="1721281442">
+		<SoundBank Id="1355168291" Language="SFX" Hash="777302053">
 			<ObjectPath>Init</ObjectPath>
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
@@ -24,10 +24,10 @@
 				<AuxBus Id="2933838247" Name="SmallRoom" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Rooms\SmallRoom"/>
 			</IncludedAuxBusses>
 		</SoundBank>
-		<SoundBank Id="3161908922" Language="SFX" Hash="1165522853">
-			<ObjectPath>\SoundBanks\Default Work Unit\Main</ObjectPath>
-			<ShortName>Main</ShortName>
-			<Path>Main.bnk</Path>
+		<SoundBank Id="1764570813" Language="SFX" Hash="2158209657">
+			<ObjectPath>\SoundBanks\Default Work Unit\Mains</ObjectPath>
+			<ShortName>Mains</ShortName>
+			<Path>Mains.bnk</Path>
 			<IncludedEvents>
 				<Event Id="1132321458" Name="Church_Ambisonic" ObjectPath="\Events\Default Work Unit\SFX\Ambience\Church_Ambisonic" DurationType="Infinite"/>
 				<Event Id="3209221603" Name="DEBUG_AMB" ObjectPath="\Events\Default Work Unit\DEBUG_AMB" DurationType="Infinite"/>
@@ -38,7 +38,7 @@
 				<Event Id="759350405" Name="Lanteren_Deploy_Loop" ObjectPath="\Events\Default Work Unit\SFX\Player\Lanteren\Lanteren_Deploy_Loop" MaxAttenuation="10." DurationType="Infinite"/>
 				<Event Id="1818726255" Name="Lanteren_discharge" ObjectPath="\Events\Default Work Unit\SFX\Player\Lanteren\Lanteren_discharge" MaxAttenuation="10." DurationType="OneShot" DurationMin="3.185225" DurationMax="3.185225"/>
 				<Event Id="740769089" Name="Lanteren_Undeploy" ObjectPath="\Events\Default Work Unit\SFX\Player\Lanteren\Lanteren_Undeploy" MaxAttenuation="10." DurationType="OneShot" DurationMin="2.79757" DurationMax="2.79757"/>
-				<Event Id="1398273777" Name="VA_Clerk_Play" ObjectPath="\Events\Default Work Unit\VA\VA_Clerk\VA_Clerk_Play" MaxAttenuation="10." DurationType="OneShot" DurationMin="2.465193" DurationMax="9.640862"/>
+				<Event Id="1398273777" Name="VA_Clerk_Play" ObjectPath="\Events\Default Work Unit\VA\VA_Clerk\VA_Clerk_Play" MaxAttenuation="10." DurationType="OneShot" DurationMin="0." DurationMax="9.640862"/>
 				<Event Id="938429017" Name="VA_Pause" ObjectPath="\Events\Default Work Unit\VA\VA_Pause" MaxAttenuation="0." DurationType="OneShot" DurationMin="0." DurationMax="0."/>
 				<Event Id="662947992" Name="VA_Resume" ObjectPath="\Events\Default Work Unit\VA\VA_Resume" MaxAttenuation="0." DurationType="OneShot" DurationMin="0." DurationMax="0."/>
 			</IncludedEvents>
@@ -63,6 +63,14 @@
 					<ShortName>Clerk_s1_.wav</ShortName>
 					<Path>SFX\Clerk_s1__10C4C929.wem</Path>
 				</File>
+				<File Id="169382249" Language="SFX">
+					<ShortName>ChurchAmbisonicAmbienceMain_loopo.wav</ShortName>
+					<Path>SFX\ChurchAmbisonicAmbienceMain_loopo_BC0EBD72.wem</Path>
+				</File>
+				<File Id="195704639" Language="SFX">
+					<ShortName>ChurchAmbisonicAmbienceMain_Intro.wav</ShortName>
+					<Path>SFX\ChurchAmbisonicAmbienceMain_Intro_10C4C929.wem</Path>
+				</File>
 				<File Id="198540441" Language="SFX">
 					<ShortName>Powerup_Mutated_Drone.wav</ShortName>
 					<Path>SFX\Powerup_Mutated_Drone_F80341E1.wem</Path>
@@ -74,6 +82,14 @@
 				<File Id="210602074" Language="SFX">
 					<ShortName>Clerk_s1__7.wav</ShortName>
 					<Path>SFX\Clerk_s1__7_10C4C929.wem</Path>
+				</File>
+				<File Id="211299271" Language="SFX">
+					<ShortName>Clerk_chatter\Clerk_chatter__2.wav</ShortName>
+					<Path>SFX\Clerk_chatter\Clerk_chatter__2_10C4C929.wem</Path>
+				</File>
+				<File Id="222606794" Language="SFX">
+					<ShortName>Clerk_chatter\Clerk_chatter_.wav</ShortName>
+					<Path>SFX\Clerk_chatter\Clerk_chatter__10C4C929.wem</Path>
 				</File>
 				<File Id="290489526" Language="SFX">
 					<ShortName>Clerk_s1__1.wav</ShortName>
@@ -95,6 +111,10 @@
 					<ShortName>1806 - Footsteps - Sneakers on Carpet - 90 fpm - Loop.wav</ShortName>
 					<Path>SFX\1806 - Footsteps - Sneakers on Carpet - 90 fpm - Loop_8A92B7AF.wem</Path>
 				</File>
+				<File Id="413924883" Language="SFX">
+					<ShortName>Clerk_chatter\Clerk_chatter__7.wav</ShortName>
+					<Path>SFX\Clerk_chatter\Clerk_chatter__7_10C4C929.wem</Path>
+				</File>
 				<File Id="446528560" Language="SFX">
 					<ShortName>Teleport.wav</ShortName>
 					<Path>SFX\Teleport_EBE10AA2.wem</Path>
@@ -102,6 +122,10 @@
 				<File Id="466230716" Language="SFX">
 					<ShortName>Clerk_s1__8.wav</ShortName>
 					<Path>SFX\Clerk_s1__8_10C4C929.wem</Path>
+				</File>
+				<File Id="476092146" Language="SFX">
+					<ShortName>Clerk_chatter\Clerk_chatter__4.wav</ShortName>
+					<Path>SFX\Clerk_chatter\Clerk_chatter__4_10C4C929.wem</Path>
 				</File>
 				<File Id="485940681" Language="SFX">
 					<ShortName>01 Stone Footsteps, Cobblestone Male, 30 Secs Each Slow, Medium, Fast.wav</ShortName>
@@ -115,9 +139,17 @@
 					<ShortName>01 Stone Footsteps, Cobblestone Male, 30 Secs Each Slow, Medium, Fast.wav</ShortName>
 					<Path>SFX\01 Stone Footsteps, Cobblestone Male, 30 Secs Each Slow, Medium, Fast_6ACF6195.wem</Path>
 				</File>
+				<File Id="529285034" Language="SFX">
+					<ShortName>Clerk_chatter\Clerk_chatter__5.wav</ShortName>
+					<Path>SFX\Clerk_chatter\Clerk_chatter__5_10C4C929.wem</Path>
+				</File>
 				<File Id="541165543" Language="SFX">
 					<ShortName>Bluezone_BC0238_ambience_020.wav</ShortName>
 					<Path>SFX\Bluezone_BC0238_ambience_020_2302C72B.wem</Path>
+				</File>
+				<File Id="579534600" Language="SFX">
+					<ShortName>Clerk_chatter\Clerk_chatter__3.wav</ShortName>
+					<Path>SFX\Clerk_chatter\Clerk_chatter__3_10C4C929.wem</Path>
 				</File>
 				<File Id="643727600" Language="SFX">
 					<ShortName>1806 - Footsteps - Sneakers on Carpet - 90 fpm - Loop.wav</ShortName>
@@ -127,17 +159,25 @@
 					<ShortName>Clerk_s1__9.wav</ShortName>
 					<Path>SFX\Clerk_s1__9_10C4C929.wem</Path>
 				</File>
+				<File Id="675330913" Language="SFX">
+					<ShortName>Clerk_chatter\Clerk_chatter__6.wav</ShortName>
+					<Path>SFX\Clerk_chatter\Clerk_chatter__6_10C4C929.wem</Path>
+				</File>
 				<File Id="684596150" Language="SFX">
 					<ShortName>water3.wav</ShortName>
 					<Path>SFX\water3_10C4C929.wem</Path>
 				</File>
+				<File Id="718550265" Language="SFX">
+					<ShortName>Clerk_chatter\Clerk_chatter__8.wav</ShortName>
+					<Path>SFX\Clerk_chatter\Clerk_chatter__8_10C4C929.wem</Path>
+				</File>
+				<File Id="739805478" Language="SFX">
+					<ShortName>Clerk_chatter\Clerk_chatter__9.wav</ShortName>
+					<Path>SFX\Clerk_chatter\Clerk_chatter__9_10C4C929.wem</Path>
+				</File>
 				<File Id="776242514" Language="SFX">
 					<ShortName>Clerk_s1__4.wav</ShortName>
 					<Path>SFX\Clerk_s1__4_10C4C929.wem</Path>
-				</File>
-				<File Id="784043094" Language="SFX">
-					<ShortName>AmbisonicWwiseTest_arach.wav</ShortName>
-					<Path>SFX\AmbisonicWwiseTest_arach_D79FB2B7.wem</Path>
 				</File>
 				<File Id="786073262" Language="SFX">
 					<ShortName>Mutated hammer.wav</ShortName>
@@ -146,6 +186,10 @@
 				<File Id="830999437" Language="SFX">
 					<ShortName>01 Stone Footsteps, Cobblestone Male, 30 Secs Each Slow, Medium, Fast.wav</ShortName>
 					<Path>SFX\01 Stone Footsteps, Cobblestone Male, 30 Secs Each Slow, Medium, Fast_5FF7441C.wem</Path>
+				</File>
+				<File Id="833554346" Language="SFX">
+					<ShortName>Clerk_chatter\Clerk_chatter__1.wav</ShortName>
+					<Path>SFX\Clerk_chatter\Clerk_chatter__1_10C4C929.wem</Path>
 				</File>
 				<File Id="861805956" Language="SFX">
 					<ShortName>01 Stone Footsteps, Cobblestone Male, 30 Secs Each Slow, Medium, Fast.wav</ShortName>
@@ -203,8 +247,8 @@
 			<SwitchGroups>
 				<SwitchGroup Id="232330383" Name="VA_Clerk_Switch_Group" ObjectPath="\Switches\Default Work Unit\VA\VA_Clerk_Switch_Group" GUID="{606D0EF6-200D-4481-B083-66F3C0D6C337}">
 					<Switches>
-						<Switch Id="1918899099" Name="VA_Clerk_Intro_1" ObjectPath="\Switches\Default Work Unit\VA\VA_Clerk_Switch_Group\VA_Clerk_Intro_1" GUID="{82AD2430-231F-4A0F-9382-CEE494A9DF9E}"/>
-						<Switch Id="3899735754" Name="VA_Clerk_Chatter" ObjectPath="\Switches\Default Work Unit\VA\VA_Clerk_Switch_Group\VA_Clerk_Chatter" GUID="{6AD5FEDC-6CD0-4A3D-91C2-9265E8947D7B}"/>
+						<Switch Id="1202250874" Name="ClerkIntro" ObjectPath="\Switches\Default Work Unit\VA\VA_Clerk_Switch_Group\ClerkIntro" GUID="{82AD2430-231F-4A0F-9382-CEE494A9DF9E}"/>
+						<Switch Id="1846884575" Name="ClerkChatter" ObjectPath="\Switches\Default Work Unit\VA\VA_Clerk_Switch_Group\ClerkChatter" GUID="{6AD5FEDC-6CD0-4A3D-91C2-9265E8947D7B}"/>
 					</Switches>
 				</SwitchGroup>
 				<SwitchGroup Id="1730208058" Name="Player_Footsteps" ObjectPath="\Switches\Default Work Unit\Locomotion\Player_Footsteps" GUID="{A706E7EA-CCEF-4788-AE6F-F3659BEF4932}">
