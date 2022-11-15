@@ -1,7 +1,10 @@
 ﻿using System;
 using UnityEngine;
+using System.Collections;
 #if ENABLE_INPUT_SYSTEM && STARTER_ASSETS_PACKAGES_CHECKED
 using UnityEngine.InputSystem;
+using System.Collections.Generic;
+
 #endif
 
 namespace StarterAssets
@@ -18,7 +21,7 @@ namespace StarterAssets
 		[Tooltip("Sprint speed of the character in m/s")]
 		public float SprintSpeed = 8.0f;
 		[Tooltip("Rotation speed of the character")]
-		public float RotationSpeed = 1.0f;
+		public float RotationSpeed = 6.0f;
 		[Tooltip("Acceleration and deceleration")]
 		public float SpeedChangeRate = 10.0f;
 
@@ -74,6 +77,9 @@ namespace StarterAssets
 		[SerializeField] private float sprintBobAmount = 0.06f;
 		[SerializeField] private float crouchBobSpeed = 8f;
 		[SerializeField] private float crouchBobAmount = 0.025f;
+		private float idleHeavyBobSpeed = 3f;
+		private float idleHeavyBobAmount = 0.05f;
+
 
 		[Header("Interaction parameters")]
 		[SerializeField] private Vector3 _interactionRayPoint = default;
@@ -250,10 +256,29 @@ namespace StarterAssets
 			CameraRotation();
 		}
 
+		private void HandleIdleBreath(float idleSpeed, float idleAmount)
+		{
+			_timer += Time.deltaTime * idleSpeed;
+			CinemachineCameraTarget.transform.localPosition = new Vector3(
+				CinemachineCameraTarget.transform.localPosition.x,
+				_defaultYpos + Mathf.Sin(_timer) * idleAmount, CinemachineCameraTarget.transform.localPosition.z);
+		}
 		// Logic for handling headBob, if player is on ground then begin HeadBob, check the state (walk/sprint/crouch - if we want to implement it)
 		private void HandleHeadBob()
 		{
 			if (!_controller.isGrounded) return;
+
+			// On idle
+			if (_input.move == Vector2.zero)
+			{
+				if (GameManager.Instance.health < 50)
+				{
+					HandleIdleBreath(idleHeavyBobSpeed, idleHeavyBobAmount);
+					RotationSpeed = 1f;
+				}
+				else RotationSpeed = 6f;
+				
+			}
 
 			if (Mathf.Abs(_moveDirection.x) > 0.1f || Mathf.Abs(_moveDirection.z) > 0.1f)
 			{
@@ -271,7 +296,6 @@ namespace StarterAssets
 			Vector3 spherePosition = new Vector3(transform.position.x, transform.position.y - GroundedOffset, transform.position.z);
 			Grounded = Physics.CheckSphere(spherePosition, GroundedRadius, GroundLayers, QueryTriggerInteraction.Ignore);
 		}
-
 		private void CameraRotation()
 		{
 			//Don't multiply mouse input by Time.deltaTime
@@ -279,9 +303,10 @@ namespace StarterAssets
 
 			_cinemachineTargetPitch += _input.look.y * RotationSpeed * deltaTimeMultiplier;
 			_rotationVelocity = _input.look.x * RotationSpeed * deltaTimeMultiplier;
-
+			
 			// clamp our pitch rotation
 			_cinemachineTargetPitch = ClampAngle(_cinemachineTargetPitch, BottomClamp, TopClamp);
+
 
 			// Update Cinemachine camera target pitch
 			CinemachineCameraTarget.transform.localRotation = Quaternion.Euler(_cinemachineTargetPitch, 0.0f, 0.0f);
@@ -289,6 +314,7 @@ namespace StarterAssets
 			// rotate the player left and right
 			transform.Rotate(Vector3.up * _rotationVelocity);
 		}
+
 
 		private void Move()
 		{
