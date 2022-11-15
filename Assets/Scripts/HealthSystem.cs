@@ -14,6 +14,18 @@ public class HealthSystem : MonoBehaviour
     [SerializeField]
     private float _gainHealthSpeed = 10f;
 
+    public static HealthSystem Instance;
+    
+    private void Awake()
+    {
+        if (Instance != null)
+        {
+            Destroy(this);
+        }
+        
+        Instance = this;
+    }
+
     void Update()
     {
         if (GameManager.Instance.health <= 100)
@@ -44,6 +56,11 @@ public class HealthSystem : MonoBehaviour
         {
             GameManager.Instance.health -= Time.deltaTime * _loseHealthSpeed;
         }
+    }
+
+    public void Heal()
+    {
+        GameManager.Instance.health += Time.deltaTime * _gainHealthSpeed;
     }
 
     void UpdateHealthFadeEffect()

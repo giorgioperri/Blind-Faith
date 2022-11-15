@@ -60,15 +60,14 @@ public class LightBeam
 
     void CheckHit(RaycastHit hitInfo, Vector3 direction, LineRenderer laser)
     {
-
-        if(hitInfo.collider.gameObject.tag == "Mirror")
+        if(hitInfo.collider.gameObject.CompareTag("Mirror"))
         {
             Vector3 pos = hitInfo.point;
             Vector3 dir = Vector3.Reflect(direction, hitInfo.normal);
 
             CastRay(pos, dir, laser);
         }
-        else if(hitInfo.collider.gameObject.tag == "Door")
+        else if(hitInfo.collider.gameObject.CompareTag("Door"))
         {
             hitTheDoor = true;
             if (hitInfo.collider.gameObject.GetComponent<Door>().enabled == false && hitTheDoor)
@@ -76,6 +75,11 @@ public class LightBeam
                 hitInfo.collider.gameObject.GetComponent<Door>().enabled = true;
                 hitInfo.collider.gameObject.transform.GetChild(0).GetComponent<Renderer>().material.color = Color.green;
             }
+            _lightIndices.Add(hitInfo.point);
+            UpdateLaser();
+        } else if (hitInfo.collider.gameObject.CompareTag("Player"))
+        {
+            HealthSystem.Instance.Heal(); 
             _lightIndices.Add(hitInfo.point);
             UpdateLaser();
         }
