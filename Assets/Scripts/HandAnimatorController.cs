@@ -34,6 +34,15 @@ public class HandAnimatorController : MonoBehaviour
         {
             HandleLanternInput(!_animController.GetBool("hasRaisedLantern"));
         }
+
+        if (Mouse.current.leftButton.wasPressedThisFrame)
+        {
+            _animController.SetBool("extendArms", true);
+        } 
+        else if (Mouse.current.leftButton.wasReleasedThisFrame)
+        {
+            _animController.SetBool("extendArms", false);
+        }
     }
 
     public void HandleLanternInput(bool isUp)
