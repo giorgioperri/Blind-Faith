@@ -43,7 +43,20 @@
 										</Action>
 									</ChildrenList>
 								</Event>
-								<Event Name="VA_Clerk_Chatter_Switch" ID="{8F5F3004-C6F4-4A5D-8E8F-FA5E586925E8}"/>
+								<Event Name="VA_Clerk_Chatter_Switch" ID="{8F5F3004-C6F4-4A5D-8E8F-FA5E586925E8}">
+									<ChildrenList>
+										<Action Name="" ID="{58D8807E-37AE-436C-8E7A-97975020D801}" ShortID="773631946">
+											<PropertyList>
+												<Property Name="ActionType" Type="int16" Value="23"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="VA_Clerk_Chatter" ID="{6AD5FEDC-6CD0-4A3D-91C2-9265E8947D7B}" WorkUnitID="{78209012-2636-4D94-8763-1F9C3A93F8E0}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
 							</ChildrenList>
 						</Folder>
 						<Event Name="VA_Resume" ID="{592B55FF-61FB-4E5F-9A9D-0A7A57D4F533}">

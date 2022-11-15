@@ -11,7 +11,7 @@
 	<StreamedFiles/>
 	<MediaFilesNotInAnyBank/>
 	<SoundBanks>
-		<SoundBank Id="1355168291" Language="SFX" Hash="1146009784">
+		<SoundBank Id="1355168291" Language="SFX" Hash="860902481">
 			<ObjectPath>Init</ObjectPath>
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
@@ -24,12 +24,12 @@
 				<AuxBus Id="2933838247" Name="SmallRoom" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Rooms\SmallRoom"/>
 			</IncludedAuxBusses>
 		</SoundBank>
-		<SoundBank Id="3161908922" Language="SFX" Hash="1165522853">
+		<SoundBank Id="3161908922" Language="SFX" Hash="3623349532">
 			<ObjectPath>\SoundBanks\Default Work Unit\Main</ObjectPath>
 			<ShortName>Main</ShortName>
 			<Path>Main.bnk</Path>
 			<IncludedEvents>
-				<Event Id="1132321458" Name="Church_Ambisonic" ObjectPath="\Events\Default Work Unit\SFX\Ambience\Church_Ambisonic" DurationType="Infinite"/>
+				<Event Id="1132321458" Name="Church_Ambisonic" ObjectPath="\Events\Default Work Unit\SFX\Ambience\Church_Ambisonic" MaxAttenuation="100." DurationType="Infinite"/>
 				<Event Id="3209221603" Name="DEBUG_AMB" ObjectPath="\Events\Default Work Unit\DEBUG_AMB" DurationType="Infinite"/>
 				<Event Id="2618683459" Name="DEBUG_HAMMER" ObjectPath="\Events\Default Work Unit\DEBUG_HAMMER" MaxAttenuation="20." DurationType="Infinite"/>
 				<Event Id="181700819" Name="FireLoop" ObjectPath="\Events\Default Work Unit\FireLoop" MaxAttenuation="10." DurationType="Infinite"/>
