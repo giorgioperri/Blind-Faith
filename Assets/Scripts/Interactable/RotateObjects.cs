@@ -6,15 +6,19 @@ using UnityEngine.InputSystem;
 
 public class RotateObjects : Interactable
 {
+
+    [SerializeField] private float _angleOfRotation = 30;
     public override void OnInteraction()
     {
         if (Keyboard.current.fKey.isPressed) return;
-        transform.Rotate(0f, 22 * Time.deltaTime, 0f, Space.Self);
-    }
 
+        else if (Keyboard.current.eKey.wasPressedThisFrame) transform.Rotate(0f, _angleOfRotation, 0f, Space.Self);
+    }
     public override void OnAltInteraction()
     {
         if (Keyboard.current.fKey.isPressed) return;
-        transform.Rotate(0f, -22 * Time.deltaTime, 0f, Space.Self);
+
+        else if (Keyboard.current.qKey.wasPressedThisFrame) transform.Rotate(0f, -_angleOfRotation, 0f, Space.Self);
+        
     }
 }
