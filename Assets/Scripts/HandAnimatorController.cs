@@ -28,18 +28,32 @@ public class HandAnimatorController : MonoBehaviour
     private void Update()
     {
         if (FirstPersonController.Instance.currentInteractable &&
-            FirstPersonController.Instance.currentInteractable.GetType() == typeof(Socket)) return;
-            
-        if (_inputs.hasRaisedLantern)
+            FirstPersonController.Instance.currentInteractable.GetType() == typeof(Socket))
         {
-            HandleLanternInput(!_animController.GetBool("hasRaisedLantern"));
+            if (Mouse.current.leftButton.isPressed)
+            {
+                _animController.SetBool("extendArms", false);
+            } 
+            
+            return;
         }
 
-        if (Mouse.current.leftButton.wasPressedThisFrame)
+        if (_inputs.hasRaisedLantern)
+        {
+            if(!Mouse.current.leftButton.isPressed && !LanternManager.Instance.isInsideSocket){
+                HandleLanternInput(!_animController.GetBool("hasRaisedLantern"));
+            }
+            else
+            {
+                _inputs.hasRaisedLantern = false;
+            }
+        }
+
+        if (Mouse.current.leftButton.wasPressedThisFrame && !LanternManager.Instance.isInsideSocket)
         {
             _animController.SetBool("extendArms", true);
         } 
-        else if (Mouse.current.leftButton.wasReleasedThisFrame)
+        else if (Mouse.current.leftButton.wasReleasedThisFrame && !LanternManager.Instance.isInsideSocket)
         {
             _animController.SetBool("extendArms", false);
         }

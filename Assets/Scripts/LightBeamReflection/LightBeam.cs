@@ -65,6 +65,9 @@ public class LightBeam
             Vector3 pos = hitInfo.point;
             Vector3 dir = Vector3.Reflect(direction, hitInfo.normal);
 
+            if(hitInfo.collider.gameObject.GetComponent<RotateObjects>())
+                hitInfo.collider.gameObject.GetComponent<RotateObjects>().isEnlighted = true;
+
             CastRay(pos, dir, laser);
         }
         else if(hitInfo.collider.gameObject.CompareTag("Door"))

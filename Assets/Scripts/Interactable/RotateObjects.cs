@@ -15,10 +15,18 @@ public class RotateObjects : Interactable
 
     private bool _isTurning;
     private bool _grabbedMirror;
-   
+
+    public bool isEnlighted;
+
+    public override void OnLoseFocus()
+    {
+        Debug.Log("unfocus");
+        isEnlighted = false;
+    }
+
     public override void OnInteraction()
     {
-        if (Keyboard.current.fKey.isPressed) return;
+        if (Keyboard.current.fKey.isPressed || !isEnlighted) return;
         
         if (Keyboard.current.eKey.wasPressedThisFrame && !_isTurning && GameManager.Instance.areMirrorsStep)
         {
@@ -29,7 +37,7 @@ public class RotateObjects : Interactable
     }
     public override void OnAltInteraction()
     {
-        if (Keyboard.current.fKey.isPressed) return;
+        if (Keyboard.current.fKey.isPressed || !isEnlighted) return;
         
         if (Keyboard.current.qKey.wasPressedThisFrame && !_isTurning && GameManager.Instance.areMirrorsStep)
         {
@@ -41,7 +49,7 @@ public class RotateObjects : Interactable
 
     private void Update()
     {
-        if (GameManager.Instance.areMirrorsStep) return;
+        if (GameManager.Instance.areMirrorsStep || !isEnlighted) return;
         
         if ((Mouse.current.leftButton.isPressed && FirstPersonController.Instance.currentInteractable == this) || _grabbedMirror)
         {
