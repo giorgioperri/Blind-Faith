@@ -183,7 +183,6 @@ namespace StarterAssets
 			{
 				if (Physics.Raycast(this.transform.position, Vector3.down, out RaycastHit hit, 6))
 				{
-					Debug.Log(hit.collider.tag);
 					switch (hit.collider.tag)
 					{
 						case "Footsteps/Stone":

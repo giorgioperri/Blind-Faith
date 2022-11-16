@@ -16,6 +16,7 @@ public class LightBeam
     {
         _lightLaser = new LineRenderer();
         lightObj = new GameObject();
+        lightObj.tag = "LightBeam";
         lightObj.name = "Light Beam";
         _position = position;
         _direction = direction;
@@ -65,8 +66,10 @@ public class LightBeam
             Vector3 pos = hitInfo.point;
             Vector3 dir = Vector3.Reflect(direction, hitInfo.normal);
 
-            if(hitInfo.collider.gameObject.GetComponent<RotateObjects>())
-                hitInfo.collider.gameObject.GetComponent<RotateObjects>().isEnlighted = true;
+            if (hitInfo.collider.gameObject.GetComponent<RotateObjects>())
+            {
+                hitInfo.collider.gameObject.SendMessage("OnBeamReceived");
+            }
 
             CastRay(pos, dir, laser);
         }

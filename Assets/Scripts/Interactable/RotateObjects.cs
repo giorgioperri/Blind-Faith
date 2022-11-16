@@ -2,6 +2,7 @@ using System;
 using StarterAssets;
 using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
@@ -18,12 +19,11 @@ public class RotateObjects : Interactable
 
     public bool isEnlighted;
 
-    public override void OnLoseFocus()
+    public void OnBeamReceived()
     {
-        Debug.Log("unfocus");
-        isEnlighted = false;
+        isEnlighted = true;
     }
-
+    
     public override void OnInteraction()
     {
         if (Keyboard.current.fKey.isPressed || !isEnlighted) return;
@@ -50,7 +50,7 @@ public class RotateObjects : Interactable
     private void Update()
     {
         if (GameManager.Instance.areMirrorsStep || !isEnlighted) return;
-        
+
         if ((Mouse.current.leftButton.isPressed && FirstPersonController.Instance.currentInteractable == this) || _grabbedMirror)
         {
             _grabbedMirror = true;
@@ -67,6 +67,8 @@ public class RotateObjects : Interactable
                 _grabbedMirror = false;
             }
         }
+
+        isEnlighted = false;
     }
 
     IEnumerator TurnTo () 
