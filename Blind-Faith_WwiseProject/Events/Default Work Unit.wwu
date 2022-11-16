@@ -43,6 +43,20 @@
 										</Action>
 									</ChildrenList>
 								</Event>
+								<Event Name="VA_Clerk_Chatter_Switch" ID="{8F5F3004-C6F4-4A5D-8E8F-FA5E586925E8}">
+									<ChildrenList>
+										<Action Name="" ID="{58D8807E-37AE-436C-8E7A-97975020D801}" ShortID="773631946">
+											<PropertyList>
+												<Property Name="ActionType" Type="int16" Value="23"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="VA_Clerk_Chatter" ID="{6AD5FEDC-6CD0-4A3D-91C2-9265E8947D7B}" WorkUnitID="{78209012-2636-4D94-8763-1F9C3A93F8E0}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
 							</ChildrenList>
 						</Folder>
 						<Event Name="VA_Resume" ID="{592B55FF-61FB-4E5F-9A9D-0A7A57D4F533}">
@@ -155,19 +169,23 @@
 								</Folder>
 							</ChildrenList>
 						</Folder>
+						<Folder Name="Ambience" ID="{C57415D6-FBAE-4B6E-B8BE-3D2E8F5C14A0}" ShortID="252187381">
+							<ChildrenList>
+								<Event Name="Church_Ambisonic" ID="{D515D6DC-ED07-4A48-B7BC-43E13AA6D783}">
+									<ChildrenList>
+										<Action Name="" ID="{DABB06EE-FBE1-4F2A-BCDF-C31B6248F3F5}" ShortID="935743554">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="AmbisonicWwiseTest_arach" ID="{5B6BCBAB-27AD-446C-8A9E-BF90B90823DB}" WorkUnitID="{10A75CA5-3F55-455C-A103-004D7C43FEF2}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+							</ChildrenList>
+						</Folder>
 					</ChildrenList>
 				</Folder>
-				<Event Name="Amb_Church" ID="{D515D6DC-ED07-4A48-B7BC-43E13AA6D783}">
-					<ChildrenList>
-						<Action Name="" ID="{3DAB8D52-1543-4F48-B459-C008A67E0807}" ShortID="382885419">
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="Church_General_PH" ID="{F5A94A59-EBFA-4225-9935-949603299B60}" WorkUnitID="{10A75CA5-3F55-455C-A103-004D7C43FEF2}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
-					</ChildrenList>
-				</Event>
 				<Event Name="DEBUG_HAMMER" ID="{A8A2CB6D-9F32-4CE7-AE5B-27632CBFF45E}">
 					<ChildrenList>
 						<Action Name="" ID="{6277583C-5E41-4C5D-A471-5FA0B295DDAA}" ShortID="998385112">

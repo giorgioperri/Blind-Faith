@@ -8,8 +8,19 @@
 						<Property Name="3DSpatialization" Type="int16" Value="2"/>
 						<Property Name="Color" Type="int16" Value="21"/>
 						<Property Name="EnableDiffraction" Type="bool" Value="True"/>
+						<Property Name="IsGlobalLimit" Type="int16" Value="1"/>
+						<Property Name="MaxSoundPerInstance" Type="int16">
+							<ValueList>
+								<Value>1</Value>
+							</ValueList>
+						</Property>
 						<Property Name="OverrideColor" Type="bool" Value="True"/>
 						<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+						<Property Name="UseMaxSoundPerInstance" Type="bool">
+							<ValueList>
+								<Value>True</Value>
+							</ValueList>
+						</Property>
 					</PropertyList>
 					<ReferenceList>
 						<Reference Name="AttachableMixerInput">
@@ -29,9 +40,6 @@
 					</ReferenceList>
 					<ChildrenList>
 						<SwitchContainer Name="VA_Clerk_Switch_Container" ID="{D44CC410-BC7B-49F7-BF72-2CC2FED8D2DB}" ShortID="995074061">
-							<PropertyList>
-								<Property Name="SwitchBehavior" Type="int16" Value="1"/>
-							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{23AF77D7-3FEA-409B-8E44-F5B490014C61}"/>
@@ -63,12 +71,9 @@
 										<Reference Name="OutputBus">
 											<ObjectRef Name="Rooms" ID="{F220833B-3FC1-4DC8-9CF3-6F367C8C1EDE}" WorkUnitID="{C91EB4C6-56DC-4541-96C4-29E948904D66}"/>
 										</Reference>
-										<Reference Name="UserAuxSend0">
-											<ObjectRef Name="BinuralAux" ID="{C1A480A7-AB40-4091-8843-AB735E7B9C82}" WorkUnitID="{C91EB4C6-56DC-4541-96C4-29E948904D66}"/>
-										</Reference>
 									</ReferenceList>
 									<ChildrenList>
-										<Sound Name="BF_VATest_s1" ID="{8CBA06B1-7A4C-4D13-84DA-1B974375D17A}" ShortID="136314580">
+										<Sound Name="Clerk_s1_" ID="{B63A36EF-0DCF-4510-A9B3-B275FC14B8D2}" ShortID="375977721">
 											<ReferenceList>
 												<Reference Name="Conversion">
 													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{23AF77D7-3FEA-409B-8E44-F5B490014C61}"/>
@@ -78,34 +83,20 @@
 												</Reference>
 											</ReferenceList>
 											<ChildrenList>
-												<AudioFileSource Name="BF_VATest_s1" ID="{91A1E75F-0CD7-45BD-91FC-6B3F555DB594}">
-													<PropertyList>
-														<Property Name="MarkerInputMode" Type="int16" Value="2"/>
-														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
-													</PropertyList>
+												<AudioFileSource Name="Clerk_s1_" ID="{201D455D-C36E-45C7-97A2-3DCCA34BF624}">
 													<Language>SFX</Language>
-													<AudioFile>BF_VATest_s1.wav</AudioFile>
+													<AudioFile>Clerk_s1_.wav</AudioFile>
 													<MediaIDList>
-														<MediaID ID="523566726"/>
+														<MediaID ID="124409414"/>
 													</MediaIDList>
-													<PluginInnerObjectList>
-														<List Name="Markers">
-															<PluginInnerObject Name="" ID="{0802932E-31CD-481E-8A96-70509848CA6B}" PluginName="Marker" CompanyID="0" PluginID="993">
-																<PropertyList>
-																	<Property Name="Label" Type="string" Value="end"/>
-																	<Property Name="Time" Type="Real64" Value="1.61615907901622"/>
-																</PropertyList>
-															</PluginInnerObject>
-														</List>
-													</PluginInnerObjectList>
 												</AudioFileSource>
 											</ChildrenList>
 											<ObjectLists/>
 											<ActiveSourceList>
-												<ActiveSource Name="BF_VATest_s1" ID="{91A1E75F-0CD7-45BD-91FC-6B3F555DB594}" Platform="Linked"/>
+												<ActiveSource Name="Clerk_s1_" ID="{201D455D-C36E-45C7-97A2-3DCCA34BF624}" Platform="Linked"/>
 											</ActiveSourceList>
 										</Sound>
-										<Sound Name="BF_VATest_s1_1" ID="{905A36CE-F9E4-4284-A4EC-B63FFC138B98}" ShortID="1991768">
+										<Sound Name="Clerk_s1__1" ID="{B6188F73-E438-47C6-BCAB-E7E178C2ED18}" ShortID="216704516">
 											<ReferenceList>
 												<Reference Name="Conversion">
 													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{23AF77D7-3FEA-409B-8E44-F5B490014C61}"/>
@@ -115,33 +106,20 @@
 												</Reference>
 											</ReferenceList>
 											<ChildrenList>
-												<AudioFileSource Name="BF_VATest_s1_1" ID="{C181CADB-F341-490A-9478-E4398DD3D970}">
-													<PropertyList>
-														<Property Name="MarkerInputMode" Type="int16" Value="2"/>
-													</PropertyList>
+												<AudioFileSource Name="Clerk_s1__1" ID="{3267F5E8-6BCE-43E4-BC8C-FC809D057288}">
 													<Language>SFX</Language>
-													<AudioFile>BF_VATest_s1_1.wav</AudioFile>
+													<AudioFile>Clerk_s1__1.wav</AudioFile>
 													<MediaIDList>
-														<MediaID ID="640644510"/>
+														<MediaID ID="290489526"/>
 													</MediaIDList>
-													<PluginInnerObjectList>
-														<List Name="Markers">
-															<PluginInnerObject Name="" ID="{FA16449F-9964-41E3-A1E3-0F484142BEF9}" PluginName="Marker" CompanyID="0" PluginID="993">
-																<PropertyList>
-																	<Property Name="Label" Type="string" Value="end"/>
-																	<Property Name="Time" Type="Real64" Value="5.90512050393452"/>
-																</PropertyList>
-															</PluginInnerObject>
-														</List>
-													</PluginInnerObjectList>
 												</AudioFileSource>
 											</ChildrenList>
 											<ObjectLists/>
 											<ActiveSourceList>
-												<ActiveSource Name="BF_VATest_s1_1" ID="{C181CADB-F341-490A-9478-E4398DD3D970}" Platform="Linked"/>
+												<ActiveSource Name="Clerk_s1__1" ID="{3267F5E8-6BCE-43E4-BC8C-FC809D057288}" Platform="Linked"/>
 											</ActiveSourceList>
 										</Sound>
-										<Sound Name="BF_VATest_s1_2" ID="{56518486-0522-4410-BBC5-288F99E44FF7}" ShortID="370119079">
+										<Sound Name="Clerk_s1__2" ID="{4339F99F-337C-48FA-B157-E80557E52664}" ShortID="169512733">
 											<ReferenceList>
 												<Reference Name="Conversion">
 													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{23AF77D7-3FEA-409B-8E44-F5B490014C61}"/>
@@ -151,20 +129,20 @@
 												</Reference>
 											</ReferenceList>
 											<ChildrenList>
-												<AudioFileSource Name="BF_VATest_s1_2" ID="{D04A63CD-A904-4FB3-8BE9-78C490E62668}">
+												<AudioFileSource Name="Clerk_s1__2" ID="{B93BDA84-EB49-42A3-B71C-29B530F11847}">
 													<Language>SFX</Language>
-													<AudioFile>BF_VATest_s1_2.wav</AudioFile>
+													<AudioFile>Clerk_s1__2.wav</AudioFile>
 													<MediaIDList>
-														<MediaID ID="541704858"/>
+														<MediaID ID="1010559949"/>
 													</MediaIDList>
 												</AudioFileSource>
 											</ChildrenList>
 											<ObjectLists/>
 											<ActiveSourceList>
-												<ActiveSource Name="BF_VATest_s1_2" ID="{D04A63CD-A904-4FB3-8BE9-78C490E62668}" Platform="Linked"/>
+												<ActiveSource Name="Clerk_s1__2" ID="{B93BDA84-EB49-42A3-B71C-29B530F11847}" Platform="Linked"/>
 											</ActiveSourceList>
 										</Sound>
-										<Sound Name="BF_VATest_s1_3" ID="{D5A62B5B-F343-405E-8AC2-B38CAB23D404}" ShortID="768758012">
+										<Sound Name="Clerk_s1__3" ID="{964F8C40-3B38-45B5-8546-A8F56F44D77F}" ShortID="148443115">
 											<ReferenceList>
 												<Reference Name="Conversion">
 													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{23AF77D7-3FEA-409B-8E44-F5B490014C61}"/>
@@ -174,20 +152,20 @@
 												</Reference>
 											</ReferenceList>
 											<ChildrenList>
-												<AudioFileSource Name="BF_VATest_s1_3" ID="{8D0B5AC9-F76B-4AD7-A4A2-9FBAFD7910F4}">
+												<AudioFileSource Name="Clerk_s1__3" ID="{AF859057-1861-4016-B6CF-4E95F1A22AB0}">
 													<Language>SFX</Language>
-													<AudioFile>BF_VATest_s1_3.wav</AudioFile>
+													<AudioFile>Clerk_s1__3.wav</AudioFile>
 													<MediaIDList>
-														<MediaID ID="200631349"/>
+														<MediaID ID="949409495"/>
 													</MediaIDList>
 												</AudioFileSource>
 											</ChildrenList>
 											<ObjectLists/>
 											<ActiveSourceList>
-												<ActiveSource Name="BF_VATest_s1_3" ID="{8D0B5AC9-F76B-4AD7-A4A2-9FBAFD7910F4}" Platform="Linked"/>
+												<ActiveSource Name="Clerk_s1__3" ID="{AF859057-1861-4016-B6CF-4E95F1A22AB0}" Platform="Linked"/>
 											</ActiveSourceList>
 										</Sound>
-										<Sound Name="BF_VATest_s1_4" ID="{04863995-ECD2-4463-8442-AA13FA2E8CC6}" ShortID="355820087">
+										<Sound Name="Clerk_s1__4" ID="{66199C98-6EF9-4676-834F-C1AB5940E944}" ShortID="219717740">
 											<ReferenceList>
 												<Reference Name="Conversion">
 													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{23AF77D7-3FEA-409B-8E44-F5B490014C61}"/>
@@ -197,33 +175,423 @@
 												</Reference>
 											</ReferenceList>
 											<ChildrenList>
-												<AudioFileSource Name="BF_VATest_s1_4" ID="{51E7E687-4706-4261-B345-B15CDA8A9332}">
+												<AudioFileSource Name="Clerk_s1__4" ID="{2FF320E3-9137-4199-ACC2-940401C8E07F}">
 													<Language>SFX</Language>
-													<AudioFile>BF_VATest_s1_4.wav</AudioFile>
+													<AudioFile>Clerk_s1__4.wav</AudioFile>
 													<MediaIDList>
-														<MediaID ID="353658067"/>
+														<MediaID ID="776242514"/>
 													</MediaIDList>
 												</AudioFileSource>
 											</ChildrenList>
 											<ObjectLists/>
 											<ActiveSourceList>
-												<ActiveSource Name="BF_VATest_s1_4" ID="{51E7E687-4706-4261-B345-B15CDA8A9332}" Platform="Linked"/>
+												<ActiveSource Name="Clerk_s1__4" ID="{2FF320E3-9137-4199-ACC2-940401C8E07F}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Clerk_s1__5" ID="{31E3198E-B4D2-4385-986D-0EAA5C0E7EDD}" ShortID="85444521">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{23AF77D7-3FEA-409B-8E44-F5B490014C61}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C91EB4C6-56DC-4541-96C4-29E948904D66}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Clerk_s1__5" ID="{6FA7B494-16D0-4B47-935A-107FABD1969B}">
+													<Language>SFX</Language>
+													<AudioFile>Clerk_s1__5.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="306100852"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ObjectLists/>
+											<ActiveSourceList>
+												<ActiveSource Name="Clerk_s1__5" ID="{6FA7B494-16D0-4B47-935A-107FABD1969B}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Clerk_s1__6" ID="{461FE197-5644-48CC-9648-E91C472E6680}" ShortID="476632519">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{23AF77D7-3FEA-409B-8E44-F5B490014C61}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C91EB4C6-56DC-4541-96C4-29E948904D66}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Clerk_s1__6" ID="{B660A4F0-EF93-4BF3-BC5A-ED40387B09AD}">
+													<Language>SFX</Language>
+													<AudioFile>Clerk_s1__6.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="1066600936"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ObjectLists/>
+											<ActiveSourceList>
+												<ActiveSource Name="Clerk_s1__6" ID="{B660A4F0-EF93-4BF3-BC5A-ED40387B09AD}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Clerk_s1__7" ID="{C722D05D-4AD1-4D59-BD5E-8B7BE3086A61}" ShortID="939215951">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{23AF77D7-3FEA-409B-8E44-F5B490014C61}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C91EB4C6-56DC-4541-96C4-29E948904D66}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Clerk_s1__7" ID="{7B5BB9DF-2808-4DED-875B-8BB440C8BEAD}">
+													<Language>SFX</Language>
+													<AudioFile>Clerk_s1__7.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="210602074"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ObjectLists/>
+											<ActiveSourceList>
+												<ActiveSource Name="Clerk_s1__7" ID="{7B5BB9DF-2808-4DED-875B-8BB440C8BEAD}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Clerk_s1__8" ID="{C3E4961B-A217-4C90-8EEC-F759A533B0E5}" ShortID="41679527">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{23AF77D7-3FEA-409B-8E44-F5B490014C61}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C91EB4C6-56DC-4541-96C4-29E948904D66}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Clerk_s1__8" ID="{D44BCFDE-A198-405B-AA23-BF2C771CB08F}">
+													<Language>SFX</Language>
+													<AudioFile>Clerk_s1__8.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="466230716"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ObjectLists/>
+											<ActiveSourceList>
+												<ActiveSource Name="Clerk_s1__8" ID="{D44BCFDE-A198-405B-AA23-BF2C771CB08F}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Clerk_s1__9" ID="{4875B121-CACB-4DE1-BB93-6D5460977840}" ShortID="925227677">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{23AF77D7-3FEA-409B-8E44-F5B490014C61}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C91EB4C6-56DC-4541-96C4-29E948904D66}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Clerk_s1__9" ID="{8C2CF7FB-11F7-44A1-8FEE-C7894A707D98}">
+													<Language>SFX</Language>
+													<AudioFile>Clerk_s1__9.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="667515654"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ObjectLists/>
+											<ActiveSourceList>
+												<ActiveSource Name="Clerk_s1__9" ID="{8C2CF7FB-11F7-44A1-8FEE-C7894A707D98}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Clerk_s1__10" ID="{C186400A-6D16-4A4B-91ED-DB8C9180DD0F}" ShortID="476168870">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{23AF77D7-3FEA-409B-8E44-F5B490014C61}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C91EB4C6-56DC-4541-96C4-29E948904D66}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Clerk_s1__10" ID="{828266A3-512C-4652-AEBB-2D92E050C95F}">
+													<Language>SFX</Language>
+													<AudioFile>Clerk_s1__10.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="930361327"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ObjectLists/>
+											<ActiveSourceList>
+												<ActiveSource Name="Clerk_s1__10" ID="{828266A3-512C-4652-AEBB-2D92E050C95F}" Platform="Linked"/>
 											</ActiveSourceList>
 										</Sound>
 									</ChildrenList>
 									<ObjectLists/>
 									<Playlist>
-										<ItemRef Name="BF_VATest_s1" ID="{8CBA06B1-7A4C-4D13-84DA-1B974375D17A}"/>
-										<ItemRef Name="BF_VATest_s1_1" ID="{905A36CE-F9E4-4284-A4EC-B63FFC138B98}"/>
-										<ItemRef Name="BF_VATest_s1_2" ID="{56518486-0522-4410-BBC5-288F99E44FF7}"/>
-										<ItemRef Name="BF_VATest_s1_3" ID="{D5A62B5B-F343-405E-8AC2-B38CAB23D404}"/>
-										<ItemRef Name="BF_VATest_s1_4" ID="{04863995-ECD2-4463-8442-AA13FA2E8CC6}"/>
+										<ItemRef Name="Clerk_s1_" ID="{B63A36EF-0DCF-4510-A9B3-B275FC14B8D2}"/>
+										<ItemRef Name="Clerk_s1__1" ID="{B6188F73-E438-47C6-BCAB-E7E178C2ED18}"/>
+										<ItemRef Name="Clerk_s1__2" ID="{4339F99F-337C-48FA-B157-E80557E52664}"/>
+										<ItemRef Name="Clerk_s1__3" ID="{964F8C40-3B38-45B5-8546-A8F56F44D77F}"/>
+										<ItemRef Name="Clerk_s1__4" ID="{66199C98-6EF9-4676-834F-C1AB5940E944}"/>
+										<ItemRef Name="Clerk_s1__5" ID="{31E3198E-B4D2-4385-986D-0EAA5C0E7EDD}"/>
+										<ItemRef Name="Clerk_s1__6" ID="{461FE197-5644-48CC-9648-E91C472E6680}"/>
+										<ItemRef Name="Clerk_s1__7" ID="{C722D05D-4AD1-4D59-BD5E-8B7BE3086A61}"/>
+										<ItemRef Name="Clerk_s1__8" ID="{C3E4961B-A217-4C90-8EEC-F759A533B0E5}"/>
+										<ItemRef Name="Clerk_s1__9" ID="{4875B121-CACB-4DE1-BB93-6D5460977840}"/>
+										<ItemRef Name="Clerk_s1__10" ID="{C186400A-6D16-4A4B-91ED-DB8C9180DD0F}"/>
 									</Playlist>
+								</RandomSequenceContainer>
+								<RandomSequenceContainer Name="Clerk_chatter" ID="{6C195452-FDF0-4147-8549-75299297A883}" ShortID="690291964">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{23AF77D7-3FEA-409B-8E44-F5B490014C61}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C91EB4C6-56DC-4541-96C4-29E948904D66}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<Sound Name="Clerk_chatter_" ID="{D5C726E7-12B5-4F66-B167-B2EE688B1EED}" ShortID="403570352">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{23AF77D7-3FEA-409B-8E44-F5B490014C61}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C91EB4C6-56DC-4541-96C4-29E948904D66}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Clerk_chatter_" ID="{887252E4-EBFF-41FE-88E6-92CF5E05F665}">
+													<Language>SFX</Language>
+													<AudioFile>Clerk_chatter\Clerk_chatter_.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="222606794"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ObjectLists/>
+											<ActiveSourceList>
+												<ActiveSource Name="Clerk_chatter_" ID="{887252E4-EBFF-41FE-88E6-92CF5E05F665}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Clerk_chatter__1" ID="{878F8949-8647-465B-9BA7-D416B586BBE8}" ShortID="933552110">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{23AF77D7-3FEA-409B-8E44-F5B490014C61}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C91EB4C6-56DC-4541-96C4-29E948904D66}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Clerk_chatter__1" ID="{8D8FBDC4-8629-43CB-B808-B272C6881742}">
+													<Language>SFX</Language>
+													<AudioFile>Clerk_chatter\Clerk_chatter__1.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="833554346"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ObjectLists/>
+											<ActiveSourceList>
+												<ActiveSource Name="Clerk_chatter__1" ID="{8D8FBDC4-8629-43CB-B808-B272C6881742}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Clerk_chatter__2" ID="{7A3CE0C6-D4B4-4754-82E9-1610DE73ED4B}" ShortID="355677681">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{23AF77D7-3FEA-409B-8E44-F5B490014C61}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C91EB4C6-56DC-4541-96C4-29E948904D66}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Clerk_chatter__2" ID="{A1385894-7D83-4B8A-91D5-C3DA6FDAB916}">
+													<Language>SFX</Language>
+													<AudioFile>Clerk_chatter\Clerk_chatter__2.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="211299271"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ObjectLists/>
+											<ActiveSourceList>
+												<ActiveSource Name="Clerk_chatter__2" ID="{A1385894-7D83-4B8A-91D5-C3DA6FDAB916}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Clerk_chatter__3" ID="{0B82901F-9942-47BC-B7E1-C7E6A294CA71}" ShortID="313336317">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{23AF77D7-3FEA-409B-8E44-F5B490014C61}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C91EB4C6-56DC-4541-96C4-29E948904D66}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Clerk_chatter__3" ID="{0EB6AA66-98FA-45C7-B8A6-1607D39C6B74}">
+													<Language>SFX</Language>
+													<AudioFile>Clerk_chatter\Clerk_chatter__3.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="579534600"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ObjectLists/>
+											<ActiveSourceList>
+												<ActiveSource Name="Clerk_chatter__3" ID="{0EB6AA66-98FA-45C7-B8A6-1607D39C6B74}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Clerk_chatter__4" ID="{BCA0B5A6-F820-4275-8A4C-68DAFF80EE80}" ShortID="412525125">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{23AF77D7-3FEA-409B-8E44-F5B490014C61}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C91EB4C6-56DC-4541-96C4-29E948904D66}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Clerk_chatter__4" ID="{30246345-90B7-44D8-A903-8205E5D8EF82}">
+													<Language>SFX</Language>
+													<AudioFile>Clerk_chatter\Clerk_chatter__4.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="476092146"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ObjectLists/>
+											<ActiveSourceList>
+												<ActiveSource Name="Clerk_chatter__4" ID="{30246345-90B7-44D8-A903-8205E5D8EF82}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Clerk_chatter__5" ID="{0B0639AA-1909-46D8-919F-D06436B392F2}" ShortID="1020457338">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{23AF77D7-3FEA-409B-8E44-F5B490014C61}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C91EB4C6-56DC-4541-96C4-29E948904D66}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Clerk_chatter__5" ID="{9B7886C1-82E5-4BF6-8B9B-F1FB09455170}">
+													<Language>SFX</Language>
+													<AudioFile>Clerk_chatter\Clerk_chatter__5.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="529285034"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ObjectLists/>
+											<ActiveSourceList>
+												<ActiveSource Name="Clerk_chatter__5" ID="{9B7886C1-82E5-4BF6-8B9B-F1FB09455170}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Clerk_chatter__6" ID="{F6B1E2AD-6741-420F-ABE0-AEB8F2A9E867}" ShortID="586639280">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{23AF77D7-3FEA-409B-8E44-F5B490014C61}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C91EB4C6-56DC-4541-96C4-29E948904D66}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Clerk_chatter__6" ID="{77A9ABF5-0862-48C9-8B14-71C69103F49D}">
+													<Language>SFX</Language>
+													<AudioFile>Clerk_chatter\Clerk_chatter__6.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="675330913"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ObjectLists/>
+											<ActiveSourceList>
+												<ActiveSource Name="Clerk_chatter__6" ID="{77A9ABF5-0862-48C9-8B14-71C69103F49D}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Clerk_chatter__7" ID="{8FBE6C0C-B5AB-4934-87A7-29D5A2FCE985}" ShortID="59613531">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{23AF77D7-3FEA-409B-8E44-F5B490014C61}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C91EB4C6-56DC-4541-96C4-29E948904D66}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Clerk_chatter__7" ID="{FD29C12E-4294-442A-8DD3-9FF61C269F65}">
+													<Language>SFX</Language>
+													<AudioFile>Clerk_chatter\Clerk_chatter__7.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="413924883"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ObjectLists/>
+											<ActiveSourceList>
+												<ActiveSource Name="Clerk_chatter__7" ID="{FD29C12E-4294-442A-8DD3-9FF61C269F65}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Clerk_chatter__8" ID="{3430D4B2-908F-42E6-A9CC-A2DE386F4B63}" ShortID="548465466">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{23AF77D7-3FEA-409B-8E44-F5B490014C61}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C91EB4C6-56DC-4541-96C4-29E948904D66}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Clerk_chatter__8" ID="{10024C0E-B97E-43F3-9CD8-39227ABEEEF3}">
+													<Language>SFX</Language>
+													<AudioFile>Clerk_chatter\Clerk_chatter__8.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="718550265"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ObjectLists/>
+											<ActiveSourceList>
+												<ActiveSource Name="Clerk_chatter__8" ID="{10024C0E-B97E-43F3-9CD8-39227ABEEEF3}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Clerk_chatter__9" ID="{19747A73-A5DB-41FC-AD84-6B5522BC47BF}" ShortID="142782884">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{23AF77D7-3FEA-409B-8E44-F5B490014C61}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C91EB4C6-56DC-4541-96C4-29E948904D66}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Clerk_chatter__9" ID="{B56593EB-723C-4BA3-9FD9-B53F8EA8AB6B}">
+													<Language>SFX</Language>
+													<AudioFile>Clerk_chatter\Clerk_chatter__9.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="739805478"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ObjectLists/>
+											<ActiveSourceList>
+												<ActiveSource Name="Clerk_chatter__9" ID="{B56593EB-723C-4BA3-9FD9-B53F8EA8AB6B}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+									</ChildrenList>
+									<ObjectLists/>
 								</RandomSequenceContainer>
 							</ChildrenList>
 							<ObjectLists/>
 							<GroupingInfo>
 								<GroupingBehaviorList>
+									<GroupingBehavior>
+										<ItemRef Name="Clerk_chatter" ID="{6C195452-FDF0-4147-8549-75299297A883}"/>
+									</GroupingBehavior>
 									<GroupingBehavior>
 										<ItemRef Name="ClerkIntro" ID="{9FE4C1F4-0295-4857-896C-B7DD5670F34B}"/>
 									</GroupingBehavior>

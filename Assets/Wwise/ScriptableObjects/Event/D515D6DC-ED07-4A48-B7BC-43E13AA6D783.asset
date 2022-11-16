@@ -12,6 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d0b283e4ef7b635458f37b0c79d86857, type: 3}
   m_Name: D515D6DC-ED07-4A48-B7BC-43E13AA6D783
   m_EditorClassIdentifier: 
-  objectName: Amb_Church
-  id: 2840050639
+  objectName: Church_Ambisonic
+  id: 1132321458
   guid: D515D6DC-ED07-4A48-B7BC-43E13AA6D783

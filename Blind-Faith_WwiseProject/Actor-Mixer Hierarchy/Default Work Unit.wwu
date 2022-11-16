@@ -448,9 +448,6 @@
 												<Reference Name="OutputBus">
 													<ObjectRef Name="Rooms" ID="{F220833B-3FC1-4DC8-9CF3-6F367C8C1EDE}" WorkUnitID="{C91EB4C6-56DC-4541-96C4-29E948904D66}"/>
 												</Reference>
-												<Reference Name="UserAuxSend0">
-													<ObjectRef Name="BinuralAux" ID="{C1A480A7-AB40-4091-8843-AB735E7B9C82}" WorkUnitID="{C91EB4C6-56DC-4541-96C4-29E948904D66}"/>
-												</Reference>
 											</ReferenceList>
 											<ChildrenList>
 												<Sound Name="Mutated hammer" ID="{E8E5F836-7A81-4248-B6C8-8E0AF6879081}" ShortID="937350101">
@@ -505,9 +502,6 @@
 														</Reference>
 														<Reference Name="OutputBus">
 															<ObjectRef Name="Rooms" ID="{F220833B-3FC1-4DC8-9CF3-6F367C8C1EDE}" WorkUnitID="{C91EB4C6-56DC-4541-96C4-29E948904D66}"/>
-														</Reference>
-														<Reference Name="UserAuxSend0">
-															<ObjectRef Name="BinuralAux" ID="{C1A480A7-AB40-4091-8843-AB735E7B9C82}" WorkUnitID="{C91EB4C6-56DC-4541-96C4-29E948904D66}"/>
 														</Reference>
 													</ReferenceList>
 													<ChildrenList>
@@ -588,9 +582,6 @@
 												<Reference Name="OutputBus">
 													<ObjectRef Name="Rooms" ID="{F220833B-3FC1-4DC8-9CF3-6F367C8C1EDE}" WorkUnitID="{C91EB4C6-56DC-4541-96C4-29E948904D66}"/>
 												</Reference>
-												<Reference Name="UserAuxSend0">
-													<ObjectRef Name="BinuralAux" ID="{C1A480A7-AB40-4091-8843-AB735E7B9C82}" WorkUnitID="{C91EB4C6-56DC-4541-96C4-29E948904D66}"/>
-												</Reference>
 											</ReferenceList>
 											<ChildrenList>
 												<Sound Name="Teleport" ID="{C5B4B441-CB9D-42DC-A5C3-8F538D6E3B19}" ShortID="692573799">
@@ -658,9 +649,6 @@
 												<Reference Name="OutputBus">
 													<ObjectRef Name="Rooms" ID="{F220833B-3FC1-4DC8-9CF3-6F367C8C1EDE}" WorkUnitID="{C91EB4C6-56DC-4541-96C4-29E948904D66}"/>
 												</Reference>
-												<Reference Name="UserAuxSend0">
-													<ObjectRef Name="BinuralAux" ID="{C1A480A7-AB40-4091-8843-AB735E7B9C82}" WorkUnitID="{C91EB4C6-56DC-4541-96C4-29E948904D66}"/>
-												</Reference>
 											</ReferenceList>
 											<ChildrenList>
 												<Sound Name="Texture" ID="{1B7AD866-0036-49B8-864F-6D371FD72ECF}" ShortID="511923836">
@@ -707,9 +695,6 @@
 												</Reference>
 												<Reference Name="OutputBus">
 													<ObjectRef Name="Rooms" ID="{F220833B-3FC1-4DC8-9CF3-6F367C8C1EDE}" WorkUnitID="{C91EB4C6-56DC-4541-96C4-29E948904D66}"/>
-												</Reference>
-												<Reference Name="UserAuxSend0">
-													<ObjectRef Name="BinuralAux" ID="{C1A480A7-AB40-4091-8843-AB735E7B9C82}" WorkUnitID="{C91EB4C6-56DC-4541-96C4-29E948904D66}"/>
 												</Reference>
 											</ReferenceList>
 											<ChildrenList>
@@ -1240,9 +1225,6 @@
 								</Reference>
 								<Reference Name="OutputBus">
 									<ObjectRef Name="Rooms" ID="{F220833B-3FC1-4DC8-9CF3-6F367C8C1EDE}" WorkUnitID="{C91EB4C6-56DC-4541-96C4-29E948904D66}"/>
-								</Reference>
-								<Reference Name="UserAuxSend0">
-									<ObjectRef Name="BinuralAux" ID="{C1A480A7-AB40-4091-8843-AB735E7B9C82}" WorkUnitID="{C91EB4C6-56DC-4541-96C4-29E948904D66}"/>
 								</Reference>
 							</ReferenceList>
 							<ChildrenList>
@@ -1901,6 +1883,46 @@
 									</ChildrenList>
 									<ObjectLists/>
 								</ActorMixer>
+								<Sound Name="AmbisonicWwiseTest_arach" ID="{5B6BCBAB-27AD-446C-8A9E-BF90B90823DB}" ShortID="718911609">
+									<PropertyList>
+										<Property Name="3DSpatialization" Type="int16" Value="2"/>
+										<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+										<Property Name="OverrideOutput" Type="bool" Value="True"/>
+										<Property Name="OverridePositioning" Type="bool" Value="True"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="AttachableMixerInput">
+											<Custom>
+												<Effect Name="Resonance Audio Room Effects (Attached)" ID="{4162494B-1DB2-4F6F-876B-752275FFE581}" ShortID="249547083" PluginName="AttachableMixerInput" CompanyID="272" PluginID="201" PluginType="3"/>
+											</Custom>
+										</Reference>
+										<Reference Name="Attenuation">
+											<ObjectRef Name="100Spread" ID="{A5BD6E03-D42D-496F-AE0F-BCC77F21EC97}" WorkUnitID="{47D4E814-D669-4A08-8AD2-F706566546E0}"/>
+										</Reference>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{23AF77D7-3FEA-409B-8E44-F5B490014C61}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="AmbisonicBus" ID="{5307706A-AD3C-4939-9A4A-17E464C2B589}" WorkUnitID="{C91EB4C6-56DC-4541-96C4-29E948904D66}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="AmbisonicWwiseTest_arach" ID="{07672A57-FEBB-4399-A525-38EEA446C74F}">
+											<Language>SFX</Language>
+											<AudioFile>AmbisonicWwiseTest_arach.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="784043094"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<PositioningInfo>
+										<Panner Name="" ID="{2078D0F6-7737-4780-8477-4CFBAC0D8DF9}"/>
+									</PositioningInfo>
+									<ObjectLists/>
+									<ActiveSourceList>
+										<ActiveSource Name="AmbisonicWwiseTest_arach" ID="{07672A57-FEBB-4399-A525-38EEA446C74F}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
 							</ChildrenList>
 							<ObjectLists/>
 						</ActorMixer>

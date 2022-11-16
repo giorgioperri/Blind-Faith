@@ -17,35 +17,6 @@
 						</Reference>
 					</ReferenceList>
 					<ChildrenList>
-						<Bus Name="Binural" ID="{0AD88FC6-BFDE-41FA-A58E-7A7CCF0FF358}">
-							<PropertyList>
-								<Property Name="BusChannelConfig" Type="int32">
-									<ValueList>
-										<Value>528</Value>
-									</ValueList>
-								</Property>
-							</PropertyList>
-							<ReferenceList>
-								<Reference Name="Effect0">
-									<Custom>
-										<Effect Name="Resonance Audio Renderer (Custom)" ID="{8AC95C63-25FE-4BFD-886C-8B9D20862661}" ShortID="431288752" PluginName="Resonance Audio Renderer" CompanyID="272" PluginID="100" PluginType="3"/>
-									</Custom>
-								</Reference>
-							</ReferenceList>
-							<ChildrenList>
-								<AuxBus Name="BinuralAux" ID="{C1A480A7-AB40-4091-8843-AB735E7B9C82}">
-									<PropertyList>
-										<Property Name="BusChannelConfig" Type="int32">
-											<ValueList>
-												<Value>528</Value>
-											</ValueList>
-										</Property>
-									</PropertyList>
-									<ObjectLists/>
-								</AuxBus>
-							</ChildrenList>
-							<ObjectLists/>
-						</Bus>
 						<Bus Name="Rooms" ID="{F220833B-3FC1-4DC8-9CF3-6F367C8C1EDE}">
 							<PropertyList>
 								<Property Name="BusChannelConfig" Type="int32">
@@ -172,51 +143,6 @@
 							</ChildrenList>
 							<ObjectLists/>
 						</Bus>
-						<Bus Name="Binural_docking" ID="{098FAD57-E3DF-4D0A-9E0D-CEC584973722}">
-							<PropertyList>
-								<Property Name="BusChannelConfig" Type="int32">
-									<ValueList>
-										<Value>528</Value>
-									</ValueList>
-								</Property>
-								<Property Name="BusVolume" Type="Real64">
-									<ValueList>
-										<Value>-1</Value>
-									</ValueList>
-								</Property>
-							</PropertyList>
-							<ReferenceList>
-								<Reference Name="Effect0">
-									<Custom>
-										<Effect Name="Resonance Audio Renderer (Custom)" ID="{A088C0D5-316B-43E1-9579-3B7695A101AD}" ShortID="38665079" PluginName="Resonance Audio Renderer" CompanyID="272" PluginID="100" PluginType="3"/>
-									</Custom>
-								</Reference>
-							</ReferenceList>
-							<ChildrenList>
-								<AuxBus Name="BinuralAux_docking" ID="{CEF64C40-F15A-4093-BE41-E226D92156B0}">
-									<PropertyList>
-										<Property Name="BusVolume" Type="Real64">
-											<ValueList>
-												<Value>1</Value>
-											</ValueList>
-										</Property>
-									</PropertyList>
-									<ObjectLists/>
-								</AuxBus>
-							</ChildrenList>
-							<ObjectLists/>
-							<DuckingList>
-								<DuckItem>
-									<BusRef Name="Binural" ID="{0AD88FC6-BFDE-41FA-A58E-7A7CCF0FF358}"/>
-									<DuckingParam>
-										<Volume>-65</Volume>
-										<FadeInTime>1</FadeInTime>
-										<FadeOutTime>1</FadeOutTime>
-										<FadeCurve>FadeLinear</FadeCurve>
-									</DuckingParam>
-								</DuckItem>
-							</DuckingList>
-						</Bus>
 						<Bus Name="Rooms_docking" ID="{6ED14294-29EA-4AC9-82D5-39255BF161A4}">
 							<PropertyList>
 								<Property Name="BusChannelConfig" Type="int32">
@@ -295,6 +221,28 @@
 									</ReferenceList>
 									<ObjectLists/>
 								</AuxBus>
+								<Bus Name="AmbisonicBus" ID="{5307706A-AD3C-4939-9A4A-17E464C2B589}">
+									<PropertyList>
+										<Property Name="BusChannelConfig" Type="int32">
+											<ValueList>
+												<Value>528</Value>
+											</ValueList>
+										</Property>
+										<Property Name="BusVolume" Type="Real64">
+											<ValueList>
+												<Value>12</Value>
+											</ValueList>
+										</Property>
+										<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+										<Property Name="UserAuxSendVolume0" Type="Real64">
+											<ValueList>
+												<Value>-2</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList/>
+									<ObjectLists/>
+								</Bus>
 							</ChildrenList>
 							<ObjectLists/>
 							<DuckingList>

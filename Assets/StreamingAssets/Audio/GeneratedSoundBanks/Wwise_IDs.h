@@ -13,6 +13,7 @@ namespace AK
 {
     namespace EVENTS
     {
+        static const AkUniqueID CHURCH_AMBISONIC = 1132321458U;
         static const AkUniqueID DEBUG_AMB = 3209221603U;
         static const AkUniqueID DEBUG_HAMMER = 2618683459U;
         static const AkUniqueID FIRELOOP = 181700819U;
@@ -45,6 +46,7 @@ namespace AK
 
             namespace SWITCH
             {
+                static const AkUniqueID VA_CLERK_CHATTER = 3899735754U;
                 static const AkUniqueID VA_CLERK_INTRO_1 = 1918899099U;
             } // namespace SWITCH
         } // namespace VA_CLERK_SWITCH_GROUP
@@ -64,8 +66,7 @@ namespace AK
 
     namespace BUSSES
     {
-        static const AkUniqueID BINURAL = 499593554U;
-        static const AkUniqueID BINURAL_DOCKING = 2022318020U;
+        static const AkUniqueID AMBISONICBUS = 4258699522U;
         static const AkUniqueID MASTER_AUDIO_BUS = 3803692087U;
         static const AkUniqueID ROOMS = 1359360203U;
         static const AkUniqueID ROOMS_DOCKING = 532133889U;
@@ -73,8 +74,6 @@ namespace AK
 
     namespace AUX_BUSSES
     {
-        static const AkUniqueID BINURALAUX = 1584650008U;
-        static const AkUniqueID BINURALAUX_DOCKING = 2570349746U;
         static const AkUniqueID CHURCH = 2568407992U;
         static const AkUniqueID CHURCH_01 = 741553742U;
         static const AkUniqueID OUTDOORS = 2730119150U;
