@@ -11,8 +11,9 @@ GameObject:
   - component: {fileID: 565374451315082101}
   - component: {fileID: 565374451315082100}
   - component: {fileID: 565374451315082103}
-  - component: {fileID: 565374451315082102}
   - component: {fileID: 565374451315082097}
+  - component: {fileID: 8420020229163632518}
+  - component: {fileID: 6592199264429184366}
   m_Layer: 0
   m_Name: Mirror
   m_TagString: Mirror
@@ -85,19 +86,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!65 &565374451315082102
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 565374451315082096}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!114 &565374451315082097
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -110,3 +98,30 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8ccc3c697a53df64cad35c3318672733, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _angleOfRotation: 30
+--- !u!65 &8420020229163632518
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 565374451315082096}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!65 &6592199264429184366
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 565374451315082096}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 2, y: 1, z: 12}
+  m_Center: {x: 0, y: 0, z: 0}

@@ -29,6 +29,7 @@ public class Socket : Interactable
         if (!LanternManager.Instance.isInsideSocket && _handController.GetComponent<HandAnimatorController>().hasRaisedLantern && 
             (Keyboard.current.fKey.wasPressedThisFrame /*|| Gamepad.current.buttonWest.wasPressedThisFrame)*/))
         {
+            if (Mouse.current.leftButton.isPressed) return;
             
             _lightSourceLantern.SetActive(true);
             _lanternObject.transform.parent = transform;
@@ -42,6 +43,8 @@ public class Socket : Interactable
         else if (LanternManager.Instance.isInsideSocket && _handController.GetComponent<HandAnimatorController>().hasRaisedLantern &&
             (Keyboard.current.fKey.wasPressedThisFrame /*|| Gamepad.current.buttonWest.wasPressedThisFrame)*/))
         {
+            if (Mouse.current.leftButton.isPressed) return;
+            
             _lightBeam = GameObject.Find("Light Beam");
             Destroy(_lightBeam);
             _lightSourceLantern.SetActive(false);
