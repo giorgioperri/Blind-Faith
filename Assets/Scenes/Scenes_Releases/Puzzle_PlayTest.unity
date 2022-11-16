@@ -16859,12 +16859,6 @@ Mesh:
     offset: 0
     size: 0
     path: 
---- !u!1 &906594609 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 5320435692675029799, guid: c5efc39a8aaf6e64ea40e9ad573e9b47,
-    type: 3}
-  m_PrefabInstance: {fileID: 5393215579111688471}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &956797066 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 5608693394141374345, guid: c5efc39a8aaf6e64ea40e9ad573e9b47,
@@ -20777,12 +20771,6 @@ Mesh:
     offset: 0
     size: 0
     path: 
---- !u!1 &1255935820 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 3167681031561442279, guid: c5efc39a8aaf6e64ea40e9ad573e9b47,
-    type: 3}
-  m_PrefabInstance: {fileID: 5393215579111688471}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1256927466
 GameObject:
   m_ObjectHideFlags: 0
@@ -29285,7 +29273,7 @@ PrefabInstance:
         type: 3}
       propertyPath: _handController
       value: 
-      objectReference: {fileID: 1255935820}
+      objectReference: {fileID: 0}
     - target: {fileID: 6309955514561078599, guid: 89b57d7406d03e2439548be9758ff94a,
         type: 3}
       propertyPath: _lightSourceLantern
@@ -29295,7 +29283,7 @@ PrefabInstance:
         type: 3}
       propertyPath: _lanternFollowSocket
       value: 
-      objectReference: {fileID: 906594609}
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 89b57d7406d03e2439548be9758ff94a, type: 3}
 --- !u!1 &1625660202
@@ -39942,7 +39930,7 @@ PrefabInstance:
     - target: {fileID: 3569895449470239229, guid: c5efc39a8aaf6e64ea40e9ad573e9b47,
         type: 3}
       propertyPath: lanternCharge
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8616685848737228371, guid: c5efc39a8aaf6e64ea40e9ad573e9b47,
         type: 3}

@@ -9,8 +9,7 @@ public class ShootLight : MonoBehaviour
     private GameObject _previousBeam;
     public GameObject[] doors;
     public bool hitTheDoor;
-
-
+    
     public void Start()
     {
         doors = GameObject.FindGameObjectsWithTag("Door");

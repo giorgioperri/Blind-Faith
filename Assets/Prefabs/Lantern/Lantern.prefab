@@ -333,6 +333,8 @@ MonoBehaviour:
   lanternCharge: 0
   canPlayChargeSound: 1
   canPlayDischargeSound: 0
+  isInsideSocket: 0
+  lanternIsRaised: 0
   _lanternDepletingTime: 60
   _lanternRechargingTime: 3
   lightMaterial: {fileID: 2100000, guid: bd03a89517ead4916a3a52fb9f9a90b9, type: 2}
@@ -713,7 +715,8 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 4182627866413699376, guid: babd556ec47a348c997d77b1cb6ec7a9, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: babd556ec47a348c997d77b1cb6ec7a9, type: 3}
 --- !u!4 &590232526804645777 stripped
 Transform:

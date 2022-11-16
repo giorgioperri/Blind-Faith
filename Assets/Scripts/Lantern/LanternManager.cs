@@ -2,6 +2,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.InputSystem;
 
 public class LanternManager : MonoBehaviour
 {
@@ -42,7 +43,7 @@ public class LanternManager : MonoBehaviour
         
         if (GameManager.Instance.isBathingInLight && lanternIsRaised)
         {
-            if (GameManager.Instance.isLookingAtAngel && lanternCharge <= 1)
+            if (GameManager.Instance.isLookingAtAngel && lanternCharge <= 1 && Mouse.current.leftButton.isPressed)
             {
                 if (lanternCharge == 0)
                 {
