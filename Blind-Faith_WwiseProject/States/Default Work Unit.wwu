@@ -16,8 +16,8 @@
 							</ChildrenList>
 							<TransitionList>
 								<Transition>
-									<StartState Name="Playing" ID="{F980FD5B-64EE-4FDB-A297-7B478A51A3B9}"/>
-									<EndState Name="NotPlaying" ID="{68FA20C0-6D85-4F86-9A80-95C198F962F8}"/>
+									<StartState Name="NotPlaying" ID="{68FA20C0-6D85-4F86-9A80-95C198F962F8}"/>
+									<EndState Name="Playing" ID="{F980FD5B-64EE-4FDB-A297-7B478A51A3B9}"/>
 									<Time>5</Time>
 									<IsShared>false</IsShared>
 								</Transition>
