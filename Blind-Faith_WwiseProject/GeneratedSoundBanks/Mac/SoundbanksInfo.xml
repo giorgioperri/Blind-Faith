@@ -24,12 +24,12 @@
 				<AuxBus Id="2933838247" Name="SmallRoom" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Rooms\SmallRoom"/>
 			</IncludedAuxBusses>
 		</SoundBank>
-		<SoundBank Id="1764570813" Language="SFX" Hash="2158209657">
+		<SoundBank Id="1764570813" Language="SFX" Hash="1918750892">
 			<ObjectPath>\SoundBanks\Default Work Unit\Mains</ObjectPath>
 			<ShortName>Mains</ShortName>
 			<Path>Mains.bnk</Path>
 			<IncludedEvents>
-				<Event Id="1132321458" Name="Church_Ambisonic" ObjectPath="\Events\Default Work Unit\SFX\Ambience\Church_Ambisonic" DurationType="Infinite"/>
+				<Event Id="1132321458" Name="Church_Ambisonic" ObjectPath="\Events\Default Work Unit\SFX\Ambience\Church_Ambisonic" MaxAttenuation="100." DurationType="Infinite"/>
 				<Event Id="3209221603" Name="DEBUG_AMB" ObjectPath="\Events\Default Work Unit\DEBUG_AMB" DurationType="Infinite"/>
 				<Event Id="2618683459" Name="DEBUG_HAMMER" ObjectPath="\Events\Default Work Unit\DEBUG_HAMMER" MaxAttenuation="20." DurationType="Infinite"/>
 				<Event Id="181700819" Name="FireLoop" ObjectPath="\Events\Default Work Unit\FireLoop" MaxAttenuation="10." DurationType="Infinite"/>

@@ -53,7 +53,7 @@
 				<Property Name="Mixing Desk\LastSession" Type="string" Value="{00000000-0000-0000-0000-000000000000}"/>
 				<Property Name="MonitoringManager\GameObjectFilter\GameObjectFilterVersion" Type="int32" Value="1"/>
 				<Property Name="MonitoringManager\GameObjectFilter\GameObjectFiltersEnable" Type="bool" Value="True"/>
-				<Property Name="MonitoringManager\GameObjectFilter\x64_GameObjectFilters" Type="string" Value="AAAAAAEAAAAEAAAAAAAAAAAA97wPAgAAsUc9BPh/AAADAAAAAAAAAAAA+7wPAgAAAwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAI+Ovw8CAAAQyT3KDwIAAAAAAAAAAAAAgBw+yg8CAACxRz0E+H8AAP7/////////AAD7vA8CAABwSGzBDwIAAA=="/>
+				<Property Name="MonitoringManager\GameObjectFilter\x64_GameObjectFilters" Type="string" Value="AAAAAAEAAAAEAAAAAAAAAAAAzwU3AQAAsUc9BPh/AAADAAAAAAAAAAAA2QU3AQAAAwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA4JV5CDcBAABgO3IUNwEAAAAAAAAAAAAAYD5yFDcBAACxRz0E+H8AAP7/////////AADZBTcBAAAgfHkINwEAAA=="/>
 				<Property Name="OverrideCacheFolder\Active" Type="bool" Value="False"/>
 				<Property Name="OverrideCacheFolder\Path" Type="string" Value=".cache"/>
 				<Property Name="OverrideOriginalFolder\Active" Type="bool" Value="False"/>
@@ -65,7 +65,7 @@
 				<Property Name="ProjectExplorer\FirstVisible_1_1" Type="string" Value="{5307706A-AD3C-4939-9A4A-17E464C2B589}"/>
 				<Property Name="ProjectExplorer\FirstVisible_1_2" Type="string" Value="{27092F88-225A-1154-6725-C8A34F3D4482}"/>
 				<Property Name="ProjectExplorer\FirstVisible_4_1" Type="string" Value="{A69BF0FC-D84A-487C-ABDD-56F71CB2A126}"/>
-				<Property Name="ProjectExplorer\FirstVisible_4_2" Type="string" Value="{C57415D6-FBAE-4B6E-B8BE-3D2E8F5C14A0}"/>
+				<Property Name="ProjectExplorer\FirstVisible_4_2" Type="string" Value="{FB90B45E-3428-4F3A-BDE7-E5CA0BFF7B1D}"/>
 				<Property Name="ProjectExplorer\FirstVisible_5_1" Type="string" Value="{CB6175F1-6080-4A23-92EF-0807E304D0C1}"/>
 				<Property Name="ProjectExplorer\FirstVisible_5_2" Type="string" Value="{CB6175F1-6080-4A23-92EF-0807E304D0C1}"/>
 				<Property Name="ProjectExplorer\FirstVisible_7_1" Type="string" Value="{C98E673F-A24C-48A8-960F-10565FFE70A0}"/>
