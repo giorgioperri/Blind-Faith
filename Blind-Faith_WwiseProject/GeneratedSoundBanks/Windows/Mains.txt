@@ -6,6 +6,7 @@ Event	ID	Name			Wwise Object Path	Notes
 	938429017	VA_Pause			\Default Work Unit\VA\VA_Pause	
 	1132321458	Church_Ambisonic			\Default Work Unit\SFX\Ambience\Church_Ambisonic	
 	1398273777	VA_Clerk_Play			\Default Work Unit\VA\VA_Clerk\VA_Clerk_Play	
+	1568742100	Church_Alter_Ambience			\Default Work Unit\Church_Alter_Ambience	
 	1818726255	Lanteren_discharge			\Default Work Unit\SFX\Player\Lanteren\Lanteren_discharge	
 	1866025847	Footstep			\Default Work Unit\SFX\Player\Locomotion\Footstep	
 	2618683459	DEBUG_HAMMER			\Default Work Unit\DEBUG_HAMMER	
@@ -21,6 +22,18 @@ Switch	ID	Name	Switch Group			Notes
 	1846884575	ClerkChatter	VA_Clerk_Switch_Group			
 	1216965916	Stone	Player_Footsteps			
 	1367384683	Cloth	Player_Footsteps			
+
+State Group	ID	Name			Wwise Object Path	Notes
+	2677818465	AlterAmb			\Default Work Unit\Music\AlterAmb	
+
+State	ID	Name	State Group			Notes
+	748895195	None	AlterAmb			
+	1227244058	NotPlaying	AlterAmb			
+	1852808225	Playing	AlterAmb			
+
+Custom State	ID	Name	State Group	Owner		Notes
+	308903889	NotPlaying	AlterAmb	\Actor-Mixer Hierarchy\Default Work Unit\Ambience\2D\Blind Faith Altar Ambient v2		
+	955267660	Playing	AlterAmb	\Actor-Mixer Hierarchy\Default Work Unit\Ambience\2D\ChurchAmbienceSeq		
 
 Modulator LFO	ID	Name			Wwise Object Path	Notes
 	426498588	Modulator LFO (Custom)				
@@ -75,6 +88,7 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	739805478	Clerk_chatter__9	C:\Users\kille\Blind-Faith\Blind-Faith_WwiseProject\.cache\Windows\SFX\Clerk_chatter\Clerk_chatter__9_10C4C929.wem		\Actor-Mixer Hierarchy\VA\VA_Mixer\VA_Clerk_Switch_Container\Clerk_chatter\Clerk_chatter__9		185576
 	776242514	Clerk_s1__4	C:\Users\kille\Blind-Faith\Blind-Faith_WwiseProject\.cache\Windows\SFX\Clerk_s1__4_10C4C929.wem		\Actor-Mixer Hierarchy\VA\VA_Mixer\VA_Clerk_Switch_Container\ClerkIntro\Clerk_s1__4		217622
 	786073262	Mutated hammer	C:\Users\kille\Blind-Faith\Blind-Faith_WwiseProject\.cache\Windows\SFX\Mutated hammer_26E4CBA8.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\PlayerActions\Lanteren\Charging\Mutated hammer		232284
+	792449620	Blind Faith Altar Ambient v2	C:\Users\kille\Blind-Faith\Blind-Faith_WwiseProject\.cache\Windows\SFX\Blind Faith Altar Ambient v2_6F55C8DC.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ambience\2D\Blind Faith Altar Ambient v2		19816980
 	830999437	01 Stone Footsteps, Cobblestone Male, 30 Secs Each Slow, Medium, Fast_01	C:\Users\kille\Blind-Faith\Blind-Faith_WwiseProject\.cache\Windows\SFX\01 Stone Footsteps, Cobblestone Male, 30 Secs Each Slow, Medium, Fast_5FF7441C.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\PlayerLocomotion\Footsteps\Stone\01 Stone Footsteps, Cobblestone Male, 30 Secs Each Slow, Medium, Fast_01		57160
 	833554346	Clerk_chatter__1	C:\Users\kille\Blind-Faith\Blind-Faith_WwiseProject\.cache\Windows\SFX\Clerk_chatter\Clerk_chatter__1_10C4C929.wem		\Actor-Mixer Hierarchy\VA\VA_Mixer\VA_Clerk_Switch_Container\Clerk_chatter\Clerk_chatter__1		407204
 	861805956	01 Stone Footsteps, Cobblestone Male, 30 Secs Each Slow, Medium, Fast	C:\Users\kille\Blind-Faith\Blind-Faith_WwiseProject\.cache\Windows\SFX\01 Stone Footsteps, Cobblestone Male, 30 Secs Each Slow, Medium, Fast_9D8C4D80.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\PlayerLocomotion\Footsteps\Stone\01 Stone Footsteps, Cobblestone Male, 30 Secs Each Slow, Medium, Fast		35240

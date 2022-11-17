@@ -1,6 +1,31 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{7A34DA15-FADE-43A4-ABEB-A8E206DACA95}" SchemaVersion="103">
 	<States>
-		<WorkUnit Name="Default Work Unit" ID="{7A34DA15-FADE-43A4-ABEB-A8E206DACA95}" PersistMode="Standalone"/>
+		<WorkUnit Name="Default Work Unit" ID="{7A34DA15-FADE-43A4-ABEB-A8E206DACA95}" PersistMode="Standalone">
+			<ChildrenList>
+				<Folder Name="Music" ID="{B71A2DD4-E447-4F1B-ABE2-C427341D1663}" ShortID="1051988251">
+					<ChildrenList>
+						<StateGroup Name="AlterAmb" ID="{156B447F-FF39-48B7-8110-8B1E3D68A471}">
+							<PropertyList>
+								<Property Name="DefaultTransitionTime" Type="Real64" Value="5"/>
+							</PropertyList>
+							<ChildrenList>
+								<State Name="None" ID="{0611C3A9-DD5D-48AD-B456-7CA4676C566F}"/>
+								<State Name="Playing" ID="{F980FD5B-64EE-4FDB-A297-7B478A51A3B9}"/>
+								<State Name="NotPlaying" ID="{68FA20C0-6D85-4F86-9A80-95C198F962F8}"/>
+							</ChildrenList>
+							<TransitionList>
+								<Transition>
+									<StartState Name="Playing" ID="{F980FD5B-64EE-4FDB-A297-7B478A51A3B9}"/>
+									<EndState Name="NotPlaying" ID="{68FA20C0-6D85-4F86-9A80-95C198F962F8}"/>
+									<Time>5</Time>
+									<IsShared>false</IsShared>
+								</Transition>
+							</TransitionList>
+						</StateGroup>
+					</ChildrenList>
+				</Folder>
+			</ChildrenList>
+		</WorkUnit>
 	</States>
 </WwiseDocument>

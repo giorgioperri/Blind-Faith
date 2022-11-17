@@ -11,7 +11,7 @@
 	<StreamedFiles/>
 	<MediaFilesNotInAnyBank/>
 	<SoundBanks>
-		<SoundBank Id="1355168291" Language="SFX" Hash="3589415411">
+		<SoundBank Id="1355168291" Language="SFX" Hash="3414485710">
 			<ObjectPath>Init</ObjectPath>
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
@@ -24,11 +24,12 @@
 				<AuxBus Id="2933838247" Name="SmallRoom" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Rooms\SmallRoom"/>
 			</IncludedAuxBusses>
 		</SoundBank>
-		<SoundBank Id="1764570813" Language="SFX" Hash="1918750892">
+		<SoundBank Id="1764570813" Language="SFX" Hash="626873627">
 			<ObjectPath>\SoundBanks\Default Work Unit\Mains</ObjectPath>
 			<ShortName>Mains</ShortName>
 			<Path>Mains.bnk</Path>
 			<IncludedEvents>
+				<Event Id="1568742100" Name="Church_Alter_Ambience" ObjectPath="\Events\Default Work Unit\Church_Alter_Ambience" DurationType="Infinite"/>
 				<Event Id="1132321458" Name="Church_Ambisonic" ObjectPath="\Events\Default Work Unit\SFX\Ambience\Church_Ambisonic" MaxAttenuation="100." DurationType="Infinite"/>
 				<Event Id="3209221603" Name="DEBUG_AMB" ObjectPath="\Events\Default Work Unit\DEBUG_AMB" DurationType="Infinite"/>
 				<Event Id="2618683459" Name="DEBUG_HAMMER" ObjectPath="\Events\Default Work Unit\DEBUG_HAMMER" MaxAttenuation="20." DurationType="Infinite"/>
@@ -182,6 +183,10 @@
 				<File Id="786073262" Language="SFX">
 					<ShortName>Mutated hammer.wav</ShortName>
 					<Path>SFX\Mutated hammer_26E4CBA8.wem</Path>
+				</File>
+				<File Id="792449620" Language="SFX">
+					<ShortName>Blind Faith Altar Ambient v2.wav</ShortName>
+					<Path>SFX\Blind Faith Altar Ambient v2_6F55C8DC.wem</Path>
 				</File>
 				<File Id="830999437" Language="SFX">
 					<ShortName>01 Stone Footsteps, Cobblestone Male, 30 Secs Each Slow, Medium, Fast.wav</ShortName>

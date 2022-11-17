@@ -19,6 +19,7 @@
 				<Property Name="Event Action List\{8EBC1544-BA58-4848-A977-1366CDD39CEE}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="Event Action List\{8F5F3004-C6F4-4A5D-8E8F-FA5E586925E8}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="Event Action List\{A8A2CB6D-9F32-4CE7-AE5B-27632CBFF45E}\x64_Expand States" Type="string" Value=""/>
+				<Property Name="Event Action List\{B570E8C6-1013-4A11-979A-7318726EE794}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="Event Action List\{C39BA762-5454-47B8-BE61-A0506FA443EA}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="Event Action List\{D107BFC9-1262-4A70-96BF-EBFAB9F0E214}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="Event Action List\{D515D6DC-ED07-4A48-B7BC-43E13AA6D783}\x64_Expand States" Type="string" Value=""/>
@@ -53,7 +54,7 @@
 				<Property Name="Mixing Desk\LastSession" Type="string" Value="{00000000-0000-0000-0000-000000000000}"/>
 				<Property Name="MonitoringManager\GameObjectFilter\GameObjectFilterVersion" Type="int32" Value="1"/>
 				<Property Name="MonitoringManager\GameObjectFilter\GameObjectFiltersEnable" Type="bool" Value="True"/>
-				<Property Name="MonitoringManager\GameObjectFilter\x64_GameObjectFilters" Type="string" Value="AAAAAAEAAAAEAAAAAAAAAAAAzwU3AQAAsUc9BPh/AAADAAAAAAAAAAAA2QU3AQAAAwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA4JV5CDcBAABgO3IUNwEAAAAAAAAAAAAAYD5yFDcBAACxRz0E+H8AAP7/////////AADZBTcBAAAgfHkINwEAAA=="/>
+				<Property Name="MonitoringManager\GameObjectFilter\x64_GameObjectFilters" Type="string" Value="AAAAAAEAAACZ9TjR/38AAAEAAAAAAAAAW/DEAfh/AAAg7ja0+QEAAMD+mqb5AQAA/v////////8AAAAAAAAAAAAAAAAAAAAALfs40f9/AAAA/pqm+QEAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAACjuNrT5AQAAkfI40f9/AADA/pqm+QEAAA=="/>
 				<Property Name="OverrideCacheFolder\Active" Type="bool" Value="False"/>
 				<Property Name="OverrideCacheFolder\Path" Type="string" Value=".cache"/>
 				<Property Name="OverrideOriginalFolder\Active" Type="bool" Value="False"/>
