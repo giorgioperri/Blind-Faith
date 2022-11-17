@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using StarterAssets;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
@@ -65,6 +66,12 @@ public class LanternManager : MonoBehaviour
         {
             //deplete
             lanternCharge -= Time.deltaTime / _lanternDepletingTime;
+        }
+
+        if (lanternCharge <= 0)
+        {
+            FirstPersonController.Instance.currentInteractable = null;
+            GameManager.Instance.isInteractingWithMirror = false;
         }
 
         if (lanternCharge <= 0 && canPlayDischargeSound)

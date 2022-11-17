@@ -284,7 +284,7 @@ namespace StarterAssets
 			if (GameManager.Instance.health < 70)
 			{
 				RotationSpeed = math.remap(70, 0, 6, 2, GameManager.Instance.health);;
-				VirtualCamera.GetCinemachineComponent<CinemachineSameAsFollowTarget>().m_Damping = math.remap(70, 0, 0, 3, GameManager.Instance.health);
+				VirtualCamera.GetCinemachineComponent<CinemachineSameAsFollowTarget>().m_Damping = math.remap(70, 0, 0, 1.5f, GameManager.Instance.health);
 			}
 			else
 			{

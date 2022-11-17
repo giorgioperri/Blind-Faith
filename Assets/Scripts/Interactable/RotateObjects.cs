@@ -49,8 +49,12 @@ public class RotateObjects : Interactable
 
     private void Update()
     {
-        if (GameManager.Instance.areMirrorsStep || !isEnlighted) return;
-
+        if (GameManager.Instance.areMirrorsStep || !isEnlighted)
+        {
+            _grabbedMirror = false;
+            return;
+        }
+        
         if ((Mouse.current.leftButton.isPressed && FirstPersonController.Instance.currentInteractable == this) || _grabbedMirror)
         {
             _grabbedMirror = true;
@@ -81,5 +85,4 @@ public class RotateObjects : Interactable
         }
         _isTurning = false;
     }
- 
 }

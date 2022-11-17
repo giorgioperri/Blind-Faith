@@ -38,7 +38,7 @@ MonoBehaviour:
     ParentPath: Master-Mixer Hierarchy/Default Work Unit
     guid: c6b41ec9dc56414596c429e948904d66
     GuidInternal: 
-    m_lastTime: -8585329143760485714
+    m_lastTime: -8585328917969131256
     List:
     - name: AmbisonicBus
       guid: 6a7007533cad39499a4a17e464c2b589
@@ -240,7 +240,7 @@ MonoBehaviour:
     ParentPath: SoundBanks/Default Work Unit
     guid: 91f3f2c2e89f4143bd59d41dc8510ab9
     GuidInternal: 
-    m_lastTime: -8585329145307339059
+    m_lastTime: -8585328917955078880
     List:
     - name: Mains
       guid: 22a5fa274c62a84d93c78d5801f30f0d
@@ -268,7 +268,7 @@ MonoBehaviour:
     ParentPath: Events/Default Work Unit
     guid: 5eb490fb28343a4fbde7e5ca0bff7b1d
     GuidInternal: 
-    m_lastTime: -8585329144022194303
+    m_lastTime: -8585328917995410362
     List:
     - name: Ambience
       guid: d61574c5aefb6e4bb8be3d2e8f5c14a0
@@ -717,7 +717,7 @@ MonoBehaviour:
     ParentPath: Switches/Default Work Unit
     guid: 129020783626944d87631f9c3a93f8e0
     GuidInternal: 
-    m_lastTime: -8585329143741258024
+    m_lastTime: -8585328917955077643
     List:
     - name: Locomotion
       guid: ec8b7419cfaab54dbd4aee612fa66e6b
@@ -918,8 +918,8 @@ MonoBehaviour:
         ObjectType: 4
         guid: 14a961bd002ffe41ba1f908602494c89
       Path: Triggers/Default Work Unit/VA_Test
-  ExpandedFileSystemItemIds: 010000000200000003000000040000000500000006000000070000000a0000000b0000000c0000000d000000120000001300000015000000160000001b0000001c0000001d0000001e0000001f000000220000002300000024000000
-  ExpandedWaapiItemIds: 010000000500000006000000070000000b0000000c0000000e0000000f000000100000001100000012000000140000001a0000001d0000002100000024000000
+  ExpandedFileSystemItemIds: 
+  ExpandedWaapiItemIds: 
   AutoSyncSelection: 0
   autoPopulateEnabled: 1
   currentDataSource: 0

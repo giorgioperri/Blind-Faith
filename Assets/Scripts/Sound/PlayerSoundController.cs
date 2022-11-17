@@ -32,7 +32,6 @@ public class PlayerSoundController : MonoBehaviour
 
     public void InitVoiceLineSequence(VoiceLineSequenceSO voiceLineSequence)
     {
-        Debug.Log("e");
         voiceLineSequence.sequenceSwitch.SetValue(gameObject);
         StopAllCoroutines();
         _currentSequenceIndex = 0;
