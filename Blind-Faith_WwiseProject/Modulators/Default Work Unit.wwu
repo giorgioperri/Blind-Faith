@@ -10,6 +10,38 @@
 						<Property Name="TimeModLoops" Type="int32" Value="0"/>
 					</PropertyList>
 				</ModulatorTime>
+				<ModulatorTime Name="45s" ID="{8D24E374-80DB-45E4-B80B-A3AE5E26C21D}" ShortID="592991068">
+					<PropertyList>
+						<Property Name="EnvelopeStopPlayback" Type="bool" Value="False"/>
+						<Property Name="TimeModDuration" Type="Real64" Value="45"/>
+						<Property Name="TimeModInitialDelay" Type="Real64">
+							<ModifierList>
+								<ModifierInfo>
+									<Modifier Name="" ID="{BB680F43-9419-4A78-B119-D990DB2BE439}">
+										<PropertyList>
+											<Property Name="Enabled" Type="bool" Value="True"/>
+											<Property Name="Max" Type="Real64" Value="3"/>
+											<Property Name="Min" Type="Real64" Value="-4"/>
+										</PropertyList>
+									</Modifier>
+								</ModifierInfo>
+							</ModifierList>
+						</Property>
+						<Property Name="TimeModLoops" Type="int32" Value="0"/>
+						<Property Name="TimeModPlaybackRate" Type="Real64">
+							<ModifierList>
+								<ModifierInfo>
+									<Modifier Name="" ID="{339A33EE-AC92-4DD9-A97B-376222EEF941}">
+										<PropertyList>
+											<Property Name="Enabled" Type="bool" Value="True"/>
+											<Property Name="Min" Type="Real64" Value="-1"/>
+										</PropertyList>
+									</Modifier>
+								</ModifierInfo>
+							</ModifierList>
+						</Property>
+					</PropertyList>
+				</ModulatorTime>
 			</ChildrenList>
 		</WorkUnit>
 	</Modulators>

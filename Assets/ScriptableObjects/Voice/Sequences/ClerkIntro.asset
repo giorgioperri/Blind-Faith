@@ -13,10 +13,10 @@ MonoBehaviour:
   m_Name: ClerkIntro
   m_EditorClassIdentifier: 
   sequenceLines:
-  - {fileID: 11400000, guid: 09d0f331fffd84f58b11921642356986, type: 2}
-  - {fileID: 11400000, guid: 70da171933cd3447b8810b3742fd94c5, type: 2}
+  - {fileID: 11400000, guid: 98ce9827f6ccf1c4ba4af621b077c9e5, type: 2}
+  - {fileID: 11400000, guid: e15f190126c37244098a21d47eb97bd2, type: 2}
   setSwitchEvent:
     idInternal: 0
     valueGuidInternal: 
-    WwiseObjectReference: {fileID: 11400000, guid: c0f4c76c3ccff41dbb2c2a9e567ea76e,
+    WwiseObjectReference: {fileID: 11400000, guid: 9fa889cdd07db46508a75efaddd560c4,
       type: 2}

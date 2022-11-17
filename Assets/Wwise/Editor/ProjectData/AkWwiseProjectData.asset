@@ -38,7 +38,7 @@ MonoBehaviour:
     ParentPath: Master-Mixer Hierarchy\Default Work Unit
     guid: c6b41ec9dc56414596c429e948904d66
     GuidInternal: 
-    m_lastTime: -8585330681305019840
+    m_lastTime: -8585329186553938740
     List:
     - name: AmbisonicBus
       guid: 6a7007533cad39499a4a17e464c2b589
@@ -240,11 +240,11 @@ MonoBehaviour:
     ParentPath: SoundBanks\Default Work Unit
     guid: 91f3f2c2e89f4143bd59d41dc8510ab9
     GuidInternal: 
-    m_lastTime: -8585330729738502857
+    m_lastTime: -8585329186532276082
     List:
-    - name: Main
+    - name: Mains
       guid: 22a5fa274c62a84d93c78d5801f30f0d
-      id: 3161908922
+      id: 1764570813
       PathAndIcons:
       - ElementName: SoundBanks
         ObjectType: 5
@@ -252,10 +252,10 @@ MonoBehaviour:
       - ElementName: Default Work Unit
         ObjectType: 12
         guid: 91f3f2c2e89f4143bd59d41dc8510ab9
-      - ElementName: Main
+      - ElementName: Mains
         ObjectType: 7
         guid: 22a5fa274c62a84d93c78d5801f30f0d
-      Path: SoundBanks\Default Work Unit\Main
+      Path: SoundBanks\Default Work Unit\Mains
   EventWwu:
   - PhysicalPath: Events\Default Work Unit.wwu
     PathAndIcons:
@@ -268,7 +268,7 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit
     guid: 5eb490fb28343a4fbde7e5ca0bff7b1d
     GuidInternal: 
-    m_lastTime: -8585330681304869961
+    m_lastTime: -8585329186481477548
     List:
     - name: Ambience
       guid: d61574c5aefb6e4bb8be3d2e8f5c14a0
@@ -614,29 +614,6 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
-    - name: VA_Clerk_Chatter_Switch
-      guid: 04305f8ff4c65d4a8e8ffa5e586925e8
-      id: 1547028657
-      PathAndIcons:
-      - ElementName: Events
-        ObjectType: 5
-        guid: 00000000000000000000000000000000
-      - ElementName: Default Work Unit
-        ObjectType: 12
-        guid: 5eb490fb28343a4fbde7e5ca0bff7b1d
-      - ElementName: VA
-        ObjectType: 4
-        guid: 962c1cf8524efa4d9e07284d538ea186
-      - ElementName: VA_Clerk
-        ObjectType: 4
-        guid: 2de5a3e63a349744ae1b101991b7f261
-      - ElementName: VA_Clerk_Chatter_Switch
-        ObjectType: 3
-        guid: 04305f8ff4c65d4a8e8ffa5e586925e8
-      Path: Events\Default Work Unit\VA\VA_Clerk\VA_Clerk_Chatter_Switch
-      maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
     - name: VA_Clerk_Play
       guid: 4415bc8e58ba4848a9771366cdd39cee
       id: 1398273777
@@ -659,30 +636,7 @@ MonoBehaviour:
       Path: Events\Default Work Unit\VA\VA_Clerk\VA_Clerk_Play
       maxAttenuation: 10
       maxDuration: 9.640862
-      minDuration: 2.465193
-    - name: VA_Clerk_Set_Switch_Intro_1
-      guid: 7c60a77e978d204ca8c9a9352a1ae57b
-      id: 1421338019
-      PathAndIcons:
-      - ElementName: Events
-        ObjectType: 5
-        guid: 00000000000000000000000000000000
-      - ElementName: Default Work Unit
-        ObjectType: 12
-        guid: 5eb490fb28343a4fbde7e5ca0bff7b1d
-      - ElementName: VA
-        ObjectType: 4
-        guid: 962c1cf8524efa4d9e07284d538ea186
-      - ElementName: VA_Clerk
-        ObjectType: 4
-        guid: 2de5a3e63a349744ae1b101991b7f261
-      - ElementName: VA_Clerk_Set_Switch_Intro_1
-        ObjectType: 3
-        guid: 7c60a77e978d204ca8c9a9352a1ae57b
-      Path: Events\Default Work Unit\VA\VA_Clerk\VA_Clerk_Set_Switch_Intro_1
-      maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
+      minDuration: 0
     - name: VA_Pause
       guid: c9bf07d16212704a96bfebfab9f0e214
       id: 938429017
@@ -763,7 +717,7 @@ MonoBehaviour:
     ParentPath: Switches\Default Work Unit
     guid: 129020783626944d87631f9c3a93f8e0
     GuidInternal: 
-    m_lastTime: -8585330715304305069
+    m_lastTime: -8585329186447970294
     List:
     - name: Locomotion
       guid: ec8b7419cfaab54dbd4aee612fa66e6b
@@ -878,9 +832,9 @@ MonoBehaviour:
         guid: f60e6d600d208144b08366f3c0d6c337
       Path: Switches\Default Work Unit\VA\VA_Clerk_Switch_Group
       values:
-      - name: VA_Clerk_Chatter
+      - name: ClerkChatter
         guid: dcfed56ad06c3d4a91c29265e8947d7b
-        id: 3899735754
+        id: 1846884575
         PathAndIcons:
         - ElementName: Switches
           ObjectType: 5
@@ -894,12 +848,12 @@ MonoBehaviour:
         - ElementName: VA_Clerk_Switch_Group
           ObjectType: 11
           guid: f60e6d600d208144b08366f3c0d6c337
-        - ElementName: VA_Clerk_Chatter
+        - ElementName: ClerkChatter
           ObjectType: 10
           guid: dcfed56ad06c3d4a91c29265e8947d7b
-      - name: VA_Clerk_Intro_1
+      - name: ClerkIntro
         guid: 3024ad821f230f4a9382cee494a9df9e
-        id: 1918899099
+        id: 1202250874
         PathAndIcons:
         - ElementName: Switches
           ObjectType: 5
@@ -913,7 +867,7 @@ MonoBehaviour:
         - ElementName: VA_Clerk_Switch_Group
           ObjectType: 11
           guid: f60e6d600d208144b08366f3c0d6c337
-        - ElementName: VA_Clerk_Intro_1
+        - ElementName: ClerkIntro
           ObjectType: 10
           guid: 3024ad821f230f4a9382cee494a9df9e
       ValueGuids: []
@@ -964,8 +918,8 @@ MonoBehaviour:
         ObjectType: 4
         guid: 14a961bd002ffe41ba1f908602494c89
       Path: Triggers\Default Work Unit\VA_Test
-  ExpandedFileSystemItemIds: 
-  ExpandedWaapiItemIds: 05000000060000000a0000001a000000
+  ExpandedFileSystemItemIds: 010000000200000003000000040000000500000006000000070000000a0000000b0000000c0000000d000000120000001300000015000000160000001b0000001c0000001d0000001e0000001f000000220000002300000024000000
+  ExpandedWaapiItemIds: 0500000006000000070000000a0000000b0000000c0000000e0000000f000000100000001a0000001d00000024000000
   AutoSyncSelection: 0
   autoPopulateEnabled: 1
   currentDataSource: 0
