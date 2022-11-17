@@ -7,9 +7,11 @@ TagManager:
   - CinemachineTarget
   - Mirror
   - ChargingTarget
-  - Door
+  - LightBeam
   - Footsteps/Stone
   - Socket
+  - Door
+  - LightBeam
   - Footsteps/Cloth
   layers:
   - Default

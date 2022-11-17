@@ -1,36 +1,35 @@
 <?xml version="1.0" encoding="utf-8"?>
 <SoundBanksInfo Platform="Windows" BasePlatform="Windows" SchemaVersion="12" SoundbankVersion="140">
 	<RootPaths>
-		<ProjectRoot>C:\Users\kille\Blind-Faith\Blind-Faith_WwiseProject\</ProjectRoot>
-		<SourceFilesRoot>C:\Users\kille\Blind-Faith\Blind-Faith_WwiseProject\.cache\Windows\</SourceFilesRoot>
-		<SoundBanksRoot>C:\Users\kille\Blind-Faith\Blind-Faith_WwiseProject\GeneratedSoundBanks\Windows\</SoundBanksRoot>
+		<ProjectRoot>/Users/giorgioperri/Library/Application Support/Wwise2019/Bottles/Wwise2019x64/dosdevices/y:/Desktop/ITU/Making Games/MakingGames22/Blind Faith/Blind-Faith_WwiseProject/</ProjectRoot>
+		<SourceFilesRoot>/Users/giorgioperri/Library/Application Support/Wwise2019/Bottles/Wwise2019x64/dosdevices/y:/Desktop/ITU/Making Games/MakingGames22/Blind Faith/Blind-Faith_WwiseProject/.cache/Windows/</SourceFilesRoot>
+		<SoundBanksRoot>/Users/giorgioperri/Library/Application Support/Wwise2019/Bottles/Wwise2019x64/dosdevices/y:/Desktop/ITU/Making Games/MakingGames22/Blind Faith/Blind-Faith_WwiseProject/GeneratedSoundBanks/Windows/</SoundBanksRoot>
 		<ExternalSourcesInputFile></ExternalSourcesInputFile>
-		<ExternalSourcesOutputRoot>C:\Users\kille\Blind-Faith\Blind-Faith_WwiseProject\GeneratedSoundBanks\Windows</ExternalSourcesOutputRoot>
+		<ExternalSourcesOutputRoot>/Users/giorgioperri/Library/Application Support/Wwise2019/Bottles/Wwise2019x64/dosdevices/y:/Desktop/ITU/Making Games/MakingGames22/Blind Faith/Blind-Faith_WwiseProject/GeneratedSoundBanks/Windows</ExternalSourcesOutputRoot>
 	</RootPaths>
 	<DialogueEvents/>
 	<StreamedFiles/>
 	<MediaFilesNotInAnyBank/>
 	<SoundBanks>
-		<SoundBank Id="1355168291" Language="SFX" Hash="3000657540">
+		<SoundBank Id="1355168291" Language="SFX" Hash="777302053">
 			<ObjectPath>Init</ObjectPath>
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
 			<IncludedAuxBusses>
 				<AuxBus Id="741553742" Name="Church_01" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Rooms_docking\Church_01"/>
-				<AuxBus Id="1584650008" Name="BinuralAux" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Binural\BinuralAux"/>
 				<AuxBus Id="2030475388" Name="Outdoors_01" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Rooms_docking\Outdoors_01"/>
 				<AuxBus Id="2568407992" Name="Church" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Rooms\Church"/>
-				<AuxBus Id="2570349746" Name="BinuralAux_docking" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Binural_docking\BinuralAux_docking"/>
 				<AuxBus Id="2730119150" Name="Outdoors" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Rooms\Outdoors"/>
 				<AuxBus Id="2743004395" Name="SmallRoom_01" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Rooms_docking\SmallRoom_01"/>
 				<AuxBus Id="2933838247" Name="SmallRoom" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Rooms\SmallRoom"/>
 			</IncludedAuxBusses>
 		</SoundBank>
-		<SoundBank Id="3161908922" Language="SFX" Hash="2245902667">
-			<ObjectPath>\SoundBanks\Default Work Unit\Main</ObjectPath>
-			<ShortName>Main</ShortName>
-			<Path>Main.bnk</Path>
+		<SoundBank Id="1764570813" Language="SFX" Hash="2529299288">
+			<ObjectPath>\SoundBanks\Default Work Unit\Mains</ObjectPath>
+			<ShortName>Mains</ShortName>
+			<Path>Mains.bnk</Path>
 			<IncludedEvents>
+				<Event Id="1132321458" Name="Church_Ambisonic" ObjectPath="\Events\Default Work Unit\SFX\Ambience\Church_Ambisonic" MaxAttenuation="100." DurationType="Infinite"/>
 				<Event Id="3209221603" Name="DEBUG_AMB" ObjectPath="\Events\Default Work Unit\DEBUG_AMB" DurationType="Infinite"/>
 				<Event Id="2618683459" Name="DEBUG_HAMMER" ObjectPath="\Events\Default Work Unit\DEBUG_HAMMER" MaxAttenuation="20." DurationType="Infinite"/>
 				<Event Id="181700819" Name="FireLoop" ObjectPath="\Events\Default Work Unit\FireLoop" MaxAttenuation="10." DurationType="Infinite"/>
@@ -39,144 +38,217 @@
 				<Event Id="759350405" Name="Lanteren_Deploy_Loop" ObjectPath="\Events\Default Work Unit\SFX\Player\Lanteren\Lanteren_Deploy_Loop" MaxAttenuation="10." DurationType="Infinite"/>
 				<Event Id="1818726255" Name="Lanteren_discharge" ObjectPath="\Events\Default Work Unit\SFX\Player\Lanteren\Lanteren_discharge" MaxAttenuation="10." DurationType="OneShot" DurationMin="3.185225" DurationMax="3.185225"/>
 				<Event Id="740769089" Name="Lanteren_Undeploy" ObjectPath="\Events\Default Work Unit\SFX\Player\Lanteren\Lanteren_Undeploy" MaxAttenuation="10." DurationType="OneShot" DurationMin="2.79757" DurationMax="2.79757"/>
-				<Event Id="1398273777" Name="VA_Clerk_Play" ObjectPath="\Events\Default Work Unit\VA\VA_Clerk\VA_Clerk_Play" MaxAttenuation="10." DurationType="Infinite"/>
+				<Event Id="1398273777" Name="VA_Clerk_Play" ObjectPath="\Events\Default Work Unit\VA\VA_Clerk\VA_Clerk_Play" MaxAttenuation="10." DurationType="OneShot" DurationMin="1.125419" DurationMax="9.640862"/>
 				<Event Id="938429017" Name="VA_Pause" ObjectPath="\Events\Default Work Unit\VA\VA_Pause" MaxAttenuation="0." DurationType="OneShot" DurationMin="0." DurationMax="0."/>
 				<Event Id="662947992" Name="VA_Resume" ObjectPath="\Events\Default Work Unit\VA\VA_Resume" MaxAttenuation="0." DurationType="OneShot" DurationMin="0." DurationMax="0."/>
 			</IncludedEvents>
 			<IncludedMemoryFiles>
 				<File Id="9150397" Language="SFX">
 					<ShortName>Teleport.wav</ShortName>
-					<Path>SFX\Teleport_D2B0A69F.wem</Path>
+					<Path>SFX/Teleport_D2B0A69F.wem</Path>
 				</File>
 				<File Id="65470773" Language="SFX">
 					<ShortName>Mutated hammer.wav</ShortName>
-					<Path>SFX\Mutated hammer_53C93DF0.wem</Path>
+					<Path>SFX/Mutated hammer_53C93DF0.wem</Path>
 				</File>
 				<File Id="107980118" Language="SFX">
 					<ShortName>01 Stone Footsteps, Cobblestone Male, 30 Secs Each Slow, Medium, Fast.wav</ShortName>
-					<Path>SFX\01 Stone Footsteps, Cobblestone Male, 30 Secs Each Slow, Medium, Fast_DEB1E4F9.wem</Path>
+					<Path>SFX/01 Stone Footsteps, Cobblestone Male, 30 Secs Each Slow, Medium, Fast_DEB1E4F9.wem</Path>
 				</File>
 				<File Id="113205331" Language="SFX">
 					<ShortName>01 Stone Footsteps, Cobblestone Male, 30 Secs Each Slow, Medium, Fast.wav</ShortName>
-					<Path>SFX\01 Stone Footsteps, Cobblestone Male, 30 Secs Each Slow, Medium, Fast_30BE831F.wem</Path>
+					<Path>SFX/01 Stone Footsteps, Cobblestone Male, 30 Secs Each Slow, Medium, Fast_30BE831F.wem</Path>
+				</File>
+				<File Id="124409414" Language="SFX">
+					<ShortName>Clerk_s1_.wav</ShortName>
+					<Path>SFX/Clerk_s1__83C6FAC1.wem</Path>
+				</File>
+				<File Id="169382249" Language="SFX">
+					<ShortName>ChurchAmbisonicAmbienceMain_loopo.wav</ShortName>
+					<Path>SFX/ChurchAmbisonicAmbienceMain_loopo_BC0EBD72.wem</Path>
+				</File>
+				<File Id="195704639" Language="SFX">
+					<ShortName>ChurchAmbisonicAmbienceMain_Intro.wav</ShortName>
+					<Path>SFX/ChurchAmbisonicAmbienceMain_Intro_10C4C929.wem</Path>
 				</File>
 				<File Id="198540441" Language="SFX">
 					<ShortName>Powerup_Mutated_Drone.wav</ShortName>
-					<Path>SFX\Powerup_Mutated_Drone_F80341E1.wem</Path>
-				</File>
-				<File Id="200631349" Language="SFX">
-					<ShortName>BF_VATest_s1_3.wav</ShortName>
-					<Path>SFX\BF_VATest_s1_3_10C4C929.wem</Path>
+					<Path>SFX/Powerup_Mutated_Drone_F80341E1.wem</Path>
 				</File>
 				<File Id="207267346" Language="SFX">
 					<ShortName>Mutated hammer.wav</ShortName>
-					<Path>SFX\Mutated hammer_84A83FD6.wem</Path>
+					<Path>SFX/Mutated hammer_84A83FD6.wem</Path>
+				</File>
+				<File Id="210602074" Language="SFX">
+					<ShortName>Clerk_s1__7.wav</ShortName>
+					<Path>SFX/Clerk_s1__7_9C924CCA.wem</Path>
+				</File>
+				<File Id="211299271" Language="SFX">
+					<ShortName>Clerk_chatter\Clerk_chatter__2.wav</ShortName>
+					<Path>SFX/Clerk_chatter/Clerk_chatter__2_B43A77D1.wem</Path>
+				</File>
+				<File Id="222606794" Language="SFX">
+					<ShortName>Clerk_chatter\Clerk_chatter_.wav</ShortName>
+					<Path>SFX/Clerk_chatter/Clerk_chatter__25306F8B.wem</Path>
+				</File>
+				<File Id="290489526" Language="SFX">
+					<ShortName>Clerk_s1__1.wav</ShortName>
+					<Path>SFX/Clerk_s1__1_97F397E4.wem</Path>
+				</File>
+				<File Id="306100852" Language="SFX">
+					<ShortName>Clerk_s1__5.wav</ShortName>
+					<Path>SFX/Clerk_s1__5_E31A58EA.wem</Path>
 				</File>
 				<File Id="316983824" Language="SFX">
 					<ShortName>Fire_Furnace_Loop_PSEM.112.wav</ShortName>
-					<Path>SFX\Fire_Furnace_Loop_PSEM.112_D79FB2B7.wem</Path>
-				</File>
-				<File Id="353658067" Language="SFX">
-					<ShortName>BF_VATest_s1_4.wav</ShortName>
-					<Path>SFX\BF_VATest_s1_4_10C4C929.wem</Path>
+					<Path>SFX/Fire_Furnace_Loop_PSEM.112_D79FB2B7.wem</Path>
 				</File>
 				<File Id="392707160" Language="SFX">
 					<ShortName>texture_medium_3.wav</ShortName>
-					<Path>SFX\texture_medium_3_10C4C929.wem</Path>
+					<Path>SFX/texture_medium_3_10C4C929.wem</Path>
 				</File>
 				<File Id="407002430" Language="SFX">
 					<ShortName>1806 - Footsteps - Sneakers on Carpet - 90 fpm - Loop.wav</ShortName>
-					<Path>SFX\1806 - Footsteps - Sneakers on Carpet - 90 fpm - Loop_8A92B7AF.wem</Path>
+					<Path>SFX/1806 - Footsteps - Sneakers on Carpet - 90 fpm - Loop_8A92B7AF.wem</Path>
+				</File>
+				<File Id="413924883" Language="SFX">
+					<ShortName>Clerk_chatter\Clerk_chatter__7.wav</ShortName>
+					<Path>SFX/Clerk_chatter/Clerk_chatter__7_1E231620.wem</Path>
 				</File>
 				<File Id="446528560" Language="SFX">
 					<ShortName>Teleport.wav</ShortName>
-					<Path>SFX\Teleport_EBE10AA2.wem</Path>
+					<Path>SFX/Teleport_EBE10AA2.wem</Path>
+				</File>
+				<File Id="466230716" Language="SFX">
+					<ShortName>Clerk_s1__8.wav</ShortName>
+					<Path>SFX/Clerk_s1__8_EB2C22DB.wem</Path>
+				</File>
+				<File Id="476092146" Language="SFX">
+					<ShortName>Clerk_chatter\Clerk_chatter__4.wav</ShortName>
+					<Path>SFX/Clerk_chatter/Clerk_chatter__4_03295AB2.wem</Path>
 				</File>
 				<File Id="485940681" Language="SFX">
 					<ShortName>01 Stone Footsteps, Cobblestone Male, 30 Secs Each Slow, Medium, Fast.wav</ShortName>
-					<Path>SFX\01 Stone Footsteps, Cobblestone Male, 30 Secs Each Slow, Medium, Fast_9FBE40A2.wem</Path>
+					<Path>SFX/01 Stone Footsteps, Cobblestone Male, 30 Secs Each Slow, Medium, Fast_9FBE40A2.wem</Path>
 				</File>
 				<File Id="493705793" Language="SFX">
 					<ShortName>water2.wav</ShortName>
-					<Path>SFX\water2_10C4C929.wem</Path>
-				</File>
-				<File Id="523566726" Language="SFX">
-					<ShortName>BF_VATest_s1.wav</ShortName>
-					<Path>SFX\BF_VATest_s1_4E8A5591.wem</Path>
+					<Path>SFX/water2_10C4C929.wem</Path>
 				</File>
 				<File Id="524158007" Language="SFX">
 					<ShortName>01 Stone Footsteps, Cobblestone Male, 30 Secs Each Slow, Medium, Fast.wav</ShortName>
-					<Path>SFX\01 Stone Footsteps, Cobblestone Male, 30 Secs Each Slow, Medium, Fast_6ACF6195.wem</Path>
+					<Path>SFX/01 Stone Footsteps, Cobblestone Male, 30 Secs Each Slow, Medium, Fast_6ACF6195.wem</Path>
+				</File>
+				<File Id="529285034" Language="SFX">
+					<ShortName>Clerk_chatter\Clerk_chatter__5.wav</ShortName>
+					<Path>SFX/Clerk_chatter/Clerk_chatter__5_40054F20.wem</Path>
 				</File>
 				<File Id="541165543" Language="SFX">
 					<ShortName>Bluezone_BC0238_ambience_020.wav</ShortName>
-					<Path>SFX\Bluezone_BC0238_ambience_020_2302C72B.wem</Path>
+					<Path>SFX/Bluezone_BC0238_ambience_020_2302C72B.wem</Path>
 				</File>
-				<File Id="541704858" Language="SFX">
-					<ShortName>BF_VATest_s1_2.wav</ShortName>
-					<Path>SFX\BF_VATest_s1_2_10C4C929.wem</Path>
-				</File>
-				<File Id="640644510" Language="SFX">
-					<ShortName>BF_VATest_s1_1.wav</ShortName>
-					<Path>SFX\BF_VATest_s1_1_2456FF54.wem</Path>
+				<File Id="579534600" Language="SFX">
+					<ShortName>Clerk_chatter\Clerk_chatter__3.wav</ShortName>
+					<Path>SFX/Clerk_chatter/Clerk_chatter__3_99536550.wem</Path>
 				</File>
 				<File Id="643727600" Language="SFX">
 					<ShortName>1806 - Footsteps - Sneakers on Carpet - 90 fpm - Loop.wav</ShortName>
-					<Path>SFX\1806 - Footsteps - Sneakers on Carpet - 90 fpm - Loop_3AE39963.wem</Path>
+					<Path>SFX/1806 - Footsteps - Sneakers on Carpet - 90 fpm - Loop_3AE39963.wem</Path>
+				</File>
+				<File Id="667515654" Language="SFX">
+					<ShortName>Clerk_s1__9.wav</ShortName>
+					<Path>SFX/Clerk_s1__9_B3E36AEC.wem</Path>
+				</File>
+				<File Id="675330913" Language="SFX">
+					<ShortName>Clerk_chatter\Clerk_chatter__6.wav</ShortName>
+					<Path>SFX/Clerk_chatter/Clerk_chatter__6_A2DE8683.wem</Path>
 				</File>
 				<File Id="684596150" Language="SFX">
 					<ShortName>water3.wav</ShortName>
-					<Path>SFX\water3_10C4C929.wem</Path>
+					<Path>SFX/water3_10C4C929.wem</Path>
+				</File>
+				<File Id="718550265" Language="SFX">
+					<ShortName>Clerk_chatter\Clerk_chatter__8.wav</ShortName>
+					<Path>SFX/Clerk_chatter/Clerk_chatter__8_D847BAB8.wem</Path>
+				</File>
+				<File Id="739805478" Language="SFX">
+					<ShortName>Clerk_chatter\Clerk_chatter__9.wav</ShortName>
+					<Path>SFX/Clerk_chatter/Clerk_chatter__9_464F7787.wem</Path>
+				</File>
+				<File Id="776242514" Language="SFX">
+					<ShortName>Clerk_s1__4.wav</ShortName>
+					<Path>SFX/Clerk_s1__4_2F75BA44.wem</Path>
 				</File>
 				<File Id="786073262" Language="SFX">
 					<ShortName>Mutated hammer.wav</ShortName>
-					<Path>SFX\Mutated hammer_26E4CBA8.wem</Path>
+					<Path>SFX/Mutated hammer_26E4CBA8.wem</Path>
 				</File>
 				<File Id="830999437" Language="SFX">
 					<ShortName>01 Stone Footsteps, Cobblestone Male, 30 Secs Each Slow, Medium, Fast.wav</ShortName>
-					<Path>SFX\01 Stone Footsteps, Cobblestone Male, 30 Secs Each Slow, Medium, Fast_5FF7441C.wem</Path>
+					<Path>SFX/01 Stone Footsteps, Cobblestone Male, 30 Secs Each Slow, Medium, Fast_5FF7441C.wem</Path>
+				</File>
+				<File Id="833554346" Language="SFX">
+					<ShortName>Clerk_chatter\Clerk_chatter__1.wav</ShortName>
+					<Path>SFX/Clerk_chatter/Clerk_chatter__1_AD90372A.wem</Path>
 				</File>
 				<File Id="861805956" Language="SFX">
 					<ShortName>01 Stone Footsteps, Cobblestone Male, 30 Secs Each Slow, Medium, Fast.wav</ShortName>
-					<Path>SFX\01 Stone Footsteps, Cobblestone Male, 30 Secs Each Slow, Medium, Fast_9D8C4D80.wem</Path>
+					<Path>SFX/01 Stone Footsteps, Cobblestone Male, 30 Secs Each Slow, Medium, Fast_9D8C4D80.wem</Path>
 				</File>
 				<File Id="883270094" Language="SFX">
 					<ShortName>Switch weapon.wav</ShortName>
-					<Path>SFX\Switch weapon_10C4C929.wem</Path>
+					<Path>SFX/Switch weapon_10C4C929.wem</Path>
 				</File>
 				<File Id="897522966" Language="SFX">
 					<ShortName>Bluezone_BC0238_ambience_020.wav</ShortName>
-					<Path>SFX\Bluezone_BC0238_ambience_020_706002CB.wem</Path>
+					<Path>SFX/Bluezone_BC0238_ambience_020_706002CB.wem</Path>
 				</File>
 				<File Id="929948901" Language="SFX">
 					<ShortName>Stinger_Metal_Silverware_Reversed.wav</ShortName>
-					<Path>SFX\Stinger_Metal_Silverware_Reversed_4B9A62E7.wem</Path>
+					<Path>SFX/Stinger_Metal_Silverware_Reversed_4B9A62E7.wem</Path>
+				</File>
+				<File Id="930361327" Language="SFX">
+					<ShortName>Clerk_s1__10.wav</ShortName>
+					<Path>SFX/Clerk_s1__10_0B64817A.wem</Path>
 				</File>
 				<File Id="937773785" Language="SFX">
 					<ShortName>Stinger_Metal_Silverware_Reversed.wav</ShortName>
-					<Path>SFX\Stinger_Metal_Silverware_Reversed_9A766E4D.wem</Path>
+					<Path>SFX/Stinger_Metal_Silverware_Reversed_9A766E4D.wem</Path>
+				</File>
+				<File Id="949409495" Language="SFX">
+					<ShortName>Clerk_s1__3.wav</ShortName>
+					<Path>SFX/Clerk_s1__3_F13F0072.wem</Path>
 				</File>
 				<File Id="974181242" Language="SFX">
 					<ShortName>Teleport.wav</ShortName>
-					<Path>SFX\Teleport_E2C50CAA.wem</Path>
+					<Path>SFX/Teleport_E2C50CAA.wem</Path>
 				</File>
 				<File Id="989359785" Language="SFX">
 					<ShortName>1806 - Footsteps - Sneakers on Carpet - 90 fpm - Loop.wav</ShortName>
-					<Path>SFX\1806 - Footsteps - Sneakers on Carpet - 90 fpm - Loop_F2E4E4FE.wem</Path>
+					<Path>SFX/1806 - Footsteps - Sneakers on Carpet - 90 fpm - Loop_F2E4E4FE.wem</Path>
+				</File>
+				<File Id="1010559949" Language="SFX">
+					<ShortName>Clerk_s1__2.wav</ShortName>
+					<Path>SFX/Clerk_s1__2_B9554591.wem</Path>
 				</File>
 				<File Id="1052142959" Language="SFX">
 					<ShortName>water1.wav</ShortName>
-					<Path>SFX\water1_10C4C929.wem</Path>
+					<Path>SFX/water1_10C4C929.wem</Path>
 				</File>
 				<File Id="1054677677" Language="SFX">
 					<ShortName>Switch weapon.wav</ShortName>
-					<Path>SFX\Switch weapon_C0BD21C5.wem</Path>
+					<Path>SFX/Switch weapon_C0BD21C5.wem</Path>
+				</File>
+				<File Id="1066600936" Language="SFX">
+					<ShortName>Clerk_s1__6.wav</ShortName>
+					<Path>SFX/Clerk_s1__6_82ECE78B.wem</Path>
 				</File>
 			</IncludedMemoryFiles>
 			<SwitchGroups>
 				<SwitchGroup Id="232330383" Name="VA_Clerk_Switch_Group" ObjectPath="\Switches\Default Work Unit\VA\VA_Clerk_Switch_Group" GUID="{606D0EF6-200D-4481-B083-66F3C0D6C337}">
 					<Switches>
-						<Switch Id="1918899099" Name="VA_Clerk_Intro_1" ObjectPath="\Switches\Default Work Unit\VA\VA_Clerk_Switch_Group\VA_Clerk_Intro_1" GUID="{82AD2430-231F-4A0F-9382-CEE494A9DF9E}"/>
+						<Switch Id="1202250874" Name="ClerkIntro" ObjectPath="\Switches\Default Work Unit\VA\VA_Clerk_Switch_Group\ClerkIntro" GUID="{82AD2430-231F-4A0F-9382-CEE494A9DF9E}"/>
+						<Switch Id="1846884575" Name="ClerkChatter" ObjectPath="\Switches\Default Work Unit\VA\VA_Clerk_Switch_Group\ClerkChatter" GUID="{6AD5FEDC-6CD0-4A3D-91C2-9265E8947D7B}"/>
 					</Switches>
 				</SwitchGroup>
 				<SwitchGroup Id="1730208058" Name="Player_Footsteps" ObjectPath="\Switches\Default Work Unit\Locomotion\Player_Footsteps" GUID="{A706E7EA-CCEF-4788-AE6F-F3659BEF4932}">

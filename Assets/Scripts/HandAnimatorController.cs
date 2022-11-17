@@ -28,19 +28,50 @@ public class HandAnimatorController : MonoBehaviour
     private void Update()
     {
         if (FirstPersonController.Instance.currentInteractable &&
-            FirstPersonController.Instance.currentInteractable.GetType() == typeof(Socket)) return;
+            FirstPersonController.Instance.currentInteractable.GetType() == typeof(Socket))
+        {
+            if (Mouse.current.leftButton.isPressed)
+            {
+                _animController.SetBool("extendArms", false);
+            } 
             
+            return;
+        }
+
         if (_inputs.hasRaisedLantern)
         {
-            HandleLanternInput(!_animController.GetBool("hasRaisedLantern"));
+            if(!Mouse.current.leftButton.isPressed && !LanternManager.Instance.isInsideSocket){
+                HandleLanternInput(!_animController.GetBool("hasRaisedLantern"));
+            }
+            else
+            {
+                _inputs.hasRaisedLantern = false;
+            }
+        }
+
+        if (Mouse.current.leftButton.wasPressedThisFrame && !LanternManager.Instance.isInsideSocket)
+        {
+            _animController.SetBool("extendArms", true);
+        } 
+        else if (Mouse.current.leftButton.wasReleasedThisFrame && !LanternManager.Instance.isInsideSocket)
+        {
+            _animController.SetBool("extendArms", false);
         }
     }
 
     public void HandleLanternInput(bool isUp)
     {
         _animController.SetBool("hasRaisedLantern", isUp);
-        if(PlayerSoundController.Instance.EquipLantern != null) 
-            PlayerSoundController.Instance.EquipLantern.Post(PlayerSoundController.Instance.gameObject);
+        if (isUp)
+        {
+            if(PlayerSoundController.Instance.EquipLantern != null) 
+                PlayerSoundController.Instance.EquipLantern.Post(PlayerSoundController.Instance.gameObject);
+        }
+        else
+        {
+            if(PlayerSoundController.Instance.UnequipLantern != null) 
+                PlayerSoundController.Instance.UnequipLantern.Post(PlayerSoundController.Instance.gameObject);
+        }
         _inputs.hasRaisedLantern = false;
         hasRaisedLantern = true;
         LanternManager.Instance.lanternIsRaised = true;

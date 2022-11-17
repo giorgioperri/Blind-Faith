@@ -200,7 +200,6 @@ namespace StarterAssets
 						case "Footsteps/Stone":
 							setStoneSwitch.SetValue(PlayerSoundController.Instance.gameObject);
 							footstepPlayEvent.Post(PlayerSoundController.Instance.gameObject);
-							Debug.Log("Footstep sound play");
 							break;
 						case "Footsteps/Cloth":
 							setClothSwitch.SetValue(PlayerSoundController.Instance.gameObject);

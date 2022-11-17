@@ -38,11 +38,11 @@ MonoBehaviour:
     ParentPath: Master-Mixer Hierarchy/Default Work Unit
     guid: c6b41ec9dc56414596c429e948904d66
     GuidInternal: 
-    m_lastTime: -8585328997604964866
+    m_lastTime: -8585329143760485714
     List:
-    - name: Binural
-      guid: c68fd80adebffa41a58e7a7ccf0ff358
-      id: 499593554
+    - name: AmbisonicBus
+      guid: 6a7007533cad39499a4a17e464c2b589
+      id: 4258699522
       PathAndIcons:
       - ElementName: Master-Mixer Hierarchy
         ObjectType: 5
@@ -53,67 +53,13 @@ MonoBehaviour:
       - ElementName: Master Audio Bus
         ObjectType: 2
         guid: d8a41415a61d2a41a17e75ca0c2149f3
-      - ElementName: Binural
+      - ElementName: Rooms_docking
         ObjectType: 2
-        guid: c68fd80adebffa41a58e7a7ccf0ff358
-      Path: Master-Mixer Hierarchy/Default Work Unit/Master Audio Bus/Binural
-    - name: Binural_docking
-      guid: 57ad8f09dfe30a4d9e0dcec584973722
-      id: 2022318020
-      PathAndIcons:
-      - ElementName: Master-Mixer Hierarchy
-        ObjectType: 5
-        guid: 00000000000000000000000000000000
-      - ElementName: Default Work Unit
-        ObjectType: 12
-        guid: c6b41ec9dc56414596c429e948904d66
-      - ElementName: Master Audio Bus
+        guid: 9442d16eea29c94a82d539255bf161a4
+      - ElementName: AmbisonicBus
         ObjectType: 2
-        guid: d8a41415a61d2a41a17e75ca0c2149f3
-      - ElementName: Binural_docking
-        ObjectType: 2
-        guid: 57ad8f09dfe30a4d9e0dcec584973722
-      Path: Master-Mixer Hierarchy/Default Work Unit/Master Audio Bus/Binural_docking
-    - name: BinuralAux
-      guid: a780a4c140ab91408843ab735e7b9c82
-      id: 1584650008
-      PathAndIcons:
-      - ElementName: Master-Mixer Hierarchy
-        ObjectType: 5
-        guid: 00000000000000000000000000000000
-      - ElementName: Default Work Unit
-        ObjectType: 12
-        guid: c6b41ec9dc56414596c429e948904d66
-      - ElementName: Master Audio Bus
-        ObjectType: 2
-        guid: d8a41415a61d2a41a17e75ca0c2149f3
-      - ElementName: Binural
-        ObjectType: 2
-        guid: c68fd80adebffa41a58e7a7ccf0ff358
-      - ElementName: BinuralAux
-        ObjectType: 1
-        guid: a780a4c140ab91408843ab735e7b9c82
-      Path: Master-Mixer Hierarchy/Default Work Unit/Master Audio Bus/Binural/BinuralAux
-    - name: BinuralAux_docking
-      guid: 404cf6ce5af19340be41e226d92156b0
-      id: 2570349746
-      PathAndIcons:
-      - ElementName: Master-Mixer Hierarchy
-        ObjectType: 5
-        guid: 00000000000000000000000000000000
-      - ElementName: Default Work Unit
-        ObjectType: 12
-        guid: c6b41ec9dc56414596c429e948904d66
-      - ElementName: Master Audio Bus
-        ObjectType: 2
-        guid: d8a41415a61d2a41a17e75ca0c2149f3
-      - ElementName: Binural_docking
-        ObjectType: 2
-        guid: 57ad8f09dfe30a4d9e0dcec584973722
-      - ElementName: BinuralAux_docking
-        ObjectType: 1
-        guid: 404cf6ce5af19340be41e226d92156b0
-      Path: Master-Mixer Hierarchy/Default Work Unit/Master Audio Bus/Binural_docking/BinuralAux_docking
+        guid: 6a7007533cad39499a4a17e464c2b589
+      Path: Master-Mixer Hierarchy/Default Work Unit/Master Audio Bus/Rooms_docking/AmbisonicBus
     - name: Church
       guid: 0237bb028b374140a824826d18544aaf
       id: 2568407992
@@ -294,11 +240,11 @@ MonoBehaviour:
     ParentPath: SoundBanks/Default Work Unit
     guid: 91f3f2c2e89f4143bd59d41dc8510ab9
     GuidInternal: 
-    m_lastTime: -8585328997604905721
+    m_lastTime: -8585329145307339059
     List:
-    - name: Main
+    - name: Mains
       guid: 22a5fa274c62a84d93c78d5801f30f0d
-      id: 3161908922
+      id: 1764570813
       PathAndIcons:
       - ElementName: SoundBanks
         ObjectType: 5
@@ -306,10 +252,10 @@ MonoBehaviour:
       - ElementName: Default Work Unit
         ObjectType: 12
         guid: 91f3f2c2e89f4143bd59d41dc8510ab9
-      - ElementName: Main
+      - ElementName: Mains
         ObjectType: 7
         guid: 22a5fa274c62a84d93c78d5801f30f0d
-      Path: SoundBanks/Default Work Unit/Main
+      Path: SoundBanks/Default Work Unit/Mains
   EventWwu:
   - PhysicalPath: Events/Default Work Unit.wwu
     PathAndIcons:
@@ -322,11 +268,11 @@ MonoBehaviour:
     ParentPath: Events/Default Work Unit
     guid: 5eb490fb28343a4fbde7e5ca0bff7b1d
     GuidInternal: 
-    m_lastTime: -8585328997607464033
+    m_lastTime: -8585329144022194303
     List:
-    - name: Amb_Church
-      guid: dcd615d507ed484ab7bc43e13aa6d783
-      id: 2840050639
+    - name: Ambience
+      guid: d61574c5aefb6e4bb8be3d2e8f5c14a0
+      id: 85412153
       PathAndIcons:
       - ElementName: Events
         ObjectType: 5
@@ -334,11 +280,37 @@ MonoBehaviour:
       - ElementName: Default Work Unit
         ObjectType: 12
         guid: 5eb490fb28343a4fbde7e5ca0bff7b1d
-      - ElementName: Amb_Church
+      - ElementName: SFX
+        ObjectType: 4
+        guid: f50ab3c4f820c44896ff11baa26a0745
+      - ElementName: Ambience
+        ObjectType: 4
+        guid: d61574c5aefb6e4bb8be3d2e8f5c14a0
+      Path: Events/Default Work Unit/SFX/Ambience
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Church_Ambisonic
+      guid: dcd615d507ed484ab7bc43e13aa6d783
+      id: 1132321458
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 5eb490fb28343a4fbde7e5ca0bff7b1d
+      - ElementName: SFX
+        ObjectType: 4
+        guid: f50ab3c4f820c44896ff11baa26a0745
+      - ElementName: Ambience
+        ObjectType: 4
+        guid: d61574c5aefb6e4bb8be3d2e8f5c14a0
+      - ElementName: Church_Ambisonic
         ObjectType: 3
         guid: dcd615d507ed484ab7bc43e13aa6d783
-      Path: Events/Default Work Unit/Amb_Church
-      maxAttenuation: 0
+      Path: Events/Default Work Unit/SFX/Ambience/Church_Ambisonic
+      maxAttenuation: 100
       maxDuration: -1
       minDuration: -1
     - name: DEBUG_AMB
@@ -663,31 +635,8 @@ MonoBehaviour:
         guid: 4415bc8e58ba4848a9771366cdd39cee
       Path: Events/Default Work Unit/VA/VA_Clerk/VA_Clerk_Play
       maxAttenuation: 10
-      maxDuration: -1
-      minDuration: -1
-    - name: VA_Clerk_Set_Switch_Intro_1
-      guid: 7c60a77e978d204ca8c9a9352a1ae57b
-      id: 1421338019
-      PathAndIcons:
-      - ElementName: Events
-        ObjectType: 5
-        guid: 00000000000000000000000000000000
-      - ElementName: Default Work Unit
-        ObjectType: 12
-        guid: 5eb490fb28343a4fbde7e5ca0bff7b1d
-      - ElementName: VA
-        ObjectType: 4
-        guid: 962c1cf8524efa4d9e07284d538ea186
-      - ElementName: VA_Clerk
-        ObjectType: 4
-        guid: 2de5a3e63a349744ae1b101991b7f261
-      - ElementName: VA_Clerk_Set_Switch_Intro_1
-        ObjectType: 3
-        guid: 7c60a77e978d204ca8c9a9352a1ae57b
-      Path: Events/Default Work Unit/VA/VA_Clerk/VA_Clerk_Set_Switch_Intro_1
-      maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
+      maxDuration: 9.640862
+      minDuration: 1.125419
     - name: VA_Pause
       guid: c9bf07d16212704a96bfebfab9f0e214
       id: 938429017
@@ -768,7 +717,7 @@ MonoBehaviour:
     ParentPath: Switches/Default Work Unit
     guid: 129020783626944d87631f9c3a93f8e0
     GuidInternal: 
-    m_lastTime: -8585328997604904579
+    m_lastTime: -8585329143741258024
     List:
     - name: Locomotion
       guid: ec8b7419cfaab54dbd4aee612fa66e6b
@@ -883,9 +832,9 @@ MonoBehaviour:
         guid: f60e6d600d208144b08366f3c0d6c337
       Path: Switches/Default Work Unit/VA/VA_Clerk_Switch_Group
       values:
-      - name: VA_Clerk_Intro_1
-        guid: 3024ad821f230f4a9382cee494a9df9e
-        id: 1918899099
+      - name: ClerkChatter
+        guid: dcfed56ad06c3d4a91c29265e8947d7b
+        id: 1846884575
         PathAndIcons:
         - ElementName: Switches
           ObjectType: 5
@@ -899,7 +848,26 @@ MonoBehaviour:
         - ElementName: VA_Clerk_Switch_Group
           ObjectType: 11
           guid: f60e6d600d208144b08366f3c0d6c337
-        - ElementName: VA_Clerk_Intro_1
+        - ElementName: ClerkChatter
+          ObjectType: 10
+          guid: dcfed56ad06c3d4a91c29265e8947d7b
+      - name: ClerkIntro
+        guid: 3024ad821f230f4a9382cee494a9df9e
+        id: 1202250874
+        PathAndIcons:
+        - ElementName: Switches
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: 129020783626944d87631f9c3a93f8e0
+        - ElementName: VA
+          ObjectType: 4
+          guid: 72aefdfe10b4f645a01820f025eaef72
+        - ElementName: VA_Clerk_Switch_Group
+          ObjectType: 11
+          guid: f60e6d600d208144b08366f3c0d6c337
+        - ElementName: ClerkIntro
           ObjectType: 10
           guid: 3024ad821f230f4a9382cee494a9df9e
       ValueGuids: []
@@ -950,8 +918,8 @@ MonoBehaviour:
         ObjectType: 4
         guid: 14a961bd002ffe41ba1f908602494c89
       Path: Triggers/Default Work Unit/VA_Test
-  ExpandedFileSystemItemIds: 
-  ExpandedWaapiItemIds: 
+  ExpandedFileSystemItemIds: 010000000200000003000000040000000500000006000000070000000a0000000b0000000c0000000d000000120000001300000015000000160000001b0000001c0000001d0000001e0000001f000000220000002300000024000000
+  ExpandedWaapiItemIds: 010000000500000006000000070000000b0000000c0000000e0000000f000000100000001100000012000000140000001a0000001d0000002100000024000000
   AutoSyncSelection: 0
   autoPopulateEnabled: 1
   currentDataSource: 0
