@@ -84,11 +84,34 @@
 											</ReferenceList>
 											<ChildrenList>
 												<AudioFileSource Name="Clerk_s1_" ID="{201D455D-C36E-45C7-97A2-3DCCA34BF624}">
+													<PropertyList>
+														<Property Name="MarkerInputMode" Type="int16" Value="2"/>
+													</PropertyList>
 													<Language>SFX</Language>
 													<AudioFile>Clerk_s1_.wav</AudioFile>
 													<MediaIDList>
 														<MediaID ID="124409414"/>
 													</MediaIDList>
+													<PluginInnerObjectList>
+														<List Name="Markers">
+															<PluginInnerObject Name="" ID="{B1E83432-CB44-4EA2-ADC2-1209F709B820}" PluginName="Marker" CompanyID="0" PluginID="993">
+																<PropertyList>
+																	<Property Name="Label" Type="string" Value="Tempo: 120.0"/>
+																</PropertyList>
+															</PluginInnerObject>
+															<PluginInnerObject Name="" ID="{1FE24552-6847-4103-9DDC-61F3FCF0046A}" PluginName="Marker" CompanyID="0" PluginID="993">
+																<PropertyList>
+																	<Property Name="Label" Type="string" Value="Intro Scene"/>
+																</PropertyList>
+															</PluginInnerObject>
+															<PluginInnerObject Name="" ID="{1015852C-D98B-4938-8B62-6B1FE2958EFC}" PluginName="Marker" CompanyID="0" PluginID="993">
+																<PropertyList>
+																	<Property Name="Label" Type="string" Value="end"/>
+																	<Property Name="Time" Type="Real64" Value="5.27585297684965"/>
+																</PropertyList>
+															</PluginInnerObject>
+														</List>
+													</PluginInnerObjectList>
 												</AudioFileSource>
 											</ChildrenList>
 											<ObjectLists/>
@@ -107,11 +130,34 @@
 											</ReferenceList>
 											<ChildrenList>
 												<AudioFileSource Name="Clerk_s1__1" ID="{3267F5E8-6BCE-43E4-BC8C-FC809D057288}">
+													<PropertyList>
+														<Property Name="MarkerInputMode" Type="int16" Value="2"/>
+													</PropertyList>
 													<Language>SFX</Language>
 													<AudioFile>Clerk_s1__1.wav</AudioFile>
 													<MediaIDList>
 														<MediaID ID="290489526"/>
 													</MediaIDList>
+													<PluginInnerObjectList>
+														<List Name="Markers">
+															<PluginInnerObject Name="" ID="{EDEC953E-CAA5-4409-A60C-5DC2B8C95A73}" PluginName="Marker" CompanyID="0" PluginID="993">
+																<PropertyList>
+																	<Property Name="Label" Type="string" Value="Tempo: 120.0"/>
+																</PropertyList>
+															</PluginInnerObject>
+															<PluginInnerObject Name="" ID="{B23E1886-4CAC-4DB3-ACC3-3CB86C32D4A5}" PluginName="Marker" CompanyID="0" PluginID="993">
+																<PropertyList>
+																	<Property Name="Label" Type="string" Value="Intro Scene"/>
+																</PropertyList>
+															</PluginInnerObject>
+															<PluginInnerObject Name="" ID="{3BBE0283-FCE6-408B-9D83-3DE64A5974FD}" PluginName="Marker" CompanyID="0" PluginID="993">
+																<PropertyList>
+																	<Property Name="Label" Type="string" Value="end"/>
+																	<Property Name="Time" Type="Real64" Value="7.66725297589085"/>
+																</PropertyList>
+															</PluginInnerObject>
+														</List>
+													</PluginInnerObjectList>
 												</AudioFileSource>
 											</ChildrenList>
 											<ObjectLists/>
@@ -130,11 +176,34 @@
 											</ReferenceList>
 											<ChildrenList>
 												<AudioFileSource Name="Clerk_s1__2" ID="{B93BDA84-EB49-42A3-B71C-29B530F11847}">
+													<PropertyList>
+														<Property Name="MarkerInputMode" Type="int16" Value="2"/>
+													</PropertyList>
 													<Language>SFX</Language>
 													<AudioFile>Clerk_s1__2.wav</AudioFile>
 													<MediaIDList>
 														<MediaID ID="1010559949"/>
 													</MediaIDList>
+													<PluginInnerObjectList>
+														<List Name="Markers">
+															<PluginInnerObject Name="" ID="{C0AEF310-DC50-46B4-9DF8-265E7EE9DAE5}" PluginName="Marker" CompanyID="0" PluginID="993">
+																<PropertyList>
+																	<Property Name="Label" Type="string" Value="Tempo: 120.0"/>
+																</PropertyList>
+															</PluginInnerObject>
+															<PluginInnerObject Name="" ID="{24B97BD6-6103-4F41-80C9-8EABD73CD535}" PluginName="Marker" CompanyID="0" PluginID="993">
+																<PropertyList>
+																	<Property Name="Label" Type="string" Value="Intro Scene"/>
+																</PropertyList>
+															</PluginInnerObject>
+															<PluginInnerObject Name="" ID="{98601455-747E-48C8-B603-69197D765949}" PluginName="Marker" CompanyID="0" PluginID="993">
+																<PropertyList>
+																	<Property Name="Label" Type="string" Value="end"/>
+																	<Property Name="Time" Type="Real64" Value="3.8338635524682"/>
+																</PropertyList>
+															</PluginInnerObject>
+														</List>
+													</PluginInnerObjectList>
 												</AudioFileSource>
 											</ChildrenList>
 											<ObjectLists/>
@@ -153,11 +222,34 @@
 											</ReferenceList>
 											<ChildrenList>
 												<AudioFileSource Name="Clerk_s1__3" ID="{AF859057-1861-4016-B6CF-4E95F1A22AB0}">
+													<PropertyList>
+														<Property Name="MarkerInputMode" Type="int16" Value="2"/>
+													</PropertyList>
 													<Language>SFX</Language>
 													<AudioFile>Clerk_s1__3.wav</AudioFile>
 													<MediaIDList>
 														<MediaID ID="949409495"/>
 													</MediaIDList>
+													<PluginInnerObjectList>
+														<List Name="Markers">
+															<PluginInnerObject Name="" ID="{BA51ABE2-6CC0-4E0F-8566-7203E9C8F35D}" PluginName="Marker" CompanyID="0" PluginID="993">
+																<PropertyList>
+																	<Property Name="Label" Type="string" Value="Tempo: 120.0"/>
+																</PropertyList>
+															</PluginInnerObject>
+															<PluginInnerObject Name="" ID="{63B9E0A0-0F6F-4F56-95DC-F8A5A6160820}" PluginName="Marker" CompanyID="0" PluginID="993">
+																<PropertyList>
+																	<Property Name="Label" Type="string" Value="Intro Scene"/>
+																</PropertyList>
+															</PluginInnerObject>
+															<PluginInnerObject Name="" ID="{C5DB9D37-412C-4AF8-AA9B-1BD1479C3462}" PluginName="Marker" CompanyID="0" PluginID="993">
+																<PropertyList>
+																	<Property Name="Label" Type="string" Value="end"/>
+																	<Property Name="Time" Type="Real64" Value="4.00273928175922"/>
+																</PropertyList>
+															</PluginInnerObject>
+														</List>
+													</PluginInnerObjectList>
 												</AudioFileSource>
 											</ChildrenList>
 											<ObjectLists/>
@@ -176,11 +268,34 @@
 											</ReferenceList>
 											<ChildrenList>
 												<AudioFileSource Name="Clerk_s1__4" ID="{2FF320E3-9137-4199-ACC2-940401C8E07F}">
+													<PropertyList>
+														<Property Name="MarkerInputMode" Type="int16" Value="2"/>
+													</PropertyList>
 													<Language>SFX</Language>
 													<AudioFile>Clerk_s1__4.wav</AudioFile>
 													<MediaIDList>
 														<MediaID ID="776242514"/>
 													</MediaIDList>
+													<PluginInnerObjectList>
+														<List Name="Markers">
+															<PluginInnerObject Name="" ID="{C1E7B956-FF4C-4730-B963-44516578C9A9}" PluginName="Marker" CompanyID="0" PluginID="993">
+																<PropertyList>
+																	<Property Name="Label" Type="string" Value="Tempo: 120.0"/>
+																</PropertyList>
+															</PluginInnerObject>
+															<PluginInnerObject Name="" ID="{AB508F5E-E186-46F6-86A8-A89D5DA82404}" PluginName="Marker" CompanyID="0" PluginID="993">
+																<PropertyList>
+																	<Property Name="Label" Type="string" Value="Intro Scene"/>
+																</PropertyList>
+															</PluginInnerObject>
+															<PluginInnerObject Name="" ID="{EF0426BC-9A7C-4316-ADFF-67FC4519209B}" PluginName="Marker" CompanyID="0" PluginID="993">
+																<PropertyList>
+																	<Property Name="Label" Type="string" Value="end"/>
+																	<Property Name="Time" Type="Real64" Value="2.03261135320936"/>
+																</PropertyList>
+															</PluginInnerObject>
+														</List>
+													</PluginInnerObjectList>
 												</AudioFileSource>
 											</ChildrenList>
 											<ObjectLists/>
@@ -199,11 +314,34 @@
 											</ReferenceList>
 											<ChildrenList>
 												<AudioFileSource Name="Clerk_s1__5" ID="{6FA7B494-16D0-4B47-935A-107FABD1969B}">
+													<PropertyList>
+														<Property Name="MarkerInputMode" Type="int16" Value="2"/>
+													</PropertyList>
 													<Language>SFX</Language>
 													<AudioFile>Clerk_s1__5.wav</AudioFile>
 													<MediaIDList>
 														<MediaID ID="306100852"/>
 													</MediaIDList>
+													<PluginInnerObjectList>
+														<List Name="Markers">
+															<PluginInnerObject Name="" ID="{BD707064-8456-4B19-8974-E7F8D46AEB1E}" PluginName="Marker" CompanyID="0" PluginID="993">
+																<PropertyList>
+																	<Property Name="Label" Type="string" Value="Tempo: 120.0"/>
+																</PropertyList>
+															</PluginInnerObject>
+															<PluginInnerObject Name="" ID="{63DA8D51-02CB-41FC-A95E-7332A573C161}" PluginName="Marker" CompanyID="0" PluginID="993">
+																<PropertyList>
+																	<Property Name="Label" Type="string" Value="Intro Scene"/>
+																</PropertyList>
+															</PluginInnerObject>
+															<PluginInnerObject Name="" ID="{A15F3C37-B5A1-4FFB-B8F7-55EFA25D8C85}" PluginName="Marker" CompanyID="0" PluginID="993">
+																<PropertyList>
+																	<Property Name="Label" Type="string" Value="end"/>
+																	<Property Name="Time" Type="Real64" Value="5.22137125886295"/>
+																</PropertyList>
+															</PluginInnerObject>
+														</List>
+													</PluginInnerObjectList>
 												</AudioFileSource>
 											</ChildrenList>
 											<ObjectLists/>
@@ -222,11 +360,34 @@
 											</ReferenceList>
 											<ChildrenList>
 												<AudioFileSource Name="Clerk_s1__6" ID="{B660A4F0-EF93-4BF3-BC5A-ED40387B09AD}">
+													<PropertyList>
+														<Property Name="MarkerInputMode" Type="int16" Value="2"/>
+													</PropertyList>
 													<Language>SFX</Language>
 													<AudioFile>Clerk_s1__6.wav</AudioFile>
 													<MediaIDList>
 														<MediaID ID="1066600936"/>
 													</MediaIDList>
+													<PluginInnerObjectList>
+														<List Name="Markers">
+															<PluginInnerObject Name="" ID="{F670F66C-B196-4DD6-B621-16C7983760B0}" PluginName="Marker" CompanyID="0" PluginID="993">
+																<PropertyList>
+																	<Property Name="Label" Type="string" Value="Tempo: 120.0"/>
+																</PropertyList>
+															</PluginInnerObject>
+															<PluginInnerObject Name="" ID="{D602BDEF-CBE2-4B41-8DEC-CEA4C14FFCA2}" PluginName="Marker" CompanyID="0" PluginID="993">
+																<PropertyList>
+																	<Property Name="Label" Type="string" Value="Intro Scene"/>
+																</PropertyList>
+															</PluginInnerObject>
+															<PluginInnerObject Name="" ID="{1729F5B0-4FCD-424A-9318-B6DF28E82B1A}" PluginName="Marker" CompanyID="0" PluginID="993">
+																<PropertyList>
+																	<Property Name="Label" Type="string" Value="end"/>
+																	<Property Name="Time" Type="Real64" Value="5.18416991461842"/>
+																</PropertyList>
+															</PluginInnerObject>
+														</List>
+													</PluginInnerObjectList>
 												</AudioFileSource>
 											</ChildrenList>
 											<ObjectLists/>
@@ -245,11 +406,34 @@
 											</ReferenceList>
 											<ChildrenList>
 												<AudioFileSource Name="Clerk_s1__7" ID="{7B5BB9DF-2808-4DED-875B-8BB440C8BEAD}">
+													<PropertyList>
+														<Property Name="MarkerInputMode" Type="int16" Value="2"/>
+													</PropertyList>
 													<Language>SFX</Language>
 													<AudioFile>Clerk_s1__7.wav</AudioFile>
 													<MediaIDList>
 														<MediaID ID="210602074"/>
 													</MediaIDList>
+													<PluginInnerObjectList>
+														<List Name="Markers">
+															<PluginInnerObject Name="" ID="{E024034E-8397-4C8B-AC3E-96A5077108FC}" PluginName="Marker" CompanyID="0" PluginID="993">
+																<PropertyList>
+																	<Property Name="Label" Type="string" Value="Tempo: 120.0"/>
+																</PropertyList>
+															</PluginInnerObject>
+															<PluginInnerObject Name="" ID="{F07D3630-9265-4583-87D7-6B75269546B7}" PluginName="Marker" CompanyID="0" PluginID="993">
+																<PropertyList>
+																	<Property Name="Label" Type="string" Value="Intro Scene"/>
+																</PropertyList>
+															</PluginInnerObject>
+															<PluginInnerObject Name="" ID="{79938384-E693-4026-A185-57D882DBFC77}" PluginName="Marker" CompanyID="0" PluginID="993">
+																<PropertyList>
+																	<Property Name="Label" Type="string" Value="end"/>
+																	<Property Name="Time" Type="Real64" Value="6.22369240578543"/>
+																</PropertyList>
+															</PluginInnerObject>
+														</List>
+													</PluginInnerObjectList>
 												</AudioFileSource>
 											</ChildrenList>
 											<ObjectLists/>
@@ -268,11 +452,34 @@
 											</ReferenceList>
 											<ChildrenList>
 												<AudioFileSource Name="Clerk_s1__8" ID="{D44BCFDE-A198-405B-AA23-BF2C771CB08F}">
+													<PropertyList>
+														<Property Name="MarkerInputMode" Type="int16" Value="2"/>
+													</PropertyList>
 													<Language>SFX</Language>
 													<AudioFile>Clerk_s1__8.wav</AudioFile>
 													<MediaIDList>
 														<MediaID ID="466230716"/>
 													</MediaIDList>
+													<PluginInnerObjectList>
+														<List Name="Markers">
+															<PluginInnerObject Name="" ID="{23A6BB94-FB7D-4614-8A3C-A11865100707}" PluginName="Marker" CompanyID="0" PluginID="993">
+																<PropertyList>
+																	<Property Name="Label" Type="string" Value="Tempo: 120.0"/>
+																</PropertyList>
+															</PluginInnerObject>
+															<PluginInnerObject Name="" ID="{B29CE7F1-B4B3-4D20-9D87-33FB8977D205}" PluginName="Marker" CompanyID="0" PluginID="993">
+																<PropertyList>
+																	<Property Name="Label" Type="string" Value="Intro Scene"/>
+																</PropertyList>
+															</PluginInnerObject>
+															<PluginInnerObject Name="" ID="{F74247A3-0B90-4709-9F1E-8C65EA6CD744}" PluginName="Marker" CompanyID="0" PluginID="993">
+																<PropertyList>
+																	<Property Name="Label" Type="string" Value="end"/>
+																	<Property Name="Time" Type="Real64" Value="4.81981504652601"/>
+																</PropertyList>
+															</PluginInnerObject>
+														</List>
+													</PluginInnerObjectList>
 												</AudioFileSource>
 											</ChildrenList>
 											<ObjectLists/>
@@ -291,11 +498,34 @@
 											</ReferenceList>
 											<ChildrenList>
 												<AudioFileSource Name="Clerk_s1__9" ID="{8C2CF7FB-11F7-44A1-8FEE-C7894A707D98}">
+													<PropertyList>
+														<Property Name="MarkerInputMode" Type="int16" Value="2"/>
+													</PropertyList>
 													<Language>SFX</Language>
 													<AudioFile>Clerk_s1__9.wav</AudioFile>
 													<MediaIDList>
 														<MediaID ID="667515654"/>
 													</MediaIDList>
+													<PluginInnerObjectList>
+														<List Name="Markers">
+															<PluginInnerObject Name="" ID="{8D0C7EB5-ACB1-48F9-A457-3C1F3A7AF1D7}" PluginName="Marker" CompanyID="0" PluginID="993">
+																<PropertyList>
+																	<Property Name="Label" Type="string" Value="Tempo: 120.0"/>
+																</PropertyList>
+															</PluginInnerObject>
+															<PluginInnerObject Name="" ID="{8A4D1DA9-99EF-4A0D-8A2D-090206D79111}" PluginName="Marker" CompanyID="0" PluginID="993">
+																<PropertyList>
+																	<Property Name="Label" Type="string" Value="Intro Scene"/>
+																</PropertyList>
+															</PluginInnerObject>
+															<PluginInnerObject Name="" ID="{51002765-1D7B-4553-8ACC-3A79690E166C}" PluginName="Marker" CompanyID="0" PluginID="993">
+																<PropertyList>
+																	<Property Name="Label" Type="string" Value="end"/>
+																	<Property Name="Time" Type="Real64" Value="9.52875863523704"/>
+																</PropertyList>
+															</PluginInnerObject>
+														</List>
+													</PluginInnerObjectList>
 												</AudioFileSource>
 											</ChildrenList>
 											<ObjectLists/>
@@ -314,11 +544,34 @@
 											</ReferenceList>
 											<ChildrenList>
 												<AudioFileSource Name="Clerk_s1__10" ID="{828266A3-512C-4652-AEBB-2D92E050C95F}">
+													<PropertyList>
+														<Property Name="MarkerInputMode" Type="int16" Value="2"/>
+													</PropertyList>
 													<Language>SFX</Language>
 													<AudioFile>Clerk_s1__10.wav</AudioFile>
 													<MediaIDList>
 														<MediaID ID="930361327"/>
 													</MediaIDList>
+													<PluginInnerObjectList>
+														<List Name="Markers">
+															<PluginInnerObject Name="" ID="{ACE009E3-501A-4A71-93AA-D0F4D64B9489}" PluginName="Marker" CompanyID="0" PluginID="993">
+																<PropertyList>
+																	<Property Name="Label" Type="string" Value="Tempo: 120.0"/>
+																</PropertyList>
+															</PluginInnerObject>
+															<PluginInnerObject Name="" ID="{1B4BDE3B-74AA-4E64-AD43-A974A67305E2}" PluginName="Marker" CompanyID="0" PluginID="993">
+																<PropertyList>
+																	<Property Name="Label" Type="string" Value="Intro Scene"/>
+																</PropertyList>
+															</PluginInnerObject>
+															<PluginInnerObject Name="" ID="{210EC429-C8D6-4086-935E-847C3D1845DC}" PluginName="Marker" CompanyID="0" PluginID="993">
+																<PropertyList>
+																	<Property Name="Label" Type="string" Value="end"/>
+																	<Property Name="Time" Type="Real64" Value="4.63064877536638"/>
+																</PropertyList>
+															</PluginInnerObject>
+														</List>
+													</PluginInnerObjectList>
 												</AudioFileSource>
 											</ChildrenList>
 											<ObjectLists/>
@@ -366,11 +619,34 @@
 											</ReferenceList>
 											<ChildrenList>
 												<AudioFileSource Name="Clerk_chatter_" ID="{887252E4-EBFF-41FE-88E6-92CF5E05F665}">
+													<PropertyList>
+														<Property Name="MarkerInputMode" Type="int16" Value="2"/>
+													</PropertyList>
 													<Language>SFX</Language>
 													<AudioFile>Clerk_chatter\Clerk_chatter_.wav</AudioFile>
 													<MediaIDList>
 														<MediaID ID="222606794"/>
 													</MediaIDList>
+													<PluginInnerObjectList>
+														<List Name="Markers">
+															<PluginInnerObject Name="" ID="{32FA4783-8456-4F6C-804A-AB9C7AED7328}" PluginName="Marker" CompanyID="0" PluginID="993">
+																<PropertyList>
+																	<Property Name="Label" Type="string" Value="Tempo: 120.0"/>
+																</PropertyList>
+															</PluginInnerObject>
+															<PluginInnerObject Name="" ID="{5C8AF96C-E5C9-46A4-A4F5-F235444C8AF6}" PluginName="Marker" CompanyID="0" PluginID="993">
+																<PropertyList>
+																	<Property Name="Label" Type="string" Value="Intro Scene"/>
+																</PropertyList>
+															</PluginInnerObject>
+															<PluginInnerObject Name="" ID="{8C99D301-91E6-4917-A045-0F00BF838AE8}" PluginName="Marker" CompanyID="0" PluginID="993">
+																<PropertyList>
+																	<Property Name="Label" Type="string" Value="end"/>
+																	<Property Name="Time" Type="Real64" Value="8.98285500214072"/>
+																</PropertyList>
+															</PluginInnerObject>
+														</List>
+													</PluginInnerObjectList>
 												</AudioFileSource>
 											</ChildrenList>
 											<ObjectLists/>
@@ -389,11 +665,34 @@
 											</ReferenceList>
 											<ChildrenList>
 												<AudioFileSource Name="Clerk_chatter__1" ID="{8D8FBDC4-8629-43CB-B808-B272C6881742}">
+													<PropertyList>
+														<Property Name="MarkerInputMode" Type="int16" Value="2"/>
+													</PropertyList>
 													<Language>SFX</Language>
 													<AudioFile>Clerk_chatter\Clerk_chatter__1.wav</AudioFile>
 													<MediaIDList>
 														<MediaID ID="833554346"/>
 													</MediaIDList>
+													<PluginInnerObjectList>
+														<List Name="Markers">
+															<PluginInnerObject Name="" ID="{A412AB66-7F2B-4D90-9F8F-603CCE632F4E}" PluginName="Marker" CompanyID="0" PluginID="993">
+																<PropertyList>
+																	<Property Name="Label" Type="string" Value="Tempo: 120.0"/>
+																</PropertyList>
+															</PluginInnerObject>
+															<PluginInnerObject Name="" ID="{902BBCBE-3540-4C96-8C5A-05FE5E68B233}" PluginName="Marker" CompanyID="0" PluginID="993">
+																<PropertyList>
+																	<Property Name="Label" Type="string" Value="Complete puzzle"/>
+																</PropertyList>
+															</PluginInnerObject>
+															<PluginInnerObject Name="" ID="{B75E03A9-39EE-4BE0-86BF-2130F434EC1E}" PluginName="Marker" CompanyID="0" PluginID="993">
+																<PropertyList>
+																	<Property Name="Label" Type="string" Value="end"/>
+																	<Property Name="Time" Type="Real64" Value="4.06605394605395"/>
+																</PropertyList>
+															</PluginInnerObject>
+														</List>
+													</PluginInnerObjectList>
 												</AudioFileSource>
 											</ChildrenList>
 											<ObjectLists/>
@@ -412,11 +711,34 @@
 											</ReferenceList>
 											<ChildrenList>
 												<AudioFileSource Name="Clerk_chatter__2" ID="{A1385894-7D83-4B8A-91D5-C3DA6FDAB916}">
+													<PropertyList>
+														<Property Name="MarkerInputMode" Type="int16" Value="2"/>
+													</PropertyList>
 													<Language>SFX</Language>
 													<AudioFile>Clerk_chatter\Clerk_chatter__2.wav</AudioFile>
 													<MediaIDList>
 														<MediaID ID="211299271"/>
 													</MediaIDList>
+													<PluginInnerObjectList>
+														<List Name="Markers">
+															<PluginInnerObject Name="" ID="{1DF3FB6A-7FD4-42F1-9A66-449BA86A106F}" PluginName="Marker" CompanyID="0" PluginID="993">
+																<PropertyList>
+																	<Property Name="Label" Type="string" Value="Tempo: 120.0"/>
+																</PropertyList>
+															</PluginInnerObject>
+															<PluginInnerObject Name="" ID="{F559FBEB-9BAC-4275-AEED-7B72EE1FDB9B}" PluginName="Marker" CompanyID="0" PluginID="993">
+																<PropertyList>
+																	<Property Name="Label" Type="string" Value="Complete puzzle"/>
+																</PropertyList>
+															</PluginInnerObject>
+															<PluginInnerObject Name="" ID="{E7EA709E-BC20-48BA-B085-12BD8961399A}" PluginName="Marker" CompanyID="0" PluginID="993">
+																<PropertyList>
+																	<Property Name="Label" Type="string" Value="end"/>
+																	<Property Name="Time" Type="Real64" Value="8.32738428238429"/>
+																</PropertyList>
+															</PluginInnerObject>
+														</List>
+													</PluginInnerObjectList>
 												</AudioFileSource>
 											</ChildrenList>
 											<ObjectLists/>
@@ -435,11 +757,35 @@
 											</ReferenceList>
 											<ChildrenList>
 												<AudioFileSource Name="Clerk_chatter__3" ID="{0EB6AA66-98FA-45C7-B8A6-1607D39C6B74}">
+													<PropertyList>
+														<Property Name="MarkerInputMode" Type="int16" Value="2"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+													</PropertyList>
 													<Language>SFX</Language>
 													<AudioFile>Clerk_chatter\Clerk_chatter__3.wav</AudioFile>
 													<MediaIDList>
 														<MediaID ID="579534600"/>
 													</MediaIDList>
+													<PluginInnerObjectList>
+														<List Name="Markers">
+															<PluginInnerObject Name="" ID="{165D14EE-4570-4185-8685-19F07AE27D24}" PluginName="Marker" CompanyID="0" PluginID="993">
+																<PropertyList>
+																	<Property Name="Label" Type="string" Value="Tempo: 120.0"/>
+																</PropertyList>
+															</PluginInnerObject>
+															<PluginInnerObject Name="" ID="{A8F553F0-9C1D-45F1-92E2-81A366645A5E}" PluginName="Marker" CompanyID="0" PluginID="993">
+																<PropertyList>
+																	<Property Name="Label" Type="string" Value="Complete puzzle"/>
+																</PropertyList>
+															</PluginInnerObject>
+															<PluginInnerObject Name="" ID="{CC2F160B-CCAB-4076-AB3F-2D375E2A2CCC}" PluginName="Marker" CompanyID="0" PluginID="993">
+																<PropertyList>
+																	<Property Name="Label" Type="string" Value="end"/>
+																	<Property Name="Time" Type="Real64" Value="4.85252211797062"/>
+																</PropertyList>
+															</PluginInnerObject>
+														</List>
+													</PluginInnerObjectList>
 												</AudioFileSource>
 											</ChildrenList>
 											<ObjectLists/>
@@ -458,11 +804,34 @@
 											</ReferenceList>
 											<ChildrenList>
 												<AudioFileSource Name="Clerk_chatter__4" ID="{30246345-90B7-44D8-A903-8205E5D8EF82}">
+													<PropertyList>
+														<Property Name="MarkerInputMode" Type="int16" Value="2"/>
+													</PropertyList>
 													<Language>SFX</Language>
 													<AudioFile>Clerk_chatter\Clerk_chatter__4.wav</AudioFile>
 													<MediaIDList>
 														<MediaID ID="476092146"/>
 													</MediaIDList>
+													<PluginInnerObjectList>
+														<List Name="Markers">
+															<PluginInnerObject Name="" ID="{6E29DF5B-67B0-43BE-A5E2-FAD4133F1FA7}" PluginName="Marker" CompanyID="0" PluginID="993">
+																<PropertyList>
+																	<Property Name="Label" Type="string" Value="Tempo: 120.0"/>
+																</PropertyList>
+															</PluginInnerObject>
+															<PluginInnerObject Name="" ID="{7DE21BFC-3CC5-40D7-957F-376861F18E47}" PluginName="Marker" CompanyID="0" PluginID="993">
+																<PropertyList>
+																	<Property Name="Label" Type="string" Value="Complete puzzle"/>
+																</PropertyList>
+															</PluginInnerObject>
+															<PluginInnerObject Name="" ID="{965D8984-F673-4D43-A53C-23E06C482361}" PluginName="Marker" CompanyID="0" PluginID="993">
+																<PropertyList>
+																	<Property Name="Label" Type="string" Value="end"/>
+																	<Property Name="Time" Type="Real64" Value="6.05193726539242"/>
+																</PropertyList>
+															</PluginInnerObject>
+														</List>
+													</PluginInnerObjectList>
 												</AudioFileSource>
 											</ChildrenList>
 											<ObjectLists/>
@@ -481,11 +850,34 @@
 											</ReferenceList>
 											<ChildrenList>
 												<AudioFileSource Name="Clerk_chatter__5" ID="{9B7886C1-82E5-4BF6-8B9B-F1FB09455170}">
+													<PropertyList>
+														<Property Name="MarkerInputMode" Type="int16" Value="2"/>
+													</PropertyList>
 													<Language>SFX</Language>
 													<AudioFile>Clerk_chatter\Clerk_chatter__5.wav</AudioFile>
 													<MediaIDList>
 														<MediaID ID="529285034"/>
 													</MediaIDList>
+													<PluginInnerObjectList>
+														<List Name="Markers">
+															<PluginInnerObject Name="" ID="{E9F97E58-905C-4115-8876-0D8AA94B761E}" PluginName="Marker" CompanyID="0" PluginID="993">
+																<PropertyList>
+																	<Property Name="Label" Type="string" Value="Tempo: 120.0"/>
+																</PropertyList>
+															</PluginInnerObject>
+															<PluginInnerObject Name="" ID="{6D6A9307-B676-43D1-90BC-82DDC2F2AF5E}" PluginName="Marker" CompanyID="0" PluginID="993">
+																<PropertyList>
+																	<Property Name="Label" Type="string" Value="Complete puzzle"/>
+																</PropertyList>
+															</PluginInnerObject>
+															<PluginInnerObject Name="" ID="{F6415CF2-3618-4616-BBB6-C895AE6D93CB}" PluginName="Marker" CompanyID="0" PluginID="993">
+																<PropertyList>
+																	<Property Name="Label" Type="string" Value="end"/>
+																	<Property Name="Time" Type="Real64" Value="4.96814025398743"/>
+																</PropertyList>
+															</PluginInnerObject>
+														</List>
+													</PluginInnerObjectList>
 												</AudioFileSource>
 											</ChildrenList>
 											<ObjectLists/>
@@ -504,11 +896,34 @@
 											</ReferenceList>
 											<ChildrenList>
 												<AudioFileSource Name="Clerk_chatter__6" ID="{77A9ABF5-0862-48C9-8B14-71C69103F49D}">
+													<PropertyList>
+														<Property Name="MarkerInputMode" Type="int16" Value="2"/>
+													</PropertyList>
 													<Language>SFX</Language>
 													<AudioFile>Clerk_chatter\Clerk_chatter__6.wav</AudioFile>
 													<MediaIDList>
 														<MediaID ID="675330913"/>
 													</MediaIDList>
+													<PluginInnerObjectList>
+														<List Name="Markers">
+															<PluginInnerObject Name="" ID="{417100C1-4828-4CE5-87C2-BDD5EBEE7B7F}" PluginName="Marker" CompanyID="0" PluginID="993">
+																<PropertyList>
+																	<Property Name="Label" Type="string" Value="Tempo: 120.0"/>
+																</PropertyList>
+															</PluginInnerObject>
+															<PluginInnerObject Name="" ID="{FC8126E7-FA8A-4B80-AACE-22B1A2FEDFFF}" PluginName="Marker" CompanyID="0" PluginID="993">
+																<PropertyList>
+																	<Property Name="Label" Type="string" Value="Complete puzzle"/>
+																</PropertyList>
+															</PluginInnerObject>
+															<PluginInnerObject Name="" ID="{9CCF6935-6B6E-4EC2-922A-88BF8245012A}" PluginName="Marker" CompanyID="0" PluginID="993">
+																<PropertyList>
+																	<Property Name="Label" Type="string" Value="end"/>
+																	<Property Name="Time" Type="Real64" Value="5.9358820286395"/>
+																</PropertyList>
+															</PluginInnerObject>
+														</List>
+													</PluginInnerObjectList>
 												</AudioFileSource>
 											</ChildrenList>
 											<ObjectLists/>
@@ -527,11 +942,34 @@
 											</ReferenceList>
 											<ChildrenList>
 												<AudioFileSource Name="Clerk_chatter__7" ID="{FD29C12E-4294-442A-8DD3-9FF61C269F65}">
+													<PropertyList>
+														<Property Name="MarkerInputMode" Type="int16" Value="2"/>
+													</PropertyList>
 													<Language>SFX</Language>
 													<AudioFile>Clerk_chatter\Clerk_chatter__7.wav</AudioFile>
 													<MediaIDList>
 														<MediaID ID="413924883"/>
 													</MediaIDList>
+													<PluginInnerObjectList>
+														<List Name="Markers">
+															<PluginInnerObject Name="" ID="{90FD77A1-466F-41FA-949D-84C08595BD62}" PluginName="Marker" CompanyID="0" PluginID="993">
+																<PropertyList>
+																	<Property Name="Label" Type="string" Value="Tempo: 120.0"/>
+																</PropertyList>
+															</PluginInnerObject>
+															<PluginInnerObject Name="" ID="{A5C50F3E-E475-4D30-8636-6005784C40AA}" PluginName="Marker" CompanyID="0" PluginID="993">
+																<PropertyList>
+																	<Property Name="Label" Type="string" Value="Complete puzzle"/>
+																</PropertyList>
+															</PluginInnerObject>
+															<PluginInnerObject Name="" ID="{BAB5CB7F-B0BE-4116-A53F-6EFD2665D47B}" PluginName="Marker" CompanyID="0" PluginID="993">
+																<PropertyList>
+																	<Property Name="Label" Type="string" Value="end"/>
+																	<Property Name="Time" Type="Real64" Value="1.12422983992751"/>
+																</PropertyList>
+															</PluginInnerObject>
+														</List>
+													</PluginInnerObjectList>
 												</AudioFileSource>
 											</ChildrenList>
 											<ObjectLists/>
@@ -550,11 +988,34 @@
 											</ReferenceList>
 											<ChildrenList>
 												<AudioFileSource Name="Clerk_chatter__8" ID="{10024C0E-B97E-43F3-9CD8-39227ABEEEF3}">
+													<PropertyList>
+														<Property Name="MarkerInputMode" Type="int16" Value="2"/>
+													</PropertyList>
 													<Language>SFX</Language>
 													<AudioFile>Clerk_chatter\Clerk_chatter__8.wav</AudioFile>
 													<MediaIDList>
 														<MediaID ID="718550265"/>
 													</MediaIDList>
+													<PluginInnerObjectList>
+														<List Name="Markers">
+															<PluginInnerObject Name="" ID="{6AA445C2-B8C5-426C-A96C-891A1B9ED494}" PluginName="Marker" CompanyID="0" PluginID="993">
+																<PropertyList>
+																	<Property Name="Label" Type="string" Value="Tempo: 120.0"/>
+																</PropertyList>
+															</PluginInnerObject>
+															<PluginInnerObject Name="" ID="{2FB953FC-88BD-40E6-995A-54181D2714EF}" PluginName="Marker" CompanyID="0" PluginID="993">
+																<PropertyList>
+																	<Property Name="Label" Type="string" Value="Complete puzzle"/>
+																</PropertyList>
+															</PluginInnerObject>
+															<PluginInnerObject Name="" ID="{787A7E3C-238B-451A-ABB3-C3D8F0349FCA}" PluginName="Marker" CompanyID="0" PluginID="993">
+																<PropertyList>
+																	<Property Name="Label" Type="string" Value="end"/>
+																	<Property Name="Time" Type="Real64" Value="4.6450615552775"/>
+																</PropertyList>
+															</PluginInnerObject>
+														</List>
+													</PluginInnerObjectList>
 												</AudioFileSource>
 											</ChildrenList>
 											<ObjectLists/>
@@ -573,11 +1034,34 @@
 											</ReferenceList>
 											<ChildrenList>
 												<AudioFileSource Name="Clerk_chatter__9" ID="{B56593EB-723C-4BA3-9FD9-B53F8EA8AB6B}">
+													<PropertyList>
+														<Property Name="MarkerInputMode" Type="int16" Value="2"/>
+													</PropertyList>
 													<Language>SFX</Language>
 													<AudioFile>Clerk_chatter\Clerk_chatter__9.wav</AudioFile>
 													<MediaIDList>
 														<MediaID ID="739805478"/>
 													</MediaIDList>
+													<PluginInnerObjectList>
+														<List Name="Markers">
+															<PluginInnerObject Name="" ID="{B8F57F2A-2A9B-438F-B21C-EF472D121723}" PluginName="Marker" CompanyID="0" PluginID="993">
+																<PropertyList>
+																	<Property Name="Label" Type="string" Value="Tempo: 120.0"/>
+																</PropertyList>
+															</PluginInnerObject>
+															<PluginInnerObject Name="" ID="{716C0107-B5DF-4B3A-BFE6-D00A143DACC5}" PluginName="Marker" CompanyID="0" PluginID="993">
+																<PropertyList>
+																	<Property Name="Label" Type="string" Value="Complete puzzle"/>
+																</PropertyList>
+															</PluginInnerObject>
+															<PluginInnerObject Name="" ID="{E5F3DCF1-6ECB-4A6E-B240-6CE9E6857B24}" PluginName="Marker" CompanyID="0" PluginID="993">
+																<PropertyList>
+																	<Property Name="Label" Type="string" Value="end"/>
+																	<Property Name="Time" Type="Real64" Value="1.56195260627154"/>
+																</PropertyList>
+															</PluginInnerObject>
+														</List>
+													</PluginInnerObjectList>
 												</AudioFileSource>
 											</ChildrenList>
 											<ObjectLists/>
@@ -587,6 +1071,18 @@
 										</Sound>
 									</ChildrenList>
 									<ObjectLists/>
+									<Playlist>
+										<ItemRef Name="Clerk_chatter_" ID="{D5C726E7-12B5-4F66-B167-B2EE688B1EED}"/>
+										<ItemRef Name="Clerk_chatter__1" ID="{878F8949-8647-465B-9BA7-D416B586BBE8}"/>
+										<ItemRef Name="Clerk_chatter__2" ID="{7A3CE0C6-D4B4-4754-82E9-1610DE73ED4B}"/>
+										<ItemRef Name="Clerk_chatter__3" ID="{0B82901F-9942-47BC-B7E1-C7E6A294CA71}"/>
+										<ItemRef Name="Clerk_chatter__4" ID="{BCA0B5A6-F820-4275-8A4C-68DAFF80EE80}"/>
+										<ItemRef Name="Clerk_chatter__5" ID="{0B0639AA-1909-46D8-919F-D06436B392F2}"/>
+										<ItemRef Name="Clerk_chatter__6" ID="{F6B1E2AD-6741-420F-ABE0-AEB8F2A9E867}"/>
+										<ItemRef Name="Clerk_chatter__7" ID="{8FBE6C0C-B5AB-4934-87A7-29D5A2FCE985}"/>
+										<ItemRef Name="Clerk_chatter__8" ID="{3430D4B2-908F-42E6-A9CC-A2DE386F4B63}"/>
+										<ItemRef Name="Clerk_chatter__9" ID="{19747A73-A5DB-41FC-AD84-6B5522BC47BF}"/>
+									</Playlist>
 								</RandomSequenceContainer>
 							</ChildrenList>
 							<ObjectLists/>

@@ -15,8 +15,19 @@ MonoBehaviour:
   sequenceLines:
   - {fileID: 11400000, guid: 98ce9827f6ccf1c4ba4af621b077c9e5, type: 2}
   - {fileID: 11400000, guid: e15f190126c37244098a21d47eb97bd2, type: 2}
-  setSwitchEvent:
+  - {fileID: 11400000, guid: 6a4083bf4547d4443a8b2045637e00d0, type: 2}
+  - {fileID: 11400000, guid: 6162fc9a77c1e46b2be1a223bb28b999, type: 2}
+  - {fileID: 11400000, guid: 6a3ec9550a7064e869c1c6eeb7f356f1, type: 2}
+  - {fileID: 11400000, guid: a3507a3b99d4147d186ab9b49ae66572, type: 2}
+  - {fileID: 11400000, guid: 7fc58ee4b399a455b8871f13173b0719, type: 2}
+  - {fileID: 11400000, guid: 1f634839b86f54e49b43c15818498b5e, type: 2}
+  - {fileID: 11400000, guid: f1de205e170cc4dc1bba84c97e904a13, type: 2}
+  - {fileID: 11400000, guid: 062572f74cccc4c7787b3896458c1057, type: 2}
+  - {fileID: 11400000, guid: a0045dfc960cb4b89a73e4693306f96c, type: 2}
+  sequenceSwitch:
     idInternal: 0
     valueGuidInternal: 
-    WwiseObjectReference: {fileID: 11400000, guid: 9fa889cdd07db46508a75efaddd560c4,
+    groupIdInternal: 0
+    groupGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 5ad530f1bee15b54bb95347c28b37be6,
       type: 2}

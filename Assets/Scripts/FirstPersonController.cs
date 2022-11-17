@@ -188,13 +188,10 @@ namespace StarterAssets
 						case "Footsteps/Stone":
 							setStoneSwitch.SetValue(this.gameObject);
 							footstepPlayEvent.Post(gameObject);
-							Debug.Log("Footstep sound play");
 							break;
 						case "Footsteps/Cloth":
 							setClothSwitch.SetValue(this.gameObject);
 							footstepPlayEvent.Post(gameObject);
-							break;
-						default:
 							break;
 					}
 
