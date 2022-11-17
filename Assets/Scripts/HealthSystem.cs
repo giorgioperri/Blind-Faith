@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.Mathematics;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.Rendering.PostProcessing;
@@ -73,7 +74,8 @@ public class HealthSystem : MonoBehaviour
         //healthFadeEffectColor.a = 1 - (GameManager.Instance.health / _maxPlayerHealth);
         //_healthFadeEffect.color = healthFadeEffectColor;
 
-        PostProcessingManager.Instance.ChangeVignetteIntensity((_maxPlayerHealth - GameManager.Instance.health) / 100);
-        PostProcessingManager.Instance.ChangeSaturation(GameManager.Instance.health - _maxPlayerHealth);
+        PostProcessingManager.Instance.ChangeVignetteIntensity(math.remap(100,0,0,0.65f, GameManager.Instance.health));
+        PostProcessingManager.Instance.ChangeSaturation(math.remap(100,0,0,-80, GameManager.Instance.health));
+        PostProcessingManager.Instance.ChangeAbberration(math.remap(100,0,0,0.5f, GameManager.Instance.health));
     }
 }

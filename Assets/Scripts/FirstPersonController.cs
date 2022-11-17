@@ -1,7 +1,13 @@
 ﻿using System;
 using UnityEngine;
+using System.Collections;
+using Cinemachine;
+using Unity.VisualScripting;
 #if ENABLE_INPUT_SYSTEM && STARTER_ASSETS_PACKAGES_CHECKED
 using UnityEngine.InputSystem;
+using System.Collections.Generic;
+using Unity.Mathematics;
+
 #endif
 
 namespace StarterAssets
@@ -18,7 +24,7 @@ namespace StarterAssets
 		[Tooltip("Sprint speed of the character in m/s")]
 		public float SprintSpeed = 8.0f;
 		[Tooltip("Rotation speed of the character")]
-		public float RotationSpeed = 1.0f;
+		public float RotationSpeed = 6.0f;
 		[Tooltip("Acceleration and deceleration")]
 		public float SpeedChangeRate = 10.0f;
 
@@ -60,8 +66,9 @@ namespace StarterAssets
 		[Header("Cinemachine")]
 		[Tooltip("The follow target set in the Cinemachine Virtual Camera that the camera will follow")]
 		public GameObject CinemachineCameraTarget;
+		public CinemachineVirtualCamera VirtualCamera;
 		[Tooltip("How far in degrees can you move the camera up")]
-		public float TopClamp = 90.0f;
+		public float TopClamp = 130.0f;
 		[Tooltip("How far in degrees can you move the camera down")]
 		public float BottomClamp = -90.0f;
 
@@ -74,6 +81,9 @@ namespace StarterAssets
 		[SerializeField] private float sprintBobAmount = 0.06f;
 		[SerializeField] private float crouchBobSpeed = 8f;
 		[SerializeField] private float crouchBobAmount = 0.025f;
+		private float idleHeavyBobSpeed = 3f;
+		private float idleHeavyBobAmount = 0.05f;
+
 
 		[Header("Interaction parameters")]
 		[SerializeField] private Vector3 _interactionRayPoint = default;
@@ -84,7 +94,8 @@ namespace StarterAssets
 		//variables for HeadBob
 		private float _defaultYpos = 0;
 		private float _timer;
-	
+
+		private Vector2 movementBuffer;
 
 		// cinemachine
 		private float _cinemachineTargetPitch;
@@ -144,6 +155,7 @@ namespace StarterAssets
 
 		private void Start()
 		{
+			movementBuffer = Vector2.zero;
 			_controller = GetComponent<CharacterController>();
 			_input = GetComponent<StarterAssetsInputs>();
 #if ENABLE_INPUT_SYSTEM && STARTER_ASSETS_PACKAGES_CHECKED
@@ -181,17 +193,17 @@ namespace StarterAssets
 			footstepTimer -= Time.deltaTime;
 			if (footstepTimer < 0)
 			{
-				if (Physics.Raycast(this.transform.position, Vector3.down, out RaycastHit hit, 6))
+				if (Physics.Raycast(transform.position, Vector3.down, out RaycastHit hit, 6))
 				{
 					switch (hit.collider.tag)
 					{
 						case "Footsteps/Stone":
-							setStoneSwitch.SetValue(this.gameObject);
-							footstepPlayEvent.Post(gameObject);
+							setStoneSwitch.SetValue(PlayerSoundController.Instance.gameObject);
+							footstepPlayEvent.Post(PlayerSoundController.Instance.gameObject);
 							break;
 						case "Footsteps/Cloth":
-							setClothSwitch.SetValue(this.gameObject);
-							footstepPlayEvent.Post(gameObject);
+							setClothSwitch.SetValue(PlayerSoundController.Instance.gameObject);
+							footstepPlayEvent.Post(PlayerSoundController.Instance.gameObject);
 							break;
 					}
 
@@ -245,7 +257,7 @@ namespace StarterAssets
 			if (GameManager.Instance.isPaused || GameManager.Instance.isInteractingWithMirror) return;
 			CameraRotation();
 		}
-
+        
 		// Logic for handling headBob, if player is on ground then begin HeadBob, check the state (walk/sprint/crouch - if we want to implement it)
 		private void HandleHeadBob()
 		{
@@ -267,15 +279,25 @@ namespace StarterAssets
 			Vector3 spherePosition = new Vector3(transform.position.x, transform.position.y - GroundedOffset, transform.position.z);
 			Grounded = Physics.CheckSphere(spherePosition, GroundedRadius, GroundLayers, QueryTriggerInteraction.Ignore);
 		}
-
 		private void CameraRotation()
 		{
+			if (GameManager.Instance.health < 70)
+			{
+				RotationSpeed = math.remap(70, 0, 6, 2, GameManager.Instance.health);;
+				VirtualCamera.GetCinemachineComponent<CinemachineSameAsFollowTarget>().m_Damping = math.remap(70, 0, 0, 3, GameManager.Instance.health);
+			}
+			else
+			{
+				RotationSpeed = 6f;
+				VirtualCamera.GetCinemachineComponent<CinemachineSameAsFollowTarget>().m_Damping = 0f;
+			}
+			
 			//Don't multiply mouse input by Time.deltaTime
 			float deltaTimeMultiplier = _isCurrentDeviceMouse ? 1.0f : Time.deltaTime;
 
 			_cinemachineTargetPitch += _input.look.y * RotationSpeed * deltaTimeMultiplier;
 			_rotationVelocity = _input.look.x * RotationSpeed * deltaTimeMultiplier;
-
+			
 			// clamp our pitch rotation
 			_cinemachineTargetPitch = ClampAngle(_cinemachineTargetPitch, BottomClamp, TopClamp);
 

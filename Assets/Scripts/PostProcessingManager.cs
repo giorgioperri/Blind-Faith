@@ -11,6 +11,8 @@ public class PostProcessingManager : MonoBehaviour
     private ColorAdjustments _colorAdjustments;
     private Vignette _vignette;
     private Bloom _bloom;
+    private ChromaticAberration _chromaticAberration;
+    
     // Start is called before the first frame update
     private void Awake()
     {
@@ -32,7 +34,15 @@ public class PostProcessingManager : MonoBehaviour
         if (!volumeProfile.TryGet(out _colorAdjustments)) throw new System.NullReferenceException(nameof(_colorAdjustments));
         //get variables from bloom 
         if (!volumeProfile.TryGet(out _bloom)) throw new System.NullReferenceException(nameof(_bloom));
+        
+        if (!volumeProfile.TryGet(out _chromaticAberration)) throw new System.NullReferenceException(nameof(_chromaticAberration));
     }
+
+    public void ChangeAbberration(float chromaticAberrationValue)
+    {
+        _chromaticAberration.intensity.Override(chromaticAberrationValue);
+    }
+    
     //saturation values from -100 to 100
     public void ChangeSaturation(float saturationValue)
     {
