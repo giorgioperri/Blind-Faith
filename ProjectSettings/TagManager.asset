@@ -7,6 +7,10 @@ TagManager:
   - CinemachineTarget
   - Mirror
   - ChargingTarget
+  - Door
+  - Footsteps/Stone
+  - Socket
+  - Footsteps/Cloth
   layers:
   - Default
   - TransparentFX

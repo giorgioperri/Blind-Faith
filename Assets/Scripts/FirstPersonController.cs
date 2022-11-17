@@ -1,9 +1,12 @@
 ﻿using System;
 using UnityEngine;
 using System.Collections;
+using Cinemachine;
+using Unity.VisualScripting;
 #if ENABLE_INPUT_SYSTEM && STARTER_ASSETS_PACKAGES_CHECKED
 using UnityEngine.InputSystem;
 using System.Collections.Generic;
+using Unity.Mathematics;
 
 #endif
 
@@ -63,8 +66,9 @@ namespace StarterAssets
 		[Header("Cinemachine")]
 		[Tooltip("The follow target set in the Cinemachine Virtual Camera that the camera will follow")]
 		public GameObject CinemachineCameraTarget;
+		public CinemachineVirtualCamera VirtualCamera;
 		[Tooltip("How far in degrees can you move the camera up")]
-		public float TopClamp = 90.0f;
+		public float TopClamp = 130.0f;
 		[Tooltip("How far in degrees can you move the camera down")]
 		public float BottomClamp = -90.0f;
 
@@ -90,7 +94,8 @@ namespace StarterAssets
 		//variables for HeadBob
 		private float _defaultYpos = 0;
 		private float _timer;
-	
+
+		private Vector2 movementBuffer;
 
 		// cinemachine
 		private float _cinemachineTargetPitch;
@@ -150,6 +155,7 @@ namespace StarterAssets
 
 		private void Start()
 		{
+			movementBuffer = Vector2.zero;
 			_controller = GetComponent<CharacterController>();
 			_input = GetComponent<StarterAssetsInputs>();
 #if ENABLE_INPUT_SYSTEM && STARTER_ASSETS_PACKAGES_CHECKED
@@ -187,21 +193,18 @@ namespace StarterAssets
 			footstepTimer -= Time.deltaTime;
 			if (footstepTimer < 0)
 			{
-				if (Physics.Raycast(this.transform.position, Vector3.down, out RaycastHit hit, 6))
+				if (Physics.Raycast(transform.position, Vector3.down, out RaycastHit hit, 6))
 				{
-					Debug.Log(hit.collider.tag);
 					switch (hit.collider.tag)
 					{
 						case "Footsteps/Stone":
-							setStoneSwitch.SetValue(this.gameObject);
-							footstepPlayEvent.Post(gameObject);
+							setStoneSwitch.SetValue(PlayerSoundController.Instance.gameObject);
+							footstepPlayEvent.Post(PlayerSoundController.Instance.gameObject);
 							Debug.Log("Footstep sound play");
 							break;
 						case "Footsteps/Cloth":
-							setClothSwitch.SetValue(this.gameObject);
-							footstepPlayEvent.Post(gameObject);
-							break;
-						default:
+							setClothSwitch.SetValue(PlayerSoundController.Instance.gameObject);
+							footstepPlayEvent.Post(PlayerSoundController.Instance.gameObject);
 							break;
 					}
 
@@ -255,30 +258,11 @@ namespace StarterAssets
 			if (GameManager.Instance.isPaused || GameManager.Instance.isInteractingWithMirror) return;
 			CameraRotation();
 		}
-
-		private void HandleIdleBreath(float idleSpeed, float idleAmount)
-		{
-			_timer += Time.deltaTime * idleSpeed;
-			CinemachineCameraTarget.transform.localPosition = new Vector3(
-				CinemachineCameraTarget.transform.localPosition.x,
-				_defaultYpos + Mathf.Sin(_timer) * idleAmount, CinemachineCameraTarget.transform.localPosition.z);
-		}
+        
 		// Logic for handling headBob, if player is on ground then begin HeadBob, check the state (walk/sprint/crouch - if we want to implement it)
 		private void HandleHeadBob()
 		{
 			if (!_controller.isGrounded) return;
-
-			// On idle
-			if (_input.move == Vector2.zero)
-			{
-				if (GameManager.Instance.health < 50)
-				{
-					HandleIdleBreath(idleHeavyBobSpeed, idleHeavyBobAmount);
-					RotationSpeed = 1f;
-				}
-				else RotationSpeed = 6f;
-				
-			}
 
 			if (Mathf.Abs(_moveDirection.x) > 0.1f || Mathf.Abs(_moveDirection.z) > 0.1f)
 			{
@@ -298,6 +282,17 @@ namespace StarterAssets
 		}
 		private void CameraRotation()
 		{
+			if (GameManager.Instance.health < 70)
+			{
+				RotationSpeed = math.remap(70, 0, 6, 2, GameManager.Instance.health);;
+				VirtualCamera.GetCinemachineComponent<CinemachineSameAsFollowTarget>().m_Damping = math.remap(70, 0, 0, 3, GameManager.Instance.health);
+			}
+			else
+			{
+				RotationSpeed = 6f;
+				VirtualCamera.GetCinemachineComponent<CinemachineSameAsFollowTarget>().m_Damping = 0f;
+			}
+			
 			//Don't multiply mouse input by Time.deltaTime
 			float deltaTimeMultiplier = _isCurrentDeviceMouse ? 1.0f : Time.deltaTime;
 
@@ -307,14 +302,12 @@ namespace StarterAssets
 			// clamp our pitch rotation
 			_cinemachineTargetPitch = ClampAngle(_cinemachineTargetPitch, BottomClamp, TopClamp);
 
-
 			// Update Cinemachine camera target pitch
 			CinemachineCameraTarget.transform.localRotation = Quaternion.Euler(_cinemachineTargetPitch, 0.0f, 0.0f);
 
 			// rotate the player left and right
 			transform.Rotate(Vector3.up * _rotationVelocity);
 		}
-
 
 		private void Move()
 		{
