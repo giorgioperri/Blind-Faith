@@ -32,30 +32,34 @@ public class PlayerSoundController : MonoBehaviour
 
     public void InitVoiceLineSequence(VoiceLineSequenceSO voiceLineSequence)
     {
-        voiceLineSequence.setSwitchEvent.Post(gameObject);
+        voiceLineSequence.sequenceSwitch.SetValue(gameObject);
         StopAllCoroutines();
         _currentSequenceIndex = 0;
         _currentVoiceLineSequence = voiceLineSequence;
 
         if(GameManager.Instance.areSubtitlesActivated) SubtitlesUI.Instance.ActivateSubtitles();
         SubtitlesUI.Instance.SetSubtitle(voiceLineSequence.sequenceLines[_currentSequenceIndex].subtitle);
-        voiceLineSequence.sequenceLines[_currentSequenceIndex].wwiseEvent.Post(gameObject, (uint)AkCallbackType.AK_EndOfEvent, WwiseEventEnd);
+        voiceLineSequence.sequenceLines[_currentSequenceIndex].wwiseEvent.Post(gameObject, (uint)AkCallbackType.AK_Marker, WwiseEventEnd);
     }
     
     public void WwiseEventEnd(object in_cookie, AkCallbackType in_type, object in_info)
     {
-        if (in_type == AkCallbackType.AK_EndOfEvent) {
-            SubtitlesUI.Instance.DeactivateSubtitles();
-            _currentSequenceIndex++;
+        if (in_type == AkCallbackType.AK_Marker) {
+            AkMarkerCallbackInfo info = (AkMarkerCallbackInfo)in_info;
+            if (info.strLabel == "end")
+            {
+                SubtitlesUI.Instance.DeactivateSubtitles();
+                _currentSequenceIndex++;
 
-            if (_currentSequenceIndex + 1 <= _currentVoiceLineSequence.sequenceLines.Count)
-            {
-                StartCoroutine(WaitForOffset());
-            }
-            else
-            {
-                _currentVoiceLineSequence = null;
-            }
+                if (_currentSequenceIndex + 1 <= _currentVoiceLineSequence.sequenceLines.Count)
+                {
+                    StartCoroutine(WaitForOffset());
+                }
+                else
+                {
+                    _currentVoiceLineSequence = null;
+                }
+            }  
         }
     }
 
@@ -70,6 +74,6 @@ public class PlayerSoundController : MonoBehaviour
     {
         if(GameManager.Instance.areSubtitlesActivated) SubtitlesUI.Instance.ActivateSubtitles();
         SubtitlesUI.Instance.SetSubtitle(voiceLine.subtitle);
-        voiceLine.wwiseEvent.Post(gameObject, (uint)AkCallbackType.AK_EndOfEvent, WwiseEventEnd);
+        voiceLine.wwiseEvent.Post(gameObject, (uint)AkCallbackType.AK_Marker, WwiseEventEnd);
     }
 }

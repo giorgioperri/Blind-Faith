@@ -62,8 +62,16 @@ public class HandAnimatorController : MonoBehaviour
     public void HandleLanternInput(bool isUp)
     {
         _animController.SetBool("hasRaisedLantern", isUp);
-        if(PlayerSoundController.Instance.EquipLantern != null) 
-            PlayerSoundController.Instance.EquipLantern.Post(PlayerSoundController.Instance.gameObject);
+        if (isUp)
+        {
+            if(PlayerSoundController.Instance.EquipLantern != null) 
+                PlayerSoundController.Instance.EquipLantern.Post(PlayerSoundController.Instance.gameObject);
+        }
+        else
+        {
+            if(PlayerSoundController.Instance.UnequipLantern != null) 
+                PlayerSoundController.Instance.UnequipLantern.Post(PlayerSoundController.Instance.gameObject);
+        }
         _inputs.hasRaisedLantern = false;
         hasRaisedLantern = true;
         LanternManager.Instance.lanternIsRaised = true;
