@@ -1,3 +1,11 @@
+State Group	ID	Name			Wwise Object Path	Notes
+	2677818465	AlterAmb			\Default Work Unit\Music\AlterAmb	
+
+State	ID	Name	State Group			Notes
+	748895195	None	AlterAmb			
+	1227244058	NotPlaying	AlterAmb			
+	1852808225	Playing	AlterAmb			
+
 Audio Bus	ID	Name			Wwise Object Path	Notes
 	532133889	Rooms_docking			\Default Work Unit\Master Audio Bus\Rooms_docking	
 	1359360203	Rooms			\Default Work Unit\Master Audio Bus\Rooms	

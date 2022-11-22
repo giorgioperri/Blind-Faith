@@ -13,6 +13,7 @@ namespace AK
 {
     namespace EVENTS
     {
+        static const AkUniqueID CHURCH_ALTER_AMBIENCE = 1568742100U;
         static const AkUniqueID CHURCH_AMBISONIC = 1132321458U;
         static const AkUniqueID DEBUG_AMB = 3209221603U;
         static const AkUniqueID DEBUG_HAMMER = 2618683459U;
@@ -26,6 +27,22 @@ namespace AK
         static const AkUniqueID VA_PAUSE = 938429017U;
         static const AkUniqueID VA_RESUME = 662947992U;
     } // namespace EVENTS
+
+    namespace STATES
+    {
+        namespace ALTERAMB
+        {
+            static const AkUniqueID GROUP = 2677818465U;
+
+            namespace STATE
+            {
+                static const AkUniqueID NONE = 748895195U;
+                static const AkUniqueID NOTPLAYING = 1227244058U;
+                static const AkUniqueID PLAYING = 1852808225U;
+            } // namespace STATE
+        } // namespace ALTERAMB
+
+    } // namespace STATES
 
     namespace SWITCHES
     {

@@ -194,6 +194,17 @@
 						</Action>
 					</ChildrenList>
 				</Event>
+				<Event Name="Church_Alter_Ambience" ID="{B570E8C6-1013-4A11-979A-7318726EE794}">
+					<ChildrenList>
+						<Action Name="" ID="{AE8D83BF-972C-4A4C-837C-9B7F98332A25}" ShortID="861422640">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Blind Faith Altar Ambient v2" ID="{D2A25114-1695-416F-8059-C484AADAFAED}" WorkUnitID="{10A75CA5-3F55-455C-A103-004D7C43FEF2}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

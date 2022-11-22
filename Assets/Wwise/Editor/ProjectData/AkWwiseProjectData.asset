@@ -24,7 +24,7 @@ MonoBehaviour:
     ParentPath: Virtual Acoustics\Default Work Unit
     guid: 8157776944d252459e5c3d8483760091
     GuidInternal: 
-    m_lastTime: -8585337696155371816
+    m_lastTime: -8585342942743677962
     List: []
   AuxBusWwu:
   - PhysicalPath: Master-Mixer Hierarchy\Default Work Unit.wwu
@@ -38,7 +38,7 @@ MonoBehaviour:
     ParentPath: Master-Mixer Hierarchy\Default Work Unit
     guid: c6b41ec9dc56414596c429e948904d66
     GuidInternal: 
-    m_lastTime: -8585326664213163435
+    m_lastTime: -8585329186553938740
     List:
     - name: AmbisonicBus
       guid: 6a7007533cad39499a4a17e464c2b589
@@ -240,7 +240,7 @@ MonoBehaviour:
     ParentPath: SoundBanks\Default Work Unit
     guid: 91f3f2c2e89f4143bd59d41dc8510ab9
     GuidInternal: 
-    m_lastTime: -8585326664175758068
+    m_lastTime: -8585328956141415474
     List:
     - name: Mains
       guid: 22a5fa274c62a84d93c78d5801f30f0d
@@ -268,7 +268,7 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit
     guid: 5eb490fb28343a4fbde7e5ca0bff7b1d
     GuidInternal: 
-    m_lastTime: -8585326664259162821
+    m_lastTime: -8585328956141744594
     List:
     - name: Ambience
       guid: d61574c5aefb6e4bb8be3d2e8f5c14a0
@@ -287,6 +287,23 @@ MonoBehaviour:
         ObjectType: 4
         guid: d61574c5aefb6e4bb8be3d2e8f5c14a0
       Path: Events\Default Work Unit\SFX\Ambience
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Church_Alter_Ambience
+      guid: c6e870b51310114a979a7318726ee794
+      id: 1568742100
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 5eb490fb28343a4fbde7e5ca0bff7b1d
+      - ElementName: Church_Alter_Ambience
+        ObjectType: 3
+        guid: c6e870b51310114a979a7318726ee794
+      Path: Events\Default Work Unit\Church_Alter_Ambience
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
@@ -636,7 +653,7 @@ MonoBehaviour:
       Path: Events\Default Work Unit\VA\VA_Clerk\VA_Clerk_Play
       maxAttenuation: 10
       maxDuration: 9.640862
-      minDuration: 1.125419
+      minDuration: 0
     - name: VA_Pause
       guid: c9bf07d16212704a96bfebfab9f0e214
       id: 938429017
@@ -689,7 +706,7 @@ MonoBehaviour:
     ParentPath: Game Parameters\Default Work Unit
     guid: 7f57676cb1f5124c98483947934c3f41
     GuidInternal: 
-    m_lastTime: -8585337696157522457
+    m_lastTime: -8585342942743867456
     List: []
   StateWwu:
   - PhysicalPath: States\Default Work Unit.wwu
@@ -703,8 +720,104 @@ MonoBehaviour:
     ParentPath: States\Default Work Unit
     guid: 15da347adefaa443abeba8e206daca95
     GuidInternal: 
-    m_lastTime: -8585337696155391825
-    List: []
+    m_lastTime: -8585328956141305521
+    List:
+    - name: AlterAmb
+      guid: 7f446b1539ffb74881108b1e3d68a471
+      id: 2677818465
+      PathAndIcons:
+      - ElementName: States
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 15da347adefaa443abeba8e206daca95
+      - ElementName: Music
+        ObjectType: 4
+        guid: d42d1ab747e41b4fabe2c427341d1663
+      - ElementName: AlterAmb
+        ObjectType: 9
+        guid: 7f446b1539ffb74881108b1e3d68a471
+      Path: States\Default Work Unit\Music\AlterAmb
+      values:
+      - name: None
+        guid: a9c311065dddad48b4567ca4676c566f
+        id: 748895195
+        PathAndIcons:
+        - ElementName: States
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: 15da347adefaa443abeba8e206daca95
+        - ElementName: Music
+          ObjectType: 4
+          guid: d42d1ab747e41b4fabe2c427341d1663
+        - ElementName: AlterAmb
+          ObjectType: 9
+          guid: 7f446b1539ffb74881108b1e3d68a471
+        - ElementName: None
+          ObjectType: 8
+          guid: a9c311065dddad48b4567ca4676c566f
+      - name: NotPlaying
+        guid: c020fa68856d864f9a8095c198f962f8
+        id: 1227244058
+        PathAndIcons:
+        - ElementName: States
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: 15da347adefaa443abeba8e206daca95
+        - ElementName: Music
+          ObjectType: 4
+          guid: d42d1ab747e41b4fabe2c427341d1663
+        - ElementName: AlterAmb
+          ObjectType: 9
+          guid: 7f446b1539ffb74881108b1e3d68a471
+        - ElementName: NotPlaying
+          ObjectType: 8
+          guid: c020fa68856d864f9a8095c198f962f8
+      - name: Playing
+        guid: 5bfd80f9ee64db4fa2977b478a51a3b9
+        id: 1852808225
+        PathAndIcons:
+        - ElementName: States
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: 15da347adefaa443abeba8e206daca95
+        - ElementName: Music
+          ObjectType: 4
+          guid: d42d1ab747e41b4fabe2c427341d1663
+        - ElementName: AlterAmb
+          ObjectType: 9
+          guid: 7f446b1539ffb74881108b1e3d68a471
+        - ElementName: Playing
+          ObjectType: 8
+          guid: 5bfd80f9ee64db4fa2977b478a51a3b9
+      ValueGuids: []
+      ValueIcons: []
+      valuesInternal: []
+    - name: Music
+      guid: d42d1ab747e41b4fabe2c427341d1663
+      id: 3991942870
+      PathAndIcons:
+      - ElementName: States
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 15da347adefaa443abeba8e206daca95
+      - ElementName: Music
+        ObjectType: 4
+        guid: d42d1ab747e41b4fabe2c427341d1663
+      Path: States\Default Work Unit\Music
+      values: []
+      ValueGuids: []
+      ValueIcons: []
+      valuesInternal: []
   SwitchWwu:
   - PhysicalPath: Switches\Default Work Unit.wwu
     PathAndIcons:
@@ -717,7 +830,7 @@ MonoBehaviour:
     ParentPath: Switches\Default Work Unit
     guid: 129020783626944d87631f9c3a93f8e0
     GuidInternal: 
-    m_lastTime: -8585326664175558010
+    m_lastTime: -8585329186447970294
     List:
     - name: Locomotion
       guid: ec8b7419cfaab54dbd4aee612fa66e6b
@@ -885,7 +998,7 @@ MonoBehaviour:
     ParentPath: Triggers\Default Work Unit
     guid: 50b0bf7a09fe60448cd0a08f93cae076
     GuidInternal: 
-    m_lastTime: -8585337696155381822
+    m_lastTime: -8585342884435909085
     List:
     - name: New_Trigger
       guid: b52432610d4a47429784de539560cf52
@@ -918,8 +1031,8 @@ MonoBehaviour:
         ObjectType: 4
         guid: 14a961bd002ffe41ba1f908602494c89
       Path: Triggers\Default Work Unit\VA_Test
-  ExpandedFileSystemItemIds: 
-  ExpandedWaapiItemIds: 
+  ExpandedFileSystemItemIds: 010000000200000003000000040000000500000006000000070000000a0000000b0000000c0000000d000000120000001300000015000000160000001b0000001c0000001d0000001e0000001f000000220000002300000024000000
+  ExpandedWaapiItemIds: 010000000500000006000000070000000c0000000d0000000e0000000f000000100000001a0000001c0000001d000000240000002b000000
   AutoSyncSelection: 0
   autoPopulateEnabled: 1
   currentDataSource: 0
