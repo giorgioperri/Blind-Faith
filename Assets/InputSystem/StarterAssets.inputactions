@@ -271,7 +271,7 @@
                 {
                     "name": "",
                     "id": "68d51b63-02dd-48a5-b2d9-e6bc788490dd",
-                    "path": "<Keyboard>/f",
+                    "path": "<Keyboard>/e",
                     "interactions": "",
                     "processors": "",
                     "groups": "KeyboardMouse",
@@ -294,17 +294,6 @@
                     "name": "",
                     "id": "4a857df9-e853-4ff8-807b-6776a862c07c",
                     "path": "<Keyboard>/q",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "",
-                    "action": "Interact",
-                    "isComposite": false,
-                    "isPartOfComposite": false
-                },
-                {
-                    "name": "",
-                    "id": "9ddb2a2e-cc3c-434a-8995-cbb8cc3a6491",
-                    "path": "<Keyboard>/f",
                     "interactions": "",
                     "processors": "",
                     "groups": "",

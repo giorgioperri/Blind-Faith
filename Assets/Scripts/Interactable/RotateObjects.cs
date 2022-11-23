@@ -26,7 +26,7 @@ public class RotateObjects : Interactable
     
     public override void OnInteraction()
     {
-        if (Keyboard.current.fKey.isPressed || !isEnlighted) return;
+        if (!isEnlighted) return;
         
         if (Keyboard.current.eKey.wasPressedThisFrame && !_isTurning && GameManager.Instance.areMirrorsStep)
         {
@@ -37,7 +37,7 @@ public class RotateObjects : Interactable
     }
     public override void OnAltInteraction()
     {
-        if (Keyboard.current.fKey.isPressed || !isEnlighted) return;
+        if (!isEnlighted) return;
         
         if (Keyboard.current.qKey.wasPressedThisFrame && !_isTurning && GameManager.Instance.areMirrorsStep)
         {

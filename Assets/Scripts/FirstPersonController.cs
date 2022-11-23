@@ -241,7 +241,7 @@ namespace StarterAssets
 
 	        if(_input.isInteracting)
             {
-	            if (Keyboard.current.eKey.isPressed || Keyboard.current.fKey.isPressed)
+	            if (Keyboard.current.eKey.isPressed)
 	            {
 					currentInteractable.OnInteraction();
 	            } else if (Keyboard.current.qKey.isPressed)
