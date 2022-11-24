@@ -3,58 +3,60 @@ using StarterAssets;
 using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
+using Unity.Mathematics;
 using UnityEngine;
+using UnityEngine.Experimental.GlobalIllumination;
 using UnityEngine.InputSystem;
 
 public class RotateObjects : Interactable
 {
-    [SerializeField] private float _angleOfRotation = 30;
-    
-    private Vector3 _desiredAngle = Vector3.zero;
-    private float _turnTime = 1f;
-    private float _rate = 60;
-
     private bool _isTurning;
     private bool _grabbedMirror;
 
     public bool isEnlighted;
+    [SerializeField] private float _lightStored;
+    [SerializeField] private bool _canDeactivateGrab = true;
+    [SerializeField] private Light _light;
 
     public void OnBeamReceived()
     {
         isEnlighted = true;
     }
-    
-    public override void OnInteraction()
-    {
-        if (!isEnlighted) return;
-        
-        if (Keyboard.current.eKey.wasPressedThisFrame && !_isTurning && GameManager.Instance.areMirrorsStep)
-        {
-            _isTurning = true;
-            _desiredAngle = transform.rotation.eulerAngles + new Vector3(0f, _angleOfRotation, 0f);
-            StartCoroutine(TurnTo());
-        }
-    }
-    public override void OnAltInteraction()
-    {
-        if (!isEnlighted) return;
-        
-        if (Keyboard.current.qKey.wasPressedThisFrame && !_isTurning && GameManager.Instance.areMirrorsStep)
-        {
-            _isTurning = true;
-            _desiredAngle = transform.rotation.eulerAngles - new Vector3(0f, _angleOfRotation, 0f);
-            StartCoroutine(TurnTo());
-        }
-    }
 
     private void Update()
     {
-        if (GameManager.Instance.areMirrorsStep || !isEnlighted)
+        if (_lightStored <= 0 && _canDeactivateGrab)
+        {
+            GameManager.Instance.isInteractingWithMirror = false;
+            _canDeactivateGrab = false;
+        }
+        
+        if ((GameManager.Instance.areMirrorsStep || !isEnlighted) && _lightStored <= 0) 
         {
             _grabbedMirror = false;
             return;
         }
-        
+
+        _canDeactivateGrab = true;
+
+        if (isEnlighted)
+        {
+            _lightStored += Time.deltaTime * 30;
+        }
+        else
+        {
+            _lightStored -= Time.deltaTime * 20;
+        }
+
+        _lightStored = _lightStored switch
+        {
+            >= 100 => 100,
+            <= 0 => 0,
+            _ => _lightStored
+        };
+
+        _light.intensity = math.remap(0, 100, 0, 15, _lightStored);
+
         if ((Mouse.current.leftButton.isPressed && FirstPersonController.Instance.currentInteractable == this) || _grabbedMirror)
         {
             _grabbedMirror = true;
@@ -73,16 +75,5 @@ public class RotateObjects : Interactable
         }
 
         isEnlighted = false;
-    }
-
-    IEnumerator TurnTo () 
-    {
-        Vector3 original_angle = transform.rotation.eulerAngles;
-        for (float i = 0f; i < 1f + _turnTime / _rate; i += _turnTime / _rate) 
-        {
-            transform.rotation = Quaternion.Euler(Vector3.Lerp(original_angle, _desiredAngle, i));
-            yield return new WaitForSeconds(_turnTime/_rate);
-        }
-        _isTurning = false;
     }
 }
