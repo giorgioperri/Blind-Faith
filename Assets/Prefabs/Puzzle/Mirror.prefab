@@ -65,7 +65,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: be405fb456e4a4bd3bdba6ff22ad2719, type: 2}
+  - {fileID: 2100000, guid: b63e6abb2cc4b4cea87ddadf78f359be, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -99,8 +99,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8ccc3c697a53df64cad35c3318672733, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _angleOfRotation: 30
   isEnlighted: 0
+  _lightStored: 0
+  _canDeactivateGrab: 1
   _light: {fileID: 3613547122338464530}
 --- !u!65 &8420020229163632518
 BoxCollider:

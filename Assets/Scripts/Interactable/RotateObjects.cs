@@ -1,11 +1,7 @@
 using System;
 using StarterAssets;
-using System.Collections;
-using System.Collections.Generic;
-using System.Linq;
 using Unity.Mathematics;
 using UnityEngine;
-using UnityEngine.Experimental.GlobalIllumination;
 using UnityEngine.InputSystem;
 
 public class RotateObjects : Interactable
@@ -56,6 +52,7 @@ public class RotateObjects : Interactable
         };
 
         _light.intensity = math.remap(0, 100, 0, 15, _lightStored);
+        GetComponent<MeshRenderer>().material.SetFloat("_GlowIntensity", math.remap(0, 100, 0, 4, _lightStored));
 
         if ((Mouse.current.leftButton.isPressed && FirstPersonController.Instance.currentInteractable == this) || _grabbedMirror)
         {
