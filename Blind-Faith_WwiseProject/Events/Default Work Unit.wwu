@@ -3,17 +3,6 @@
 	<Events>
 		<WorkUnit Name="Default Work Unit" ID="{FB90B45E-3428-4F3A-BDE7-E5CA0BFF7B1D}" PersistMode="Standalone">
 			<ChildrenList>
-				<Event Name="FireLoop" ID="{5DFBBDFF-3C21-4D76-9869-7EA3CEE19CF0}">
-					<ChildrenList>
-						<Action Name="" ID="{84F257EB-E085-459B-9ABA-D11C9BED439C}" ShortID="220642073">
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="DEBUG_FIRE" ID="{E4ED6E19-8E36-4DA8-ACED-AD2E1806E502}" WorkUnitID="{10A75CA5-3F55-455C-A103-004D7C43FEF2}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
-					</ChildrenList>
-				</Event>
 				<Folder Name="VA" ID="{F81C2C96-4E52-4DFA-9E07-284D538EA186}" ShortID="459486547">
 					<ChildrenList>
 						<Folder Name="VA_Clerk" ID="{E6A3E52D-343A-4497-AE1B-101991B7F261}" ShortID="646909935">
@@ -139,6 +128,77 @@
 										</Event>
 									</ChildrenList>
 								</Folder>
+								<Event Name="LowHealth" ID="{D964366F-A312-403B-A443-A6FD061D426A}">
+									<ChildrenList>
+										<Action Name="" ID="{CB04036C-B197-4469-84E4-2A9667D305E4}" ShortID="277219048">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="HeartbeatSeq" ID="{A1010F9D-B3B9-45AA-A844-8E209E21CCD5}" WorkUnitID="{10A75CA5-3F55-455C-A103-004D7C43FEF2}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="LoosingHealth" ID="{AE63352F-34E5-4994-ADA3-05A795496886}">
+									<ChildrenList>
+										<Action Name="" ID="{01423984-2BF2-4A0C-B5CA-E08E7F8A1D64}" ShortID="282158713">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="Bluezone_BC0238_rumble_004" ID="{A984B57B-F446-43FE-90A9-1F6378C7BE56}" WorkUnitID="{10A75CA5-3F55-455C-A103-004D7C43FEF2}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+										<Action Name="" ID="{78CC39E3-C565-4E7C-B83F-9C2B30540B7D}" ShortID="933266463">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="LoosingSanityLoop_02" ID="{B1A92604-DFEF-4A01-B9E1-F75380E063EC}" WorkUnitID="{10A75CA5-3F55-455C-A103-004D7C43FEF2}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+										<Action Name="" ID="{9C9A3BA1-8117-48CD-9F47-DE458887B867}" ShortID="132080764">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="MetalScrape" ID="{E01EE4E6-14B6-4724-94D3-806BE455B8FE}" WorkUnitID="{10A75CA5-3F55-455C-A103-004D7C43FEF2}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="NotLoosingHealth" ID="{DF719655-18E0-4757-9D39-F21D0D6B7D39}">
+									<ChildrenList>
+										<Action Name="" ID="{D9EDBA9C-0BE6-4C5D-BA00-0993C6DA59DD}" ShortID="633941321">
+											<PropertyList>
+												<Property Name="ActionType" Type="int16" Value="2"/>
+												<Property Name="FadeTime" Type="Real64" Value="1"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="LoosingSanityLoop_02" ID="{B1A92604-DFEF-4A01-B9E1-F75380E063EC}" WorkUnitID="{10A75CA5-3F55-455C-A103-004D7C43FEF2}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+										<Action Name="" ID="{4ED4E871-961A-47CA-A820-07B9C506A026}" ShortID="539027398">
+											<PropertyList>
+												<Property Name="ActionType" Type="int16" Value="2"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="MetalScrape" ID="{E01EE4E6-14B6-4724-94D3-806BE455B8FE}" WorkUnitID="{10A75CA5-3F55-455C-A103-004D7C43FEF2}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+										<Action Name="" ID="{95A152ED-9FB1-43E1-9B70-F3D7DFE2030C}" ShortID="615813446">
+											<PropertyList>
+												<Property Name="ActionType" Type="int16" Value="2"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="Bluezone_BC0238_rumble_004" ID="{A984B57B-F446-43FE-90A9-1F6378C7BE56}" WorkUnitID="{10A75CA5-3F55-455C-A103-004D7C43FEF2}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
 							</ChildrenList>
 						</Folder>
 						<Folder Name="Ambience" ID="{C57415D6-FBAE-4B6E-B8BE-3D2E8F5C14A0}" ShortID="252187381">
@@ -154,57 +214,47 @@
 										</Action>
 									</ChildrenList>
 								</Event>
+								<Folder Name="3D" ID="{B12E31D0-76E1-4CA1-90EC-BA42BDD0174B}" ShortID="623016918">
+									<ChildrenList>
+										<Event Name="Amb_MirrorOn" ID="{D1F076A1-D0B5-4D00-9773-DED715C853DE}">
+											<ChildrenList>
+												<Action Name="" ID="{3F554B92-3529-4B6A-A3B2-27238063A00C}" ShortID="467998218">
+													<ReferenceList>
+														<Reference Name="Target">
+															<ObjectRef Name="MirrorOn" ID="{459B954B-9671-41A0-AB27-985B17092935}" WorkUnitID="{10A75CA5-3F55-455C-A103-004D7C43FEF2}"/>
+														</Reference>
+													</ReferenceList>
+												</Action>
+											</ChildrenList>
+										</Event>
+										<Event Name="Amb_LightBeam" ID="{F077A34F-FF73-466F-9E4A-5759A67C72F1}">
+											<ChildrenList>
+												<Action Name="" ID="{3812A9FA-CBD9-45ED-8FF4-5E7F526C536A}" ShortID="278163252">
+													<ReferenceList>
+														<Reference Name="Target">
+															<ObjectRef Name="LightbeamAmbience" ID="{E4A973C6-0075-4D2A-BCFE-349B69E1ABB7}" WorkUnitID="{10A75CA5-3F55-455C-A103-004D7C43FEF2}"/>
+														</Reference>
+													</ReferenceList>
+												</Action>
+											</ChildrenList>
+										</Event>
+									</ChildrenList>
+								</Folder>
+								<Event Name="Church_Alter_Ambience" ID="{B570E8C6-1013-4A11-979A-7318726EE794}">
+									<ChildrenList>
+										<Action Name="" ID="{AE8D83BF-972C-4A4C-837C-9B7F98332A25}" ShortID="861422640">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="Blind Faith Altar Ambient v2" ID="{D2A25114-1695-416F-8059-C484AADAFAED}" WorkUnitID="{10A75CA5-3F55-455C-A103-004D7C43FEF2}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
 							</ChildrenList>
 						</Folder>
 					</ChildrenList>
 				</Folder>
-				<Event Name="DEBUG_HAMMER" ID="{A8A2CB6D-9F32-4CE7-AE5B-27632CBFF45E}">
-					<ChildrenList>
-						<Action Name="" ID="{6277583C-5E41-4C5D-A471-5FA0B295DDAA}" ShortID="998385112">
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="DEBUG_TEST" ID="{63DF9001-142B-47A5-BDA2-318F15A9F3CC}" WorkUnitID="{10A75CA5-3F55-455C-A103-004D7C43FEF2}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
-					</ChildrenList>
-				</Event>
-				<Event Name="DEBUG_AMB" ID="{26CEBDC6-C9ED-422E-AEBD-4655B4D51F6F}">
-					<ChildrenList>
-						<Action Name="" ID="{9FEEBBAF-5491-4EC5-A06A-45B367FD1B88}" ShortID="1065694253">
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="Church_General_PH" ID="{1F3A3311-2D4F-4001-96B2-F8C52EB7017F}" WorkUnitID="{10A75CA5-3F55-455C-A103-004D7C43FEF2}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
-						<Action Name="" ID="{C9FC271C-7443-4DF4-9879-44E57CB416DF}" ShortID="105226570">
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="Church_General_PH_01" ID="{67482DBA-0E8F-4B18-997E-C408A06B4B4C}" WorkUnitID="{10A75CA5-3F55-455C-A103-004D7C43FEF2}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
-						<Action Name="" ID="{3B5536DA-D5A3-4728-99BD-92BD66DB4EAB}" ShortID="668663143">
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="Church_General_PH_02" ID="{44B45ACB-3DCC-4295-AB35-25BFA4FF8453}" WorkUnitID="{10A75CA5-3F55-455C-A103-004D7C43FEF2}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
-					</ChildrenList>
-				</Event>
-				<Event Name="Church_Alter_Ambience" ID="{B570E8C6-1013-4A11-979A-7318726EE794}">
-					<ChildrenList>
-						<Action Name="" ID="{AE8D83BF-972C-4A4C-837C-9B7F98332A25}" ShortID="861422640">
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="Blind Faith Altar Ambient v2" ID="{D2A25114-1695-416F-8059-C484AADAFAED}" WorkUnitID="{10A75CA5-3F55-455C-A103-004D7C43FEF2}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
-					</ChildrenList>
-				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

@@ -5,9 +5,13 @@
 			<ChildrenList>
 				<SoundBank Name="Mains" ID="{27FAA522-624C-4DA8-93C7-8D5801F30F0D}">
 					<ObjectInclusionList>
+						<ObjectRef Name="LowHealth" ID="{D964366F-A312-403B-A443-A6FD061D426A}" WorkUnitID="{FB90B45E-3428-4F3A-BDE7-E5CA0BFF7B1D}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="VA" ID="{405E6D03-D34E-40A5-8665-1A1025CDCBEB}" WorkUnitID="{405E6D03-D34E-40A5-8665-1A1025CDCBEB}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Ambience" ID="{60AD6A78-7716-438B-B950-6ED15CC7DF49}" WorkUnitID="{10A75CA5-3F55-455C-A103-004D7C43FEF2}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Default Work Unit" ID="{10A75CA5-3F55-455C-A103-004D7C43FEF2}" WorkUnitID="{10A75CA5-3F55-455C-A103-004D7C43FEF2}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="NotLoosingHealth" ID="{DF719655-18E0-4757-9D39-F21D0D6B7D39}" WorkUnitID="{FB90B45E-3428-4F3A-BDE7-E5CA0BFF7B1D}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="LoosingHealth" ID="{AE63352F-34E5-4994-ADA3-05A795496886}" WorkUnitID="{FB90B45E-3428-4F3A-BDE7-E5CA0BFF7B1D}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Player" ID="{731D5E07-1F0B-4AAE-A0D8-195D31F04659}" WorkUnitID="{10A75CA5-3F55-455C-A103-004D7C43FEF2}" Origin="Manual" Filter="7"/>
 					</ObjectInclusionList>
 					<ObjectExclusionList/>
 					<GameSyncExclusionList/>

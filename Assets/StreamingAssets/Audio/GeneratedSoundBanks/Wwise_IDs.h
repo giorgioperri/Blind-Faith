@@ -13,16 +13,18 @@ namespace AK
 {
     namespace EVENTS
     {
+        static const AkUniqueID AMB_LIGHTBEAM = 1884576663U;
+        static const AkUniqueID AMB_MIRRORON = 4204701460U;
         static const AkUniqueID CHURCH_ALTER_AMBIENCE = 1568742100U;
         static const AkUniqueID CHURCH_AMBISONIC = 1132321458U;
-        static const AkUniqueID DEBUG_AMB = 3209221603U;
-        static const AkUniqueID DEBUG_HAMMER = 2618683459U;
-        static const AkUniqueID FIRELOOP = 181700819U;
         static const AkUniqueID FOOTSTEP = 1866025847U;
         static const AkUniqueID LANTEREN_CHARGING = 3651057560U;
         static const AkUniqueID LANTEREN_DEPLOY_LOOP = 759350405U;
         static const AkUniqueID LANTEREN_DISCHARGE = 1818726255U;
         static const AkUniqueID LANTEREN_UNDEPLOY = 740769089U;
+        static const AkUniqueID LOOSINGHEALTH = 938481918U;
+        static const AkUniqueID LOWHEALTH = 1017222595U;
+        static const AkUniqueID NOTLOOSINGHEALTH = 340196141U;
         static const AkUniqueID VA_CLERK_PLAY = 1398273777U;
         static const AkUniqueID VA_PAUSE = 938429017U;
         static const AkUniqueID VA_RESUME = 662947992U;
@@ -41,6 +43,18 @@ namespace AK
                 static const AkUniqueID PLAYING = 1852808225U;
             } // namespace STATE
         } // namespace ALTERAMB
+
+        namespace HEALTH_STATE
+        {
+            static const AkUniqueID GROUP = 1264560589U;
+
+            namespace STATE
+            {
+                static const AkUniqueID LOOSINGSANITY = 2627361338U;
+                static const AkUniqueID NONE = 748895195U;
+                static const AkUniqueID NOTLOOSINGSANITY = 3358664337U;
+            } // namespace STATE
+        } // namespace HEALTH_STATE
 
     } // namespace STATES
 
@@ -70,6 +84,11 @@ namespace AK
 
     } // namespace SWITCHES
 
+    namespace GAME_PARAMETERS
+    {
+        static const AkUniqueID PLAYERHEALTH = 151362964U;
+    } // namespace GAME_PARAMETERS
+
     namespace TRIGGERS
     {
         static const AkUniqueID NEW_TRIGGER = 4163741908U;
@@ -83,10 +102,12 @@ namespace AK
 
     namespace BUSSES
     {
+        static const AkUniqueID _2D = 527871411U;
         static const AkUniqueID AMBISONICBUS = 4258699522U;
         static const AkUniqueID MASTER_AUDIO_BUS = 3803692087U;
         static const AkUniqueID ROOMS = 1359360203U;
         static const AkUniqueID ROOMS_DOCKING = 532133889U;
+        static const AkUniqueID SFX = 393239870U;
     } // namespace BUSSES
 
     namespace AUX_BUSSES

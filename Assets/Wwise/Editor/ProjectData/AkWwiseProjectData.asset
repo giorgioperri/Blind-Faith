@@ -38,8 +38,28 @@ MonoBehaviour:
     ParentPath: Master-Mixer Hierarchy\Default Work Unit
     guid: c6b41ec9dc56414596c429e948904d66
     GuidInternal: 
-    m_lastTime: -8585329186553938740
+    m_lastTime: -8585319526753560806
     List:
+    - name: 2D
+      guid: a0c80e6e11ef8042a411c16426d7260b
+      id: 527871411
+      PathAndIcons:
+      - ElementName: Master-Mixer Hierarchy
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: c6b41ec9dc56414596c429e948904d66
+      - ElementName: Master Audio Bus
+        ObjectType: 2
+        guid: d8a41415a61d2a41a17e75ca0c2149f3
+      - ElementName: SFX
+        ObjectType: 2
+        guid: 4215052bce7484428cdf6affa5f98c34
+      - ElementName: 2D
+        ObjectType: 2
+        guid: a0c80e6e11ef8042a411c16426d7260b
+      Path: Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\SFX\2D
     - name: AmbisonicBus
       guid: 6a7007533cad39499a4a17e464c2b589
       id: 4258699522
@@ -188,6 +208,23 @@ MonoBehaviour:
         ObjectType: 2
         guid: 9442d16eea29c94a82d539255bf161a4
       Path: Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Rooms_docking
+    - name: SFX
+      guid: 4215052bce7484428cdf6affa5f98c34
+      id: 393239870
+      PathAndIcons:
+      - ElementName: Master-Mixer Hierarchy
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: c6b41ec9dc56414596c429e948904d66
+      - ElementName: Master Audio Bus
+        ObjectType: 2
+        guid: d8a41415a61d2a41a17e75ca0c2149f3
+      - ElementName: SFX
+        ObjectType: 2
+        guid: 4215052bce7484428cdf6affa5f98c34
+      Path: Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\SFX
     - name: SmallRoom
       guid: 2fe939488364554dbe5a445c4e332457
       id: 2933838247
@@ -240,7 +277,7 @@ MonoBehaviour:
     ParentPath: SoundBanks\Default Work Unit
     guid: 91f3f2c2e89f4143bd59d41dc8510ab9
     GuidInternal: 
-    m_lastTime: -8585328956141415474
+    m_lastTime: -8585319526753151617
     List:
     - name: Mains
       guid: 22a5fa274c62a84d93c78d5801f30f0d
@@ -268,8 +305,83 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit
     guid: 5eb490fb28343a4fbde7e5ca0bff7b1d
     GuidInternal: 
-    m_lastTime: -8585328956141744594
+    m_lastTime: -8585319526753710119
     List:
+    - name: 3D
+      guid: d0312eb1e176a14c90ecba42bdd0174b
+      id: 511093792
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 5eb490fb28343a4fbde7e5ca0bff7b1d
+      - ElementName: SFX
+        ObjectType: 4
+        guid: f50ab3c4f820c44896ff11baa26a0745
+      - ElementName: Ambience
+        ObjectType: 4
+        guid: d61574c5aefb6e4bb8be3d2e8f5c14a0
+      - ElementName: 3D
+        ObjectType: 4
+        guid: d0312eb1e176a14c90ecba42bdd0174b
+      Path: Events\Default Work Unit\SFX\Ambience\3D
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Amb_LightBeam
+      guid: 4fa377f073ff6f469e4a5759a67c72f1
+      id: 1884576663
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 5eb490fb28343a4fbde7e5ca0bff7b1d
+      - ElementName: SFX
+        ObjectType: 4
+        guid: f50ab3c4f820c44896ff11baa26a0745
+      - ElementName: Ambience
+        ObjectType: 4
+        guid: d61574c5aefb6e4bb8be3d2e8f5c14a0
+      - ElementName: 3D
+        ObjectType: 4
+        guid: d0312eb1e176a14c90ecba42bdd0174b
+      - ElementName: Amb_LightBeam
+        ObjectType: 3
+        guid: 4fa377f073ff6f469e4a5759a67c72f1
+      Path: Events\Default Work Unit\SFX\Ambience\3D\Amb_LightBeam
+      maxAttenuation: 10
+      maxDuration: -1
+      minDuration: -1
+    - name: Amb_MirrorOn
+      guid: a176f0d1b5d0004d9773ded715c853de
+      id: 4204701460
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 5eb490fb28343a4fbde7e5ca0bff7b1d
+      - ElementName: SFX
+        ObjectType: 4
+        guid: f50ab3c4f820c44896ff11baa26a0745
+      - ElementName: Ambience
+        ObjectType: 4
+        guid: d61574c5aefb6e4bb8be3d2e8f5c14a0
+      - ElementName: 3D
+        ObjectType: 4
+        guid: d0312eb1e176a14c90ecba42bdd0174b
+      - ElementName: Amb_MirrorOn
+        ObjectType: 3
+        guid: a176f0d1b5d0004d9773ded715c853de
+      Path: Events\Default Work Unit\SFX\Ambience\3D\Amb_MirrorOn
+      maxAttenuation: 10
+      maxDuration: -1
+      minDuration: -1
     - name: Ambience
       guid: d61574c5aefb6e4bb8be3d2e8f5c14a0
       id: 85412153
@@ -300,10 +412,16 @@ MonoBehaviour:
       - ElementName: Default Work Unit
         ObjectType: 12
         guid: 5eb490fb28343a4fbde7e5ca0bff7b1d
+      - ElementName: SFX
+        ObjectType: 4
+        guid: f50ab3c4f820c44896ff11baa26a0745
+      - ElementName: Ambience
+        ObjectType: 4
+        guid: d61574c5aefb6e4bb8be3d2e8f5c14a0
       - ElementName: Church_Alter_Ambience
         ObjectType: 3
         guid: c6e870b51310114a979a7318726ee794
-      Path: Events\Default Work Unit\Church_Alter_Ambience
+      Path: Events\Default Work Unit\SFX\Ambience\Church_Alter_Ambience
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
@@ -328,57 +446,6 @@ MonoBehaviour:
         guid: dcd615d507ed484ab7bc43e13aa6d783
       Path: Events\Default Work Unit\SFX\Ambience\Church_Ambisonic
       maxAttenuation: 100
-      maxDuration: -1
-      minDuration: -1
-    - name: DEBUG_AMB
-      guid: c6bdce26edc92e42aebd4655b4d51f6f
-      id: 3209221603
-      PathAndIcons:
-      - ElementName: Events
-        ObjectType: 5
-        guid: 00000000000000000000000000000000
-      - ElementName: Default Work Unit
-        ObjectType: 12
-        guid: 5eb490fb28343a4fbde7e5ca0bff7b1d
-      - ElementName: DEBUG_AMB
-        ObjectType: 3
-        guid: c6bdce26edc92e42aebd4655b4d51f6f
-      Path: Events\Default Work Unit\DEBUG_AMB
-      maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
-    - name: DEBUG_HAMMER
-      guid: 6dcba2a8329fe74cae5b27632cbff45e
-      id: 2618683459
-      PathAndIcons:
-      - ElementName: Events
-        ObjectType: 5
-        guid: 00000000000000000000000000000000
-      - ElementName: Default Work Unit
-        ObjectType: 12
-        guid: 5eb490fb28343a4fbde7e5ca0bff7b1d
-      - ElementName: DEBUG_HAMMER
-        ObjectType: 3
-        guid: 6dcba2a8329fe74cae5b27632cbff45e
-      Path: Events\Default Work Unit\DEBUG_HAMMER
-      maxAttenuation: 20
-      maxDuration: -1
-      minDuration: -1
-    - name: FireLoop
-      guid: ffbdfb5d213c764d98697ea3cee19cf0
-      id: 181700819
-      PathAndIcons:
-      - ElementName: Events
-        ObjectType: 5
-        guid: 00000000000000000000000000000000
-      - ElementName: Default Work Unit
-        ObjectType: 12
-        guid: 5eb490fb28343a4fbde7e5ca0bff7b1d
-      - ElementName: FireLoop
-        ObjectType: 3
-        guid: ffbdfb5d213c764d98697ea3cee19cf0
-      Path: Events\Default Work Unit\FireLoop
-      maxAttenuation: 10
       maxDuration: -1
       minDuration: -1
     - name: Footstep
@@ -557,6 +624,75 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
+    - name: LoosingHealth
+      guid: 2f3563aee5349449ada305a795496886
+      id: 938481918
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 5eb490fb28343a4fbde7e5ca0bff7b1d
+      - ElementName: SFX
+        ObjectType: 4
+        guid: f50ab3c4f820c44896ff11baa26a0745
+      - ElementName: Player
+        ObjectType: 4
+        guid: f8b01a7ee68008409845c82dbe000cfb
+      - ElementName: LoosingHealth
+        ObjectType: 3
+        guid: 2f3563aee5349449ada305a795496886
+      Path: Events\Default Work Unit\SFX\Player\LoosingHealth
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: LowHealth
+      guid: 6f3664d912a33b40a443a6fd061d426a
+      id: 1017222595
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 5eb490fb28343a4fbde7e5ca0bff7b1d
+      - ElementName: SFX
+        ObjectType: 4
+        guid: f50ab3c4f820c44896ff11baa26a0745
+      - ElementName: Player
+        ObjectType: 4
+        guid: f8b01a7ee68008409845c82dbe000cfb
+      - ElementName: LowHealth
+        ObjectType: 3
+        guid: 6f3664d912a33b40a443a6fd061d426a
+      Path: Events\Default Work Unit\SFX\Player\LowHealth
+      maxAttenuation: 10
+      maxDuration: -1
+      minDuration: -1
+    - name: NotLoosingHealth
+      guid: 559671dfe01857479d39f21d0d6b7d39
+      id: 340196141
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 5eb490fb28343a4fbde7e5ca0bff7b1d
+      - ElementName: SFX
+        ObjectType: 4
+        guid: f50ab3c4f820c44896ff11baa26a0745
+      - ElementName: Player
+        ObjectType: 4
+        guid: f8b01a7ee68008409845c82dbe000cfb
+      - ElementName: NotLoosingHealth
+        ObjectType: 3
+        guid: 559671dfe01857479d39f21d0d6b7d39
+      Path: Events\Default Work Unit\SFX\Player\NotLoosingHealth
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
     - name: Player
       guid: f8b01a7ee68008409845c82dbe000cfb
       id: 1069431850
@@ -653,7 +789,7 @@ MonoBehaviour:
       Path: Events\Default Work Unit\VA\VA_Clerk\VA_Clerk_Play
       maxAttenuation: 10
       maxDuration: 9.640862
-      minDuration: 0
+      minDuration: 1.125419
     - name: VA_Pause
       guid: c9bf07d16212704a96bfebfab9f0e214
       id: 938429017
@@ -706,8 +842,22 @@ MonoBehaviour:
     ParentPath: Game Parameters\Default Work Unit
     guid: 7f57676cb1f5124c98483947934c3f41
     GuidInternal: 
-    m_lastTime: -8585342942743867456
-    List: []
+    m_lastTime: -8585322176494005498
+    List:
+    - name: PlayerHealth
+      guid: 4a27241a62b0e74bbb905dbf43acf8c0
+      id: 151362964
+      PathAndIcons:
+      - ElementName: Game Parameters
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 7f57676cb1f5124c98483947934c3f41
+      - ElementName: PlayerHealth
+        ObjectType: 13
+        guid: 4a27241a62b0e74bbb905dbf43acf8c0
+      Path: Game Parameters\Default Work Unit\PlayerHealth
   StateWwu:
   - PhysicalPath: States\Default Work Unit.wwu
     PathAndIcons:
@@ -720,7 +870,7 @@ MonoBehaviour:
     ParentPath: States\Default Work Unit
     guid: 15da347adefaa443abeba8e206daca95
     GuidInternal: 
-    m_lastTime: -8585328956141305521
+    m_lastTime: -8585321312148227643
     List:
     - name: AlterAmb
       guid: 7f446b1539ffb74881108b1e3d68a471
@@ -800,6 +950,84 @@ MonoBehaviour:
       ValueGuids: []
       ValueIcons: []
       valuesInternal: []
+    - name: Health_State
+      guid: 34bced8f474a6a46875465f00cb4d57d
+      id: 1264560589
+      PathAndIcons:
+      - ElementName: States
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 15da347adefaa443abeba8e206daca95
+      - ElementName: PlayerState
+        ObjectType: 4
+        guid: 4524cb7209bc114db660600c948fd972
+      - ElementName: Health_State
+        ObjectType: 9
+        guid: 34bced8f474a6a46875465f00cb4d57d
+      Path: States\Default Work Unit\PlayerState\Health_State
+      values:
+      - name: LoosingSanity
+        guid: 0b6c0e63f82b9644b4840264f235037a
+        id: 2627361338
+        PathAndIcons:
+        - ElementName: States
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: 15da347adefaa443abeba8e206daca95
+        - ElementName: PlayerState
+          ObjectType: 4
+          guid: 4524cb7209bc114db660600c948fd972
+        - ElementName: Health_State
+          ObjectType: 9
+          guid: 34bced8f474a6a46875465f00cb4d57d
+        - ElementName: LoosingSanity
+          ObjectType: 8
+          guid: 0b6c0e63f82b9644b4840264f235037a
+      - name: None
+        guid: af993a663e8a604983633779c9b07b5b
+        id: 748895195
+        PathAndIcons:
+        - ElementName: States
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: 15da347adefaa443abeba8e206daca95
+        - ElementName: PlayerState
+          ObjectType: 4
+          guid: 4524cb7209bc114db660600c948fd972
+        - ElementName: Health_State
+          ObjectType: 9
+          guid: 34bced8f474a6a46875465f00cb4d57d
+        - ElementName: None
+          ObjectType: 8
+          guid: af993a663e8a604983633779c9b07b5b
+      - name: NotLoosingSanity
+        guid: 578c27d60eb6d14a803376b4eed867a7
+        id: 3358664337
+        PathAndIcons:
+        - ElementName: States
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: 15da347adefaa443abeba8e206daca95
+        - ElementName: PlayerState
+          ObjectType: 4
+          guid: 4524cb7209bc114db660600c948fd972
+        - ElementName: Health_State
+          ObjectType: 9
+          guid: 34bced8f474a6a46875465f00cb4d57d
+        - ElementName: NotLoosingSanity
+          ObjectType: 8
+          guid: 578c27d60eb6d14a803376b4eed867a7
+      ValueGuids: []
+      ValueIcons: []
+      valuesInternal: []
     - name: Music
       guid: d42d1ab747e41b4fabe2c427341d1663
       id: 3991942870
@@ -818,6 +1046,24 @@ MonoBehaviour:
       ValueGuids: []
       ValueIcons: []
       valuesInternal: []
+    - name: PlayerState
+      guid: 4524cb7209bc114db660600c948fd972
+      id: 3285234865
+      PathAndIcons:
+      - ElementName: States
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 15da347adefaa443abeba8e206daca95
+      - ElementName: PlayerState
+        ObjectType: 4
+        guid: 4524cb7209bc114db660600c948fd972
+      Path: States\Default Work Unit\PlayerState
+      values: []
+      ValueGuids: []
+      ValueIcons: []
+      valuesInternal: []
   SwitchWwu:
   - PhysicalPath: Switches\Default Work Unit.wwu
     PathAndIcons:
@@ -830,7 +1076,7 @@ MonoBehaviour:
     ParentPath: Switches\Default Work Unit
     guid: 129020783626944d87631f9c3a93f8e0
     GuidInternal: 
-    m_lastTime: -8585329186447970294
+    m_lastTime: -8585324594357313366
     List:
     - name: Locomotion
       guid: ec8b7419cfaab54dbd4aee612fa66e6b
@@ -1031,9 +1277,9 @@ MonoBehaviour:
         ObjectType: 4
         guid: 14a961bd002ffe41ba1f908602494c89
       Path: Triggers\Default Work Unit\VA_Test
-  ExpandedFileSystemItemIds: 010000000200000003000000040000000500000006000000070000000a0000000b0000000c0000000d000000120000001300000015000000160000001b0000001c0000001d0000001e0000001f000000220000002300000024000000
-  ExpandedWaapiItemIds: 010000000500000006000000070000000c0000000d0000000e0000000f000000100000001a0000001c0000001d000000240000002b000000
+  ExpandedFileSystemItemIds: 05000000060000000d0000000e000000100000001b0000001c00000022000000
+  ExpandedWaapiItemIds: 05000000060000000d0000000e000000100000001b0000001c00000022000000
   AutoSyncSelection: 0
   autoPopulateEnabled: 1
-  currentDataSource: 0
+  currentDataSource: 1
   CurrentPluginConfig: 

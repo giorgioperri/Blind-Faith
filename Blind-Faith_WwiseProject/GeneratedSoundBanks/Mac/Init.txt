@@ -1,12 +1,18 @@
 State Group	ID	Name			Wwise Object Path	Notes
+	1264560589	Health_State			\Default Work Unit\PlayerState\Health_State	
 	2677818465	AlterAmb			\Default Work Unit\Music\AlterAmb	
 
 State	ID	Name	State Group			Notes
+	748895195	None	Health_State			
+	2627361338	LoosingSanity	Health_State			
+	3358664337	NotLoosingSanity	Health_State			
 	748895195	None	AlterAmb			
 	1227244058	NotPlaying	AlterAmb			
 	1852808225	Playing	AlterAmb			
 
 Audio Bus	ID	Name			Wwise Object Path	Notes
+	393239870	SFX			\Default Work Unit\Master Audio Bus\SFX	
+	527871411	2D			\Default Work Unit\Master Audio Bus\SFX\2D	
 	532133889	Rooms_docking			\Default Work Unit\Master Audio Bus\Rooms_docking	
 	1359360203	Rooms			\Default Work Unit\Master Audio Bus\Rooms	
 	3803692087	Master Audio Bus			\Default Work Unit\Master Audio Bus	

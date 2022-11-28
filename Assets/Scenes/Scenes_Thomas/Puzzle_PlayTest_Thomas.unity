@@ -18694,6 +18694,18 @@ Mesh:
     offset: 0
     size: 0
     path: 
+--- !u!114 &1154810479 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8762286023885395323, guid: 9c489a8547f4d9e4387da15a4ff82c81,
+    type: 3}
+  m_PrefabInstance: {fileID: 7288094137546172433}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 45e653bab7fb20e499bda25e1b646fea, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!43 &1164006593
 Mesh:
   m_ObjectHideFlags: 0
@@ -40611,11 +40623,55 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: -1381198711186263911, guid: c5efc39a8aaf6e64ea40e9ad573e9b47,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -1381198711186263911, guid: c5efc39a8aaf6e64ea40e9ad573e9b47,
+        type: 3}
+      propertyPath: playerHealth
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: -1381198711186263911, guid: c5efc39a8aaf6e64ea40e9ad573e9b47,
+        type: 3}
+      propertyPath: stateOn.WwiseObjectReference
+      value: 
+      objectReference: {fileID: 11400000, guid: 3cca797a9eb8c3c46ae02502c5172b4c,
+        type: 2}
+    - target: {fileID: -1381198711186263911, guid: c5efc39a8aaf6e64ea40e9ad573e9b47,
+        type: 3}
+      propertyPath: stateOff.WwiseObjectReference
+      value: 
+      objectReference: {fileID: 11400000, guid: 6d984dcd066ca8c47836de0a2d40e0ed,
+        type: 2}
+    - target: {fileID: -1381198711186263911, guid: c5efc39a8aaf6e64ea40e9ad573e9b47,
+        type: 3}
+      propertyPath: PlayerHealth.WwiseObjectReference
+      value: 
+      objectReference: {fileID: 11400000, guid: 24df97b1934ce244eb4f36a22ef51a30,
+        type: 2}
+    - target: {fileID: -1381198711186263911, guid: c5efc39a8aaf6e64ea40e9ad573e9b47,
+        type: 3}
+      propertyPath: loosingHealth.WwiseObjectReference
+      value: 
+      objectReference: {fileID: 11400000, guid: 7a3175d0412c88145a4c24efe872e2e2,
+        type: 2}
     - target: {fileID: 3569895449470239229, guid: c5efc39a8aaf6e64ea40e9ad573e9b47,
         type: 3}
       propertyPath: lanternCharge
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5396336597760382710, guid: c5efc39a8aaf6e64ea40e9ad573e9b47,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8616685848737228371, guid: c5efc39a8aaf6e64ea40e9ad573e9b47,
+        type: 3}
+      propertyPath: VirtualCamera
+      value: 
+      objectReference: {fileID: 1154810479}
     - target: {fileID: 8616685848737228371, guid: c5efc39a8aaf6e64ea40e9ad573e9b47,
         type: 3}
       propertyPath: _interactionDistance
@@ -40625,6 +40681,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: PlayerCapsule
+      objectReference: {fileID: 0}
+    - target: {fileID: 8616685848737228376, guid: c5efc39a8aaf6e64ea40e9ad573e9b47,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8997996947095583982, guid: c5efc39a8aaf6e64ea40e9ad573e9b47,
         type: 3}

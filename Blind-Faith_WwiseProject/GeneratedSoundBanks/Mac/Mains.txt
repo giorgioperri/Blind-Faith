@@ -1,17 +1,19 @@
 Event	ID	Name			Wwise Object Path	Notes
-	181700819	FireLoop			\Default Work Unit\FireLoop	
+	340196141	NotLoosingHealth			\Default Work Unit\SFX\Player\NotLoosingHealth	
 	662947992	VA_Resume			\Default Work Unit\VA\VA_Resume	
 	740769089	Lanteren_Undeploy			\Default Work Unit\SFX\Player\Lanteren\Lanteren_Undeploy	
 	759350405	Lanteren_Deploy_Loop			\Default Work Unit\SFX\Player\Lanteren\Lanteren_Deploy_Loop	
 	938429017	VA_Pause			\Default Work Unit\VA\VA_Pause	
+	938481918	LoosingHealth			\Default Work Unit\SFX\Player\LoosingHealth	
+	1017222595	LowHealth			\Default Work Unit\SFX\Player\LowHealth	
 	1132321458	Church_Ambisonic			\Default Work Unit\SFX\Ambience\Church_Ambisonic	
 	1398273777	VA_Clerk_Play			\Default Work Unit\VA\VA_Clerk\VA_Clerk_Play	
-	1568742100	Church_Alter_Ambience			\Default Work Unit\Church_Alter_Ambience	
+	1568742100	Church_Alter_Ambience			\Default Work Unit\SFX\Ambience\Church_Alter_Ambience	
 	1818726255	Lanteren_discharge			\Default Work Unit\SFX\Player\Lanteren\Lanteren_discharge	
 	1866025847	Footstep			\Default Work Unit\SFX\Player\Locomotion\Footstep	
-	2618683459	DEBUG_HAMMER			\Default Work Unit\DEBUG_HAMMER	
-	3209221603	DEBUG_AMB			\Default Work Unit\DEBUG_AMB	
+	1884576663	Amb_LightBeam			\Default Work Unit\SFX\Ambience\3D\Amb_LightBeam	
 	3651057560	Lanteren_Charging			\Default Work Unit\SFX\Player\Lanteren\Lanteren_Charging	
+	4204701460	Amb_MirrorOn			\Default Work Unit\SFX\Ambience\3D\Amb_MirrorOn	
 
 Switch Group	ID	Name			Wwise Object Path	Notes
 	232330383	VA_Clerk_Switch_Group			\Default Work Unit\VA\VA_Clerk_Switch_Group	
@@ -24,84 +26,91 @@ Switch	ID	Name	Switch Group			Notes
 	1367384683	Cloth	Player_Footsteps			
 
 State Group	ID	Name			Wwise Object Path	Notes
+	1264560589	Health_State			\Default Work Unit\PlayerState\Health_State	
 	2677818465	AlterAmb			\Default Work Unit\Music\AlterAmb	
 
 State	ID	Name	State Group			Notes
+	748895195	None	Health_State			
+	2627361338	LoosingSanity	Health_State			
+	3358664337	NotLoosingSanity	Health_State			
 	748895195	None	AlterAmb			
 	1227244058	NotPlaying	AlterAmb			
 	1852808225	Playing	AlterAmb			
 
 Custom State	ID	Name	State Group	Owner		Notes
 	308903889	NotPlaying	AlterAmb	\Actor-Mixer Hierarchy\Default Work Unit\Ambience\2D\Blind Faith Altar Ambient v2		
+	736050057	NotLoosingSanity	Health_State	\Actor-Mixer Hierarchy\Default Work Unit\Player\Player2D\Bluezone_BC0238_rumble_004		
+	748701343	NotLoosingSanity	Health_State	\Actor-Mixer Hierarchy\Default Work Unit\Player\Player2D\MetalScrape\LoosingSanityLoop_01		
+	904936361	NotLoosingSanity	Health_State	\Actor-Mixer Hierarchy\Default Work Unit\Player\Player2D\MetalScrape\LoosingSanityLoop_02		
 	955267660	Playing	AlterAmb	\Actor-Mixer Hierarchy\Default Work Unit\Ambience\2D\ChurchAmbienceSeq		
+	989362814	NotLoosingSanity	Health_State	\Actor-Mixer Hierarchy\Default Work Unit\Player\Player2D\LoosingSanityLoop_02		
+
+Game Parameter	ID	Name			Wwise Object Path	Notes
+	151362964	PlayerHealth			\Default Work Unit\PlayerHealth	
 
 Modulator LFO	ID	Name			Wwise Object Path	Notes
-	426498588	Modulator LFO (Custom)				
-	434308355	Modulator LFO (Custom)				
-	636754647	Modulator LFO (Custom)				
-	793848167	Modulator LFO (Custom)				
-	974901057	Modulator LFO (Custom)				
+	933396557	Modulator LFO (Custom)				
+	969922701	Modulator LFO (Custom)				
 
 Modulator Time	ID	Name			Wwise Object Path	Notes
 	592991068	45s			\Default Work Unit\45s	
 	862413100	Modulator Time (Custom)				
-	882754423	10sec			\Default Work Unit\10sec	
 	938729902	Modulator Time (Custom)				
-
-Effect plug-ins	ID	Name	Type				Notes
-	702543456	Tunnel1	Wwise Matrix Reverb			
-	1459522457	Brick_Wall_Minus_1dB_Peak_Fast_Release	Wwise Peak Limiter			
 
 In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	9150397	Teleport	C:\Users\kille\Blind-Faith\Blind-Faith_WwiseProject\.cache\Mac\SFX\Teleport_D2B0A69F.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\PlayerActions\Lanteren\Undeploy\Teleport		426620
-	65470773	DEBUG_TEST	C:\Users\kille\Blind-Faith\Blind-Faith_WwiseProject\.cache\Mac\SFX\Mutated hammer_53C93DF0.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\DEBUG_TEST		652800
+	64451089	LightbeamAmbience	C:\Users\kille\Blind-Faith\Blind-Faith_WwiseProject\.cache\Mac\SFX\15-Electric Arc-Transformer-Static_0C1E2B60.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ambience\3D\LightbeamAmbience		6102224
 	107980118	01 Stone Footsteps, Cobblestone Male, 30 Secs Each Slow, Medium, Fast_05	C:\Users\kille\Blind-Faith\Blind-Faith_WwiseProject\.cache\Mac\SFX\01 Stone Footsteps, Cobblestone Male, 30 Secs Each Slow, Medium, Fast_DEB1E4F9.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\PlayerLocomotion\Footsteps\Stone\01 Stone Footsteps, Cobblestone Male, 30 Secs Each Slow, Medium, Fast_05		50236
+	113158319	LoosingSanityLoop_02	C:\Users\kille\Blind-Faith\Blind-Faith_WwiseProject\.cache\Mac\SFX\TauntingWolf2_8458D63E.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\Player2D\LoosingSanityLoop_02		2728384
 	113205331	01 Stone Footsteps, Cobblestone Male, 30 Secs Each Slow, Medium, Fast_02	C:\Users\kille\Blind-Faith\Blind-Faith_WwiseProject\.cache\Mac\SFX\01 Stone Footsteps, Cobblestone Male, 30 Secs Each Slow, Medium, Fast_30BE831F.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\PlayerLocomotion\Footsteps\Stone\01 Stone Footsteps, Cobblestone Male, 30 Secs Each Slow, Medium, Fast_02		71000
-	124409414	Clerk_s1_	C:\Users\kille\Blind-Faith\Blind-Faith_WwiseProject\.cache\Mac\SFX\Clerk_s1__10C4C929.wem		\Actor-Mixer Hierarchy\VA\VA_Mixer\VA_Clerk_Switch_Container\ClerkIntro\Clerk_s1_		500422
+	124409414	Clerk_s1_	C:\Users\kille\Blind-Faith\Blind-Faith_WwiseProject\.cache\Mac\SFX\Clerk_s1__BC1EDDB7.wem		\Actor-Mixer Hierarchy\VA\VA_Mixer\VA_Clerk_Switch_Container\ClerkIntro\Clerk_s1_		500454
+	134993697	Heartbeat	C:\Users\kille\Blind-Faith\Blind-Faith_WwiseProject\.cache\Mac\SFX\cm183_sweetener_sub_heartbeat_119AEEB2.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\Player2D\HeartbeatSeq\Heartbeat		299300
 	169382249	ChurchAmbisonicAmbienceMain_loopo	C:\Users\kille\Blind-Faith\Blind-Faith_WwiseProject\.cache\Mac\SFX\ChurchAmbisonicAmbienceMain_loopo_BC0EBD72.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ambience\2D\ChurchAmbienceSeq\ChurchAmbisonicAmbienceMain_loopo		44279232
 	195704639	ChurchAmbisonicAmbienceMain_Intro	C:\Users\kille\Blind-Faith\Blind-Faith_WwiseProject\.cache\Mac\SFX\ChurchAmbisonicAmbienceMain_Intro_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ambience\2D\ChurchAmbienceSeq\ChurchAmbisonicAmbienceMain_Intro		27216192
 	198540441	Powerup_Mutated_Drone	C:\Users\kille\Blind-Faith\Blind-Faith_WwiseProject\.cache\Mac\SFX\Powerup_Mutated_Drone_F80341E1.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\PlayerActions\Lanteren\Deploy\Powerup_Mutated_Drone		508316
 	207267346	Mutated hammer	C:\Users\kille\Blind-Faith\Blind-Faith_WwiseProject\.cache\Mac\SFX\Mutated hammer_84A83FD6.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\PlayerActions\Lanteren\Undeploy\Mutated hammer		371720
-	210602074	Clerk_s1__7	C:\Users\kille\Blind-Faith\Blind-Faith_WwiseProject\.cache\Mac\SFX\Clerk_s1__7_10C4C929.wem		\Actor-Mixer Hierarchy\VA\VA_Mixer\VA_Clerk_Switch_Container\ClerkIntro\Clerk_s1__7		550868
-	211299271	Clerk_chatter__2	C:\Users\kille\Blind-Faith\Blind-Faith_WwiseProject\.cache\Mac\SFX\Clerk_chatter\Clerk_chatter__2_10C4C929.wem		\Actor-Mixer Hierarchy\VA\VA_Mixer\VA_Clerk_Switch_Container\Clerk_chatter\Clerk_chatter__2		749514
-	222606794	Clerk_chatter_	C:\Users\kille\Blind-Faith\Blind-Faith_WwiseProject\.cache\Mac\SFX\Clerk_chatter\Clerk_chatter__10C4C929.wem		\Actor-Mixer Hierarchy\VA\VA_Mixer\VA_Clerk_Switch_Container\Clerk_chatter\Clerk_chatter_		812358
-	290489526	Clerk_s1__1	C:\Users\kille\Blind-Faith\Blind-Faith_WwiseProject\.cache\Mac\SFX\Clerk_s1__1_10C4C929.wem		\Actor-Mixer Hierarchy\VA\VA_Mixer\VA_Clerk_Switch_Container\ClerkIntro\Clerk_s1__1		686602
-	306100852	Clerk_s1__5	C:\Users\kille\Blind-Faith\Blind-Faith_WwiseProject\.cache\Mac\SFX\Clerk_s1__5_10C4C929.wem		\Actor-Mixer Hierarchy\VA\VA_Mixer\VA_Clerk_Switch_Container\ClerkIntro\Clerk_s1__5		478410
-	316983824	DEBUG_FIRE	C:\Users\kille\Blind-Faith\Blind-Faith_WwiseProject\.cache\Mac\SFX\Fire_Furnace_Loop_PSEM.112_D79FB2B7.wem		\Actor-Mixer Hierarchy\Default Work Unit\DEBUG_FIRE		2498624
+	210602074	Clerk_s1__7	C:\Users\kille\Blind-Faith\Blind-Faith_WwiseProject\.cache\Mac\SFX\Clerk_s1__7_9C924CCA.wem		\Actor-Mixer Hierarchy\VA\VA_Mixer\VA_Clerk_Switch_Container\ClerkIntro\Clerk_s1__7		550900
+	211299271	Clerk_chatter__2	C:\Users\kille\Blind-Faith\Blind-Faith_WwiseProject\.cache\Mac\SFX\Clerk_chatter\Clerk_chatter__2_BC5D6522.wem		\Actor-Mixer Hierarchy\VA\VA_Mixer\VA_Clerk_Switch_Container\Clerk_chatter\Clerk_chatter__2		749562
+	222606794	Clerk_chatter_	C:\Users\kille\Blind-Faith\Blind-Faith_WwiseProject\.cache\Mac\SFX\Clerk_chatter\Clerk_chatter__E794B1E5.wem		\Actor-Mixer Hierarchy\VA\VA_Mixer\VA_Clerk_Switch_Container\Clerk_chatter\Clerk_chatter_		812390
+	290489526	Clerk_s1__1	C:\Users\kille\Blind-Faith\Blind-Faith_WwiseProject\.cache\Mac\SFX\Clerk_s1__1_97F397E4.wem		\Actor-Mixer Hierarchy\VA\VA_Mixer\VA_Clerk_Switch_Container\ClerkIntro\Clerk_s1__1		686634
+	306100852	Clerk_s1__5	C:\Users\kille\Blind-Faith\Blind-Faith_WwiseProject\.cache\Mac\SFX\Clerk_s1__5_E507363E.wem		\Actor-Mixer Hierarchy\VA\VA_Mixer\VA_Clerk_Switch_Container\ClerkIntro\Clerk_s1__5		478442
+	345534423	MirrorOn	C:\Users\kille\Blind-Faith\Blind-Faith_WwiseProject\.cache\Mac\SFX\Room Tone, Toilet, Fan Humming, Chiangmai, Thailand_217BC7F1.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ambience\3D\MirrorOn		7818368
 	392707160	texture_medium_3	C:\Users\kille\Blind-Faith\Blind-Faith_WwiseProject\.cache\Mac\SFX\texture_medium_3_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\PlayerActions\Lanteren\Undeploy_No_charge\texture_medium_3		76598
 	407002430	1806 - Footsteps - Sneakers on Carpet - 90 fpm - Loop_01	C:\Users\kille\Blind-Faith\Blind-Faith_WwiseProject\.cache\Mac\SFX\1806 - Footsteps - Sneakers on Carpet - 90 fpm - Loop_8A92B7AF.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\PlayerLocomotion\Footsteps\Cloth\1806 - Footsteps - Sneakers on Carpet - 90 fpm - Loop_01		43878
-	413924883	Clerk_chatter__7	C:\Users\kille\Blind-Faith\Blind-Faith_WwiseProject\.cache\Mac\SFX\Clerk_chatter\Clerk_chatter__7_10C4C929.wem		\Actor-Mixer Hierarchy\VA\VA_Mixer\VA_Clerk_Switch_Container\Clerk_chatter\Clerk_chatter__7		99454
+	413924883	Clerk_chatter__7	C:\Users\kille\Blind-Faith\Blind-Faith_WwiseProject\.cache\Mac\SFX\Clerk_chatter\Clerk_chatter__7_5A0A0824.wem		\Actor-Mixer Hierarchy\VA\VA_Mixer\VA_Clerk_Switch_Container\Clerk_chatter\Clerk_chatter__7		99502
 	446528560	Teleport	C:\Users\kille\Blind-Faith\Blind-Faith_WwiseProject\.cache\Mac\SFX\Teleport_EBE10AA2.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\PlayerActions\Lanteren\Discharge\Teleport		500716
-	466230716	Clerk_s1__8	C:\Users\kille\Blind-Faith\Blind-Faith_WwiseProject\.cache\Mac\SFX\Clerk_s1__8_10C4C929.wem		\Actor-Mixer Hierarchy\VA\VA_Mixer\VA_Clerk_Switch_Container\ClerkIntro\Clerk_s1__8		441148
-	476092146	Clerk_chatter__4	C:\Users\kille\Blind-Faith\Blind-Faith_WwiseProject\.cache\Mac\SFX\Clerk_chatter\Clerk_chatter__4_10C4C929.wem		\Actor-Mixer Hierarchy\VA\VA_Mixer\VA_Clerk_Switch_Container\Clerk_chatter\Clerk_chatter__4		580602
+	466230716	Clerk_s1__8	C:\Users\kille\Blind-Faith\Blind-Faith_WwiseProject\.cache\Mac\SFX\Clerk_s1__8_2D7E30ED.wem		\Actor-Mixer Hierarchy\VA\VA_Mixer\VA_Clerk_Switch_Container\ClerkIntro\Clerk_s1__8		441180
+	476092146	Clerk_chatter__4	C:\Users\kille\Blind-Faith\Blind-Faith_WwiseProject\.cache\Mac\SFX\Clerk_chatter\Clerk_chatter__4_37F6E679.wem		\Actor-Mixer Hierarchy\VA\VA_Mixer\VA_Clerk_Switch_Container\Clerk_chatter\Clerk_chatter__4		580650
 	485940681	01 Stone Footsteps, Cobblestone Male, 30 Secs Each Slow, Medium, Fast_03	C:\Users\kille\Blind-Faith\Blind-Faith_WwiseProject\.cache\Mac\SFX\01 Stone Footsteps, Cobblestone Male, 30 Secs Each Slow, Medium, Fast_9FBE40A2.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\PlayerLocomotion\Footsteps\Stone\01 Stone Footsteps, Cobblestone Male, 30 Secs Each Slow, Medium, Fast_03		52544
-	493705793	water2	C:\Users\kille\Blind-Faith\Blind-Faith_WwiseProject\.cache\Mac\SFX\water2_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ambience\3D\Church_3D\Well\water2		103044
+	493705793	water2	C:\Users\kille\Blind-Faith\Blind-Faith_WwiseProject\.cache\Mac\SFX\water2_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ambience\3D\Well\water2		103044
 	524158007	01 Stone Footsteps, Cobblestone Male, 30 Secs Each Slow, Medium, Fast_04	C:\Users\kille\Blind-Faith\Blind-Faith_WwiseProject\.cache\Mac\SFX\01 Stone Footsteps, Cobblestone Male, 30 Secs Each Slow, Medium, Fast_6ACF6195.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\PlayerLocomotion\Footsteps\Stone\01 Stone Footsteps, Cobblestone Male, 30 Secs Each Slow, Medium, Fast_04		50240
-	529285034	Clerk_chatter__5	C:\Users\kille\Blind-Faith\Blind-Faith_WwiseProject\.cache\Mac\SFX\Clerk_chatter\Clerk_chatter__5_10C4C929.wem		\Actor-Mixer Hierarchy\VA\VA_Mixer\VA_Clerk_Switch_Container\Clerk_chatter\Clerk_chatter__5		439776
-	541165543	Church_General_PH	C:\Users\kille\Blind-Faith\Blind-Faith_WwiseProject\.cache\Mac\SFX\Bluezone_BC0238_ambience_020_2302C72B.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ambience\2D\DEBUG_SHEPARDS GLASSANDO\Church_General_PH		6953736
-	579534600	Clerk_chatter__3	C:\Users\kille\Blind-Faith\Blind-Faith_WwiseProject\.cache\Mac\SFX\Clerk_chatter\Clerk_chatter__3_10C4C929.wem		\Actor-Mixer Hierarchy\VA\VA_Mixer\VA_Clerk_Switch_Container\Clerk_chatter\Clerk_chatter__3		429336
+	526958919	LoosingSanityLoop_02	C:\Users\kille\Blind-Faith\Blind-Faith_WwiseProject\.cache\Mac\SFX\scratch_p0_sword_squeak_01_7F87C1F7.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\Player2D\MetalScrape\LoosingSanityLoop_02		212120
+	529285034	Clerk_chatter__5	C:\Users\kille\Blind-Faith\Blind-Faith_WwiseProject\.cache\Mac\SFX\Clerk_chatter\Clerk_chatter__5_40054F20.wem		\Actor-Mixer Hierarchy\VA\VA_Mixer\VA_Clerk_Switch_Container\Clerk_chatter\Clerk_chatter__5		439824
+	579534600	Clerk_chatter__3	C:\Users\kille\Blind-Faith\Blind-Faith_WwiseProject\.cache\Mac\SFX\Clerk_chatter\Clerk_chatter__3_785869C3.wem		\Actor-Mixer Hierarchy\VA\VA_Mixer\VA_Clerk_Switch_Container\Clerk_chatter\Clerk_chatter__3		429384
+	600620028	LoosingSanityLoop_01	C:\Users\kille\Blind-Faith\Blind-Faith_WwiseProject\.cache\Mac\SFX\scratch_p0_sword_squeak_01_5C2155B8.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\Player2D\MetalScrape\LoosingSanityLoop_01		359664
+	627720889	BF_MassiveSteamPunkDevice	C:\Users\kille\Blind-Faith\Blind-Faith_WwiseProject\.cache\Mac\SFX\BF_MassiveSteamPunkDevice_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ambience\3D\BF_MassiveSteamPunkDevice		3902996
 	643727600	1806 - Footsteps - Sneakers on Carpet - 90 fpm - Loop	C:\Users\kille\Blind-Faith\Blind-Faith_WwiseProject\.cache\Mac\SFX\1806 - Footsteps - Sneakers on Carpet - 90 fpm - Loop_3AE39963.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\PlayerLocomotion\Footsteps\Cloth\1806 - Footsteps - Sneakers on Carpet - 90 fpm - Loop		45106
-	667515654	Clerk_s1__9	C:\Users\kille\Blind-Faith\Blind-Faith_WwiseProject\.cache\Mac\SFX\Clerk_s1__9_10C4C929.wem		\Actor-Mixer Hierarchy\VA\VA_Mixer\VA_Clerk_Switch_Container\ClerkIntro\Clerk_s1__9		850516
-	675330913	Clerk_chatter__6	C:\Users\kille\Blind-Faith\Blind-Faith_WwiseProject\.cache\Mac\SFX\Clerk_chatter\Clerk_chatter__6_10C4C929.wem		\Actor-Mixer Hierarchy\VA\VA_Mixer\VA_Clerk_Switch_Container\Clerk_chatter\Clerk_chatter__6		524846
-	684596150	water3	C:\Users\kille\Blind-Faith\Blind-Faith_WwiseProject\.cache\Mac\SFX\water3_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ambience\3D\Church_3D\Well\water3		103044
-	718550265	Clerk_chatter__8	C:\Users\kille\Blind-Faith\Blind-Faith_WwiseProject\.cache\Mac\SFX\Clerk_chatter\Clerk_chatter__8_10C4C929.wem		\Actor-Mixer Hierarchy\VA\VA_Mixer\VA_Clerk_Switch_Container\Clerk_chatter\Clerk_chatter__8		434202
-	739805478	Clerk_chatter__9	C:\Users\kille\Blind-Faith\Blind-Faith_WwiseProject\.cache\Mac\SFX\Clerk_chatter\Clerk_chatter__9_10C4C929.wem		\Actor-Mixer Hierarchy\VA\VA_Mixer\VA_Clerk_Switch_Container\Clerk_chatter\Clerk_chatter__9		185576
-	776242514	Clerk_s1__4	C:\Users\kille\Blind-Faith\Blind-Faith_WwiseProject\.cache\Mac\SFX\Clerk_s1__4_10C4C929.wem		\Actor-Mixer Hierarchy\VA\VA_Mixer\VA_Clerk_Switch_Container\ClerkIntro\Clerk_s1__4		217622
+	667515654	Clerk_s1__9	C:\Users\kille\Blind-Faith\Blind-Faith_WwiseProject\.cache\Mac\SFX\Clerk_s1__9_B3E36AEC.wem		\Actor-Mixer Hierarchy\VA\VA_Mixer\VA_Clerk_Switch_Container\ClerkIntro\Clerk_s1__9		850548
+	675330913	Clerk_chatter__6	C:\Users\kille\Blind-Faith\Blind-Faith_WwiseProject\.cache\Mac\SFX\Clerk_chatter\Clerk_chatter__6_2F1740DA.wem		\Actor-Mixer Hierarchy\VA\VA_Mixer\VA_Clerk_Switch_Container\Clerk_chatter\Clerk_chatter__6		524894
+	684596150	water3	C:\Users\kille\Blind-Faith\Blind-Faith_WwiseProject\.cache\Mac\SFX\water3_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ambience\3D\Well\water3		103044
+	718550265	Clerk_chatter__8	C:\Users\kille\Blind-Faith\Blind-Faith_WwiseProject\.cache\Mac\SFX\Clerk_chatter\Clerk_chatter__8_BD61C6E5.wem		\Actor-Mixer Hierarchy\VA\VA_Mixer\VA_Clerk_Switch_Container\Clerk_chatter\Clerk_chatter__8		434250
+	739805478	Clerk_chatter__9	C:\Users\kille\Blind-Faith\Blind-Faith_WwiseProject\.cache\Mac\SFX\Clerk_chatter\Clerk_chatter__9_65745E9E.wem		\Actor-Mixer Hierarchy\VA\VA_Mixer\VA_Clerk_Switch_Container\Clerk_chatter\Clerk_chatter__9		185624
+	776242514	Clerk_s1__4	C:\Users\kille\Blind-Faith\Blind-Faith_WwiseProject\.cache\Mac\SFX\Clerk_s1__4_2F75BA44.wem		\Actor-Mixer Hierarchy\VA\VA_Mixer\VA_Clerk_Switch_Container\ClerkIntro\Clerk_s1__4		217654
 	786073262	Mutated hammer	C:\Users\kille\Blind-Faith\Blind-Faith_WwiseProject\.cache\Mac\SFX\Mutated hammer_26E4CBA8.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\PlayerActions\Lanteren\Charging\Mutated hammer		232284
 	792449620	Blind Faith Altar Ambient v2	C:\Users\kille\Blind-Faith\Blind-Faith_WwiseProject\.cache\Mac\SFX\Blind Faith Altar Ambient v2_6F55C8DC.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ambience\2D\Blind Faith Altar Ambient v2		19816980
 	830999437	01 Stone Footsteps, Cobblestone Male, 30 Secs Each Slow, Medium, Fast_01	C:\Users\kille\Blind-Faith\Blind-Faith_WwiseProject\.cache\Mac\SFX\01 Stone Footsteps, Cobblestone Male, 30 Secs Each Slow, Medium, Fast_5FF7441C.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\PlayerLocomotion\Footsteps\Stone\01 Stone Footsteps, Cobblestone Male, 30 Secs Each Slow, Medium, Fast_01		57160
-	833554346	Clerk_chatter__1	C:\Users\kille\Blind-Faith\Blind-Faith_WwiseProject\.cache\Mac\SFX\Clerk_chatter\Clerk_chatter__1_10C4C929.wem		\Actor-Mixer Hierarchy\VA\VA_Mixer\VA_Clerk_Switch_Container\Clerk_chatter\Clerk_chatter__1		407204
+	833554346	Clerk_chatter__1	C:\Users\kille\Blind-Faith\Blind-Faith_WwiseProject\.cache\Mac\SFX\Clerk_chatter\Clerk_chatter__1_C12CA77B.wem		\Actor-Mixer Hierarchy\VA\VA_Mixer\VA_Clerk_Switch_Container\Clerk_chatter\Clerk_chatter__1		407252
+	833644105	Bluezone_BC0238_rumble_004	C:\Users\kille\Blind-Faith\Blind-Faith_WwiseProject\.cache\Mac\SFX\Bluezone_BC0238_rumble_004_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\Player2D\Bluezone_BC0238_rumble_004		7707744
 	861805956	01 Stone Footsteps, Cobblestone Male, 30 Secs Each Slow, Medium, Fast	C:\Users\kille\Blind-Faith\Blind-Faith_WwiseProject\.cache\Mac\SFX\01 Stone Footsteps, Cobblestone Male, 30 Secs Each Slow, Medium, Fast_9D8C4D80.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\PlayerLocomotion\Footsteps\Stone\01 Stone Footsteps, Cobblestone Male, 30 Secs Each Slow, Medium, Fast		35240
 	883270094	Texture	C:\Users\kille\Blind-Faith\Blind-Faith_WwiseProject\.cache\Mac\SFX\Switch weapon_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\PlayerActions\Lanteren\Deploy\Texture		84418
-	897522966	Church_General_PH_02	C:\Users\kille\Blind-Faith\Blind-Faith_WwiseProject\.cache\Mac\SFX\Bluezone_BC0238_ambience_020_706002CB.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ambience\2D\DEBUG_SHEPARDS GLASSANDO\Church_General_PH_02		6953736
 	929948901	Stinger_Metal_Silverware_Reversed	C:\Users\kille\Blind-Faith\Blind-Faith_WwiseProject\.cache\Mac\SFX\Stinger_Metal_Silverware_Reversed_4B9A62E7.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\PlayerActions\Lanteren\Undeploy\Stinger_Metal_Silverware_Reversed		287488
-	930361327	Clerk_s1__10	C:\Users\kille\Blind-Faith\Blind-Faith_WwiseProject\.cache\Mac\SFX\Clerk_s1__10_10C4C929.wem		\Actor-Mixer Hierarchy\VA\VA_Mixer\VA_Clerk_Switch_Container\ClerkIntro\Clerk_s1__10		453676
+	930361327	Clerk_s1__10	C:\Users\kille\Blind-Faith\Blind-Faith_WwiseProject\.cache\Mac\SFX\Clerk_s1__10_C5E30136.wem		\Actor-Mixer Hierarchy\VA\VA_Mixer\VA_Clerk_Switch_Container\ClerkIntro\Clerk_s1__10		453708
 	937773785	Stinger_Metal_Silverware_Reversed	C:\Users\kille\Blind-Faith\Blind-Faith_WwiseProject\.cache\Mac\SFX\Stinger_Metal_Silverware_Reversed_9A766E4D.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\PlayerActions\Lanteren\Deploy\Stinger_Metal_Silverware_Reversed		297260
-	949409495	Clerk_s1__3	C:\Users\kille\Blind-Faith\Blind-Faith_WwiseProject\.cache\Mac\SFX\Clerk_s1__3_10C4C929.wem		\Actor-Mixer Hierarchy\VA\VA_Mixer\VA_Clerk_Switch_Container\ClerkIntro\Clerk_s1__3		359694
+	949409495	Clerk_s1__3	C:\Users\kille\Blind-Faith\Blind-Faith_WwiseProject\.cache\Mac\SFX\Clerk_s1__3_5B766E21.wem		\Actor-Mixer Hierarchy\VA\VA_Mixer\VA_Clerk_Switch_Container\ClerkIntro\Clerk_s1__3		359726
 	974181242	Teleport	C:\Users\kille\Blind-Faith\Blind-Faith_WwiseProject\.cache\Mac\SFX\Teleport_E2C50CAA.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\PlayerActions\Lanteren\Deploy\Teleport		513308
 	989359785	1806 - Footsteps - Sneakers on Carpet - 90 fpm - Loop_02	C:\Users\kille\Blind-Faith\Blind-Faith_WwiseProject\.cache\Mac\SFX\1806 - Footsteps - Sneakers on Carpet - 90 fpm - Loop_F2E4E4FE.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\PlayerLocomotion\Footsteps\Cloth\1806 - Footsteps - Sneakers on Carpet - 90 fpm - Loop_02		61280
-	1010559949	Clerk_s1__2	C:\Users\kille\Blind-Faith\Blind-Faith_WwiseProject\.cache\Mac\SFX\Clerk_s1__2_10C4C929.wem		\Actor-Mixer Hierarchy\VA\VA_Mixer\VA_Clerk_Switch_Container\ClerkIntro\Clerk_s1__2		351716
-	1052142959	water1	C:\Users\kille\Blind-Faith\Blind-Faith_WwiseProject\.cache\Mac\SFX\water1_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ambience\3D\Church_3D\Well\water1		103044
+	1010559949	Clerk_s1__2	C:\Users\kille\Blind-Faith\Blind-Faith_WwiseProject\.cache\Mac\SFX\Clerk_s1__2_52A7C0CC.wem		\Actor-Mixer Hierarchy\VA\VA_Mixer\VA_Clerk_Switch_Container\ClerkIntro\Clerk_s1__2		351748
+	1052142959	water1	C:\Users\kille\Blind-Faith\Blind-Faith_WwiseProject\.cache\Mac\SFX\water1_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ambience\3D\Well\water1		103044
 	1054677677	Texture	C:\Users\kille\Blind-Faith\Blind-Faith_WwiseProject\.cache\Mac\SFX\Switch weapon_C0BD21C5.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\PlayerActions\Lanteren\Deploy_No_Charge\Texture		84418
-	1066600936	Clerk_s1__6	C:\Users\kille\Blind-Faith\Blind-Faith_WwiseProject\.cache\Mac\SFX\Clerk_s1__6_10C4C929.wem		\Actor-Mixer Hierarchy\VA\VA_Mixer\VA_Clerk_Switch_Container\ClerkIntro\Clerk_s1__6		542918
+	1066600936	Clerk_s1__6	C:\Users\kille\Blind-Faith\Blind-Faith_WwiseProject\.cache\Mac\SFX\Clerk_s1__6_5CE4CFE0.wem		\Actor-Mixer Hierarchy\VA\VA_Mixer\VA_Clerk_Switch_Container\ClerkIntro\Clerk_s1__6		542950
 
