@@ -89,6 +89,13 @@ public class LightBeam
             _lightIndices.Add(hitInfo.point);
             UpdateLaser();
         }
+        else if(hitInfo.collider.gameObject.CompareTag("Prism"))
+        {
+            hitInfo.transform.parent.SendMessage("OnBeamReceived");
+            hitInfo.transform.Find("Emitter").GetComponent<PrismLight>().shouldShoot = false;
+            _lightIndices.Add(hitInfo.point);
+            UpdateLaser();
+        }
         else
         {
             hitTheDoor = false;
