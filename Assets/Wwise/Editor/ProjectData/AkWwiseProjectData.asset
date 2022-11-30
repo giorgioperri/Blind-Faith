@@ -24,7 +24,7 @@ MonoBehaviour:
     ParentPath: Virtual Acoustics/Default Work Unit
     guid: 8157776944d252459e5c3d8483760091
     GuidInternal: 
-    m_lastTime: -8585337899198645024
+    m_lastTime: -8585337869754884815
     List: []
   AuxBusWwu:
   - PhysicalPath: Master-Mixer Hierarchy/Default Work Unit.wwu
@@ -38,7 +38,7 @@ MonoBehaviour:
     ParentPath: Master-Mixer Hierarchy/Default Work Unit
     guid: c6b41ec9dc56414596c429e948904d66
     GuidInternal: 
-    m_lastTime: -8585328917969131256
+    m_lastTime: -8585324866780614792
     List:
     - name: AmbisonicBus
       guid: 6a7007533cad39499a4a17e464c2b589
@@ -240,7 +240,7 @@ MonoBehaviour:
     ParentPath: SoundBanks/Default Work Unit
     guid: 91f3f2c2e89f4143bd59d41dc8510ab9
     GuidInternal: 
-    m_lastTime: -8585323691963321165
+    m_lastTime: -8585320289572788874
     List:
     - name: Mains
       guid: 22a5fa274c62a84d93c78d5801f30f0d
@@ -268,7 +268,7 @@ MonoBehaviour:
     ParentPath: Events/Default Work Unit
     guid: 5eb490fb28343a4fbde7e5ca0bff7b1d
     GuidInternal: 
-    m_lastTime: -8585323691968309147
+    m_lastTime: -8585320289573747190
     List:
     - name: Ambience
       guid: d61574c5aefb6e4bb8be3d2e8f5c14a0
@@ -706,7 +706,7 @@ MonoBehaviour:
     ParentPath: Game Parameters/Default Work Unit
     guid: 7f57676cb1f5124c98483947934c3f41
     GuidInternal: 
-    m_lastTime: -8585337899199737047
+    m_lastTime: -8585337869756200658
     List: []
   StateWwu:
   - PhysicalPath: States/Default Work Unit.wwu
@@ -720,7 +720,7 @@ MonoBehaviour:
     ParentPath: States/Default Work Unit
     guid: 15da347adefaa443abeba8e206daca95
     GuidInternal: 
-    m_lastTime: -8585323691963319879
+    m_lastTime: -8585320289572771061
     List:
     - name: AlterAmb
       guid: 7f446b1539ffb74881108b1e3d68a471
@@ -830,7 +830,7 @@ MonoBehaviour:
     ParentPath: Switches/Default Work Unit
     guid: 129020783626944d87631f9c3a93f8e0
     GuidInternal: 
-    m_lastTime: -8585328917955077643
+    m_lastTime: -8585324866765441825
     List:
     - name: Locomotion
       guid: ec8b7419cfaab54dbd4aee612fa66e6b
@@ -998,7 +998,7 @@ MonoBehaviour:
     ParentPath: Triggers/Default Work Unit
     guid: 50b0bf7a09fe60448cd0a08f93cae076
     GuidInternal: 
-    m_lastTime: -8585337899198646155
+    m_lastTime: -8585337869754885863
     List:
     - name: New_Trigger
       guid: b52432610d4a47429784de539560cf52
@@ -1032,7 +1032,7 @@ MonoBehaviour:
         guid: 14a961bd002ffe41ba1f908602494c89
       Path: Triggers/Default Work Unit/VA_Test
   ExpandedFileSystemItemIds: 
-  ExpandedWaapiItemIds: 12000000
+  ExpandedWaapiItemIds: 
   AutoSyncSelection: 0
   autoPopulateEnabled: 1
   currentDataSource: 0
