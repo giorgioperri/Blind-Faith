@@ -12,7 +12,7 @@ public class LightBeam
     private List<Vector3> _lightIndices = new List<Vector3>();
     public bool hitTheDoor;
 
-    public LightBeam(Vector3 position, Vector3 direction, Material material)
+    public LightBeam(Vector3 position, Vector3 direction, Material material, Color color)
     {
         _lightLaser = new LineRenderer();
         lightObj = new GameObject();
@@ -24,8 +24,8 @@ public class LightBeam
         _lightLaser.startWidth = 0.1f;
         _lightLaser.endWidth = 0.1f;
         _lightLaser.material = material;
-        _lightLaser.startColor = Color.yellow;
-        _lightLaser.endColor = Color.yellow;
+        _lightLaser.startColor = color;
+        _lightLaser.endColor = color;
 
         CastRay(position, direction, _lightLaser);
     }
@@ -91,8 +91,10 @@ public class LightBeam
         }
         else if(hitInfo.collider.gameObject.CompareTag("Prism"))
         {
+            GameObject _emitter = hitInfo.transform.Find("Emitter").gameObject;
             hitInfo.transform.parent.SendMessage("OnBeamReceived");
-            hitInfo.transform.Find("Emitter").GetComponent<PrismLight>().shouldShoot = false;
+            _emitter.SendMessage("OnBeamReceived");
+            _emitter.GetComponent<PrismLight>().shouldShoot = false;
             _lightIndices.Add(hitInfo.point);
             UpdateLaser();
         }

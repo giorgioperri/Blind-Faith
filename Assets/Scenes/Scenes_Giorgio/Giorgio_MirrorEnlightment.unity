@@ -19725,27 +19725,6 @@ MonoBehaviour:
   m_SelectedFaces: 
   m_SelectedEdges: []
   m_SelectedVertices: 
---- !u!1 &1169538288 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 501650848413234560, guid: fb27a810bc8824bbdb7f0e9a09e54b9d,
-    type: 3}
-  m_PrefabInstance: {fileID: 6208353188147912089}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1169538290
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1169538288}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3cac46a2f2bfe4b05a5b8d810b27a6a6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  material: {fileID: 2100000, guid: 49358dfc077c7af4c922a18c664b4fda, type: 2}
-  isPrismEnlighted: 0
-  shouldShoot: 1
 --- !u!1 &1177971455
 GameObject:
   m_ObjectHideFlags: 0
@@ -29363,27 +29342,6 @@ MonoBehaviour:
   m_SelectedFaces: 
   m_SelectedEdges: []
   m_SelectedVertices: 
---- !u!1 &1525630161 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 4613553792076363220, guid: fb27a810bc8824bbdb7f0e9a09e54b9d,
-    type: 3}
-  m_PrefabInstance: {fileID: 6208353188147912089}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1525630163
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1525630161}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3cac46a2f2bfe4b05a5b8d810b27a6a6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  material: {fileID: 2100000, guid: 49358dfc077c7af4c922a18c664b4fda, type: 2}
-  isPrismEnlighted: 0
-  shouldShoot: 1
 --- !u!43 &1548753239
 Mesh:
   m_ObjectHideFlags: 0
@@ -29973,27 +29931,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b95d6a5a615aa475cab29b4a3357d239, type: 3}
---- !u!1 &1601252939 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 6735174111564607563, guid: fb27a810bc8824bbdb7f0e9a09e54b9d,
-    type: 3}
-  m_PrefabInstance: {fileID: 6208353188147912089}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1601252941
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1601252939}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3cac46a2f2bfe4b05a5b8d810b27a6a6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  material: {fileID: 2100000, guid: 49358dfc077c7af4c922a18c664b4fda, type: 2}
-  isPrismEnlighted: 0
-  shouldShoot: 1
 --- !u!1001 &1621708533
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -41009,61 +40946,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 1754055694037859280, guid: fb27a810bc8824bbdb7f0e9a09e54b9d,
-        type: 3}
-      propertyPath: sideColliders.Array.size
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 1754055694037859280, guid: fb27a810bc8824bbdb7f0e9a09e54b9d,
-        type: 3}
-      propertyPath: _sideColliders.Array.size
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 1754055694037859280, guid: fb27a810bc8824bbdb7f0e9a09e54b9d,
-        type: 3}
-      propertyPath: sideColliders.Array.data[0]
-      value: 
-      objectReference: {fileID: 6208353188147912092}
-    - target: {fileID: 1754055694037859280, guid: fb27a810bc8824bbdb7f0e9a09e54b9d,
-        type: 3}
-      propertyPath: sideColliders.Array.data[1]
-      value: 
-      objectReference: {fileID: 6208353188147912091}
-    - target: {fileID: 1754055694037859280, guid: fb27a810bc8824bbdb7f0e9a09e54b9d,
-        type: 3}
-      propertyPath: sideColliders.Array.data[2]
-      value: 
-      objectReference: {fileID: 6208353188147912090}
-    - target: {fileID: 1754055694037859280, guid: fb27a810bc8824bbdb7f0e9a09e54b9d,
-        type: 3}
-      propertyPath: _sideColliders.Array.data[0]
-      value: 
-      objectReference: {fileID: 6208353188147912092}
-    - target: {fileID: 1754055694037859280, guid: fb27a810bc8824bbdb7f0e9a09e54b9d,
-        type: 3}
-      propertyPath: _sideColliders.Array.data[1]
-      value: 
-      objectReference: {fileID: 6208353188147912091}
-    - target: {fileID: 1754055694037859280, guid: fb27a810bc8824bbdb7f0e9a09e54b9d,
-        type: 3}
-      propertyPath: _sideColliders.Array.data[2]
-      value: 
-      objectReference: {fileID: 6208353188147912090}
-    - target: {fileID: 2193377473470219270, guid: fb27a810bc8824bbdb7f0e9a09e54b9d,
-        type: 3}
-      propertyPath: m_TagString
-      value: Prism
-      objectReference: {fileID: 0}
-    - target: {fileID: 4032810413210219818, guid: fb27a810bc8824bbdb7f0e9a09e54b9d,
-        type: 3}
-      propertyPath: m_TagString
-      value: Prism
-      objectReference: {fileID: 0}
-    - target: {fileID: 4275512676457598880, guid: fb27a810bc8824bbdb7f0e9a09e54b9d,
-        type: 3}
-      propertyPath: m_TagString
-      value: Prism
-      objectReference: {fileID: 0}
     - target: {fileID: 5882326914240469730, guid: fb27a810bc8824bbdb7f0e9a09e54b9d,
         type: 3}
       propertyPath: m_RootOrder
@@ -41124,31 +41006,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: Prism
       objectReference: {fileID: 0}
-    - target: {fileID: 6551023891411992664, guid: fb27a810bc8824bbdb7f0e9a09e54b9d,
-        type: 3}
-      propertyPath: m_TagString
-      value: Prism
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fb27a810bc8824bbdb7f0e9a09e54b9d, type: 3}
---- !u!1 &6208353188147912090 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 4275512676457598880, guid: fb27a810bc8824bbdb7f0e9a09e54b9d,
-    type: 3}
-  m_PrefabInstance: {fileID: 6208353188147912089}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &6208353188147912091 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 2193377473470219270, guid: fb27a810bc8824bbdb7f0e9a09e54b9d,
-    type: 3}
-  m_PrefabInstance: {fileID: 6208353188147912089}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &6208353188147912092 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 4032810413210219818, guid: fb27a810bc8824bbdb7f0e9a09e54b9d,
-    type: 3}
-  m_PrefabInstance: {fileID: 6208353188147912089}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &7288094137546172433
 PrefabInstance:
   m_ObjectHideFlags: 0
