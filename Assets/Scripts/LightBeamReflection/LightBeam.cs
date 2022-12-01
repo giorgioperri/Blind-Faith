@@ -65,9 +65,16 @@ public class LightBeam
         {
             Vector3 pos = hitInfo.point;
             Vector3 dir = Vector3.Reflect(direction, hitInfo.normal);
-
+            
             if (hitInfo.collider.gameObject.GetComponent<RotateObjects>())
             {
+                RotateObjects rotateScript = hitInfo.collider.gameObject.GetComponent<RotateObjects>();
+
+                if (rotateScript.shouldStabilizeY)
+                {
+                    dir.y = 0;
+                }
+                
                 hitInfo.collider.gameObject.SendMessage("OnBeamReceived");
             }
 
