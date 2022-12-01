@@ -24,7 +24,7 @@
 				<AuxBus Id="2933838247" Name="SmallRoom" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Rooms\SmallRoom"/>
 			</IncludedAuxBusses>
 		</SoundBank>
-		<SoundBank Id="1764570813" Language="SFX" Hash="1400456711">
+		<SoundBank Id="1764570813" Language="SFX" Hash="1901801074">
 			<ObjectPath>\SoundBanks\Default Work Unit\Mains</ObjectPath>
 			<ShortName>Mains</ShortName>
 			<Path>Mains.bnk</Path>
@@ -80,10 +80,6 @@
 					<ShortName>Mutated hammer.wav</ShortName>
 					<Path>SFX/Mutated hammer_84A83FD6.wem</Path>
 				</File>
-				<File Id="210602074" Language="SFX">
-					<ShortName>Clerk_s1__7.wav</ShortName>
-					<Path>SFX/Clerk_s1__7_9C924CCA.wem</Path>
-				</File>
 				<File Id="211299271" Language="SFX">
 					<ShortName>Clerk_chatter\Clerk_chatter__2.wav</ShortName>
 					<Path>SFX/Clerk_chatter/Clerk_chatter__2_BC5D6522.wem</Path>
@@ -91,10 +87,6 @@
 				<File Id="222606794" Language="SFX">
 					<ShortName>Clerk_chatter\Clerk_chatter_.wav</ShortName>
 					<Path>SFX/Clerk_chatter/Clerk_chatter__E794B1E5.wem</Path>
-				</File>
-				<File Id="290489526" Language="SFX">
-					<ShortName>Clerk_s1__1.wav</ShortName>
-					<Path>SFX/Clerk_s1__1_97F397E4.wem</Path>
 				</File>
 				<File Id="306100852" Language="SFX">
 					<ShortName>Clerk_s1__5.wav</ShortName>
@@ -176,10 +168,6 @@
 					<ShortName>Clerk_chatter\Clerk_chatter__9.wav</ShortName>
 					<Path>SFX/Clerk_chatter/Clerk_chatter__9_65745E9E.wem</Path>
 				</File>
-				<File Id="776242514" Language="SFX">
-					<ShortName>Clerk_s1__4.wav</ShortName>
-					<Path>SFX/Clerk_s1__4_2F75BA44.wem</Path>
-				</File>
 				<File Id="786073262" Language="SFX">
 					<ShortName>Mutated hammer.wav</ShortName>
 					<Path>SFX/Mutated hammer_26E4CBA8.wem</Path>
@@ -211,10 +199,6 @@
 				<File Id="929948901" Language="SFX">
 					<ShortName>Stinger_Metal_Silverware_Reversed.wav</ShortName>
 					<Path>SFX/Stinger_Metal_Silverware_Reversed_4B9A62E7.wem</Path>
-				</File>
-				<File Id="930361327" Language="SFX">
-					<ShortName>Clerk_s1__10.wav</ShortName>
-					<Path>SFX/Clerk_s1__10_C5E30136.wem</Path>
 				</File>
 				<File Id="937773785" Language="SFX">
 					<ShortName>Stinger_Metal_Silverware_Reversed.wav</ShortName>
