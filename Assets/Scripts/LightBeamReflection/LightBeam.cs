@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Runtime.InteropServices;
 using UnityEngine;
 
 public class LightBeam 
@@ -24,8 +25,8 @@ public class LightBeam
         _lightLaser.startWidth = 0.07f;
         _lightLaser.endWidth = 0.07f;
         _lightLaser.material = material;
-        _lightLaser.startColor = Color.yellow;
-        _lightLaser.endColor = Color.yellow;
+        _lightLaser.startColor = new Color(74,76,128,150);
+        _lightLaser.endColor = new Color(74,76,128,150);
 
         CastRay(position, direction, _lightLaser);
     }
