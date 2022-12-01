@@ -38,7 +38,7 @@ MonoBehaviour:
     ParentPath: Master-Mixer Hierarchy\Default Work Unit
     guid: c6b41ec9dc56414596c429e948904d66
     GuidInternal: 
-    m_lastTime: -8585319526753560806
+    m_lastTime: -8585317005493382942
     List:
     - name: 2D
       guid: a0c80e6e11ef8042a411c16426d7260b
@@ -305,7 +305,7 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit
     guid: 5eb490fb28343a4fbde7e5ca0bff7b1d
     GuidInternal: 
-    m_lastTime: -8585319526753710119
+    m_lastTime: -8585317005493712061
     List:
     - name: 3D
       guid: d0312eb1e176a14c90ecba42bdd0174b
@@ -445,7 +445,7 @@ MonoBehaviour:
         ObjectType: 3
         guid: dcd615d507ed484ab7bc43e13aa6d783
       Path: Events\Default Work Unit\SFX\Ambience\Church_Ambisonic
-      maxAttenuation: 100
+      maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
     - name: Footstep
@@ -601,6 +601,23 @@ MonoBehaviour:
       maxAttenuation: 10
       maxDuration: 2.79757
       minDuration: 2.79757
+    - name: Lightbeam
+      guid: ccc885bf23f2b34dbf2b583e204c98b3
+      id: 1710262138
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 5eb490fb28343a4fbde7e5ca0bff7b1d
+      - ElementName: Lightbeam
+        ObjectType: 3
+        guid: ccc885bf23f2b34dbf2b583e204c98b3
+      Path: Events\Default Work Unit\Lightbeam
+      maxAttenuation: 10
+      maxDuration: -1
+      minDuration: -1
     - name: Locomotion
       guid: 57d53468c486f141a94163074cf407ff
       id: 556887514
@@ -667,6 +684,23 @@ MonoBehaviour:
         ObjectType: 3
         guid: 6f3664d912a33b40a443a6fd061d426a
       Path: Events\Default Work Unit\SFX\Player\LowHealth
+      maxAttenuation: 10
+      maxDuration: -1
+      minDuration: -1
+    - name: MirrorLight
+      guid: 0a6ac5d56bd22c4a9c7984e1f9444477
+      id: 1217934400
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 5eb490fb28343a4fbde7e5ca0bff7b1d
+      - ElementName: MirrorLight
+        ObjectType: 3
+        guid: 0a6ac5d56bd22c4a9c7984e1f9444477
+      Path: Events\Default Work Unit\MirrorLight
       maxAttenuation: 10
       maxDuration: -1
       minDuration: -1
@@ -787,7 +821,7 @@ MonoBehaviour:
         ObjectType: 3
         guid: 4415bc8e58ba4848a9771366cdd39cee
       Path: Events\Default Work Unit\VA\VA_Clerk\VA_Clerk_Play
-      maxAttenuation: 10
+      maxAttenuation: 15
       maxDuration: 9.640862
       minDuration: 1.125419
     - name: VA_Pause
@@ -1277,7 +1311,7 @@ MonoBehaviour:
         ObjectType: 4
         guid: 14a961bd002ffe41ba1f908602494c89
       Path: Triggers\Default Work Unit\VA_Test
-  ExpandedFileSystemItemIds: 05000000060000000d0000000e000000100000001b0000001c00000022000000
+  ExpandedFileSystemItemIds: 0100000002000000030000000400000005000000060000000b0000000c0000000d0000000e0000001000000018000000190000001a0000001b0000001c0000002000000021000000220000002600000027000000
   ExpandedWaapiItemIds: 05000000060000000d0000000e000000100000001b0000001c00000022000000
   AutoSyncSelection: 0
   autoPopulateEnabled: 1

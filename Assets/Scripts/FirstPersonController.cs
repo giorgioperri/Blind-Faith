@@ -208,6 +208,14 @@ namespace StarterAssets
 					}
 
 				}
+				if(_speed > 4)
+                {
+					baseStepSpeed = 1;
+                }
+				else
+                {
+					baseStepSpeed = 1.9f;
+                }
 				footstepTimer = GetCurrentOffset;
 			}
 		}
@@ -370,6 +378,7 @@ namespace StarterAssets
 				if (_verticalVelocity < 0.0f)
 				{
 					_verticalVelocity = -2f;
+
 				}
 
 				// Jump
@@ -398,6 +407,7 @@ namespace StarterAssets
 
 				// if we are not grounded, do not jump
 				_input.jump = false;
+
 			}
 
 			// apply gravity over time if under terminal (multiply by delta time twice to linearly speed up over time)

@@ -14,7 +14,6 @@ namespace AK
     namespace EVENTS
     {
         static const AkUniqueID AMB_LIGHTBEAM = 1884576663U;
-        static const AkUniqueID AMB_MIRRORON = 4204701460U;
         static const AkUniqueID CHURCH_ALTER_AMBIENCE = 1568742100U;
         static const AkUniqueID CHURCH_AMBISONIC = 1132321458U;
         static const AkUniqueID FOOTSTEP = 1866025847U;
@@ -22,8 +21,12 @@ namespace AK
         static const AkUniqueID LANTEREN_DEPLOY_LOOP = 759350405U;
         static const AkUniqueID LANTEREN_DISCHARGE = 1818726255U;
         static const AkUniqueID LANTEREN_UNDEPLOY = 740769089U;
+        static const AkUniqueID LIGHTBEAM = 1710262138U;
         static const AkUniqueID LOOSINGHEALTH = 938481918U;
         static const AkUniqueID LOWHEALTH = 1017222595U;
+        static const AkUniqueID MIRRORLIGHT = 1217934400U;
+        static const AkUniqueID MIRRORTURN = 1903317937U;
+        static const AkUniqueID MIRRORTURN_OFF = 3962630019U;
         static const AkUniqueID NOTLOOSINGHEALTH = 340196141U;
         static const AkUniqueID VA_CLERK_PLAY = 1398273777U;
         static const AkUniqueID VA_PAUSE = 938429017U;

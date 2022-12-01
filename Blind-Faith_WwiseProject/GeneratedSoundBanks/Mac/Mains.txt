@@ -7,13 +7,16 @@ Event	ID	Name			Wwise Object Path	Notes
 	938481918	LoosingHealth			\Default Work Unit\SFX\Player\LoosingHealth	
 	1017222595	LowHealth			\Default Work Unit\SFX\Player\LowHealth	
 	1132321458	Church_Ambisonic			\Default Work Unit\SFX\Ambience\Church_Ambisonic	
+	1217934400	MirrorLight			\Default Work Unit\MirrorLight	
 	1398273777	VA_Clerk_Play			\Default Work Unit\VA\VA_Clerk\VA_Clerk_Play	
 	1568742100	Church_Alter_Ambience			\Default Work Unit\SFX\Ambience\Church_Alter_Ambience	
+	1710262138	Lightbeam			\Default Work Unit\Lightbeam	
 	1818726255	Lanteren_discharge			\Default Work Unit\SFX\Player\Lanteren\Lanteren_discharge	
 	1866025847	Footstep			\Default Work Unit\SFX\Player\Locomotion\Footstep	
 	1884576663	Amb_LightBeam			\Default Work Unit\SFX\Ambience\3D\Amb_LightBeam	
+	1903317937	MirrorTurn			\Default Work Unit\MirrorTurn	
 	3651057560	Lanteren_Charging			\Default Work Unit\SFX\Player\Lanteren\Lanteren_Charging	
-	4204701460	Amb_MirrorOn			\Default Work Unit\SFX\Ambience\3D\Amb_MirrorOn	
+	3962630019	MirrorTurn_Off			\Default Work Unit\MirrorTurn_Off	
 
 Switch Group	ID	Name			Wwise Object Path	Notes
 	232330383	VA_Clerk_Switch_Group			\Default Work Unit\VA\VA_Clerk_Switch_Group	
@@ -39,7 +42,6 @@ State	ID	Name	State Group			Notes
 
 Custom State	ID	Name	State Group	Owner		Notes
 	308903889	NotPlaying	AlterAmb	\Actor-Mixer Hierarchy\Default Work Unit\Ambience\2D\Blind Faith Altar Ambient v2		
-	736050057	NotLoosingSanity	Health_State	\Actor-Mixer Hierarchy\Default Work Unit\Player\Player2D\Bluezone_BC0238_rumble_004		
 	748701343	NotLoosingSanity	Health_State	\Actor-Mixer Hierarchy\Default Work Unit\Player\Player2D\MetalScrape\LoosingSanityLoop_01		
 	904936361	NotLoosingSanity	Health_State	\Actor-Mixer Hierarchy\Default Work Unit\Player\Player2D\MetalScrape\LoosingSanityLoop_02		
 	955267660	Playing	AlterAmb	\Actor-Mixer Hierarchy\Default Work Unit\Ambience\2D\ChurchAmbienceSeq		
@@ -49,19 +51,30 @@ Game Parameter	ID	Name			Wwise Object Path	Notes
 	151362964	PlayerHealth			\Default Work Unit\PlayerHealth	
 
 Modulator LFO	ID	Name			Wwise Object Path	Notes
+	881904853	Modulator LFO (Custom)				
 	933396557	Modulator LFO (Custom)				
 	969922701	Modulator LFO (Custom)				
 
+Modulator Envelope	ID	Name			Wwise Object Path	Notes
+	253017421	Modulator Envelope (Custom)				
+
 Modulator Time	ID	Name			Wwise Object Path	Notes
 	592991068	45s			\Default Work Unit\45s	
+	760406361	Modulator Time (Custom)				
 	862413100	Modulator Time (Custom)				
 	938729902	Modulator Time (Custom)				
 
+Effect plug-ins	ID	Name	Type				Notes
+	3043977	Wwise Parametric EQ (Custom)	Wwise Parametric EQ			
+	239393478	Aliasing (Custom)	Wwise Tremolo			
+	293256131	Wwise Parametric EQ (Custom)	Wwise Parametric EQ			
+	4269441574	Heavy_Metal	Wwise Flanger			
+
 In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	9150397	Teleport	C:\Users\kille\Blind-Faith\Blind-Faith_WwiseProject\.cache\Mac\SFX\Teleport_D2B0A69F.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\PlayerActions\Lanteren\Undeploy\Teleport		426620
-	64451089	LightbeamAmbience	C:\Users\kille\Blind-Faith\Blind-Faith_WwiseProject\.cache\Mac\SFX\15-Electric Arc-Transformer-Static_0C1E2B60.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ambience\3D\LightbeamAmbience		6102224
+	64451089	LightbeamAmbience	C:\Users\kille\Blind-Faith\Blind-Faith_WwiseProject\.cache\Mac\SFX\15-Electric Arc-Transformer-Static_5C3CAA10.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ambience\3D\LightbeamAmbience		6102224
 	107980118	01 Stone Footsteps, Cobblestone Male, 30 Secs Each Slow, Medium, Fast_05	C:\Users\kille\Blind-Faith\Blind-Faith_WwiseProject\.cache\Mac\SFX\01 Stone Footsteps, Cobblestone Male, 30 Secs Each Slow, Medium, Fast_DEB1E4F9.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\PlayerLocomotion\Footsteps\Stone\01 Stone Footsteps, Cobblestone Male, 30 Secs Each Slow, Medium, Fast_05		50236
-	113158319	LoosingSanityLoop_02	C:\Users\kille\Blind-Faith\Blind-Faith_WwiseProject\.cache\Mac\SFX\TauntingWolf2_8458D63E.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\Player2D\LoosingSanityLoop_02		2728384
+	113158319	LoosingSanityLoop_02	C:\Users\kille\Blind-Faith\Blind-Faith_WwiseProject\.cache\Mac\SFX\TauntingWolf2_6A55FB50.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\Player2D\LoosingSanityLoop_02		2728384
 	113205331	01 Stone Footsteps, Cobblestone Male, 30 Secs Each Slow, Medium, Fast_02	C:\Users\kille\Blind-Faith\Blind-Faith_WwiseProject\.cache\Mac\SFX\01 Stone Footsteps, Cobblestone Male, 30 Secs Each Slow, Medium, Fast_30BE831F.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\PlayerLocomotion\Footsteps\Stone\01 Stone Footsteps, Cobblestone Male, 30 Secs Each Slow, Medium, Fast_02		71000
 	124409414	Clerk_s1_	C:\Users\kille\Blind-Faith\Blind-Faith_WwiseProject\.cache\Mac\SFX\Clerk_s1__BC1EDDB7.wem		\Actor-Mixer Hierarchy\VA\VA_Mixer\VA_Clerk_Switch_Container\ClerkIntro\Clerk_s1_		500454
 	134993697	Heartbeat	C:\Users\kille\Blind-Faith\Blind-Faith_WwiseProject\.cache\Mac\SFX\cm183_sweetener_sub_heartbeat_119AEEB2.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\Player2D\HeartbeatSeq\Heartbeat		299300
@@ -74,7 +87,8 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	222606794	Clerk_chatter_	C:\Users\kille\Blind-Faith\Blind-Faith_WwiseProject\.cache\Mac\SFX\Clerk_chatter\Clerk_chatter__E794B1E5.wem		\Actor-Mixer Hierarchy\VA\VA_Mixer\VA_Clerk_Switch_Container\Clerk_chatter\Clerk_chatter_		812390
 	290489526	Clerk_s1__1	C:\Users\kille\Blind-Faith\Blind-Faith_WwiseProject\.cache\Mac\SFX\Clerk_s1__1_97F397E4.wem		\Actor-Mixer Hierarchy\VA\VA_Mixer\VA_Clerk_Switch_Container\ClerkIntro\Clerk_s1__1		686634
 	306100852	Clerk_s1__5	C:\Users\kille\Blind-Faith\Blind-Faith_WwiseProject\.cache\Mac\SFX\Clerk_s1__5_E507363E.wem		\Actor-Mixer Hierarchy\VA\VA_Mixer\VA_Clerk_Switch_Container\ClerkIntro\Clerk_s1__5		478442
-	345534423	MirrorOn	C:\Users\kille\Blind-Faith\Blind-Faith_WwiseProject\.cache\Mac\SFX\Room Tone, Toilet, Fan Humming, Chiangmai, Thailand_217BC7F1.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ambience\3D\MirrorOn		7818368
+	318493534	TurningMirror_Highs	C:\Users\kille\Blind-Faith\Blind-Faith_WwiseProject\.cache\Mac\SFX\Bluezone_BC0231_metal_grinding_013_C93A51CE.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ambience\3D\TurningMirror_Highs		452360
+	345534423	MirrorOn	C:\Users\kille\Blind-Faith\Blind-Faith_WwiseProject\.cache\Mac\SFX\Room Tone, Toilet, Fan Humming, Chiangmai, Thailand_A6FD17C2.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ambience\3D\MirrorOn		7818368
 	392707160	texture_medium_3	C:\Users\kille\Blind-Faith\Blind-Faith_WwiseProject\.cache\Mac\SFX\texture_medium_3_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\PlayerActions\Lanteren\Undeploy_No_charge\texture_medium_3		76598
 	407002430	1806 - Footsteps - Sneakers on Carpet - 90 fpm - Loop_01	C:\Users\kille\Blind-Faith\Blind-Faith_WwiseProject\.cache\Mac\SFX\1806 - Footsteps - Sneakers on Carpet - 90 fpm - Loop_8A92B7AF.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\PlayerLocomotion\Footsteps\Cloth\1806 - Footsteps - Sneakers on Carpet - 90 fpm - Loop_01		43878
 	413924883	Clerk_chatter__7	C:\Users\kille\Blind-Faith\Blind-Faith_WwiseProject\.cache\Mac\SFX\Clerk_chatter\Clerk_chatter__7_5A0A0824.wem		\Actor-Mixer Hierarchy\VA\VA_Mixer\VA_Clerk_Switch_Container\Clerk_chatter\Clerk_chatter__7		99502
@@ -84,12 +98,14 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	485940681	01 Stone Footsteps, Cobblestone Male, 30 Secs Each Slow, Medium, Fast_03	C:\Users\kille\Blind-Faith\Blind-Faith_WwiseProject\.cache\Mac\SFX\01 Stone Footsteps, Cobblestone Male, 30 Secs Each Slow, Medium, Fast_9FBE40A2.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\PlayerLocomotion\Footsteps\Stone\01 Stone Footsteps, Cobblestone Male, 30 Secs Each Slow, Medium, Fast_03		52544
 	493705793	water2	C:\Users\kille\Blind-Faith\Blind-Faith_WwiseProject\.cache\Mac\SFX\water2_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ambience\3D\Well\water2		103044
 	524158007	01 Stone Footsteps, Cobblestone Male, 30 Secs Each Slow, Medium, Fast_04	C:\Users\kille\Blind-Faith\Blind-Faith_WwiseProject\.cache\Mac\SFX\01 Stone Footsteps, Cobblestone Male, 30 Secs Each Slow, Medium, Fast_6ACF6195.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\PlayerLocomotion\Footsteps\Stone\01 Stone Footsteps, Cobblestone Male, 30 Secs Each Slow, Medium, Fast_04		50240
-	526958919	LoosingSanityLoop_02	C:\Users\kille\Blind-Faith\Blind-Faith_WwiseProject\.cache\Mac\SFX\scratch_p0_sword_squeak_01_7F87C1F7.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\Player2D\MetalScrape\LoosingSanityLoop_02		212120
+	526958919	LoosingSanityLoop_02	C:\Users\kille\Blind-Faith\Blind-Faith_WwiseProject\.cache\Mac\SFX\scratch_p0_sword_squeak_01_A9F38E0F.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\Player2D\MetalScrape\LoosingSanityLoop_02		212120
 	529285034	Clerk_chatter__5	C:\Users\kille\Blind-Faith\Blind-Faith_WwiseProject\.cache\Mac\SFX\Clerk_chatter\Clerk_chatter__5_40054F20.wem		\Actor-Mixer Hierarchy\VA\VA_Mixer\VA_Clerk_Switch_Container\Clerk_chatter\Clerk_chatter__5		439824
 	579534600	Clerk_chatter__3	C:\Users\kille\Blind-Faith\Blind-Faith_WwiseProject\.cache\Mac\SFX\Clerk_chatter\Clerk_chatter__3_785869C3.wem		\Actor-Mixer Hierarchy\VA\VA_Mixer\VA_Clerk_Switch_Container\Clerk_chatter\Clerk_chatter__3		429384
-	600620028	LoosingSanityLoop_01	C:\Users\kille\Blind-Faith\Blind-Faith_WwiseProject\.cache\Mac\SFX\scratch_p0_sword_squeak_01_5C2155B8.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\Player2D\MetalScrape\LoosingSanityLoop_01		359664
+	600620028	LoosingSanityLoop_01	C:\Users\kille\Blind-Faith\Blind-Faith_WwiseProject\.cache\Mac\SFX\scratch_p0_sword_squeak_01_2BA2E5D9.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\Player2D\MetalScrape\LoosingSanityLoop_01		359664
+	611489906	TurningMirror_mid	C:\Users\kille\Blind-Faith\Blind-Faith_WwiseProject\.cache\Mac\SFX\rockslide_02_0EE40901.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ambience\3D\TurningMirror_mid		1121372
 	627720889	BF_MassiveSteamPunkDevice	C:\Users\kille\Blind-Faith\Blind-Faith_WwiseProject\.cache\Mac\SFX\BF_MassiveSteamPunkDevice_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ambience\3D\BF_MassiveSteamPunkDevice		3902996
 	643727600	1806 - Footsteps - Sneakers on Carpet - 90 fpm - Loop	C:\Users\kille\Blind-Faith\Blind-Faith_WwiseProject\.cache\Mac\SFX\1806 - Footsteps - Sneakers on Carpet - 90 fpm - Loop_3AE39963.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\PlayerLocomotion\Footsteps\Cloth\1806 - Footsteps - Sneakers on Carpet - 90 fpm - Loop		45106
+	652525734	Earthquake_Rumble_PSEM_100	C:\Users\kille\Blind-Faith\Blind-Faith_WwiseProject\.cache\Mac\SFX\Earthquake_Rumble_PSEM.100_D79FB2B7.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ambience\2D\Earthquake_Rumble_PSEM_100		13486144
 	667515654	Clerk_s1__9	C:\Users\kille\Blind-Faith\Blind-Faith_WwiseProject\.cache\Mac\SFX\Clerk_s1__9_B3E36AEC.wem		\Actor-Mixer Hierarchy\VA\VA_Mixer\VA_Clerk_Switch_Container\ClerkIntro\Clerk_s1__9		850548
 	675330913	Clerk_chatter__6	C:\Users\kille\Blind-Faith\Blind-Faith_WwiseProject\.cache\Mac\SFX\Clerk_chatter\Clerk_chatter__6_2F1740DA.wem		\Actor-Mixer Hierarchy\VA\VA_Mixer\VA_Clerk_Switch_Container\Clerk_chatter\Clerk_chatter__6		524894
 	684596150	water3	C:\Users\kille\Blind-Faith\Blind-Faith_WwiseProject\.cache\Mac\SFX\water3_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ambience\3D\Well\water3		103044
@@ -100,7 +116,6 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	792449620	Blind Faith Altar Ambient v2	C:\Users\kille\Blind-Faith\Blind-Faith_WwiseProject\.cache\Mac\SFX\Blind Faith Altar Ambient v2_6F55C8DC.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ambience\2D\Blind Faith Altar Ambient v2		19816980
 	830999437	01 Stone Footsteps, Cobblestone Male, 30 Secs Each Slow, Medium, Fast_01	C:\Users\kille\Blind-Faith\Blind-Faith_WwiseProject\.cache\Mac\SFX\01 Stone Footsteps, Cobblestone Male, 30 Secs Each Slow, Medium, Fast_5FF7441C.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\PlayerLocomotion\Footsteps\Stone\01 Stone Footsteps, Cobblestone Male, 30 Secs Each Slow, Medium, Fast_01		57160
 	833554346	Clerk_chatter__1	C:\Users\kille\Blind-Faith\Blind-Faith_WwiseProject\.cache\Mac\SFX\Clerk_chatter\Clerk_chatter__1_C12CA77B.wem		\Actor-Mixer Hierarchy\VA\VA_Mixer\VA_Clerk_Switch_Container\Clerk_chatter\Clerk_chatter__1		407252
-	833644105	Bluezone_BC0238_rumble_004	C:\Users\kille\Blind-Faith\Blind-Faith_WwiseProject\.cache\Mac\SFX\Bluezone_BC0238_rumble_004_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\Player2D\Bluezone_BC0238_rumble_004		7707744
 	861805956	01 Stone Footsteps, Cobblestone Male, 30 Secs Each Slow, Medium, Fast	C:\Users\kille\Blind-Faith\Blind-Faith_WwiseProject\.cache\Mac\SFX\01 Stone Footsteps, Cobblestone Male, 30 Secs Each Slow, Medium, Fast_9D8C4D80.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\PlayerLocomotion\Footsteps\Stone\01 Stone Footsteps, Cobblestone Male, 30 Secs Each Slow, Medium, Fast		35240
 	883270094	Texture	C:\Users\kille\Blind-Faith\Blind-Faith_WwiseProject\.cache\Mac\SFX\Switch weapon_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\PlayerActions\Lanteren\Deploy\Texture		84418
 	929948901	Stinger_Metal_Silverware_Reversed	C:\Users\kille\Blind-Faith\Blind-Faith_WwiseProject\.cache\Mac\SFX\Stinger_Metal_Silverware_Reversed_4B9A62E7.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\PlayerActions\Lanteren\Undeploy\Stinger_Metal_Silverware_Reversed		287488

@@ -12,6 +12,7 @@
 						<ObjectRef Name="NotLoosingHealth" ID="{DF719655-18E0-4757-9D39-F21D0D6B7D39}" WorkUnitID="{FB90B45E-3428-4F3A-BDE7-E5CA0BFF7B1D}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="LoosingHealth" ID="{AE63352F-34E5-4994-ADA3-05A795496886}" WorkUnitID="{FB90B45E-3428-4F3A-BDE7-E5CA0BFF7B1D}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Player" ID="{731D5E07-1F0B-4AAE-A0D8-195D31F04659}" WorkUnitID="{10A75CA5-3F55-455C-A103-004D7C43FEF2}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Default Work Unit" ID="{FB90B45E-3428-4F3A-BDE7-E5CA0BFF7B1D}" WorkUnitID="{FB90B45E-3428-4F3A-BDE7-E5CA0BFF7B1D}" Origin="Manual" Filter="7"/>
 					</ObjectInclusionList>
 					<ObjectExclusionList/>
 					<GameSyncExclusionList/>

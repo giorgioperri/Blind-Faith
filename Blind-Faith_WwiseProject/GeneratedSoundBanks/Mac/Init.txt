@@ -29,11 +29,16 @@ Auxiliary Bus	ID	Name			Wwise Object Path	Notes
 Effect plug-ins	ID	Name	Type				Notes
 	15426635	Hall_Large_Dark (Custom)	Wwise RoomVerb			
 	48620415	Have_U_Ever_Been_Outside	Wwise RoomVerb			
+	184228500	Wwise Meter (Custom)	Wwise Meter			
 	295351154	Wwise_RoomVerb_(Custom)	Wwise RoomVerb			
+	494413319	Wwise Parametric EQ (Custom)	Wwise Parametric EQ			
 	509909872	Resonance Audio Renderer (Custom)	Resonance Audio Renderer			
 	744627467	Resonance Audio Renderer (Custom)	Resonance Audio Renderer			
+	790902848	Hard_Knee_Minus_3dB_RMS (Custom)	Wwise Compressor			
 	836353278	Metal_Hangar (Custom)	Wwise RoomVerb			
 	957690521	Room_Medium_Tiled (Custom)	Wwise RoomVerb			
+	1008402193	Low_Pass_20KHz	Wwise Parametric EQ			
+	1459522457	Brick_Wall_Minus_1dB_Peak_Fast_Release	Wwise Peak Limiter			
 	2995775460	Room_Small	Wwise RoomVerb			
 
 Audio Devices	ID	Name	Type				Notes

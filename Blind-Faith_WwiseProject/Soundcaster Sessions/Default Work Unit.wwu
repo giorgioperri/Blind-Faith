@@ -7,12 +7,12 @@
 					<RTPCValueList ShowAll="true">
 						<RTPCValue>
 							<GameParameterRef Name="PlayerHealth" ID="{1A24274A-B062-4BE7-BB90-5DBF43ACF8C0}"/>
-							<Value>59</Value>
+							<Value>100</Value>
 						</RTPCValue>
 					</RTPCValueList>
 					<CurrentStateList ShowAll="true">
-						<CurrentStateRef Name="None" ID="{663A99AF-8A3E-4960-8363-3779C9B07B5B}"/>
-						<CurrentStateRef Name="Playing" ID="{F980FD5B-64EE-4FDB-A297-7B478A51A3B9}"/>
+						<CurrentStateRef Name="LoosingSanity" ID="{630E6C0B-2BF8-4496-B484-0264F235037A}"/>
+						<CurrentStateRef Name="NotPlaying" ID="{68FA20C0-6D85-4F86-9A80-95C198F962F8}"/>
 					</CurrentStateList>
 					<CurrentSwitchList ShowAll="true">
 						<CurrentSwitchRef Name="ClerkChatter" ID="{6AD5FEDC-6CD0-4A3D-91C2-9265E8947D7B}"/>

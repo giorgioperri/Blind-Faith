@@ -85,6 +85,11 @@
 									<ChildrenList>
 										<BlendContainer Name="Deploy" ID="{64A1616D-4788-4A2F-963A-C6F151539BC5}" ShortID="8832045">
 											<PropertyList>
+												<Property Name="Highpass" Type="int16">
+													<ValueList>
+														<Value>5</Value>
+													</ValueList>
+												</Property>
 												<Property Name="Volume" Type="Real64">
 													<ValueList>
 														<Value>-2</Value>
@@ -101,6 +106,13 @@
 											</ReferenceList>
 											<ChildrenList>
 												<Sound Name="Texture" ID="{A8AFFD70-4CEE-4A0B-9C40-FC9B1BA3580B}" ShortID="55467822">
+													<PropertyList>
+														<Property Name="Highpass" Type="int16">
+															<ValueList>
+																<Value>16</Value>
+															</ValueList>
+														</Property>
+													</PropertyList>
 													<ReferenceList>
 														<Reference Name="Conversion">
 															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{23AF77D7-3FEA-409B-8E44-F5B490014C61}"/>
@@ -125,6 +137,11 @@
 												</Sound>
 												<Sound Name="Teleport" ID="{AAE76DB2-7FD7-44DC-ABF5-7BC302ABE261}" ShortID="484861194">
 													<PropertyList>
+														<Property Name="Highpass" Type="int16">
+															<ValueList>
+																<Value>9</Value>
+															</ValueList>
+														</Property>
 														<Property Name="Pitch" Type="int32">
 															<ValueList>
 																<Value>380</Value>
@@ -132,7 +149,7 @@
 														</Property>
 														<Property Name="Volume" Type="Real64">
 															<ValueList>
-																<Value>-20</Value>
+																<Value>-15</Value>
 															</ValueList>
 														</Property>
 													</PropertyList>
@@ -184,12 +201,12 @@
 														<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
 														<Property Name="Lowpass" Type="int16">
 															<ValueList>
-																<Value>76</Value>
+																<Value>71</Value>
 															</ValueList>
 														</Property>
 														<Property Name="Volume" Type="Real64">
 															<ValueList>
-																<Value>-4</Value>
+																<Value>-2</Value>
 															</ValueList>
 														</Property>
 													</PropertyList>
@@ -226,7 +243,7 @@
 													<PropertyList>
 														<Property Name="Volume" Type="Real64">
 															<ValueList>
-																<Value>-11</Value>
+																<Value>-7</Value>
 															</ValueList>
 														</Property>
 													</PropertyList>
@@ -438,7 +455,7 @@
 														<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
 														<Property Name="Pitch" Type="int32">
 															<ValueList>
-																<Value>-150</Value>
+																<Value>-80</Value>
 															</ValueList>
 															<RTPCList>
 																<RTPC Name="" ID="{A3AEA10B-C71A-4ECF-A90B-EF23D6FF1F92}" ShortID="975220543">
@@ -460,12 +477,12 @@
 																		<PointList>
 																			<Point>
 																				<XPos>0</XPos>
-																				<YPos>0</YPos>
+																				<YPos>-138</YPos>
 																				<Flags>5</Flags>
 																			</Point>
 																			<Point>
 																				<XPos>5</XPos>
-																				<YPos>4800</YPos>
+																				<YPos>1447</YPos>
 																				<Flags>37</Flags>
 																			</Point>
 																		</PointList>
@@ -1330,9 +1347,14 @@
 								</RandomSequenceContainer>
 								<Sound Name="Bluezone_BC0238_rumble_004" ID="{A984B57B-F446-43FE-90A9-1F6378C7BE56}" ShortID="804714886">
 									<PropertyList>
+										<Property Name="Inclusion" Type="bool">
+											<ValueList>
+												<Value>False</Value>
+											</ValueList>
+										</Property>
 										<Property Name="Volume" Type="Real64">
 											<ValueList>
-												<Value>-24</Value>
+												<Value>-66</Value>
 											</ValueList>
 											<RTPCList>
 												<RTPC Name="" ID="{7777800E-B6AE-423A-BA4C-329D31A98CEC}" ShortID="272943463">
@@ -1434,7 +1456,7 @@
 														<PointList>
 															<Point>
 																<XPos>1</XPos>
-																<YPos>20</YPos>
+																<YPos>30</YPos>
 																<Flags>5</Flags>
 																<SegmentShape>Log2</SegmentShape>
 															</Point>
@@ -1467,7 +1489,7 @@
 														<PointList>
 															<Point>
 																<XPos>1</XPos>
-																<YPos>4</YPos>
+																<YPos>19</YPos>
 																<Flags>5</Flags>
 																<SegmentShape>Log1</SegmentShape>
 															</Point>
@@ -1497,12 +1519,12 @@
 														<PointList>
 															<Point>
 																<XPos>1</XPos>
-																<YPos>-922</YPos>
+																<YPos>-509</YPos>
 																<Flags>5</Flags>
 															</Point>
 															<Point>
-																<XPos>24.8839779005525</XPos>
-																<YPos>-495</YPos>
+																<XPos>24.88398</XPos>
+																<YPos>-221</YPos>
 																<Flags>0</Flags>
 															</Point>
 															<Point>
@@ -1518,6 +1540,9 @@
 										<Property Name="SpeakerPanning3DSpatializationMix" Type="int32" Value="40"/>
 										<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
 										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-4</Value>
+											</ValueList>
 											<RTPCList>
 												<RTPC Name="" ID="{AF773441-E1AF-461C-ADF6-71A0AC6643EC}" ShortID="353912544">
 													<ReferenceList>
@@ -1526,7 +1551,7 @@
 																<ModulatorLfo Name="Modulator LFO (Custom)" ID="{C70002AC-9B51-4D30-B936-E879C5AB6ECB}" ShortID="969922701">
 																	<PropertyList>
 																		<Property Name="LfoAttack" Type="Real64" Value="0.42"/>
-																		<Property Name="LfoDepth" Type="Real64" Value="74.2"/>
+																		<Property Name="LfoDepth" Type="Real64" Value="29.5"/>
 																		<Property Name="LfoFrequency" Type="Real64" Value="0.64">
 																			<ModifierList>
 																				<ModifierInfo>
@@ -1552,12 +1577,12 @@
 																						<PointList>
 																							<Point>
 																								<XPos>1</XPos>
-																								<YPos>15.57072</YPos>
+																								<YPos>2.99502</YPos>
 																								<Flags>5</Flags>
 																							</Point>
 																							<Point>
 																								<XPos>100</XPos>
-																								<YPos>0.49926</YPos>
+																								<YPos>0.42672</YPos>
 																								<Flags>37</Flags>
 																							</Point>
 																						</PointList>
@@ -1613,7 +1638,7 @@
 														<PointList>
 															<Point>
 																<XPos>1</XPos>
-																<YPos>3.56309</YPos>
+																<YPos>-0.154</YPos>
 																<Flags>5</Flags>
 																<SegmentShape>Exp3</SegmentShape>
 															</Point>
@@ -1882,15 +1907,82 @@
 								</Sound>
 								<RandomSequenceContainer Name="MetalScrape" ID="{E01EE4E6-14B6-4724-94D3-806BE455B8FE}" ShortID="875879034">
 									<PropertyList>
+										<Property Name="Lowpass" Type="int16">
+											<ValueList>
+												<Value>17</Value>
+											</ValueList>
+										</Property>
+										<Property Name="OverrideEffect" Type="bool" Value="True"/>
 										<Property Name="Volume" Type="Real64">
 											<ValueList>
-												<Value>-3</Value>
+												<Value>-10</Value>
 											</ValueList>
+											<RTPCList>
+												<RTPC Name="" ID="{2BCF352E-3B07-4AC0-A7A1-7BF683EB1A34}" ShortID="1050850562">
+													<ReferenceList>
+														<Reference Name="ControlInput">
+															<Custom>
+																<ModulatorLfo Name="Modulator LFO (Custom)" ID="{09DB8553-7E22-4C13-B7C7-CE7AC743F33D}" ShortID="881904853">
+																	<PropertyList>
+																		<Property Name="LfoDepth" Type="Real64" Value="35.3"/>
+																		<Property Name="LfoFrequency" Type="Real64" Value="0.3"/>
+																	</PropertyList>
+																</ModulatorLfo>
+															</Custom>
+														</Reference>
+													</ReferenceList>
+													<Curve Name="" ID="{F0C365D5-9FDC-4E77-BCF1-9529079416AE}">
+														<PropertyList>
+															<Property Name="Flags" Type="int32" Value="3"/>
+														</PropertyList>
+														<PointList>
+															<Point>
+																<XPos>0</XPos>
+																<YPos>-13.14777</YPos>
+																<Flags>21</Flags>
+															</Point>
+															<Point>
+																<XPos>1</XPos>
+																<YPos>0</YPos>
+																<Flags>53</Flags>
+															</Point>
+														</PointList>
+													</Curve>
+												</RTPC>
+												<RTPC Name="" ID="{E6C6C28D-7D88-497F-8B9F-227A87EBED6C}" ShortID="86638408">
+													<ReferenceList>
+														<Reference Name="ControlInput">
+															<ObjectRef Name="PlayerHealth" ID="{1A24274A-B062-4BE7-BB90-5DBF43ACF8C0}" WorkUnitID="{6C67577F-F5B1-4C12-9848-3947934C3F41}"/>
+														</Reference>
+													</ReferenceList>
+													<Curve Name="" ID="{A39A1F44-6EDD-4507-A5D8-4C9A75D75B9A}">
+														<PropertyList>
+															<Property Name="Flags" Type="int32" Value="3"/>
+														</PropertyList>
+														<PointList>
+															<Point>
+																<XPos>1</XPos>
+																<YPos>-0.12558</YPos>
+																<Flags>5</Flags>
+																<SegmentShape>Exp3</SegmentShape>
+															</Point>
+															<Point>
+																<XPos>100</XPos>
+																<YPos>-4.46473</YPos>
+																<Flags>37</Flags>
+															</Point>
+														</PointList>
+													</Curve>
+												</RTPC>
+											</RTPCList>
 										</Property>
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{23AF77D7-3FEA-409B-8E44-F5B490014C61}"/>
+										</Reference>
+										<Reference Name="Effect0" PluginName="Wwise Flanger" CompanyID="0" PluginID="125" PluginType="3">
+											<ObjectRef Name="Heavy_Metal" ID="{9104321C-9E54-4879-A29A-EF8D46BE9035}" WorkUnitID="{E8613F7D-BAD3-45CD-A3ED-505576F31277}"/>
 										</Reference>
 										<Reference Name="OutputBus">
 											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C91EB4C6-56DC-4541-96C4-29E948904D66}"/>
@@ -2546,6 +2638,7 @@
 						<ActorMixer Name="3D" ID="{C1CB306E-E300-406F-A917-51674E9A9522}" ShortID="815199757">
 							<PropertyList>
 								<Property Name="3DSpatialization" Type="int16" Value="2"/>
+								<Property Name="EnableDiffraction" Type="bool" Value="True"/>
 								<Property Name="OverridePositioning" Type="bool" Value="True"/>
 							</PropertyList>
 							<ReferenceList>
@@ -2594,15 +2687,16 @@
 									<PropertyList>
 										<Property Name="Highpass" Type="int16">
 											<ValueList>
-												<Value>19</Value>
+												<Value>34</Value>
 											</ValueList>
 										</Property>
 										<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
 										<Property Name="Lowpass" Type="int16">
 											<ValueList>
-												<Value>24</Value>
+												<Value>1</Value>
 											</ValueList>
 										</Property>
+										<Property Name="OverrideEffect" Type="bool" Value="True"/>
 										<Property Name="Pitch" Type="int32">
 											<ValueList>
 												<Value>100</Value>
@@ -2627,12 +2721,12 @@
 														<PointList>
 															<Point>
 																<XPos>0</XPos>
-																<YPos>181</YPos>
+																<YPos>43</YPos>
 																<Flags>21</Flags>
 															</Point>
 															<Point>
 																<XPos>1</XPos>
-																<YPos>-590</YPos>
+																<YPos>-361</YPos>
 																<Flags>53</Flags>
 															</Point>
 														</PointList>
@@ -2642,13 +2736,27 @@
 										</Property>
 										<Property Name="Volume" Type="Real64">
 											<ValueList>
-												<Value>-7</Value>
+												<Value>-11</Value>
 											</ValueList>
 										</Property>
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{23AF77D7-3FEA-409B-8E44-F5B490014C61}"/>
+										</Reference>
+										<Reference Name="Effect0">
+											<Custom CreatedFrom="{4CCC0D23-78CD-4B09-A62B-D3CB5E071A2F}">
+												<Effect Name="Aliasing (Custom)" ID="{AAEB4331-2A2B-4A17-A1ED-09DECA626222}" ShortID="239393478" PluginName="Wwise Tremolo" CompanyID="0" PluginID="131" PluginType="3">
+													<PropertyList>
+														<Property Name="ModFrequency" Type="Real32" Value="20000"/>
+														<Property Name="ModPWM" Type="Real32" Value="0"/>
+														<Property Name="ModPhaseOffset" Type="Real32" Value="-180"/>
+														<Property Name="ModPhaseSpread" Type="Real32" Value="19"/>
+														<Property Name="ModSmoothing" Type="Real32" Value="100"/>
+														<Property Name="ModWaveform" Type="int32" Value="4"/>
+													</PropertyList>
+												</Effect>
+											</Custom>
 										</Reference>
 										<Reference Name="OutputBus">
 											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C91EB4C6-56DC-4541-96C4-29E948904D66}"/>
@@ -2657,7 +2765,7 @@
 									<ChildrenList>
 										<AudioFileSource Name="15-Electric Arc-Transformer-Static" ID="{C01FE37D-080B-4974-B16E-54A8C6A1A45C}">
 											<PropertyList>
-												<Property Name="ChannelConfigOverride" Type="int64" Value="12546"/>
+												<Property Name="ChannelConfigOverride" Type="int64" Value="49410"/>
 												<Property Name="CrossfadeDuration" Type="Real64" Value="250.909"/>
 												<Property Name="LoopBegin" Type="Real64" Value="0.166"/>
 												<Property Name="LoopEnd" Type="Real64" Value="3.512"/>
@@ -2807,19 +2915,65 @@
 									<PropertyList>
 										<Property Name="Highpass" Type="int16">
 											<ValueList>
-												<Value>29</Value>
+												<Value>41</Value>
 											</ValueList>
 										</Property>
 										<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
 										<Property Name="Lowpass" Type="int16">
 											<ValueList>
-												<Value>71</Value>
+												<Value>65</Value>
 											</ValueList>
+										</Property>
+										<Property Name="Pitch" Type="int32">
+											<RTPCList>
+												<RTPC Name="" ID="{2530DB65-2A29-4D2E-AC53-4DC07F538D23}" ShortID="650676265">
+													<ReferenceList>
+														<Reference Name="ControlInput">
+															<Custom>
+																<ModulatorTime Name="Modulator Time (Custom)" ID="{5715F7CF-019D-43EB-8907-8B79731DD208}" ShortID="760406361">
+																	<PropertyList>
+																		<Property Name="EnvelopeStopPlayback" Type="bool" Value="False"/>
+																	</PropertyList>
+																</ModulatorTime>
+															</Custom>
+														</Reference>
+													</ReferenceList>
+													<Curve Name="" ID="{744AA4C8-8A97-4354-B94E-A4EA9583F9EF}">
+														<PropertyList>
+															<Property Name="Flags" Type="int32" Value="65537"/>
+														</PropertyList>
+														<PointList>
+															<Point>
+																<XPos>0</XPos>
+																<YPos>-367</YPos>
+																<Flags>5</Flags>
+															</Point>
+															<Point>
+																<XPos>1</XPos>
+																<YPos>0</YPos>
+																<Flags>37</Flags>
+															</Point>
+														</PointList>
+													</Curve>
+												</RTPC>
+											</RTPCList>
 										</Property>
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{23AF77D7-3FEA-409B-8E44-F5B490014C61}"/>
+										</Reference>
+										<Reference Name="Effect0">
+											<Custom CreatedFrom="{6082F901-3CE1-4D78-8F2D-B2B72CF28085}">
+												<Effect Name="Very_Slow_Modulation (Custom)" ID="{40466887-3AF4-4511-B0F8-0318EA2438E6}" ShortID="707272061" PluginName="Wwise Tremolo" CompanyID="0" PluginID="131" PluginType="3">
+													<PropertyList>
+														<Property Name="ModFrequency" Type="Real32" Value="0.5"/>
+														<Property Name="ModPWM" Type="Real32" Value="0"/>
+														<Property Name="ModPhaseOffset" Type="Real32" Value="-180"/>
+														<Property Name="ModPhaseSpread" Type="Real32" Value="58"/>
+													</PropertyList>
+												</Effect>
+											</Custom>
 										</Reference>
 										<Reference Name="OutputBus">
 											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C91EB4C6-56DC-4541-96C4-29E948904D66}"/>
@@ -2828,6 +2982,7 @@
 									<ChildrenList>
 										<AudioFileSource Name="Room Tone, Toilet, Fan Humming, Chiangmai, Thailand" ID="{84B02794-F22D-4B29-9EFA-5796683962F5}">
 											<PropertyList>
+												<Property Name="ChannelConfigOverride" Type="int64" Value="49410"/>
 												<Property Name="CrossfadeDuration" Type="Real64" Value="642.947"/>
 												<Property Name="LoopBegin" Type="Real64" Value="0.856"/>
 												<Property Name="LoopEnd" Type="Real64" Value="2.785"/>
@@ -2843,6 +2998,166 @@
 									<ObjectLists/>
 									<ActiveSourceList>
 										<ActiveSource Name="Room Tone, Toilet, Fan Humming, Chiangmai, Thailand" ID="{84B02794-F22D-4B29-9EFA-5796683962F5}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="TurningMirror_Highs" ID="{13BFC23D-1BCA-49A7-B5C4-F0D2B802D9D1}" ShortID="131342574">
+									<PropertyList>
+										<Property Name="3DSpatialization" Type="int16" Value="2"/>
+										<Property Name="Highpass" Type="int16">
+											<ValueList>
+												<Value>22</Value>
+											</ValueList>
+										</Property>
+										<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+										<Property Name="Lowpass" Type="int16">
+											<ValueList>
+												<Value>17</Value>
+											</ValueList>
+										</Property>
+										<Property Name="Pitch" Type="int32">
+											<ValueList>
+												<Value>-330</Value>
+											</ValueList>
+											<RTPCList>
+												<RTPC Name="" ID="{20DED40F-9FF3-456A-9E30-7C6760F1146D}" ShortID="201656698">
+													<ReferenceList>
+														<Reference Name="ControlInput">
+															<Custom>
+																<ModulatorEnvelope Name="Modulator Envelope (Custom)" ID="{C0EE9677-12A8-45BF-A363-99927CCE9F50}" ShortID="253017421">
+																	<PropertyList>
+																		<Property Name="EnvelopeAttackCurve" Type="Real64" Value="30">
+																			<ModifierList>
+																				<ModifierInfo>
+																					<Modifier Name="" ID="{00802BDF-8541-4B21-B4CB-2DA58656934C}">
+																						<PropertyList>
+																							<Property Name="Enabled" Type="bool" Value="True"/>
+																							<Property Name="Min" Type="Real64" Value="-11"/>
+																						</PropertyList>
+																					</Modifier>
+																				</ModifierInfo>
+																			</ModifierList>
+																		</Property>
+																		<Property Name="EnvelopeAttackTime" Type="Real64" Value="0.074">
+																			<ModifierList>
+																				<ModifierInfo>
+																					<Modifier Name="" ID="{DAB1C8CA-33FD-4F83-BAFB-EFEC5CFDB07F}">
+																						<PropertyList>
+																							<Property Name="Enabled" Type="bool" Value="True"/>
+																						</PropertyList>
+																					</Modifier>
+																				</ModifierInfo>
+																			</ModifierList>
+																		</Property>
+																		<Property Name="EnvelopeStopPlayback" Type="bool" Value="False"/>
+																	</PropertyList>
+																</ModulatorEnvelope>
+															</Custom>
+														</Reference>
+													</ReferenceList>
+													<Curve Name="" ID="{5EC3A94B-BD2A-40F2-92EE-9B89084700E9}">
+														<PropertyList>
+															<Property Name="Flags" Type="int32" Value="65537"/>
+														</PropertyList>
+														<PointList>
+															<Point>
+																<XPos>0</XPos>
+																<YPos>-321</YPos>
+																<Flags>21</Flags>
+															</Point>
+															<Point>
+																<XPos>1</XPos>
+																<YPos>0</YPos>
+																<Flags>53</Flags>
+															</Point>
+														</PointList>
+													</Curve>
+												</RTPC>
+											</RTPCList>
+										</Property>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-13</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Attenuation">
+											<ObjectRef Name="10" ID="{CD38D13E-1D7D-46FA-AD0C-C7D5F9690547}" WorkUnitID="{47D4E814-D669-4A08-8AD2-F706566546E0}"/>
+										</Reference>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{23AF77D7-3FEA-409B-8E44-F5B490014C61}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Rooms" ID="{F220833B-3FC1-4DC8-9CF3-6F367C8C1EDE}" WorkUnitID="{C91EB4C6-56DC-4541-96C4-29E948904D66}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Bluezone_BC0231_metal_grinding_013" ID="{1EA5C666-191D-4A21-9BF9-23DDE79D7954}">
+											<PropertyList>
+												<Property Name="ChannelConfigOverride" Type="int64" Value="49410"/>
+												<Property Name="CrossfadeDuration" Type="Real64" Value="97.959"/>
+												<Property Name="LoopBegin" Type="Real64" Value="1.41"/>
+												<Property Name="LoopEnd" Type="Real64" Value="2.586"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimBegin" Type="Real64" Value="1.15877177621837"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>Bluezone_BC0231_metal_grinding_013.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="318493534"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ObjectLists/>
+									<ActiveSourceList>
+										<ActiveSource Name="Bluezone_BC0231_metal_grinding_013" ID="{1EA5C666-191D-4A21-9BF9-23DDE79D7954}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="TurningMirror_mid" ID="{8809283C-8B42-449D-B0D6-EEFD1FCCADBB}" ShortID="882366014">
+									<PropertyList>
+										<Property Name="Highpass" Type="int16">
+											<ValueList>
+												<Value>12</Value>
+											</ValueList>
+										</Property>
+										<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+										<Property Name="Lowpass" Type="int16">
+											<ValueList>
+												<Value>56</Value>
+											</ValueList>
+										</Property>
+										<Property Name="Pitch" Type="int32">
+											<ValueList>
+												<Value>-1040</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{23AF77D7-3FEA-409B-8E44-F5B490014C61}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C91EB4C6-56DC-4541-96C4-29E948904D66}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="rockslide_02" ID="{0013D352-481A-4A1A-A6A4-0BFBB67AA9A3}">
+											<PropertyList>
+												<Property Name="CrossfadeDuration" Type="Real64" Value="245.887"/>
+												<Property Name="LoopBegin" Type="Real64" Value="0.245"/>
+												<Property Name="LoopEnd" Type="Real64" Value="2.827"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>rockslide_02.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="611489906"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ObjectLists/>
+									<ActiveSourceList>
+										<ActiveSource Name="rockslide_02" ID="{0013D352-481A-4A1A-A6A4-0BFBB67AA9A3}" Platform="Linked"/>
 									</ActiveSourceList>
 								</Sound>
 							</ChildrenList>
@@ -2883,13 +3198,14 @@
 										</RTPC>
 									</RTPCList>
 								</Property>
+								<Property Name="OverrideOutput" Type="bool" Value="True"/>
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{23AF77D7-3FEA-409B-8E44-F5B490014C61}"/>
 								</Reference>
 								<Reference Name="OutputBus">
-									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C91EB4C6-56DC-4541-96C4-29E948904D66}"/>
+									<ObjectRef Name="Rooms_docking" ID="{6ED14294-29EA-4AC9-82D5-39255BF161A4}" WorkUnitID="{C91EB4C6-56DC-4541-96C4-29E948904D66}"/>
 								</Reference>
 							</ReferenceList>
 							<ChildrenList>
@@ -2937,7 +3253,7 @@
 										<Property Name="RandomOrSequence" Type="int16" Value="0"/>
 										<Property Name="Volume" Type="Real64">
 											<ValueList>
-												<Value>-11</Value>
+												<Value>-4</Value>
 											</ValueList>
 										</Property>
 									</PropertyList>
@@ -3050,12 +3366,38 @@
 								</RandomSequenceContainer>
 								<Sound Name="Blind Faith Altar Ambient v2" ID="{D2A25114-1695-416F-8059-C484AADAFAED}" ShortID="482743501">
 									<PropertyList>
+										<Property Name="Highpass" Type="int16">
+											<ValueList>
+												<Value>27</Value>
+											</ValueList>
+										</Property>
 										<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+										<Property Name="OverrideEffect" Type="bool" Value="True"/>
 										<Property Name="OverrideOutput" Type="bool" Value="True"/>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-4</Value>
+											</ValueList>
+										</Property>
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{23AF77D7-3FEA-409B-8E44-F5B490014C61}"/>
+										</Reference>
+										<Reference Name="Effect0">
+											<Custom>
+												<Effect Name="Wwise Parametric EQ (Custom)" ID="{DAE7AF77-BF10-4CAB-B911-99775309962A}" ShortID="293256131" PluginName="Wwise Parametric EQ" CompanyID="0" PluginID="105" PluginType="3">
+													<PropertyList>
+														<Property Name="FilterTypeBand1" Type="int32" Value="6"/>
+														<Property Name="FilterTypeBand2" Type="int32" Value="4"/>
+														<Property Name="FrequencyBand1" Type="Real32" Value="146"/>
+														<Property Name="FrequencyBand2" Type="Real32" Value="246"/>
+														<Property Name="GainBand1" Type="Real32" Value="-5.5"/>
+														<Property Name="GainBand2" Type="Real32" Value="-1.5"/>
+														<Property Name="QFactorBand1" Type="Real32" Value="3.1"/>
+													</PropertyList>
+												</Effect>
+											</Custom>
 										</Reference>
 										<Reference Name="OutputBus">
 											<ObjectRef Name="Rooms_docking" ID="{6ED14294-29EA-4AC9-82D5-39255BF161A4}" WorkUnitID="{C91EB4C6-56DC-4541-96C4-29E948904D66}"/>
@@ -3100,6 +3442,47 @@
 									<ObjectLists/>
 									<ActiveSourceList>
 										<ActiveSource Name="Blind Faith Altar Ambient v2" ID="{C0F6E94A-61B9-4F5D-B6E1-B9956CED0BDB}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Earthquake_Rumble_PSEM_100" ID="{BF83A364-1CCC-4242-87E8-C944C504B953}" ShortID="925085890">
+									<PropertyList>
+										<Property Name="Highpass" Type="int16">
+											<ValueList>
+												<Value>12</Value>
+											</ValueList>
+										</Property>
+										<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+										<Property Name="Lowpass" Type="int16">
+											<ValueList>
+												<Value>80</Value>
+											</ValueList>
+										</Property>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-15</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{23AF77D7-3FEA-409B-8E44-F5B490014C61}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C91EB4C6-56DC-4541-96C4-29E948904D66}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Earthquake_Rumble_PSEM_100" ID="{89CE11C8-A2CD-4510-BC5C-940744038932}">
+											<Language>SFX</Language>
+											<AudioFile>Earthquake_Rumble_PSEM.100.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="652525734"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ObjectLists/>
+									<ActiveSourceList>
+										<ActiveSource Name="Earthquake_Rumble_PSEM_100" ID="{89CE11C8-A2CD-4510-BC5C-940744038932}" Platform="Linked"/>
 									</ActiveSourceList>
 								</Sound>
 							</ChildrenList>
