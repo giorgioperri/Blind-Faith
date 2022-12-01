@@ -16,6 +16,7 @@ TagManager:
   - Prism
   - GreenTarget
   - RedTarget
+  - Redirector
   layers:
   - Default
   - TransparentFX

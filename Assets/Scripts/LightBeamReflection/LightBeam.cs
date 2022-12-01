@@ -98,6 +98,12 @@ public class LightBeam
             _lightIndices.Add(hitInfo.point);
             UpdateLaser();
         }
+        else if (hitInfo.collider.gameObject.CompareTag("Redirector"))
+        {
+            hitInfo.transform.SendMessage("OnBeamReceived");
+            _lightIndices.Add(hitInfo.point);
+            UpdateLaser();
+        }
         else if (hitInfo.collider.gameObject.CompareTag("GreenTarget"))
         {
             if (_lightLaser.startColor == Color.green)
