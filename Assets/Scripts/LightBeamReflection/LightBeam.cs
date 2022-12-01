@@ -36,13 +36,13 @@ public class LightBeam
         Ray ray = new Ray(position, direction);
         RaycastHit hit;
 
-        if(Physics.Raycast(ray, out hit, 30))
+        if(Physics.Raycast(ray, out hit, 999))
         {
             CheckHit(hit, direction, lightLaser);
         }
         else
         {
-            _lightIndices.Add(ray.GetPoint(30));
+            _lightIndices.Add(ray.GetPoint(999));
             UpdateLaser();
         }
     }
