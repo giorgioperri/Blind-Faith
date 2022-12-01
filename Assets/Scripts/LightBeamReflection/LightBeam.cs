@@ -21,8 +21,8 @@ public class LightBeam
         _position = position;
         _direction = direction;
         _lightLaser = lightObj.AddComponent(typeof(LineRenderer)) as LineRenderer;
-        _lightLaser.startWidth = 0.1f;
-        _lightLaser.endWidth = 0.1f;
+        _lightLaser.startWidth = 0.07f;
+        _lightLaser.endWidth = 0.07f;
         _lightLaser.material = material;
         _lightLaser.startColor = Color.yellow;
         _lightLaser.endColor = Color.yellow;
@@ -57,10 +57,12 @@ public class LightBeam
             _lightLaser.SetPosition(counter, idx);
             counter++;
         }
+        
+        LightMeshSpawner.Instance.SetLightBeamPoints(_lightLaser);
     }
 
     void CheckHit(RaycastHit hitInfo, Vector3 direction, LineRenderer laser)
-    {
+    {   
         if(hitInfo.collider.gameObject.CompareTag("Mirror"))
         {
             Vector3 pos = hitInfo.point;
