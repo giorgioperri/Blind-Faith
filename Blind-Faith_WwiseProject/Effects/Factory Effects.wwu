@@ -138,8 +138,9 @@
 						<Effect Name="Nearly_Forever" ID="{38550FDA-9236-4FC5-8AE0-68DB08164B25}" PluginName="Wwise Delay" CompanyID="0" PluginID="106" PluginType="3">
 							<PropertyList>
 								<Property Name="DelayTime" Type="Real32" Value="0.6"/>
-								<Property Name="Feedback" Type="Real32" Value="80"/>
-								<Property Name="WetDryMix" Type="Real32" Value="30"/>
+								<Property Name="Feedback" Type="Real32" Value="99"/>
+								<Property Name="ProcessLFE" Type="bool" Value="False"/>
+								<Property Name="WetDryMix" Type="Real32" Value="0"/>
 							</PropertyList>
 						</Effect>
 					</ChildrenList>
@@ -188,10 +189,10 @@
 						</Effect>
 						<Effect Name="Brick_Wall_Minus_1dB_Peak_Fast_Release" ID="{2144284E-7ADD-4341-86A4-4E468BEC9A2D}" PluginName="Wwise Peak Limiter" CompanyID="0" PluginID="110" PluginType="3">
 							<PropertyList>
-								<Property Name="OutputGain" Type="Real32" Value="2"/>
+								<Property Name="OutputGain" Type="Real32" Value="2.4"/>
 								<Property Name="Ratio" Type="Real32" Value="50"/>
 								<Property Name="ReleaseTime" Type="Real32" Value="0.02"/>
-								<Property Name="Threshold" Type="Real32" Value="-1"/>
+								<Property Name="Threshold" Type="Real32" Value="-4.6"/>
 							</PropertyList>
 						</Effect>
 						<Effect Name="Brick_Wall_Minus_1dB_Peak_Slow_Release" ID="{9FB8DC2B-7F1C-4E4E-8FA5-50872652D2DD}" PluginName="Wwise Peak Limiter" CompanyID="0" PluginID="110" PluginType="3">
@@ -587,9 +588,15 @@
 								<Effect Name="High_Pass_60Hz" ID="{F9627628-0B10-4272-BC30-D4C20423CB38}" PluginName="Wwise Parametric EQ" CompanyID="0" PluginID="105" PluginType="3">
 									<PropertyList>
 										<Property Name="FilterTypeBand1" Type="int32" Value="1"/>
+										<Property Name="FilterTypeBand3" Type="int32" Value="6"/>
 										<Property Name="FrequencyBand1" Type="Real32" Value="60"/>
-										<Property Name="OnOffBand2" Type="bool" Value="False"/>
-										<Property Name="OnOffBand3" Type="bool" Value="False"/>
+										<Property Name="FrequencyBand2" Type="Real32" Value="203"/>
+										<Property Name="FrequencyBand3" Type="Real32" Value="921"/>
+										<Property Name="GainBand2" Type="Real32" Value="-5"/>
+										<Property Name="GainBand3" Type="Real32" Value="-2.5"/>
+										<Property Name="OutputLevel" Type="Real32" Value="2"/>
+										<Property Name="QFactorBand2" Type="Real32" Value="4.2"/>
+										<Property Name="QFactorBand3" Type="Real32" Value="15.7"/>
 									</PropertyList>
 								</Effect>
 							</ChildrenList>
@@ -620,11 +627,14 @@
 							<ChildrenList>
 								<Effect Name="Low_Pass_20KHz" ID="{830124FB-B9D5-4AE8-846E-E94A74652666}" PluginName="Wwise Parametric EQ" CompanyID="0" PluginID="105" PluginType="3">
 									<PropertyList>
-										<Property Name="FilterTypeBand1" Type="int32" Value="1"/>
+										<Property Name="FilterTypeBand2" Type="int32" Value="5"/>
 										<Property Name="FilterTypeBand3" Type="int32" Value="0"/>
+										<Property Name="FrequencyBand1" Type="Real32" Value="246"/>
+										<Property Name="FrequencyBand2" Type="Real32" Value="6670"/>
 										<Property Name="FrequencyBand3" Type="Real32" Value="20000"/>
-										<Property Name="OnOffBand1" Type="bool" Value="False"/>
-										<Property Name="OnOffBand2" Type="bool" Value="False"/>
+										<Property Name="GainBand1" Type="Real32" Value="3.5"/>
+										<Property Name="GainBand2" Type="Real32" Value="7"/>
+										<Property Name="OutputLevel" Type="Real32" Value="5"/>
 									</PropertyList>
 								</Effect>
 							</ChildrenList>
@@ -1622,6 +1632,7 @@
 										<Property Name="ModDepth" Type="Real32" Value="2"/>
 										<Property Name="ModFrequency" Type="Real32" Value="0.25"/>
 										<Property Name="ModPWM" Type="Real32" Value="0"/>
+										<Property Name="WetDryMix" Type="Real32" Value="22"/>
 									</PropertyList>
 								</Effect>
 							</ChildrenList>

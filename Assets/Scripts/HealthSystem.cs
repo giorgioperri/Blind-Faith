@@ -4,9 +4,15 @@ using Unity.Mathematics;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.Rendering.PostProcessing;
+using System;
 
 public class HealthSystem : MonoBehaviour
 {
+    [Header("Health Audio Parameters")]
+    [SerializeField] public AK.Wwise.State stateOn;
+    [SerializeField] public AK.Wwise.State stateOff;
+    [SerializeField] public AK.Wwise.Event loosingHealth;
+
     [SerializeField]
     private Image _healthFadeEffect;
     private float _maxPlayerHealth = 100f;
@@ -14,17 +20,55 @@ public class HealthSystem : MonoBehaviour
     private float _loseHealthSpeed = 2f;
     [SerializeField]
     private float _gainHealthSpeed = 10f;
+    [SerializeField]
+    private float playerHealth;
+    [SerializeField]
+    private bool isPlayerLoosingHealth;
+    [SerializeField]
+    private float playerHealthASecondAgo;
 
     public static HealthSystem Instance;
-    
+
+    private void Start()
+    {
+        AkSoundEngine.PostEvent("LowHealth", gameObject);
+    }
+
     private void Awake()
     {
         if (Instance != null)
         {
             Destroy(this);
         }
-        
+
         Instance = this;
+        StartCoroutine(CheckForLostHealth());
+    }
+
+    //Checks if health has been lost past 2 seconds
+    IEnumerator CheckForLostHealth()
+    {
+        yield return new WaitForSeconds(2);
+        if (playerHealth <= playerHealthASecondAgo)
+        {
+            isPlayerLoosingHealth = true;
+        }
+        else
+        {
+            isPlayerLoosingHealth = false;
+        }
+        playerHealthASecondAgo = playerHealth;
+        StartCoroutine(CheckForLostHealth());
+        if (isPlayerLoosingHealth == true)
+        {
+            AkSoundEngine.PostEvent("LoosingHealth", gameObject);
+            stateOn.SetValue();
+        }
+        else
+        {
+            AkSoundEngine.PostEvent("NotLoosingHealth", gameObject);
+            stateOff.SetValue();
+        }
     }
 
     void Update()
@@ -57,6 +101,10 @@ public class HealthSystem : MonoBehaviour
         {
             GameManager.Instance.health -= Time.deltaTime * _loseHealthSpeed;
         }
+        playerHealth = GameManager.Instance.health;
+        //Audio
+        AkSoundEngine.SetRTPCValue("PlayerHealth", GameManager.Instance.health, gameObject);
+
     }
 
     public void Heal()

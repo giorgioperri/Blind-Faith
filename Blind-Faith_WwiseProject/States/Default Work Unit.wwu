@@ -25,6 +25,34 @@
 						</StateGroup>
 					</ChildrenList>
 				</Folder>
+				<Folder Name="PlayerState" ID="{72CB2445-BC09-4D11-B660-600C948FD972}" ShortID="774479556">
+					<ChildrenList>
+						<StateGroup Name="Health_State" ID="{8FEDBC34-4A47-466A-8754-65F00CB4D57D}">
+							<PropertyList>
+								<Property Name="DefaultTransitionTime" Type="Real64" Value="6"/>
+							</PropertyList>
+							<ChildrenList>
+								<State Name="None" ID="{663A99AF-8A3E-4960-8363-3779C9B07B5B}"/>
+								<State Name="LoosingSanity" ID="{630E6C0B-2BF8-4496-B484-0264F235037A}"/>
+								<State Name="NotLoosingSanity" ID="{D6278C57-B60E-4AD1-8033-76B4EED867A7}"/>
+							</ChildrenList>
+							<TransitionList>
+								<Transition>
+									<StartState Name="NotLoosingSanity" ID="{D6278C57-B60E-4AD1-8033-76B4EED867A7}"/>
+									<EndState Name="LoosingSanity" ID="{630E6C0B-2BF8-4496-B484-0264F235037A}"/>
+									<Time>6</Time>
+									<IsShared>false</IsShared>
+								</Transition>
+								<Transition>
+									<StartState Name="LoosingSanity" ID="{630E6C0B-2BF8-4496-B484-0264F235037A}"/>
+									<EndState Name="NotLoosingSanity" ID="{D6278C57-B60E-4AD1-8033-76B4EED867A7}"/>
+									<Time>6</Time>
+									<IsShared>false</IsShared>
+								</Transition>
+							</TransitionList>
+						</StateGroup>
+					</ChildrenList>
+				</Folder>
 			</ChildrenList>
 		</WorkUnit>
 	</States>

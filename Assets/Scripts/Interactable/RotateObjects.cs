@@ -13,6 +13,7 @@ public class RotateObjects : Interactable
     [SerializeField] private float _lightStored;
     [SerializeField] private bool _canDeactivateGrab = true;
     [SerializeField] private Light _light;
+    public bool shouldStabilizeY;
 
     public void OnBeamReceived()
     {
