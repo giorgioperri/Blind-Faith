@@ -23,8 +23,9 @@ public class LightMeshSpawner : MonoBehaviour
 
     public void SetLightBeamPoints(LineRenderer _laser)
     {
-        
-        if (_locallyStoredPoints.Count != _laser.positionCount)
+
+        if (_locallyStoredPoints.Count != _laser.positionCount ||
+            _locallyStoredPoints[_locallyStoredPoints.Count - 1] != _laser.GetPosition(_laser.positionCount - 1))
         {
             _locallyStoredPoints.Clear();
             foreach (GameObject o in _lightMeshes)
@@ -51,6 +52,9 @@ public class LightMeshSpawner : MonoBehaviour
             {
                 Vector3 pos = _locallyStoredPoints[i] + dir * (j / length);
                 _lightMeshes.Add(Instantiate(lightMeshPrefab, pos, Quaternion.LookRotation(dir, Vector3.up)));
+                float cutoff = length - j < 1.0f ? 1 - (length - j) : 0.0f;
+                _lightMeshes[_lightMeshes.Count-1].GetComponent<MeshRenderer>().material.SetFloat("_alphaCutoff", cutoff);
+                Debug.Log(cutoff);
             }
         }
     }

@@ -40734,7 +40734,7 @@ PrefabInstance:
     - target: {fileID: 3569895449470239229, guid: c5efc39a8aaf6e64ea40e9ad573e9b47,
         type: 3}
       propertyPath: lanternCharge
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5974167189552532037, guid: c5efc39a8aaf6e64ea40e9ad573e9b47,
         type: 3}
