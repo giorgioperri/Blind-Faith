@@ -12,8 +12,6 @@ public class Door : Interactable
 
     public override void OnInteraction()    
     {
-        if (Keyboard.current.fKey.isPressed) return;
-        
         if (transform.GetComponent<Door>().isActiveAndEnabled)
         {
             _doorAnim.Play("DoorOpen", 0, 0.0f);

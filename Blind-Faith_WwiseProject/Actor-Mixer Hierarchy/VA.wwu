@@ -148,52 +148,6 @@
 												<ActiveSource Name="Clerk_s1_" ID="{201D455D-C36E-45C7-97A2-3DCCA34BF624}" Platform="Linked"/>
 											</ActiveSourceList>
 										</Sound>
-										<Sound Name="Clerk_s1__1" ID="{B6188F73-E438-47C6-BCAB-E7E178C2ED18}" ShortID="216704516">
-											<ReferenceList>
-												<Reference Name="Conversion">
-													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{23AF77D7-3FEA-409B-8E44-F5B490014C61}"/>
-												</Reference>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C91EB4C6-56DC-4541-96C4-29E948904D66}"/>
-												</Reference>
-											</ReferenceList>
-											<ChildrenList>
-												<AudioFileSource Name="Clerk_s1__1" ID="{3267F5E8-6BCE-43E4-BC8C-FC809D057288}">
-													<PropertyList>
-														<Property Name="MarkerInputMode" Type="int16" Value="2"/>
-													</PropertyList>
-													<Language>SFX</Language>
-													<AudioFile>Clerk_s1__1.wav</AudioFile>
-													<MediaIDList>
-														<MediaID ID="290489526"/>
-													</MediaIDList>
-													<PluginInnerObjectList>
-														<List Name="Markers">
-															<PluginInnerObject Name="" ID="{EDEC953E-CAA5-4409-A60C-5DC2B8C95A73}" PluginName="Marker" CompanyID="0" PluginID="993">
-																<PropertyList>
-																	<Property Name="Label" Type="string" Value="Tempo: 120.0"/>
-																</PropertyList>
-															</PluginInnerObject>
-															<PluginInnerObject Name="" ID="{B23E1886-4CAC-4DB3-ACC3-3CB86C32D4A5}" PluginName="Marker" CompanyID="0" PluginID="993">
-																<PropertyList>
-																	<Property Name="Label" Type="string" Value="Intro Scene"/>
-																</PropertyList>
-															</PluginInnerObject>
-															<PluginInnerObject Name="" ID="{3BBE0283-FCE6-408B-9D83-3DE64A5974FD}" PluginName="Marker" CompanyID="0" PluginID="993">
-																<PropertyList>
-																	<Property Name="Label" Type="string" Value="end"/>
-																	<Property Name="Time" Type="Real64" Value="7.66725297589085"/>
-																</PropertyList>
-															</PluginInnerObject>
-														</List>
-													</PluginInnerObjectList>
-												</AudioFileSource>
-											</ChildrenList>
-											<ObjectLists/>
-											<ActiveSourceList>
-												<ActiveSource Name="Clerk_s1__1" ID="{3267F5E8-6BCE-43E4-BC8C-FC809D057288}" Platform="Linked"/>
-											</ActiveSourceList>
-										</Sound>
 										<Sound Name="Clerk_s1__2" ID="{4339F99F-337C-48FA-B157-E80557E52664}" ShortID="169512733">
 											<ReferenceList>
 												<Reference Name="Conversion">
@@ -284,52 +238,6 @@
 											<ObjectLists/>
 											<ActiveSourceList>
 												<ActiveSource Name="Clerk_s1__3" ID="{AF859057-1861-4016-B6CF-4E95F1A22AB0}" Platform="Linked"/>
-											</ActiveSourceList>
-										</Sound>
-										<Sound Name="Clerk_s1__4" ID="{66199C98-6EF9-4676-834F-C1AB5940E944}" ShortID="219717740">
-											<ReferenceList>
-												<Reference Name="Conversion">
-													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{23AF77D7-3FEA-409B-8E44-F5B490014C61}"/>
-												</Reference>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C91EB4C6-56DC-4541-96C4-29E948904D66}"/>
-												</Reference>
-											</ReferenceList>
-											<ChildrenList>
-												<AudioFileSource Name="Clerk_s1__4" ID="{2FF320E3-9137-4199-ACC2-940401C8E07F}">
-													<PropertyList>
-														<Property Name="MarkerInputMode" Type="int16" Value="2"/>
-													</PropertyList>
-													<Language>SFX</Language>
-													<AudioFile>Clerk_s1__4.wav</AudioFile>
-													<MediaIDList>
-														<MediaID ID="776242514"/>
-													</MediaIDList>
-													<PluginInnerObjectList>
-														<List Name="Markers">
-															<PluginInnerObject Name="" ID="{C1E7B956-FF4C-4730-B963-44516578C9A9}" PluginName="Marker" CompanyID="0" PluginID="993">
-																<PropertyList>
-																	<Property Name="Label" Type="string" Value="Tempo: 120.0"/>
-																</PropertyList>
-															</PluginInnerObject>
-															<PluginInnerObject Name="" ID="{AB508F5E-E186-46F6-86A8-A89D5DA82404}" PluginName="Marker" CompanyID="0" PluginID="993">
-																<PropertyList>
-																	<Property Name="Label" Type="string" Value="Intro Scene"/>
-																</PropertyList>
-															</PluginInnerObject>
-															<PluginInnerObject Name="" ID="{EF0426BC-9A7C-4316-ADFF-67FC4519209B}" PluginName="Marker" CompanyID="0" PluginID="993">
-																<PropertyList>
-																	<Property Name="Label" Type="string" Value="end"/>
-																	<Property Name="Time" Type="Real64" Value="2.03261135320936"/>
-																</PropertyList>
-															</PluginInnerObject>
-														</List>
-													</PluginInnerObjectList>
-												</AudioFileSource>
-											</ChildrenList>
-											<ObjectLists/>
-											<ActiveSourceList>
-												<ActiveSource Name="Clerk_s1__4" ID="{2FF320E3-9137-4199-ACC2-940401C8E07F}" Platform="Linked"/>
 											</ActiveSourceList>
 										</Sound>
 										<Sound Name="Clerk_s1__5" ID="{31E3198E-B4D2-4385-986D-0EAA5C0E7EDD}" ShortID="85444521">
@@ -424,52 +332,6 @@
 												<ActiveSource Name="Clerk_s1__6" ID="{B660A4F0-EF93-4BF3-BC5A-ED40387B09AD}" Platform="Linked"/>
 											</ActiveSourceList>
 										</Sound>
-										<Sound Name="Clerk_s1__7" ID="{C722D05D-4AD1-4D59-BD5E-8B7BE3086A61}" ShortID="939215951">
-											<ReferenceList>
-												<Reference Name="Conversion">
-													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{23AF77D7-3FEA-409B-8E44-F5B490014C61}"/>
-												</Reference>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C91EB4C6-56DC-4541-96C4-29E948904D66}"/>
-												</Reference>
-											</ReferenceList>
-											<ChildrenList>
-												<AudioFileSource Name="Clerk_s1__7" ID="{7B5BB9DF-2808-4DED-875B-8BB440C8BEAD}">
-													<PropertyList>
-														<Property Name="MarkerInputMode" Type="int16" Value="2"/>
-													</PropertyList>
-													<Language>SFX</Language>
-													<AudioFile>Clerk_s1__7.wav</AudioFile>
-													<MediaIDList>
-														<MediaID ID="210602074"/>
-													</MediaIDList>
-													<PluginInnerObjectList>
-														<List Name="Markers">
-															<PluginInnerObject Name="" ID="{E024034E-8397-4C8B-AC3E-96A5077108FC}" PluginName="Marker" CompanyID="0" PluginID="993">
-																<PropertyList>
-																	<Property Name="Label" Type="string" Value="Tempo: 120.0"/>
-																</PropertyList>
-															</PluginInnerObject>
-															<PluginInnerObject Name="" ID="{F07D3630-9265-4583-87D7-6B75269546B7}" PluginName="Marker" CompanyID="0" PluginID="993">
-																<PropertyList>
-																	<Property Name="Label" Type="string" Value="Intro Scene"/>
-																</PropertyList>
-															</PluginInnerObject>
-															<PluginInnerObject Name="" ID="{79938384-E693-4026-A185-57D882DBFC77}" PluginName="Marker" CompanyID="0" PluginID="993">
-																<PropertyList>
-																	<Property Name="Label" Type="string" Value="end"/>
-																	<Property Name="Time" Type="Real64" Value="6.22369240578543"/>
-																</PropertyList>
-															</PluginInnerObject>
-														</List>
-													</PluginInnerObjectList>
-												</AudioFileSource>
-											</ChildrenList>
-											<ObjectLists/>
-											<ActiveSourceList>
-												<ActiveSource Name="Clerk_s1__7" ID="{7B5BB9DF-2808-4DED-875B-8BB440C8BEAD}" Platform="Linked"/>
-											</ActiveSourceList>
-										</Sound>
 										<Sound Name="Clerk_s1__8" ID="{C3E4961B-A217-4C90-8EEC-F759A533B0E5}" ShortID="41679527">
 											<ReferenceList>
 												<Reference Name="Conversion">
@@ -562,66 +424,16 @@
 												<ActiveSource Name="Clerk_s1__9" ID="{8C2CF7FB-11F7-44A1-8FEE-C7894A707D98}" Platform="Linked"/>
 											</ActiveSourceList>
 										</Sound>
-										<Sound Name="Clerk_s1__10" ID="{C186400A-6D16-4A4B-91ED-DB8C9180DD0F}" ShortID="476168870">
-											<ReferenceList>
-												<Reference Name="Conversion">
-													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{23AF77D7-3FEA-409B-8E44-F5B490014C61}"/>
-												</Reference>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C91EB4C6-56DC-4541-96C4-29E948904D66}"/>
-												</Reference>
-											</ReferenceList>
-											<ChildrenList>
-												<AudioFileSource Name="Clerk_s1__10" ID="{828266A3-512C-4652-AEBB-2D92E050C95F}">
-													<PropertyList>
-														<Property Name="MarkerInputMode" Type="int16" Value="2"/>
-													</PropertyList>
-													<Language>SFX</Language>
-													<AudioFile>Clerk_s1__10.wav</AudioFile>
-													<MediaIDList>
-														<MediaID ID="930361327"/>
-													</MediaIDList>
-													<PluginInnerObjectList>
-														<List Name="Markers">
-															<PluginInnerObject Name="" ID="{ACE009E3-501A-4A71-93AA-D0F4D64B9489}" PluginName="Marker" CompanyID="0" PluginID="993">
-																<PropertyList>
-																	<Property Name="Label" Type="string" Value="Tempo: 120.0"/>
-																</PropertyList>
-															</PluginInnerObject>
-															<PluginInnerObject Name="" ID="{1B4BDE3B-74AA-4E64-AD43-A974A67305E2}" PluginName="Marker" CompanyID="0" PluginID="993">
-																<PropertyList>
-																	<Property Name="Label" Type="string" Value="Intro Scene"/>
-																</PropertyList>
-															</PluginInnerObject>
-															<PluginInnerObject Name="" ID="{210EC429-C8D6-4086-935E-847C3D1845DC}" PluginName="Marker" CompanyID="0" PluginID="993">
-																<PropertyList>
-																	<Property Name="Label" Type="string" Value="end"/>
-																	<Property Name="Time" Type="Real64" Value="4.63064877536638"/>
-																</PropertyList>
-															</PluginInnerObject>
-														</List>
-													</PluginInnerObjectList>
-												</AudioFileSource>
-											</ChildrenList>
-											<ObjectLists/>
-											<ActiveSourceList>
-												<ActiveSource Name="Clerk_s1__10" ID="{828266A3-512C-4652-AEBB-2D92E050C95F}" Platform="Linked"/>
-											</ActiveSourceList>
-										</Sound>
 									</ChildrenList>
 									<ObjectLists/>
 									<Playlist>
 										<ItemRef Name="Clerk_s1_" ID="{B63A36EF-0DCF-4510-A9B3-B275FC14B8D2}"/>
-										<ItemRef Name="Clerk_s1__1" ID="{B6188F73-E438-47C6-BCAB-E7E178C2ED18}"/>
 										<ItemRef Name="Clerk_s1__2" ID="{4339F99F-337C-48FA-B157-E80557E52664}"/>
 										<ItemRef Name="Clerk_s1__3" ID="{964F8C40-3B38-45B5-8546-A8F56F44D77F}"/>
-										<ItemRef Name="Clerk_s1__4" ID="{66199C98-6EF9-4676-834F-C1AB5940E944}"/>
 										<ItemRef Name="Clerk_s1__5" ID="{31E3198E-B4D2-4385-986D-0EAA5C0E7EDD}"/>
 										<ItemRef Name="Clerk_s1__6" ID="{461FE197-5644-48CC-9648-E91C472E6680}"/>
-										<ItemRef Name="Clerk_s1__7" ID="{C722D05D-4AD1-4D59-BD5E-8B7BE3086A61}"/>
 										<ItemRef Name="Clerk_s1__8" ID="{C3E4961B-A217-4C90-8EEC-F759A533B0E5}"/>
 										<ItemRef Name="Clerk_s1__9" ID="{4875B121-CACB-4DE1-BB93-6D5460977840}"/>
-										<ItemRef Name="Clerk_s1__10" ID="{C186400A-6D16-4A4B-91ED-DB8C9180DD0F}"/>
 									</Playlist>
 								</RandomSequenceContainer>
 								<RandomSequenceContainer Name="Clerk_chatter" ID="{6C195452-FDF0-4147-8549-75299297A883}" ShortID="690291964">

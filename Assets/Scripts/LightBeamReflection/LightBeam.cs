@@ -12,7 +12,7 @@ public class LightBeam
     private List<Vector3> _lightIndices = new List<Vector3>();
     public bool hitTheDoor;
 
-    public LightBeam(Vector3 position, Vector3 direction, Material material)
+    public LightBeam(Vector3 position, Vector3 direction, Material material, Color color)
     {
         _lightLaser = new LineRenderer();
         lightObj = new GameObject();
@@ -24,8 +24,8 @@ public class LightBeam
         _lightLaser.startWidth = 0.1f;
         _lightLaser.endWidth = 0.1f;
         _lightLaser.material = material;
-        _lightLaser.startColor = Color.yellow;
-        _lightLaser.endColor = Color.yellow;
+        _lightLaser.startColor = color;
+        _lightLaser.endColor = color;
 
         CastRay(position, direction, _lightLaser);
     }
@@ -36,13 +36,13 @@ public class LightBeam
         Ray ray = new Ray(position, direction);
         RaycastHit hit;
 
-        if(Physics.Raycast(ray, out hit, 30))
+        if(Physics.Raycast(ray, out hit, 999))
         {
             CheckHit(hit, direction, lightLaser);
         }
         else
         {
-            _lightIndices.Add(ray.GetPoint(30));
+            _lightIndices.Add(ray.GetPoint(999));
             UpdateLaser();
         }
     }
@@ -65,9 +65,16 @@ public class LightBeam
         {
             Vector3 pos = hitInfo.point;
             Vector3 dir = Vector3.Reflect(direction, hitInfo.normal);
-
+            
             if (hitInfo.collider.gameObject.GetComponent<RotateObjects>())
             {
+                RotateObjects rotateScript = hitInfo.collider.gameObject.GetComponent<RotateObjects>();
+
+                if (rotateScript.shouldStabilizeY)
+                {
+                    dir.y = 0;
+                }
+                
                 hitInfo.collider.gameObject.SendMessage("OnBeamReceived");
             }
 
@@ -86,6 +93,41 @@ public class LightBeam
         } else if (hitInfo.collider.gameObject.CompareTag("Player"))
         {
             HealthSystem.Instance.Heal(); 
+            _lightIndices.Add(hitInfo.point);
+            UpdateLaser();
+        }
+        else if(hitInfo.collider.gameObject.CompareTag("Prism"))
+        {
+            GameObject _emitter = hitInfo.transform.Find("Emitter").gameObject;
+            hitInfo.transform.parent.SendMessage("OnBeamReceived");
+            _emitter.SendMessage("OnBeamReceived");
+            _emitter.GetComponent<PrismLight>().shouldShoot = false;
+            _lightIndices.Add(hitInfo.point);
+            UpdateLaser();
+        }
+        else if (hitInfo.collider.gameObject.CompareTag("Redirector"))
+        {
+            hitInfo.transform.SendMessage("OnBeamReceived");
+            _lightIndices.Add(hitInfo.point);
+            UpdateLaser();
+        }
+        else if (hitInfo.collider.gameObject.CompareTag("GreenTarget"))
+        {
+            if (_lightLaser.startColor == Color.green)
+            {
+                Debug.Log("Green Hit");
+            }
+            
+            _lightIndices.Add(hitInfo.point);
+            UpdateLaser();
+        } 
+        else if (hitInfo.collider.gameObject.CompareTag("RedTarget"))
+        {
+            if (_lightLaser.startColor == Color.red)
+            {
+                Debug.Log("Red Hit");
+            }
+            
             _lightIndices.Add(hitInfo.point);
             UpdateLaser();
         }

@@ -21,7 +21,7 @@ public class ShootLight : MonoBehaviour
 
         if (LanternManager.Instance.lanternCharge <= 0) return;
         
-        _beam = new LightBeam(gameObject.transform.position, gameObject.transform.right, material);
+        _beam = new LightBeam(gameObject.transform.position, gameObject.transform.right, material, Color.yellow);
         _previousBeam = _beam.lightObj;
         hitTheDoor = _beam.hitTheDoor;
     }
