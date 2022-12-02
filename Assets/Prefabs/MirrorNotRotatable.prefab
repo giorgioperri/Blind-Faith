@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 3739070525113849462}
   m_Layer: 0
   m_Name: MirrorNotRotatable
-  m_TagString: Untagged
+  m_TagString: Mirror
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -23,7 +23,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4082522380633312460}
-  m_LocalRotation: {x: -0, y: -0.6607754, z: -0, w: 0.7505837}
+  m_LocalRotation: {x: 0, y: -0.6607749, z: 0, w: 0.7505841}
   m_LocalPosition: {x: 16.420643, y: 1.5166968, z: -4.435498}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -46,9 +46,10 @@ GameObject:
   - component: {fileID: 3646801176561065309}
   - component: {fileID: 3408092482719436792}
   - component: {fileID: 4417884080170079798}
+  - component: {fileID: 839430564}
   m_Layer: 0
   m_Name: Mirror
-  m_TagString: Untagged
+  m_TagString: Mirror
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -118,6 +119,19 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &839430564
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4916297045914663317}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.5459023e-10, y: 0.017975716, z: 0.026963564}
+  m_Center: {x: -0.0000011531284, y: -0.00018442336, z: 0.00015526215}
 --- !u!1 &6082012702448807584
 GameObject:
   m_ObjectHideFlags: 0
