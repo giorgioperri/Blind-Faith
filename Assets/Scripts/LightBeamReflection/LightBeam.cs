@@ -115,7 +115,7 @@ public class LightBeam
         {
             if (_lightLaser.startColor == Color.green)
             {
-                Debug.Log("Green Hit");
+                hitInfo.transform.parent.SendMessage("OnCorrectBeamReceived");
             }
             
             _lightIndices.Add(hitInfo.point);
@@ -125,7 +125,7 @@ public class LightBeam
         {
             if (_lightLaser.startColor == Color.red)
             {
-                Debug.Log("Red Hit");
+                hitInfo.transform.parent.SendMessage("OnCorrectBeamReceived");
             }
             
             _lightIndices.Add(hitInfo.point);
