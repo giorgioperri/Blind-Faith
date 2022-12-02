@@ -6,6 +6,7 @@ using UnityEngine;
 public class LightBathingArea : MonoBehaviour
 {
     public static LightBathingArea Instance;
+    private bool _shouldshowTooltip = true;
 
     private void Awake()
     {
@@ -22,6 +23,13 @@ public class LightBathingArea : MonoBehaviour
         if (other.CompareTag("Player"))
         {
             GameManager.Instance.isBathingInLight = true;
+        }
+
+        if (_shouldshowTooltip)
+        {
+            TooltipManager.Instance.currentTooltip = TooltipTypes.LanternCharge;
+            TooltipManager.Instance.ToggleTooltip("Hold the Left Mouse button while looking at the Fallen Angel to charge up your Lantern");
+            _shouldshowTooltip = false;
         }
     }
     

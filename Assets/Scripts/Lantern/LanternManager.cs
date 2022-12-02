@@ -42,6 +42,12 @@ public class LanternManager : MonoBehaviour
         lightMaterial.SetFloat("_Opacity", lanternCharge);
         _orb.localScale = _originalOrbScale * lanternCharge;
         
+        if (lanternCharge >= .9f && TooltipManager.Instance.currentTooltip == TooltipTypes.LanternCharge)
+        {
+            TooltipManager.Instance.currentTooltip = TooltipTypes.None;
+            TooltipManager.Instance.CloseTooltip();
+        }
+        
         if (GameManager.Instance.isBathingInLight && lanternIsRaised)
         {
             if (GameManager.Instance.isLookingAtAngel && lanternCharge <= 1 && Mouse.current.leftButton.isPressed)
@@ -61,6 +67,7 @@ public class LanternManager : MonoBehaviour
             }
             return;
         }
+
         
         if (lanternCharge >= 0)
         {
