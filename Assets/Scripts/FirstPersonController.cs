@@ -249,7 +249,7 @@ namespace StarterAssets
 
 	        if(_input.isInteracting)
             {
-	            if (Keyboard.current.eKey.isPressed)
+	            if (Keyboard.current.eKey.isPressed || Mouse.current.leftButton.wasPressedThisFrame)
 	            {
 					currentInteractable.OnInteraction();
 	            } else if (Keyboard.current.qKey.isPressed)
