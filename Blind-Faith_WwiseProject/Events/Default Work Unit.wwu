@@ -326,6 +326,96 @@
 						</Action>
 					</ChildrenList>
 				</Event>
+				<Event Name="MirrorLight_Off" ID="{D6366341-8911-4B24-AA74-4805CB3C0AEE}">
+					<ChildrenList>
+						<Action Name="" ID="{FEBA4F16-4BEA-4DD5-A85D-2432E2C1E36E}" ShortID="315361784">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="2"/>
+								<Property Name="FadeTime" Type="Real64" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="MirrorOn" ID="{459B954B-9671-41A0-AB27-985B17092935}" WorkUnitID="{10A75CA5-3F55-455C-A103-004D7C43FEF2}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="CrawlSFX" ID="{3BA31C4A-2C48-454F-8116-A0787C4AB5FB}">
+					<ChildrenList>
+						<Action Name="" ID="{E5F4BECE-20DC-40B4-9858-D2A2738F0BA5}" ShortID="586343956">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="ClerkCrawlEvent" ID="{FACAEBC2-24C4-494F-87A8-D8D4CE74627C}" WorkUnitID="{10A75CA5-3F55-455C-A103-004D7C43FEF2}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="DungeonAmb" ID="{83CC95EE-2087-4D60-AA13-FC1928D15ECC}">
+					<ChildrenList>
+						<Action Name="" ID="{102E65CF-2ADB-43FC-9E7B-DFE3CE7C4295}" ShortID="814724579">
+							<PropertyList>
+								<Property Name="FadeInCurve" Type="int16" Value="8"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="DungeonAmbience" ID="{F89223D0-CDC0-46D7-BCE3-49E018792F54}" WorkUnitID="{10A75CA5-3F55-455C-A103-004D7C43FEF2}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{D936364A-8607-40E7-BBB0-54AB65BF6C86}" ShortID="1000048924">
+							<PropertyList>
+								<Property Name="FadeTime" Type="Real64" Value="3.5"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Earthquake_Rumble_PSEM_100" ID="{BF83A364-1CCC-4242-87E8-C944C504B953}" WorkUnitID="{10A75CA5-3F55-455C-A103-004D7C43FEF2}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{487C2B8D-AB74-4981-99C2-31C509406BCA}" ShortID="1026016017">
+							<PropertyList>
+								<Property Name="Delay" Type="Real64" Value="2"/>
+								<Property Name="FadeTime" Type="Real64" Value="3"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="86 Cave With Dripping Water" ID="{10A2B84D-5008-4B99-BED7-828746BC9C0D}" WorkUnitID="{10A75CA5-3F55-455C-A103-004D7C43FEF2}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="DungeonScream" ID="{713CD618-75D9-4F29-867C-DC4A63C0A42A}">
+					<ChildrenList>
+						<Action Name="" ID="{650CABBB-7533-4334-BFED-FD7C85117A3F}" ShortID="1045904813">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="DungeonScream" ID="{B1587511-EE97-4B7E-AA07-0A08656885F1}" WorkUnitID="{10A75CA5-3F55-455C-A103-004D7C43FEF2}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{7C30682E-CEE5-44EC-B846-083FBA077A55}" ShortID="187989691">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="DungeonScreamDoor" ID="{E7824E1F-95EC-4B01-A9C4-8275502B3D3B}" WorkUnitID="{10A75CA5-3F55-455C-A103-004D7C43FEF2}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="TowerAmb" ID="{E5040FC6-05CB-4AD6-8D78-6EBCA956BF76}">
+					<ChildrenList>
+						<Action Name="" ID="{86F27501-4218-4DF6-95A9-8090E4AF257B}" ShortID="647575013">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="TowerAmb" ID="{DAB56D10-F32C-443E-9A13-2AC277D13047}" WorkUnitID="{10A75CA5-3F55-455C-A103-004D7C43FEF2}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

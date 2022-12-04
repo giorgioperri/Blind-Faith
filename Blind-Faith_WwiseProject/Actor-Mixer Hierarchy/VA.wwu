@@ -14,13 +14,18 @@
 						<Property Name="EnableDiffraction" Type="bool" Value="True"/>
 						<Property Name="Highpass" Type="int16">
 							<ValueList>
-								<Value>17</Value>
+								<Value>8</Value>
 							</ValueList>
 						</Property>
 						<Property Name="IsGlobalLimit" Type="int16" Value="1"/>
 						<Property Name="MaxSoundPerInstance" Type="int16">
 							<ValueList>
 								<Value>1</Value>
+							</ValueList>
+						</Property>
+						<Property Name="OutputBusVolume" Type="Real64">
+							<ValueList>
+								<Value>3</Value>
 							</ValueList>
 						</Property>
 						<Property Name="OverrideColor" Type="bool" Value="True"/>
@@ -32,7 +37,7 @@
 						</Property>
 						<Property Name="Volume" Type="Real64">
 							<ValueList>
-								<Value>3</Value>
+								<Value>4</Value>
 							</ValueList>
 						</Property>
 					</PropertyList>
@@ -43,7 +48,7 @@
 							</Custom>
 						</Reference>
 						<Reference Name="Attenuation">
-							<ObjectRef Name="20m" ID="{2CC655F3-0B42-48F7-9E53-E75E8568D30F}" WorkUnitID="{47D4E814-D669-4A08-8AD2-F706566546E0}"/>
+							<ObjectRef Name="10" ID="{CD38D13E-1D7D-46FA-AD0C-C7D5F9690547}" WorkUnitID="{47D4E814-D669-4A08-8AD2-F706566546E0}"/>
 						</Reference>
 						<Reference Name="Conversion">
 							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{23AF77D7-3FEA-409B-8E44-F5B490014C61}"/>
@@ -69,7 +74,15 @@
 					</ReferenceList>
 					<ChildrenList>
 						<SwitchContainer Name="VA_Clerk_Switch_Container" ID="{D44CC410-BC7B-49F7-BF72-2CC2FED8D2DB}" ShortID="995074061">
+							<PropertyList>
+								<Property Name="3DSpatialization" Type="int16" Value="2"/>
+								<Property Name="EnableDiffraction" Type="bool" Value="True"/>
+								<Property Name="OverridePositioning" Type="bool" Value="True"/>
+							</PropertyList>
 							<ReferenceList>
+								<Reference Name="Attenuation">
+									<ObjectRef Name="10" ID="{CD38D13E-1D7D-46FA-AD0C-C7D5F9690547}" WorkUnitID="{47D4E814-D669-4A08-8AD2-F706566546E0}"/>
+								</Reference>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{23AF77D7-3FEA-409B-8E44-F5B490014C61}"/>
 								</Reference>
@@ -424,9 +437,29 @@
 												<ActiveSource Name="Clerk_s1__9" ID="{8C2CF7FB-11F7-44A1-8FEE-C7894A707D98}" Platform="Linked"/>
 											</ActiveSourceList>
 										</Sound>
+										<Sound Name="New Sound SFX" ID="{99E2EF51-706E-4499-B1E6-E6E3A4456367}" ShortID="295065607">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{23AF77D7-3FEA-409B-8E44-F5B490014C61}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C91EB4C6-56DC-4541-96C4-29E948904D66}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<SourcePlugin Name="Wwise Silence" ID="{03870BBD-B09C-4EAB-A353-EE66F0A0DB65}" ShortID="781025168" PluginName="Wwise Silence" CompanyID="0" PluginID="101">
+													<Language>SFX</Language>
+												</SourcePlugin>
+											</ChildrenList>
+											<ObjectLists/>
+											<ActiveSourceList>
+												<ActiveSource Name="Wwise Silence" ID="{03870BBD-B09C-4EAB-A353-EE66F0A0DB65}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
 									</ChildrenList>
 									<ObjectLists/>
 									<Playlist>
+										<ItemRef Name="New Sound SFX" ID="{99E2EF51-706E-4499-B1E6-E6E3A4456367}"/>
 										<ItemRef Name="Clerk_s1_" ID="{B63A36EF-0DCF-4510-A9B3-B275FC14B8D2}"/>
 										<ItemRef Name="Clerk_s1__2" ID="{4339F99F-337C-48FA-B157-E80557E52664}"/>
 										<ItemRef Name="Clerk_s1__3" ID="{964F8C40-3B38-45B5-8546-A8F56F44D77F}"/>
@@ -436,7 +469,7 @@
 										<ItemRef Name="Clerk_s1__9" ID="{4875B121-CACB-4DE1-BB93-6D5460977840}"/>
 									</Playlist>
 								</RandomSequenceContainer>
-								<RandomSequenceContainer Name="Clerk_chatter" ID="{6C195452-FDF0-4147-8549-75299297A883}" ShortID="690291964">
+								<RandomSequenceContainer Name="Clerk_chatter1" ID="{6C195452-FDF0-4147-8549-75299297A883}" ShortID="690291964">
 									<PropertyList>
 										<Property Name="RandomOrSequence" Type="int16" Value="0"/>
 									</PropertyList>
@@ -916,21 +949,1232 @@
 										<ItemRef Name="Clerk_chatter_" ID="{D5C726E7-12B5-4F66-B167-B2EE688B1EED}"/>
 										<ItemRef Name="Clerk_chatter__1" ID="{878F8949-8647-465B-9BA7-D416B586BBE8}"/>
 										<ItemRef Name="Clerk_chatter__2" ID="{7A3CE0C6-D4B4-4754-82E9-1610DE73ED4B}"/>
-										<ItemRef Name="Clerk_chatter__3" ID="{0B82901F-9942-47BC-B7E1-C7E6A294CA71}"/>
-										<ItemRef Name="Clerk_chatter__4" ID="{BCA0B5A6-F820-4275-8A4C-68DAFF80EE80}"/>
-										<ItemRef Name="Clerk_chatter__5" ID="{0B0639AA-1909-46D8-919F-D06436B392F2}"/>
-										<ItemRef Name="Clerk_chatter__6" ID="{F6B1E2AD-6741-420F-ABE0-AEB8F2A9E867}"/>
-										<ItemRef Name="Clerk_chatter__7" ID="{8FBE6C0C-B5AB-4934-87A7-29D5A2FCE985}"/>
-										<ItemRef Name="Clerk_chatter__8" ID="{3430D4B2-908F-42E6-A9CC-A2DE386F4B63}"/>
-										<ItemRef Name="Clerk_chatter__9" ID="{19747A73-A5DB-41FC-AD84-6B5522BC47BF}"/>
+									</Playlist>
+								</RandomSequenceContainer>
+								<BlendContainer Name="CrawlAbove" ID="{337EBDE2-CEE0-47C8-A3BC-A37BCE41D110}" ShortID="297706839">
+									<PropertyList>
+										<Property Name="3DPosition" Type="int16" Value="1"/>
+										<Property Name="3DSpatialization" Type="int16" Value="2"/>
+										<Property Name="OverridePositioning" Type="bool" Value="True"/>
+										<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Attenuation">
+											<ObjectRef Name="10" ID="{CD38D13E-1D7D-46FA-AD0C-C7D5F9690547}" WorkUnitID="{47D4E814-D669-4A08-8AD2-F706566546E0}"/>
+										</Reference>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{23AF77D7-3FEA-409B-8E44-F5B490014C61}"/>
+										</Reference>
+										<Reference Name="Effect0">
+											<Custom>
+												<Effect Name="Wwise Parametric EQ (Custom)" ID="{DF1350EA-7A2A-4F19-A2CE-AEF1E5A48FF5}" ShortID="516849347" PluginName="Wwise Parametric EQ" CompanyID="0" PluginID="105" PluginType="3">
+													<PropertyList>
+														<Property Name="FrequencyBand1" Type="Real32" Value="175"/>
+														<Property Name="FrequencyBand2" Type="Real32" Value="132"/>
+														<Property Name="FrequencyBand3" Type="Real32" Value="9397"/>
+														<Property Name="GainBand1" Type="Real32" Value="-1.5"/>
+														<Property Name="GainBand2" Type="Real32" Value="-5"/>
+														<Property Name="GainBand3" Type="Real32" Value="1.5"/>
+														<Property Name="QFactorBand2" Type="Real32" Value="1.5"/>
+													</PropertyList>
+												</Effect>
+											</Custom>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Rooms" ID="{F220833B-3FC1-4DC8-9CF3-6F367C8C1EDE}" WorkUnitID="{C91EB4C6-56DC-4541-96C4-29E948904D66}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<Sound Name="HisChildHasReturnd" ID="{3B3F7788-3D11-412F-81AB-B980CFA100DC}" ShortID="318413972">
+											<PropertyList>
+												<Property Name="3DSpatialization" Type="int16" Value="2"/>
+												<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Attenuation">
+													<ObjectRef Name="10" ID="{CD38D13E-1D7D-46FA-AD0C-C7D5F9690547}" WorkUnitID="{47D4E814-D669-4A08-8AD2-F706566546E0}"/>
+												</Reference>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{23AF77D7-3FEA-409B-8E44-F5B490014C61}"/>
+												</Reference>
+												<Reference Name="Effect0">
+													<Custom>
+														<Effect Name="Wwise Parametric EQ (Custom)" ID="{1C9A5403-2508-409D-97E5-494111E5C110}" ShortID="896256858" PluginName="Wwise Parametric EQ" CompanyID="0" PluginID="105" PluginType="3">
+															<PropertyList>
+																<Property Name="FrequencyBand1" Type="Real32" Value="175"/>
+																<Property Name="FrequencyBand2" Type="Real32" Value="132"/>
+																<Property Name="FrequencyBand3" Type="Real32" Value="9397"/>
+																<Property Name="GainBand1" Type="Real32" Value="-1.5"/>
+																<Property Name="GainBand2" Type="Real32" Value="-5"/>
+																<Property Name="GainBand3" Type="Real32" Value="1.5"/>
+																<Property Name="QFactorBand2" Type="Real32" Value="1.5"/>
+															</PropertyList>
+														</Effect>
+													</Custom>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Rooms" ID="{F220833B-3FC1-4DC8-9CF3-6F367C8C1EDE}" WorkUnitID="{C91EB4C6-56DC-4541-96C4-29E948904D66}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="HisChildHasReturnd" ID="{CE3FC243-FAE7-47D3-8455-F64BDD46D6B9}">
+													<Language>SFX</Language>
+													<AudioFile>HisChildHasReturnd.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="9205079"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ObjectLists/>
+											<ActiveSourceList>
+												<ActiveSource Name="HisChildHasReturnd" ID="{CE3FC243-FAE7-47D3-8455-F64BDD46D6B9}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+									</ChildrenList>
+									<PositioningInfo>
+										<Position Name="" ID="{42577F8A-AB45-4BB0-9A58-13D3062B3E12}">
+											<ChildrenList>
+												<Path2D Name="CrawlAbove_Path" ID="{8B8B12DE-C4AB-4849-A905-8F582F3C7684}">
+													<PropertyList>
+														<Property Name="Duration" Type="Uint32" Value="12000"/>
+													</PropertyList>
+													<PointList>
+														<Point>
+															<XPos>-50.25381</XPos>
+															<YPos>-52.82486</YPos>
+															<Flags>12</Flags>
+															<Time>0</Time>
+														</Point>
+														<Point>
+															<XPos>62.4365482233503</XPos>
+															<YPos>68.361581920904</YPos>
+															<Flags>0</Flags>
+															<Time>12000</Time>
+														</Point>
+													</PointList>
+												</Path2D>
+											</ChildrenList>
+										</Position>
+									</PositioningInfo>
+									<ObjectLists/>
+									<BlendTrackList>
+										<BlendTrack Name="New Blend Track" ID="{3FC75040-1434-4EAB-BC26-C2DF1C675BA3}" ShortID="901089437">
+											<BlendTrackAssocList>
+												<BlendTrackAssoc>
+													<ItemRef Name="HisChildHasReturnd" ID="{3B3F7788-3D11-412F-81AB-B980CFA100DC}"/>
+												</BlendTrackAssoc>
+											</BlendTrackAssocList>
+										</BlendTrack>
+									</BlendTrackList>
+								</BlendContainer>
+								<RandomSequenceContainer Name="Clerk_chatter2" ID="{3F52093C-3582-4076-9616-273423A7CFC9}" ShortID="495101309">
+									<PropertyList>
+										<Property Name="3DSpatialization" Type="int16" Value="2"/>
+										<Property Name="OutputBusVolume" Type="Real64">
+											<ValueList>
+												<Value>3</Value>
+											</ValueList>
+										</Property>
+										<Property Name="RandomOrSequence" Type="int16" Value="0"/>
+										<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Attenuation">
+											<ObjectRef Name="10" ID="{CD38D13E-1D7D-46FA-AD0C-C7D5F9690547}" WorkUnitID="{47D4E814-D669-4A08-8AD2-F706566546E0}"/>
+										</Reference>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{23AF77D7-3FEA-409B-8E44-F5B490014C61}"/>
+										</Reference>
+										<Reference Name="Effect0">
+											<Custom>
+												<Effect Name="Wwise Parametric EQ (Custom)" ID="{1E14C44B-F036-4C07-8A80-D0234D571409}" ShortID="480181430" PluginName="Wwise Parametric EQ" CompanyID="0" PluginID="105" PluginType="3">
+													<PropertyList>
+														<Property Name="FrequencyBand1" Type="Real32" Value="175"/>
+														<Property Name="FrequencyBand2" Type="Real32" Value="132"/>
+														<Property Name="FrequencyBand3" Type="Real32" Value="9397"/>
+														<Property Name="GainBand1" Type="Real32" Value="-1.5"/>
+														<Property Name="GainBand2" Type="Real32" Value="-5"/>
+														<Property Name="GainBand3" Type="Real32" Value="1.5"/>
+														<Property Name="QFactorBand2" Type="Real32" Value="1.5"/>
+													</PropertyList>
+												</Effect>
+											</Custom>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Rooms" ID="{F220833B-3FC1-4DC8-9CF3-6F367C8C1EDE}" WorkUnitID="{C91EB4C6-56DC-4541-96C4-29E948904D66}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<Sound Name="Clerk_chatter_" ID="{345753D7-E6C0-4681-8CCF-77A38D67EA8C}" ShortID="191321174">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{23AF77D7-3FEA-409B-8E44-F5B490014C61}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C91EB4C6-56DC-4541-96C4-29E948904D66}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Clerk_chatter_" ID="{F972ECA7-908C-41C5-9CA0-65DF5FEA0DFB}">
+													<PropertyList>
+														<Property Name="MarkerInputMode" Type="int16" Value="2"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>Clerk_chatter\Clerk_chatter_.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="222606794"/>
+													</MediaIDList>
+													<PluginInnerObjectList>
+														<List Name="Markers">
+															<PluginInnerObject Name="" ID="{5BE6E02E-E074-4E55-8A15-4E544D998B2C}" PluginName="Marker" CompanyID="0" PluginID="993">
+																<PropertyList>
+																	<Property Name="Label" Type="string" Value="Tempo: 120.0"/>
+																</PropertyList>
+															</PluginInnerObject>
+															<PluginInnerObject Name="" ID="{1AE25006-6633-4CB4-827D-6BFE0A2CEB83}" PluginName="Marker" CompanyID="0" PluginID="993">
+																<PropertyList>
+																	<Property Name="Label" Type="string" Value="Intro Scene"/>
+																</PropertyList>
+															</PluginInnerObject>
+															<PluginInnerObject Name="" ID="{8386CC92-4FCC-40F8-BFE5-E2AE33862AE7}" PluginName="Marker" CompanyID="0" PluginID="993">
+																<PropertyList>
+																	<Property Name="Label" Type="string" Value="end"/>
+																	<Property Name="Time" Type="Real64" Value="8.98285500214072"/>
+																</PropertyList>
+															</PluginInnerObject>
+														</List>
+													</PluginInnerObjectList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ObjectLists/>
+											<ActiveSourceList>
+												<ActiveSource Name="Clerk_chatter_" ID="{F972ECA7-908C-41C5-9CA0-65DF5FEA0DFB}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Clerk_chatter__1" ID="{845A995A-1A6E-43CE-B5CD-63CC1FB05284}" ShortID="256205919">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{23AF77D7-3FEA-409B-8E44-F5B490014C61}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C91EB4C6-56DC-4541-96C4-29E948904D66}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Clerk_chatter__1" ID="{92DAD82B-FA6E-45F1-97EB-CC10BE5AD65E}">
+													<PropertyList>
+														<Property Name="MarkerInputMode" Type="int16" Value="2"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>Clerk_chatter\Clerk_chatter__1.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="833554346"/>
+													</MediaIDList>
+													<PluginInnerObjectList>
+														<List Name="Markers">
+															<PluginInnerObject Name="" ID="{0B0898B2-896C-4C3B-AE40-D9422C8DB9F5}" PluginName="Marker" CompanyID="0" PluginID="993">
+																<PropertyList>
+																	<Property Name="Label" Type="string" Value="Tempo: 120.0"/>
+																</PropertyList>
+															</PluginInnerObject>
+															<PluginInnerObject Name="" ID="{3A0E7D32-BB14-48FC-BFE4-8F98D18300E8}" PluginName="Marker" CompanyID="0" PluginID="993">
+																<PropertyList>
+																	<Property Name="Label" Type="string" Value="Complete puzzle"/>
+																</PropertyList>
+															</PluginInnerObject>
+															<PluginInnerObject Name="" ID="{F6968620-C639-4EBB-85C0-AC8E4A791C94}" PluginName="Marker" CompanyID="0" PluginID="993">
+																<PropertyList>
+																	<Property Name="Label" Type="string" Value="end"/>
+																	<Property Name="Time" Type="Real64" Value="4.06605394605395"/>
+																</PropertyList>
+															</PluginInnerObject>
+														</List>
+													</PluginInnerObjectList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ObjectLists/>
+											<ActiveSourceList>
+												<ActiveSource Name="Clerk_chatter__1" ID="{92DAD82B-FA6E-45F1-97EB-CC10BE5AD65E}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Clerk_chatter__2" ID="{4B848F0C-EFD8-40D9-81C5-AE00EFFBB31E}" ShortID="904553418">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{23AF77D7-3FEA-409B-8E44-F5B490014C61}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C91EB4C6-56DC-4541-96C4-29E948904D66}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Clerk_chatter__2" ID="{69573ED8-929E-4876-8BC0-BDE3971AEEBB}">
+													<PropertyList>
+														<Property Name="MarkerInputMode" Type="int16" Value="2"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>Clerk_chatter\Clerk_chatter__2.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="211299271"/>
+													</MediaIDList>
+													<PluginInnerObjectList>
+														<List Name="Markers">
+															<PluginInnerObject Name="" ID="{8E1BF87D-7EAB-4D97-B82E-9FACF3C5D8CB}" PluginName="Marker" CompanyID="0" PluginID="993">
+																<PropertyList>
+																	<Property Name="Label" Type="string" Value="Tempo: 120.0"/>
+																</PropertyList>
+															</PluginInnerObject>
+															<PluginInnerObject Name="" ID="{0654E605-2D4F-4280-B3FB-03F684A4657D}" PluginName="Marker" CompanyID="0" PluginID="993">
+																<PropertyList>
+																	<Property Name="Label" Type="string" Value="Complete puzzle"/>
+																</PropertyList>
+															</PluginInnerObject>
+															<PluginInnerObject Name="" ID="{5DAD8B8E-7F3F-4D72-A674-3716DF09C751}" PluginName="Marker" CompanyID="0" PluginID="993">
+																<PropertyList>
+																	<Property Name="Label" Type="string" Value="end"/>
+																	<Property Name="Time" Type="Real64" Value="8.32738428238429"/>
+																</PropertyList>
+															</PluginInnerObject>
+														</List>
+													</PluginInnerObjectList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ObjectLists/>
+											<ActiveSourceList>
+												<ActiveSource Name="Clerk_chatter__2" ID="{69573ED8-929E-4876-8BC0-BDE3971AEEBB}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Clerk_chatter__3" ID="{2FF9C547-582D-4200-99BB-8BE4B7D348C9}" ShortID="1004931247">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{23AF77D7-3FEA-409B-8E44-F5B490014C61}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C91EB4C6-56DC-4541-96C4-29E948904D66}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Clerk_chatter__3" ID="{B2BB4D57-D418-4A1F-B956-AD60AE1013AC}">
+													<PropertyList>
+														<Property Name="MarkerInputMode" Type="int16" Value="2"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>Clerk_chatter\Clerk_chatter__3.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="579534600"/>
+													</MediaIDList>
+													<PluginInnerObjectList>
+														<List Name="Markers">
+															<PluginInnerObject Name="" ID="{40AE9202-486D-4655-8277-9491808A16BF}" PluginName="Marker" CompanyID="0" PluginID="993">
+																<PropertyList>
+																	<Property Name="Label" Type="string" Value="Tempo: 120.0"/>
+																</PropertyList>
+															</PluginInnerObject>
+															<PluginInnerObject Name="" ID="{7A8B7DEA-D016-4023-8CDF-7723FF41C7A5}" PluginName="Marker" CompanyID="0" PluginID="993">
+																<PropertyList>
+																	<Property Name="Label" Type="string" Value="Complete puzzle"/>
+																</PropertyList>
+															</PluginInnerObject>
+															<PluginInnerObject Name="" ID="{8DADEAFD-B6BE-4821-8FFF-7F3BF89CCBE7}" PluginName="Marker" CompanyID="0" PluginID="993">
+																<PropertyList>
+																	<Property Name="Label" Type="string" Value="end"/>
+																	<Property Name="Time" Type="Real64" Value="4.85252211797062"/>
+																</PropertyList>
+															</PluginInnerObject>
+														</List>
+													</PluginInnerObjectList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ObjectLists/>
+											<ActiveSourceList>
+												<ActiveSource Name="Clerk_chatter__3" ID="{B2BB4D57-D418-4A1F-B956-AD60AE1013AC}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Clerk_chatter__4" ID="{E1002AFD-2C25-44EE-8C36-D4EC5399AE97}" ShortID="683623631">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{23AF77D7-3FEA-409B-8E44-F5B490014C61}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C91EB4C6-56DC-4541-96C4-29E948904D66}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Clerk_chatter__4" ID="{0A902376-D79C-432D-9EED-2093C117129C}">
+													<PropertyList>
+														<Property Name="MarkerInputMode" Type="int16" Value="2"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>Clerk_chatter\Clerk_chatter__4.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="476092146"/>
+													</MediaIDList>
+													<PluginInnerObjectList>
+														<List Name="Markers">
+															<PluginInnerObject Name="" ID="{41AE69B7-B542-4C54-AD62-76C347C09A8F}" PluginName="Marker" CompanyID="0" PluginID="993">
+																<PropertyList>
+																	<Property Name="Label" Type="string" Value="Tempo: 120.0"/>
+																</PropertyList>
+															</PluginInnerObject>
+															<PluginInnerObject Name="" ID="{D8125CB7-7A04-4E40-8B0C-2FED954A2A94}" PluginName="Marker" CompanyID="0" PluginID="993">
+																<PropertyList>
+																	<Property Name="Label" Type="string" Value="Complete puzzle"/>
+																</PropertyList>
+															</PluginInnerObject>
+															<PluginInnerObject Name="" ID="{4748CD9E-5C49-4685-8628-8DBAB12575A0}" PluginName="Marker" CompanyID="0" PluginID="993">
+																<PropertyList>
+																	<Property Name="Label" Type="string" Value="end"/>
+																	<Property Name="Time" Type="Real64" Value="6.05193726539242"/>
+																</PropertyList>
+															</PluginInnerObject>
+														</List>
+													</PluginInnerObjectList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ObjectLists/>
+											<ActiveSourceList>
+												<ActiveSource Name="Clerk_chatter__4" ID="{0A902376-D79C-432D-9EED-2093C117129C}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Clerk_chatter__5" ID="{335978F5-DD99-4960-B5BA-4308AB288C69}" ShortID="40760750">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{23AF77D7-3FEA-409B-8E44-F5B490014C61}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C91EB4C6-56DC-4541-96C4-29E948904D66}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Clerk_chatter__5" ID="{45A7B825-DE85-4D93-967A-59A081761E44}">
+													<PropertyList>
+														<Property Name="MarkerInputMode" Type="int16" Value="2"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>Clerk_chatter\Clerk_chatter__5.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="529285034"/>
+													</MediaIDList>
+													<PluginInnerObjectList>
+														<List Name="Markers">
+															<PluginInnerObject Name="" ID="{24D9ED64-D650-4A73-8867-43E3E2933A6F}" PluginName="Marker" CompanyID="0" PluginID="993">
+																<PropertyList>
+																	<Property Name="Label" Type="string" Value="Tempo: 120.0"/>
+																</PropertyList>
+															</PluginInnerObject>
+															<PluginInnerObject Name="" ID="{610C4758-974A-45C5-8920-875DDF7210B0}" PluginName="Marker" CompanyID="0" PluginID="993">
+																<PropertyList>
+																	<Property Name="Label" Type="string" Value="Complete puzzle"/>
+																</PropertyList>
+															</PluginInnerObject>
+															<PluginInnerObject Name="" ID="{881233CC-3987-4C87-BEFB-6BB9999DB4F3}" PluginName="Marker" CompanyID="0" PluginID="993">
+																<PropertyList>
+																	<Property Name="Label" Type="string" Value="end"/>
+																	<Property Name="Time" Type="Real64" Value="4.96814025398743"/>
+																</PropertyList>
+															</PluginInnerObject>
+														</List>
+													</PluginInnerObjectList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ObjectLists/>
+											<ActiveSourceList>
+												<ActiveSource Name="Clerk_chatter__5" ID="{45A7B825-DE85-4D93-967A-59A081761E44}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Clerk_chatter__6" ID="{C3F0D335-95E9-4A0F-A768-4A44C36A3646}" ShortID="753117496">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{23AF77D7-3FEA-409B-8E44-F5B490014C61}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C91EB4C6-56DC-4541-96C4-29E948904D66}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Clerk_chatter__6" ID="{89C9E705-8568-4BA4-A49C-891F35E5019E}">
+													<PropertyList>
+														<Property Name="MarkerInputMode" Type="int16" Value="2"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>Clerk_chatter\Clerk_chatter__6.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="675330913"/>
+													</MediaIDList>
+													<PluginInnerObjectList>
+														<List Name="Markers">
+															<PluginInnerObject Name="" ID="{F5A99962-1746-47FA-B044-724F28363B45}" PluginName="Marker" CompanyID="0" PluginID="993">
+																<PropertyList>
+																	<Property Name="Label" Type="string" Value="Tempo: 120.0"/>
+																</PropertyList>
+															</PluginInnerObject>
+															<PluginInnerObject Name="" ID="{1B90B534-9AC3-4EE6-88AD-D9CC16341814}" PluginName="Marker" CompanyID="0" PluginID="993">
+																<PropertyList>
+																	<Property Name="Label" Type="string" Value="Complete puzzle"/>
+																</PropertyList>
+															</PluginInnerObject>
+															<PluginInnerObject Name="" ID="{23E55916-C502-42CB-BBBC-68480C4BAF52}" PluginName="Marker" CompanyID="0" PluginID="993">
+																<PropertyList>
+																	<Property Name="Label" Type="string" Value="end"/>
+																	<Property Name="Time" Type="Real64" Value="5.9358820286395"/>
+																</PropertyList>
+															</PluginInnerObject>
+														</List>
+													</PluginInnerObjectList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ObjectLists/>
+											<ActiveSourceList>
+												<ActiveSource Name="Clerk_chatter__6" ID="{89C9E705-8568-4BA4-A49C-891F35E5019E}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Clerk_chatter__7" ID="{40B5E53C-E720-4C47-8A57-6CCB4D5C4DD0}" ShortID="501246033">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{23AF77D7-3FEA-409B-8E44-F5B490014C61}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C91EB4C6-56DC-4541-96C4-29E948904D66}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Clerk_chatter__7" ID="{711F521A-13B6-4F7C-8039-C343CBADA728}">
+													<PropertyList>
+														<Property Name="MarkerInputMode" Type="int16" Value="2"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>Clerk_chatter\Clerk_chatter__7.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="413924883"/>
+													</MediaIDList>
+													<PluginInnerObjectList>
+														<List Name="Markers">
+															<PluginInnerObject Name="" ID="{F0768601-7F99-4E50-954B-21F0970B5B10}" PluginName="Marker" CompanyID="0" PluginID="993">
+																<PropertyList>
+																	<Property Name="Label" Type="string" Value="Tempo: 120.0"/>
+																</PropertyList>
+															</PluginInnerObject>
+															<PluginInnerObject Name="" ID="{821B6D8D-1498-48F5-8FE2-C013406F4EB8}" PluginName="Marker" CompanyID="0" PluginID="993">
+																<PropertyList>
+																	<Property Name="Label" Type="string" Value="Complete puzzle"/>
+																</PropertyList>
+															</PluginInnerObject>
+															<PluginInnerObject Name="" ID="{5B18FF9C-B9E2-4549-9DDD-BC330C7C0D66}" PluginName="Marker" CompanyID="0" PluginID="993">
+																<PropertyList>
+																	<Property Name="Label" Type="string" Value="end"/>
+																	<Property Name="Time" Type="Real64" Value="1.12422983992751"/>
+																</PropertyList>
+															</PluginInnerObject>
+														</List>
+													</PluginInnerObjectList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ObjectLists/>
+											<ActiveSourceList>
+												<ActiveSource Name="Clerk_chatter__7" ID="{711F521A-13B6-4F7C-8039-C343CBADA728}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Clerk_chatter__8" ID="{F8BA12D7-8C2B-4588-BFFC-97DBA5EB8CFC}" ShortID="138037157">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{23AF77D7-3FEA-409B-8E44-F5B490014C61}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C91EB4C6-56DC-4541-96C4-29E948904D66}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Clerk_chatter__8" ID="{4D940A4D-F594-4839-B36A-931F1D45F9C0}">
+													<PropertyList>
+														<Property Name="MarkerInputMode" Type="int16" Value="2"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>Clerk_chatter\Clerk_chatter__8.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="718550265"/>
+													</MediaIDList>
+													<PluginInnerObjectList>
+														<List Name="Markers">
+															<PluginInnerObject Name="" ID="{A86834F9-D4FC-4078-AAB6-B2985FE0E73E}" PluginName="Marker" CompanyID="0" PluginID="993">
+																<PropertyList>
+																	<Property Name="Label" Type="string" Value="Tempo: 120.0"/>
+																</PropertyList>
+															</PluginInnerObject>
+															<PluginInnerObject Name="" ID="{9B0ABD1C-CB93-4771-935A-FA75B1F2AE3E}" PluginName="Marker" CompanyID="0" PluginID="993">
+																<PropertyList>
+																	<Property Name="Label" Type="string" Value="Complete puzzle"/>
+																</PropertyList>
+															</PluginInnerObject>
+															<PluginInnerObject Name="" ID="{7B4C67C1-4D3E-4FB9-ADD7-C99BCFED2EDF}" PluginName="Marker" CompanyID="0" PluginID="993">
+																<PropertyList>
+																	<Property Name="Label" Type="string" Value="end"/>
+																	<Property Name="Time" Type="Real64" Value="4.6450615552775"/>
+																</PropertyList>
+															</PluginInnerObject>
+														</List>
+													</PluginInnerObjectList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ObjectLists/>
+											<ActiveSourceList>
+												<ActiveSource Name="Clerk_chatter__8" ID="{4D940A4D-F594-4839-B36A-931F1D45F9C0}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Clerk_chatter__9" ID="{B200211C-34BA-468C-AC3E-7D0831961DCA}" ShortID="511748865">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{23AF77D7-3FEA-409B-8E44-F5B490014C61}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C91EB4C6-56DC-4541-96C4-29E948904D66}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Clerk_chatter__9" ID="{EB26F126-DACF-4FA2-A10B-7AAE8114568A}">
+													<PropertyList>
+														<Property Name="MarkerInputMode" Type="int16" Value="2"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>Clerk_chatter\Clerk_chatter__9.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="739805478"/>
+													</MediaIDList>
+													<PluginInnerObjectList>
+														<List Name="Markers">
+															<PluginInnerObject Name="" ID="{AC4E52B2-0F4D-459F-AE21-A90202EA40C0}" PluginName="Marker" CompanyID="0" PluginID="993">
+																<PropertyList>
+																	<Property Name="Label" Type="string" Value="Tempo: 120.0"/>
+																</PropertyList>
+															</PluginInnerObject>
+															<PluginInnerObject Name="" ID="{D30844C9-95C7-42BE-AFAE-BC465C3F5FEE}" PluginName="Marker" CompanyID="0" PluginID="993">
+																<PropertyList>
+																	<Property Name="Label" Type="string" Value="Complete puzzle"/>
+																</PropertyList>
+															</PluginInnerObject>
+															<PluginInnerObject Name="" ID="{4B89238C-94BD-4243-AC62-810F5C5B7D9C}" PluginName="Marker" CompanyID="0" PluginID="993">
+																<PropertyList>
+																	<Property Name="Label" Type="string" Value="end"/>
+																	<Property Name="Time" Type="Real64" Value="1.56195260627154"/>
+																</PropertyList>
+															</PluginInnerObject>
+														</List>
+													</PluginInnerObjectList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ObjectLists/>
+											<ActiveSourceList>
+												<ActiveSource Name="Clerk_chatter__9" ID="{EB26F126-DACF-4FA2-A10B-7AAE8114568A}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+									</ChildrenList>
+									<PositioningInfo>
+										<Position Name="" ID="{F7183D53-FB53-4A1D-B79C-05438EEC9D64}">
+											<ChildrenList>
+												<Path2D Name="Path" ID="{2A754239-966C-4C85-BAFC-D1D6A38938B5}">
+													<PropertyList>
+														<Property Name="Duration" Type="Uint32" Value="12000"/>
+													</PropertyList>
+													<PointList>
+														<Point>
+															<XPos>-57.36042</XPos>
+															<YPos>-58.47457</YPos>
+															<Flags>12</Flags>
+															<Time>0</Time>
+														</Point>
+														<Point>
+															<XPos>65.48223</XPos>
+															<YPos>69.49153</YPos>
+															<ZPos>56</ZPos>
+															<Flags>0</Flags>
+															<Time>12000</Time>
+														</Point>
+													</PointList>
+												</Path2D>
+											</ChildrenList>
+										</Position>
+									</PositioningInfo>
+									<ObjectLists/>
+									<Playlist>
+										<ItemRef Name="Clerk_chatter__3" ID="{2FF9C547-582D-4200-99BB-8BE4B7D348C9}"/>
+										<ItemRef Name="Clerk_chatter__4" ID="{E1002AFD-2C25-44EE-8C36-D4EC5399AE97}"/>
+										<ItemRef Name="Clerk_chatter__5" ID="{335978F5-DD99-4960-B5BA-4308AB288C69}"/>
+									</Playlist>
+								</RandomSequenceContainer>
+								<RandomSequenceContainer Name="Clerk_chatter3" ID="{BC7ADABA-B3D8-4FA2-AB04-803B9892EEB2}" ShortID="738774330">
+									<PropertyList>
+										<Property Name="3DSpatialization" Type="int16" Value="2"/>
+										<Property Name="OutputBusVolume" Type="Real64">
+											<ValueList>
+												<Value>3</Value>
+											</ValueList>
+										</Property>
+										<Property Name="RandomOrSequence" Type="int16" Value="0"/>
+										<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Attenuation">
+											<ObjectRef Name="10" ID="{CD38D13E-1D7D-46FA-AD0C-C7D5F9690547}" WorkUnitID="{47D4E814-D669-4A08-8AD2-F706566546E0}"/>
+										</Reference>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{23AF77D7-3FEA-409B-8E44-F5B490014C61}"/>
+										</Reference>
+										<Reference Name="Effect0">
+											<Custom>
+												<Effect Name="Wwise Parametric EQ (Custom)" ID="{C8DF2330-C5BA-4FFE-B1C1-7229CDF9BC4F}" ShortID="352797174" PluginName="Wwise Parametric EQ" CompanyID="0" PluginID="105" PluginType="3">
+													<PropertyList>
+														<Property Name="FrequencyBand1" Type="Real32" Value="175"/>
+														<Property Name="FrequencyBand2" Type="Real32" Value="132"/>
+														<Property Name="FrequencyBand3" Type="Real32" Value="9397"/>
+														<Property Name="GainBand1" Type="Real32" Value="-1.5"/>
+														<Property Name="GainBand2" Type="Real32" Value="-5"/>
+														<Property Name="GainBand3" Type="Real32" Value="1.5"/>
+														<Property Name="QFactorBand2" Type="Real32" Value="1.5"/>
+													</PropertyList>
+												</Effect>
+											</Custom>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Rooms" ID="{F220833B-3FC1-4DC8-9CF3-6F367C8C1EDE}" WorkUnitID="{C91EB4C6-56DC-4541-96C4-29E948904D66}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<Sound Name="Clerk_chatter_" ID="{7351B501-9DBE-4F47-8119-5293D5AA6FF2}" ShortID="341442906">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{23AF77D7-3FEA-409B-8E44-F5B490014C61}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C91EB4C6-56DC-4541-96C4-29E948904D66}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Clerk_chatter_" ID="{C7A69C23-BA45-45AD-9BCF-BCD722F2C764}">
+													<PropertyList>
+														<Property Name="MarkerInputMode" Type="int16" Value="2"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>Clerk_chatter\Clerk_chatter_.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="222606794"/>
+													</MediaIDList>
+													<PluginInnerObjectList>
+														<List Name="Markers">
+															<PluginInnerObject Name="" ID="{030B07E0-A426-42E6-9B99-6EC9F049A5A2}" PluginName="Marker" CompanyID="0" PluginID="993">
+																<PropertyList>
+																	<Property Name="Label" Type="string" Value="Tempo: 120.0"/>
+																</PropertyList>
+															</PluginInnerObject>
+															<PluginInnerObject Name="" ID="{D9593621-0469-4D43-9BD0-99185CF42416}" PluginName="Marker" CompanyID="0" PluginID="993">
+																<PropertyList>
+																	<Property Name="Label" Type="string" Value="Intro Scene"/>
+																</PropertyList>
+															</PluginInnerObject>
+															<PluginInnerObject Name="" ID="{F0CAE0BD-1A06-410C-8EE2-A6B8E42F4CBD}" PluginName="Marker" CompanyID="0" PluginID="993">
+																<PropertyList>
+																	<Property Name="Label" Type="string" Value="end"/>
+																	<Property Name="Time" Type="Real64" Value="8.98285500214072"/>
+																</PropertyList>
+															</PluginInnerObject>
+														</List>
+													</PluginInnerObjectList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ObjectLists/>
+											<ActiveSourceList>
+												<ActiveSource Name="Clerk_chatter_" ID="{C7A69C23-BA45-45AD-9BCF-BCD722F2C764}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Clerk_chatter__1" ID="{89CED668-90D9-4482-9C49-04DEADF4BC8A}" ShortID="643362398">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{23AF77D7-3FEA-409B-8E44-F5B490014C61}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C91EB4C6-56DC-4541-96C4-29E948904D66}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Clerk_chatter__1" ID="{7EEC5749-27DB-4BBB-8D25-4F3E87D7FC6E}">
+													<PropertyList>
+														<Property Name="MarkerInputMode" Type="int16" Value="2"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>Clerk_chatter\Clerk_chatter__1.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="833554346"/>
+													</MediaIDList>
+													<PluginInnerObjectList>
+														<List Name="Markers">
+															<PluginInnerObject Name="" ID="{500B3FB8-1FC6-4257-9A1C-7DDA2203C96C}" PluginName="Marker" CompanyID="0" PluginID="993">
+																<PropertyList>
+																	<Property Name="Label" Type="string" Value="Tempo: 120.0"/>
+																</PropertyList>
+															</PluginInnerObject>
+															<PluginInnerObject Name="" ID="{2B8A2DF3-EAAE-45A9-AE91-48F78B0262D8}" PluginName="Marker" CompanyID="0" PluginID="993">
+																<PropertyList>
+																	<Property Name="Label" Type="string" Value="Complete puzzle"/>
+																</PropertyList>
+															</PluginInnerObject>
+															<PluginInnerObject Name="" ID="{D1B01066-6F0F-4426-B1DC-72F40508AC86}" PluginName="Marker" CompanyID="0" PluginID="993">
+																<PropertyList>
+																	<Property Name="Label" Type="string" Value="end"/>
+																	<Property Name="Time" Type="Real64" Value="4.06605394605395"/>
+																</PropertyList>
+															</PluginInnerObject>
+														</List>
+													</PluginInnerObjectList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ObjectLists/>
+											<ActiveSourceList>
+												<ActiveSource Name="Clerk_chatter__1" ID="{7EEC5749-27DB-4BBB-8D25-4F3E87D7FC6E}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Clerk_chatter__2" ID="{DBB48BDB-90E4-47E6-ABB3-01075BF970E5}" ShortID="298049989">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{23AF77D7-3FEA-409B-8E44-F5B490014C61}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C91EB4C6-56DC-4541-96C4-29E948904D66}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Clerk_chatter__2" ID="{B8528BDD-83B1-464A-99FD-F2F632036556}">
+													<PropertyList>
+														<Property Name="MarkerInputMode" Type="int16" Value="2"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>Clerk_chatter\Clerk_chatter__2.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="211299271"/>
+													</MediaIDList>
+													<PluginInnerObjectList>
+														<List Name="Markers">
+															<PluginInnerObject Name="" ID="{F3978F43-9819-4FF3-96A0-53166CA42CE6}" PluginName="Marker" CompanyID="0" PluginID="993">
+																<PropertyList>
+																	<Property Name="Label" Type="string" Value="Tempo: 120.0"/>
+																</PropertyList>
+															</PluginInnerObject>
+															<PluginInnerObject Name="" ID="{F504F5FB-02FC-49FE-8780-9E3685FBAE94}" PluginName="Marker" CompanyID="0" PluginID="993">
+																<PropertyList>
+																	<Property Name="Label" Type="string" Value="Complete puzzle"/>
+																</PropertyList>
+															</PluginInnerObject>
+															<PluginInnerObject Name="" ID="{5CEA05E7-9561-4ACF-9DEC-427DEA44ADB7}" PluginName="Marker" CompanyID="0" PluginID="993">
+																<PropertyList>
+																	<Property Name="Label" Type="string" Value="end"/>
+																	<Property Name="Time" Type="Real64" Value="8.32738428238429"/>
+																</PropertyList>
+															</PluginInnerObject>
+														</List>
+													</PluginInnerObjectList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ObjectLists/>
+											<ActiveSourceList>
+												<ActiveSource Name="Clerk_chatter__2" ID="{B8528BDD-83B1-464A-99FD-F2F632036556}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Clerk_chatter__3" ID="{0D590152-FAC6-4BCC-89D4-8AB32222F937}" ShortID="45747017">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{23AF77D7-3FEA-409B-8E44-F5B490014C61}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C91EB4C6-56DC-4541-96C4-29E948904D66}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Clerk_chatter__3" ID="{18A8E8A3-F169-4B86-8772-AE4366CDA36F}">
+													<PropertyList>
+														<Property Name="MarkerInputMode" Type="int16" Value="2"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>Clerk_chatter\Clerk_chatter__3.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="579534600"/>
+													</MediaIDList>
+													<PluginInnerObjectList>
+														<List Name="Markers">
+															<PluginInnerObject Name="" ID="{4F800262-4BAA-4741-A738-37BD06BA7EE8}" PluginName="Marker" CompanyID="0" PluginID="993">
+																<PropertyList>
+																	<Property Name="Label" Type="string" Value="Tempo: 120.0"/>
+																</PropertyList>
+															</PluginInnerObject>
+															<PluginInnerObject Name="" ID="{AD74F6DC-A573-4F11-B758-7557D30DA0EC}" PluginName="Marker" CompanyID="0" PluginID="993">
+																<PropertyList>
+																	<Property Name="Label" Type="string" Value="Complete puzzle"/>
+																</PropertyList>
+															</PluginInnerObject>
+															<PluginInnerObject Name="" ID="{524300F7-EF29-4EA6-A894-47C1317ECF84}" PluginName="Marker" CompanyID="0" PluginID="993">
+																<PropertyList>
+																	<Property Name="Label" Type="string" Value="end"/>
+																	<Property Name="Time" Type="Real64" Value="4.85252211797062"/>
+																</PropertyList>
+															</PluginInnerObject>
+														</List>
+													</PluginInnerObjectList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ObjectLists/>
+											<ActiveSourceList>
+												<ActiveSource Name="Clerk_chatter__3" ID="{18A8E8A3-F169-4B86-8772-AE4366CDA36F}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Clerk_chatter__4" ID="{D89D883B-4BE5-47C9-9746-DD14770202A6}" ShortID="472541349">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{23AF77D7-3FEA-409B-8E44-F5B490014C61}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C91EB4C6-56DC-4541-96C4-29E948904D66}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Clerk_chatter__4" ID="{DF4CDF2D-3581-4FC6-90BC-B776963DB921}">
+													<PropertyList>
+														<Property Name="MarkerInputMode" Type="int16" Value="2"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>Clerk_chatter\Clerk_chatter__4.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="476092146"/>
+													</MediaIDList>
+													<PluginInnerObjectList>
+														<List Name="Markers">
+															<PluginInnerObject Name="" ID="{3A712EE5-22D4-4CC4-A2A8-57F7CC2D2A8A}" PluginName="Marker" CompanyID="0" PluginID="993">
+																<PropertyList>
+																	<Property Name="Label" Type="string" Value="Tempo: 120.0"/>
+																</PropertyList>
+															</PluginInnerObject>
+															<PluginInnerObject Name="" ID="{9AFD664A-3BA2-4263-9357-D0D67F39CE36}" PluginName="Marker" CompanyID="0" PluginID="993">
+																<PropertyList>
+																	<Property Name="Label" Type="string" Value="Complete puzzle"/>
+																</PropertyList>
+															</PluginInnerObject>
+															<PluginInnerObject Name="" ID="{39557F32-806F-484A-8271-6A4E9154794B}" PluginName="Marker" CompanyID="0" PluginID="993">
+																<PropertyList>
+																	<Property Name="Label" Type="string" Value="end"/>
+																	<Property Name="Time" Type="Real64" Value="6.05193726539242"/>
+																</PropertyList>
+															</PluginInnerObject>
+														</List>
+													</PluginInnerObjectList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ObjectLists/>
+											<ActiveSourceList>
+												<ActiveSource Name="Clerk_chatter__4" ID="{DF4CDF2D-3581-4FC6-90BC-B776963DB921}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Clerk_chatter__5" ID="{E3298A54-D735-4825-9EE1-5898ADEBB75D}" ShortID="128980301">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{23AF77D7-3FEA-409B-8E44-F5B490014C61}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C91EB4C6-56DC-4541-96C4-29E948904D66}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Clerk_chatter__5" ID="{5D270892-0210-4A60-8906-922F4619E2BC}">
+													<PropertyList>
+														<Property Name="MarkerInputMode" Type="int16" Value="2"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>Clerk_chatter\Clerk_chatter__5.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="529285034"/>
+													</MediaIDList>
+													<PluginInnerObjectList>
+														<List Name="Markers">
+															<PluginInnerObject Name="" ID="{6B492A4B-26A4-423F-A303-EA80BCDB88F6}" PluginName="Marker" CompanyID="0" PluginID="993">
+																<PropertyList>
+																	<Property Name="Label" Type="string" Value="Tempo: 120.0"/>
+																</PropertyList>
+															</PluginInnerObject>
+															<PluginInnerObject Name="" ID="{9A2DBE32-D3BC-4157-8D50-4373038DF8F7}" PluginName="Marker" CompanyID="0" PluginID="993">
+																<PropertyList>
+																	<Property Name="Label" Type="string" Value="Complete puzzle"/>
+																</PropertyList>
+															</PluginInnerObject>
+															<PluginInnerObject Name="" ID="{C6CBE16F-B321-4DCA-A49A-E6909895552F}" PluginName="Marker" CompanyID="0" PluginID="993">
+																<PropertyList>
+																	<Property Name="Label" Type="string" Value="end"/>
+																	<Property Name="Time" Type="Real64" Value="4.96814025398743"/>
+																</PropertyList>
+															</PluginInnerObject>
+														</List>
+													</PluginInnerObjectList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ObjectLists/>
+											<ActiveSourceList>
+												<ActiveSource Name="Clerk_chatter__5" ID="{5D270892-0210-4A60-8906-922F4619E2BC}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Clerk_chatter__6" ID="{1FFD7900-BAAB-4145-B6F7-696447954501}" ShortID="699690532">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{23AF77D7-3FEA-409B-8E44-F5B490014C61}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C91EB4C6-56DC-4541-96C4-29E948904D66}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Clerk_chatter__6" ID="{8FE90A39-044B-4EBE-B6A1-500B71BD26DB}">
+													<PropertyList>
+														<Property Name="MarkerInputMode" Type="int16" Value="2"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>Clerk_chatter\Clerk_chatter__6.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="675330913"/>
+													</MediaIDList>
+													<PluginInnerObjectList>
+														<List Name="Markers">
+															<PluginInnerObject Name="" ID="{85CE5778-34D8-4BBD-97FA-E6DB43C68772}" PluginName="Marker" CompanyID="0" PluginID="993">
+																<PropertyList>
+																	<Property Name="Label" Type="string" Value="Tempo: 120.0"/>
+																</PropertyList>
+															</PluginInnerObject>
+															<PluginInnerObject Name="" ID="{D3B6727B-A92F-4FFB-8BAF-048F989CDD24}" PluginName="Marker" CompanyID="0" PluginID="993">
+																<PropertyList>
+																	<Property Name="Label" Type="string" Value="Complete puzzle"/>
+																</PropertyList>
+															</PluginInnerObject>
+															<PluginInnerObject Name="" ID="{9712A497-320F-455B-A012-8FB2F5CC84B5}" PluginName="Marker" CompanyID="0" PluginID="993">
+																<PropertyList>
+																	<Property Name="Label" Type="string" Value="end"/>
+																	<Property Name="Time" Type="Real64" Value="5.9358820286395"/>
+																</PropertyList>
+															</PluginInnerObject>
+														</List>
+													</PluginInnerObjectList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ObjectLists/>
+											<ActiveSourceList>
+												<ActiveSource Name="Clerk_chatter__6" ID="{8FE90A39-044B-4EBE-B6A1-500B71BD26DB}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Clerk_chatter__7" ID="{7C112AC1-B11C-4031-B366-95B454C4CC1E}" ShortID="1051356014">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{23AF77D7-3FEA-409B-8E44-F5B490014C61}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C91EB4C6-56DC-4541-96C4-29E948904D66}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Clerk_chatter__7" ID="{8148BA2B-8772-43D4-A06D-AA4CD44222A0}">
+													<PropertyList>
+														<Property Name="MarkerInputMode" Type="int16" Value="2"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>Clerk_chatter\Clerk_chatter__7.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="413924883"/>
+													</MediaIDList>
+													<PluginInnerObjectList>
+														<List Name="Markers">
+															<PluginInnerObject Name="" ID="{F2A5053A-ADAE-4CD7-851C-65B7367D4455}" PluginName="Marker" CompanyID="0" PluginID="993">
+																<PropertyList>
+																	<Property Name="Label" Type="string" Value="Tempo: 120.0"/>
+																</PropertyList>
+															</PluginInnerObject>
+															<PluginInnerObject Name="" ID="{EADEA017-20ED-4B4F-BBEC-3AB6DB186D38}" PluginName="Marker" CompanyID="0" PluginID="993">
+																<PropertyList>
+																	<Property Name="Label" Type="string" Value="Complete puzzle"/>
+																</PropertyList>
+															</PluginInnerObject>
+															<PluginInnerObject Name="" ID="{0B893812-E3B9-43F0-B0AD-B6F042F28996}" PluginName="Marker" CompanyID="0" PluginID="993">
+																<PropertyList>
+																	<Property Name="Label" Type="string" Value="end"/>
+																	<Property Name="Time" Type="Real64" Value="1.12422983992751"/>
+																</PropertyList>
+															</PluginInnerObject>
+														</List>
+													</PluginInnerObjectList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ObjectLists/>
+											<ActiveSourceList>
+												<ActiveSource Name="Clerk_chatter__7" ID="{8148BA2B-8772-43D4-A06D-AA4CD44222A0}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Clerk_chatter__8" ID="{F03F4E6A-BAAF-4451-92CD-73D6B09D4DDF}" ShortID="870171124">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{23AF77D7-3FEA-409B-8E44-F5B490014C61}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C91EB4C6-56DC-4541-96C4-29E948904D66}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Clerk_chatter__8" ID="{12FBEEE8-929B-4C88-8FD0-E62BB33902A0}">
+													<PropertyList>
+														<Property Name="MarkerInputMode" Type="int16" Value="2"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>Clerk_chatter\Clerk_chatter__8.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="718550265"/>
+													</MediaIDList>
+													<PluginInnerObjectList>
+														<List Name="Markers">
+															<PluginInnerObject Name="" ID="{A6E3EB2A-83EB-43B7-A671-5EADBA4405DD}" PluginName="Marker" CompanyID="0" PluginID="993">
+																<PropertyList>
+																	<Property Name="Label" Type="string" Value="Tempo: 120.0"/>
+																</PropertyList>
+															</PluginInnerObject>
+															<PluginInnerObject Name="" ID="{221D829A-E122-4557-A3B3-843C28E9839B}" PluginName="Marker" CompanyID="0" PluginID="993">
+																<PropertyList>
+																	<Property Name="Label" Type="string" Value="Complete puzzle"/>
+																</PropertyList>
+															</PluginInnerObject>
+															<PluginInnerObject Name="" ID="{FB517CDA-CF5C-4206-8D6D-4A3DF84B633F}" PluginName="Marker" CompanyID="0" PluginID="993">
+																<PropertyList>
+																	<Property Name="Label" Type="string" Value="end"/>
+																	<Property Name="Time" Type="Real64" Value="4.6450615552775"/>
+																</PropertyList>
+															</PluginInnerObject>
+														</List>
+													</PluginInnerObjectList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ObjectLists/>
+											<ActiveSourceList>
+												<ActiveSource Name="Clerk_chatter__8" ID="{12FBEEE8-929B-4C88-8FD0-E62BB33902A0}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Clerk_chatter__9" ID="{FF6896C4-3186-49BB-B471-F8A6A8834E24}" ShortID="520127479">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{23AF77D7-3FEA-409B-8E44-F5B490014C61}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C91EB4C6-56DC-4541-96C4-29E948904D66}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Clerk_chatter__9" ID="{ECAC8984-39B3-4D7D-82CD-B229CAE58196}">
+													<PropertyList>
+														<Property Name="MarkerInputMode" Type="int16" Value="2"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>Clerk_chatter\Clerk_chatter__9.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="739805478"/>
+													</MediaIDList>
+													<PluginInnerObjectList>
+														<List Name="Markers">
+															<PluginInnerObject Name="" ID="{EDD0DF79-2938-4940-9FF4-EC2C300B503A}" PluginName="Marker" CompanyID="0" PluginID="993">
+																<PropertyList>
+																	<Property Name="Label" Type="string" Value="Tempo: 120.0"/>
+																</PropertyList>
+															</PluginInnerObject>
+															<PluginInnerObject Name="" ID="{9AFD729D-A9F9-4127-9066-188D505D09CA}" PluginName="Marker" CompanyID="0" PluginID="993">
+																<PropertyList>
+																	<Property Name="Label" Type="string" Value="Complete puzzle"/>
+																</PropertyList>
+															</PluginInnerObject>
+															<PluginInnerObject Name="" ID="{4479E6C5-58E7-419E-A7AB-3190AE223563}" PluginName="Marker" CompanyID="0" PluginID="993">
+																<PropertyList>
+																	<Property Name="Label" Type="string" Value="end"/>
+																	<Property Name="Time" Type="Real64" Value="1.56195260627154"/>
+																</PropertyList>
+															</PluginInnerObject>
+														</List>
+													</PluginInnerObjectList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ObjectLists/>
+											<ActiveSourceList>
+												<ActiveSource Name="Clerk_chatter__9" ID="{ECAC8984-39B3-4D7D-82CD-B229CAE58196}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+									</ChildrenList>
+									<PositioningInfo>
+										<Position Name="" ID="{9914A676-0C65-4D57-9C3F-15FAF411BD93}">
+											<ChildrenList>
+												<Path2D Name="Path" ID="{9EE80C2B-1B0C-4585-8F59-F8CC54C0B43D}">
+													<PropertyList>
+														<Property Name="Duration" Type="Uint32" Value="12000"/>
+													</PropertyList>
+													<PointList>
+														<Point>
+															<XPos>-57.36042</XPos>
+															<YPos>-58.47457</YPos>
+															<Flags>12</Flags>
+															<Time>0</Time>
+														</Point>
+														<Point>
+															<XPos>65.48223</XPos>
+															<YPos>69.49153</YPos>
+															<ZPos>56</ZPos>
+															<Flags>0</Flags>
+															<Time>12000</Time>
+														</Point>
+													</PointList>
+												</Path2D>
+											</ChildrenList>
+										</Position>
+									</PositioningInfo>
+									<ObjectLists/>
+									<Playlist>
+										<ItemRef Name="Clerk_chatter__6" ID="{1FFD7900-BAAB-4145-B6F7-696447954501}"/>
+										<ItemRef Name="Clerk_chatter__7" ID="{7C112AC1-B11C-4031-B366-95B454C4CC1E}"/>
+										<ItemRef Name="Clerk_chatter__8" ID="{F03F4E6A-BAAF-4451-92CD-73D6B09D4DDF}"/>
+										<ItemRef Name="Clerk_chatter__9" ID="{FF6896C4-3186-49BB-B471-F8A6A8834E24}"/>
 									</Playlist>
 								</RandomSequenceContainer>
 							</ChildrenList>
+							<PositioningInfo>
+								<Position Name="" ID="{1B839879-DE30-4202-BD33-22E717A8D58B}">
+									<ChildrenList>
+										<Path2D Name="Path" ID="{8EA05F47-7371-4720-8E88-E9E000027224}">
+											<PropertyList>
+												<Property Name="Duration" Type="Uint32" Value="12000"/>
+											</PropertyList>
+											<PointList>
+												<Point>
+													<XPos>-57.36042</XPos>
+													<YPos>-58.47457</YPos>
+													<Flags>12</Flags>
+													<Time>0</Time>
+												</Point>
+												<Point>
+													<XPos>65.48223</XPos>
+													<YPos>69.49153</YPos>
+													<ZPos>56</ZPos>
+													<Flags>0</Flags>
+													<Time>12000</Time>
+												</Point>
+											</PointList>
+										</Path2D>
+									</ChildrenList>
+								</Position>
+							</PositioningInfo>
 							<ObjectLists/>
 							<GroupingInfo>
 								<GroupingBehaviorList>
 									<GroupingBehavior>
-										<ItemRef Name="Clerk_chatter" ID="{6C195452-FDF0-4147-8549-75299297A883}"/>
+										<ItemRef Name="Clerk_chatter2" ID="{3F52093C-3582-4076-9616-273423A7CFC9}"/>
+									</GroupingBehavior>
+									<GroupingBehavior>
+										<ItemRef Name="Clerk_chatter1" ID="{6C195452-FDF0-4147-8549-75299297A883}"/>
+									</GroupingBehavior>
+									<GroupingBehavior>
+										<ItemRef Name="Clerk_chatter3" ID="{BC7ADABA-B3D8-4FA2-AB04-803B9892EEB2}"/>
+									</GroupingBehavior>
+									<GroupingBehavior>
+										<ItemRef Name="CrawlAbove" ID="{337EBDE2-CEE0-47C8-A3BC-A37BCE41D110}"/>
 									</GroupingBehavior>
 									<GroupingBehavior>
 										<ItemRef Name="ClerkIntro" ID="{9FE4C1F4-0295-4857-896C-B7DD5670F34B}"/>
@@ -938,15 +2182,33 @@
 								</GroupingBehaviorList>
 								<GroupingList>
 									<Grouping>
+										<SwitchRef Name="ClerkChatter2" ID="{58DD9327-CD6D-4D21-89E5-9BF03B4ACDBA}"/>
+										<ItemList>
+											<ItemRef Name="Clerk_chatter2" ID="{3F52093C-3582-4076-9616-273423A7CFC9}"/>
+										</ItemList>
+									</Grouping>
+									<Grouping>
 										<SwitchRef Name="ClerkIntro" ID="{82AD2430-231F-4A0F-9382-CEE494A9DF9E}"/>
 										<ItemList>
 											<ItemRef Name="ClerkIntro" ID="{9FE4C1F4-0295-4857-896C-B7DD5670F34B}"/>
 										</ItemList>
 									</Grouping>
 									<Grouping>
-										<SwitchRef Name="ClerkChatter" ID="{6AD5FEDC-6CD0-4A3D-91C2-9265E8947D7B}"/>
+										<SwitchRef Name="ClerkCrawl" ID="{64EADD76-180B-4140-9FDB-667A47D077E2}"/>
 										<ItemList>
-											<ItemRef Name="Clerk_chatter" ID="{6C195452-FDF0-4147-8549-75299297A883}"/>
+											<ItemRef Name="CrawlAbove" ID="{337EBDE2-CEE0-47C8-A3BC-A37BCE41D110}"/>
+										</ItemList>
+									</Grouping>
+									<Grouping>
+										<SwitchRef Name="ClerkChatter3" ID="{E334D896-7052-4A0C-8FBE-2DCCF747A2AC}"/>
+										<ItemList>
+											<ItemRef Name="Clerk_chatter3" ID="{BC7ADABA-B3D8-4FA2-AB04-803B9892EEB2}"/>
+										</ItemList>
+									</Grouping>
+									<Grouping>
+										<SwitchRef Name="ClerkChatter1" ID="{6AD5FEDC-6CD0-4A3D-91C2-9265E8947D7B}"/>
+										<ItemList>
+											<ItemRef Name="Clerk_chatter1" ID="{6C195452-FDF0-4147-8549-75299297A883}"/>
 										</ItemList>
 									</Grouping>
 								</GroupingList>

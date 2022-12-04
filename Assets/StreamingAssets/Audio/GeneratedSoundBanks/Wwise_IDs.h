@@ -16,6 +16,9 @@ namespace AK
         static const AkUniqueID AMB_LIGHTBEAM = 1884576663U;
         static const AkUniqueID CHURCH_ALTER_AMBIENCE = 1568742100U;
         static const AkUniqueID CHURCH_AMBISONIC = 1132321458U;
+        static const AkUniqueID CRAWLSFX = 3690987655U;
+        static const AkUniqueID DUNGEONAMB = 3254361931U;
+        static const AkUniqueID DUNGEONSCREAM = 2115347266U;
         static const AkUniqueID FOOTSTEP = 1866025847U;
         static const AkUniqueID LANTEREN_CHARGING = 3651057560U;
         static const AkUniqueID LANTEREN_DEPLOY_LOOP = 759350405U;
@@ -25,9 +28,11 @@ namespace AK
         static const AkUniqueID LOOSINGHEALTH = 938481918U;
         static const AkUniqueID LOWHEALTH = 1017222595U;
         static const AkUniqueID MIRRORLIGHT = 1217934400U;
+        static const AkUniqueID MIRRORLIGHT_OFF = 500177350U;
         static const AkUniqueID MIRRORTURN = 1903317937U;
         static const AkUniqueID MIRRORTURN_OFF = 3962630019U;
         static const AkUniqueID NOTLOOSINGHEALTH = 340196141U;
+        static const AkUniqueID TOWERAMB = 3134013836U;
         static const AkUniqueID VA_CLERK_PLAY = 1398273777U;
         static const AkUniqueID VA_PAUSE = 938429017U;
         static const AkUniqueID VA_RESUME = 662947992U;
@@ -80,7 +85,10 @@ namespace AK
 
             namespace SWITCH
             {
-                static const AkUniqueID CLERKCHATTER = 1846884575U;
+                static const AkUniqueID CLERKCHATTER1 = 711493436U;
+                static const AkUniqueID CLERKCHATTER2 = 711493439U;
+                static const AkUniqueID CLERKCHATTER3 = 711493438U;
+                static const AkUniqueID CLERKCRAWL = 2986066245U;
                 static const AkUniqueID CLERKINTRO = 1202250874U;
             } // namespace SWITCH
         } // namespace VA_CLERK_SWITCH_GROUP

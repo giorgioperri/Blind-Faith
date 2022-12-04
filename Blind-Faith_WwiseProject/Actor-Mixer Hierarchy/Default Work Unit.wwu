@@ -2915,17 +2915,48 @@
 									<PropertyList>
 										<Property Name="Highpass" Type="int16">
 											<ValueList>
-												<Value>41</Value>
+												<Value>35</Value>
 											</ValueList>
 										</Property>
 										<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
 										<Property Name="Lowpass" Type="int16">
 											<ValueList>
-												<Value>65</Value>
+												<Value>50</Value>
 											</ValueList>
 										</Property>
 										<Property Name="Pitch" Type="int32">
 											<RTPCList>
+												<RTPC Name="" ID="{4681DA33-A81E-4ED0-B25F-E63A5022937A}" ShortID="238182200">
+													<ReferenceList>
+														<Reference Name="ControlInput">
+															<Custom>
+																<ModulatorTime Name="Modulator Time (Custom)" ID="{A932E60B-1F2C-4D59-AEB0-CDEB146172C2}" ShortID="397649682">
+																	<PropertyList>
+																		<Property Name="EnvelopeStopPlayback" Type="bool" Value="False"/>
+																		<Property Name="EnvelopeTriggerOn" Type="int32" Value="2"/>
+																	</PropertyList>
+																</ModulatorTime>
+															</Custom>
+														</Reference>
+													</ReferenceList>
+													<Curve Name="" ID="{EE03D7EE-E23F-4B2E-94AF-84A002C359D0}">
+														<PropertyList>
+															<Property Name="Flags" Type="int32" Value="65537"/>
+														</PropertyList>
+														<PointList>
+															<Point>
+																<XPos>0</XPos>
+																<YPos>0</YPos>
+																<Flags>5</Flags>
+															</Point>
+															<Point>
+																<XPos>1</XPos>
+																<YPos>0</YPos>
+																<Flags>37</Flags>
+															</Point>
+														</PointList>
+													</Curve>
+												</RTPC>
 												<RTPC Name="" ID="{2530DB65-2A29-4D2E-AC53-4DC07F538D23}" ShortID="650676265">
 													<ReferenceList>
 														<Reference Name="ControlInput">
@@ -3158,6 +3189,313 @@
 									<ObjectLists/>
 									<ActiveSourceList>
 										<ActiveSource Name="rockslide_02" ID="{0013D352-481A-4A1A-A6A4-0BFBB67AA9A3}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<RandomSequenceContainer Name="ClerkCrawlEvent" ID="{FACAEBC2-24C4-494F-87A8-D8D4CE74627C}" ShortID="439087416">
+									<PropertyList>
+										<Property Name="3DPosition" Type="int16" Value="1"/>
+										<Property Name="3DSpatialization" Type="int16" Value="2"/>
+										<Property Name="OverridePositioning" Type="bool" Value="True"/>
+										<Property Name="PlayMechanismSpecialTransitions" Type="bool" Value="True"/>
+										<Property Name="PlayMechanismSpecialTransitionsType" Type="int16" Value="1"/>
+										<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
+										<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="3"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Attenuation">
+											<ObjectRef Name="10" ID="{CD38D13E-1D7D-46FA-AD0C-C7D5F9690547}" WorkUnitID="{47D4E814-D669-4A08-8AD2-F706566546E0}"/>
+										</Reference>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{23AF77D7-3FEA-409B-8E44-F5B490014C61}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C91EB4C6-56DC-4541-96C4-29E948904D66}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<Sound Name="ClerkCrawlEvent" ID="{6AAFA24C-9359-4203-95D8-39D81654F7B6}" ShortID="650431359">
+											<PropertyList>
+												<Property Name="3DSpatialization" Type="int16" Value="2"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Attenuation">
+													<ObjectRef Name="10" ID="{CD38D13E-1D7D-46FA-AD0C-C7D5F9690547}" WorkUnitID="{47D4E814-D669-4A08-8AD2-F706566546E0}"/>
+												</Reference>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{23AF77D7-3FEA-409B-8E44-F5B490014C61}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Rooms" ID="{F220833B-3FC1-4DC8-9CF3-6F367C8C1EDE}" WorkUnitID="{C91EB4C6-56DC-4541-96C4-29E948904D66}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="rockslide_02" ID="{1F5547E4-8273-46B6-8E63-18C5F13D712C}">
+													<PropertyList>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimEnd" Type="Real64" Value="0.431589007549594"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>rockslide_02.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="256285804"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ObjectLists/>
+											<ActiveSourceList>
+												<ActiveSource Name="rockslide_02" ID="{1F5547E4-8273-46B6-8E63-18C5F13D712C}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="ClerkCrawlEvent_01" ID="{05DB399A-CC40-4A33-91A8-E87655A784F6}" ShortID="733603823">
+											<PropertyList>
+												<Property Name="3DSpatialization" Type="int16" Value="2"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Attenuation">
+													<ObjectRef Name="10" ID="{CD38D13E-1D7D-46FA-AD0C-C7D5F9690547}" WorkUnitID="{47D4E814-D669-4A08-8AD2-F706566546E0}"/>
+												</Reference>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{23AF77D7-3FEA-409B-8E44-F5B490014C61}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Rooms" ID="{F220833B-3FC1-4DC8-9CF3-6F367C8C1EDE}" WorkUnitID="{C91EB4C6-56DC-4541-96C4-29E948904D66}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="rockslide_02" ID="{F774BF28-F9B1-4946-B0B1-E570DA580327}">
+													<PropertyList>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimBegin" Type="Real64" Value="0.405287394847529"/>
+														<Property Name="TrimEnd" Type="Real64" Value="0.873720711019625"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>rockslide_02.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="253584912"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ObjectLists/>
+											<ActiveSourceList>
+												<ActiveSource Name="rockslide_02" ID="{F774BF28-F9B1-4946-B0B1-E570DA580327}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="ClerkCrawlEvent_02" ID="{058E7C9E-9200-4F40-9E05-DD9FE27945CB}" ShortID="609647721">
+											<PropertyList>
+												<Property Name="3DSpatialization" Type="int16" Value="2"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Attenuation">
+													<ObjectRef Name="10" ID="{CD38D13E-1D7D-46FA-AD0C-C7D5F9690547}" WorkUnitID="{47D4E814-D669-4A08-8AD2-F706566546E0}"/>
+												</Reference>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{23AF77D7-3FEA-409B-8E44-F5B490014C61}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Rooms" ID="{F220833B-3FC1-4DC8-9CF3-6F367C8C1EDE}" WorkUnitID="{C91EB4C6-56DC-4541-96C4-29E948904D66}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="rockslide_02" ID="{3DB9BF4F-F481-4254-B441-CCBA2442070B}">
+													<PropertyList>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimBegin" Type="Real64" Value="0.967163101340693"/>
+														<Property Name="TrimEnd" Type="Real64" Value="1.38032995457904"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>rockslide_02.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="532957903"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ObjectLists/>
+											<ActiveSourceList>
+												<ActiveSource Name="rockslide_02" ID="{3DB9BF4F-F481-4254-B441-CCBA2442070B}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="ClerkCrawlEvent_03" ID="{1C6DF628-148F-4874-B492-D482EC12F765}" ShortID="770416660">
+											<PropertyList>
+												<Property Name="3DSpatialization" Type="int16" Value="2"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Attenuation">
+													<ObjectRef Name="10" ID="{CD38D13E-1D7D-46FA-AD0C-C7D5F9690547}" WorkUnitID="{47D4E814-D669-4A08-8AD2-F706566546E0}"/>
+												</Reference>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{23AF77D7-3FEA-409B-8E44-F5B490014C61}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Rooms" ID="{F220833B-3FC1-4DC8-9CF3-6F367C8C1EDE}" WorkUnitID="{C91EB4C6-56DC-4541-96C4-29E948904D66}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="rockslide_02" ID="{D0C1D8DB-5D04-4241-AB9B-349E5F77E213}">
+													<PropertyList>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimBegin" Type="Real64" Value="1.27112864747634"/>
+														<Property Name="TrimEnd" Type="Real64" Value="1.80403950373782"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>rockslide_02.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="702937931"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ObjectLists/>
+											<ActiveSourceList>
+												<ActiveSource Name="rockslide_02" ID="{D0C1D8DB-5D04-4241-AB9B-349E5F77E213}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="ClerkCrawlEvent_04" ID="{6DE4514B-791C-4CBA-A141-98675E0FA991}" ShortID="1019736070">
+											<PropertyList>
+												<Property Name="3DSpatialization" Type="int16" Value="2"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Attenuation">
+													<ObjectRef Name="10" ID="{CD38D13E-1D7D-46FA-AD0C-C7D5F9690547}" WorkUnitID="{47D4E814-D669-4A08-8AD2-F706566546E0}"/>
+												</Reference>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{23AF77D7-3FEA-409B-8E44-F5B490014C61}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Rooms" ID="{F220833B-3FC1-4DC8-9CF3-6F367C8C1EDE}" WorkUnitID="{C91EB4C6-56DC-4541-96C4-29E948904D66}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="rockslide_02" ID="{9EF297B8-4F43-4609-8910-DA923BA6AC31}">
+													<PropertyList>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimBegin" Type="Real64" Value="1.61193850223449"/>
+														<Property Name="TrimEnd" Type="Real64" Value="2.29222659298597"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>rockslide_02.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="735537736"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ObjectLists/>
+											<ActiveSourceList>
+												<ActiveSource Name="rockslide_02" ID="{9EF297B8-4F43-4609-8910-DA923BA6AC31}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="ClerkCrawlEvent_05" ID="{325F7557-FB07-4928-BF22-BACCBA80E3AA}" ShortID="995908981">
+											<PropertyList>
+												<Property Name="3DSpatialization" Type="int16" Value="2"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Attenuation">
+													<ObjectRef Name="10" ID="{CD38D13E-1D7D-46FA-AD0C-C7D5F9690547}" WorkUnitID="{47D4E814-D669-4A08-8AD2-F706566546E0}"/>
+												</Reference>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{23AF77D7-3FEA-409B-8E44-F5B490014C61}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Rooms" ID="{F220833B-3FC1-4DC8-9CF3-6F367C8C1EDE}" WorkUnitID="{C91EB4C6-56DC-4541-96C4-29E948904D66}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="rockslide_02" ID="{F2B42308-C8DC-4DE2-8426-E18E08A77EFF}">
+													<PropertyList>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimBegin" Type="Real64" Value="2.25671390312828"/>
+														<Property Name="TrimEnd" Type="Real64" Value="2.87252445379039"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>rockslide_02.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="954478930"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ObjectLists/>
+											<ActiveSourceList>
+												<ActiveSource Name="rockslide_02" ID="{F2B42308-C8DC-4DE2-8426-E18E08A77EFF}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+									</ChildrenList>
+									<PositioningInfo>
+										<Position Name="" ID="{74938473-8D06-4524-8A67-61BC2378BDB6}">
+											<ChildrenList>
+												<Path2D Name="ClerkCrawlEvent_Path" ID="{0029BBAF-0944-46C4-B9D7-A5AF3B7E9588}">
+													<PropertyList>
+														<Property Name="Duration" Type="Uint32" Value="12000"/>
+													</PropertyList>
+													<PointList>
+														<Point>
+															<XPos>-56.85279</XPos>
+															<YPos>-74.85875</YPos>
+															<Flags>12</Flags>
+															<Time>0</Time>
+														</Point>
+														<Point>
+															<XPos>60.9137055837564</XPos>
+															<YPos>75.7062146892655</YPos>
+															<Flags>0</Flags>
+															<Time>12000</Time>
+														</Point>
+													</PointList>
+												</Path2D>
+											</ChildrenList>
+										</Position>
+									</PositioningInfo>
+									<ObjectLists/>
+								</RandomSequenceContainer>
+								<Sound Name="DungeonScream" ID="{B1587511-EE97-4B7E-AA07-0A08656885F1}" ShortID="989028469">
+									<PropertyList>
+										<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+										<Property Name="Lowpass" Type="int16">
+											<ValueList>
+												<Value>31</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{23AF77D7-3FEA-409B-8E44-F5B490014C61}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C91EB4C6-56DC-4541-96C4-29E948904D66}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Scream,Male,Mid Thirties,Mouth Covered,Gasps,Fast,Shriek,Panic" ID="{2929E5F0-291C-4D45-B08D-02826CCFD346}">
+											<Language>SFX</Language>
+											<AudioFile>Scream,Male,Mid Thirties,Mouth Covered,Gasps,Fast,Shriek,Panic.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="795415343"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ObjectLists/>
+									<ActiveSourceList>
+										<ActiveSource Name="Scream,Male,Mid Thirties,Mouth Covered,Gasps,Fast,Shriek,Panic" ID="{2929E5F0-291C-4D45-B08D-02826CCFD346}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="DungeonScreamDoor" ID="{E7824E1F-95EC-4B01-A9C4-8275502B3D3B}" ShortID="495164380">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{23AF77D7-3FEA-409B-8E44-F5B490014C61}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C91EB4C6-56DC-4541-96C4-29E948904D66}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Impacts_SIMPLE_176" ID="{685BCAE0-822F-4373-8FD7-5E83BD8129AF}">
+											<Language>SFX</Language>
+											<AudioFile>Impacts_SIMPLE_176.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="1072973590"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ObjectLists/>
+									<ActiveSourceList>
+										<ActiveSource Name="Impacts_SIMPLE_176" ID="{685BCAE0-822F-4373-8FD7-5E83BD8129AF}" Platform="Linked"/>
 									</ActiveSourceList>
 								</Sound>
 							</ChildrenList>
@@ -3483,6 +3821,154 @@
 									<ObjectLists/>
 									<ActiveSourceList>
 										<ActiveSource Name="Earthquake_Rumble_PSEM_100" ID="{89CE11C8-A2CD-4510-BC5C-940744038932}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="DungeonAmbience" ID="{F89223D0-CDC0-46D7-BCE3-49E018792F54}" ShortID="31099115">
+									<PropertyList>
+										<Property Name="Highpass" Type="int16">
+											<ValueList>
+												<Value>44</Value>
+											</ValueList>
+										</Property>
+										<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{23AF77D7-3FEA-409B-8E44-F5B490014C61}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C91EB4C6-56DC-4541-96C4-29E948904D66}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="FortressBellDrone" ID="{5B376380-73F3-448B-85B2-31B99AC76C93}">
+											<PropertyList>
+												<Property Name="CrossfadeDuration" Type="Real64" Value="616.202"/>
+												<Property Name="LoopBegin" Type="Real64" Value="1.231"/>
+												<Property Name="LoopEnd" Type="Real64" Value="27.359"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimEnd" Type="Real64" Value="31.9841969472923"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>FortressBellDrone.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="464475432"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ObjectLists/>
+									<ActiveSourceList>
+										<ActiveSource Name="FortressBellDrone" ID="{5B376380-73F3-448B-85B2-31B99AC76C93}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="86 Cave With Dripping Water" ID="{10A2B84D-5008-4B99-BED7-828746BC9C0D}" ShortID="860808820">
+									<PropertyList>
+										<Property Name="3DPosition" Type="int16" Value="1"/>
+										<Property Name="EnableAttenuation" Type="bool" Value="False"/>
+										<Property Name="OverridePositioning" Type="bool" Value="True"/>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-19</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Attenuation">
+											<ObjectRef Name="10" ID="{CD38D13E-1D7D-46FA-AD0C-C7D5F9690547}" WorkUnitID="{47D4E814-D669-4A08-8AD2-F706566546E0}"/>
+										</Reference>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{23AF77D7-3FEA-409B-8E44-F5B490014C61}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C91EB4C6-56DC-4541-96C4-29E948904D66}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="86 Cave With Dripping Water" ID="{BB282F27-80FF-4669-A60F-8030EA9D037D}">
+											<Language>SFX</Language>
+											<AudioFile>86 Cave With Dripping Water.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="558763216"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<PositioningInfo>
+										<Position Name="" ID="{AB74AB09-B8C8-4C3C-9A6E-467C91D19165}">
+											<PropertyList>
+												<Property Name="PlayMechanismRandomOrSequence" Type="int16" Value="1"/>
+												<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
+												<Property Name="PlayMechanismTransitionTime" Type="Real64" Value="2.5"/>
+											</PropertyList>
+											<ChildrenList>
+												<Path2D Name="86 Cave With Dripping Water_Path" ID="{EB5BDAEA-E876-4EA0-A3B3-F0A6453BE65F}">
+													<PointList>
+														<Point>
+															<XPos>54.82234</XPos>
+															<YPos>57.9096</YPos>
+															<Flags>12</Flags>
+															<Time>0</Time>
+														</Point>
+													</PointList>
+												</Path2D>
+												<Path2D Name="86 Cave With Dripping Water_Path_01" ID="{5369421C-CCFB-4675-BEB8-29F4E0355CF1}">
+													<PointList>
+														<Point>
+															<XPos>-71.5736</XPos>
+															<YPos>50.56497</YPos>
+															<Flags>12</Flags>
+															<Time>0</Time>
+														</Point>
+													</PointList>
+												</Path2D>
+												<Path2D Name="86 Cave With Dripping Water_Path_02" ID="{F95FE05C-9489-4A24-944E-E78297BE9DEC}">
+													<PointList>
+														<Point>
+															<XPos>-63.45178</XPos>
+															<YPos>-63.55932</YPos>
+															<Flags>12</Flags>
+															<Time>0</Time>
+														</Point>
+													</PointList>
+												</Path2D>
+												<Path2D Name="86 Cave With Dripping Water_Path_03" ID="{E74C5C0F-2BDE-4569-A5A9-0D14A6E6DF97}">
+													<PointList>
+														<Point>
+															<XPos>53.29949</XPos>
+															<YPos>-67.51412</YPos>
+															<Flags>12</Flags>
+															<Time>0</Time>
+														</Point>
+													</PointList>
+												</Path2D>
+											</ChildrenList>
+										</Position>
+									</PositioningInfo>
+									<ObjectLists/>
+									<ActiveSourceList>
+										<ActiveSource Name="86 Cave With Dripping Water" ID="{BB282F27-80FF-4669-A60F-8030EA9D037D}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="TowerAmb" ID="{DAB56D10-F32C-443E-9A13-2AC277D13047}" ShortID="388580009">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{23AF77D7-3FEA-409B-8E44-F5B490014C61}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C91EB4C6-56DC-4541-96C4-29E948904D66}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="AncientAtmosDrone1" ID="{E4D70ECA-988A-4399-B5CB-43E624C8672E}">
+											<Language>SFX</Language>
+											<AudioFile>AncientAtmosDrone1.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="274880349"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ObjectLists/>
+									<ActiveSourceList>
+										<ActiveSource Name="AncientAtmosDrone1" ID="{E4D70ECA-988A-4399-B5CB-43E624C8672E}" Platform="Linked"/>
 									</ActiveSourceList>
 								</Sound>
 							</ChildrenList>
