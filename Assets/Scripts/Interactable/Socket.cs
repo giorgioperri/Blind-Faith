@@ -47,6 +47,7 @@ public class Socket : Interactable
             
             _lightBeam = GameObject.Find("Light Beam");
             Destroy(_lightBeam);
+            LightMeshSpawner.Instance.DestroyLightBeam();
             _lightSourceLantern.SetActive(false);
             _lanternObject.transform.parent = _lanternFollowSocket.transform;
             _lanternObject.transform.position = _lanternFollowSocket.transform.position;
