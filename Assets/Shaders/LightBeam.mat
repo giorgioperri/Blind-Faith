@@ -132,7 +132,7 @@ Material:
     - _WorkflowMode: 1
     - _ZWrite: 1
     - _alphaCutoff: 0
-    - _fresnelPow: 0.53
+    - _fresnelPow: 3.07
     - _noiseAmplitude: 0.023
     - _noiseFrequency: 97.9
     - _photonSpeed: 1.62
