@@ -61,9 +61,9 @@
 										<Value>21</Value>
 									</ValueList>
 								</Property>
-								<Property Name="MaxDuckVolume" Type="Real64" Value="-15.5"/>
+								<Property Name="MaxDuckVolume" Type="Real64" Value="-18.5"/>
 								<Property Name="OverrideColor" Type="bool" Value="True"/>
-								<Property Name="RecoveryTime" Type="Real64" Value="1.5"/>
+								<Property Name="RecoveryTime" Type="Real64" Value="2"/>
 								<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
 							</PropertyList>
 							<ReferenceList>
@@ -145,7 +145,7 @@
 										</Reference>
 										<Reference Name="Effect0">
 											<Custom CreatedFrom="{0C0A3A92-A571-4FDB-AB40-ACFED04E0217}">
-												<Effect Name="Room_Medium_Tiled (Custom)" ID="{3AC6D175-1657-483D-913E-276B9F9EAA6D}" ShortID="957690521" PluginName="Wwise RoomVerb" CompanyID="0" PluginID="118" PluginType="3">
+												<Effect Name="Room_Medium_Tiled (Custom)" ID="{19E1F139-55A1-4DF6-862D-96F72712BB7E}" ShortID="27155674" PluginName="Wwise RoomVerb" CompanyID="0" PluginID="118" PluginType="3">
 													<PropertyList>
 														<Property Name="DecayTime" Type="Real32" Value="1.1"/>
 														<Property Name="Density" Type="Real32" Value="72"/>
@@ -203,6 +203,15 @@
 									<DuckingParam>
 										<Volume>-9</Volume>
 										<FadeInTime>1</FadeInTime>
+										<FadeOutTime>1</FadeOutTime>
+										<FadeCurve>FadeLinear</FadeCurve>
+									</DuckingParam>
+								</DuckItem>
+								<DuckItem>
+									<BusRef Name="SFX" ID="{2B051542-74CE-4284-8CDF-6AFFA5F98C34}"/>
+									<DuckingParam>
+										<Volume>-6</Volume>
+										<FadeInTime>2</FadeInTime>
 										<FadeOutTime>1</FadeOutTime>
 										<FadeCurve>FadeLinear</FadeCurve>
 									</DuckingParam>

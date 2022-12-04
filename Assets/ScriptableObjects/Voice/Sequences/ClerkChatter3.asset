@@ -1,0 +1,26 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e23f4fe30a8ce45fc9625af385fab37c, type: 3}
+  m_Name: ClerkChatter3
+  m_EditorClassIdentifier: 
+  sequenceLines:
+  - {fileID: 11400000, guid: 23471b5bb0a4b46989b5c6f1e3e0ba76, type: 2}
+  - {fileID: 11400000, guid: aebdeb1bb0a58422c9e2b6435e63af88, type: 2}
+  - {fileID: 11400000, guid: 90215c46596bb4a7e9e22b7606b53f8e, type: 2}
+  - {fileID: 11400000, guid: 36767e802be3f4812a01c353ae0188bc, type: 2}
+  sequenceSwitch:
+    idInternal: 0
+    valueGuidInternal: 
+    groupIdInternal: 0
+    groupGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 78bf2a2f36580ac43b725591175fce16,
+      type: 2}

@@ -15,6 +15,8 @@ public class RotateObjects : Interactable
     [SerializeField] private Light _light;
     public bool shouldStabilizeY;
 
+
+
     public void OnBeamReceived()
     {
         isEnlighted = true;
@@ -38,11 +40,13 @@ public class RotateObjects : Interactable
 
         if (isEnlighted)
         {
+            AkSoundEngine.PostEvent("MirrorLight", gameObject);
             _lightStored += Time.deltaTime * 30;
         }
         else
         {
             _lightStored -= Time.deltaTime * 20;
+            AkSoundEngine.PostEvent("MirrorLight_Off", gameObject);
         }
 
         _lightStored = _lightStored switch
@@ -60,6 +64,7 @@ public class RotateObjects : Interactable
             _grabbedMirror = true;
             GameManager.Instance.isInteractingWithMirror = true;
             transform.Rotate(0f, Mouse.current.delta.ReadValue().x, 0f, Space.Self);
+            AkSoundEngine.PostEvent("MirrorTurn", gameObject);
         }
 
         if (Mouse.current.leftButton.wasReleasedThisFrame)
@@ -69,6 +74,7 @@ public class RotateObjects : Interactable
             if (_grabbedMirror)
             {
                 _grabbedMirror = false;
+                AkSoundEngine.PostEvent("MirrorTurn_Off", gameObject);
             }
         }
 

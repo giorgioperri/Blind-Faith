@@ -2,6 +2,7 @@
 <PluginInfo Project="Blind-Faith_WwiseProject" Platform="Windows" BasePlatform="Windows">
 	<Plugins>
 		<Plugin Name="Resonance Audio Renderer" ID="6557955" DLL="ResonanceAudio" StaticLib="ResonanceAudioFX"/>
+		<Plugin Name="Wwise Silence" ID="6619138" DLL="AkSilenceGenerator" StaticLib="AkSilenceSource"/>
 		<Plugin Name="Wwise Parametric EQ" ID="6881283" DLL="AkParametricEQ" StaticLib="AkParametricEQFX"/>
 		<Plugin Name="Wwise Compressor" ID="7077891" DLL="AkCompressor" StaticLib="AkCompressorFX"/>
 		<Plugin Name="Wwise Peak Limiter" ID="7208963" DLL="AkPeakLimiter" StaticLib="AkPeakLimiterFX"/>
