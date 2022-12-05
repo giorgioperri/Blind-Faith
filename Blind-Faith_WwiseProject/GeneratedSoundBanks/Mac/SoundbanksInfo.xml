@@ -24,7 +24,7 @@
 				<AuxBus Id="2933838247" Name="SmallRoom" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Rooms\SmallRoom"/>
 			</IncludedAuxBusses>
 		</SoundBank>
-		<SoundBank Id="1764570813" Language="SFX" Hash="3525830768">
+		<SoundBank Id="1764570813" Language="SFX" Hash="2254647965">
 			<ObjectPath>\SoundBanks\Default Work Unit\Mains</ObjectPath>
 			<ShortName>Mains</ShortName>
 			<Path>Mains.bnk</Path>
@@ -105,11 +105,27 @@
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
-				<Event Id="2115347266" Name="DungeonScream" ObjectPath="\Events\Default Work Unit\DungeonScream" MaxAttenuation="10." DurationType="Infinite">
+				<Event Id="2115347266" Name="DungeonScream" ObjectPath="\Events\Default Work Unit\DungeonScream" MaxAttenuation="10." DurationType="OneShot" DurationMin="54.868618" DurationMax="124.868622">
 					<IncludedMemoryFiles>
+						<File Id="1961976" Language="SFX">
+							<ShortName>Scream,Male,Mid Thirties,Mouth Covered,Gasps,Fast,Shriek,Panic.wav</ShortName>
+							<Path>SFX\Scream,Male,Mid Thirties,Mouth Covered,Gasps,Fast,Shriek,Panic_EECF7B33.wem</Path>
+						</File>
+						<File Id="543354459" Language="SFX">
+							<ShortName>Scream,Male,Mid Thirties,Mouth Covered,Gasps,Fast,Shriek,Panic.wav</ShortName>
+							<Path>SFX\Scream,Male,Mid Thirties,Mouth Covered,Gasps,Fast,Shriek,Panic_0D9A8B04.wem</Path>
+						</File>
 						<File Id="795415343" Language="SFX">
 							<ShortName>Scream,Male,Mid Thirties,Mouth Covered,Gasps,Fast,Shriek,Panic.wav</ShortName>
-							<Path>SFX\Scream,Male,Mid Thirties,Mouth Covered,Gasps,Fast,Shriek,Panic_D79FB2B7.wem</Path>
+							<Path>SFX\Scream,Male,Mid Thirties,Mouth Covered,Gasps,Fast,Shriek,Panic_10C4C929.wem</Path>
+						</File>
+						<File Id="979620715" Language="SFX">
+							<ShortName>Scream,Male,Mid Thirties,Mouth Covered,Gasps,Fast,Shriek,Panic.wav</ShortName>
+							<Path>SFX\Scream,Male,Mid Thirties,Mouth Covered,Gasps,Fast,Shriek,Panic_26DFD618.wem</Path>
+						</File>
+						<File Id="1019828584" Language="SFX">
+							<ShortName>Scream,Male,Mid Thirties,Mouth Covered,Gasps,Fast,Shriek,Panic.wav</ShortName>
+							<Path>SFX\Scream,Male,Mid Thirties,Mouth Covered,Gasps,Fast,Shriek,Panic_64F6077A.wem</Path>
 						</File>
 						<File Id="1072973590" Language="SFX">
 							<ShortName>Impacts_SIMPLE_176.wav</ShortName>
@@ -296,7 +312,7 @@
 					<IncludedMemoryFiles>
 						<File Id="9205079" Language="SFX">
 							<ShortName>HisChildHasReturnd.wav</ShortName>
-							<Path>SFX\HisChildHasReturnd_10C4C929.wem</Path>
+							<Path>SFX\HisChildHasReturnd_D2660DEB.wem</Path>
 						</File>
 						<File Id="124409414" Language="SFX">
 							<ShortName>Clerk_s1_.wav</ShortName>
@@ -354,6 +370,10 @@
 							<ShortName>Clerk_chatter\Clerk_chatter__1.wav</ShortName>
 							<Path>SFX\Clerk_chatter\Clerk_chatter__1_C12CA77B.wem</Path>
 						</File>
+						<File Id="881047039" Language="SFX">
+							<ShortName>HisChildHasReturnd.wav</ShortName>
+							<Path>SFX\HisChildHasReturnd_4DDE5712.wem</Path>
+						</File>
 						<File Id="949409495" Language="SFX">
 							<ShortName>Clerk_s1__3.wav</ShortName>
 							<Path>SFX\Clerk_s1__3_5B766E21.wem</Path>
@@ -371,16 +391,9 @@
 					<SwitchContainers>
 						<SwitchContainer SwitchValue="{58DD9327-CD6D-4D21-89E5-9BF03B4ACDBA}">
 							<Media>
-								<File Id="211299271"/>
-								<File Id="222606794"/>
-								<File Id="413924883"/>
 								<File Id="476092146"/>
 								<File Id="529285034"/>
 								<File Id="579534600"/>
-								<File Id="675330913"/>
-								<File Id="718550265"/>
-								<File Id="739805478"/>
-								<File Id="833554346"/>
 							</Media>
 						</SwitchContainer>
 						<SwitchContainer SwitchValue="{82AD2430-231F-4A0F-9382-CEE494A9DF9E}">
@@ -397,33 +410,21 @@
 						<SwitchContainer SwitchValue="{64EADD76-180B-4140-9FDB-667A47D077E2}">
 							<Media>
 								<File Id="9205079"/>
+								<File Id="881047039"/>
 							</Media>
 						</SwitchContainer>
 						<SwitchContainer SwitchValue="{E334D896-7052-4A0C-8FBE-2DCCF747A2AC}">
 							<Media>
-								<File Id="211299271"/>
-								<File Id="222606794"/>
 								<File Id="413924883"/>
-								<File Id="476092146"/>
-								<File Id="529285034"/>
-								<File Id="579534600"/>
 								<File Id="675330913"/>
 								<File Id="718550265"/>
 								<File Id="739805478"/>
-								<File Id="833554346"/>
 							</Media>
 						</SwitchContainer>
 						<SwitchContainer SwitchValue="{6AD5FEDC-6CD0-4A3D-91C2-9265E8947D7B}">
 							<Media>
 								<File Id="211299271"/>
 								<File Id="222606794"/>
-								<File Id="413924883"/>
-								<File Id="476092146"/>
-								<File Id="529285034"/>
-								<File Id="579534600"/>
-								<File Id="675330913"/>
-								<File Id="718550265"/>
-								<File Id="739805478"/>
 								<File Id="833554346"/>
 							</Media>
 						</SwitchContainer>
@@ -433,13 +434,17 @@
 				<Event Id="662947992" Name="VA_Resume" ObjectPath="\Events\Default Work Unit\VA\VA_Resume" MaxAttenuation="0." DurationType="OneShot" DurationMin="0." DurationMax="0."/>
 			</IncludedEvents>
 			<IncludedMemoryFiles>
+				<File Id="1961976" Language="SFX">
+					<ShortName>Scream,Male,Mid Thirties,Mouth Covered,Gasps,Fast,Shriek,Panic.wav</ShortName>
+					<Path>SFX\Scream,Male,Mid Thirties,Mouth Covered,Gasps,Fast,Shriek,Panic_EECF7B33.wem</Path>
+				</File>
 				<File Id="9150397" Language="SFX">
 					<ShortName>Teleport.wav</ShortName>
 					<Path>SFX\Teleport_D2B0A69F.wem</Path>
 				</File>
 				<File Id="9205079" Language="SFX">
 					<ShortName>HisChildHasReturnd.wav</ShortName>
-					<Path>SFX\HisChildHasReturnd_10C4C929.wem</Path>
+					<Path>SFX\HisChildHasReturnd_D2660DEB.wem</Path>
 				</File>
 				<File Id="64451089" Language="SFX">
 					<ShortName>15-Electric Arc-Transformer-Static.wav</ShortName>
@@ -505,6 +510,10 @@
 					<ShortName>Clerk_s1__5.wav</ShortName>
 					<Path>SFX\Clerk_s1__5_E507363E.wem</Path>
 				</File>
+				<File Id="313480146" Language="SFX">
+					<ShortName>Wood_Impact_Wood_Sawdust_5.wav</ShortName>
+					<Path>SFX\Wood_Impact_Wood_Sawdust_5_A72712C8.wem</Path>
+				</File>
 				<File Id="318493534" Language="SFX">
 					<ShortName>Bluezone_BC0231_metal_grinding_013.wav</ShortName>
 					<Path>SFX\Bluezone_BC0231_metal_grinding_013_93836A2C.wem</Path>
@@ -564,6 +573,10 @@
 				<File Id="532957903" Language="SFX">
 					<ShortName>rockslide_02.wav</ShortName>
 					<Path>SFX\rockslide_02_C5905468.wem</Path>
+				</File>
+				<File Id="543354459" Language="SFX">
+					<ShortName>Scream,Male,Mid Thirties,Mouth Covered,Gasps,Fast,Shriek,Panic.wav</ShortName>
+					<Path>SFX\Scream,Male,Mid Thirties,Mouth Covered,Gasps,Fast,Shriek,Panic_0D9A8B04.wem</Path>
 				</File>
 				<File Id="558763216" Language="SFX">
 					<ShortName>86 Cave With Dripping Water.wav</ShortName>
@@ -631,7 +644,7 @@
 				</File>
 				<File Id="795415343" Language="SFX">
 					<ShortName>Scream,Male,Mid Thirties,Mouth Covered,Gasps,Fast,Shriek,Panic.wav</ShortName>
-					<Path>SFX\Scream,Male,Mid Thirties,Mouth Covered,Gasps,Fast,Shriek,Panic_D79FB2B7.wem</Path>
+					<Path>SFX\Scream,Male,Mid Thirties,Mouth Covered,Gasps,Fast,Shriek,Panic_10C4C929.wem</Path>
 				</File>
 				<File Id="830999437" Language="SFX">
 					<ShortName>01 Stone Footsteps, Cobblestone Male, 30 Secs Each Slow, Medium, Fast.wav</ShortName>
@@ -644,6 +657,10 @@
 				<File Id="861805956" Language="SFX">
 					<ShortName>01 Stone Footsteps, Cobblestone Male, 30 Secs Each Slow, Medium, Fast.wav</ShortName>
 					<Path>SFX\01 Stone Footsteps, Cobblestone Male, 30 Secs Each Slow, Medium, Fast_9D8C4D80.wem</Path>
+				</File>
+				<File Id="881047039" Language="SFX">
+					<ShortName>HisChildHasReturnd.wav</ShortName>
+					<Path>SFX\HisChildHasReturnd_4DDE5712.wem</Path>
 				</File>
 				<File Id="883270094" Language="SFX">
 					<ShortName>Switch weapon.wav</ShortName>
@@ -669,6 +686,10 @@
 					<ShortName>Teleport.wav</ShortName>
 					<Path>SFX\Teleport_E2C50CAA.wem</Path>
 				</File>
+				<File Id="979620715" Language="SFX">
+					<ShortName>Scream,Male,Mid Thirties,Mouth Covered,Gasps,Fast,Shriek,Panic.wav</ShortName>
+					<Path>SFX\Scream,Male,Mid Thirties,Mouth Covered,Gasps,Fast,Shriek,Panic_26DFD618.wem</Path>
+				</File>
 				<File Id="989359785" Language="SFX">
 					<ShortName>1806 - Footsteps - Sneakers on Carpet - 90 fpm - Loop.wav</ShortName>
 					<Path>SFX\1806 - Footsteps - Sneakers on Carpet - 90 fpm - Loop_F2E4E4FE.wem</Path>
@@ -676,6 +697,10 @@
 				<File Id="1010559949" Language="SFX">
 					<ShortName>Clerk_s1__2.wav</ShortName>
 					<Path>SFX\Clerk_s1__2_52A7C0CC.wem</Path>
+				</File>
+				<File Id="1019828584" Language="SFX">
+					<ShortName>Scream,Male,Mid Thirties,Mouth Covered,Gasps,Fast,Shriek,Panic.wav</ShortName>
+					<Path>SFX\Scream,Male,Mid Thirties,Mouth Covered,Gasps,Fast,Shriek,Panic_64F6077A.wem</Path>
 				</File>
 				<File Id="1052142959" Language="SFX">
 					<ShortName>water1.wav</ShortName>

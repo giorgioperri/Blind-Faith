@@ -15,7 +15,7 @@
 						<CurrentStateRef Name="NotPlaying" ID="{68FA20C0-6D85-4F86-9A80-95C198F962F8}"/>
 					</CurrentStateList>
 					<CurrentSwitchList ShowAll="true">
-						<CurrentSwitchRef Name="ClerkIntro" ID="{82AD2430-231F-4A0F-9382-CEE494A9DF9E}"/>
+						<CurrentSwitchRef Name="ClerkCrawl" ID="{64EADD76-180B-4140-9FDB-667A47D077E2}"/>
 						<CurrentSwitchRef Name="Cloth" ID="{E9732CE8-4FF9-41FE-BD0F-8C37DC5FC301}"/>
 					</CurrentSwitchList>
 				</SoundcasterSession>

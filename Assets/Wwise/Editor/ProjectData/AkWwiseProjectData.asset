@@ -38,7 +38,7 @@ MonoBehaviour:
     ParentPath: Master-Mixer Hierarchy\Default Work Unit
     guid: c6b41ec9dc56414596c429e948904d66
     GuidInternal: 
-    m_lastTime: -8585314362483644651
+    m_lastTime: -8585314130949086274
     List:
     - name: 2D
       guid: a0c80e6e11ef8042a411c16426d7260b
@@ -277,7 +277,7 @@ MonoBehaviour:
     ParentPath: SoundBanks\Default Work Unit
     guid: 91f3f2c2e89f4143bd59d41dc8510ab9
     GuidInternal: 
-    m_lastTime: -8585314416714757529
+    m_lastTime: -8585314089404876575
     List:
     - name: Mains
       guid: 22a5fa274c62a84d93c78d5801f30f0d
@@ -305,7 +305,7 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit
     guid: 5eb490fb28343a4fbde7e5ca0bff7b1d
     GuidInternal: 
-    m_lastTime: -8585314362483784297
+    m_lastTime: -8585314107333487504
     List:
     - name: 3D
       guid: d0312eb1e176a14c90ecba42bdd0174b
@@ -471,8 +471,8 @@ MonoBehaviour:
         guid: 18d63c71d975294f867cdc4a63c0a42a
       Path: Events\Default Work Unit\DungeonScream
       maxAttenuation: 10
-      maxDuration: -1
-      minDuration: -1
+      maxDuration: 124.86862
+      minDuration: 54.868618
     - name: Footstep
       guid: 8fb216569b92754ea89555326fc46c90
       id: 1866025847
@@ -969,7 +969,7 @@ MonoBehaviour:
     ParentPath: Game Parameters\Default Work Unit
     guid: 7f57676cb1f5124c98483947934c3f41
     GuidInternal: 
-    m_lastTime: -8585314416804787347
+    m_lastTime: -8585314131012947197
     List:
     - name: PlayerHealth
       guid: 4a27241a62b0e74bbb905dbf43acf8c0
@@ -997,7 +997,7 @@ MonoBehaviour:
     ParentPath: States\Default Work Unit
     guid: 15da347adefaa443abeba8e206daca95
     GuidInternal: 
-    m_lastTime: -8585314416713717578
+    m_lastTime: -8585314130863222801
     List:
     - name: AlterAmb
       guid: 7f446b1539ffb74881108b1e3d68a471
@@ -1203,7 +1203,7 @@ MonoBehaviour:
     ParentPath: Switches\Default Work Unit
     guid: 129020783626944d87631f9c3a93f8e0
     GuidInternal: 
-    m_lastTime: -8585314362483345463
+    m_lastTime: -8585314130863212824
     List:
     - name: Locomotion
       guid: ec8b7419cfaab54dbd4aee612fa66e6b
@@ -1318,9 +1318,9 @@ MonoBehaviour:
         guid: f60e6d600d208144b08366f3c0d6c337
       Path: Switches\Default Work Unit\VA\VA_Clerk_Switch_Group
       values:
-      - name: ClerkChatter
+      - name: ClerkChatter1
         guid: dcfed56ad06c3d4a91c29265e8947d7b
-        id: 1846884575
+        id: 711493436
         PathAndIcons:
         - ElementName: Switches
           ObjectType: 5
@@ -1334,9 +1334,47 @@ MonoBehaviour:
         - ElementName: VA_Clerk_Switch_Group
           ObjectType: 11
           guid: f60e6d600d208144b08366f3c0d6c337
-        - ElementName: ClerkChatter
+        - ElementName: ClerkChatter1
           ObjectType: 10
           guid: dcfed56ad06c3d4a91c29265e8947d7b
+      - name: ClerkChatter2
+        guid: 2793dd586dcd214d89e59bf03b4acdba
+        id: 711493439
+        PathAndIcons:
+        - ElementName: Switches
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: 129020783626944d87631f9c3a93f8e0
+        - ElementName: VA
+          ObjectType: 4
+          guid: 72aefdfe10b4f645a01820f025eaef72
+        - ElementName: VA_Clerk_Switch_Group
+          ObjectType: 11
+          guid: f60e6d600d208144b08366f3c0d6c337
+        - ElementName: ClerkChatter2
+          ObjectType: 10
+          guid: 2793dd586dcd214d89e59bf03b4acdba
+      - name: ClerkChatter3
+        guid: 96d834e352700c4a8fbe2dccf747a2ac
+        id: 711493438
+        PathAndIcons:
+        - ElementName: Switches
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: 129020783626944d87631f9c3a93f8e0
+        - ElementName: VA
+          ObjectType: 4
+          guid: 72aefdfe10b4f645a01820f025eaef72
+        - ElementName: VA_Clerk_Switch_Group
+          ObjectType: 11
+          guid: f60e6d600d208144b08366f3c0d6c337
+        - ElementName: ClerkChatter3
+          ObjectType: 10
+          guid: 96d834e352700c4a8fbe2dccf747a2ac
       - name: ClerkCrawl
         guid: 76ddea640b1840419fdb667a47d077e2
         id: 2986066245
@@ -1424,7 +1462,7 @@ MonoBehaviour:
         guid: 14a961bd002ffe41ba1f908602494c89
       Path: Triggers\Default Work Unit\VA_Test
   ExpandedFileSystemItemIds: 
-  ExpandedWaapiItemIds: 05000000060000000b0000000d0000000e00000010000000190000001a0000001c00000022000000260000002d000000
+  ExpandedWaapiItemIds: 0200000003000000040000000500000006000000190000001a0000001c0000002300000027000000
   AutoSyncSelection: 0
   autoPopulateEnabled: 1
   currentDataSource: 0
