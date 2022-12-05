@@ -98,6 +98,13 @@ public class LightBeam
         }
         else if(hitInfo.collider.gameObject.CompareTag("Prism"))
         {
+            if (_lightLaser.startColor == Color.red || _lightLaser.startColor == Color.green)
+            {
+                _lightIndices.Add(hitInfo.point);
+                UpdateLaser();
+                return;
+            }
+            
             GameObject _emitter = hitInfo.transform.Find("Emitter").gameObject;
             hitInfo.transform.parent.SendMessage("OnBeamReceived");
             _emitter.SendMessage("OnBeamReceived");
