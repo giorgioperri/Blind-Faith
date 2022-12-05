@@ -11,7 +11,7 @@
 	<StreamedFiles/>
 	<MediaFilesNotInAnyBank/>
 	<SoundBanks>
-		<SoundBank Id="1355168291" Language="SFX" Hash="515459470">
+		<SoundBank Id="1355168291" Language="SFX" Hash="3567229499">
 			<ObjectPath>Init</ObjectPath>
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
@@ -24,7 +24,7 @@
 				<AuxBus Id="2933838247" Name="SmallRoom" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Rooms\SmallRoom"/>
 			</IncludedAuxBusses>
 		</SoundBank>
-		<SoundBank Id="1764570813" Language="SFX" Hash="2254647965">
+		<SoundBank Id="1764570813" Language="SFX" Hash="3663078504">
 			<ObjectPath>\SoundBanks\Default Work Unit\Mains</ObjectPath>
 			<ShortName>Mains</ShortName>
 			<Path>Mains.bnk</Path>
@@ -61,7 +61,7 @@
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
-				<Event Id="3690987655" Name="CrawlSFX" ObjectPath="\Events\Default Work Unit\CrawlSFX" MaxAttenuation="10." DurationType="OneShot" DurationMin="8.142199" DurationMax="8.142199">
+				<Event Id="3690987655" Name="CrawlSFX" ObjectPath="\Events\Default Work Unit\SFX\CrawlSFX" MaxAttenuation="10." DurationType="OneShot" DurationMin="15.075651" DurationMax="15.075651">
 					<IncludedMemoryFiles>
 						<File Id="253584912" Language="SFX">
 							<ShortName>rockslide_02.wav</ShortName>
@@ -70,6 +70,10 @@
 						<File Id="256285804" Language="SFX">
 							<ShortName>rockslide_02.wav</ShortName>
 							<Path>SFX\rockslide_02_F2CF5F5E.wem</Path>
+						</File>
+						<File Id="333355257" Language="SFX">
+							<ShortName>METLFric_Metal Plate High Pitched Tonal Screech Scrape Squeak_TT_CHSTUDIO_Neumann TLM 103.wav</ShortName>
+							<Path>SFX\METLFric_Metal Plate High Pitched Tonal Screech Scrape Squeak_TT_CHSTUDIO_Neumann TLM 103_10C4C929.wem</Path>
 						</File>
 						<File Id="532957903" Language="SFX">
 							<ShortName>rockslide_02.wav</ShortName>
@@ -83,13 +87,17 @@
 							<ShortName>rockslide_02.wav</ShortName>
 							<Path>SFX\rockslide_02_C2B8AC97.wem</Path>
 						</File>
+						<File Id="944768535" Language="SFX">
+							<ShortName>FOLYClth_Leather Jacket Calm Movement_TT_CHSTUDIO_Sennheiser MKH 416 P48.wav</ShortName>
+							<Path>SFX\FOLYClth_Leather Jacket Calm Movement_TT_CHSTUDIO_Sennheiser MKH 416 P48_10C4C929.wem</Path>
+						</File>
 						<File Id="954478930" Language="SFX">
 							<ShortName>rockslide_02.wav</ShortName>
 							<Path>SFX\rockslide_02_F758CD98.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
-				<Event Id="3254361931" Name="DungeonAmb" ObjectPath="\Events\Default Work Unit\DungeonAmb" DurationType="Infinite">
+				<Event Id="3254361931" Name="DungeonAmb" ObjectPath="\Events\Default Work Unit\SFX\Ambience\DungeonAmb" DurationType="Infinite">
 					<IncludedMemoryFiles>
 						<File Id="464475432" Language="SFX">
 							<ShortName>FortressBellDrone.wav</ShortName>
@@ -97,7 +105,7 @@
 						</File>
 						<File Id="558763216" Language="SFX">
 							<ShortName>86 Cave With Dripping Water.wav</ShortName>
-							<Path>SFX\86 Cave With Dripping Water_10C4C929.wem</Path>
+							<Path>SFX\86 Cave With Dripping Water_D79FB2B7.wem</Path>
 						</File>
 						<File Id="652525734" Language="SFX">
 							<ShortName>Earthquake_Rumble_PSEM.100.wav</ShortName>
@@ -105,15 +113,19 @@
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
-				<Event Id="2115347266" Name="DungeonScream" ObjectPath="\Events\Default Work Unit\DungeonScream" MaxAttenuation="10." DurationType="OneShot" DurationMin="54.868618" DurationMax="124.868622">
+				<Event Id="2115347266" Name="DungeonScream" ObjectPath="\Events\Default Work Unit\SFX\DungeonScream" MaxAttenuation="10." DurationType="OneShot" DurationMin="54.868618" DurationMax="124.868622">
 					<IncludedMemoryFiles>
 						<File Id="1961976" Language="SFX">
 							<ShortName>Scream,Male,Mid Thirties,Mouth Covered,Gasps,Fast,Shriek,Panic.wav</ShortName>
-							<Path>SFX\Scream,Male,Mid Thirties,Mouth Covered,Gasps,Fast,Shriek,Panic_EECF7B33.wem</Path>
+							<Path>SFX\Scream,Male,Mid Thirties,Mouth Covered,Gasps,Fast,Shriek,Panic_DB01FB57.wem</Path>
+						</File>
+						<File Id="279206438" Language="SFX">
+							<ShortName>Impacts_SIMPLE_176.wav</ShortName>
+							<Path>SFX\Impacts_SIMPLE_176_964618FA.wem</Path>
 						</File>
 						<File Id="543354459" Language="SFX">
 							<ShortName>Scream,Male,Mid Thirties,Mouth Covered,Gasps,Fast,Shriek,Panic.wav</ShortName>
-							<Path>SFX\Scream,Male,Mid Thirties,Mouth Covered,Gasps,Fast,Shriek,Panic_0D9A8B04.wem</Path>
+							<Path>SFX\Scream,Male,Mid Thirties,Mouth Covered,Gasps,Fast,Shriek,Panic_0501740E.wem</Path>
 						</File>
 						<File Id="795415343" Language="SFX">
 							<ShortName>Scream,Male,Mid Thirties,Mouth Covered,Gasps,Fast,Shriek,Panic.wav</ShortName>
@@ -121,11 +133,11 @@
 						</File>
 						<File Id="979620715" Language="SFX">
 							<ShortName>Scream,Male,Mid Thirties,Mouth Covered,Gasps,Fast,Shriek,Panic.wav</ShortName>
-							<Path>SFX\Scream,Male,Mid Thirties,Mouth Covered,Gasps,Fast,Shriek,Panic_26DFD618.wem</Path>
+							<Path>SFX\Scream,Male,Mid Thirties,Mouth Covered,Gasps,Fast,Shriek,Panic_1A503F03.wem</Path>
 						</File>
 						<File Id="1019828584" Language="SFX">
 							<ShortName>Scream,Male,Mid Thirties,Mouth Covered,Gasps,Fast,Shriek,Panic.wav</ShortName>
-							<Path>SFX\Scream,Male,Mid Thirties,Mouth Covered,Gasps,Fast,Shriek,Panic_64F6077A.wem</Path>
+							<Path>SFX\Scream,Male,Mid Thirties,Mouth Covered,Gasps,Fast,Shriek,Panic_8D68994B.wem</Path>
 						</File>
 						<File Id="1072973590" Language="SFX">
 							<ShortName>Impacts_SIMPLE_176.wav</ShortName>
@@ -245,7 +257,7 @@
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
-				<Event Id="1710262138" Name="Lightbeam" ObjectPath="\Events\Default Work Unit\Lightbeam" MaxAttenuation="10." DurationType="Infinite">
+				<Event Id="1710262138" Name="Lightbeam" ObjectPath="\Events\Default Work Unit\SFX\Mirror\Lightbeam" MaxAttenuation="10." DurationType="Infinite">
 					<IncludedMemoryFiles>
 						<File Id="64451089" Language="SFX">
 							<ShortName>15-Electric Arc-Transformer-Static.wav</ShortName>
@@ -277,7 +289,7 @@
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
-				<Event Id="1217934400" Name="MirrorLight" ObjectPath="\Events\Default Work Unit\MirrorLight" MaxAttenuation="10." DurationType="Infinite">
+				<Event Id="1217934400" Name="MirrorLight" ObjectPath="\Events\Default Work Unit\SFX\Mirror\MirrorLight" MaxAttenuation="10." DurationType="Infinite">
 					<IncludedMemoryFiles>
 						<File Id="345534423" Language="SFX">
 							<ShortName>Room Tone, Toilet, Fan Humming, Chiangmai, Thailand.wav</ShortName>
@@ -285,22 +297,18 @@
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
-				<Event Id="500177350" Name="MirrorLight_Off" ObjectPath="\Events\Default Work Unit\MirrorLight_Off" MaxAttenuation="0." DurationType="OneShot" DurationMin="0." DurationMax="0."/>
-				<Event Id="1903317937" Name="MirrorTurn" ObjectPath="\Events\Default Work Unit\MirrorTurn" MaxAttenuation="10." DurationType="Infinite">
+				<Event Id="500177350" Name="MirrorLight_Off" ObjectPath="\Events\Default Work Unit\SFX\Mirror\MirrorLight_Off" MaxAttenuation="0." DurationType="OneShot" DurationMin="0." DurationMax="0."/>
+				<Event Id="1903317937" Name="MirrorTurn" ObjectPath="\Events\Default Work Unit\SFX\Mirror\MirrorTurn" MaxAttenuation="10." DurationType="Infinite">
 					<IncludedMemoryFiles>
-						<File Id="318493534" Language="SFX">
-							<ShortName>Bluezone_BC0231_metal_grinding_013.wav</ShortName>
-							<Path>SFX\Bluezone_BC0231_metal_grinding_013_93836A2C.wem</Path>
-						</File>
-						<File Id="611489906" Language="SFX">
-							<ShortName>rockslide_02.wav</ShortName>
-							<Path>SFX\rockslide_02_0EE40901.wem</Path>
+						<File Id="298712315" Language="SFX">
+							<ShortName>METLFric_Long Slow High Pitched Tonal Screech Scrape Squeak 01_TT_CHSTUDIO_Neumann TLM 103.wav</ShortName>
+							<Path>SFX\METLFric_Long Slow High Pitched Tonal Screech Scrape Squeak 01_TT_CHSTUDIO_Neumann TLM 103_36D34EBC.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
-				<Event Id="3962630019" Name="MirrorTurn_Off" ObjectPath="\Events\Default Work Unit\MirrorTurn_Off" MaxAttenuation="0." DurationType="OneShot" DurationMin="0." DurationMax="0."/>
+				<Event Id="3962630019" Name="MirrorTurn_Off" ObjectPath="\Events\Default Work Unit\SFX\Mirror\MirrorTurn_Off" MaxAttenuation="0." DurationType="OneShot" DurationMin="0." DurationMax="0."/>
 				<Event Id="340196141" Name="NotLoosingHealth" ObjectPath="\Events\Default Work Unit\SFX\Player\NotLoosingHealth" MaxAttenuation="0." DurationType="OneShot" DurationMin="0." DurationMax="0."/>
-				<Event Id="3134013836" Name="TowerAmb" ObjectPath="\Events\Default Work Unit\TowerAmb" DurationType="OneShot" DurationMin="70.983864" DurationMax="70.983864">
+				<Event Id="3134013836" Name="TowerAmb" ObjectPath="\Events\Default Work Unit\SFX\Ambience\TowerAmb" DurationType="OneShot" DurationMin="70.983864" DurationMax="70.983864">
 					<IncludedMemoryFiles>
 						<File Id="274880349" Language="SFX">
 							<ShortName>AncientAtmosDrone1.wav</ShortName>
@@ -436,7 +444,7 @@
 			<IncludedMemoryFiles>
 				<File Id="1961976" Language="SFX">
 					<ShortName>Scream,Male,Mid Thirties,Mouth Covered,Gasps,Fast,Shriek,Panic.wav</ShortName>
-					<Path>SFX\Scream,Male,Mid Thirties,Mouth Covered,Gasps,Fast,Shriek,Panic_EECF7B33.wem</Path>
+					<Path>SFX\Scream,Male,Mid Thirties,Mouth Covered,Gasps,Fast,Shriek,Panic_DB01FB57.wem</Path>
 				</File>
 				<File Id="9150397" Language="SFX">
 					<ShortName>Teleport.wav</ShortName>
@@ -506,17 +514,21 @@
 					<ShortName>AncientAtmosDrone1.wav</ShortName>
 					<Path>SFX\AncientAtmosDrone1_10C4C929.wem</Path>
 				</File>
+				<File Id="279206438" Language="SFX">
+					<ShortName>Impacts_SIMPLE_176.wav</ShortName>
+					<Path>SFX\Impacts_SIMPLE_176_964618FA.wem</Path>
+				</File>
+				<File Id="298712315" Language="SFX">
+					<ShortName>METLFric_Long Slow High Pitched Tonal Screech Scrape Squeak 01_TT_CHSTUDIO_Neumann TLM 103.wav</ShortName>
+					<Path>SFX\METLFric_Long Slow High Pitched Tonal Screech Scrape Squeak 01_TT_CHSTUDIO_Neumann TLM 103_36D34EBC.wem</Path>
+				</File>
 				<File Id="306100852" Language="SFX">
 					<ShortName>Clerk_s1__5.wav</ShortName>
 					<Path>SFX\Clerk_s1__5_E507363E.wem</Path>
 				</File>
-				<File Id="313480146" Language="SFX">
-					<ShortName>Wood_Impact_Wood_Sawdust_5.wav</ShortName>
-					<Path>SFX\Wood_Impact_Wood_Sawdust_5_A72712C8.wem</Path>
-				</File>
-				<File Id="318493534" Language="SFX">
-					<ShortName>Bluezone_BC0231_metal_grinding_013.wav</ShortName>
-					<Path>SFX\Bluezone_BC0231_metal_grinding_013_93836A2C.wem</Path>
+				<File Id="333355257" Language="SFX">
+					<ShortName>METLFric_Metal Plate High Pitched Tonal Screech Scrape Squeak_TT_CHSTUDIO_Neumann TLM 103.wav</ShortName>
+					<Path>SFX\METLFric_Metal Plate High Pitched Tonal Screech Scrape Squeak_TT_CHSTUDIO_Neumann TLM 103_10C4C929.wem</Path>
 				</File>
 				<File Id="345534423" Language="SFX">
 					<ShortName>Room Tone, Toilet, Fan Humming, Chiangmai, Thailand.wav</ShortName>
@@ -576,11 +588,11 @@
 				</File>
 				<File Id="543354459" Language="SFX">
 					<ShortName>Scream,Male,Mid Thirties,Mouth Covered,Gasps,Fast,Shriek,Panic.wav</ShortName>
-					<Path>SFX\Scream,Male,Mid Thirties,Mouth Covered,Gasps,Fast,Shriek,Panic_0D9A8B04.wem</Path>
+					<Path>SFX\Scream,Male,Mid Thirties,Mouth Covered,Gasps,Fast,Shriek,Panic_0501740E.wem</Path>
 				</File>
 				<File Id="558763216" Language="SFX">
 					<ShortName>86 Cave With Dripping Water.wav</ShortName>
-					<Path>SFX\86 Cave With Dripping Water_10C4C929.wem</Path>
+					<Path>SFX\86 Cave With Dripping Water_D79FB2B7.wem</Path>
 				</File>
 				<File Id="579534600" Language="SFX">
 					<ShortName>Clerk_chatter\Clerk_chatter__3.wav</ShortName>
@@ -589,10 +601,6 @@
 				<File Id="600620028" Language="SFX">
 					<ShortName>scratch_p0_sword_squeak_01.wav</ShortName>
 					<Path>SFX\scratch_p0_sword_squeak_01_2BA2E5D9.wem</Path>
-				</File>
-				<File Id="611489906" Language="SFX">
-					<ShortName>rockslide_02.wav</ShortName>
-					<Path>SFX\rockslide_02_0EE40901.wem</Path>
 				</File>
 				<File Id="627720889" Language="SFX">
 					<ShortName>BF_MassiveSteamPunkDevice.wav</ShortName>
@@ -674,6 +682,10 @@
 					<ShortName>Stinger_Metal_Silverware_Reversed.wav</ShortName>
 					<Path>SFX\Stinger_Metal_Silverware_Reversed_9A766E4D.wem</Path>
 				</File>
+				<File Id="944768535" Language="SFX">
+					<ShortName>FOLYClth_Leather Jacket Calm Movement_TT_CHSTUDIO_Sennheiser MKH 416 P48.wav</ShortName>
+					<Path>SFX\FOLYClth_Leather Jacket Calm Movement_TT_CHSTUDIO_Sennheiser MKH 416 P48_10C4C929.wem</Path>
+				</File>
 				<File Id="949409495" Language="SFX">
 					<ShortName>Clerk_s1__3.wav</ShortName>
 					<Path>SFX\Clerk_s1__3_5B766E21.wem</Path>
@@ -688,7 +700,7 @@
 				</File>
 				<File Id="979620715" Language="SFX">
 					<ShortName>Scream,Male,Mid Thirties,Mouth Covered,Gasps,Fast,Shriek,Panic.wav</ShortName>
-					<Path>SFX\Scream,Male,Mid Thirties,Mouth Covered,Gasps,Fast,Shriek,Panic_26DFD618.wem</Path>
+					<Path>SFX\Scream,Male,Mid Thirties,Mouth Covered,Gasps,Fast,Shriek,Panic_1A503F03.wem</Path>
 				</File>
 				<File Id="989359785" Language="SFX">
 					<ShortName>1806 - Footsteps - Sneakers on Carpet - 90 fpm - Loop.wav</ShortName>
@@ -700,7 +712,7 @@
 				</File>
 				<File Id="1019828584" Language="SFX">
 					<ShortName>Scream,Male,Mid Thirties,Mouth Covered,Gasps,Fast,Shriek,Panic.wav</ShortName>
-					<Path>SFX\Scream,Male,Mid Thirties,Mouth Covered,Gasps,Fast,Shriek,Panic_64F6077A.wem</Path>
+					<Path>SFX\Scream,Male,Mid Thirties,Mouth Covered,Gasps,Fast,Shriek,Panic_8D68994B.wem</Path>
 				</File>
 				<File Id="1052142959" Language="SFX">
 					<ShortName>water1.wav</ShortName>

@@ -20,8 +20,10 @@
 								<Effect Name="Hard_Knee_Minus_3dB_RMS (Custom)" ID="{41CC8433-4FE0-42EE-B417-E9990C065237}" ShortID="790902848" PluginName="Wwise Compressor" CompanyID="0" PluginID="108" PluginType="3">
 									<PropertyList>
 										<Property Name="AttackTime" Type="Real32" Value="0.31"/>
-										<Property Name="OutputGain" Type="Real32" Value="6"/>
-										<Property Name="Threshold" Type="Real32" Value="-41.6"/>
+										<Property Name="OutputGain" Type="Real32" Value="8.9"/>
+										<Property Name="Ratio" Type="Real32" Value="2"/>
+										<Property Name="ReleaseTime" Type="Real32" Value="0.61"/>
+										<Property Name="Threshold" Type="Real32" Value="-21.8"/>
 									</PropertyList>
 								</Effect>
 							</Custom>
@@ -61,7 +63,7 @@
 										<Value>21</Value>
 									</ValueList>
 								</Property>
-								<Property Name="MaxDuckVolume" Type="Real64" Value="-18.5"/>
+								<Property Name="MaxDuckVolume" Type="Real64" Value="-20.5"/>
 								<Property Name="OverrideColor" Type="bool" Value="True"/>
 								<Property Name="RecoveryTime" Type="Real64" Value="2"/>
 								<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
@@ -201,7 +203,7 @@
 								<DuckItem>
 									<BusRef Name="Rooms_docking" ID="{6ED14294-29EA-4AC9-82D5-39255BF161A4}"/>
 									<DuckingParam>
-										<Volume>-9</Volume>
+										<Volume>-6</Volume>
 										<FadeInTime>1</FadeInTime>
 										<FadeOutTime>1</FadeOutTime>
 										<FadeCurve>FadeLinear</FadeCurve>

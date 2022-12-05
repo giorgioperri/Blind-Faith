@@ -277,7 +277,7 @@ MonoBehaviour:
     ParentPath: SoundBanks\Default Work Unit
     guid: 91f3f2c2e89f4143bd59d41dc8510ab9
     GuidInternal: 
-    m_lastTime: -8585314089404876575
+    m_lastTime: -8585313634520387110
     List:
     - name: Mains
       guid: 22a5fa274c62a84d93c78d5801f30f0d
@@ -305,7 +305,7 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit
     guid: 5eb490fb28343a4fbde7e5ca0bff7b1d
     GuidInternal: 
-    m_lastTime: -8585314107333487504
+    m_lastTime: -8585313621746224378
     List:
     - name: 3D
       guid: d0312eb1e176a14c90ecba42bdd0174b
@@ -432,13 +432,16 @@ MonoBehaviour:
       - ElementName: Default Work Unit
         ObjectType: 12
         guid: 5eb490fb28343a4fbde7e5ca0bff7b1d
+      - ElementName: SFX
+        ObjectType: 4
+        guid: f50ab3c4f820c44896ff11baa26a0745
       - ElementName: CrawlSFX
         ObjectType: 3
         guid: 4a1ca33b482c4f458116a0787c4ab5fb
-      Path: Events\Default Work Unit\CrawlSFX
+      Path: Events\Default Work Unit\SFX\CrawlSFX
       maxAttenuation: 10
-      maxDuration: 8.142199
-      minDuration: 8.142199
+      maxDuration: 15.075651
+      minDuration: 15.075651
     - name: DungeonAmb
       guid: ee95cc838720604daa13fc1928d15ecc
       id: 3254361931
@@ -449,10 +452,16 @@ MonoBehaviour:
       - ElementName: Default Work Unit
         ObjectType: 12
         guid: 5eb490fb28343a4fbde7e5ca0bff7b1d
+      - ElementName: SFX
+        ObjectType: 4
+        guid: f50ab3c4f820c44896ff11baa26a0745
+      - ElementName: Ambience
+        ObjectType: 4
+        guid: d61574c5aefb6e4bb8be3d2e8f5c14a0
       - ElementName: DungeonAmb
         ObjectType: 3
         guid: ee95cc838720604daa13fc1928d15ecc
-      Path: Events\Default Work Unit\DungeonAmb
+      Path: Events\Default Work Unit\SFX\Ambience\DungeonAmb
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
@@ -466,10 +475,13 @@ MonoBehaviour:
       - ElementName: Default Work Unit
         ObjectType: 12
         guid: 5eb490fb28343a4fbde7e5ca0bff7b1d
+      - ElementName: SFX
+        ObjectType: 4
+        guid: f50ab3c4f820c44896ff11baa26a0745
       - ElementName: DungeonScream
         ObjectType: 3
         guid: 18d63c71d975294f867cdc4a63c0a42a
-      Path: Events\Default Work Unit\DungeonScream
+      Path: Events\Default Work Unit\SFX\DungeonScream
       maxAttenuation: 10
       maxDuration: 124.86862
       minDuration: 54.868618
@@ -636,10 +648,16 @@ MonoBehaviour:
       - ElementName: Default Work Unit
         ObjectType: 12
         guid: 5eb490fb28343a4fbde7e5ca0bff7b1d
+      - ElementName: SFX
+        ObjectType: 4
+        guid: f50ab3c4f820c44896ff11baa26a0745
+      - ElementName: Mirror
+        ObjectType: 4
+        guid: 29a7b1fdbebfe84a8502e0655cd7ce83
       - ElementName: Lightbeam
         ObjectType: 3
         guid: ccc885bf23f2b34dbf2b583e204c98b3
-      Path: Events\Default Work Unit\Lightbeam
+      Path: Events\Default Work Unit\SFX\Mirror\Lightbeam
       maxAttenuation: 10
       maxDuration: -1
       minDuration: -1
@@ -712,6 +730,26 @@ MonoBehaviour:
       maxAttenuation: 10
       maxDuration: -1
       minDuration: -1
+    - name: Mirror
+      guid: 29a7b1fdbebfe84a8502e0655cd7ce83
+      id: 2039020852
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 5eb490fb28343a4fbde7e5ca0bff7b1d
+      - ElementName: SFX
+        ObjectType: 4
+        guid: f50ab3c4f820c44896ff11baa26a0745
+      - ElementName: Mirror
+        ObjectType: 4
+        guid: 29a7b1fdbebfe84a8502e0655cd7ce83
+      Path: Events\Default Work Unit\SFX\Mirror
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
     - name: MirrorLight
       guid: 0a6ac5d56bd22c4a9c7984e1f9444477
       id: 1217934400
@@ -722,10 +760,16 @@ MonoBehaviour:
       - ElementName: Default Work Unit
         ObjectType: 12
         guid: 5eb490fb28343a4fbde7e5ca0bff7b1d
+      - ElementName: SFX
+        ObjectType: 4
+        guid: f50ab3c4f820c44896ff11baa26a0745
+      - ElementName: Mirror
+        ObjectType: 4
+        guid: 29a7b1fdbebfe84a8502e0655cd7ce83
       - ElementName: MirrorLight
         ObjectType: 3
         guid: 0a6ac5d56bd22c4a9c7984e1f9444477
-      Path: Events\Default Work Unit\MirrorLight
+      Path: Events\Default Work Unit\SFX\Mirror\MirrorLight
       maxAttenuation: 10
       maxDuration: -1
       minDuration: -1
@@ -739,10 +783,16 @@ MonoBehaviour:
       - ElementName: Default Work Unit
         ObjectType: 12
         guid: 5eb490fb28343a4fbde7e5ca0bff7b1d
+      - ElementName: SFX
+        ObjectType: 4
+        guid: f50ab3c4f820c44896ff11baa26a0745
+      - ElementName: Mirror
+        ObjectType: 4
+        guid: 29a7b1fdbebfe84a8502e0655cd7ce83
       - ElementName: MirrorLight_Off
         ObjectType: 3
         guid: 416336d61189244baa744805cb3c0aee
-      Path: Events\Default Work Unit\MirrorLight_Off
+      Path: Events\Default Work Unit\SFX\Mirror\MirrorLight_Off
       maxAttenuation: 0
       maxDuration: 0
       minDuration: 0
@@ -756,10 +806,16 @@ MonoBehaviour:
       - ElementName: Default Work Unit
         ObjectType: 12
         guid: 5eb490fb28343a4fbde7e5ca0bff7b1d
+      - ElementName: SFX
+        ObjectType: 4
+        guid: f50ab3c4f820c44896ff11baa26a0745
+      - ElementName: Mirror
+        ObjectType: 4
+        guid: 29a7b1fdbebfe84a8502e0655cd7ce83
       - ElementName: MirrorTurn
         ObjectType: 3
         guid: b6b1f30d8a36b04da16fd079d5363d92
-      Path: Events\Default Work Unit\MirrorTurn
+      Path: Events\Default Work Unit\SFX\Mirror\MirrorTurn
       maxAttenuation: 10
       maxDuration: -1
       minDuration: -1
@@ -773,10 +829,16 @@ MonoBehaviour:
       - ElementName: Default Work Unit
         ObjectType: 12
         guid: 5eb490fb28343a4fbde7e5ca0bff7b1d
+      - ElementName: SFX
+        ObjectType: 4
+        guid: f50ab3c4f820c44896ff11baa26a0745
+      - ElementName: Mirror
+        ObjectType: 4
+        guid: 29a7b1fdbebfe84a8502e0655cd7ce83
       - ElementName: MirrorTurn_Off
         ObjectType: 3
         guid: 3817a9aab1494040b478dba4e4ae6c9a
-      Path: Events\Default Work Unit\MirrorTurn_Off
+      Path: Events\Default Work Unit\SFX\Mirror\MirrorTurn_Off
       maxAttenuation: 0
       maxDuration: 0
       minDuration: 0
@@ -850,10 +912,16 @@ MonoBehaviour:
       - ElementName: Default Work Unit
         ObjectType: 12
         guid: 5eb490fb28343a4fbde7e5ca0bff7b1d
+      - ElementName: SFX
+        ObjectType: 4
+        guid: f50ab3c4f820c44896ff11baa26a0745
+      - ElementName: Ambience
+        ObjectType: 4
+        guid: d61574c5aefb6e4bb8be3d2e8f5c14a0
       - ElementName: TowerAmb
         ObjectType: 3
         guid: c60f04e5cb05d64a8d786ebca956bf76
-      Path: Events\Default Work Unit\TowerAmb
+      Path: Events\Default Work Unit\SFX\Ambience\TowerAmb
       maxAttenuation: 0
       maxDuration: 70.983864
       minDuration: 70.983864
@@ -1462,7 +1530,7 @@ MonoBehaviour:
         guid: 14a961bd002ffe41ba1f908602494c89
       Path: Triggers\Default Work Unit\VA_Test
   ExpandedFileSystemItemIds: 
-  ExpandedWaapiItemIds: 0200000003000000040000000500000006000000190000001a0000001c0000002300000027000000
+  ExpandedWaapiItemIds: 05000000060000000700000008000000090000000a0000000b0000000c0000001a0000001b00000023000000
   AutoSyncSelection: 0
   autoPopulateEnabled: 1
   currentDataSource: 0

@@ -52,6 +52,18 @@ namespace AK
             } // namespace STATE
         } // namespace ALTERAMB
 
+        namespace DUNGEONAMB
+        {
+            static const AkUniqueID GROUP = 3254361931U;
+
+            namespace STATE
+            {
+                static const AkUniqueID NONE = 748895195U;
+                static const AkUniqueID NOTPLAYING = 1227244058U;
+                static const AkUniqueID PLAYING = 1852808225U;
+            } // namespace STATE
+        } // namespace DUNGEONAMB
+
         namespace HEALTH_STATE
         {
             static const AkUniqueID GROUP = 1264560589U;
