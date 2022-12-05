@@ -24,7 +24,7 @@
 				<AuxBus Id="2933838247" Name="SmallRoom" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Rooms\SmallRoom"/>
 			</IncludedAuxBusses>
 		</SoundBank>
-		<SoundBank Id="1764570813" Language="SFX" Hash="1482829462">
+		<SoundBank Id="1764570813" Language="SFX" Hash="2789948759">
 			<ObjectPath>\SoundBanks\Default Work Unit\Mains</ObjectPath>
 			<ShortName>Mains</ShortName>
 			<Path>Mains.bnk</Path>
@@ -217,7 +217,7 @@
 						</File>
 						<File Id="964259068" Language="SFX">
 							<ShortName>STINGER_Whisper_Of_Distress.wav</ShortName>
-							<Path>SFX\STINGER_Whisper_Of_Distress_4B12B9CD.wem</Path>
+							<Path>SFX\STINGER_Whisper_Of_Distress_2D048215.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
@@ -336,15 +336,15 @@
 					<IncludedMemoryFiles>
 						<File Id="9205079" Language="SFX">
 							<ShortName>HisChildHasReturnd.wav</ShortName>
-							<Path>SFX\HisChildHasReturnd_D2660DEB.wem</Path>
+							<Path>SFX\HisChildHasReturnd_4B1B13F3.wem</Path>
 						</File>
 						<File Id="104070998" Language="SFX">
 							<ShortName>BF_Intro.wav</ShortName>
-							<Path>SFX\BF_Intro_D77C0FEB.wem</Path>
+							<Path>SFX\BF_Intro_7AB95CB8.wem</Path>
 						</File>
 						<File Id="124409414" Language="SFX">
 							<ShortName>Clerk_s1_.wav</ShortName>
-							<Path>SFX\Clerk_s1__BC1EDDB7.wem</Path>
+							<Path>SFX\Clerk_s1__478E5631.wem</Path>
 						</File>
 						<File Id="211299271" Language="SFX">
 							<ShortName>Clerk_chatter\Clerk_chatter__2.wav</ShortName>
@@ -372,7 +372,7 @@
 						</File>
 						<File Id="480689921" Language="SFX">
 							<ShortName>BF_Intro.wav</ShortName>
-							<Path>SFX\BF_Intro_D25A0CC1.wem</Path>
+							<Path>SFX\BF_Intro_CC616186.wem</Path>
 						</File>
 						<File Id="529285034" Language="SFX">
 							<ShortName>Clerk_chatter\Clerk_chatter__5.wav</ShortName>
@@ -380,7 +380,7 @@
 						</File>
 						<File Id="566156920" Language="SFX">
 							<ShortName>BF_Intro.wav</ShortName>
-							<Path>SFX\BF_Intro_8D53F539.wem</Path>
+							<Path>SFX\BF_Intro_69E61716.wem</Path>
 						</File>
 						<File Id="579534600" Language="SFX">
 							<ShortName>Clerk_chatter\Clerk_chatter__3.wav</ShortName>
@@ -408,11 +408,11 @@
 						</File>
 						<File Id="881047039" Language="SFX">
 							<ShortName>HisChildHasReturnd.wav</ShortName>
-							<Path>SFX\HisChildHasReturnd_4DDE5712.wem</Path>
+							<Path>SFX\HisChildHasReturnd_234DFA5C.wem</Path>
 						</File>
 						<File Id="940052382" Language="SFX">
 							<ShortName>BF_Intro.wav</ShortName>
-							<Path>SFX\BF_Intro_B4AC36FF.wem</Path>
+							<Path>SFX\BF_Intro_9E8B7391.wem</Path>
 						</File>
 						<File Id="949409495" Language="SFX">
 							<ShortName>Clerk_s1__3.wav</ShortName>
@@ -492,7 +492,7 @@
 				</File>
 				<File Id="9205079" Language="SFX">
 					<ShortName>HisChildHasReturnd.wav</ShortName>
-					<Path>SFX\HisChildHasReturnd_D2660DEB.wem</Path>
+					<Path>SFX\HisChildHasReturnd_4B1B13F3.wem</Path>
 				</File>
 				<File Id="64451089" Language="SFX">
 					<ShortName>15-Electric Arc-Transformer-Static.wav</ShortName>
@@ -500,7 +500,7 @@
 				</File>
 				<File Id="104070998" Language="SFX">
 					<ShortName>BF_Intro.wav</ShortName>
-					<Path>SFX\BF_Intro_D77C0FEB.wem</Path>
+					<Path>SFX\BF_Intro_7AB95CB8.wem</Path>
 				</File>
 				<File Id="107980118" Language="SFX">
 					<ShortName>01 Stone Footsteps, Cobblestone Male, 30 Secs Each Slow, Medium, Fast.wav</ShortName>
@@ -516,7 +516,7 @@
 				</File>
 				<File Id="124409414" Language="SFX">
 					<ShortName>Clerk_s1_.wav</ShortName>
-					<Path>SFX\Clerk_s1__BC1EDDB7.wem</Path>
+					<Path>SFX\Clerk_s1__478E5631.wem</Path>
 				</File>
 				<File Id="134993697" Language="SFX">
 					<ShortName>cm183_sweetener_sub_heartbeat.wav</ShortName>
@@ -612,7 +612,7 @@
 				</File>
 				<File Id="480689921" Language="SFX">
 					<ShortName>BF_Intro.wav</ShortName>
-					<Path>SFX\BF_Intro_D25A0CC1.wem</Path>
+					<Path>SFX\BF_Intro_CC616186.wem</Path>
 				</File>
 				<File Id="482764108" Language="SFX">
 					<ShortName>Stinger_Voice_Female_Eerie_Whisper.wav</ShortName>
@@ -652,7 +652,7 @@
 				</File>
 				<File Id="566156920" Language="SFX">
 					<ShortName>BF_Intro.wav</ShortName>
-					<Path>SFX\BF_Intro_8D53F539.wem</Path>
+					<Path>SFX\BF_Intro_69E61716.wem</Path>
 				</File>
 				<File Id="579534600" Language="SFX">
 					<ShortName>Clerk_chatter\Clerk_chatter__3.wav</ShortName>
@@ -728,7 +728,7 @@
 				</File>
 				<File Id="881047039" Language="SFX">
 					<ShortName>HisChildHasReturnd.wav</ShortName>
-					<Path>SFX\HisChildHasReturnd_4DDE5712.wem</Path>
+					<Path>SFX\HisChildHasReturnd_234DFA5C.wem</Path>
 				</File>
 				<File Id="883270094" Language="SFX">
 					<ShortName>Switch weapon.wav</ShortName>
@@ -744,7 +744,7 @@
 				</File>
 				<File Id="940052382" Language="SFX">
 					<ShortName>BF_Intro.wav</ShortName>
-					<Path>SFX\BF_Intro_B4AC36FF.wem</Path>
+					<Path>SFX\BF_Intro_9E8B7391.wem</Path>
 				</File>
 				<File Id="944768535" Language="SFX">
 					<ShortName>FOLYClth_Leather Jacket Calm Movement_TT_CHSTUDIO_Sennheiser MKH 416 P48.wav</ShortName>
@@ -760,7 +760,7 @@
 				</File>
 				<File Id="964259068" Language="SFX">
 					<ShortName>STINGER_Whisper_Of_Distress.wav</ShortName>
-					<Path>SFX\STINGER_Whisper_Of_Distress_4B12B9CD.wem</Path>
+					<Path>SFX\STINGER_Whisper_Of_Distress_2D048215.wem</Path>
 				</File>
 				<File Id="974181242" Language="SFX">
 					<ShortName>Teleport.wav</ShortName>

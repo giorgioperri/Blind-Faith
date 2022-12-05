@@ -143,7 +143,7 @@
 															<PluginInnerObject Name="" ID="{1015852C-D98B-4938-8B62-6B1FE2958EFC}" PluginName="Marker" CompanyID="0" PluginID="993">
 																<PropertyList>
 																	<Property Name="Label" Type="string" Value="end"/>
-																	<Property Name="Time" Type="Real64" Value="5.27585297684965"/>
+																	<Property Name="Time" Type="Real64" Value="5.2848411574362"/>
 																</PropertyList>
 															</PluginInnerObject>
 														</List>
@@ -1155,6 +1155,7 @@
 												<AudioFileSource Name="HisChildHasReturnd" ID="{CE3FC243-FAE7-47D3-8455-F64BDD46D6B9}">
 													<PropertyList>
 														<Property Name="LoopBegin" Type="Real64" Value="0"/>
+														<Property Name="MarkerInputMode" Type="int16" Value="2"/>
 														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
 														<Property Name="TrimEnd" Type="Real64" Value="4.66748299319728"/>
 													</PropertyList>
@@ -1163,6 +1164,26 @@
 													<MediaIDList>
 														<MediaID ID="9205079"/>
 													</MediaIDList>
+													<PluginInnerObjectList>
+														<List Name="Markers">
+															<PluginInnerObject Name="" ID="{7D064187-0BED-4798-9584-A4F4D0E0763C}" PluginName="Marker" CompanyID="0" PluginID="993">
+																<PropertyList>
+																	<Property Name="Label" Type="string" Value="Tempo: 120.0"/>
+																</PropertyList>
+															</PluginInnerObject>
+															<PluginInnerObject Name="" ID="{BB5FC481-D706-4DD8-8BF3-0FEB7341D45A}" PluginName="Marker" CompanyID="0" PluginID="993">
+																<PropertyList>
+																	<Property Name="Label" Type="string" Value="catas"/>
+																</PropertyList>
+															</PluginInnerObject>
+															<PluginInnerObject Name="" ID="{2DAEEAC6-0CE6-4777-B89F-724CBD9C564F}" PluginName="Marker" CompanyID="0" PluginID="993">
+																<PropertyList>
+																	<Property Name="Label" Type="string" Value="end"/>
+																	<Property Name="Time" Type="Real64" Value="4.36420755306877"/>
+																</PropertyList>
+															</PluginInnerObject>
+														</List>
+													</PluginInnerObjectList>
 												</AudioFileSource>
 											</ChildrenList>
 											<PositioningInfo>
@@ -1236,6 +1257,7 @@
 											<ChildrenList>
 												<AudioFileSource Name="HisChildHasReturnd" ID="{9D15CBD1-30A2-4430-97DA-7846E3FD127D}">
 													<PropertyList>
+														<Property Name="MarkerInputMode" Type="int16" Value="2"/>
 														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
 														<Property Name="TrimBegin" Type="Real64" Value="4.67487995515163"/>
 													</PropertyList>
@@ -1244,6 +1266,26 @@
 													<MediaIDList>
 														<MediaID ID="881047039"/>
 													</MediaIDList>
+													<PluginInnerObjectList>
+														<List Name="Markers">
+															<PluginInnerObject Name="" ID="{0C604328-A5D7-47A6-8AAC-7F98055AA6AF}" PluginName="Marker" CompanyID="0" PluginID="993">
+																<PropertyList>
+																	<Property Name="Label" Type="string" Value="Tempo: 120.0"/>
+																</PropertyList>
+															</PluginInnerObject>
+															<PluginInnerObject Name="" ID="{2CEAE6C7-BCE0-437F-8411-2C27502139F2}" PluginName="Marker" CompanyID="0" PluginID="993">
+																<PropertyList>
+																	<Property Name="Label" Type="string" Value="catas"/>
+																</PropertyList>
+															</PluginInnerObject>
+															<PluginInnerObject Name="" ID="{44332B03-1876-4517-81AA-9E0ADA6F0D8A}" PluginName="Marker" CompanyID="0" PluginID="993">
+																<PropertyList>
+																	<Property Name="Label" Type="string" Value="end"/>
+																	<Property Name="Time" Type="Real64" Value="9.32092090831202"/>
+																</PropertyList>
+															</PluginInnerObject>
+														</List>
+													</PluginInnerObjectList>
 												</AudioFileSource>
 											</ChildrenList>
 											<PositioningInfo>
