@@ -49,7 +49,7 @@ public class HealthSystem : MonoBehaviour
     IEnumerator CheckForLostHealth()
     {
         yield return new WaitForSeconds(2);
-        if (playerHealth <= playerHealthASecondAgo)
+        if (playerHealth <= playerHealthASecondAgo - 2)
         {
             isPlayerLoosingHealth = true;
         }

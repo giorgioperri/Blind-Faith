@@ -20,6 +20,7 @@ namespace AK
         static const AkUniqueID DUNGEONAMB = 3254361931U;
         static const AkUniqueID DUNGEONSCREAM = 2115347266U;
         static const AkUniqueID FOOTSTEP = 1866025847U;
+        static const AkUniqueID INTROEVENT = 2271674691U;
         static const AkUniqueID LANTEREN_CHARGING = 3651057560U;
         static const AkUniqueID LANTEREN_DEPLOY_LOOP = 759350405U;
         static const AkUniqueID LANTEREN_DISCHARGE = 1818726255U;
@@ -102,6 +103,7 @@ namespace AK
                 static const AkUniqueID CLERKCHATTER3 = 711493438U;
                 static const AkUniqueID CLERKCRAWL = 2986066245U;
                 static const AkUniqueID CLERKINTRO = 1202250874U;
+                static const AkUniqueID INTRO = 1125500713U;
             } // namespace SWITCH
         } // namespace VA_CLERK_SWITCH_GROUP
 

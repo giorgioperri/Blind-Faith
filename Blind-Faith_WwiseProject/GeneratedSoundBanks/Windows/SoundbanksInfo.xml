@@ -11,7 +11,7 @@
 	<StreamedFiles/>
 	<MediaFilesNotInAnyBank/>
 	<SoundBanks>
-		<SoundBank Id="1355168291" Language="SFX" Hash="1333576589">
+		<SoundBank Id="1355168291" Language="SFX" Hash="215747368">
 			<ObjectPath>Init</ObjectPath>
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
@@ -24,7 +24,7 @@
 				<AuxBus Id="2933838247" Name="SmallRoom" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Rooms\SmallRoom"/>
 			</IncludedAuxBusses>
 		</SoundBank>
-		<SoundBank Id="1764570813" Language="SFX" Hash="3663078504">
+		<SoundBank Id="1764570813" Language="SFX" Hash="1482829462">
 			<ObjectPath>\SoundBanks\Default Work Unit\Mains</ObjectPath>
 			<ShortName>Mains</ShortName>
 			<Path>Mains.bnk</Path>
@@ -99,6 +99,10 @@
 				</Event>
 				<Event Id="3254361931" Name="DungeonAmb" ObjectPath="\Events\Default Work Unit\SFX\Ambience\DungeonAmb" DurationType="Infinite">
 					<IncludedMemoryFiles>
+						<File Id="388845278" Language="SFX">
+							<ShortName>Stinger_Voice_Female_Eerie_Whisper.wav</ShortName>
+							<Path>SFX\Stinger_Voice_Female_Eerie_Whisper_D79FB2B7.wem</Path>
+						</File>
 						<File Id="464475432" Language="SFX">
 							<ShortName>FortressBellDrone.wav</ShortName>
 							<Path>SFX\FortressBellDrone_FA945D11.wem</Path>
@@ -204,6 +208,18 @@
 							</Media>
 						</SwitchContainer>
 					</SwitchContainers>
+				</Event>
+				<Event Id="2271674691" Name="IntroEvent" ObjectPath="\Events\Default Work Unit\IntroEvent" DurationType="OneShot" DurationMin="51.937168" DurationMax="51.937168">
+					<IncludedMemoryFiles>
+						<File Id="482764108" Language="SFX">
+							<ShortName>Stinger_Voice_Female_Eerie_Whisper.wav</ShortName>
+							<Path>SFX\Stinger_Voice_Female_Eerie_Whisper_10C4C929.wem</Path>
+						</File>
+						<File Id="964259068" Language="SFX">
+							<ShortName>STINGER_Whisper_Of_Distress.wav</ShortName>
+							<Path>SFX\STINGER_Whisper_Of_Distress_4B12B9CD.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
 				</Event>
 				<Event Id="3651057560" Name="Lanteren_Charging" ObjectPath="\Events\Default Work Unit\SFX\Player\Lanteren\Lanteren_Charging" MaxAttenuation="10." DurationType="Infinite">
 					<IncludedMemoryFiles>
@@ -316,11 +332,15 @@
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
-				<Event Id="1398273777" Name="VA_Clerk_Play" ObjectPath="\Events\Default Work Unit\VA\VA_Clerk\VA_Clerk_Play" MaxAttenuation="10." DurationType="OneShot" DurationMin="1." DurationMax="9.640862">
+				<Event Id="1398273777" Name="VA_Clerk_Play" ObjectPath="\Events\Default Work Unit\VA\VA_Clerk\VA_Clerk_Play" DurationType="OneShot" DurationMin="1." DurationMax="21.32568">
 					<IncludedMemoryFiles>
 						<File Id="9205079" Language="SFX">
 							<ShortName>HisChildHasReturnd.wav</ShortName>
 							<Path>SFX\HisChildHasReturnd_D2660DEB.wem</Path>
+						</File>
+						<File Id="104070998" Language="SFX">
+							<ShortName>BF_Intro.wav</ShortName>
+							<Path>SFX\BF_Intro_D77C0FEB.wem</Path>
 						</File>
 						<File Id="124409414" Language="SFX">
 							<ShortName>Clerk_s1_.wav</ShortName>
@@ -350,9 +370,17 @@
 							<ShortName>Clerk_chatter\Clerk_chatter__4.wav</ShortName>
 							<Path>SFX\Clerk_chatter\Clerk_chatter__4_37F6E679.wem</Path>
 						</File>
+						<File Id="480689921" Language="SFX">
+							<ShortName>BF_Intro.wav</ShortName>
+							<Path>SFX\BF_Intro_D25A0CC1.wem</Path>
+						</File>
 						<File Id="529285034" Language="SFX">
 							<ShortName>Clerk_chatter\Clerk_chatter__5.wav</ShortName>
 							<Path>SFX\Clerk_chatter\Clerk_chatter__5_40054F20.wem</Path>
+						</File>
+						<File Id="566156920" Language="SFX">
+							<ShortName>BF_Intro.wav</ShortName>
+							<Path>SFX\BF_Intro_8D53F539.wem</Path>
 						</File>
 						<File Id="579534600" Language="SFX">
 							<ShortName>Clerk_chatter\Clerk_chatter__3.wav</ShortName>
@@ -382,6 +410,10 @@
 							<ShortName>HisChildHasReturnd.wav</ShortName>
 							<Path>SFX\HisChildHasReturnd_4DDE5712.wem</Path>
 						</File>
+						<File Id="940052382" Language="SFX">
+							<ShortName>BF_Intro.wav</ShortName>
+							<Path>SFX\BF_Intro_B4AC36FF.wem</Path>
+						</File>
 						<File Id="949409495" Language="SFX">
 							<ShortName>Clerk_s1__3.wav</ShortName>
 							<Path>SFX\Clerk_s1__3_5B766E21.wem</Path>
@@ -397,6 +429,14 @@
 					</IncludedMemoryFiles>
 					<DefaultSwitchValue>{82AD2430-231F-4A0F-9382-CEE494A9DF9E}</DefaultSwitchValue>
 					<SwitchContainers>
+						<SwitchContainer SwitchValue="{9414030F-66EC-47A1-888A-89A1CA469C6A}">
+							<Media>
+								<File Id="104070998"/>
+								<File Id="480689921"/>
+								<File Id="566156920"/>
+								<File Id="940052382"/>
+							</Media>
+						</SwitchContainer>
 						<SwitchContainer SwitchValue="{58DD9327-CD6D-4D21-89E5-9BF03B4ACDBA}">
 							<Media>
 								<File Id="476092146"/>
@@ -457,6 +497,10 @@
 				<File Id="64451089" Language="SFX">
 					<ShortName>15-Electric Arc-Transformer-Static.wav</ShortName>
 					<Path>SFX\15-Electric Arc-Transformer-Static_5C3CAA10.wem</Path>
+				</File>
+				<File Id="104070998" Language="SFX">
+					<ShortName>BF_Intro.wav</ShortName>
+					<Path>SFX\BF_Intro_D77C0FEB.wem</Path>
 				</File>
 				<File Id="107980118" Language="SFX">
 					<ShortName>01 Stone Footsteps, Cobblestone Male, 30 Secs Each Slow, Medium, Fast.wav</ShortName>
@@ -534,6 +578,10 @@
 					<ShortName>Room Tone, Toilet, Fan Humming, Chiangmai, Thailand.wav</ShortName>
 					<Path>SFX\Room Tone, Toilet, Fan Humming, Chiangmai, Thailand_A6FD17C2.wem</Path>
 				</File>
+				<File Id="388845278" Language="SFX">
+					<ShortName>Stinger_Voice_Female_Eerie_Whisper.wav</ShortName>
+					<Path>SFX\Stinger_Voice_Female_Eerie_Whisper_D79FB2B7.wem</Path>
+				</File>
 				<File Id="392707160" Language="SFX">
 					<ShortName>texture_medium_3.wav</ShortName>
 					<Path>SFX\texture_medium_3_10C4C929.wem</Path>
@@ -561,6 +609,14 @@
 				<File Id="476092146" Language="SFX">
 					<ShortName>Clerk_chatter\Clerk_chatter__4.wav</ShortName>
 					<Path>SFX\Clerk_chatter\Clerk_chatter__4_37F6E679.wem</Path>
+				</File>
+				<File Id="480689921" Language="SFX">
+					<ShortName>BF_Intro.wav</ShortName>
+					<Path>SFX\BF_Intro_D25A0CC1.wem</Path>
+				</File>
+				<File Id="482764108" Language="SFX">
+					<ShortName>Stinger_Voice_Female_Eerie_Whisper.wav</ShortName>
+					<Path>SFX\Stinger_Voice_Female_Eerie_Whisper_10C4C929.wem</Path>
 				</File>
 				<File Id="485940681" Language="SFX">
 					<ShortName>01 Stone Footsteps, Cobblestone Male, 30 Secs Each Slow, Medium, Fast.wav</ShortName>
@@ -593,6 +649,10 @@
 				<File Id="558763216" Language="SFX">
 					<ShortName>86 Cave With Dripping Water.wav</ShortName>
 					<Path>SFX\86 Cave With Dripping Water_D79FB2B7.wem</Path>
+				</File>
+				<File Id="566156920" Language="SFX">
+					<ShortName>BF_Intro.wav</ShortName>
+					<Path>SFX\BF_Intro_8D53F539.wem</Path>
 				</File>
 				<File Id="579534600" Language="SFX">
 					<ShortName>Clerk_chatter\Clerk_chatter__3.wav</ShortName>
@@ -682,6 +742,10 @@
 					<ShortName>Stinger_Metal_Silverware_Reversed.wav</ShortName>
 					<Path>SFX\Stinger_Metal_Silverware_Reversed_9A766E4D.wem</Path>
 				</File>
+				<File Id="940052382" Language="SFX">
+					<ShortName>BF_Intro.wav</ShortName>
+					<Path>SFX\BF_Intro_B4AC36FF.wem</Path>
+				</File>
 				<File Id="944768535" Language="SFX">
 					<ShortName>FOLYClth_Leather Jacket Calm Movement_TT_CHSTUDIO_Sennheiser MKH 416 P48.wav</ShortName>
 					<Path>SFX\FOLYClth_Leather Jacket Calm Movement_TT_CHSTUDIO_Sennheiser MKH 416 P48_10C4C929.wem</Path>
@@ -693,6 +757,10 @@
 				<File Id="954478930" Language="SFX">
 					<ShortName>rockslide_02.wav</ShortName>
 					<Path>SFX\rockslide_02_F758CD98.wem</Path>
+				</File>
+				<File Id="964259068" Language="SFX">
+					<ShortName>STINGER_Whisper_Of_Distress.wav</ShortName>
+					<Path>SFX\STINGER_Whisper_Of_Distress_4B12B9CD.wem</Path>
 				</File>
 				<File Id="974181242" Language="SFX">
 					<ShortName>Teleport.wav</ShortName>
@@ -742,6 +810,7 @@
 						<Switch Id="2986066245" Name="ClerkCrawl" ObjectPath="\Switches\Default Work Unit\VA\VA_Clerk_Switch_Group\ClerkCrawl" GUID="{64EADD76-180B-4140-9FDB-667A47D077E2}"/>
 						<Switch Id="711493439" Name="ClerkChatter2" ObjectPath="\Switches\Default Work Unit\VA\VA_Clerk_Switch_Group\ClerkChatter2" GUID="{58DD9327-CD6D-4D21-89E5-9BF03B4ACDBA}"/>
 						<Switch Id="711493438" Name="ClerkChatter3" ObjectPath="\Switches\Default Work Unit\VA\VA_Clerk_Switch_Group\ClerkChatter3" GUID="{E334D896-7052-4A0C-8FBE-2DCCF747A2AC}"/>
+						<Switch Id="1125500713" Name="Intro" ObjectPath="\Switches\Default Work Unit\VA\VA_Clerk_Switch_Group\Intro" GUID="{9414030F-66EC-47A1-888A-89A1CA469C6A}"/>
 					</Switches>
 				</SwitchGroup>
 				<SwitchGroup Id="1730208058" Name="Player_Footsteps" ObjectPath="\Switches\Default Work Unit\Locomotion\Player_Footsteps" GUID="{A706E7EA-CCEF-4788-AE6F-F3659BEF4932}">

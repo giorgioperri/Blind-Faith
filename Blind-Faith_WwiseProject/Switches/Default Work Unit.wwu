@@ -12,6 +12,7 @@
 								<Switch Name="ClerkCrawl" ID="{64EADD76-180B-4140-9FDB-667A47D077E2}"/>
 								<Switch Name="ClerkChatter2" ID="{58DD9327-CD6D-4D21-89E5-9BF03B4ACDBA}"/>
 								<Switch Name="ClerkChatter3" ID="{E334D896-7052-4A0C-8FBE-2DCCF747A2AC}"/>
+								<Switch Name="Intro" ID="{9414030F-66EC-47A1-888A-89A1CA469C6A}"/>
 							</ChildrenList>
 						</SwitchGroup>
 					</ChildrenList>

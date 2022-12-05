@@ -63,7 +63,7 @@
 										<Value>21</Value>
 									</ValueList>
 								</Property>
-								<Property Name="MaxDuckVolume" Type="Real64" Value="-20.5"/>
+								<Property Name="MaxDuckVolume" Type="Real64" Value="-4.5"/>
 								<Property Name="OverrideColor" Type="bool" Value="True"/>
 								<Property Name="RecoveryTime" Type="Real64" Value="2"/>
 								<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
@@ -321,9 +321,9 @@
 						<Bus Name="SFX" ID="{2B051542-74CE-4284-8CDF-6AFFA5F98C34}">
 							<PropertyList>
 								<Property Name="Color" Type="int16" Value="19"/>
-								<Property Name="MaxDuckVolume" Type="Real64" Value="-14"/>
+								<Property Name="MaxDuckVolume" Type="Real64" Value="-4"/>
 								<Property Name="OverrideColor" Type="bool" Value="True"/>
-								<Property Name="RecoveryTime" Type="Real64" Value="2.5"/>
+								<Property Name="RecoveryTime" Type="Real64" Value="1.5"/>
 							</PropertyList>
 							<ChildrenList>
 								<Bus Name="2D" ID="{6E0EC8A0-EF11-4280-A411-C16426D7260B}">
@@ -336,6 +336,15 @@
 									<BusRef Name="Rooms_docking" ID="{6ED14294-29EA-4AC9-82D5-39255BF161A4}"/>
 									<DuckingParam>
 										<Volume>-9</Volume>
+										<FadeInTime>1</FadeInTime>
+										<FadeOutTime>1</FadeOutTime>
+										<FadeCurve>FadeLinear</FadeCurve>
+									</DuckingParam>
+								</DuckItem>
+								<DuckItem>
+									<BusRef Name="Rooms" ID="{F220833B-3FC1-4DC8-9CF3-6F367C8C1EDE}"/>
+									<DuckingParam>
+										<Volume>-6</Volume>
 										<FadeInTime>1</FadeInTime>
 										<FadeOutTime>1</FadeOutTime>
 										<FadeCurve>FadeLinear</FadeCurve>

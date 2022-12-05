@@ -7,9 +7,11 @@
 				<Property Name="Event Action List\{010E8B8E-3178-48C6-A06F-41EA9F4E623C}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="Event Action List\{0DF3B1B6-368A-4DB0-A16F-D079D5363D92}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="Event Action List\{0F5DC30C-E59B-4904-AFCB-483F2EBF3FBE}\x64_Expand States" Type="string" Value=""/>
+				<Property Name="Event Action List\{107B68F6-F1EE-43E0-A75C-C5B1E7FA626B}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="Event Action List\{26CEBDC6-C9ED-422E-AEBD-4655B4D51F6F}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="Event Action List\{3970AE5B-73F6-4C57-8304-3F942A3FEF7D}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="Event Action List\{3BA31C4A-2C48-454F-8116-A0787C4AB5FB}\x64_Expand States" Type="string" Value=""/>
+				<Property Name="Event Action List\{3BF7423B-E36A-42FD-AD81-5013ED0D9B79}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="Event Action List\{44A7C9DB-9704-4E3F-B9B8-0EF5F6E23BF6}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="Event Action List\{5616B28F-929B-4E75-A895-55326FC46C90}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="Event Action List\{592B55FF-61FB-4E5F-9A9D-0A7A57D4F533}\x64_Expand States" Type="string" Value=""/>
@@ -69,7 +71,7 @@
 				<Property Name="Mixing Desk\LastSession" Type="string" Value="{00000000-0000-0000-0000-000000000000}"/>
 				<Property Name="MonitoringManager\GameObjectFilter\GameObjectFilterVersion" Type="int32" Value="1"/>
 				<Property Name="MonitoringManager\GameObjectFilter\GameObjectFiltersEnable" Type="bool" Value="True"/>
-				<Property Name="MonitoringManager\GameObjectFilter\x64_GameObjectFilters" Type="string" Value="AAAAAAEAAACxR9s3+38AAAAA/trTAgAAUGgejtMCAABgp7WO0wIAAAAAAAAAAAAAoAtkj9MCAACxR9s3+38AAAAAAAAAAAAAUGgejtMCAABgp7WO0wIAAAAAAAAAAAAA0Ka1jtMCAACxR9s3+38AAKALZI/TAgAAAADu2tMCAABA0Ibd0wIAAA=="/>
+				<Property Name="MonitoringManager\GameObjectFilter\x64_GameObjectFilters" Type="string" Value="AAAAAAEAAACZ9VHE+n8AAAEAAAAAAAAAW/B/Nft/AABwukzS/gEAAKAyDbr+AQAA/v////////8AAAAAAAAAAAAAAAAAAAAALftRxPp/AAAAMg26/gEAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAHi6TNL+AQAAkfJRxPp/AACgMg26/gEAAA=="/>
 				<Property Name="OverrideCacheFolder\Active" Type="bool" Value="False"/>
 				<Property Name="OverrideCacheFolder\Path" Type="string" Value=".cache"/>
 				<Property Name="OverrideOriginalFolder\Active" Type="bool" Value="False"/>

@@ -38,7 +38,7 @@ MonoBehaviour:
     ParentPath: Master-Mixer Hierarchy\Default Work Unit
     guid: c6b41ec9dc56414596c429e948904d66
     GuidInternal: 
-    m_lastTime: -8585314130949086274
+    m_lastTime: -8585313437410840616
     List:
     - name: 2D
       guid: a0c80e6e11ef8042a411c16426d7260b
@@ -277,7 +277,7 @@ MonoBehaviour:
     ParentPath: SoundBanks\Default Work Unit
     guid: 91f3f2c2e89f4143bd59d41dc8510ab9
     GuidInternal: 
-    m_lastTime: -8585313634520387110
+    m_lastTime: -8585313396963938332
     List:
     - name: Mains
       guid: 22a5fa274c62a84d93c78d5801f30f0d
@@ -305,7 +305,7 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit
     guid: 5eb490fb28343a4fbde7e5ca0bff7b1d
     GuidInternal: 
-    m_lastTime: -8585313621746224378
+    m_lastTime: -8585313396964077949
     List:
     - name: 3D
       guid: d0312eb1e176a14c90ecba42bdd0174b
@@ -511,6 +511,23 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: 0.651027
       minDuration: 0.199419
+    - name: IntroEvent
+      guid: f6687b10eef1e043a75cc5b1e7fa626b
+      id: 2271674691
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 5eb490fb28343a4fbde7e5ca0bff7b1d
+      - ElementName: IntroEvent
+        ObjectType: 3
+        guid: f6687b10eef1e043a75cc5b1e7fa626b
+      Path: Events\Default Work Unit\IntroEvent
+      maxAttenuation: 0
+      maxDuration: 51.93717
+      minDuration: 51.93717
     - name: Lanteren
       guid: 9df5e175dfba1742bc7642b96b7eb864
       id: 1148743742
@@ -982,8 +999,8 @@ MonoBehaviour:
         ObjectType: 3
         guid: 4415bc8e58ba4848a9771366cdd39cee
       Path: Events\Default Work Unit\VA\VA_Clerk\VA_Clerk_Play
-      maxAttenuation: 10
-      maxDuration: 9.640862
+      maxAttenuation: 0
+      maxDuration: 21.32568
       minDuration: 1
     - name: VA_Pause
       guid: c9bf07d16212704a96bfebfab9f0e214
@@ -1065,7 +1082,7 @@ MonoBehaviour:
     ParentPath: States\Default Work Unit
     guid: 15da347adefaa443abeba8e206daca95
     GuidInternal: 
-    m_lastTime: -8585314130863222801
+    m_lastTime: -8585313437407458648
     List:
     - name: AlterAmb
       guid: 7f446b1539ffb74881108b1e3d68a471
@@ -1142,6 +1159,84 @@ MonoBehaviour:
         - ElementName: Playing
           ObjectType: 8
           guid: 5bfd80f9ee64db4fa2977b478a51a3b9
+      ValueGuids: []
+      ValueIcons: []
+      valuesInternal: []
+    - name: DungeonAmb
+      guid: 34efea82e290c44b91752a66d128273e
+      id: 3254361931
+      PathAndIcons:
+      - ElementName: States
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 15da347adefaa443abeba8e206daca95
+      - ElementName: Music
+        ObjectType: 4
+        guid: d42d1ab747e41b4fabe2c427341d1663
+      - ElementName: DungeonAmb
+        ObjectType: 9
+        guid: 34efea82e290c44b91752a66d128273e
+      Path: States\Default Work Unit\Music\DungeonAmb
+      values:
+      - name: None
+        guid: f4f8511e2aa4524493e92f38a3d1caf6
+        id: 748895195
+        PathAndIcons:
+        - ElementName: States
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: 15da347adefaa443abeba8e206daca95
+        - ElementName: Music
+          ObjectType: 4
+          guid: d42d1ab747e41b4fabe2c427341d1663
+        - ElementName: DungeonAmb
+          ObjectType: 9
+          guid: 34efea82e290c44b91752a66d128273e
+        - ElementName: None
+          ObjectType: 8
+          guid: f4f8511e2aa4524493e92f38a3d1caf6
+      - name: NotPlaying
+        guid: d74dbff5c82ae84b8ee030de014144fc
+        id: 1227244058
+        PathAndIcons:
+        - ElementName: States
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: 15da347adefaa443abeba8e206daca95
+        - ElementName: Music
+          ObjectType: 4
+          guid: d42d1ab747e41b4fabe2c427341d1663
+        - ElementName: DungeonAmb
+          ObjectType: 9
+          guid: 34efea82e290c44b91752a66d128273e
+        - ElementName: NotPlaying
+          ObjectType: 8
+          guid: d74dbff5c82ae84b8ee030de014144fc
+      - name: Playing
+        guid: d0900f10ff17974fac953f2fe5da2d11
+        id: 1852808225
+        PathAndIcons:
+        - ElementName: States
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: 15da347adefaa443abeba8e206daca95
+        - ElementName: Music
+          ObjectType: 4
+          guid: d42d1ab747e41b4fabe2c427341d1663
+        - ElementName: DungeonAmb
+          ObjectType: 9
+          guid: 34efea82e290c44b91752a66d128273e
+        - ElementName: Playing
+          ObjectType: 8
+          guid: d0900f10ff17974fac953f2fe5da2d11
       ValueGuids: []
       ValueIcons: []
       valuesInternal: []
@@ -1271,7 +1366,7 @@ MonoBehaviour:
     ParentPath: Switches\Default Work Unit
     guid: 129020783626944d87631f9c3a93f8e0
     GuidInternal: 
-    m_lastTime: -8585314130863212824
+    m_lastTime: -8585313396963619185
     List:
     - name: Locomotion
       guid: ec8b7419cfaab54dbd4aee612fa66e6b
@@ -1481,6 +1576,25 @@ MonoBehaviour:
         - ElementName: ClerkIntro
           ObjectType: 10
           guid: 3024ad821f230f4a9382cee494a9df9e
+      - name: Intro
+        guid: 0f031494ec66a147888a89a1ca469c6a
+        id: 1125500713
+        PathAndIcons:
+        - ElementName: Switches
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: 129020783626944d87631f9c3a93f8e0
+        - ElementName: VA
+          ObjectType: 4
+          guid: 72aefdfe10b4f645a01820f025eaef72
+        - ElementName: VA_Clerk_Switch_Group
+          ObjectType: 11
+          guid: f60e6d600d208144b08366f3c0d6c337
+        - ElementName: Intro
+          ObjectType: 10
+          guid: 0f031494ec66a147888a89a1ca469c6a
       ValueGuids: []
       ValueIcons: []
       valuesInternal: []
@@ -1530,7 +1644,7 @@ MonoBehaviour:
         guid: 14a961bd002ffe41ba1f908602494c89
       Path: Triggers\Default Work Unit\VA_Test
   ExpandedFileSystemItemIds: 
-  ExpandedWaapiItemIds: 05000000060000000700000008000000090000000a0000000b0000000c0000001a0000001b00000023000000
+  ExpandedWaapiItemIds: 01000000050000000600000008000000090000000a0000000b0000000d0000001000000011000000130000001e00000024000000390000004d0000004e00000051000000870c0000
   AutoSyncSelection: 0
   autoPopulateEnabled: 1
   currentDataSource: 0

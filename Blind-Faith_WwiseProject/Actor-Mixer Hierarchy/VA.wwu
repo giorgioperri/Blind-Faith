@@ -1100,7 +1100,6 @@
 											</ValueList>
 										</Property>
 										<Property Name="OverridePositioning" Type="bool" Value="True"/>
-										<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
 										<Property Name="RandomOrSequence" Type="int16" Value="0"/>
 									</PropertyList>
 									<ReferenceList>
@@ -1311,6 +1310,254 @@
 										<ItemRef Name="HisChildHasReturnd_01" ID="{741335E6-E0B5-4165-BFA5-043E3F470B9C}"/>
 									</Playlist>
 								</RandomSequenceContainer>
+								<RandomSequenceContainer Name="IntroSeq" ID="{36819F54-BDA1-476B-BD4C-00E3C63320E2}" ShortID="339188017">
+									<PropertyList>
+										<Property Name="EnableDiffraction" Type="bool" Value="True"/>
+										<Property Name="OverridePositioning" Type="bool" Value="True"/>
+										<Property Name="RandomOrSequence" Type="int16" Value="0"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{23AF77D7-3FEA-409B-8E44-F5B490014C61}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C91EB4C6-56DC-4541-96C4-29E948904D66}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<Sound Name="IntroVox" ID="{AB4C0808-BAB1-489B-B302-3F9B34BEC848}" ShortID="857019249">
+											<PropertyList>
+												<Property Name="3DSpatialization" Type="int16" Value="2"/>
+												<Property Name="InitialDelay" Type="Real64">
+													<ValueList>
+														<Value>8</Value>
+													</ValueList>
+												</Property>
+												<Property Name="OverrideOutput" Type="bool" Value="True"/>
+												<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Attenuation">
+													<ObjectRef Name="10" ID="{CD38D13E-1D7D-46FA-AD0C-C7D5F9690547}" WorkUnitID="{47D4E814-D669-4A08-8AD2-F706566546E0}"/>
+												</Reference>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{23AF77D7-3FEA-409B-8E44-F5B490014C61}"/>
+												</Reference>
+												<Reference Name="Effect0">
+													<Custom>
+														<Effect Name="Wwise Parametric EQ (Custom)" ID="{4917DC9F-2015-4086-AF71-3F4BD1E5B5A1}" ShortID="756570540" PluginName="Wwise Parametric EQ" CompanyID="0" PluginID="105" PluginType="3">
+															<PropertyList>
+																<Property Name="FrequencyBand1" Type="Real32" Value="175"/>
+																<Property Name="FrequencyBand2" Type="Real32" Value="132"/>
+																<Property Name="FrequencyBand3" Type="Real32" Value="9397"/>
+																<Property Name="GainBand1" Type="Real32" Value="-1.5"/>
+																<Property Name="GainBand2" Type="Real32" Value="-5"/>
+																<Property Name="GainBand3" Type="Real32" Value="1.5"/>
+																<Property Name="QFactorBand2" Type="Real32" Value="1.5"/>
+															</PropertyList>
+														</Effect>
+													</Custom>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Rooms" ID="{F220833B-3FC1-4DC8-9CF3-6F367C8C1EDE}" WorkUnitID="{C91EB4C6-56DC-4541-96C4-29E948904D66}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="BF_Intro" ID="{9CF5F94B-C0E6-4564-A2EB-4AACDA675252}">
+													<PropertyList>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimBegin" Type="Real64" Value="0.545495685860187"/>
+														<Property Name="TrimEnd" Type="Real64" Value="13.8711760118733"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>BF_Intro.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="480689921"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ObjectLists/>
+											<ActiveSourceList>
+												<ActiveSource Name="BF_Intro" ID="{9CF5F94B-C0E6-4564-A2EB-4AACDA675252}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="IntroVox_01" ID="{55B9B2D5-56D6-4624-B1EA-A262AFAFD7D2}" ShortID="263023767">
+											<PropertyList>
+												<Property Name="3DSpatialization" Type="int16" Value="2"/>
+												<Property Name="InitialDelay" Type="Real64">
+													<ValueList>
+														<Value>8</Value>
+													</ValueList>
+												</Property>
+												<Property Name="OverrideOutput" Type="bool" Value="True"/>
+												<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Attenuation">
+													<ObjectRef Name="10" ID="{CD38D13E-1D7D-46FA-AD0C-C7D5F9690547}" WorkUnitID="{47D4E814-D669-4A08-8AD2-F706566546E0}"/>
+												</Reference>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{23AF77D7-3FEA-409B-8E44-F5B490014C61}"/>
+												</Reference>
+												<Reference Name="Effect0">
+													<Custom>
+														<Effect Name="Wwise Parametric EQ (Custom)" ID="{93FB2B98-73B2-46AD-A08E-F7FFA6B60A13}" ShortID="255589480" PluginName="Wwise Parametric EQ" CompanyID="0" PluginID="105" PluginType="3">
+															<PropertyList>
+																<Property Name="FrequencyBand1" Type="Real32" Value="175"/>
+																<Property Name="FrequencyBand2" Type="Real32" Value="132"/>
+																<Property Name="FrequencyBand3" Type="Real32" Value="9397"/>
+																<Property Name="GainBand1" Type="Real32" Value="-1.5"/>
+																<Property Name="GainBand2" Type="Real32" Value="-5"/>
+																<Property Name="GainBand3" Type="Real32" Value="1.5"/>
+																<Property Name="QFactorBand2" Type="Real32" Value="1.5"/>
+															</PropertyList>
+														</Effect>
+													</Custom>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Rooms" ID="{F220833B-3FC1-4DC8-9CF3-6F367C8C1EDE}" WorkUnitID="{C91EB4C6-56DC-4541-96C4-29E948904D66}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="BF_Intro" ID="{C1E47352-E408-4952-9BD7-D468EB54FB1F}">
+													<PropertyList>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimBegin" Type="Real64" Value="13.403608281136"/>
+														<Property Name="TrimEnd" Type="Real64" Value="25.482441325183"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>BF_Intro.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="566156920"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ObjectLists/>
+											<ActiveSourceList>
+												<ActiveSource Name="BF_Intro" ID="{C1E47352-E408-4952-9BD7-D468EB54FB1F}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="IntroVox_02" ID="{46F7EBD9-D094-4956-AF11-7E2B77C81D38}" ShortID="501404704">
+											<PropertyList>
+												<Property Name="3DSpatialization" Type="int16" Value="2"/>
+												<Property Name="InitialDelay" Type="Real64">
+													<ValueList>
+														<Value>8</Value>
+													</ValueList>
+												</Property>
+												<Property Name="OverrideOutput" Type="bool" Value="True"/>
+												<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Attenuation">
+													<ObjectRef Name="10" ID="{CD38D13E-1D7D-46FA-AD0C-C7D5F9690547}" WorkUnitID="{47D4E814-D669-4A08-8AD2-F706566546E0}"/>
+												</Reference>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{23AF77D7-3FEA-409B-8E44-F5B490014C61}"/>
+												</Reference>
+												<Reference Name="Effect0">
+													<Custom>
+														<Effect Name="Wwise Parametric EQ (Custom)" ID="{1143BF45-50A6-431D-8C56-FF6EEFC8ABFB}" ShortID="99652879" PluginName="Wwise Parametric EQ" CompanyID="0" PluginID="105" PluginType="3">
+															<PropertyList>
+																<Property Name="FrequencyBand1" Type="Real32" Value="175"/>
+																<Property Name="FrequencyBand2" Type="Real32" Value="132"/>
+																<Property Name="FrequencyBand3" Type="Real32" Value="9397"/>
+																<Property Name="GainBand1" Type="Real32" Value="-1.5"/>
+																<Property Name="GainBand2" Type="Real32" Value="-5"/>
+																<Property Name="GainBand3" Type="Real32" Value="1.5"/>
+																<Property Name="QFactorBand2" Type="Real32" Value="1.5"/>
+															</PropertyList>
+														</Effect>
+													</Custom>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Rooms" ID="{F220833B-3FC1-4DC8-9CF3-6F367C8C1EDE}" WorkUnitID="{C91EB4C6-56DC-4541-96C4-29E948904D66}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="BF_Intro" ID="{C34286A4-D0AD-4D64-8904-1BB171DDBE80}">
+													<PropertyList>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimBegin" Type="Real64" Value="26.807216562272"/>
+														<Property Name="TrimEnd" Type="Real64" Value="37.56127436923"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>BF_Intro.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="940052382"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ObjectLists/>
+											<ActiveSourceList>
+												<ActiveSource Name="BF_Intro" ID="{C34286A4-D0AD-4D64-8904-1BB171DDBE80}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="IntroVox_03" ID="{D9E3F678-C164-460F-B800-F377A4AEDD18}" ShortID="901927553">
+											<PropertyList>
+												<Property Name="3DSpatialization" Type="int16" Value="2"/>
+												<Property Name="InitialDelay" Type="Real64">
+													<ValueList>
+														<Value>8</Value>
+													</ValueList>
+												</Property>
+												<Property Name="OverrideOutput" Type="bool" Value="True"/>
+												<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Attenuation">
+													<ObjectRef Name="10" ID="{CD38D13E-1D7D-46FA-AD0C-C7D5F9690547}" WorkUnitID="{47D4E814-D669-4A08-8AD2-F706566546E0}"/>
+												</Reference>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{23AF77D7-3FEA-409B-8E44-F5B490014C61}"/>
+												</Reference>
+												<Reference Name="Effect0">
+													<Custom>
+														<Effect Name="Wwise Parametric EQ (Custom)" ID="{1C188CD9-A45C-4617-9509-20C5225F10F6}" ShortID="1005572853" PluginName="Wwise Parametric EQ" CompanyID="0" PluginID="105" PluginType="3">
+															<PropertyList>
+																<Property Name="FrequencyBand1" Type="Real32" Value="175"/>
+																<Property Name="FrequencyBand2" Type="Real32" Value="132"/>
+																<Property Name="FrequencyBand3" Type="Real32" Value="9397"/>
+																<Property Name="GainBand1" Type="Real32" Value="-1.5"/>
+																<Property Name="GainBand2" Type="Real32" Value="-5"/>
+																<Property Name="GainBand3" Type="Real32" Value="1.5"/>
+																<Property Name="QFactorBand2" Type="Real32" Value="1.5"/>
+															</PropertyList>
+														</Effect>
+													</Custom>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Rooms" ID="{F220833B-3FC1-4DC8-9CF3-6F367C8C1EDE}" WorkUnitID="{C91EB4C6-56DC-4541-96C4-29E948904D66}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="BF_Intro" ID="{6004A267-0234-4EC1-90E3-271069B313D5}">
+													<PropertyList>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimBegin" Type="Real64" Value="37.7171302794758"/>
+														<Property Name="TrimEnd" Type="Real64" Value="49.0946117274168"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>BF_Intro.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="104070998"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ObjectLists/>
+											<ActiveSourceList>
+												<ActiveSource Name="BF_Intro" ID="{6004A267-0234-4EC1-90E3-271069B313D5}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+									</ChildrenList>
+									<ObjectLists/>
+									<Playlist>
+										<ItemRef Name="IntroVox" ID="{AB4C0808-BAB1-489B-B302-3F9B34BEC848}"/>
+										<ItemRef Name="IntroVox_01" ID="{55B9B2D5-56D6-4624-B1EA-A262AFAFD7D2}"/>
+										<ItemRef Name="IntroVox_02" ID="{46F7EBD9-D094-4956-AF11-7E2B77C81D38}"/>
+										<ItemRef Name="IntroVox_03" ID="{D9E3F678-C164-460F-B800-F377A4AEDD18}"/>
+									</Playlist>
+								</RandomSequenceContainer>
 							</ChildrenList>
 							<PositioningInfo>
 								<Position Name="" ID="{1B839879-DE30-4202-BD33-22E717A8D58B}">
@@ -1348,6 +1595,9 @@
 										<ItemRef Name="Clerk_chatter1" ID="{6C195452-FDF0-4147-8549-75299297A883}"/>
 									</GroupingBehavior>
 									<GroupingBehavior>
+										<ItemRef Name="IntroSeq" ID="{36819F54-BDA1-476B-BD4C-00E3C63320E2}"/>
+									</GroupingBehavior>
+									<GroupingBehavior>
 										<ItemRef Name="ClerkCrawl" ID="{DCC2F470-3DD6-4A7C-AA4F-A486B85A7616}"/>
 									</GroupingBehavior>
 									<GroupingBehavior>
@@ -1358,6 +1608,12 @@
 									</GroupingBehavior>
 								</GroupingBehaviorList>
 								<GroupingList>
+									<Grouping>
+										<SwitchRef Name="Intro" ID="{9414030F-66EC-47A1-888A-89A1CA469C6A}"/>
+										<ItemList>
+											<ItemRef Name="IntroSeq" ID="{36819F54-BDA1-476B-BD4C-00E3C63320E2}"/>
+										</ItemList>
+									</Grouping>
 									<Grouping>
 										<SwitchRef Name="ClerkChatter2" ID="{58DD9327-CD6D-4D21-89E5-9BF03B4ACDBA}"/>
 										<ItemList>
