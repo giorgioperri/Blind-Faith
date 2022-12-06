@@ -103,7 +103,10 @@ namespace AK
                 static const AkUniqueID CLERKCHATTER3 = 711493438U;
                 static const AkUniqueID CLERKCRAWL = 2986066245U;
                 static const AkUniqueID CLERKINTRO = 1202250874U;
+                static const AkUniqueID DUNGEONCHATTER = 994602288U;
                 static const AkUniqueID INTRO = 1125500713U;
+                static const AkUniqueID SECONDENCOUNTER = 1703442692U;
+                static const AkUniqueID THIRDENCOUNTER = 3682658335U;
             } // namespace SWITCH
         } // namespace VA_CLERK_SWITCH_GROUP
 

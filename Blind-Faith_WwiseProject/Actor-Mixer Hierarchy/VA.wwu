@@ -9,6 +9,7 @@
 			<ChildrenList>
 				<ActorMixer Name="VA_Mixer" ID="{5B7ACCA4-E7B7-4BA0-8AF5-F7599629886C}" ShortID="516355222">
 					<PropertyList>
+						<Property Name="3DPosition" Type="int16" Value="1"/>
 						<Property Name="3DSpatialization" Type="int16" Value="2"/>
 						<Property Name="Color" Type="int16" Value="21"/>
 						<Property Name="EnableDiffraction" Type="bool" Value="True"/>
@@ -453,173 +454,10 @@
 									</ChildrenList>
 									<ObjectLists/>
 									<Playlist>
-										<ItemRef Name="New Sound SFX" ID="{99E2EF51-706E-4499-B1E6-E6E3A4456367}"/>
 										<ItemRef Name="Clerk_s1_" ID="{B63A36EF-0DCF-4510-A9B3-B275FC14B8D2}"/>
 										<ItemRef Name="Clerk_s1__2" ID="{4339F99F-337C-48FA-B157-E80557E52664}"/>
-										<ItemRef Name="Clerk_s1__3" ID="{964F8C40-3B38-45B5-8546-A8F56F44D77F}"/>
 										<ItemRef Name="Clerk_s1__5" ID="{31E3198E-B4D2-4385-986D-0EAA5C0E7EDD}"/>
-										<ItemRef Name="Clerk_s1__6" ID="{461FE197-5644-48CC-9648-E91C472E6680}"/>
-										<ItemRef Name="Clerk_s1__8" ID="{C3E4961B-A217-4C90-8EEC-F759A533B0E5}"/>
 										<ItemRef Name="Clerk_s1__9" ID="{4875B121-CACB-4DE1-BB93-6D5460977840}"/>
-									</Playlist>
-								</RandomSequenceContainer>
-								<RandomSequenceContainer Name="Clerk_chatter1" ID="{6C195452-FDF0-4147-8549-75299297A883}" ShortID="690291964">
-									<PropertyList>
-										<Property Name="RandomOrSequence" Type="int16" Value="0"/>
-									</PropertyList>
-									<ReferenceList>
-										<Reference Name="Conversion">
-											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{23AF77D7-3FEA-409B-8E44-F5B490014C61}"/>
-										</Reference>
-										<Reference Name="OutputBus">
-											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C91EB4C6-56DC-4541-96C4-29E948904D66}"/>
-										</Reference>
-									</ReferenceList>
-									<ChildrenList>
-										<Sound Name="Clerk_chatter_" ID="{D5C726E7-12B5-4F66-B167-B2EE688B1EED}" ShortID="403570352">
-											<ReferenceList>
-												<Reference Name="Conversion">
-													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{23AF77D7-3FEA-409B-8E44-F5B490014C61}"/>
-												</Reference>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C91EB4C6-56DC-4541-96C4-29E948904D66}"/>
-												</Reference>
-											</ReferenceList>
-											<ChildrenList>
-												<AudioFileSource Name="Clerk_chatter_" ID="{887252E4-EBFF-41FE-88E6-92CF5E05F665}">
-													<PropertyList>
-														<Property Name="MarkerInputMode" Type="int16" Value="2"/>
-													</PropertyList>
-													<Language>SFX</Language>
-													<AudioFile>Clerk_chatter\Clerk_chatter_.wav</AudioFile>
-													<MediaIDList>
-														<MediaID ID="222606794"/>
-													</MediaIDList>
-													<PluginInnerObjectList>
-														<List Name="Markers">
-															<PluginInnerObject Name="" ID="{32FA4783-8456-4F6C-804A-AB9C7AED7328}" PluginName="Marker" CompanyID="0" PluginID="993">
-																<PropertyList>
-																	<Property Name="Label" Type="string" Value="Tempo: 120.0"/>
-																</PropertyList>
-															</PluginInnerObject>
-															<PluginInnerObject Name="" ID="{5C8AF96C-E5C9-46A4-A4F5-F235444C8AF6}" PluginName="Marker" CompanyID="0" PluginID="993">
-																<PropertyList>
-																	<Property Name="Label" Type="string" Value="Intro Scene"/>
-																</PropertyList>
-															</PluginInnerObject>
-															<PluginInnerObject Name="" ID="{8C99D301-91E6-4917-A045-0F00BF838AE8}" PluginName="Marker" CompanyID="0" PluginID="993">
-																<PropertyList>
-																	<Property Name="Label" Type="string" Value="end"/>
-																	<Property Name="Time" Type="Real64" Value="8.98285500214072"/>
-																</PropertyList>
-															</PluginInnerObject>
-														</List>
-													</PluginInnerObjectList>
-												</AudioFileSource>
-											</ChildrenList>
-											<ObjectLists/>
-											<ActiveSourceList>
-												<ActiveSource Name="Clerk_chatter_" ID="{887252E4-EBFF-41FE-88E6-92CF5E05F665}" Platform="Linked"/>
-											</ActiveSourceList>
-										</Sound>
-										<Sound Name="Clerk_chatter__1" ID="{878F8949-8647-465B-9BA7-D416B586BBE8}" ShortID="933552110">
-											<ReferenceList>
-												<Reference Name="Conversion">
-													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{23AF77D7-3FEA-409B-8E44-F5B490014C61}"/>
-												</Reference>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C91EB4C6-56DC-4541-96C4-29E948904D66}"/>
-												</Reference>
-											</ReferenceList>
-											<ChildrenList>
-												<AudioFileSource Name="Clerk_chatter__1" ID="{8D8FBDC4-8629-43CB-B808-B272C6881742}">
-													<PropertyList>
-														<Property Name="MarkerInputMode" Type="int16" Value="2"/>
-													</PropertyList>
-													<Language>SFX</Language>
-													<AudioFile>Clerk_chatter\Clerk_chatter__1.wav</AudioFile>
-													<MediaIDList>
-														<MediaID ID="833554346"/>
-													</MediaIDList>
-													<PluginInnerObjectList>
-														<List Name="Markers">
-															<PluginInnerObject Name="" ID="{A412AB66-7F2B-4D90-9F8F-603CCE632F4E}" PluginName="Marker" CompanyID="0" PluginID="993">
-																<PropertyList>
-																	<Property Name="Label" Type="string" Value="Tempo: 120.0"/>
-																</PropertyList>
-															</PluginInnerObject>
-															<PluginInnerObject Name="" ID="{902BBCBE-3540-4C96-8C5A-05FE5E68B233}" PluginName="Marker" CompanyID="0" PluginID="993">
-																<PropertyList>
-																	<Property Name="Label" Type="string" Value="Complete puzzle"/>
-																</PropertyList>
-															</PluginInnerObject>
-															<PluginInnerObject Name="" ID="{B75E03A9-39EE-4BE0-86BF-2130F434EC1E}" PluginName="Marker" CompanyID="0" PluginID="993">
-																<PropertyList>
-																	<Property Name="Label" Type="string" Value="end"/>
-																	<Property Name="Time" Type="Real64" Value="4.06605394605395"/>
-																</PropertyList>
-															</PluginInnerObject>
-														</List>
-													</PluginInnerObjectList>
-												</AudioFileSource>
-											</ChildrenList>
-											<ObjectLists/>
-											<ActiveSourceList>
-												<ActiveSource Name="Clerk_chatter__1" ID="{8D8FBDC4-8629-43CB-B808-B272C6881742}" Platform="Linked"/>
-											</ActiveSourceList>
-										</Sound>
-										<Sound Name="Clerk_chatter__2" ID="{7A3CE0C6-D4B4-4754-82E9-1610DE73ED4B}" ShortID="355677681">
-											<ReferenceList>
-												<Reference Name="Conversion">
-													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{23AF77D7-3FEA-409B-8E44-F5B490014C61}"/>
-												</Reference>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C91EB4C6-56DC-4541-96C4-29E948904D66}"/>
-												</Reference>
-											</ReferenceList>
-											<ChildrenList>
-												<AudioFileSource Name="Clerk_chatter__2" ID="{A1385894-7D83-4B8A-91D5-C3DA6FDAB916}">
-													<PropertyList>
-														<Property Name="MarkerInputMode" Type="int16" Value="2"/>
-													</PropertyList>
-													<Language>SFX</Language>
-													<AudioFile>Clerk_chatter\Clerk_chatter__2.wav</AudioFile>
-													<MediaIDList>
-														<MediaID ID="211299271"/>
-													</MediaIDList>
-													<PluginInnerObjectList>
-														<List Name="Markers">
-															<PluginInnerObject Name="" ID="{1DF3FB6A-7FD4-42F1-9A66-449BA86A106F}" PluginName="Marker" CompanyID="0" PluginID="993">
-																<PropertyList>
-																	<Property Name="Label" Type="string" Value="Tempo: 120.0"/>
-																</PropertyList>
-															</PluginInnerObject>
-															<PluginInnerObject Name="" ID="{F559FBEB-9BAC-4275-AEED-7B72EE1FDB9B}" PluginName="Marker" CompanyID="0" PluginID="993">
-																<PropertyList>
-																	<Property Name="Label" Type="string" Value="Complete puzzle"/>
-																</PropertyList>
-															</PluginInnerObject>
-															<PluginInnerObject Name="" ID="{E7EA709E-BC20-48BA-B085-12BD8961399A}" PluginName="Marker" CompanyID="0" PluginID="993">
-																<PropertyList>
-																	<Property Name="Label" Type="string" Value="end"/>
-																	<Property Name="Time" Type="Real64" Value="8.32738428238429"/>
-																</PropertyList>
-															</PluginInnerObject>
-														</List>
-													</PluginInnerObjectList>
-												</AudioFileSource>
-											</ChildrenList>
-											<ObjectLists/>
-											<ActiveSourceList>
-												<ActiveSource Name="Clerk_chatter__2" ID="{A1385894-7D83-4B8A-91D5-C3DA6FDAB916}" Platform="Linked"/>
-											</ActiveSourceList>
-										</Sound>
-									</ChildrenList>
-									<ObjectLists/>
-									<Playlist>
-										<ItemRef Name="Clerk_chatter_" ID="{D5C726E7-12B5-4F66-B167-B2EE688B1EED}"/>
-										<ItemRef Name="Clerk_chatter__1" ID="{878F8949-8647-465B-9BA7-D416B586BBE8}"/>
-										<ItemRef Name="Clerk_chatter__2" ID="{7A3CE0C6-D4B4-4754-82E9-1610DE73ED4B}"/>
 									</Playlist>
 								</RandomSequenceContainer>
 								<RandomSequenceContainer Name="Clerk_chatter2" ID="{3F52093C-3582-4076-9616-273423A7CFC9}" ShortID="495101309">
@@ -1331,13 +1169,14 @@
 														<Point>
 															<XPos>-52.79188</XPos>
 															<YPos>-67.51412</YPos>
+															<ZPos>2</ZPos>
 															<Flags>12</Flags>
 															<Time>0</Time>
 														</Point>
 														<Point>
 															<XPos>53.80711</XPos>
 															<YPos>67.23164</YPos>
-															<ZPos>49</ZPos>
+															<ZPos>22</ZPos>
 															<Flags>0</Flags>
 															<Time>12000</Time>
 														</Point>
@@ -1354,13 +1193,39 @@
 								</RandomSequenceContainer>
 								<RandomSequenceContainer Name="IntroSeq" ID="{36819F54-BDA1-476B-BD4C-00E3C63320E2}" ShortID="339188017">
 									<PropertyList>
+										<Property Name="3DSpatialization" Type="int16" Value="1"/>
 										<Property Name="EnableDiffraction" Type="bool" Value="True"/>
+										<Property Name="OverrideEffect" Type="bool" Value="True"/>
 										<Property Name="OverridePositioning" Type="bool" Value="True"/>
 										<Property Name="RandomOrSequence" Type="int16" Value="0"/>
+										<Property Name="SpeakerPanning3DSpatializationMix" Type="int32" Value="51"/>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>10</Value>
+											</ValueList>
+										</Property>
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{23AF77D7-3FEA-409B-8E44-F5B490014C61}"/>
+										</Reference>
+										<Reference Name="Effect0">
+											<Custom>
+												<Effect Name="Wwise Parametric EQ (Custom)" ID="{93A6655B-F0A7-4EA9-98EB-8B367D24E1D3}" ShortID="74280984" PluginName="Wwise Parametric EQ" CompanyID="0" PluginID="105" PluginType="3">
+													<PropertyList>
+														<Property Name="FrequencyBand1" Type="Real32" Value="175"/>
+														<Property Name="FrequencyBand2" Type="Real32" Value="132"/>
+														<Property Name="FrequencyBand3" Type="Real32" Value="9397"/>
+														<Property Name="GainBand1" Type="Real32" Value="-1.5"/>
+														<Property Name="GainBand2" Type="Real32" Value="-5"/>
+														<Property Name="GainBand3" Type="Real32" Value="1.5"/>
+														<Property Name="QFactorBand2" Type="Real32" Value="1.5"/>
+													</PropertyList>
+												</Effect>
+											</Custom>
+										</Reference>
+										<Reference Name="Effect1" PluginName="Wwise Harmonizer" CompanyID="0" PluginID="138" PluginType="3">
+											<ObjectRef Name="Three_Voices" ID="{71CA20BE-8C1D-4A0C-92AF-BFCE183D5651}" WorkUnitID="{E8613F7D-BAD3-45CD-A3ED-505576F31277}"/>
 										</Reference>
 										<Reference Name="OutputBus">
 											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C91EB4C6-56DC-4541-96C4-29E948904D66}"/>
@@ -1370,11 +1235,6 @@
 										<Sound Name="IntroVox" ID="{AB4C0808-BAB1-489B-B302-3F9B34BEC848}" ShortID="857019249">
 											<PropertyList>
 												<Property Name="3DSpatialization" Type="int16" Value="2"/>
-												<Property Name="InitialDelay" Type="Real64">
-													<ValueList>
-														<Value>8</Value>
-													</ValueList>
-												</Property>
 												<Property Name="OverrideOutput" Type="bool" Value="True"/>
 												<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
 											</PropertyList>
@@ -1407,15 +1267,36 @@
 											<ChildrenList>
 												<AudioFileSource Name="BF_Intro" ID="{9CF5F94B-C0E6-4564-A2EB-4AACDA675252}">
 													<PropertyList>
+														<Property Name="MarkerInputMode" Type="int16" Value="2"/>
 														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
-														<Property Name="TrimBegin" Type="Real64" Value="0.545495685860187"/>
-														<Property Name="TrimEnd" Type="Real64" Value="13.8711760118733"/>
+														<Property Name="TrimBegin" Type="Real64" Value="0.993045569937694"/>
+														<Property Name="TrimEnd" Type="Real64" Value="12.0291479991504"/>
 													</PropertyList>
 													<Language>SFX</Language>
 													<AudioFile>BF_Intro.wav</AudioFile>
 													<MediaIDList>
-														<MediaID ID="480689921"/>
+														<MediaID ID="292129421"/>
 													</MediaIDList>
+													<PluginInnerObjectList>
+														<List Name="Markers">
+															<PluginInnerObject Name="" ID="{36BB5D78-6B5B-4676-A7EE-D85A5EA60931}" PluginName="Marker" CompanyID="0" PluginID="993">
+																<PropertyList>
+																	<Property Name="Label" Type="string" Value="Tempo: 120.0"/>
+																</PropertyList>
+															</PluginInnerObject>
+															<PluginInnerObject Name="" ID="{30001DA3-16FF-4FAB-A342-3A6F194AAAD7}" PluginName="Marker" CompanyID="0" PluginID="993">
+																<PropertyList>
+																	<Property Name="Label" Type="string" Value="Complete puzzle"/>
+																</PropertyList>
+															</PluginInnerObject>
+															<PluginInnerObject Name="" ID="{17B5B3FA-4134-4114-A273-B989E89A687F}" PluginName="Marker" CompanyID="0" PluginID="993">
+																<PropertyList>
+																	<Property Name="Label" Type="string" Value="end"/>
+																	<Property Name="Time" Type="Real64" Value="11.9184008340201"/>
+																</PropertyList>
+															</PluginInnerObject>
+														</List>
+													</PluginInnerObjectList>
 												</AudioFileSource>
 											</ChildrenList>
 											<ObjectLists/>
@@ -1426,11 +1307,6 @@
 										<Sound Name="IntroVox_01" ID="{55B9B2D5-56D6-4624-B1EA-A262AFAFD7D2}" ShortID="263023767">
 											<PropertyList>
 												<Property Name="3DSpatialization" Type="int16" Value="2"/>
-												<Property Name="InitialDelay" Type="Real64">
-													<ValueList>
-														<Value>8</Value>
-													</ValueList>
-												</Property>
 												<Property Name="OverrideOutput" Type="bool" Value="True"/>
 												<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
 											</PropertyList>
@@ -1463,8 +1339,9 @@
 											<ChildrenList>
 												<AudioFileSource Name="BF_Intro" ID="{C1E47352-E408-4952-9BD7-D468EB54FB1F}">
 													<PropertyList>
+														<Property Name="MarkerInputMode" Type="int16" Value="2"/>
 														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
-														<Property Name="TrimBegin" Type="Real64" Value="13.403608281136"/>
+														<Property Name="TrimBegin" Type="Real64" Value="14.5118298221129"/>
 														<Property Name="TrimEnd" Type="Real64" Value="25.482441325183"/>
 													</PropertyList>
 													<Language>SFX</Language>
@@ -1472,6 +1349,26 @@
 													<MediaIDList>
 														<MediaID ID="566156920"/>
 													</MediaIDList>
+													<PluginInnerObjectList>
+														<List Name="Markers">
+															<PluginInnerObject Name="" ID="{137067E7-3FDF-4DB1-B7FC-C453985C042B}" PluginName="Marker" CompanyID="0" PluginID="993">
+																<PropertyList>
+																	<Property Name="Label" Type="string" Value="Tempo: 120.0"/>
+																</PropertyList>
+															</PluginInnerObject>
+															<PluginInnerObject Name="" ID="{9FB47A66-553E-4A1F-A3F3-E11B3F953B2C}" PluginName="Marker" CompanyID="0" PluginID="993">
+																<PropertyList>
+																	<Property Name="Label" Type="string" Value="Complete puzzle"/>
+																</PropertyList>
+															</PluginInnerObject>
+															<PluginInnerObject Name="" ID="{2C39DB1F-09EA-469E-A4DC-DCE133B7034A}" PluginName="Marker" CompanyID="0" PluginID="993">
+																<PropertyList>
+																	<Property Name="Label" Type="string" Value="end"/>
+																	<Property Name="Time" Type="Real64" Value="24.7423731418493"/>
+																</PropertyList>
+															</PluginInnerObject>
+														</List>
+													</PluginInnerObjectList>
 												</AudioFileSource>
 											</ChildrenList>
 											<ObjectLists/>
@@ -1482,11 +1379,6 @@
 										<Sound Name="IntroVox_02" ID="{46F7EBD9-D094-4956-AF11-7E2B77C81D38}" ShortID="501404704">
 											<PropertyList>
 												<Property Name="3DSpatialization" Type="int16" Value="2"/>
-												<Property Name="InitialDelay" Type="Real64">
-													<ValueList>
-														<Value>8</Value>
-													</ValueList>
-												</Property>
 												<Property Name="OverrideOutput" Type="bool" Value="True"/>
 												<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
 											</PropertyList>
@@ -1519,8 +1411,9 @@
 											<ChildrenList>
 												<AudioFileSource Name="BF_Intro" ID="{C34286A4-D0AD-4D64-8904-1BB171DDBE80}">
 													<PropertyList>
+														<Property Name="MarkerInputMode" Type="int16" Value="2"/>
 														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
-														<Property Name="TrimBegin" Type="Real64" Value="26.807216562272"/>
+														<Property Name="TrimBegin" Type="Real64" Value="26.985885521546"/>
 														<Property Name="TrimEnd" Type="Real64" Value="37.56127436923"/>
 													</PropertyList>
 													<Language>SFX</Language>
@@ -1528,6 +1421,26 @@
 													<MediaIDList>
 														<MediaID ID="940052382"/>
 													</MediaIDList>
+													<PluginInnerObjectList>
+														<List Name="Markers">
+															<PluginInnerObject Name="" ID="{05070A32-E233-406C-904A-F3688CA6D779}" PluginName="Marker" CompanyID="0" PluginID="993">
+																<PropertyList>
+																	<Property Name="Label" Type="string" Value="Tempo: 120.0"/>
+																</PropertyList>
+															</PluginInnerObject>
+															<PluginInnerObject Name="" ID="{3873DA3D-36EA-41F7-8FD4-F2E110FFC712}" PluginName="Marker" CompanyID="0" PluginID="993">
+																<PropertyList>
+																	<Property Name="Label" Type="string" Value="Complete puzzle"/>
+																</PropertyList>
+															</PluginInnerObject>
+															<PluginInnerObject Name="" ID="{EB4FC52B-DEE4-47CC-AC6F-F4717DD6075D}" PluginName="Marker" CompanyID="0" PluginID="993">
+																<PropertyList>
+																	<Property Name="Label" Type="string" Value="end"/>
+																	<Property Name="Time" Type="Real64" Value="36.9964822373394"/>
+																</PropertyList>
+															</PluginInnerObject>
+														</List>
+													</PluginInnerObjectList>
 												</AudioFileSource>
 											</ChildrenList>
 											<ObjectLists/>
@@ -1538,11 +1451,6 @@
 										<Sound Name="IntroVox_03" ID="{D9E3F678-C164-460F-B800-F377A4AEDD18}" ShortID="901927553">
 											<PropertyList>
 												<Property Name="3DSpatialization" Type="int16" Value="2"/>
-												<Property Name="InitialDelay" Type="Real64">
-													<ValueList>
-														<Value>8</Value>
-													</ValueList>
-												</Property>
 												<Property Name="OverrideOutput" Type="bool" Value="True"/>
 												<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
 											</PropertyList>
@@ -1575,8 +1483,9 @@
 											<ChildrenList>
 												<AudioFileSource Name="BF_Intro" ID="{6004A267-0234-4EC1-90E3-271069B313D5}">
 													<PropertyList>
+														<Property Name="MarkerInputMode" Type="int16" Value="2"/>
 														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
-														<Property Name="TrimBegin" Type="Real64" Value="37.7171302794758"/>
+														<Property Name="TrimBegin" Type="Real64" Value="38.8064625449631"/>
 														<Property Name="TrimEnd" Type="Real64" Value="49.0946117274168"/>
 													</PropertyList>
 													<Language>SFX</Language>
@@ -1584,6 +1493,26 @@
 													<MediaIDList>
 														<MediaID ID="104070998"/>
 													</MediaIDList>
+													<PluginInnerObjectList>
+														<List Name="Markers">
+															<PluginInnerObject Name="" ID="{E57EC6AA-C290-43EA-AD28-B428A61807D5}" PluginName="Marker" CompanyID="0" PluginID="993">
+																<PropertyList>
+																	<Property Name="Label" Type="string" Value="Tempo: 120.0"/>
+																</PropertyList>
+															</PluginInnerObject>
+															<PluginInnerObject Name="" ID="{FA73693F-7265-47F4-859F-C3A39E9FE43C}" PluginName="Marker" CompanyID="0" PluginID="993">
+																<PropertyList>
+																	<Property Name="Label" Type="string" Value="Complete puzzle"/>
+																</PropertyList>
+															</PluginInnerObject>
+															<PluginInnerObject Name="" ID="{F7D2D241-63DB-4115-A46B-E0F16E7D0DA1}" PluginName="Marker" CompanyID="0" PluginID="993">
+																<PropertyList>
+																	<Property Name="Label" Type="string" Value="end"/>
+																	<Property Name="Time" Type="Real64" Value="48.6323402075672"/>
+																</PropertyList>
+															</PluginInnerObject>
+														</List>
+													</PluginInnerObjectList>
 												</AudioFileSource>
 											</ChildrenList>
 											<ObjectLists/>
@@ -1591,14 +1520,563 @@
 												<ActiveSource Name="BF_Intro" ID="{6004A267-0234-4EC1-90E3-271069B313D5}" Platform="Linked"/>
 											</ActiveSourceList>
 										</Sound>
+										<Sound Name="Silence" ID="{E038A1BD-2933-4934-BD82-EFF1C0E1FF77}" ShortID="157559304">
+											<PropertyList>
+												<Property Name="OverrideOutput" Type="bool" Value="True"/>
+												<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+												<Property Name="Volume" Type="Real64">
+													<ValueList>
+														<Value>-96</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{23AF77D7-3FEA-409B-8E44-F5B490014C61}"/>
+												</Reference>
+												<Reference Name="Effect0">
+													<Custom>
+														<Effect Name="Wwise Parametric EQ (Custom)" ID="{BCE7E168-79E6-4377-895F-2D123F8F6E64}" ShortID="667170019" PluginName="Wwise Parametric EQ" CompanyID="0" PluginID="105" PluginType="3">
+															<PropertyList>
+																<Property Name="FrequencyBand1" Type="Real32" Value="175"/>
+																<Property Name="FrequencyBand2" Type="Real32" Value="132"/>
+																<Property Name="FrequencyBand3" Type="Real32" Value="9397"/>
+																<Property Name="GainBand1" Type="Real32" Value="-1.5"/>
+																<Property Name="GainBand2" Type="Real32" Value="-5"/>
+																<Property Name="GainBand3" Type="Real32" Value="1.5"/>
+																<Property Name="QFactorBand2" Type="Real32" Value="1.5"/>
+															</PropertyList>
+														</Effect>
+													</Custom>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Rooms" ID="{F220833B-3FC1-4DC8-9CF3-6F367C8C1EDE}" WorkUnitID="{C91EB4C6-56DC-4541-96C4-29E948904D66}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="BF_Intro" ID="{C9422231-7C13-4954-A492-BC8B9210A0A3}">
+													<PropertyList>
+														<Property Name="MarkerInputMode" Type="int16" Value="2"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimBegin" Type="Real64" Value="0.545495685860187"/>
+														<Property Name="TrimEnd" Type="Real64" Value="13.8711760118733"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>BF_Intro.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="480689921"/>
+													</MediaIDList>
+													<PluginInnerObjectList>
+														<List Name="Markers">
+															<PluginInnerObject Name="" ID="{1055F149-AAAC-430B-9274-DFBC030B7171}" PluginName="Marker" CompanyID="0" PluginID="993">
+																<PropertyList>
+																	<Property Name="Label" Type="string" Value="Tempo: 120.0"/>
+																</PropertyList>
+															</PluginInnerObject>
+															<PluginInnerObject Name="" ID="{6E2AF36C-717A-404B-B138-3C8D757069E5}" PluginName="Marker" CompanyID="0" PluginID="993">
+																<PropertyList>
+																	<Property Name="Label" Type="string" Value="Complete puzzle"/>
+																</PropertyList>
+															</PluginInnerObject>
+															<PluginInnerObject Name="" ID="{DA77EB87-5CD8-48B5-BD0B-921CA4E6C4A5}" PluginName="Marker" CompanyID="0" PluginID="993">
+																<PropertyList>
+																	<Property Name="Label" Type="string" Value="end"/>
+																	<Property Name="Time" Type="Real64" Value="11.9145094942569"/>
+																</PropertyList>
+															</PluginInnerObject>
+														</List>
+													</PluginInnerObjectList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ObjectLists/>
+											<ActiveSourceList>
+												<ActiveSource Name="BF_Intro" ID="{C9422231-7C13-4954-A492-BC8B9210A0A3}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+									</ChildrenList>
+									<PositioningInfo>
+										<Panner Name="" ID="{4E85E42B-479E-4AF8-B94C-82EA39339346}"/>
+									</PositioningInfo>
+									<ObjectLists/>
+									<Playlist>
+										<ItemRef Name="Silence" ID="{E038A1BD-2933-4934-BD82-EFF1C0E1FF77}"/>
+										<ItemRef Name="IntroVox_03" ID="{D9E3F678-C164-460F-B800-F377A4AEDD18}"/>
+										<ItemRef Name="IntroVox_02" ID="{46F7EBD9-D094-4956-AF11-7E2B77C81D38}"/>
+										<ItemRef Name="IntroVox_01" ID="{55B9B2D5-56D6-4624-B1EA-A262AFAFD7D2}"/>
+										<ItemRef Name="IntroVox" ID="{AB4C0808-BAB1-489B-B302-3F9B34BEC848}"/>
+									</Playlist>
+								</RandomSequenceContainer>
+								<RandomSequenceContainer Name="Clerk_2ndEncounter" ID="{2B2316E0-3E17-4ED4-8DDA-2C6A10051A21}" ShortID="196663141">
+									<PropertyList>
+										<Property Name="3DSpatialization" Type="int16" Value="2"/>
+										<Property Name="OutputBusVolume" Type="Real64">
+											<ValueList>
+												<Value>3</Value>
+											</ValueList>
+										</Property>
+										<Property Name="RandomOrSequence" Type="int16" Value="0"/>
+										<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Attenuation">
+											<ObjectRef Name="10" ID="{CD38D13E-1D7D-46FA-AD0C-C7D5F9690547}" WorkUnitID="{47D4E814-D669-4A08-8AD2-F706566546E0}"/>
+										</Reference>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{23AF77D7-3FEA-409B-8E44-F5B490014C61}"/>
+										</Reference>
+										<Reference Name="Effect0">
+											<Custom>
+												<Effect Name="Wwise Parametric EQ (Custom)" ID="{04E2DC2F-7207-4FA4-9F51-9D0F27497163}" ShortID="335149374" PluginName="Wwise Parametric EQ" CompanyID="0" PluginID="105" PluginType="3">
+													<PropertyList>
+														<Property Name="FrequencyBand1" Type="Real32" Value="175"/>
+														<Property Name="FrequencyBand2" Type="Real32" Value="132"/>
+														<Property Name="FrequencyBand3" Type="Real32" Value="9397"/>
+														<Property Name="GainBand1" Type="Real32" Value="-1.5"/>
+														<Property Name="GainBand2" Type="Real32" Value="-5"/>
+														<Property Name="GainBand3" Type="Real32" Value="1.5"/>
+														<Property Name="QFactorBand2" Type="Real32" Value="1.5"/>
+													</PropertyList>
+												</Effect>
+											</Custom>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Rooms" ID="{F220833B-3FC1-4DC8-9CF3-6F367C8C1EDE}" WorkUnitID="{C91EB4C6-56DC-4541-96C4-29E948904D66}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<Sound Name="Clerk_chatter__1" ID="{878F8949-8647-465B-9BA7-D416B586BBE8}" ShortID="933552110">
+											<PropertyList>
+												<Property Name="3DSpatialization" Type="int16" Value="2"/>
+												<Property Name="OutputBusVolume" Type="Real64">
+													<ValueList>
+														<Value>3</Value>
+													</ValueList>
+												</Property>
+												<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Attenuation">
+													<ObjectRef Name="10" ID="{CD38D13E-1D7D-46FA-AD0C-C7D5F9690547}" WorkUnitID="{47D4E814-D669-4A08-8AD2-F706566546E0}"/>
+												</Reference>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{23AF77D7-3FEA-409B-8E44-F5B490014C61}"/>
+												</Reference>
+												<Reference Name="Effect0">
+													<Custom>
+														<Effect Name="Wwise Parametric EQ (Custom)" ID="{72ED8781-F0AC-4B1D-8A87-723C0B0BCD7D}" ShortID="769351466" PluginName="Wwise Parametric EQ" CompanyID="0" PluginID="105" PluginType="3">
+															<PropertyList>
+																<Property Name="FrequencyBand1" Type="Real32" Value="175"/>
+																<Property Name="FrequencyBand2" Type="Real32" Value="132"/>
+																<Property Name="FrequencyBand3" Type="Real32" Value="9397"/>
+																<Property Name="GainBand1" Type="Real32" Value="-1.5"/>
+																<Property Name="GainBand2" Type="Real32" Value="-5"/>
+																<Property Name="GainBand3" Type="Real32" Value="1.5"/>
+																<Property Name="QFactorBand2" Type="Real32" Value="1.5"/>
+															</PropertyList>
+														</Effect>
+													</Custom>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Rooms" ID="{F220833B-3FC1-4DC8-9CF3-6F367C8C1EDE}" WorkUnitID="{C91EB4C6-56DC-4541-96C4-29E948904D66}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Clerk_chatter__1" ID="{8D8FBDC4-8629-43CB-B808-B272C6881742}">
+													<PropertyList>
+														<Property Name="MarkerInputMode" Type="int16" Value="2"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>Clerk_chatter\Clerk_chatter__1.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="833554346"/>
+													</MediaIDList>
+													<PluginInnerObjectList>
+														<List Name="Markers">
+															<PluginInnerObject Name="" ID="{A412AB66-7F2B-4D90-9F8F-603CCE632F4E}" PluginName="Marker" CompanyID="0" PluginID="993">
+																<PropertyList>
+																	<Property Name="Label" Type="string" Value="Tempo: 120.0"/>
+																</PropertyList>
+															</PluginInnerObject>
+															<PluginInnerObject Name="" ID="{902BBCBE-3540-4C96-8C5A-05FE5E68B233}" PluginName="Marker" CompanyID="0" PluginID="993">
+																<PropertyList>
+																	<Property Name="Label" Type="string" Value="Complete puzzle"/>
+																</PropertyList>
+															</PluginInnerObject>
+															<PluginInnerObject Name="" ID="{B75E03A9-39EE-4BE0-86BF-2130F434EC1E}" PluginName="Marker" CompanyID="0" PluginID="993">
+																<PropertyList>
+																	<Property Name="Label" Type="string" Value="end"/>
+																	<Property Name="Time" Type="Real64" Value="4.06605394605395"/>
+																</PropertyList>
+															</PluginInnerObject>
+														</List>
+													</PluginInnerObjectList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ObjectLists/>
+											<ActiveSourceList>
+												<ActiveSource Name="Clerk_chatter__1" ID="{8D8FBDC4-8629-43CB-B808-B272C6881742}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Clerk_chatter_" ID="{D5C726E7-12B5-4F66-B167-B2EE688B1EED}" ShortID="403570352">
+											<PropertyList>
+												<Property Name="3DSpatialization" Type="int16" Value="2"/>
+												<Property Name="OutputBusVolume" Type="Real64">
+													<ValueList>
+														<Value>3</Value>
+													</ValueList>
+												</Property>
+												<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Attenuation">
+													<ObjectRef Name="10" ID="{CD38D13E-1D7D-46FA-AD0C-C7D5F9690547}" WorkUnitID="{47D4E814-D669-4A08-8AD2-F706566546E0}"/>
+												</Reference>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{23AF77D7-3FEA-409B-8E44-F5B490014C61}"/>
+												</Reference>
+												<Reference Name="Effect0">
+													<Custom>
+														<Effect Name="Wwise Parametric EQ (Custom)" ID="{6CA7FDE2-06B5-4C7C-A933-D22563214FC8}" ShortID="98632741" PluginName="Wwise Parametric EQ" CompanyID="0" PluginID="105" PluginType="3">
+															<PropertyList>
+																<Property Name="FrequencyBand1" Type="Real32" Value="175"/>
+																<Property Name="FrequencyBand2" Type="Real32" Value="132"/>
+																<Property Name="FrequencyBand3" Type="Real32" Value="9397"/>
+																<Property Name="GainBand1" Type="Real32" Value="-1.5"/>
+																<Property Name="GainBand2" Type="Real32" Value="-5"/>
+																<Property Name="GainBand3" Type="Real32" Value="1.5"/>
+																<Property Name="QFactorBand2" Type="Real32" Value="1.5"/>
+															</PropertyList>
+														</Effect>
+													</Custom>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Rooms" ID="{F220833B-3FC1-4DC8-9CF3-6F367C8C1EDE}" WorkUnitID="{C91EB4C6-56DC-4541-96C4-29E948904D66}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Clerk_chatter_" ID="{887252E4-EBFF-41FE-88E6-92CF5E05F665}">
+													<PropertyList>
+														<Property Name="MarkerInputMode" Type="int16" Value="2"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>Clerk_chatter\Clerk_chatter_.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="222606794"/>
+													</MediaIDList>
+													<PluginInnerObjectList>
+														<List Name="Markers">
+															<PluginInnerObject Name="" ID="{32FA4783-8456-4F6C-804A-AB9C7AED7328}" PluginName="Marker" CompanyID="0" PluginID="993">
+																<PropertyList>
+																	<Property Name="Label" Type="string" Value="Tempo: 120.0"/>
+																</PropertyList>
+															</PluginInnerObject>
+															<PluginInnerObject Name="" ID="{5C8AF96C-E5C9-46A4-A4F5-F235444C8AF6}" PluginName="Marker" CompanyID="0" PluginID="993">
+																<PropertyList>
+																	<Property Name="Label" Type="string" Value="Intro Scene"/>
+																</PropertyList>
+															</PluginInnerObject>
+															<PluginInnerObject Name="" ID="{8C99D301-91E6-4917-A045-0F00BF838AE8}" PluginName="Marker" CompanyID="0" PluginID="993">
+																<PropertyList>
+																	<Property Name="Label" Type="string" Value="end"/>
+																	<Property Name="Time" Type="Real64" Value="8.98285500214072"/>
+																</PropertyList>
+															</PluginInnerObject>
+														</List>
+													</PluginInnerObjectList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ObjectLists/>
+											<ActiveSourceList>
+												<ActiveSource Name="Clerk_chatter_" ID="{887252E4-EBFF-41FE-88E6-92CF5E05F665}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Clerk_chatter__2" ID="{7A3CE0C6-D4B4-4754-82E9-1610DE73ED4B}" ShortID="355677681">
+											<PropertyList>
+												<Property Name="3DSpatialization" Type="int16" Value="2"/>
+												<Property Name="OutputBusVolume" Type="Real64">
+													<ValueList>
+														<Value>3</Value>
+													</ValueList>
+												</Property>
+												<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Attenuation">
+													<ObjectRef Name="10" ID="{CD38D13E-1D7D-46FA-AD0C-C7D5F9690547}" WorkUnitID="{47D4E814-D669-4A08-8AD2-F706566546E0}"/>
+												</Reference>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{23AF77D7-3FEA-409B-8E44-F5B490014C61}"/>
+												</Reference>
+												<Reference Name="Effect0">
+													<Custom>
+														<Effect Name="Wwise Parametric EQ (Custom)" ID="{DA015B93-543B-4116-BCA3-0C8CC7AFCD91}" ShortID="352931019" PluginName="Wwise Parametric EQ" CompanyID="0" PluginID="105" PluginType="3">
+															<PropertyList>
+																<Property Name="FrequencyBand1" Type="Real32" Value="175"/>
+																<Property Name="FrequencyBand2" Type="Real32" Value="132"/>
+																<Property Name="FrequencyBand3" Type="Real32" Value="9397"/>
+																<Property Name="GainBand1" Type="Real32" Value="-1.5"/>
+																<Property Name="GainBand2" Type="Real32" Value="-5"/>
+																<Property Name="GainBand3" Type="Real32" Value="1.5"/>
+																<Property Name="QFactorBand2" Type="Real32" Value="1.5"/>
+															</PropertyList>
+														</Effect>
+													</Custom>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Rooms" ID="{F220833B-3FC1-4DC8-9CF3-6F367C8C1EDE}" WorkUnitID="{C91EB4C6-56DC-4541-96C4-29E948904D66}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Clerk_chatter__2" ID="{A1385894-7D83-4B8A-91D5-C3DA6FDAB916}">
+													<PropertyList>
+														<Property Name="MarkerInputMode" Type="int16" Value="2"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>Clerk_chatter\Clerk_chatter__2.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="211299271"/>
+													</MediaIDList>
+													<PluginInnerObjectList>
+														<List Name="Markers">
+															<PluginInnerObject Name="" ID="{1DF3FB6A-7FD4-42F1-9A66-449BA86A106F}" PluginName="Marker" CompanyID="0" PluginID="993">
+																<PropertyList>
+																	<Property Name="Label" Type="string" Value="Tempo: 120.0"/>
+																</PropertyList>
+															</PluginInnerObject>
+															<PluginInnerObject Name="" ID="{F559FBEB-9BAC-4275-AEED-7B72EE1FDB9B}" PluginName="Marker" CompanyID="0" PluginID="993">
+																<PropertyList>
+																	<Property Name="Label" Type="string" Value="Complete puzzle"/>
+																</PropertyList>
+															</PluginInnerObject>
+															<PluginInnerObject Name="" ID="{E7EA709E-BC20-48BA-B085-12BD8961399A}" PluginName="Marker" CompanyID="0" PluginID="993">
+																<PropertyList>
+																	<Property Name="Label" Type="string" Value="end"/>
+																	<Property Name="Time" Type="Real64" Value="8.32738428238429"/>
+																</PropertyList>
+															</PluginInnerObject>
+														</List>
+													</PluginInnerObjectList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ObjectLists/>
+											<ActiveSourceList>
+												<ActiveSource Name="Clerk_chatter__2" ID="{A1385894-7D83-4B8A-91D5-C3DA6FDAB916}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
 									</ChildrenList>
 									<ObjectLists/>
 									<Playlist>
-										<ItemRef Name="IntroVox" ID="{AB4C0808-BAB1-489B-B302-3F9B34BEC848}"/>
-										<ItemRef Name="IntroVox_01" ID="{55B9B2D5-56D6-4624-B1EA-A262AFAFD7D2}"/>
-										<ItemRef Name="IntroVox_02" ID="{46F7EBD9-D094-4956-AF11-7E2B77C81D38}"/>
-										<ItemRef Name="IntroVox_03" ID="{D9E3F678-C164-460F-B800-F377A4AEDD18}"/>
+										<ItemRef Name="Clerk_chatter_" ID="{D5C726E7-12B5-4F66-B167-B2EE688B1EED}"/>
+										<ItemRef Name="Clerk_chatter__1" ID="{878F8949-8647-465B-9BA7-D416B586BBE8}"/>
+										<ItemRef Name="Clerk_chatter__2" ID="{7A3CE0C6-D4B4-4754-82E9-1610DE73ED4B}"/>
 									</Playlist>
+								</RandomSequenceContainer>
+								<RandomSequenceContainer Name="Clerk_DungeonChatter" ID="{EF85AD03-D5D8-43BE-9578-8B6F41D87626}" ShortID="680016600">
+									<PropertyList>
+										<Property Name="3DSpatialization" Type="int16" Value="2"/>
+										<Property Name="OutputBusVolume" Type="Real64">
+											<ValueList>
+												<Value>3</Value>
+											</ValueList>
+										</Property>
+										<Property Name="RandomOrSequence" Type="int16" Value="0"/>
+										<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Attenuation">
+											<ObjectRef Name="10" ID="{CD38D13E-1D7D-46FA-AD0C-C7D5F9690547}" WorkUnitID="{47D4E814-D669-4A08-8AD2-F706566546E0}"/>
+										</Reference>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{23AF77D7-3FEA-409B-8E44-F5B490014C61}"/>
+										</Reference>
+										<Reference Name="Effect0">
+											<Custom>
+												<Effect Name="Wwise Parametric EQ (Custom)" ID="{FF0A30D1-41F8-46F1-81D5-E37B982A00E5}" ShortID="335298515" PluginName="Wwise Parametric EQ" CompanyID="0" PluginID="105" PluginType="3">
+													<PropertyList>
+														<Property Name="FrequencyBand1" Type="Real32" Value="175"/>
+														<Property Name="FrequencyBand2" Type="Real32" Value="132"/>
+														<Property Name="FrequencyBand3" Type="Real32" Value="9397"/>
+														<Property Name="GainBand1" Type="Real32" Value="-1.5"/>
+														<Property Name="GainBand2" Type="Real32" Value="-5"/>
+														<Property Name="GainBand3" Type="Real32" Value="1.5"/>
+														<Property Name="QFactorBand2" Type="Real32" Value="1.5"/>
+													</PropertyList>
+												</Effect>
+											</Custom>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Rooms" ID="{F220833B-3FC1-4DC8-9CF3-6F367C8C1EDE}" WorkUnitID="{C91EB4C6-56DC-4541-96C4-29E948904D66}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<Sound Name="TheseExactHallways" ID="{CC3E1903-EE92-4BF4-88FF-38F2BB66CD8D}" ShortID="748947528">
+											<PropertyList>
+												<Property Name="3DSpatialization" Type="int16" Value="2"/>
+												<Property Name="OutputBusVolume" Type="Real64">
+													<ValueList>
+														<Value>3</Value>
+													</ValueList>
+												</Property>
+												<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Attenuation">
+													<ObjectRef Name="10" ID="{CD38D13E-1D7D-46FA-AD0C-C7D5F9690547}" WorkUnitID="{47D4E814-D669-4A08-8AD2-F706566546E0}"/>
+												</Reference>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{23AF77D7-3FEA-409B-8E44-F5B490014C61}"/>
+												</Reference>
+												<Reference Name="Effect0">
+													<Custom>
+														<Effect Name="Wwise Parametric EQ (Custom)" ID="{75B4563F-94F9-4975-8021-F3F11FBC14BF}" ShortID="837757364" PluginName="Wwise Parametric EQ" CompanyID="0" PluginID="105" PluginType="3">
+															<PropertyList>
+																<Property Name="FrequencyBand1" Type="Real32" Value="175"/>
+																<Property Name="FrequencyBand2" Type="Real32" Value="132"/>
+																<Property Name="FrequencyBand3" Type="Real32" Value="9397"/>
+																<Property Name="GainBand1" Type="Real32" Value="-1.5"/>
+																<Property Name="GainBand2" Type="Real32" Value="-5"/>
+																<Property Name="GainBand3" Type="Real32" Value="1.5"/>
+																<Property Name="QFactorBand2" Type="Real32" Value="1.5"/>
+															</PropertyList>
+														</Effect>
+													</Custom>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Rooms" ID="{F220833B-3FC1-4DC8-9CF3-6F367C8C1EDE}" WorkUnitID="{C91EB4C6-56DC-4541-96C4-29E948904D66}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="TheseExactHallways" ID="{F5FD3172-85C7-4051-9B3C-B9757A0E33AA}">
+													<Language>SFX</Language>
+													<AudioFile>TheseExactHallways.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="930652008"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ObjectLists/>
+											<ActiveSourceList>
+												<ActiveSource Name="TheseExactHallways" ID="{F5FD3172-85C7-4051-9B3C-B9757A0E33AA}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="ListenCloslyNow" ID="{7D6E0512-C46A-46B1-8C88-795677ABB8EB}" ShortID="31319043">
+											<PropertyList>
+												<Property Name="3DSpatialization" Type="int16" Value="2"/>
+												<Property Name="OutputBusVolume" Type="Real64">
+													<ValueList>
+														<Value>3</Value>
+													</ValueList>
+												</Property>
+												<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Attenuation">
+													<ObjectRef Name="10" ID="{CD38D13E-1D7D-46FA-AD0C-C7D5F9690547}" WorkUnitID="{47D4E814-D669-4A08-8AD2-F706566546E0}"/>
+												</Reference>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{23AF77D7-3FEA-409B-8E44-F5B490014C61}"/>
+												</Reference>
+												<Reference Name="Effect0">
+													<Custom>
+														<Effect Name="Wwise Parametric EQ (Custom)" ID="{A86BF13D-9AB5-4B88-9E91-738C4B1DD579}" ShortID="73967225" PluginName="Wwise Parametric EQ" CompanyID="0" PluginID="105" PluginType="3">
+															<PropertyList>
+																<Property Name="FrequencyBand1" Type="Real32" Value="175"/>
+																<Property Name="FrequencyBand2" Type="Real32" Value="132"/>
+																<Property Name="FrequencyBand3" Type="Real32" Value="9397"/>
+																<Property Name="GainBand1" Type="Real32" Value="-1.5"/>
+																<Property Name="GainBand2" Type="Real32" Value="-5"/>
+																<Property Name="GainBand3" Type="Real32" Value="1.5"/>
+																<Property Name="QFactorBand2" Type="Real32" Value="1.5"/>
+															</PropertyList>
+														</Effect>
+													</Custom>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Rooms" ID="{F220833B-3FC1-4DC8-9CF3-6F367C8C1EDE}" WorkUnitID="{C91EB4C6-56DC-4541-96C4-29E948904D66}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="ListenCloslyNow" ID="{B5AE7A31-E73B-4496-BCC4-3B77024374D5}">
+													<Language>SFX</Language>
+													<AudioFile>ListenCloslyNow.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="218572068"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ObjectLists/>
+											<ActiveSourceList>
+												<ActiveSource Name="ListenCloslyNow" ID="{B5AE7A31-E73B-4496-BCC4-3B77024374D5}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+									</ChildrenList>
+									<ObjectLists/>
+									<Playlist>
+										<ItemRef Name="TheseExactHallways" ID="{CC3E1903-EE92-4BF4-88FF-38F2BB66CD8D}"/>
+										<ItemRef Name="ListenCloslyNow" ID="{7D6E0512-C46A-46B1-8C88-795677ABB8EB}"/>
+									</Playlist>
+								</RandomSequenceContainer>
+								<RandomSequenceContainer Name="Clerk_3ndEncounter" ID="{57C7799B-932E-44A2-B451-CFC404973AB0}" ShortID="587244783">
+									<PropertyList>
+										<Property Name="3DPosition" Type="int16" Value="2"/>
+										<Property Name="3DSpatialization" Type="int16" Value="2"/>
+										<Property Name="OutputBusVolume" Type="Real64">
+											<ValueList>
+												<Value>3</Value>
+											</ValueList>
+										</Property>
+										<Property Name="RandomOrSequence" Type="int16" Value="0"/>
+										<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Attenuation">
+											<ObjectRef Name="10" ID="{CD38D13E-1D7D-46FA-AD0C-C7D5F9690547}" WorkUnitID="{47D4E814-D669-4A08-8AD2-F706566546E0}"/>
+										</Reference>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{23AF77D7-3FEA-409B-8E44-F5B490014C61}"/>
+										</Reference>
+										<Reference Name="Effect0">
+											<Custom>
+												<Effect Name="Wwise Parametric EQ (Custom)" ID="{B84D7C95-495A-4476-930E-CBF00B8A10F3}" ShortID="863437906" PluginName="Wwise Parametric EQ" CompanyID="0" PluginID="105" PluginType="3">
+													<PropertyList>
+														<Property Name="FrequencyBand1" Type="Real32" Value="175"/>
+														<Property Name="FrequencyBand2" Type="Real32" Value="132"/>
+														<Property Name="FrequencyBand3" Type="Real32" Value="9397"/>
+														<Property Name="GainBand1" Type="Real32" Value="-1.5"/>
+														<Property Name="GainBand2" Type="Real32" Value="-5"/>
+														<Property Name="GainBand3" Type="Real32" Value="1.5"/>
+														<Property Name="QFactorBand2" Type="Real32" Value="1.5"/>
+													</PropertyList>
+												</Effect>
+											</Custom>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Rooms" ID="{F220833B-3FC1-4DC8-9CF3-6F367C8C1EDE}" WorkUnitID="{C91EB4C6-56DC-4541-96C4-29E948904D66}"/>
+										</Reference>
+									</ReferenceList>
+									<PositioningInfo>
+										<Position Name="" ID="{5E6B4EF1-E7DB-4ABD-B10C-703A4BC82C79}">
+											<ChildrenList>
+												<Path2D Name="VA_Mixer_Path" ID="{6A60E3F9-D62D-4D58-BB99-CC9C7126E7B8}">
+													<PropertyList>
+														<Property Name="Duration" Type="Uint32" Value="20000"/>
+														<Property Name="RandomX" Type="Real64" Value="4"/>
+														<Property Name="RandomY" Type="Real64" Value="5"/>
+													</PropertyList>
+													<PointList>
+														<Point>
+															<XPos>-0</XPos>
+															<YPos>1.9774</YPos>
+															<ZPos>55</ZPos>
+															<Flags>12</Flags>
+															<Time>0</Time>
+														</Point>
+													</PointList>
+												</Path2D>
+											</ChildrenList>
+										</Position>
+									</PositioningInfo>
+									<ObjectLists/>
 								</RandomSequenceContainer>
 							</ChildrenList>
 							<PositioningInfo>
@@ -1631,10 +2109,10 @@
 							<GroupingInfo>
 								<GroupingBehaviorList>
 									<GroupingBehavior>
-										<ItemRef Name="Clerk_chatter2" ID="{3F52093C-3582-4076-9616-273423A7CFC9}"/>
+										<ItemRef Name="Clerk_DungeonChatter" ID="{EF85AD03-D5D8-43BE-9578-8B6F41D87626}"/>
 									</GroupingBehavior>
 									<GroupingBehavior>
-										<ItemRef Name="Clerk_chatter1" ID="{6C195452-FDF0-4147-8549-75299297A883}"/>
+										<ItemRef Name="Clerk_chatter2" ID="{3F52093C-3582-4076-9616-273423A7CFC9}"/>
 									</GroupingBehavior>
 									<GroupingBehavior>
 										<ItemRef Name="IntroSeq" ID="{36819F54-BDA1-476B-BD4C-00E3C63320E2}"/>
@@ -1643,7 +2121,13 @@
 										<ItemRef Name="ClerkCrawl" ID="{DCC2F470-3DD6-4A7C-AA4F-A486B85A7616}"/>
 									</GroupingBehavior>
 									<GroupingBehavior>
+										<ItemRef Name="Clerk_3ndEncounter" ID="{57C7799B-932E-44A2-B451-CFC404973AB0}"/>
+									</GroupingBehavior>
+									<GroupingBehavior>
 										<ItemRef Name="Clerk_chatter3" ID="{BC7ADABA-B3D8-4FA2-AB04-803B9892EEB2}"/>
+									</GroupingBehavior>
+									<GroupingBehavior>
+										<ItemRef Name="Clerk_2ndEncounter" ID="{2B2316E0-3E17-4ED4-8DDA-2C6A10051A21}"/>
 									</GroupingBehavior>
 									<GroupingBehavior>
 										<ItemRef Name="ClerkIntro" ID="{9FE4C1F4-0295-4857-896C-B7DD5670F34B}"/>
@@ -1654,6 +2138,12 @@
 										<SwitchRef Name="Intro" ID="{9414030F-66EC-47A1-888A-89A1CA469C6A}"/>
 										<ItemList>
 											<ItemRef Name="IntroSeq" ID="{36819F54-BDA1-476B-BD4C-00E3C63320E2}"/>
+										</ItemList>
+									</Grouping>
+									<Grouping>
+										<SwitchRef Name="SecondEncounter" ID="{FA252621-44C6-43C8-91A5-6ED1246A1703}"/>
+										<ItemList>
+											<ItemRef Name="Clerk_2ndEncounter" ID="{2B2316E0-3E17-4ED4-8DDA-2C6A10051A21}"/>
 										</ItemList>
 									</Grouping>
 									<Grouping>
@@ -1669,6 +2159,12 @@
 										</ItemList>
 									</Grouping>
 									<Grouping>
+										<SwitchRef Name="ThirdEncounter" ID="{C3C8B14F-B61D-4AE0-9511-DB70521A87E9}"/>
+										<ItemList>
+											<ItemRef Name="Clerk_3ndEncounter" ID="{57C7799B-932E-44A2-B451-CFC404973AB0}"/>
+										</ItemList>
+									</Grouping>
+									<Grouping>
 										<SwitchRef Name="ClerkCrawl" ID="{64EADD76-180B-4140-9FDB-667A47D077E2}"/>
 										<ItemList>
 											<ItemRef Name="ClerkCrawl" ID="{DCC2F470-3DD6-4A7C-AA4F-A486B85A7616}"/>
@@ -1681,15 +2177,37 @@
 										</ItemList>
 									</Grouping>
 									<Grouping>
-										<SwitchRef Name="ClerkChatter1" ID="{6AD5FEDC-6CD0-4A3D-91C2-9265E8947D7B}"/>
+										<SwitchRef Name="DungeonChatter" ID="{83372DDE-E890-4272-87B3-B3DDD9E6D533}"/>
 										<ItemList>
-											<ItemRef Name="Clerk_chatter1" ID="{6C195452-FDF0-4147-8549-75299297A883}"/>
+											<ItemRef Name="Clerk_DungeonChatter" ID="{EF85AD03-D5D8-43BE-9578-8B6F41D87626}"/>
 										</ItemList>
 									</Grouping>
 								</GroupingList>
 							</GroupingInfo>
 						</SwitchContainer>
 					</ChildrenList>
+					<PositioningInfo>
+						<Position Name="" ID="{9CBAE4F5-4153-4DCC-9D1D-40F07921ED14}">
+							<ChildrenList>
+								<Path2D Name="VA_Mixer_Path" ID="{2AE32D92-45BA-45DD-85B0-FF79B23C2532}">
+									<PropertyList>
+										<Property Name="Duration" Type="Uint32" Value="20000"/>
+										<Property Name="RandomX" Type="Real64" Value="4"/>
+										<Property Name="RandomY" Type="Real64" Value="5"/>
+									</PropertyList>
+									<PointList>
+										<Point>
+											<XPos>-0</XPos>
+											<YPos>1.9774</YPos>
+											<ZPos>54</ZPos>
+											<Flags>12</Flags>
+											<Time>0</Time>
+										</Point>
+									</PointList>
+								</Path2D>
+							</ChildrenList>
+						</Position>
+					</PositioningInfo>
 					<ObjectLists/>
 				</ActorMixer>
 			</ChildrenList>

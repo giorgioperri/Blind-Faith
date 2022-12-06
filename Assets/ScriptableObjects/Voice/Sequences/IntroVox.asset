@@ -13,9 +13,11 @@ MonoBehaviour:
   m_Name: IntroVox
   m_EditorClassIdentifier: 
   sequenceLines:
-  - {fileID: 11400000, guid: a17e32695ada35549a7cbf9d542bf6f9, type: 2}
-  - {fileID: 11400000, guid: f76c588fc379e364a97ba5bfef7130ba, type: 2}
+  - {fileID: 11400000, guid: 78156b19a61103947bd6587f65139543, type: 2}
+  - {fileID: 11400000, guid: 16e99468e8a49ce428093995be46d41a, type: 2}
   - {fileID: 11400000, guid: 645e0a88c5fe36f47bc3f6b83f20510d, type: 2}
+  - {fileID: 11400000, guid: f76c588fc379e364a97ba5bfef7130ba, type: 2}
+  - {fileID: 11400000, guid: a17e32695ada35549a7cbf9d542bf6f9, type: 2}
   sequenceSwitch:
     idInternal: 0
     valueGuidInternal: 

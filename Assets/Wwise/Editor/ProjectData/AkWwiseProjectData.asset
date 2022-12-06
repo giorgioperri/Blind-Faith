@@ -1000,8 +1000,8 @@ MonoBehaviour:
         guid: 4415bc8e58ba4848a9771366cdd39cee
       Path: Events\Default Work Unit\VA\VA_Clerk\VA_Clerk_Play
       maxAttenuation: 0
-      maxDuration: 21.32568
-      minDuration: 1
+      maxDuration: 13.325681
+      minDuration: 0
     - name: VA_Pause
       guid: c9bf07d16212704a96bfebfab9f0e214
       id: 938429017
@@ -1366,7 +1366,7 @@ MonoBehaviour:
     ParentPath: Switches\Default Work Unit
     guid: 129020783626944d87631f9c3a93f8e0
     GuidInternal: 
-    m_lastTime: -8585313396963619185
+    m_lastTime: -8585313207613726005
     List:
     - name: Locomotion
       guid: ec8b7419cfaab54dbd4aee612fa66e6b
@@ -1576,6 +1576,25 @@ MonoBehaviour:
         - ElementName: ClerkIntro
           ObjectType: 10
           guid: 3024ad821f230f4a9382cee494a9df9e
+      - name: DungeonChatter
+        guid: de2d378390e8724287b3b3ddd9e6d533
+        id: 994602288
+        PathAndIcons:
+        - ElementName: Switches
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: 129020783626944d87631f9c3a93f8e0
+        - ElementName: VA
+          ObjectType: 4
+          guid: 72aefdfe10b4f645a01820f025eaef72
+        - ElementName: VA_Clerk_Switch_Group
+          ObjectType: 11
+          guid: f60e6d600d208144b08366f3c0d6c337
+        - ElementName: DungeonChatter
+          ObjectType: 10
+          guid: de2d378390e8724287b3b3ddd9e6d533
       - name: Intro
         guid: 0f031494ec66a147888a89a1ca469c6a
         id: 1125500713
@@ -1595,6 +1614,44 @@ MonoBehaviour:
         - ElementName: Intro
           ObjectType: 10
           guid: 0f031494ec66a147888a89a1ca469c6a
+      - name: SecondEncounter
+        guid: 212625fac644c84391a56ed1246a1703
+        id: 1703442692
+        PathAndIcons:
+        - ElementName: Switches
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: 129020783626944d87631f9c3a93f8e0
+        - ElementName: VA
+          ObjectType: 4
+          guid: 72aefdfe10b4f645a01820f025eaef72
+        - ElementName: VA_Clerk_Switch_Group
+          ObjectType: 11
+          guid: f60e6d600d208144b08366f3c0d6c337
+        - ElementName: SecondEncounter
+          ObjectType: 10
+          guid: 212625fac644c84391a56ed1246a1703
+      - name: ThirdEncounter
+        guid: 4fb1c8c31db6e04a9511db70521a87e9
+        id: 3682658335
+        PathAndIcons:
+        - ElementName: Switches
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: 129020783626944d87631f9c3a93f8e0
+        - ElementName: VA
+          ObjectType: 4
+          guid: 72aefdfe10b4f645a01820f025eaef72
+        - ElementName: VA_Clerk_Switch_Group
+          ObjectType: 11
+          guid: f60e6d600d208144b08366f3c0d6c337
+        - ElementName: ThirdEncounter
+          ObjectType: 10
+          guid: 4fb1c8c31db6e04a9511db70521a87e9
       ValueGuids: []
       ValueIcons: []
       valuesInternal: []
@@ -1644,7 +1701,7 @@ MonoBehaviour:
         guid: 14a961bd002ffe41ba1f908602494c89
       Path: Triggers\Default Work Unit\VA_Test
   ExpandedFileSystemItemIds: 
-  ExpandedWaapiItemIds: 01000000050000000600000008000000090000000a0000000b0000000d0000001000000011000000130000001e00000024000000390000004d0000004e00000051000000870c0000
+  ExpandedWaapiItemIds: 0500000006000000090000001100000012000000140000001f00000035000000360000003d000000
   AutoSyncSelection: 0
   autoPopulateEnabled: 1
   currentDataSource: 0

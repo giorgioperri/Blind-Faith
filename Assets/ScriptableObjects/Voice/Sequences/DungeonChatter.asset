@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e23f4fe30a8ce45fc9625af385fab37c, type: 3}
+  m_Name: DungeonChatter
+  m_EditorClassIdentifier: 
+  sequenceLines:
+  - {fileID: 11400000, guid: a17e32695ada35549a7cbf9d542bf6f9, type: 2}
+  - {fileID: 11400000, guid: f76c588fc379e364a97ba5bfef7130ba, type: 2}
+  - {fileID: 11400000, guid: 645e0a88c5fe36f47bc3f6b83f20510d, type: 2}
+  sequenceSwitch:
+    idInternal: 0
+    valueGuidInternal: 
+    groupIdInternal: 0
+    groupGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 363eac5f8d42fc4418f294925930a500,
+      type: 2}
