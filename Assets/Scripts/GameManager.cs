@@ -3,6 +3,7 @@ using System.Collections;
 using Cinemachine;
 using StarterAssets;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.InputSystem;
 
 public class GameManager : MonoBehaviour
@@ -50,6 +51,8 @@ public class GameManager : MonoBehaviour
 
     void Update()
     {
+		if (SceneManager.GetActiveScene().name == "Rafal_intro") return;
+
         if (Keyboard.current.wKey.isPressed && wTime < 1.2f)
         {
             wTime += Time.deltaTime;
