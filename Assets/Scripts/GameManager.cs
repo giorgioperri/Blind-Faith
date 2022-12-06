@@ -1,6 +1,9 @@
 using System;
+using System.Collections;
+using Cinemachine;
 using StarterAssets;
 using UnityEngine;
+using UnityEngine.InputSystem;
 
 public class GameManager : MonoBehaviour
 {
@@ -22,6 +25,12 @@ public class GameManager : MonoBehaviour
     public AK.Wwise.Event PauseVA;
     public AK.Wwise.Event ResumeVA;
 
+    private float wTime;
+
+    [SerializeField] private CinemachineVirtualCamera mainVC;
+    [SerializeField] private CinemachineVirtualCamera socketVC;
+    [SerializeField] private CinemachineVirtualCamera pillarVC;
+
     private void Awake()
     {
         if (Instance != null)
@@ -35,10 +44,27 @@ public class GameManager : MonoBehaviour
     private void Start()
     {
         playerInput = FindObjectOfType<StarterAssetsInputs>();
+        TooltipManager.Instance.ToggleTooltip("Use the WASD keys to move");
+        TooltipManager.Instance.currentTooltip = TooltipTypes.WASDMove;
     }
 
     void Update()
     {
+        if (Keyboard.current.wKey.isPressed && wTime < 1.2f)
+        {
+            wTime += Time.deltaTime;
+        }
+
+        if (Keyboard.current.wKey.wasReleasedThisFrame)
+        {
+            wTime = 0;
+        }
+
+        if (wTime > 1.2f && TooltipManager.Instance.currentTooltip == TooltipTypes.WASDMove)
+        {
+            TooltipManager.Instance.CloseTooltip();
+        }
+        
         if (playerInput.pause)
         {
             isPaused = !isPaused;
@@ -78,5 +104,23 @@ public class GameManager : MonoBehaviour
             LanternManager.Instance.canPlayChargeSound = true;
             isLookingAtAngel = false;
         }
+    }
+
+    public void InitSocketEvent()
+    {
+        StartCoroutine(StartSocketEvent());
+    }
+
+    private IEnumerator StartSocketEvent()
+    {
+        Debug.Log("hihi");
+        socketVC.gameObject.SetActive(true);
+        mainVC.gameObject.SetActive(false);
+        isInteractingWithMirror = true;
+        yield return new WaitForSecondsRealtime(2f);
+        mainVC.gameObject.SetActive(true);
+        socketVC.gameObject.SetActive(false);
+        yield return new WaitForSecondsRealtime(1f);
+        isInteractingWithMirror = false;
     }
 }
