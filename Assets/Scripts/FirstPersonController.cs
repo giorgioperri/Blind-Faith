@@ -3,6 +3,7 @@ using UnityEngine;
 using System.Collections;
 using Cinemachine;
 using Unity.VisualScripting;
+using UnityEngine.Animations;
 #if ENABLE_INPUT_SYSTEM && STARTER_ASSETS_PACKAGES_CHECKED
 using UnityEngine.InputSystem;
 using System.Collections.Generic;
@@ -110,6 +111,9 @@ namespace StarterAssets
 		private float _jumpTimeoutDelta;
 		private float _fallTimeoutDelta;
 
+		public GameObject turnTo;
+		public float originalz;
+
 
 #if ENABLE_INPUT_SYSTEM && STARTER_ASSETS_PACKAGES_CHECKED
 		private PlayerInput _playerInput;
@@ -151,6 +155,8 @@ namespace StarterAssets
 
 			// set default Y pos for HeadBob to camera's Y
 			_defaultYpos = CinemachineCameraTarget.transform.localPosition.y;
+
+			originalz = transform.rotation.eulerAngles.z;
 		}
 
 		private void Start()
@@ -314,6 +320,7 @@ namespace StarterAssets
 
 			// rotate the player left and right
 			transform.Rotate(Vector3.up * _rotationVelocity);
+			//transform.Rotate(transform.forward, 0f);
 		}
 
 		private void Move()

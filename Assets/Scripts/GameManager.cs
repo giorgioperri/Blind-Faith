@@ -1,6 +1,7 @@
 using System;
 using StarterAssets;
 using UnityEngine;
+using UnityEngine.InputSystem;
 
 public class GameManager : MonoBehaviour
 {
@@ -22,6 +23,8 @@ public class GameManager : MonoBehaviour
     public AK.Wwise.Event PauseVA;
     public AK.Wwise.Event ResumeVA;
 
+    private float wTime;
+
     private void Awake()
     {
         if (Instance != null)
@@ -35,10 +38,27 @@ public class GameManager : MonoBehaviour
     private void Start()
     {
         playerInput = FindObjectOfType<StarterAssetsInputs>();
+        TooltipManager.Instance.ToggleTooltip("Use the WASD keys to move");
+        TooltipManager.Instance.currentTooltip = TooltipTypes.WASDMove;
     }
 
     void Update()
     {
+        if (Keyboard.current.wKey.isPressed && wTime < 1.2f)
+        {
+            wTime += Time.deltaTime;
+        }
+
+        if (Keyboard.current.wKey.wasReleasedThisFrame)
+        {
+            wTime = 0;
+        }
+
+        if (wTime > 1.2f && TooltipManager.Instance.currentTooltip == TooltipTypes.WASDMove)
+        {
+            TooltipManager.Instance.CloseTooltip();
+        }
+        
         if (playerInput.pause)
         {
             isPaused = !isPaused;

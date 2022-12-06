@@ -9,5 +9,6 @@ public class PillarDescender : MonoBehaviour
     public void OnBeamReceived()
     {
         anim.SetTrigger("Descend");
+        AkSoundEngine.PostEvent("MassiveDevice", gameObject);
     }
 }
