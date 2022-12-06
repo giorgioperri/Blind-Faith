@@ -8,7 +8,8 @@ using UnityEngine;
 public enum PipeTypes
 {
     Red,
-    Green
+    Green,
+    Yellow
 }
 
 public class PipeEnd : MonoBehaviour
@@ -19,10 +20,12 @@ public class PipeEnd : MonoBehaviour
     [SerializeField] private PipeTypes _pipeType;
     [SerializeField] private GameObject redTarget;
     [SerializeField] private GameObject greenTarget;
+    [SerializeField] private GameObject yellowTarget;
 
     [SerializeField] private Material _tubeOff;
     [SerializeField] private Material _tubeGreen;
     [SerializeField] private Material _tubeRed;
+    [SerializeField] private Material _tubeYellow;
 
     private List<GameObject> _pipePieces = new List<GameObject>();
     [SerializeField] private GameObject _pipeEnd;
@@ -41,15 +44,38 @@ public class PipeEnd : MonoBehaviour
 
     private void Start()
     {
-        _laserColor = _pipeType == PipeTypes.Red ? Color.red : Color.green;
+        switch (_pipeType)
+        {
+            case PipeTypes.Green:
+                _laserColor = Color.green;
+                break;
+            case PipeTypes.Red:
+                _laserColor = Color.red;
+                break;
+            case PipeTypes.Yellow:
+                _laserColor = Color.yellow;
+                break;
+        }
+        
         if (_isPipeInput)
         {
             foreach (Transform piece in transform.parent)
             {
                 _pipePieces.Add(piece.gameObject);
             }
-            
-            Instantiate(_pipeType == PipeTypes.Red ? redTarget : greenTarget, transform.position, quaternion.identity, transform);
+
+            switch (_pipeType)
+            {
+                case PipeTypes.Green:
+                    Instantiate(greenTarget, transform.position, transform.rotation, transform);
+                    break;
+                case PipeTypes.Red:
+                    Instantiate(redTarget, transform.position, transform.rotation, transform);
+                    break;
+                case PipeTypes.Yellow:
+                    Instantiate(yellowTarget, transform.position, transform.rotation, transform);
+                    break;
+            }
         }
     }
 
@@ -86,7 +112,18 @@ public class PipeEnd : MonoBehaviour
         
         foreach (GameObject pipePiece in _pipePieces)
         {
-            pipePiece.GetComponent<MeshRenderer>().material = _pipeType == PipeTypes.Red ? _tubeRed : _tubeGreen;
+            switch (_pipeType)
+            {
+                case PipeTypes.Green:
+                    pipePiece.GetComponent<MeshRenderer>().material = _tubeGreen;
+                    break;
+                case PipeTypes.Red:
+                    pipePiece.GetComponent<MeshRenderer>().material = _tubeRed;
+                    break;
+                case PipeTypes.Yellow:
+                    pipePiece.GetComponent<MeshRenderer>().material = _tubeYellow;
+                    break;
+            }
         }
     }
     

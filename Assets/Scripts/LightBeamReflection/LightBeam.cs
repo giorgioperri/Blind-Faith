@@ -82,12 +82,24 @@ public class LightBeam
         }
         else if(hitInfo.collider.gameObject.CompareTag("Door"))
         {
-            hitTheDoor = true;
-            if (hitInfo.collider.gameObject.GetComponent<Door>().enabled == false && hitTheDoor)
+            if (_lightLaser.startColor == Color.red)
             {
-                hitInfo.collider.gameObject.GetComponent<Door>().enabled = true;
-                hitInfo.collider.gameObject.transform.GetChild(0).GetComponent<Renderer>().material.color = Color.green;
+                hitInfo.collider.gameObject.GetComponent<Door>().redHit = true;
+                _lightIndices.Add(hitInfo.point);
+                UpdateLaser();
+                return;
+            } 
+            
+            if (_lightLaser.startColor == Color.green)
+            {
+                hitInfo.collider.gameObject.GetComponent<Door>().greenHit = true;
+                _lightIndices.Add(hitInfo.point);
+                UpdateLaser();
+                return;
             }
+            
+            hitTheDoor = true;
+            hitInfo.collider.gameObject.SendMessage("OnBeamReceived");
             _lightIndices.Add(hitInfo.point);
             UpdateLaser();
         } else if (hitInfo.collider.gameObject.CompareTag("Player"))
@@ -135,6 +147,21 @@ public class LightBeam
                 hitInfo.transform.parent.SendMessage("OnCorrectBeamReceived");
             }
             
+            _lightIndices.Add(hitInfo.point);
+            UpdateLaser();
+        } else if (hitInfo.collider.gameObject.CompareTag("YellowTarget"))
+        {
+            if (_lightLaser.startColor == Color.yellow)
+            {
+                hitInfo.transform.parent.SendMessage("OnCorrectBeamReceived");
+            }
+            
+            _lightIndices.Add(hitInfo.point);
+            UpdateLaser();
+        } else if (hitInfo.collider.gameObject.CompareTag("Pillar"))
+        {
+            hitInfo.transform.parent.SendMessage("OnBeamReceived");
+            hitInfo.transform.tag = "Untagged";
             _lightIndices.Add(hitInfo.point);
             UpdateLaser();
         }

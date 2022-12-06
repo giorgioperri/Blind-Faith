@@ -16,6 +16,7 @@ public class RotateObjects : Interactable
     [SerializeField] private bool _canPlayTurnSound = true;
     [SerializeField] private Light _light;
     public bool shouldStabilizeY;
+
     
     public void OnBeamReceived()
     {
