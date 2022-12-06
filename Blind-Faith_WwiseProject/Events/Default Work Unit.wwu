@@ -454,6 +454,17 @@
 						</Action>
 					</ChildrenList>
 				</Event>
+				<Event Name="MassiveDevice" ID="{C5E00DB8-93C0-4FB0-AF38-BBB9A629B6C4}">
+					<ChildrenList>
+						<Action Name="" ID="{0CB1AB5D-D20E-4A0E-BDA4-4CB2CF272A39}" ShortID="489646297">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="MassiveDevice" ID="{4254634E-F4EE-493F-90F2-F343FB934FDC}" WorkUnitID="{10A75CA5-3F55-455C-A103-004D7C43FEF2}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>
