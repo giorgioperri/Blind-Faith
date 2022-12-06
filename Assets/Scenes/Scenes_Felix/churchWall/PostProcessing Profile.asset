@@ -41,7 +41,7 @@ MonoBehaviour:
   dirtIntensity:
     m_OverrideState: 0
     m_Value: 0
---- !u!114 &-5892084243836537644
+--- !u!114 &-6896731392289269634
 MonoBehaviour:
   m_ObjectHideFlags: 3
   m_CorrespondingSourceObject: {fileID: 0}
@@ -50,23 +50,34 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cfffc298908164ce083c9c5e7137028d, type: 3}
-  m_Name: LowRes
+  m_Script: {fileID: 11500000, guid: 84d5e41f92d0f43b8b6ff8cad98e0c16, type: 3}
+  m_Name: Fisheye
   m_EditorClassIdentifier: 
   active: 1
   enable:
-    m_OverrideState: 1
-    m_Value: 1
-  height:
-    m_OverrideState: 1
-    m_Value: 280
-  mask:
-    m_OverrideState: 1
-    m_Value: {fileID: 0}
-    dimension: 1
-  maskChannel:
-    m_OverrideState: 1
+    m_OverrideState: 0
     m_Value: 0
+  fisheyeType:
+    m_OverrideState: 0
+    m_Value: 0
+  bend:
+    m_OverrideState: 0
+    m_Value: 1
+  cutOffX:
+    m_OverrideState: 0
+    m_Value: 0.5
+  cutOffY:
+    m_OverrideState: 0
+    m_Value: 0.5
+  fadeX:
+    m_OverrideState: 0
+    m_Value: 1
+  fadeY:
+    m_OverrideState: 0
+    m_Value: 1
+  size:
+    m_OverrideState: 0
+    m_Value: 1
 --- !u!114 &-5104996580358124353
 MonoBehaviour:
   m_ObjectHideFlags: 3
@@ -147,7 +158,7 @@ MonoBehaviour:
     m_Value: 1
   GranularityAmount:
     m_OverrideState: 1
-    m_Value: 0.01
+    m_Value: 0.05
   TapeNoise:
     m_OverrideState: 1
     m_Value: 0
@@ -242,10 +253,10 @@ MonoBehaviour:
   - {fileID: 3204434833638637549}
   - {fileID: -2590119824283203084}
   - {fileID: 5963856766381192045}
-  - {fileID: -5892084243836537644}
   - {fileID: -5104996580358124353}
   - {fileID: 5182197354792172486}
   - {fileID: 2446978809152485942}
+  - {fileID: -6896731392289269634}
 --- !u!114 &1939566113816612936
 MonoBehaviour:
   m_ObjectHideFlags: 3
