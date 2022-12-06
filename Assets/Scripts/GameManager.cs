@@ -32,6 +32,8 @@ public class GameManager : MonoBehaviour
     [SerializeField] private CinemachineVirtualCamera socketVC;
     [SerializeField] private CinemachineVirtualCamera pillarVC;
 
+    [SerializeField] private bool _isIntro;
+
     private void Awake()
     {
         if (Instance != null)
@@ -44,6 +46,7 @@ public class GameManager : MonoBehaviour
 
     private void Start()
     {
+        if (_isIntro) return;
         playerInput = FindObjectOfType<StarterAssetsInputs>();
         TooltipManager.Instance.ToggleTooltip("Use the WASD keys to move");
         TooltipManager.Instance.currentTooltip = TooltipTypes.WASDMove;
@@ -51,7 +54,7 @@ public class GameManager : MonoBehaviour
 
     void Update()
     {
-		if (SceneManager.GetActiveScene().name == "Rafal_intro") return;
+		if (_isIntro) return;
 
         if (Keyboard.current.wKey.isPressed && wTime < 1.2f)
         {

@@ -24,10 +24,10 @@ public class LevelChanger : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (!(animator.GetCurrentAnimatorStateInfo(0).length >
+        /*if (!(animator.GetCurrentAnimatorStateInfo(0).length >
             animator.GetCurrentAnimatorStateInfo(0).normalizedTime) && SceneManager.GetActiveScene().name == "Rafal_intro")
         {
             FadeToLevel(1);
-        }
+        }*/
     }
 }
