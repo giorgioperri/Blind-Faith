@@ -62,12 +62,15 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3329117030622782370}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 3eee910f5507021419fae9da04aee82a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   _doorAnim: {fileID: 3329117030622782369}
+  isPrismatic: 0
+  greenHit: 0
+  redHit: 0
 --- !u!65 &3329117030622782382
 BoxCollider:
   m_ObjectHideFlags: 0
