@@ -24,51 +24,39 @@ public class LightMeshSpawner : MonoBehaviour
 
     public void SetLightBeamPoints(LineRenderer _laser)
     {
+        // If no beam exists, create one
         if (_locallyStoredPoints.Count != _laser.positionCount && _lightMeshes.Count == 0)
         {
             DestroyLightBeam();
-            for (int i = 0; i < _laser.positionCount; i++)
-            {
-                _locallyStoredPoints.Add(_laser.GetPosition(i));
-            }
-
-            CreateLightMeshes(0);
+            ClearAndUpdatePointList(_laser);
+            CreateLightMeshes(0, _laser);
             Debug.Log("Beam regenerated.");
         }
         // If new beam is shorter than existing one, delete tail segment(s)
         else if (_locallyStoredPoints.Count > _laser.positionCount)
         {
-            ClearAndUpdatePointList(_laser);
             DeleteTail(_laser.positionCount-1);
-            UpdateLightMeshes(_locallyStoredPoints.Count-1);
             Debug.Log("Tail deleted.");
         }
         // If new beam is longer than existing one, add new segment(s)
         else if (_locallyStoredPoints.Count < _laser.positionCount)
         {
-            int createFrom = _locallyStoredPoints.Count - 2;
-            DeleteTail(createFrom);
-            ClearAndUpdatePointList(_laser);
-            CreateLightMeshes(createFrom);
+            int createFrom = _locallyStoredPoints.Count - 1;
+            CreateLightMeshes(createFrom, _laser);
             Debug.Log("Tail segments added.");
         }
-        // If reflection points remain the same but the path changes from some point
-        else if (_locallyStoredPoints.Count == _laser.positionCount)
-        {
-            for (int i = 0; i < _laser.positionCount; i++)
+        // If a reflection point changes, correct alignment for subsequent meshes
+        for (int i = 0; i < _laser.positionCount; i++)
+        { 
+            if (!_locallyStoredPoints[i].Equals(_laser.GetPosition(i))) 
             { 
-                if (!_locallyStoredPoints[i].Equals(_laser.GetPosition(i)))
-                {
-                    Debug.Log("Beam Updated!");
-                    int updateMeshesFrom = i-1;
-                    ClearAndUpdatePointList(_laser);
-                    UpdateLightMeshes(updateMeshesFrom);
-                    //Debug.Log("Beam updated.");
-                    return;
-                }
+                int updateMeshesFrom = i-1; 
+                ClearAndUpdatePointList(_laser); 
+                UpdateLightMeshes(updateMeshesFrom);
+                Debug.Log("Beam Updated from Mesh: " + updateMeshesFrom);
+                return;
             }
         }
-        
     }
 
     
@@ -76,13 +64,11 @@ public class LightMeshSpawner : MonoBehaviour
     {
         for (int i = from; i < _lightMeshes.Count; i++)
         {
-            //Debug.Log(from);
-            //Debug.Log("Meshes Count: " + _lightMeshes.Count);
-            //Debug.Log("Points Count: " + _locallyStoredPoints.Count);
             Vector3 dir = _locallyStoredPoints[i + 1] - _locallyStoredPoints[i];
             float length = dir.magnitude;
             if (_lightMeshes[i].Count <= Mathf.FloorToInt(length))
             {
+                // If the existing mesh instances don't span the whole length of the beam segment, first align existing ones
                 for (float j = 0.0f; j < _lightMeshes[i].Count; j += 1.0f)
                 {
                     Vector3 pos = _locallyStoredPoints[i] + dir * (j / length);
@@ -92,6 +78,7 @@ public class LightMeshSpawner : MonoBehaviour
                     lightObj.GetComponent<MeshRenderer>().material.SetFloat("_alphaCutoff", cutoff);
                 }
                 
+                // Then create new meshes for the rest of the beam segment
                 for(float j = _lightMeshes[i].Count; j < length; j+=1.0f) 
                 {
                     Vector3 pos = _locallyStoredPoints[i] + dir * (j / length);
@@ -102,6 +89,7 @@ public class LightMeshSpawner : MonoBehaviour
             }
             else
             {
+                // If there are too many existing mesh instances, first align the ones which are inside the length of the segment
                 for(float j = 0; j < length; j+=1.0f) 
                 {
                     Vector3 pos = _locallyStoredPoints[i] + dir * (j / length);
@@ -111,6 +99,7 @@ public class LightMeshSpawner : MonoBehaviour
                     lightObj.GetComponent<MeshRenderer>().material.SetFloat("_alphaCutoff", cutoff);
                 }
                 
+                // Then delete the unnecessary ones
                 for(int j = _lightMeshes[i].Count-1; j > (int)length; j--) 
                 {
                     Destroy(_lightMeshes[i][j]);
@@ -122,6 +111,7 @@ public class LightMeshSpawner : MonoBehaviour
 
     private void DeleteTail(int from)
     {
+        // Delete mesh segments from a given start point
         for (int i = _lightMeshes.Count-1; i >= from; i--)
         {
             for (int j = _lightMeshes[i].Count-1; j >= 0; j--)
@@ -133,17 +123,17 @@ public class LightMeshSpawner : MonoBehaviour
     }
 
 
-    private void CreateLightMeshes(int from)
+    private void CreateLightMeshes(int from, LineRenderer _laser)
     {
-        for (int i = from; i < _locallyStoredPoints.Count - 1; i++)
+        // Create mesh segments from a given start point
+        for (int i = from; i < _laser.positionCount - 1; i++)
         {
             _lightMeshes.Add(new List<GameObject>());
-            Vector3 dir = _locallyStoredPoints[i + 1] - _locallyStoredPoints[i];
+            Vector3 dir = _laser.GetPosition(i + 1) - _laser.GetPosition(i);
             float length = dir.magnitude;
-            //int meshesCount = Mathf.FloorToInt(length);
             for (float j = 0.0f; j < length; j+=1.0f)
             {
-                Vector3 pos = _locallyStoredPoints[i] + dir * (j / length);
+                Vector3 pos = _laser.GetPosition(i) + dir * (j / length);
                 _lightMeshes[i].Add(Instantiate(lightMeshPrefab, pos, Quaternion.LookRotation(dir, Vector3.up)));
                 float cutoff = length - j < 1.0f ? 1 - (length - j) : 0.0f;
                 _lightMeshes[i][_lightMeshes[i].Count-1].GetComponent<MeshRenderer>().material.SetFloat("_alphaCutoff", cutoff);
