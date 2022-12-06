@@ -11,11 +11,12 @@
 						</RTPCValue>
 					</RTPCValueList>
 					<CurrentStateList ShowAll="true">
-						<CurrentStateRef Name="LoosingSanity" ID="{630E6C0B-2BF8-4496-B484-0264F235037A}"/>
-						<CurrentStateRef Name="NotPlaying" ID="{68FA20C0-6D85-4F86-9A80-95C198F962F8}"/>
+						<CurrentStateRef Name="None" ID="{663A99AF-8A3E-4960-8363-3779C9B07B5B}"/>
+						<CurrentStateRef Name="Playing" ID="{F980FD5B-64EE-4FDB-A297-7B478A51A3B9}"/>
+						<CurrentStateRef Name="NotPlaying" ID="{F5BF4DD7-2AC8-4BE8-8EE0-30DE014144FC}"/>
 					</CurrentStateList>
 					<CurrentSwitchList ShowAll="true">
-						<CurrentSwitchRef Name="ClerkIntro" ID="{82AD2430-231F-4A0F-9382-CEE494A9DF9E}"/>
+						<CurrentSwitchRef Name="ClerkChatter1" ID="{6AD5FEDC-6CD0-4A3D-91C2-9265E8947D7B}"/>
 						<CurrentSwitchRef Name="Cloth" ID="{E9732CE8-4FF9-41FE-BD0F-8C37DC5FC301}"/>
 					</CurrentSwitchList>
 				</SoundcasterSession>

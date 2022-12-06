@@ -23,6 +23,24 @@
 								</Transition>
 							</TransitionList>
 						</StateGroup>
+						<StateGroup Name="DungeonAmb" ID="{82EAEF34-90E2-4BC4-9175-2A66D128273E}">
+							<PropertyList>
+								<Property Name="DefaultTransitionTime" Type="Real64" Value="2.5"/>
+							</PropertyList>
+							<ChildrenList>
+								<State Name="None" ID="{1E51F8F4-A42A-4452-93E9-2F38A3D1CAF6}"/>
+								<State Name="NotPlaying" ID="{F5BF4DD7-2AC8-4BE8-8EE0-30DE014144FC}"/>
+								<State Name="Playing" ID="{100F90D0-17FF-4F97-AC95-3F2FE5DA2D11}"/>
+							</ChildrenList>
+							<TransitionList>
+								<Transition>
+									<StartState Name="NotPlaying" ID="{F5BF4DD7-2AC8-4BE8-8EE0-30DE014144FC}"/>
+									<EndState Name="Playing" ID="{100F90D0-17FF-4F97-AC95-3F2FE5DA2D11}"/>
+									<Time>2.5</Time>
+									<IsShared>false</IsShared>
+								</Transition>
+							</TransitionList>
+						</StateGroup>
 					</ChildrenList>
 				</Folder>
 				<Folder Name="PlayerState" ID="{72CB2445-BC09-4D11-B660-600C948FD972}" ShortID="774479556">
