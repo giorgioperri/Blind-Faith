@@ -1,6 +1,7 @@
 using System;
 using StarterAssets;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
@@ -39,6 +40,7 @@ public class GameManager : MonoBehaviour
 
     void Update()
     {
+        if (SceneManager.GetActiveScene().name == "Rafal_intro") return;
         if (playerInput.pause)
         {
             isPaused = !isPaused;
