@@ -1,4 +1,6 @@
 using System;
+using System.Collections;
+using Cinemachine;
 using StarterAssets;
 using UnityEngine;
 using UnityEngine.InputSystem;
@@ -24,6 +26,10 @@ public class GameManager : MonoBehaviour
     public AK.Wwise.Event ResumeVA;
 
     private float wTime;
+
+    [SerializeField] private CinemachineVirtualCamera mainVC;
+    [SerializeField] private CinemachineVirtualCamera socketVC;
+    [SerializeField] private CinemachineVirtualCamera pillarVC;
 
     private void Awake()
     {
@@ -98,5 +104,23 @@ public class GameManager : MonoBehaviour
             LanternManager.Instance.canPlayChargeSound = true;
             isLookingAtAngel = false;
         }
+    }
+
+    public void InitSocketEvent()
+    {
+        StartCoroutine(StartSocketEvent());
+    }
+
+    private IEnumerator StartSocketEvent()
+    {
+        Debug.Log("hihi");
+        socketVC.gameObject.SetActive(true);
+        mainVC.gameObject.SetActive(false);
+        isInteractingWithMirror = true;
+        yield return new WaitForSecondsRealtime(2f);
+        mainVC.gameObject.SetActive(true);
+        socketVC.gameObject.SetActive(false);
+        yield return new WaitForSecondsRealtime(1f);
+        isInteractingWithMirror = false;
     }
 }

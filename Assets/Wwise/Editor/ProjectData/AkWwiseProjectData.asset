@@ -305,7 +305,7 @@ MonoBehaviour:
     ParentPath: Events/Default Work Unit
     guid: 5eb490fb28343a4fbde7e5ca0bff7b1d
     GuidInternal: 
-    m_lastTime: -8585312788511119359
+    m_lastTime: -8585312669935468823
     List:
     - name: 3D
       guid: d0312eb1e176a14c90ecba42bdd0174b
@@ -747,6 +747,23 @@ MonoBehaviour:
       maxAttenuation: 10
       maxDuration: -1
       minDuration: -1
+    - name: MassiveDevice
+      guid: b80de0c5c093b04faf38bbb9a629b6c4
+      id: 3113871599
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 5eb490fb28343a4fbde7e5ca0bff7b1d
+      - ElementName: MassiveDevice
+        ObjectType: 3
+        guid: b80de0c5c093b04faf38bbb9a629b6c4
+      Path: Events/Default Work Unit/MassiveDevice
+      maxAttenuation: 50
+      maxDuration: 11.896948
+      minDuration: 11.896948
     - name: Mirror
       guid: 29a7b1fdbebfe84a8502e0655cd7ce83
       id: 2039020852
@@ -1082,7 +1099,7 @@ MonoBehaviour:
     ParentPath: States/Default Work Unit
     guid: 15da347adefaa443abeba8e206daca95
     GuidInternal: 
-    m_lastTime: -8585312788510153686
+    m_lastTime: -8585312669935332864
     List:
     - name: AlterAmb
       guid: 7f446b1539ffb74881108b1e3d68a471
@@ -1315,6 +1332,84 @@ MonoBehaviour:
         - ElementName: NotLoosingSanity
           ObjectType: 8
           guid: 578c27d60eb6d14a803376b4eed867a7
+      ValueGuids: []
+      ValueIcons: []
+      valuesInternal: []
+    - name: HPLoss
+      guid: 21905a70aa4b184f88157d0c7db6473e
+      id: 133846688
+      PathAndIcons:
+      - ElementName: States
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 15da347adefaa443abeba8e206daca95
+      - ElementName: PlayerState
+        ObjectType: 4
+        guid: 4524cb7209bc114db660600c948fd972
+      - ElementName: HPLoss
+        ObjectType: 9
+        guid: 21905a70aa4b184f88157d0c7db6473e
+      Path: States/Default Work Unit/PlayerState/HPLoss
+      values:
+      - name: Disabled
+        guid: af10d0630f11cd4bbbac2118e871bcae
+        id: 3248502869
+        PathAndIcons:
+        - ElementName: States
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: 15da347adefaa443abeba8e206daca95
+        - ElementName: PlayerState
+          ObjectType: 4
+          guid: 4524cb7209bc114db660600c948fd972
+        - ElementName: HPLoss
+          ObjectType: 9
+          guid: 21905a70aa4b184f88157d0c7db6473e
+        - ElementName: Disabled
+          ObjectType: 8
+          guid: af10d0630f11cd4bbbac2118e871bcae
+      - name: Enabled
+        guid: 9360cd37bc123e478d33c80a70dc1bb0
+        id: 4174102348
+        PathAndIcons:
+        - ElementName: States
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: 15da347adefaa443abeba8e206daca95
+        - ElementName: PlayerState
+          ObjectType: 4
+          guid: 4524cb7209bc114db660600c948fd972
+        - ElementName: HPLoss
+          ObjectType: 9
+          guid: 21905a70aa4b184f88157d0c7db6473e
+        - ElementName: Enabled
+          ObjectType: 8
+          guid: 9360cd37bc123e478d33c80a70dc1bb0
+      - name: None
+        guid: 448f64ac7f5d3a4a97fc004fbf81d002
+        id: 748895195
+        PathAndIcons:
+        - ElementName: States
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: 15da347adefaa443abeba8e206daca95
+        - ElementName: PlayerState
+          ObjectType: 4
+          guid: 4524cb7209bc114db660600c948fd972
+        - ElementName: HPLoss
+          ObjectType: 9
+          guid: 21905a70aa4b184f88157d0c7db6473e
+        - ElementName: None
+          ObjectType: 8
+          guid: 448f64ac7f5d3a4a97fc004fbf81d002
       ValueGuids: []
       ValueIcons: []
       valuesInternal: []
