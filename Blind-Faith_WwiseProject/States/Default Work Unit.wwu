@@ -69,6 +69,13 @@
 								</Transition>
 							</TransitionList>
 						</StateGroup>
+						<StateGroup Name="HPLoss" ID="{705A9021-4BAA-4F18-8815-7D0C7DB6473E}">
+							<ChildrenList>
+								<State Name="None" ID="{AC648F44-5D7F-4A3A-97FC-004FBF81D002}"/>
+								<State Name="Enabled" ID="{37CD6093-12BC-473E-8D33-C80A70DC1BB0}"/>
+								<State Name="Disabled" ID="{63D010AF-110F-4BCD-BBAC-2118E871BCAE}"/>
+							</ChildrenList>
+						</StateGroup>
 					</ChildrenList>
 				</Folder>
 			</ChildrenList>
