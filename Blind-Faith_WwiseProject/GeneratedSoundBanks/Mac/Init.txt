@@ -1,14 +1,22 @@
 State Group	ID	Name			Wwise Object Path	Notes
+	133846688	HPLoss			\Default Work Unit\PlayerState\HPLoss	
 	1264560589	Health_State			\Default Work Unit\PlayerState\Health_State	
 	2677818465	AlterAmb			\Default Work Unit\Music\AlterAmb	
+	3254361931	DungeonAmb			\Default Work Unit\Music\DungeonAmb	
 
 State	ID	Name	State Group			Notes
+	748895195	None	HPLoss			
+	3248502869	Disabled	HPLoss			
+	4174102348	Enabled	HPLoss			
 	748895195	None	Health_State			
 	2627361338	LoosingSanity	Health_State			
 	3358664337	NotLoosingSanity	Health_State			
 	748895195	None	AlterAmb			
 	1227244058	NotPlaying	AlterAmb			
 	1852808225	Playing	AlterAmb			
+	748895195	None	DungeonAmb			
+	1227244058	NotPlaying	DungeonAmb			
+	1852808225	Playing	DungeonAmb			
 
 Audio Bus	ID	Name			Wwise Object Path	Notes
 	393239870	SFX			\Default Work Unit\Master Audio Bus\SFX	

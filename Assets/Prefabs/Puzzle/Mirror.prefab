@@ -29,7 +29,7 @@ Transform:
   m_GameObject: {fileID: 565374451315082096}
   m_LocalRotation: {x: 0, y: -0.06521154, z: 0, w: 0.9978715}
   m_LocalPosition: {x: -19.14, y: 1.53, z: 48.851376}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.92909276, y: 0.92909276, z: 0.92909276}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1493246627224128155}
@@ -96,6 +96,8 @@ MonoBehaviour:
   isEnlighted: 0
   _lightStored: 0
   _canDeactivateGrab: 1
+  _canPlayLightSound: 1
+  _canPlayTurnSound: 1
   _light: {fileID: 3613547122338464530}
   shouldStabilizeY: 0
 --- !u!65 &8420020229163632518

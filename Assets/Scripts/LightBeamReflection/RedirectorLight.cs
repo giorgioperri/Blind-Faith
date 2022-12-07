@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -10,6 +11,12 @@ public class RedirectorLight : MonoBehaviour
     private GameObject _previousBeam;
     [SerializeField] private GameObject _emitter;
     public bool isRedirectorEnlighted;
+    private LightMeshSpawner _lightMeshSpawner;
+
+    private void Awake()
+    {
+        _lightMeshSpawner = gameObject.AddComponent<LightMeshSpawner>();
+    }
 
     public void OnBeamReceived()
     {
@@ -24,7 +31,7 @@ public class RedirectorLight : MonoBehaviour
 
         if (LanternManager.Instance.lanternCharge <= 0) return;
 
-        _beam = new LightBeam(_emitter.transform.position, _emitter.transform.forward, material, laserColor);
+        //_beam = new LightBeam(_emitter.transform.position, _emitter.transform.forward, material, laserColor, _lightMeshSpawner);
         _previousBeam = _beam.lightObj;
             
         isRedirectorEnlighted = false;

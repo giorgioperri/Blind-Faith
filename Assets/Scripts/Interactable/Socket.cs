@@ -25,6 +25,8 @@ public class Socket : Interactable
 
     public override void OnInteraction()
     {
+        if(TooltipManager.Instance.currentTooltip == TooltipTypes.PlaceSocket) TooltipManager.Instance.CloseTooltip();
+        
         // The implementation works for now, but probably needs improvements in future
         if (!LanternManager.Instance.isInsideSocket && _handController.GetComponent<HandAnimatorController>().hasRaisedLantern && 
             (Mouse.current.leftButton.wasPressedThisFrame /* Keyboard.current.eKey.wasPressedThisFrame || Gamepad.current.buttonWest.wasPressedThisFrame) */))
@@ -43,6 +45,7 @@ public class Socket : Interactable
         {
             _lightBeam = GameObject.Find("Light Beam");
             Destroy(_lightBeam);
+            _lightSourceLantern.GetComponent<ShootLight>().lightMeshSpawner.DestroyLightBeam();
             _lightSourceLantern.SetActive(false);
             _lanternObject.transform.parent = _lanternFollowSocket.transform;
             _lanternObject.transform.position = _lanternFollowSocket.transform.position;

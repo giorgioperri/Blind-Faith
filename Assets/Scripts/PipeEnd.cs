@@ -8,7 +8,8 @@ using UnityEngine;
 public enum PipeTypes
 {
     Red,
-    Green
+    Green,
+    Yellow
 }
 
 public class PipeEnd : MonoBehaviour
@@ -19,10 +20,12 @@ public class PipeEnd : MonoBehaviour
     [SerializeField] private PipeTypes _pipeType;
     [SerializeField] private GameObject redTarget;
     [SerializeField] private GameObject greenTarget;
+    [SerializeField] private GameObject yellowTarget;
 
     [SerializeField] private Material _tubeOff;
     [SerializeField] private Material _tubeGreen;
     [SerializeField] private Material _tubeRed;
+    [SerializeField] private Material _tubeYellow;
 
     private List<GameObject> _pipePieces = new List<GameObject>();
     [SerializeField] private GameObject _pipeEnd;
@@ -30,8 +33,15 @@ public class PipeEnd : MonoBehaviour
     
     private LightBeam _beam;
     private GameObject _previousBeam;
-    private Color _laserColor;
+    private LaserColor _laserColor;
     public Material material;
+    
+    private LightMeshSpawner _lightMeshSpawner;
+
+    private void Awake()
+    {
+        _lightMeshSpawner = gameObject.AddComponent<LightMeshSpawner>();
+    }
 
     [UsedImplicitly]
     public void OnCorrectBeamReceived()
@@ -41,15 +51,38 @@ public class PipeEnd : MonoBehaviour
 
     private void Start()
     {
-        _laserColor = _pipeType == PipeTypes.Red ? Color.red : Color.green;
+        switch (_pipeType)
+        {
+            case PipeTypes.Green:
+                _laserColor = LaserColor.Green;
+                break;
+            case PipeTypes.Red:
+                _laserColor = LaserColor.Red;
+                break;
+            case PipeTypes.Yellow:
+                _laserColor = LaserColor.Yellow;
+                break;
+        }
+        
         if (_isPipeInput)
         {
             foreach (Transform piece in transform.parent)
             {
                 _pipePieces.Add(piece.gameObject);
             }
-            
-            Instantiate(_pipeType == PipeTypes.Red ? redTarget : greenTarget, transform.position, quaternion.identity, transform);
+
+            switch (_pipeType)
+            {
+                case PipeTypes.Green:
+                    Instantiate(greenTarget, transform.position, transform.rotation, transform);
+                    break;
+                case PipeTypes.Red:
+                    Instantiate(redTarget, transform.position, transform.rotation, transform);
+                    break;
+                case PipeTypes.Yellow:
+                    Instantiate(yellowTarget, transform.position, transform.rotation, transform);
+                    break;
+            }
         }
     }
 
@@ -72,7 +105,7 @@ public class PipeEnd : MonoBehaviour
 
         if (_shouldShoot)
         {
-            _beam = new LightBeam(_pipeEnd.transform.position, _pipeEnd.transform.forward, material, _laserColor);
+            _beam = new LightBeam(_pipeEnd.transform.position, _pipeEnd.transform.forward, material, _laserColor, _lightMeshSpawner);
             _previousBeam = _beam.lightObj;
         }
         _shouldShoot = true;
@@ -86,7 +119,18 @@ public class PipeEnd : MonoBehaviour
         
         foreach (GameObject pipePiece in _pipePieces)
         {
-            pipePiece.GetComponent<MeshRenderer>().material = _pipeType == PipeTypes.Red ? _tubeRed : _tubeGreen;
+            switch (_pipeType)
+            {
+                case PipeTypes.Green:
+                    pipePiece.GetComponent<MeshRenderer>().material = _tubeGreen;
+                    break;
+                case PipeTypes.Red:
+                    pipePiece.GetComponent<MeshRenderer>().material = _tubeRed;
+                    break;
+                case PipeTypes.Yellow:
+                    pipePiece.GetComponent<MeshRenderer>().material = _tubeYellow;
+                    break;
+            }
         }
     }
     
@@ -98,5 +142,7 @@ public class PipeEnd : MonoBehaviour
         {
             pipePiece.GetComponent<MeshRenderer>().material = _tubeOff;
         }
+        
+        _lightMeshSpawner.DestroyLightBeam();
     }
 }
