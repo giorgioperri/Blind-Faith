@@ -2,6 +2,7 @@
 <PluginInfo Project="Blind-Faith_WwiseProject" Platform="Mac" BasePlatform="Mac">
 	<Plugins>
 		<Plugin Name="Resonance Audio Renderer" ID="6557955" DLL="ResonanceAudio" StaticLib="ResonanceAudioFX"/>
+		<Plugin Name="Wwise Silence" ID="6619138" DLL="AkSilenceGenerator" StaticLib="AkSilenceSource"/>
 		<Plugin Name="Wwise Parametric EQ" ID="6881283" DLL="AkParametricEQ" StaticLib="AkParametricEQFX"/>
 		<Plugin Name="Wwise Compressor" ID="7077891" DLL="AkCompressor" StaticLib="AkCompressorFX"/>
 		<Plugin Name="Wwise Peak Limiter" ID="7208963" DLL="AkPeakLimiter" StaticLib="AkPeakLimiterFX"/>
@@ -9,6 +10,7 @@
 		<Plugin Name="Wwise Flanger" ID="8192003" DLL="AkFlanger" StaticLib="AkFlangerFX"/>
 		<Plugin Name="Wwise Meter" ID="8454147" DLL="AkSoundEngineDLL" StaticLib="AkMeterFX"/>
 		<Plugin Name="Wwise Tremolo" ID="8585219" DLL="AkTremolo" StaticLib="AkTremoloFX"/>
+		<Plugin Name="Wwise Harmonizer" ID="9043971" DLL="AkHarmonizer" StaticLib="AkHarmonizerFX"/>
 		<Plugin Name="System" ID="11403271"/>
 		<Plugin Name="No Output" ID="11862023"/>
 	</Plugins>

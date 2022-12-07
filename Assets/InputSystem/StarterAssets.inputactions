@@ -271,7 +271,7 @@
                 {
                     "name": "",
                     "id": "68d51b63-02dd-48a5-b2d9-e6bc788490dd",
-                    "path": "<Keyboard>/e",
+                    "path": "<Mouse>/leftButton",
                     "interactions": "",
                     "processors": "",
                     "groups": "KeyboardMouse",
@@ -281,19 +281,8 @@
                 },
                 {
                     "name": "",
-                    "id": "7dfb8338-f31a-4286-a0b7-61414e006353",
-                    "path": "<Keyboard>/e",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "",
-                    "action": "Interact",
-                    "isComposite": false,
-                    "isPartOfComposite": false
-                },
-                {
-                    "name": "",
-                    "id": "4a857df9-e853-4ff8-807b-6776a862c07c",
-                    "path": "<Keyboard>/q",
+                    "id": "10f60433-2b49-4714-8804-4664b029d969",
+                    "path": "<Mouse>/leftButton",
                     "interactions": "",
                     "processors": "",
                     "groups": "",

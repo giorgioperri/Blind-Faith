@@ -25,6 +25,11 @@ public class HandAnimatorController : MonoBehaviour
         Instance = this;
     }
 
+    private void Start()
+    {
+        //
+    }
+
     private void Update()
     {
         if (FirstPersonController.Instance.currentInteractable &&
@@ -36,17 +41,6 @@ public class HandAnimatorController : MonoBehaviour
             } 
             
             return;
-        }
-
-        if (_inputs.hasRaisedLantern)
-        {
-            if(!Mouse.current.leftButton.isPressed && !LanternManager.Instance.isInsideSocket){
-                HandleLanternInput(!_animController.GetBool("hasRaisedLantern"));
-            }
-            else
-            {
-                _inputs.hasRaisedLantern = false;
-            }
         }
 
         if (Mouse.current.leftButton.wasPressedThisFrame && !LanternManager.Instance.isInsideSocket)

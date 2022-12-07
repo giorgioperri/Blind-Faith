@@ -142,6 +142,9 @@
 								<Event Name="LoosingHealth" ID="{AE63352F-34E5-4994-ADA3-05A795496886}">
 									<ChildrenList>
 										<Action Name="" ID="{78CC39E3-C565-4E7C-B83F-9C2B30540B7D}" ShortID="933266463">
+											<PropertyList>
+												<Property Name="Delay" Type="Real64" Value="2"/>
+											</PropertyList>
 											<ReferenceList>
 												<Reference Name="Target">
 													<ObjectRef Name="LoosingSanityLoop_02" ID="{B1A92604-DFEF-4A01-B9E1-F75380E063EC}" WorkUnitID="{10A75CA5-3F55-455C-A103-004D7C43FEF2}"/>
@@ -149,6 +152,9 @@
 											</ReferenceList>
 										</Action>
 										<Action Name="" ID="{9C9A3BA1-8117-48CD-9F47-DE458887B867}" ShortID="132080764">
+											<PropertyList>
+												<Property Name="Delay" Type="Real64" Value="2"/>
+											</PropertyList>
 											<ReferenceList>
 												<Reference Name="Target">
 													<ObjectRef Name="MetalScrape" ID="{E01EE4E6-14B6-4724-94D3-806BE455B8FE}" WorkUnitID="{10A75CA5-3F55-455C-A103-004D7C43FEF2}"/>
@@ -244,83 +250,216 @@
 										</Action>
 									</ChildrenList>
 								</Event>
+								<Event Name="TowerAmb" ID="{E5040FC6-05CB-4AD6-8D78-6EBCA956BF76}">
+									<ChildrenList>
+										<Action Name="" ID="{86F27501-4218-4DF6-95A9-8090E4AF257B}" ShortID="647575013">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="TowerAmb" ID="{DAB56D10-F32C-443E-9A13-2AC277D13047}" WorkUnitID="{10A75CA5-3F55-455C-A103-004D7C43FEF2}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="DungeonAmb" ID="{83CC95EE-2087-4D60-AA13-FC1928D15ECC}">
+									<ChildrenList>
+										<Action Name="" ID="{102E65CF-2ADB-43FC-9E7B-DFE3CE7C4295}" ShortID="814724579">
+											<PropertyList>
+												<Property Name="FadeInCurve" Type="int16" Value="8"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="DungeonAmbience" ID="{F89223D0-CDC0-46D7-BCE3-49E018792F54}" WorkUnitID="{10A75CA5-3F55-455C-A103-004D7C43FEF2}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+										<Action Name="" ID="{D936364A-8607-40E7-BBB0-54AB65BF6C86}" ShortID="1000048924">
+											<PropertyList>
+												<Property Name="FadeTime" Type="Real64" Value="3.5"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="Earthquake_Rumble_PSEM_100" ID="{BF83A364-1CCC-4242-87E8-C944C504B953}" WorkUnitID="{10A75CA5-3F55-455C-A103-004D7C43FEF2}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+										<Action Name="" ID="{487C2B8D-AB74-4981-99C2-31C509406BCA}" ShortID="1026016017">
+											<PropertyList>
+												<Property Name="Delay" Type="Real64" Value="2"/>
+												<Property Name="FadeTime" Type="Real64" Value="3"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="86 Cave With Dripping Water" ID="{10A2B84D-5008-4B99-BED7-828746BC9C0D}" WorkUnitID="{10A75CA5-3F55-455C-A103-004D7C43FEF2}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+										<Action Name="" ID="{97F84E2A-3556-486D-95F9-6DE15802A974}" ShortID="241314744">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="Stinger_Voice_Female_Eerie_Whisper" ID="{85197E82-8DB9-4990-979F-1D67B3C7D238}" WorkUnitID="{10A75CA5-3F55-455C-A103-004D7C43FEF2}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+							</ChildrenList>
+						</Folder>
+						<Event Name="CrawlSFX" ID="{3BA31C4A-2C48-454F-8116-A0787C4AB5FB}">
+							<ChildrenList>
+								<Action Name="" ID="{18DE3B5B-514A-4E8B-8002-47072A3F078F}" ShortID="91971424">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="FOLYClth_Leather Jacket Calm Movement_TT_CHSTUDIO_Sennheiser MKH 416 P48" ID="{D7644E92-A61E-48C2-A497-F05779B00917}" WorkUnitID="{10A75CA5-3F55-455C-A103-004D7C43FEF2}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{D7D31E20-D940-4E45-B98F-3FDEBD4F9B43}" ShortID="904016864">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Rocks" ID="{A07AB71C-A06E-4306-B824-E5EAFD5E68B4}" WorkUnitID="{10A75CA5-3F55-455C-A103-004D7C43FEF2}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{0819ABFD-9F0E-4977-AF0E-A49A0052A9E4}" ShortID="1047675923">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="METLFric_Metal Plate High Pitched Tonal Screech Scrape Squeak_TT_CHSTUDIO_Neumann TLM 103" ID="{09BC882F-4019-4A54-82E9-48E1249AD97C}" WorkUnitID="{10A75CA5-3F55-455C-A103-004D7C43FEF2}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="DungeonScream" ID="{713CD618-75D9-4F29-867C-DC4A63C0A42A}">
+							<ChildrenList>
+								<Action Name="" ID="{650CABBB-7533-4334-BFED-FD7C85117A3F}" ShortID="1045904813">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="DungeonScream" ID="{B1587511-EE97-4B7E-AA07-0A08656885F1}" WorkUnitID="{10A75CA5-3F55-455C-A103-004D7C43FEF2}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{7C30682E-CEE5-44EC-B846-083FBA077A55}" ShortID="187989691">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="DungeonScreamDoor" ID="{E7824E1F-95EC-4B01-A9C4-8275502B3D3B}" WorkUnitID="{10A75CA5-3F55-455C-A103-004D7C43FEF2}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{52483C16-3B5E-4549-8F7E-FE6AF18ED5D9}" ShortID="681020928">
+									<PropertyList>
+										<Property Name="Delay" Type="Real64" Value="8.5"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="DungeonScreamLoop" ID="{4F860AAD-4AAC-4936-8D54-E64ADC32B690}" WorkUnitID="{10A75CA5-3F55-455C-A103-004D7C43FEF2}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Folder Name="Mirror" ID="{FDB1A729-BFBE-4AE8-8502-E0655CD7CE83}" ShortID="609211240">
+							<ChildrenList>
+								<Event Name="Lightbeam" ID="{BF85C8CC-F223-4DB3-BF2B-583E204C98B3}">
+									<ChildrenList>
+										<Action Name="" ID="{960CDD6E-1ED8-4DC2-8FD2-94BD48657CD5}" ShortID="611579329">
+											<PropertyList>
+												<Property Name="FadeTime" Type="Real64" Value="0.5"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="LightbeamAmbience" ID="{E4A973C6-0075-4D2A-BCFE-349B69E1ABB7}" WorkUnitID="{10A75CA5-3F55-455C-A103-004D7C43FEF2}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="MirrorLight" ID="{D5C56A0A-D26B-4A2C-9C79-84E1F9444477}">
+									<ChildrenList>
+										<Action Name="" ID="{F17D670C-9DDB-41D0-8705-60865A2F932C}" ShortID="409302121">
+											<PropertyList>
+												<Property Name="FadeTime" Type="Real64" Value="1"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="MirrorOn" ID="{459B954B-9671-41A0-AB27-985B17092935}" WorkUnitID="{10A75CA5-3F55-455C-A103-004D7C43FEF2}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="MirrorLight_Off" ID="{D6366341-8911-4B24-AA74-4805CB3C0AEE}">
+									<ChildrenList>
+										<Action Name="" ID="{FEBA4F16-4BEA-4DD5-A85D-2432E2C1E36E}" ShortID="315361784">
+											<PropertyList>
+												<Property Name="ActionType" Type="int16" Value="2"/>
+												<Property Name="FadeTime" Type="Real64" Value="1"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="MirrorOn" ID="{459B954B-9671-41A0-AB27-985B17092935}" WorkUnitID="{10A75CA5-3F55-455C-A103-004D7C43FEF2}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="MirrorTurn" ID="{0DF3B1B6-368A-4DB0-A16F-D079D5363D92}">
+									<ChildrenList>
+										<Action Name="" ID="{C8EFC376-45E9-4656-BCAB-DC800CDA90AE}" ShortID="279880900">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="MirrorTurn" ID="{877180AF-74AB-4CDB-9AA9-CA86ADB1AC8E}" WorkUnitID="{10A75CA5-3F55-455C-A103-004D7C43FEF2}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="MirrorTurn_Off" ID="{AAA91738-49B1-4040-B478-DBA4E4AE6C9A}">
+									<ChildrenList>
+										<Action Name="" ID="{3B1A2454-C4DB-48AA-81C7-C3367B397BC2}" ShortID="262492247">
+											<PropertyList>
+												<Property Name="ActionType" Type="int16" Value="2"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="MirrorTurn" ID="{877180AF-74AB-4CDB-9AA9-CA86ADB1AC8E}" WorkUnitID="{10A75CA5-3F55-455C-A103-004D7C43FEF2}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
 							</ChildrenList>
 						</Folder>
 					</ChildrenList>
 				</Folder>
-				<Event Name="Lightbeam" ID="{BF85C8CC-F223-4DB3-BF2B-583E204C98B3}">
+				<Event Name="IntroEvent" ID="{107B68F6-F1EE-43E0-A75C-C5B1E7FA626B}">
 					<ChildrenList>
-						<Action Name="" ID="{960CDD6E-1ED8-4DC2-8FD2-94BD48657CD5}" ShortID="611579329">
+						<Action Name="" ID="{27A8E787-4740-4DBE-9C6B-362317770DF8}" ShortID="754712084">
 							<PropertyList>
-								<Property Name="FadeTime" Type="Real64" Value="0.5"/>
+								<Property Name="Delay" Type="Real64" Value="5"/>
+								<Property Name="FadeTime" Type="Real64" Value="1.5"/>
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Target">
-									<ObjectRef Name="LightbeamAmbience" ID="{E4A973C6-0075-4D2A-BCFE-349B69E1ABB7}" WorkUnitID="{10A75CA5-3F55-455C-A103-004D7C43FEF2}"/>
+									<ObjectRef Name="Stinger_Voice_Female_Eerie_Whisper" ID="{1D6B57A3-2317-465A-8F7E-7444E5DBF9EA}" WorkUnitID="{10A75CA5-3F55-455C-A103-004D7C43FEF2}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{44C41C1A-F2BB-479A-AF38-B60F6B6148B8}" ShortID="1016864215">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="STINGER_Whisper_Of_Distress" ID="{49223962-7FB5-4407-B180-77706B44A9A3}" WorkUnitID="{10A75CA5-3F55-455C-A103-004D7C43FEF2}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>
 					</ChildrenList>
 				</Event>
-				<Event Name="MirrorLight" ID="{D5C56A0A-D26B-4A2C-9C79-84E1F9444477}">
+				<Event Name="MassiveDevice" ID="{C5E00DB8-93C0-4FB0-AF38-BBB9A629B6C4}">
 					<ChildrenList>
-						<Action Name="" ID="{F17D670C-9DDB-41D0-8705-60865A2F932C}" ShortID="409302121">
-							<PropertyList>
-								<Property Name="FadeTime" Type="Real64" Value="1"/>
-							</PropertyList>
+						<Action Name="" ID="{0CB1AB5D-D20E-4A0E-BDA4-4CB2CF272A39}" ShortID="489646297">
 							<ReferenceList>
 								<Reference Name="Target">
-									<ObjectRef Name="MirrorOn" ID="{459B954B-9671-41A0-AB27-985B17092935}" WorkUnitID="{10A75CA5-3F55-455C-A103-004D7C43FEF2}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
-					</ChildrenList>
-				</Event>
-				<Event Name="MirrorTurn" ID="{0DF3B1B6-368A-4DB0-A16F-D079D5363D92}">
-					<ChildrenList>
-						<Action Name="" ID="{663141F6-CD03-409D-93BC-056FA0172D15}" ShortID="2897655">
-							<PropertyList>
-								<Property Name="FadeTime" Type="Real64" Value="1"/>
-							</PropertyList>
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="TurningMirror_mid" ID="{8809283C-8B42-449D-B0D6-EEFD1FCCADBB}" WorkUnitID="{10A75CA5-3F55-455C-A103-004D7C43FEF2}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
-						<Action Name="" ID="{4DC1C1F9-8DEE-40DF-90CC-D12A6182D71F}" ShortID="708432704">
-							<PropertyList>
-								<Property Name="FadeTime" Type="Real64" Value="1"/>
-							</PropertyList>
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="TurningMirror_Highs" ID="{13BFC23D-1BCA-49A7-B5C4-F0D2B802D9D1}" WorkUnitID="{10A75CA5-3F55-455C-A103-004D7C43FEF2}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
-					</ChildrenList>
-				</Event>
-				<Event Name="MirrorTurn_Off" ID="{AAA91738-49B1-4040-B478-DBA4E4AE6C9A}">
-					<ChildrenList>
-						<Action Name="" ID="{BDF8E7C3-74ED-46BF-9AA0-F2F657F27BC0}" ShortID="476707068">
-							<PropertyList>
-								<Property Name="ActionType" Type="int16" Value="2"/>
-								<Property Name="FadeTime" Type="Real64" Value="1"/>
-							</PropertyList>
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="TurningMirror_mid" ID="{8809283C-8B42-449D-B0D6-EEFD1FCCADBB}" WorkUnitID="{10A75CA5-3F55-455C-A103-004D7C43FEF2}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
-						<Action Name="" ID="{E26C05A3-2975-409D-B9E0-3C12E8EF1DC6}" ShortID="319710839">
-							<PropertyList>
-								<Property Name="ActionType" Type="int16" Value="2"/>
-								<Property Name="FadeTime" Type="Real64" Value="1"/>
-							</PropertyList>
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="TurningMirror_Highs" ID="{13BFC23D-1BCA-49A7-B5C4-F0D2B802D9D1}" WorkUnitID="{10A75CA5-3F55-455C-A103-004D7C43FEF2}"/>
+									<ObjectRef Name="MassiveDevice" ID="{4254634E-F4EE-493F-90F2-F343FB934FDC}" WorkUnitID="{10A75CA5-3F55-455C-A103-004D7C43FEF2}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>

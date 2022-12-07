@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using Unity.VisualScripting;
@@ -9,22 +10,33 @@ public class Door : Interactable
     [SerializeField]
     private Animator _doorAnim = null;
     private ShootLight _beam;
+    public bool isPrismatic;
 
-    public override void OnInteraction()    
+    public bool greenHit;
+    public bool redHit;
+
+    public override void OnInteraction() { }
+
+    public void OnBeamReceived()
     {
-        if (transform.GetComponent<Door>().isActiveAndEnabled)
-        {
-            _doorAnim.Play("DoorOpen", 0, 0.0f);
-        }
+        if (isPrismatic) return;
+        gameObject.tag = "Untagged";
+        _doorAnim.Play("DoorOpen", 0, 0.0f);
+        Destroy(this);
     }
-    
-    void Update()
+
+    private void Update()
     {
-        _beam = GameObject.Find("LaserPointer").GetComponent<ShootLight>();
-        if (!_beam.hitTheDoor)
+        if (!isPrismatic) return;
+
+        if (greenHit && redHit)
         {
-            transform.GetComponent<Door>().enabled = false;
-            transform.GetChild(0).GetComponent<Renderer>().material.color = Color.gray;
+            gameObject.tag = "Untagged";
+            _doorAnim.Play("DoorOpen", 0, 0.0f);
+            Destroy(this);
         }
+
+        greenHit = false;
+        redHit = false;
     }
 }

@@ -17,6 +17,8 @@ TagManager:
   - GreenTarget
   - RedTarget
   - Redirector
+  - YellowTarget
+  - Pillar
   layers:
   - Default
   - TransparentFX

@@ -25,12 +25,12 @@ public class Socket : Interactable
 
     public override void OnInteraction()
     {
+        if(TooltipManager.Instance.currentTooltip == TooltipTypes.PlaceSocket) TooltipManager.Instance.CloseTooltip();
+        
         // The implementation works for now, but probably needs improvements in future
         if (!LanternManager.Instance.isInsideSocket && _handController.GetComponent<HandAnimatorController>().hasRaisedLantern && 
-            (Keyboard.current.eKey.wasPressedThisFrame /*|| Gamepad.current.buttonWest.wasPressedThisFrame)*/))
+            (Mouse.current.leftButton.wasPressedThisFrame /* Keyboard.current.eKey.wasPressedThisFrame || Gamepad.current.buttonWest.wasPressedThisFrame) */))
         {
-            if (Mouse.current.leftButton.isPressed) return;
-            
             _lightSourceLantern.SetActive(true);
             _lanternObject.transform.parent = transform;
             _lanternObject.transform.position = transform.position;
@@ -41,10 +41,8 @@ public class Socket : Interactable
 
         }
         else if (LanternManager.Instance.isInsideSocket && _handController.GetComponent<HandAnimatorController>().hasRaisedLantern &&
-            (Keyboard.current.eKey.wasPressedThisFrame /*|| Gamepad.current.buttonWest.wasPressedThisFrame)*/))
+            (Mouse.current.leftButton.wasPressedThisFrame /* Keyboard.current.eKey.wasPressedThisFrame || Gamepad.current.buttonWest.wasPressedThisFrame)*/))
         {
-            if (Mouse.current.leftButton.isPressed) return;
-            
             _lightBeam = GameObject.Find("Light Beam");
             Destroy(_lightBeam);
             LightMeshSpawner.Instance.DestroyLightBeam();
@@ -53,6 +51,8 @@ public class Socket : Interactable
             _lanternObject.transform.position = _lanternFollowSocket.transform.position;
             _lanternObject.transform.rotation = _lanternFollowSocket.transform.rotation;
             LanternManager.Instance.isInsideSocket = !LanternManager.Instance.isInsideSocket;
+
+            HandAnimatorController.Instance.HandleLanternInput(true);
         }
     }
 }

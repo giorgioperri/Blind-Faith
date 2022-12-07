@@ -12,8 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dc76d4e7df184f94abe8991b9915d6a7, type: 3}
   m_Name: 6AD5FEDC-6CD0-4A3D-91C2-9265E8947D7B
   m_EditorClassIdentifier: 
-  objectName: ClerkChatter
-  id: 1846884575
+  objectName: ClerkChatter1
+  id: 711493436
   guid: 6AD5FEDC-6CD0-4A3D-91C2-9265E8947D7B
   WwiseSwitchGroupReference: {fileID: 11400000, guid: ec8e5ead12663fc4a845b8768c0a52a8,
     type: 2}

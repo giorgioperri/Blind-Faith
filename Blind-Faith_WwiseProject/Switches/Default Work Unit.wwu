@@ -8,7 +8,14 @@
 						<SwitchGroup Name="VA_Clerk_Switch_Group" ID="{606D0EF6-200D-4481-B083-66F3C0D6C337}">
 							<ChildrenList>
 								<Switch Name="ClerkIntro" ID="{82AD2430-231F-4A0F-9382-CEE494A9DF9E}"/>
-								<Switch Name="ClerkChatter" ID="{6AD5FEDC-6CD0-4A3D-91C2-9265E8947D7B}"/>
+								<Switch Name="ClerkChatter1" ID="{6AD5FEDC-6CD0-4A3D-91C2-9265E8947D7B}"/>
+								<Switch Name="ClerkCrawl" ID="{64EADD76-180B-4140-9FDB-667A47D077E2}"/>
+								<Switch Name="ClerkChatter2" ID="{58DD9327-CD6D-4D21-89E5-9BF03B4ACDBA}"/>
+								<Switch Name="ClerkChatter3" ID="{E334D896-7052-4A0C-8FBE-2DCCF747A2AC}"/>
+								<Switch Name="Intro" ID="{9414030F-66EC-47A1-888A-89A1CA469C6A}"/>
+								<Switch Name="SecondEncounter" ID="{FA252621-44C6-43C8-91A5-6ED1246A1703}"/>
+								<Switch Name="DungeonChatter" ID="{83372DDE-E890-4272-87B3-B3DDD9E6D533}"/>
+								<Switch Name="ThirdEncounter" ID="{C3C8B14F-B61D-4AE0-9511-DB70521A87E9}"/>
 							</ChildrenList>
 						</SwitchGroup>
 					</ChildrenList>

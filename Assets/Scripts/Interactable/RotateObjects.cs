@@ -12,8 +12,22 @@ public class RotateObjects : Interactable
     public bool isEnlighted;
     [SerializeField] private float _lightStored;
     [SerializeField] private bool _canDeactivateGrab = true;
+    [SerializeField] private bool _canPlayLightSound = true;
+    [SerializeField] private bool _canPlayTurnSound = true;
+    [SerializeField] private bool _canShowTooltip = true;
     [SerializeField] private Light _light;
     public bool shouldStabilizeY;
+    public bool hasTooltip;
+
+    private void OnTriggerEnter(Collider other)
+    {
+        if (_canShowTooltip  && isEnlighted && hasTooltip)
+        {
+            TooltipManager.Instance.currentTooltip = TooltipTypes.RotateMirror;
+            TooltipManager.Instance.ToggleTooltip("Hold and drag the Left Mouse Button to rotate enlightened objects");
+            _canShowTooltip = false;
+        }
+    }
 
     public void OnBeamReceived()
     {
@@ -24,8 +38,13 @@ public class RotateObjects : Interactable
     {
         if (_lightStored <= 0 && _canDeactivateGrab)
         {
-            GameManager.Instance.isInteractingWithMirror = false;
-            _canDeactivateGrab = false;
+            AkSoundEngine.PostEvent("MirrorLight_Off", gameObject);
+            _canPlayLightSound = true;
+            if (_canDeactivateGrab)
+            {
+                GameManager.Instance.isInteractingWithMirror = false;
+                _canDeactivateGrab = false;
+            }
         }
         
         if ((GameManager.Instance.areMirrorsStep || !isEnlighted) && _lightStored <= 0) 
@@ -38,6 +57,11 @@ public class RotateObjects : Interactable
 
         if (isEnlighted)
         {
+            if (_canPlayLightSound)
+            {
+                AkSoundEngine.PostEvent("MirrorLight", gameObject);
+                _canPlayLightSound = false;
+            }
             _lightStored += Time.deltaTime * 30;
         }
         else
@@ -59,7 +83,19 @@ public class RotateObjects : Interactable
         {
             _grabbedMirror = true;
             GameManager.Instance.isInteractingWithMirror = true;
+            
             transform.Rotate(0f, Mouse.current.delta.ReadValue().x, 0f, Space.Self);
+
+            if (TooltipManager.Instance.currentTooltip == TooltipTypes.RotateMirror)
+            {
+                TooltipManager.Instance.CloseTooltip();
+            }
+            
+            if (_canPlayTurnSound)
+            {
+                AkSoundEngine.PostEvent("MirrorTurn", gameObject);
+                _canPlayTurnSound = false;
+            }
         }
 
         if (Mouse.current.leftButton.wasReleasedThisFrame)
@@ -69,6 +105,8 @@ public class RotateObjects : Interactable
             if (_grabbedMirror)
             {
                 _grabbedMirror = false;
+                AkSoundEngine.PostEvent("MirrorTurn_Off", gameObject);
+                _canPlayTurnSound = true;
             }
         }
 

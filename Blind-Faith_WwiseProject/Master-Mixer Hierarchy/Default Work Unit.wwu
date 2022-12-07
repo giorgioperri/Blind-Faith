@@ -20,8 +20,10 @@
 								<Effect Name="Hard_Knee_Minus_3dB_RMS (Custom)" ID="{41CC8433-4FE0-42EE-B417-E9990C065237}" ShortID="790902848" PluginName="Wwise Compressor" CompanyID="0" PluginID="108" PluginType="3">
 									<PropertyList>
 										<Property Name="AttackTime" Type="Real32" Value="0.31"/>
-										<Property Name="OutputGain" Type="Real32" Value="6"/>
-										<Property Name="Threshold" Type="Real32" Value="-41.6"/>
+										<Property Name="OutputGain" Type="Real32" Value="8.9"/>
+										<Property Name="Ratio" Type="Real32" Value="2"/>
+										<Property Name="ReleaseTime" Type="Real32" Value="0.61"/>
+										<Property Name="Threshold" Type="Real32" Value="-21.8"/>
 									</PropertyList>
 								</Effect>
 							</Custom>
@@ -61,9 +63,9 @@
 										<Value>21</Value>
 									</ValueList>
 								</Property>
-								<Property Name="MaxDuckVolume" Type="Real64" Value="-15.5"/>
+								<Property Name="MaxDuckVolume" Type="Real64" Value="-4.5"/>
 								<Property Name="OverrideColor" Type="bool" Value="True"/>
-								<Property Name="RecoveryTime" Type="Real64" Value="1.5"/>
+								<Property Name="RecoveryTime" Type="Real64" Value="2"/>
 								<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
 							</PropertyList>
 							<ReferenceList>
@@ -145,7 +147,7 @@
 										</Reference>
 										<Reference Name="Effect0">
 											<Custom CreatedFrom="{0C0A3A92-A571-4FDB-AB40-ACFED04E0217}">
-												<Effect Name="Room_Medium_Tiled (Custom)" ID="{3AC6D175-1657-483D-913E-276B9F9EAA6D}" ShortID="957690521" PluginName="Wwise RoomVerb" CompanyID="0" PluginID="118" PluginType="3">
+												<Effect Name="Room_Medium_Tiled (Custom)" ID="{19E1F139-55A1-4DF6-862D-96F72712BB7E}" ShortID="27155674" PluginName="Wwise RoomVerb" CompanyID="0" PluginID="118" PluginType="3">
 													<PropertyList>
 														<Property Name="DecayTime" Type="Real32" Value="1.1"/>
 														<Property Name="Density" Type="Real32" Value="72"/>
@@ -201,8 +203,17 @@
 								<DuckItem>
 									<BusRef Name="Rooms_docking" ID="{6ED14294-29EA-4AC9-82D5-39255BF161A4}"/>
 									<DuckingParam>
-										<Volume>-9</Volume>
+										<Volume>-6</Volume>
 										<FadeInTime>1</FadeInTime>
+										<FadeOutTime>1</FadeOutTime>
+										<FadeCurve>FadeLinear</FadeCurve>
+									</DuckingParam>
+								</DuckItem>
+								<DuckItem>
+									<BusRef Name="SFX" ID="{2B051542-74CE-4284-8CDF-6AFFA5F98C34}"/>
+									<DuckingParam>
+										<Volume>-6</Volume>
+										<FadeInTime>2</FadeInTime>
 										<FadeOutTime>1</FadeOutTime>
 										<FadeCurve>FadeLinear</FadeCurve>
 									</DuckingParam>
@@ -310,9 +321,9 @@
 						<Bus Name="SFX" ID="{2B051542-74CE-4284-8CDF-6AFFA5F98C34}">
 							<PropertyList>
 								<Property Name="Color" Type="int16" Value="19"/>
-								<Property Name="MaxDuckVolume" Type="Real64" Value="-14"/>
+								<Property Name="MaxDuckVolume" Type="Real64" Value="-4"/>
 								<Property Name="OverrideColor" Type="bool" Value="True"/>
-								<Property Name="RecoveryTime" Type="Real64" Value="2.5"/>
+								<Property Name="RecoveryTime" Type="Real64" Value="1.5"/>
 							</PropertyList>
 							<ChildrenList>
 								<Bus Name="2D" ID="{6E0EC8A0-EF11-4280-A411-C16426D7260B}">
@@ -325,6 +336,15 @@
 									<BusRef Name="Rooms_docking" ID="{6ED14294-29EA-4AC9-82D5-39255BF161A4}"/>
 									<DuckingParam>
 										<Volume>-9</Volume>
+										<FadeInTime>1</FadeInTime>
+										<FadeOutTime>1</FadeOutTime>
+										<FadeCurve>FadeLinear</FadeCurve>
+									</DuckingParam>
+								</DuckItem>
+								<DuckItem>
+									<BusRef Name="Rooms" ID="{F220833B-3FC1-4DC8-9CF3-6F367C8C1EDE}"/>
+									<DuckingParam>
+										<Volume>-6</Volume>
 										<FadeInTime>1</FadeInTime>
 										<FadeOutTime>1</FadeOutTime>
 										<FadeCurve>FadeLinear</FadeCurve>
