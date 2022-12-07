@@ -1,29 +1,46 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.IO;
 using UnityEngine;
 
 public class LightMeshSpawner : MonoBehaviour
 {
-    public GameObject lightMeshPrefab;
+    private GameObject lightMeshPrefab;
     public static LightMeshSpawner Instance;
     private List<Vector3> _locallyStoredPoints;
     private List<List<GameObject>> _lightMeshes;
-
+    private Color color;
+    
     private void Awake()
     {
+        /*
         if (Instance != null)
         {
             Destroy(this);
         }
         Instance = this;
+        */
 
         _locallyStoredPoints = new List<Vector3>();
         _lightMeshes = new List<List<GameObject>>();
+        lightMeshPrefab = LoadPrefabFromFile("lightMesh_v003");
+    }
+    
+    private GameObject LoadPrefabFromFile(string filename)
+    {
+        Debug.Log("Trying to load LightMeshPrefab from file ("+filename+ ")...");
+        GameObject loadedObject = Resources.Load<GameObject>("lightBeamMesh_v003");
+        if (loadedObject == null)
+        {
+            throw new FileNotFoundException("...no file found - please check the configuration");
+        }
+        return loadedObject;
     }
 
-    public void SetLightBeamPoints(LineRenderer _laser)
+    public void SetLightBeamPoints(LineRenderer _laser, Color color)
     {
+        this.color = color;
         // If no beam exists, create one
         if (_locallyStoredPoints.Count != _laser.positionCount && _lightMeshes.Count == 0)
         {
@@ -50,8 +67,8 @@ public class LightMeshSpawner : MonoBehaviour
         { 
             if (!_locallyStoredPoints[i].Equals(_laser.GetPosition(i))) 
             { 
-                int updateMeshesFrom = i-1; 
-                ClearAndUpdatePointList(_laser); 
+                int updateMeshesFrom = Mathf.Max(i-1, 0);
+                ClearAndUpdatePointList(_laser);
                 UpdateLightMeshes(updateMeshesFrom);
                 Debug.Log("Beam Updated from Mesh: " + updateMeshesFrom);
                 return;
@@ -85,6 +102,7 @@ public class LightMeshSpawner : MonoBehaviour
                     _lightMeshes[i].Add(Instantiate(lightMeshPrefab, pos, Quaternion.LookRotation(dir, Vector3.up)));
                     float cutoff = length - j < 1.0f ? 1 - (length - j) : 0.0f;
                     _lightMeshes[i][_lightMeshes[i].Count-1].GetComponent<MeshRenderer>().material.SetFloat("_alphaCutoff", cutoff);
+                    _lightMeshes[i][_lightMeshes[i].Count-1].GetComponent<MeshRenderer>().material.SetColor("_color", color);
                 }
             }
             else
@@ -137,6 +155,7 @@ public class LightMeshSpawner : MonoBehaviour
                 _lightMeshes[i].Add(Instantiate(lightMeshPrefab, pos, Quaternion.LookRotation(dir, Vector3.up)));
                 float cutoff = length - j < 1.0f ? 1 - (length - j) : 0.0f;
                 _lightMeshes[i][_lightMeshes[i].Count-1].GetComponent<MeshRenderer>().material.SetFloat("_alphaCutoff", cutoff);
+                _lightMeshes[i][_lightMeshes[i].Count-1].GetComponent<MeshRenderer>().material.SetColor("_color", color);
             }
         }
     }
