@@ -22,6 +22,7 @@ public class Door : Interactable
         if (isPrismatic) return;
         gameObject.tag = "Untagged";
         _doorAnim.Play("DoorOpen", 0, 0.0f);
+        AkSoundEngine.PostEvent("DoorOpen", PlayerSoundController.Instance.gameObject);
         Destroy(this);
     }
 
@@ -33,6 +34,7 @@ public class Door : Interactable
         {
             gameObject.tag = "Untagged";
             _doorAnim.Play("DoorOpen", 0, 0.0f);
+            AkSoundEngine.PostEvent("DoorOpen", PlayerSoundController.Instance.gameObject);
             Destroy(this);
         }
 
