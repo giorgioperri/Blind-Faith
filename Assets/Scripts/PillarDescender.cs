@@ -10,5 +10,6 @@ public class PillarDescender : MonoBehaviour
     {
         anim.SetTrigger("Descend");
         AkSoundEngine.PostEvent("MassiveDevice", gameObject);
+        GameManager.Instance.InitPillarEvent();
     }
 }

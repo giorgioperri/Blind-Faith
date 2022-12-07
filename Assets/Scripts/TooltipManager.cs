@@ -10,6 +10,8 @@ public enum TooltipTypes
     LanternPickup,
     WASDMove,
     RotateMirror,
+    SeeSocket,
+    PlaceSocket,
     Sprint,
 }
 

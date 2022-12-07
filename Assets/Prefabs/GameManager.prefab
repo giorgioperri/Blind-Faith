@@ -513,6 +513,9 @@ MonoBehaviour:
     valueGuidInternal: 
     WwiseObjectReference: {fileID: 11400000, guid: d2ab51f5d8e064ab783f626e06948d63,
       type: 2}
+  mainVC: {fileID: 0}
+  socketVC: {fileID: 0}
+  pillarVC: {fileID: 0}
 --- !u!114 &29925721
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -897,13 +900,45 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1375716076857292363, guid: 5408a87d45e5c4e12b038f2410063baf,
+        type: 3}
+      propertyPath: m_SortingOrder
+      value: 999
+      objectReference: {fileID: 0}
+    - target: {fileID: 1375716076857292365, guid: 5408a87d45e5c4e12b038f2410063baf,
+        type: 3}
+      propertyPath: _subtitleCurtain
+      value: 
+      objectReference: {fileID: 6979234484146118706}
     - target: {fileID: 1375716076857292374, guid: 5408a87d45e5c4e12b038f2410063baf,
         type: 3}
       propertyPath: m_Name
       value: SubtitlesCanvas
       objectReference: {fileID: 0}
+    - target: {fileID: 4739897007149578224, guid: 5408a87d45e5c4e12b038f2410063baf,
+        type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 834.824
+      objectReference: {fileID: 0}
+    - target: {fileID: 4739897007149578224, guid: 5408a87d45e5c4e12b038f2410063baf,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 417.41183
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5408a87d45e5c4e12b038f2410063baf, type: 3}
+--- !u!114 &6979234484146118706 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 2188031973241401008, guid: 5408a87d45e5c4e12b038f2410063baf,
+    type: 3}
+  m_PrefabInstance: {fileID: 9117057738800598658}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!224 &7895317907028113608 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 1375716076857292362, guid: 5408a87d45e5c4e12b038f2410063baf,

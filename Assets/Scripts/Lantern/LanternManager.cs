@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using Cinemachine;
 using StarterAssets;
 using UnityEngine;
 using UnityEngine.InputSystem;
@@ -19,6 +20,7 @@ public class LanternManager : MonoBehaviour
     private Vector3 _originalOrbScale;
     
     public static LanternManager Instance;
+    [SerializeField] private CinemachineVirtualCamera playerVC;
 
     private void Awake()
     {
@@ -42,20 +44,24 @@ public class LanternManager : MonoBehaviour
         lightMaterial.SetFloat("_Opacity", lanternCharge);
         _orb.localScale = _originalOrbScale * lanternCharge;
         
-        if (lanternCharge >= .9f && TooltipManager.Instance.currentTooltip == TooltipTypes.LanternCharge)
+        if (lanternCharge >= .8f && TooltipManager.Instance.currentTooltip == TooltipTypes.LanternCharge)
         {
             TooltipManager.Instance.currentTooltip = TooltipTypes.None;
             TooltipManager.Instance.CloseTooltip();
+        }
+
+        if (Mouse.current.leftButton.wasReleasedThisFrame)
+        {
+            playerVC.GetCinemachineComponent<CinemachineBasicMultiChannelPerlin>().m_AmplitudeGain = 0;
+            playerVC.GetCinemachineComponent<CinemachineBasicMultiChannelPerlin>().m_FrequencyGain = 0;
         }
         
         if (GameManager.Instance.isBathingInLight && lanternIsRaised)
         {
             if (GameManager.Instance.isLookingAtAngel && lanternCharge <= 1 && Mouse.current.leftButton.isPressed)
             {
-                if (lanternCharge == 0)
-                {
-                    Camera.main.gameObject.GetComponent<CinemachineCameraShaker>().ShakeCamera(5,.2f,10);
-                }
+                playerVC.GetCinemachineComponent<CinemachineBasicMultiChannelPerlin>().m_AmplitudeGain = .1f;
+                playerVC.GetCinemachineComponent<CinemachineBasicMultiChannelPerlin>().m_FrequencyGain = 15f;
                 //recharge
                 if (canPlayChargeSound && lanternCharge == 0)
                 {
@@ -68,7 +74,6 @@ public class LanternManager : MonoBehaviour
             return;
         }
 
-        
         if (lanternCharge >= 0)
         {
             //deplete
