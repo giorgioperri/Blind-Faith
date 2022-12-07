@@ -27,7 +27,7 @@ public class HandAnimatorController : MonoBehaviour
 
     private void Start()
     {
-        //
+        HandleLanternInput(true);
     }
 
     private void Update()

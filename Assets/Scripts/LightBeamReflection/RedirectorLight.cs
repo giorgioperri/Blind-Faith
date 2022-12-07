@@ -31,7 +31,7 @@ public class RedirectorLight : MonoBehaviour
 
         if (LanternManager.Instance.lanternCharge <= 0) return;
 
-        _beam = new LightBeam(_emitter.transform.position, _emitter.transform.forward, material, laserColor, _lightMeshSpawner);
+        //_beam = new LightBeam(_emitter.transform.position, _emitter.transform.forward, material, laserColor, _lightMeshSpawner);
         _previousBeam = _beam.lightObj;
             
         isRedirectorEnlighted = false;

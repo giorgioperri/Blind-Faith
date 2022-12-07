@@ -5,7 +5,7 @@ using UnityEngine;
 
 public class PrismLight : MonoBehaviour
 {
-    public Color laserColor = Color.green;
+    public LaserColor laserColor = LaserColor.Green;
     public Material material;
     private LightBeam _beam;
     private GameObject _previousBeam;
@@ -24,15 +24,19 @@ public class PrismLight : MonoBehaviour
 
     public void OnBeamReceived()
     {
-        leftPrismLight.laserColor = Color.green;
-        rightPrismLight.laserColor = Color.red;
+        leftPrismLight.laserColor = LaserColor.Green;
+        rightPrismLight.laserColor = LaserColor.Red;
     }
     
     void Update()
     {
         if(_previousBeam) Destroy(_previousBeam);
 
-        if (!isPrismEnlighted) return;
+        if (!isPrismEnlighted)
+        {
+            _lightMeshSpawner.DestroyLightBeam();
+            return;
+        }
 
         if (LanternManager.Instance.lanternCharge <= 0) return;
 

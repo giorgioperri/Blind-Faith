@@ -33,7 +33,7 @@ public class PipeEnd : MonoBehaviour
     
     private LightBeam _beam;
     private GameObject _previousBeam;
-    private Color _laserColor;
+    private LaserColor _laserColor;
     public Material material;
     
     private LightMeshSpawner _lightMeshSpawner;
@@ -54,13 +54,13 @@ public class PipeEnd : MonoBehaviour
         switch (_pipeType)
         {
             case PipeTypes.Green:
-                _laserColor = Color.green;
+                _laserColor = LaserColor.Green;
                 break;
             case PipeTypes.Red:
-                _laserColor = Color.red;
+                _laserColor = LaserColor.Red;
                 break;
             case PipeTypes.Yellow:
-                _laserColor = Color.yellow;
+                _laserColor = LaserColor.Yellow;
                 break;
         }
         
@@ -142,5 +142,7 @@ public class PipeEnd : MonoBehaviour
         {
             pipePiece.GetComponent<MeshRenderer>().material = _tubeOff;
         }
+        
+        _lightMeshSpawner.DestroyLightBeam();
     }
 }

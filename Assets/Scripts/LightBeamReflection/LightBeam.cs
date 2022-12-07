@@ -4,6 +4,11 @@ using System.Collections.Generic;
 using System.Runtime.InteropServices;
 using UnityEngine;
 
+public enum LaserColor
+{
+    Yellow, Green, Red
+}
+
 public class LightBeam 
 {
     private Vector3 _position, _direction;
@@ -12,9 +17,10 @@ public class LightBeam
     private LineRenderer _lightLaser;
     private List<Vector3> _lightIndices = new List<Vector3>();
     public bool hitTheDoor;
-    private LightMeshSpawner _lightMeshSpawner;
+    public LightMeshSpawner lightMeshSpawner;
+    public LaserColor laserColor;
     
-    public LightBeam(Vector3 position, Vector3 direction, Material material, Color color, LightMeshSpawner _lightMeshSpawner)
+    public LightBeam(Vector3 position, Vector3 direction, Material material, LaserColor color, LightMeshSpawner _lightMeshSpawner)
     {
         _lightLaser = new LineRenderer();
         lightObj = new GameObject();
@@ -26,10 +32,27 @@ public class LightBeam
         _lightLaser.startWidth = 0.07f;
         _lightLaser.endWidth = 0.07f;
         _lightLaser.material = material;
-        _lightLaser.startColor = new Color(74,76,128,150);
-        _lightLaser.endColor = new Color(74,76,128,150);
+        laserColor = color;
+        
+        switch (laserColor)
+        {
+            case LaserColor.Yellow:
+                _lightLaser.startColor = new Color(1.0f, .84f, .04f,.5f);
+                _lightLaser.endColor = _lightLaser.startColor;
+                break;
+            case LaserColor.Red:
+                _lightLaser.startColor = new Color(.94f, .14f, .24f, 0.5f);
+                _lightLaser.endColor = _lightLaser.startColor;
+                break;
+            case LaserColor.Green:
+                _lightLaser.startColor = new Color(.62f, .94f, .1f, .5f);
+                _lightLaser.endColor = _lightLaser.startColor;
+                break;
+            default: 
+                break;
+        }
 
-        this._lightMeshSpawner = _lightMeshSpawner;
+        lightMeshSpawner = _lightMeshSpawner;
 
         CastRay(position, direction, _lightLaser);
     }
@@ -62,7 +85,7 @@ public class LightBeam
             counter++;
         }
         //if(LightMeshSpawner.Instance) LightMeshSpawner.Instance.SetLightBeamPoints(_lightLaser);
-        _lightMeshSpawner.SetLightBeamPoints(_lightLaser);
+        lightMeshSpawner.SetLightBeamPoints(_lightLaser, _lightLaser.startColor);
     }
 
     void CheckHit(RaycastHit hitInfo, Vector3 direction, LineRenderer laser)
@@ -88,7 +111,7 @@ public class LightBeam
         }
         else if(hitInfo.collider.gameObject.CompareTag("Door"))
         {
-            if (_lightLaser.startColor == Color.red)
+            if (laserColor == LaserColor.Red)
             {
                 hitInfo.collider.gameObject.GetComponent<Door>().redHit = true;
                 _lightIndices.Add(hitInfo.point);
@@ -96,7 +119,7 @@ public class LightBeam
                 return;
             } 
             
-            if (_lightLaser.startColor == Color.green)
+            if (laserColor == LaserColor.Green)
             {
                 hitInfo.collider.gameObject.GetComponent<Door>().greenHit = true;
                 _lightIndices.Add(hitInfo.point);
@@ -116,7 +139,7 @@ public class LightBeam
         }
         else if(hitInfo.collider.gameObject.CompareTag("Prism"))
         {
-            if (_lightLaser.startColor == Color.red || _lightLaser.startColor == Color.green)
+            if (laserColor != LaserColor.Yellow)
             {
                 _lightIndices.Add(hitInfo.point);
                 UpdateLaser();
@@ -138,7 +161,7 @@ public class LightBeam
         }
         else if (hitInfo.collider.gameObject.CompareTag("GreenTarget"))
         {
-            if (_lightLaser.startColor == Color.green)
+            if (laserColor == LaserColor.Green)
             {
                 hitInfo.transform.parent.SendMessage("OnCorrectBeamReceived");
             }
@@ -148,7 +171,7 @@ public class LightBeam
         } 
         else if (hitInfo.collider.gameObject.CompareTag("RedTarget"))
         {
-            if (_lightLaser.startColor == Color.red)
+            if (laserColor == LaserColor.Red)
             {
                 hitInfo.transform.parent.SendMessage("OnCorrectBeamReceived");
             }
@@ -157,7 +180,7 @@ public class LightBeam
             UpdateLaser();
         } else if (hitInfo.collider.gameObject.CompareTag("YellowTarget"))
         {
-            if (_lightLaser.startColor == Color.yellow)
+            if (laserColor == LaserColor.Yellow)
             {
                 hitInfo.transform.parent.SendMessage("OnCorrectBeamReceived");
             }

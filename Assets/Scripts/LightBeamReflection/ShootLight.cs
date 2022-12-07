@@ -9,12 +9,12 @@ public class ShootLight : MonoBehaviour
     private GameObject _previousBeam;
     public GameObject[] doors;
     public bool hitTheDoor;
-    private LightMeshSpawner _lightMeshSpawner;
+    public LightMeshSpawner lightMeshSpawner;
     
     public void Start()
     {
         doors = GameObject.FindGameObjectsWithTag("Door");
-        _lightMeshSpawner = gameObject.AddComponent<LightMeshSpawner>();
+        lightMeshSpawner = gameObject.AddComponent<LightMeshSpawner>();
     }
     
     void Update()
@@ -23,11 +23,11 @@ public class ShootLight : MonoBehaviour
 
         if (LanternManager.Instance.lanternCharge <= 0)
         {
-            _lightMeshSpawner.DestroyLightBeam();
+            lightMeshSpawner.DestroyLightBeam();
             return;
         }
         
-        _beam = new LightBeam(gameObject.transform.position, gameObject.transform.right, material, Color.yellow, _lightMeshSpawner);
+        _beam = new LightBeam(gameObject.transform.position, gameObject.transform.right, material, LaserColor.Yellow, lightMeshSpawner);
         _previousBeam = _beam.lightObj;
         hitTheDoor = _beam.hitTheDoor;
     }
