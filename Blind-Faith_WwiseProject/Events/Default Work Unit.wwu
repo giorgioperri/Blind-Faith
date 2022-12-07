@@ -436,8 +436,8 @@
 					<ChildrenList>
 						<Action Name="" ID="{27A8E787-4740-4DBE-9C6B-362317770DF8}" ShortID="754712084">
 							<PropertyList>
-								<Property Name="Delay" Type="Real64" Value="5"/>
-								<Property Name="FadeTime" Type="Real64" Value="1.5"/>
+								<Property Name="Delay" Type="Real64" Value="3.5"/>
+								<Property Name="FadeTime" Type="Real64" Value="4"/>
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Target">
@@ -446,9 +446,58 @@
 							</ReferenceList>
 						</Action>
 						<Action Name="" ID="{44C41C1A-F2BB-479A-AF38-B60F6B6148B8}" ShortID="1016864215">
+							<PropertyList>
+								<Property Name="Delay" Type="Real64" Value="8"/>
+							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Target">
 									<ObjectRef Name="STINGER_Whisper_Of_Distress" ID="{49223962-7FB5-4407-B180-77706B44A9A3}" WorkUnitID="{10A75CA5-3F55-455C-A103-004D7C43FEF2}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{E92FE4E3-5DC0-42E8-B5BD-6EE88988216A}" ShortID="534789597">
+							<PropertyList>
+								<Property Name="FadeTime" Type="Real64" Value="4"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="The Tudor Consort - Epistle - Expurgate Vetus Fermentum (online-audio-converter_com)" ID="{83A67B87-42BF-4E32-962A-72895C4BCE48}" WorkUnitID="{10A75CA5-3F55-455C-A103-004D7C43FEF2}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{6D1DABBE-23A4-4530-9F24-16112D3F8D2B}" ShortID="508358496">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="12"/>
+								<Property Name="Delay" Type="Real64" Value="10.5"/>
+								<Property Name="FadeTime" Type="Real64" Value="1"/>
+								<Property Name="Volume" Type="Real64" Value="-14"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Stinger_Voice_Female_Eerie_Whisper" ID="{1D6B57A3-2317-465A-8F7E-7444E5DBF9EA}" WorkUnitID="{10A75CA5-3F55-455C-A103-004D7C43FEF2}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{69AED623-7C80-43D7-86C4-96107F075C34}" ShortID="178029033">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="12"/>
+								<Property Name="Delay" Type="Real64" Value="13"/>
+								<Property Name="FadeTime" Type="Real64" Value="1"/>
+								<Property Name="Volume" Type="Real64" Value="-7"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="The Tudor Consort - Epistle - Expurgate Vetus Fermentum (online-audio-converter_com)" ID="{83A67B87-42BF-4E32-962A-72895C4BCE48}" WorkUnitID="{10A75CA5-3F55-455C-A103-004D7C43FEF2}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{394BCB28-C1FC-4AE4-A272-13B73B8EAD51}" ShortID="558359435">
+							<PropertyList>
+								<Property Name="Delay" Type="Real64" Value="45"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="RISE_Necronomicon" ID="{24FB9AC5-840A-4148-A0E3-64C23CB1DDFC}" WorkUnitID="{10A75CA5-3F55-455C-A103-004D7C43FEF2}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>
@@ -533,6 +582,32 @@
 							<ReferenceList>
 								<Reference Name="Target">
 									<ObjectRef Name="Designed Ice - RAW07_01" ID="{C8B97402-48E5-46B2-8A50-6DA4ED1EB33D}" WorkUnitID="{10A75CA5-3F55-455C-A103-004D7C43FEF2}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="MenuMusic" ID="{94C1E42E-5D58-4F47-A31D-91DCCC3B960C}">
+					<ChildrenList>
+						<Action Name="" ID="{7B2A2C4A-4968-4BB4-9448-E295A7BE31F8}" ShortID="753787495">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="WS_ExploreMusic_SFX_only" ID="{F8E29C60-6147-4A3F-9746-22F84E087746}" WorkUnitID="{10A75CA5-3F55-455C-A103-004D7C43FEF2}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="MenuMusic_Stop" ID="{5075AD66-8DBA-4594-9166-9FEDAA77AC26}">
+					<ChildrenList>
+						<Action Name="" ID="{4B63BC81-DB32-43B3-B184-A1827EFDDC14}" ShortID="979364554">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="2"/>
+								<Property Name="FadeTime" Type="Real64" Value="4"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="WS_ExploreMusic_SFX_only" ID="{F8E29C60-6147-4A3F-9746-22F84E087746}" WorkUnitID="{10A75CA5-3F55-455C-A103-004D7C43FEF2}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>

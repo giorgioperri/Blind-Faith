@@ -8,9 +8,12 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Scenes_Rafal/Rafal_intro.unity
     guid: a331b0eef832e294383b71c46af71208
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Scenes_Rafal/Rafal_AfterIntro.unity
     guid: a116ce8c88ca9594cb29aa154ca01fc1
+  - enabled: 1
+    path: Assets/Scenes/Scenes_Thomas/Final_Thomas.unity
+    guid: fcd4dcb7ab28b3f48a1bdaa8e4d64857
   m_configObjects:
     com.unity.input.settings: {fileID: 11400000, guid: 9e7be553448fa2546aea5752021cbcf7,
       type: 2}

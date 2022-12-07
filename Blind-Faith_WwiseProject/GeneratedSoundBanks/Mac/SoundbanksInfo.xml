@@ -11,7 +11,7 @@
 	<StreamedFiles/>
 	<MediaFilesNotInAnyBank/>
 	<SoundBanks>
-		<SoundBank Id="1355168291" Language="SFX" Hash="1256755018">
+		<SoundBank Id="1355168291" Language="SFX" Hash="1499244905">
 			<ObjectPath>Init</ObjectPath>
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
@@ -24,7 +24,7 @@
 				<AuxBus Id="2933838247" Name="SmallRoom" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Rooms\SmallRoom"/>
 			</IncludedAuxBusses>
 		</SoundBank>
-		<SoundBank Id="1764570813" Language="SFX" Hash="1226836926">
+		<SoundBank Id="1764570813" Language="SFX" Hash="2660684774">
 			<ObjectPath>\SoundBanks\Default Work Unit\Mains</ObjectPath>
 			<ShortName>Mains</ShortName>
 			<Path>Mains.bnk</Path>
@@ -105,11 +105,11 @@
 						</File>
 						<File Id="486089720" Language="SFX">
 							<ShortName>Earthquake_Rumble_PSEM.100.wav</ShortName>
-							<Path>SFX\Earthquake_Rumble_PSEM.100_CD857C3B.wem</Path>
+							<Path>SFX\Earthquake_Rumble_PSEM.100_D424C720.wem</Path>
 						</File>
 						<File Id="696520388" Language="SFX">
 							<ShortName>METLFric_Long Slow High Pitched Tonal Screech Scrape Squeak_TT_CHSTUDIO_Neumann TLM 103.wav</ShortName>
-							<Path>SFX\METLFric_Long Slow High Pitched Tonal Screech Scrape Squeak_TT_CHSTUDIO_Neumann TLM 103_D4A3BBAB.wem</Path>
+							<Path>SFX\METLFric_Long Slow High Pitched Tonal Screech Scrape Squeak_TT_CHSTUDIO_Neumann TLM 103_82043756.wem</Path>
 						</File>
 						<File Id="826579596" Language="SFX">
 							<ShortName>Door, Metal, Open, Close, Distant, Mariott Hotel, San Jose 1.wav</ShortName>
@@ -117,7 +117,7 @@
 						</File>
 						<File Id="920208633" Language="SFX">
 							<ShortName>Creepy Door, Slow Creak_03.wav</ShortName>
-							<Path>SFX\Creepy Door, Slow Creak_03_B70E6742.wem</Path>
+							<Path>SFX\Creepy Door, Slow Creak_03_37BCBE8B.wem</Path>
 						</File>
 						<File Id="1018791543" Language="SFX">
 							<ShortName>Designed Ice - RAW07.wav</ShortName>
@@ -237,15 +237,23 @@
 						</SwitchContainer>
 					</SwitchContainers>
 				</Event>
-				<Event Id="2271674691" Name="IntroEvent" ObjectPath="\Events\Default Work Unit\IntroEvent" DurationType="OneShot" DurationMin="51.937168" DurationMax="51.937168">
+				<Event Id="2271674691" Name="IntroEvent" ObjectPath="\Events\Default Work Unit\IntroEvent" DurationType="OneShot" DurationMin="61.958282" DurationMax="61.958282">
 					<IncludedMemoryFiles>
 						<File Id="482764108" Language="SFX">
 							<ShortName>Stinger_Voice_Female_Eerie_Whisper.wav</ShortName>
 							<Path>SFX\Stinger_Voice_Female_Eerie_Whisper_10C4C929.wem</Path>
 						</File>
+						<File Id="802035410" Language="SFX">
+							<ShortName>RISE_Necronomicon.wav</ShortName>
+							<Path>SFX\RISE_Necronomicon_A2FA6924.wem</Path>
+						</File>
+						<File Id="812897878" Language="SFX">
+							<ShortName>The Tudor Consort - Epistle - Expurgate Vetus Fermentum (online-audio-converter.com).wav</ShortName>
+							<Path>SFX\The Tudor Consort - Epistle - Expurgate Vetus Fermentum (online-audio-converter.com)_99B3AC1C.wem</Path>
+						</File>
 						<File Id="964259068" Language="SFX">
 							<ShortName>STINGER_Whisper_Of_Distress.wav</ShortName>
-							<Path>SFX\STINGER_Whisper_Of_Distress_2D048215.wem</Path>
+							<Path>SFX\STINGER_Whisper_Of_Distress_10C4C929.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
@@ -345,6 +353,15 @@
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
+				<Event Id="679636833" Name="MenuMusic" ObjectPath="\Events\Default Work Unit\MenuMusic" DurationType="Infinite">
+					<IncludedMemoryFiles>
+						<File Id="713125120" Language="SFX">
+							<ShortName>WS_ExploreMusic_SFX_only.wav</ShortName>
+							<Path>SFX\WS_ExploreMusic_SFX_only_B6C3C335.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="1115745636" Name="MenuMusic_Stop" ObjectPath="\Events\Default Work Unit\MenuMusic_Stop" MaxAttenuation="0." DurationType="OneShot" DurationMin="0." DurationMax="0."/>
 				<Event Id="1217934400" Name="MirrorLight" ObjectPath="\Events\Default Work Unit\SFX\Mirror\MirrorLight" MaxAttenuation="10." DurationType="Infinite">
 					<IncludedMemoryFiles>
 						<File Id="345534423" Language="SFX">
@@ -380,7 +397,7 @@
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
-				<Event Id="1398273777" Name="VA_Clerk_Play" ObjectPath="\Events\Default Work Unit\VA\VA_Clerk\VA_Clerk_Play" DurationType="OneShot" DurationMin="0." DurationMax="13.325681">
+				<Event Id="1398273777" Name="VA_Clerk_Play" ObjectPath="\Events\Default Work Unit\VA\VA_Clerk\VA_Clerk_Play" DurationType="OneShot" DurationMin="0." DurationMax="16.172623">
 					<IncludedMemoryFiles>
 						<File Id="9205079" Language="SFX">
 							<ShortName>HisChildHasReturnd.wav</ShortName>
@@ -711,7 +728,7 @@
 				</File>
 				<File Id="486089720" Language="SFX">
 					<ShortName>Earthquake_Rumble_PSEM.100.wav</ShortName>
-					<Path>SFX\Earthquake_Rumble_PSEM.100_CD857C3B.wem</Path>
+					<Path>SFX\Earthquake_Rumble_PSEM.100_D424C720.wem</Path>
 				</File>
 				<File Id="493705793" Language="SFX">
 					<ShortName>water2.wav</ShortName>
@@ -783,11 +800,15 @@
 				</File>
 				<File Id="696520388" Language="SFX">
 					<ShortName>METLFric_Long Slow High Pitched Tonal Screech Scrape Squeak_TT_CHSTUDIO_Neumann TLM 103.wav</ShortName>
-					<Path>SFX\METLFric_Long Slow High Pitched Tonal Screech Scrape Squeak_TT_CHSTUDIO_Neumann TLM 103_D4A3BBAB.wem</Path>
+					<Path>SFX\METLFric_Long Slow High Pitched Tonal Screech Scrape Squeak_TT_CHSTUDIO_Neumann TLM 103_82043756.wem</Path>
 				</File>
 				<File Id="702937931" Language="SFX">
 					<ShortName>rockslide_02.wav</ShortName>
 					<Path>SFX\rockslide_02_6CEB23E0.wem</Path>
+				</File>
+				<File Id="713125120" Language="SFX">
+					<ShortName>WS_ExploreMusic_SFX_only.wav</ShortName>
+					<Path>SFX\WS_ExploreMusic_SFX_only_B6C3C335.wem</Path>
 				</File>
 				<File Id="718550265" Language="SFX">
 					<ShortName>Clerk_chatter\Clerk_chatter__8.wav</ShortName>
@@ -812,6 +833,14 @@
 				<File Id="795415343" Language="SFX">
 					<ShortName>Scream,Male,Mid Thirties,Mouth Covered,Gasps,Fast,Shriek,Panic.wav</ShortName>
 					<Path>SFX\Scream,Male,Mid Thirties,Mouth Covered,Gasps,Fast,Shriek,Panic_10C4C929.wem</Path>
+				</File>
+				<File Id="802035410" Language="SFX">
+					<ShortName>RISE_Necronomicon.wav</ShortName>
+					<Path>SFX\RISE_Necronomicon_A2FA6924.wem</Path>
+				</File>
+				<File Id="812897878" Language="SFX">
+					<ShortName>The Tudor Consort - Epistle - Expurgate Vetus Fermentum (online-audio-converter.com).wav</ShortName>
+					<Path>SFX\The Tudor Consort - Epistle - Expurgate Vetus Fermentum (online-audio-converter.com)_99B3AC1C.wem</Path>
 				</File>
 				<File Id="826579596" Language="SFX">
 					<ShortName>Door, Metal, Open, Close, Distant, Mariott Hotel, San Jose 1.wav</ShortName>
@@ -839,7 +868,7 @@
 				</File>
 				<File Id="920208633" Language="SFX">
 					<ShortName>Creepy Door, Slow Creak_03.wav</ShortName>
-					<Path>SFX\Creepy Door, Slow Creak_03_B70E6742.wem</Path>
+					<Path>SFX\Creepy Door, Slow Creak_03_37BCBE8B.wem</Path>
 				</File>
 				<File Id="929948901" Language="SFX">
 					<ShortName>Stinger_Metal_Silverware_Reversed.wav</ShortName>
@@ -871,7 +900,7 @@
 				</File>
 				<File Id="964259068" Language="SFX">
 					<ShortName>STINGER_Whisper_Of_Distress.wav</ShortName>
-					<Path>SFX\STINGER_Whisper_Of_Distress_2D048215.wem</Path>
+					<Path>SFX\STINGER_Whisper_Of_Distress_10C4C929.wem</Path>
 				</File>
 				<File Id="974181242" Language="SFX">
 					<ShortName>Teleport.wav</ShortName>

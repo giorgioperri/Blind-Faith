@@ -30,6 +30,8 @@ namespace AK
         static const AkUniqueID LOOSINGHEALTH = 938481918U;
         static const AkUniqueID LOWHEALTH = 1017222595U;
         static const AkUniqueID MASSIVEDEVICE = 3113871599U;
+        static const AkUniqueID MENUMUSIC = 679636833U;
+        static const AkUniqueID MENUMUSIC_STOP = 1115745636U;
         static const AkUniqueID MIRRORLIGHT = 1217934400U;
         static const AkUniqueID MIRRORLIGHT_OFF = 500177350U;
         static const AkUniqueID MIRRORTURN = 1903317937U;

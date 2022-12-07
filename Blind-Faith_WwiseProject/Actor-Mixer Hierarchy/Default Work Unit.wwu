@@ -5518,20 +5518,45 @@
 						<Reference Name="Conversion">
 							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{23AF77D7-3FEA-409B-8E44-F5B490014C61}"/>
 						</Reference>
+						<Reference Name="Effect0">
+							<Custom CreatedFrom="{9B6E8B78-EF8C-494C-AADA-D01CF51B5FAC}">
+								<Effect Name="Large_Church1 (Custom)" ID="{B552AAA7-23D6-4509-A242-2D6D5A9E1A31}" ShortID="47813199" PluginName="Wwise Matrix Reverb" CompanyID="0" PluginID="115" PluginType="3">
+									<PropertyList>
+										<Property Name="DryLevel" Type="Real32" Value="-9.3"/>
+										<Property Name="HFRatio" Type="Real32" Value="6"/>
+										<Property Name="PreDelay" Type="Real32" Value="0.1"/>
+										<Property Name="WetLevel" Type="Real32" Value="-46"/>
+									</PropertyList>
+								</Effect>
+							</Custom>
+						</Reference>
 						<Reference Name="OutputBus">
-							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C91EB4C6-56DC-4541-96C4-29E948904D66}"/>
+							<ObjectRef Name="Rooms" ID="{F220833B-3FC1-4DC8-9CF3-6F367C8C1EDE}" WorkUnitID="{C91EB4C6-56DC-4541-96C4-29E948904D66}"/>
 						</Reference>
 					</ReferenceList>
 					<ChildrenList>
 						<Sound Name="STINGER_Whisper_Of_Distress" ID="{49223962-7FB5-4407-B180-77706B44A9A3}" ShortID="96815804">
 							<PropertyList>
+								<Property Name="3DPosition" Type="int16" Value="1"/>
+								<Property Name="3DSpatialization" Type="int16" Value="2"/>
+								<Property Name="Highpass" Type="int16">
+									<ValueList>
+										<Value>21</Value>
+									</ValueList>
+								</Property>
+								<Property Name="HoldEmitterPositionOrientation" Type="bool" Value="True"/>
+								<Property Name="OverridePositioning" Type="bool" Value="True"/>
+								<Property Name="SpeakerPanning3DSpatializationMix" Type="int32" Value="89"/>
 								<Property Name="Volume" Type="Real64">
 									<ValueList>
-										<Value>-20</Value>
+										<Value>-6</Value>
 									</ValueList>
 								</Property>
 							</PropertyList>
 							<ReferenceList>
+								<Reference Name="Attenuation">
+									<ObjectRef Name="50m" ID="{4055965D-5141-4C9F-AE84-38D3C05F7047}" WorkUnitID="{47D4E814-D669-4A08-8AD2-F706566546E0}"/>
+								</Reference>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{23AF77D7-3FEA-409B-8E44-F5B490014C61}"/>
 								</Reference>
@@ -5542,9 +5567,7 @@
 							<ChildrenList>
 								<AudioFileSource Name="STINGER_Whisper_Of_Distress" ID="{ADA51896-A62E-4E37-A4ED-59381D5C525D}">
 									<PropertyList>
-										<Property Name="FadeInDuration" Type="Real64" Value="4.76548398705759"/>
 										<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
-										<Property Name="TrimBegin" Type="Real64" Value="1.69858835182251"/>
 									</PropertyList>
 									<Language>SFX</Language>
 									<AudioFile>STINGER_Whisper_Of_Distress.wav</AudioFile>
@@ -5553,6 +5576,53 @@
 									</MediaIDList>
 								</AudioFileSource>
 							</ChildrenList>
+							<PositioningInfo>
+								<Position Name="" ID="{A8E70BCB-536C-4F6A-84AE-A952EFE4CD81}">
+									<PropertyList>
+										<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
+									</PropertyList>
+									<ChildrenList>
+										<Path2D Name="STINGER_Whisper_Of_Distress_Path" ID="{85BD8D46-8AA5-4B34-AE0B-707BE1B9EE53}">
+											<PropertyList>
+												<Property Name="Duration" Type="Uint32" Value="2000"/>
+											</PropertyList>
+											<PointList>
+												<Point>
+													<XPos>-98.98477</XPos>
+													<YPos>-4.23728</YPos>
+													<Flags>12</Flags>
+													<Time>0</Time>
+												</Point>
+												<Point>
+													<XPos>-83.75635</XPos>
+													<YPos>-23.16385</YPos>
+													<Flags>0</Flags>
+													<Time>2000</Time>
+												</Point>
+											</PointList>
+										</Path2D>
+										<Path2D Name="STINGER_Whisper_Of_Distress_Path_01" ID="{C347BE9E-B2E0-465F-B9CF-0EEAD72D2C48}">
+											<PropertyList>
+												<Property Name="Duration" Type="Uint32" Value="11000"/>
+											</PropertyList>
+											<PointList>
+												<Point>
+													<XPos>-54.82234</XPos>
+													<YPos>-45.48023</YPos>
+													<Flags>12</Flags>
+													<Time>0</Time>
+												</Point>
+												<Point>
+													<XPos>60.91371</XPos>
+													<YPos>68.36158</YPos>
+													<Flags>0</Flags>
+													<Time>11000</Time>
+												</Point>
+											</PointList>
+										</Path2D>
+									</ChildrenList>
+								</Position>
+							</PositioningInfo>
 							<ObjectLists/>
 							<ActiveSourceList>
 								<ActiveSource Name="STINGER_Whisper_Of_Distress" ID="{ADA51896-A62E-4E37-A4ED-59381D5C525D}" Platform="Linked"/>
@@ -5562,18 +5632,24 @@
 							<PropertyList>
 								<Property Name="3DPosition" Type="int16" Value="1"/>
 								<Property Name="3DSpatialization" Type="int16" Value="1"/>
-								<Property Name="EnableAttenuation" Type="bool" Value="False"/>
+								<Property Name="Highpass" Type="int16">
+									<ValueList>
+										<Value>17</Value>
+									</ValueList>
+								</Property>
+								<Property Name="HoldEmitterPositionOrientation" Type="bool" Value="True"/>
 								<Property Name="OverrideOutput" Type="bool" Value="True"/>
 								<Property Name="OverridePositioning" Type="bool" Value="True"/>
+								<Property Name="SpeakerPanning3DSpatializationMix" Type="int32" Value="91"/>
 								<Property Name="Volume" Type="Real64">
 									<ValueList>
-										<Value>-19</Value>
+										<Value>-7</Value>
 									</ValueList>
 								</Property>
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Attenuation">
-									<ObjectRef Name="10" ID="{CD38D13E-1D7D-46FA-AD0C-C7D5F9690547}" WorkUnitID="{47D4E814-D669-4A08-8AD2-F706566546E0}"/>
+									<ObjectRef Name="50m" ID="{4055965D-5141-4C9F-AE84-38D3C05F7047}" WorkUnitID="{47D4E814-D669-4A08-8AD2-F706566546E0}"/>
 								</Reference>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{23AF77D7-3FEA-409B-8E44-F5B490014C61}"/>
@@ -5598,61 +5674,76 @@
 										<Property Name="PlayMechanismTransitionTime" Type="Real64" Value="3"/>
 									</PropertyList>
 									<ChildrenList>
-										<Path2D Name="Stinger_Voice_Female_Eerie_Whisper_Path" ID="{A81F64BC-34C6-4F82-B782-43C46DF57235}">
+										<Path2D Name="Stinger_Voice_Female_Eerie_Whisper_Path" ID="{3D2B900D-51DD-4127-AE45-FD1C6E8FCE3B}">
+											<PropertyList>
+												<Property Name="Duration" Type="Uint32" Value="25000"/>
+											</PropertyList>
 											<PointList>
 												<Point>
-													<XPos>95.43147</XPos>
-													<YPos>-0.84746</YPos>
+													<XPos>-91.37056</XPos>
+													<YPos>1.41243</YPos>
 													<Flags>12</Flags>
 													<Time>0</Time>
 												</Point>
 												<Point>
-													<XPos>67.00508</XPos>
-													<YPos>61.58192</YPos>
-													<Flags>0</Flags>
-													<Time>625</Time>
-												</Point>
-												<Point>
-													<XPos>-19.79695</XPos>
-													<YPos>70.0565</YPos>
-													<Flags>0</Flags>
-													<Time>1250</Time>
-												</Point>
-												<Point>
-													<XPos>-63.45178</XPos>
-													<YPos>51.9774</YPos>
-													<Flags>0</Flags>
-													<Time>1875</Time>
-												</Point>
-												<Point>
-													<XPos>-78.6802030456853</XPos>
-													<YPos>0</YPos>
+													<XPos>-58.3756345177665</XPos>
+													<YPos>-42.9378531073446</YPos>
 													<Flags>0</Flags>
 													<Time>2500</Time>
 												</Point>
 												<Point>
-													<XPos>-66.497461928934</XPos>
-													<YPos>-53.1073446327684</YPos>
-													<Flags>0</Flags>
-													<Time>3125</Time>
-												</Point>
-												<Point>
-													<XPos>11.1675126903553</XPos>
-													<YPos>-78.5310734463277</YPos>
-													<Flags>0</Flags>
-													<Time>3750</Time>
-												</Point>
-												<Point>
-													<XPos>65.4822335025381</XPos>
-													<YPos>-55.3672316384181</YPos>
-													<Flags>0</Flags>
-													<Time>4375</Time>
-												</Point>
-												<Point>
-													<XPos>96.4467005076142</XPos>
-													<YPos>-7.90960451977401</YPos>
+													<XPos>4.56852791878173</XPos>
+													<YPos>-66.6666666666667</YPos>
 													<Flags>0</Flags>
 													<Time>5000</Time>
+												</Point>
+												<Point>
+													<XPos>66.497461928934</XPos>
+													<YPos>-40.6779661016949</YPos>
+													<Flags>0</Flags>
+													<Time>7500</Time>
+												</Point>
+												<Point>
+													<XPos>81.7258883248731</XPos>
+													<YPos>16.9491525423729</YPos>
+													<Flags>0</Flags>
+													<Time>10000</Time>
+												</Point>
+												<Point>
+													<XPos>52.7918781725888</XPos>
+													<YPos>55.9322033898305</YPos>
+													<Flags>0</Flags>
+													<Time>12500</Time>
+												</Point>
+												<Point>
+													<XPos>-6.5989847715736</XPos>
+													<YPos>78.5310734463277</YPos>
+													<Flags>0</Flags>
+													<Time>15000</Time>
+												</Point>
+												<Point>
+													<XPos>-56.8527918781726</XPos>
+													<YPos>55.3672316384181</YPos>
+													<Flags>0</Flags>
+													<Time>17500</Time>
+												</Point>
+												<Point>
+													<XPos>-88.3248730964467</XPos>
+													<YPos>25.4237288135593</YPos>
+													<Flags>0</Flags>
+													<Time>20000</Time>
+												</Point>
+												<Point>
+													<XPos>-55.83756</XPos>
+													<YPos>7.9096</YPos>
+													<Flags>0</Flags>
+													<Time>22500</Time>
+												</Point>
+												<Point>
+													<XPos>67.51269035533</XPos>
+													<YPos>-1.69491525423729</YPos>
+													<Flags>0</Flags>
+													<Time>25000</Time>
 												</Point>
 											</PointList>
 										</Path2D>
@@ -5662,6 +5753,264 @@
 							<ObjectLists/>
 							<ActiveSourceList>
 								<ActiveSource Name="Stinger_Voice_Female_Eerie_Whisper" ID="{9A0ACE8B-B473-41C8-8B1F-B917950BB009}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="The Tudor Consort - Epistle - Expurgate Vetus Fermentum (online-audio-converter_com)" ID="{83A67B87-42BF-4E32-962A-72895C4BCE48}" ShortID="465229590">
+							<PropertyList>
+								<Property Name="3DPosition" Type="int16" Value="1"/>
+								<Property Name="3DSpatialization" Type="int16" Value="2"/>
+								<Property Name="Highpass" Type="int16">
+									<ValueList>
+										<Value>18</Value>
+									</ValueList>
+								</Property>
+								<Property Name="HoldEmitterPositionOrientation" Type="bool" Value="True"/>
+								<Property Name="Lowpass" Type="int16">
+									<ValueList>
+										<Value>9</Value>
+									</ValueList>
+									<RTPCList>
+										<RTPC Name="" ID="{A2A05415-D251-4404-8DDB-95E2A097A104}" ShortID="929771234">
+											<ReferenceList>
+												<Reference Name="ControlInput">
+													<ObjectRef Name="10sec" ID="{94BCA31E-12E6-473C-AE45-2E65B80128F2}" WorkUnitID="{06927402-0891-4579-8A17-812F2385F09C}"/>
+												</Reference>
+											</ReferenceList>
+											<Curve Name="" ID="{88E524FA-A122-471C-B3F3-6A87ECDE073B}">
+												<PropertyList>
+													<Property Name="Flags" Type="int32" Value="65537"/>
+												</PropertyList>
+												<PointList>
+													<Point>
+														<XPos>0</XPos>
+														<YPos>0</YPos>
+														<Flags>5</Flags>
+														<SegmentShape>Log3</SegmentShape>
+													</Point>
+													<Point>
+														<XPos>10</XPos>
+														<YPos>39</YPos>
+														<Flags>37</Flags>
+													</Point>
+												</PointList>
+											</Curve>
+										</RTPC>
+									</RTPCList>
+								</Property>
+								<Property Name="OverridePositioning" Type="bool" Value="True"/>
+								<Property Name="SpeakerPanning3DSpatializationMix" Type="int32" Value="90"/>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>3</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Attenuation">
+									<ObjectRef Name="50m" ID="{4055965D-5141-4C9F-AE84-38D3C05F7047}" WorkUnitID="{47D4E814-D669-4A08-8AD2-F706566546E0}"/>
+								</Reference>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{23AF77D7-3FEA-409B-8E44-F5B490014C61}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C91EB4C6-56DC-4541-96C4-29E948904D66}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="The Tudor Consort - Epistle - Expurgate Vetus Fermentum (online-audio-converter_com)" ID="{7B4EA2D0-18A0-40FD-89DE-79779EE9443C}">
+									<PropertyList>
+										<Property Name="FadeInDuration" Type="Real64" Value="4.45456498388829"/>
+										<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+										<Property Name="TrimBegin" Type="Real64" Value="3.06870032223416"/>
+									</PropertyList>
+									<Language>SFX</Language>
+									<AudioFile>The Tudor Consort - Epistle - Expurgate Vetus Fermentum (online-audio-converter.com).wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="812897878"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<PositioningInfo>
+								<Panner Name="" ID="{0D218012-8955-4528-BB36-D83BA534DAE4}"/>
+								<Position Name="" ID="{6EA991DF-102E-4574-A508-24A7B6510163}">
+									<PropertyList>
+										<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
+									</PropertyList>
+									<ChildrenList>
+										<Path2D Name="The Tudor Consort - Epistle - Expurgate Vetus Fermentum (online-audio-converter_com)_Path" ID="{0EA9EDDD-5AC6-42B3-9396-5B859E680343}">
+											<PropertyList>
+												<Property Name="Duration" Type="Uint32" Value="11000"/>
+											</PropertyList>
+											<PointList>
+												<Point>
+													<XPos>-33.50255</XPos>
+													<YPos>-11.01695</YPos>
+													<Flags>12</Flags>
+													<Time>0</Time>
+												</Point>
+												<Point>
+													<XPos>1.52284</XPos>
+													<YPos>24.85876</YPos>
+													<Flags>0</Flags>
+													<Time>3666</Time>
+												</Point>
+												<Point>
+													<XPos>61.92893</XPos>
+													<YPos>-11.86441</YPos>
+													<Flags>0</Flags>
+													<Time>7333</Time>
+												</Point>
+												<Point>
+													<XPos>1.01523</XPos>
+													<YPos>-1.69492</YPos>
+													<Flags>0</Flags>
+													<Time>11000</Time>
+												</Point>
+											</PointList>
+										</Path2D>
+										<Path2D Name="The Tudor Consort - Epistle - Expurgate Vetus Fermentum (online-audio-converter_com)_Path_01" ID="{D0AB26B2-C341-493C-8FF0-1A05FD7A9BF7}">
+											<PropertyList>
+												<Property Name="Duration" Type="Uint32" Value="33000"/>
+											</PropertyList>
+											<PointList>
+												<Point>
+													<XPos>9.13706</XPos>
+													<YPos>34.18079</YPos>
+													<Flags>12</Flags>
+													<Time>0</Time>
+												</Point>
+												<Point>
+													<XPos>-25.38071</XPos>
+													<YPos>27.11864</YPos>
+													<Flags>0</Flags>
+													<Time>6600</Time>
+												</Point>
+												<Point>
+													<XPos>-47.20812</XPos>
+													<YPos>-25.9887</YPos>
+													<Flags>0</Flags>
+													<Time>13200</Time>
+												</Point>
+												<Point>
+													<XPos>1.01523</XPos>
+													<YPos>-49.71751</YPos>
+													<Flags>0</Flags>
+													<Time>19800</Time>
+												</Point>
+												<Point>
+													<XPos>56.34518</XPos>
+													<YPos>-34.46328</YPos>
+													<Flags>0</Flags>
+													<Time>26400</Time>
+												</Point>
+												<Point>
+													<XPos>18.78173</XPos>
+													<YPos>32.20339</YPos>
+													<Flags>0</Flags>
+													<Time>33000</Time>
+												</Point>
+											</PointList>
+										</Path2D>
+									</ChildrenList>
+								</Position>
+							</PositioningInfo>
+							<ObjectLists/>
+							<ActiveSourceList>
+								<ActiveSource Name="The Tudor Consort - Epistle - Expurgate Vetus Fermentum (online-audio-converter_com)" ID="{7B4EA2D0-18A0-40FD-89DE-79779EE9443C}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="RISE_Necronomicon" ID="{24FB9AC5-840A-4148-A0E3-64C23CB1DDFC}" ShortID="836907841">
+							<PropertyList>
+								<Property Name="Highpass" Type="int16">
+									<ValueList>
+										<Value>26</Value>
+									</ValueList>
+								</Property>
+								<Property Name="OverrideEffect" Type="bool" Value="True"/>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-33</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{23AF77D7-3FEA-409B-8E44-F5B490014C61}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C91EB4C6-56DC-4541-96C4-29E948904D66}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="RISE_Necronomicon" ID="{C86CA612-B34E-4F49-8223-7E53482815E0}">
+									<PropertyList>
+										<Property Name="FadeInDuration" Type="Real64" Value="10.2236528110048"/>
+										<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+									</PropertyList>
+									<Language>SFX</Language>
+									<AudioFile>RISE_Necronomicon.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="802035410"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ObjectLists/>
+							<ActiveSourceList>
+								<ActiveSource Name="RISE_Necronomicon" ID="{C86CA612-B34E-4F49-8223-7E53482815E0}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+					</ChildrenList>
+					<ObjectLists/>
+				</ActorMixer>
+				<ActorMixer Name="MenuMusic" ID="{38AEAD52-0B0F-4163-82E2-486BCBC1FBB8}" ShortID="355042333">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{23AF77D7-3FEA-409B-8E44-F5B490014C61}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C91EB4C6-56DC-4541-96C4-29E948904D66}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<Sound Name="WS_ExploreMusic_SFX_only" ID="{F8E29C60-6147-4A3F-9746-22F84E087746}" ShortID="697847754">
+							<PropertyList>
+								<Property Name="3DSpatialization" Type="int16" Value="1"/>
+								<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+								<Property Name="Lowpass" Type="int16">
+									<ValueList>
+										<Value>34</Value>
+									</ValueList>
+								</Property>
+								<Property Name="SpeakerPanning3DSpatializationMix" Type="int32" Value="0"/>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-20</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{23AF77D7-3FEA-409B-8E44-F5B490014C61}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C91EB4C6-56DC-4541-96C4-29E948904D66}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="WS_ExploreMusic_SFX_only" ID="{00133ABD-FDAF-40ED-A898-7ABC650F2252}">
+									<PropertyList>
+										<Property Name="ChannelConfigOverride" Type="int64" Value="8589935106"/>
+									</PropertyList>
+									<Language>SFX</Language>
+									<AudioFile>WS_ExploreMusic_SFX_only.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="713125120"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ObjectLists/>
+							<ActiveSourceList>
+								<ActiveSource Name="WS_ExploreMusic_SFX_only" ID="{00133ABD-FDAF-40ED-A898-7ABC650F2252}" Platform="Linked"/>
 							</ActiveSourceList>
 						</Sound>
 					</ChildrenList>

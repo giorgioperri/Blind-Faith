@@ -277,7 +277,7 @@ MonoBehaviour:
     ParentPath: SoundBanks\Default Work Unit
     guid: 91f3f2c2e89f4143bd59d41dc8510ab9
     GuidInternal: 
-    m_lastTime: -8585312702898828927
+    m_lastTime: -8585311695393204665
     List:
     - name: Mains
       guid: 22a5fa274c62a84d93c78d5801f30f0d
@@ -305,7 +305,7 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit
     guid: 5eb490fb28343a4fbde7e5ca0bff7b1d
     GuidInternal: 
-    m_lastTime: -8585312643260087654
+    m_lastTime: -8585311676720824444
     List:
     - name: 3D
       guid: d0312eb1e176a14c90ecba42bdd0174b
@@ -442,6 +442,23 @@ MonoBehaviour:
       maxAttenuation: 10
       maxDuration: 15.075651
       minDuration: 15.075651
+    - name: DoorOpen
+      guid: b7002d55e1e5ca40bfc88347b18b8bfd
+      id: 1404805401
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 5eb490fb28343a4fbde7e5ca0bff7b1d
+      - ElementName: DoorOpen
+        ObjectType: 3
+        guid: b7002d55e1e5ca40bfc88347b18b8bfd
+      Path: Events\Default Work Unit\DoorOpen
+      maxAttenuation: 10
+      maxDuration: 13.453642
+      minDuration: 13.453642
     - name: DungeonAmb
       guid: ee95cc838720604daa13fc1928d15ecc
       id: 3254361931
@@ -526,8 +543,8 @@ MonoBehaviour:
         guid: f6687b10eef1e043a75cc5b1e7fa626b
       Path: Events\Default Work Unit\IntroEvent
       maxAttenuation: 0
-      maxDuration: 51.93717
-      minDuration: 51.93717
+      maxDuration: 61.958282
+      minDuration: 61.958282
     - name: Lanteren
       guid: 9df5e175dfba1742bc7642b96b7eb864
       id: 1148743742
@@ -764,6 +781,40 @@ MonoBehaviour:
       maxAttenuation: 50
       maxDuration: 11.896948
       minDuration: 11.896948
+    - name: MenuMusic
+      guid: 2ee4c194585d474fa31d91dccc3b960c
+      id: 679636833
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 5eb490fb28343a4fbde7e5ca0bff7b1d
+      - ElementName: MenuMusic
+        ObjectType: 3
+        guid: 2ee4c194585d474fa31d91dccc3b960c
+      Path: Events\Default Work Unit\MenuMusic
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: MenuMusic_Stop
+      guid: 66ad7550ba8d944591669fedaa77ac26
+      id: 1115745636
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 5eb490fb28343a4fbde7e5ca0bff7b1d
+      - ElementName: MenuMusic_Stop
+        ObjectType: 3
+        guid: 66ad7550ba8d944591669fedaa77ac26
+      Path: Events\Default Work Unit\MenuMusic_Stop
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
     - name: Mirror
       guid: 29a7b1fdbebfe84a8502e0655cd7ce83
       id: 2039020852
@@ -1017,7 +1068,7 @@ MonoBehaviour:
         guid: 4415bc8e58ba4848a9771366cdd39cee
       Path: Events\Default Work Unit\VA\VA_Clerk\VA_Clerk_Play
       maxAttenuation: 0
-      maxDuration: 13.325681
+      maxDuration: 16.172623
       minDuration: 0
     - name: VA_Pause
       guid: c9bf07d16212704a96bfebfab9f0e214
@@ -1795,9 +1846,9 @@ MonoBehaviour:
         ObjectType: 4
         guid: 14a961bd002ffe41ba1f908602494c89
       Path: Triggers\Default Work Unit\VA_Test
-  ExpandedFileSystemItemIds: 
-  ExpandedWaapiItemIds: 050000000600000009000000160000001d0000001e000000260000002c000000
+  ExpandedFileSystemItemIds: 040000000500000006000000
+  ExpandedWaapiItemIds: 0500000006000000
   AutoSyncSelection: 0
   autoPopulateEnabled: 1
-  currentDataSource: 0
+  currentDataSource: 1
   CurrentPluginConfig: 
