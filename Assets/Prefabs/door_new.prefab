@@ -61,7 +61,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: c21e3277c307148a8ae6c42a2b3c3d97, type: 2}
+  - {fileID: 2100000, guid: 18022be27ac0440c68f79b1945ab6aa1, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -144,7 +144,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: c21e3277c307148a8ae6c42a2b3c3d97, type: 2}
+  - {fileID: 2100000, guid: 18022be27ac0440c68f79b1945ab6aa1, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -223,12 +223,15 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7259392468097032260}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 3eee910f5507021419fae9da04aee82a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   _doorAnim: {fileID: 7529986885216703268}
+  isPrismatic: 0
+  greenHit: 0
+  redHit: 0
 --- !u!95 &7529986885216703268
 Animator:
   serializedVersion: 4

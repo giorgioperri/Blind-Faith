@@ -29,6 +29,9 @@ public class Door : Interactable
     private void Update()
     {
         if (!isPrismatic) return;
+        
+        _doorAnim.SetBool("greenHit", greenHit);
+        _doorAnim.SetBool("redHit", redHit);
 
         if (greenHit && redHit)
         {
