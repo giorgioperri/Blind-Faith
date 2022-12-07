@@ -6,6 +6,7 @@ using UnityEngine;
 public class LightBathingArea : MonoBehaviour
 {
     public static LightBathingArea Instance;
+    private bool _canTriggerSocketEvent = true;
 
     private void Awake()
     {
@@ -31,6 +32,12 @@ public class LightBathingArea : MonoBehaviour
         {
             GameManager.Instance.isBathingInLight = false;
             if(TooltipManager.Instance.currentTooltip == TooltipTypes.LanternCharge) TooltipManager.Instance.CloseTooltip();
+
+            if (LanternManager.Instance.lanternCharge > .5f && _canTriggerSocketEvent)
+            {
+                GameManager.Instance.InitSocketEvent();
+                _canTriggerSocketEvent = false;
+            }
         }
     }
 }

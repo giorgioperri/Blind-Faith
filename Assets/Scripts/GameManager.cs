@@ -1,6 +1,9 @@
 using System;
+using System.Collections;
+using Cinemachine;
 using StarterAssets;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.InputSystem;
 
 public class GameManager : MonoBehaviour
@@ -25,6 +28,12 @@ public class GameManager : MonoBehaviour
 
     private float wTime;
 
+    [SerializeField] private CinemachineVirtualCamera mainVC;
+    [SerializeField] private CinemachineVirtualCamera socketVC;
+    [SerializeField] private CinemachineVirtualCamera pillarVC;
+
+    [SerializeField] private bool _isIntro;
+
     private void Awake()
     {
         if (Instance != null)
@@ -37,6 +46,7 @@ public class GameManager : MonoBehaviour
 
     private void Start()
     {
+        if (_isIntro) return;
         playerInput = FindObjectOfType<StarterAssetsInputs>();
         TooltipManager.Instance.ToggleTooltip("Use the WASD keys to move");
         TooltipManager.Instance.currentTooltip = TooltipTypes.WASDMove;
@@ -44,6 +54,8 @@ public class GameManager : MonoBehaviour
 
     void Update()
     {
+		if (_isIntro) return;
+
         if (Keyboard.current.wKey.isPressed && wTime < 1.2f)
         {
             wTime += Time.deltaTime;
@@ -98,5 +110,42 @@ public class GameManager : MonoBehaviour
             LanternManager.Instance.canPlayChargeSound = true;
             isLookingAtAngel = false;
         }
+    }
+
+    public void InitSocketEvent()
+    {
+        StartCoroutine(StartSocketEvent());
+    }
+    
+    public void InitPillarEvent()
+    {
+        StartCoroutine(StartPillarEvent());
+    }
+
+    private IEnumerator StartSocketEvent()
+    {
+        TooltipManager.Instance.currentTooltip = TooltipTypes.SeeSocket;
+        TooltipManager.Instance.ToggleTooltip("Place the Lantern in the Socket to shine a light beam");
+        socketVC.gameObject.SetActive(true);
+        mainVC.gameObject.SetActive(false);
+        isInteractingWithMirror = true;
+        yield return new WaitForSecondsRealtime(2f);
+        mainVC.gameObject.SetActive(true);
+        socketVC.gameObject.SetActive(false);
+        TooltipManager.Instance.CloseTooltip();
+        yield return new WaitForSecondsRealtime(1f);
+        isInteractingWithMirror = false;
+    }
+    
+    private IEnumerator StartPillarEvent()
+    {
+        pillarVC.gameObject.SetActive(true);
+        mainVC.gameObject.SetActive(false);
+        isInteractingWithMirror = true;
+        yield return new WaitForSecondsRealtime(6f);
+        mainVC.gameObject.SetActive(true);
+        pillarVC.gameObject.SetActive(false);
+        yield return new WaitForSecondsRealtime(1f);
+        isInteractingWithMirror = false;
     }
 }
