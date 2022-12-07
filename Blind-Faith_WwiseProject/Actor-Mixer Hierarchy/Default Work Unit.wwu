@@ -3416,23 +3416,21 @@
 												<Property Name="3DSpatialization" Type="int16" Value="2"/>
 												<Property Name="Highpass" Type="int16">
 													<ValueList>
-														<Value>35</Value>
+														<Value>62</Value>
 													</ValueList>
 												</Property>
 												<Property Name="IgnoreParentMaxSoundInstance" Type="bool" Value="True"/>
 												<Property Name="IsGlobalLimit" Type="int16" Value="1"/>
 												<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
-												<Property Name="Lowpass" Type="int16">
-													<ValueList>
-														<Value>50</Value>
-													</ValueList>
-												</Property>
 												<Property Name="MaxSoundPerInstance" Type="int16">
 													<ValueList>
 														<Value>3</Value>
 													</ValueList>
 												</Property>
 												<Property Name="Pitch" Type="int32">
+													<ValueList>
+														<Value>280</Value>
+													</ValueList>
 													<RTPCList>
 														<RTPC Name="" ID="{4681DA33-A81E-4ED0-B25F-E63A5022937A}" ShortID="238182200">
 															<ReferenceList>
@@ -3502,6 +3500,11 @@
 														<Value>True</Value>
 													</ValueList>
 												</Property>
+												<Property Name="Volume" Type="Real64">
+													<ValueList>
+														<Value>10</Value>
+													</ValueList>
+												</Property>
 											</PropertyList>
 											<ReferenceList>
 												<Reference Name="Attenuation">
@@ -3535,60 +3538,181 @@
 												<ActiveSource Name="Room Tone, Toilet, Fan Humming, Chiangmai, Thailand" ID="{84B02794-F22D-4B29-9EFA-5796683962F5}" Platform="Linked"/>
 											</ActiveSourceList>
 										</Sound>
-										<Sound Name="MirrorTurn" ID="{877180AF-74AB-4CDB-9AA9-CA86ADB1AC8E}" ShortID="950174873">
-											<PropertyList>
-												<Property Name="3DSpatialization" Type="int16" Value="2"/>
-												<Property Name="IgnoreParentMaxSoundInstance" Type="bool" Value="True"/>
-												<Property Name="IsGlobalLimit" Type="int16" Value="1"/>
-												<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
-												<Property Name="MaxReachedBehavior" Type="int16" Value="1"/>
-												<Property Name="MaxSoundPerInstance" Type="int16">
-													<ValueList>
-														<Value>1</Value>
-													</ValueList>
-												</Property>
-												<Property Name="OverLimitBehavior" Type="int16" Value="1"/>
-												<Property Name="OverrideVirtualVoice" Type="bool" Value="True"/>
-												<Property Name="UseMaxSoundPerInstance" Type="bool">
-													<ValueList>
-														<Value>True</Value>
-													</ValueList>
-												</Property>
-												<Property Name="VirtualVoiceQueueBehavior" Type="int16" Value="0"/>
-											</PropertyList>
+										<RandomSequenceContainer Name="MirrorRotate" ID="{7E3F80AC-DB41-4DFC-A25D-5B0AFAA8A149}" ShortID="494506085">
 											<ReferenceList>
-												<Reference Name="Attenuation">
-													<ObjectRef Name="10" ID="{CD38D13E-1D7D-46FA-AD0C-C7D5F9690547}" WorkUnitID="{47D4E814-D669-4A08-8AD2-F706566546E0}"/>
-												</Reference>
 												<Reference Name="Conversion">
 													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{23AF77D7-3FEA-409B-8E44-F5B490014C61}"/>
 												</Reference>
 												<Reference Name="OutputBus">
-													<ObjectRef Name="Rooms" ID="{F220833B-3FC1-4DC8-9CF3-6F367C8C1EDE}" WorkUnitID="{C91EB4C6-56DC-4541-96C4-29E948904D66}"/>
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C91EB4C6-56DC-4541-96C4-29E948904D66}"/>
 												</Reference>
 											</ReferenceList>
 											<ChildrenList>
-												<AudioFileSource Name="METLFric_Long Slow High Pitched Tonal Screech Scrape Squeak 01_TT_CHSTUDIO_Neumann TLM 103" ID="{750E47FC-FA94-4151-BFC2-20CE0225A2F5}">
+												<Sound Name="MirrorTurn" ID="{877180AF-74AB-4CDB-9AA9-CA86ADB1AC8E}" ShortID="950174873">
 													<PropertyList>
-														<Property Name="CrossfadeDuration" Type="Real64" Value="108.565"/>
-														<Property Name="LoopBegin" Type="Real64" Value="0.705"/>
-														<Property Name="LoopEnd" Type="Real64" Value="3.202"/>
-														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
-														<Property Name="TrimBegin" Type="Real64" Value="0.375935675845219"/>
-														<Property Name="TrimEnd" Type="Real64" Value="4.08625734614369"/>
+														<Property Name="3DSpatialization" Type="int16" Value="2"/>
+														<Property Name="IgnoreParentMaxSoundInstance" Type="bool" Value="True"/>
+														<Property Name="IsGlobalLimit" Type="int16" Value="1"/>
+														<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+														<Property Name="MaxReachedBehavior" Type="int16" Value="1"/>
+														<Property Name="MaxSoundPerInstance" Type="int16">
+															<ValueList>
+																<Value>1</Value>
+															</ValueList>
+														</Property>
+														<Property Name="OverLimitBehavior" Type="int16" Value="1"/>
+														<Property Name="OverrideVirtualVoice" Type="bool" Value="True"/>
+														<Property Name="UseMaxSoundPerInstance" Type="bool">
+															<ValueList>
+																<Value>True</Value>
+															</ValueList>
+														</Property>
+														<Property Name="VirtualVoiceQueueBehavior" Type="int16" Value="0"/>
 													</PropertyList>
-													<Language>SFX</Language>
-													<AudioFile>METLFric_Long Slow High Pitched Tonal Screech Scrape Squeak 01_TT_CHSTUDIO_Neumann TLM 103.wav</AudioFile>
-													<MediaIDList>
-														<MediaID ID="298712315"/>
-													</MediaIDList>
-												</AudioFileSource>
+													<ReferenceList>
+														<Reference Name="Attenuation">
+															<ObjectRef Name="10" ID="{CD38D13E-1D7D-46FA-AD0C-C7D5F9690547}" WorkUnitID="{47D4E814-D669-4A08-8AD2-F706566546E0}"/>
+														</Reference>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{23AF77D7-3FEA-409B-8E44-F5B490014C61}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Rooms" ID="{F220833B-3FC1-4DC8-9CF3-6F367C8C1EDE}" WorkUnitID="{C91EB4C6-56DC-4541-96C4-29E948904D66}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="METLFric_Long Slow High Pitched Tonal Screech Scrape Squeak 01_TT_CHSTUDIO_Neumann TLM 103" ID="{750E47FC-FA94-4151-BFC2-20CE0225A2F5}">
+															<PropertyList>
+																<Property Name="CrossfadeDuration" Type="Real64" Value="108.565"/>
+																<Property Name="LoopBegin" Type="Real64" Value="0.705"/>
+																<Property Name="LoopEnd" Type="Real64" Value="3.202"/>
+																<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																<Property Name="TrimBegin" Type="Real64" Value="0.375935675845219"/>
+																<Property Name="TrimEnd" Type="Real64" Value="4.08625734614369"/>
+															</PropertyList>
+															<Language>SFX</Language>
+															<AudioFile>METLFric_Long Slow High Pitched Tonal Screech Scrape Squeak 01_TT_CHSTUDIO_Neumann TLM 103.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="298712315"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ObjectLists/>
+													<ActiveSourceList>
+														<ActiveSource Name="METLFric_Long Slow High Pitched Tonal Screech Scrape Squeak 01_TT_CHSTUDIO_Neumann TLM 103" ID="{750E47FC-FA94-4151-BFC2-20CE0225A2F5}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="MirrorTurn_01" ID="{EDFD4BD4-E546-4967-8EBF-549B4FA8FBE4}" ShortID="70772868">
+													<PropertyList>
+														<Property Name="3DSpatialization" Type="int16" Value="2"/>
+														<Property Name="IgnoreParentMaxSoundInstance" Type="bool" Value="True"/>
+														<Property Name="IsGlobalLimit" Type="int16" Value="1"/>
+														<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+														<Property Name="MaxReachedBehavior" Type="int16" Value="1"/>
+														<Property Name="MaxSoundPerInstance" Type="int16">
+															<ValueList>
+																<Value>1</Value>
+															</ValueList>
+														</Property>
+														<Property Name="OverLimitBehavior" Type="int16" Value="1"/>
+														<Property Name="OverrideVirtualVoice" Type="bool" Value="True"/>
+														<Property Name="UseMaxSoundPerInstance" Type="bool">
+															<ValueList>
+																<Value>True</Value>
+															</ValueList>
+														</Property>
+														<Property Name="VirtualVoiceQueueBehavior" Type="int16" Value="0"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Attenuation">
+															<ObjectRef Name="10" ID="{CD38D13E-1D7D-46FA-AD0C-C7D5F9690547}" WorkUnitID="{47D4E814-D669-4A08-8AD2-F706566546E0}"/>
+														</Reference>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{23AF77D7-3FEA-409B-8E44-F5B490014C61}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Rooms" ID="{F220833B-3FC1-4DC8-9CF3-6F367C8C1EDE}" WorkUnitID="{C91EB4C6-56DC-4541-96C4-29E948904D66}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="METLFric_Long Slow High Pitched Tonal Screech Scrape Squeak 01_TT_CHSTUDIO_Neumann TLM 103" ID="{DDD674C7-FD15-445B-AE03-7EBE57605993}">
+															<PropertyList>
+																<Property Name="CrossfadeDuration" Type="Real64" Value="108.565"/>
+																<Property Name="LoopBegin" Type="Real64" Value="4.78785321442766"/>
+																<Property Name="LoopEnd" Type="Real64" Value="6.67816418256492"/>
+																<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																<Property Name="TrimBegin" Type="Real64" Value="4.37680388596711"/>
+																<Property Name="TrimEnd" Type="Real64" Value="6.98852649856817"/>
+															</PropertyList>
+															<Language>SFX</Language>
+															<AudioFile>METLFric_Long Slow High Pitched Tonal Screech Scrape Squeak 01_TT_CHSTUDIO_Neumann TLM 103.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="258577514"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ObjectLists/>
+													<ActiveSourceList>
+														<ActiveSource Name="METLFric_Long Slow High Pitched Tonal Screech Scrape Squeak 01_TT_CHSTUDIO_Neumann TLM 103" ID="{DDD674C7-FD15-445B-AE03-7EBE57605993}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="MirrorTurn_02" ID="{3F21962D-E08B-4C0F-A623-8076969C24BB}" ShortID="979009965">
+													<PropertyList>
+														<Property Name="3DSpatialization" Type="int16" Value="2"/>
+														<Property Name="IgnoreParentMaxSoundInstance" Type="bool" Value="True"/>
+														<Property Name="IsGlobalLimit" Type="int16" Value="1"/>
+														<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+														<Property Name="MaxReachedBehavior" Type="int16" Value="1"/>
+														<Property Name="MaxSoundPerInstance" Type="int16">
+															<ValueList>
+																<Value>1</Value>
+															</ValueList>
+														</Property>
+														<Property Name="OverLimitBehavior" Type="int16" Value="1"/>
+														<Property Name="OverrideVirtualVoice" Type="bool" Value="True"/>
+														<Property Name="UseMaxSoundPerInstance" Type="bool">
+															<ValueList>
+																<Value>True</Value>
+															</ValueList>
+														</Property>
+														<Property Name="VirtualVoiceQueueBehavior" Type="int16" Value="0"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Attenuation">
+															<ObjectRef Name="10" ID="{CD38D13E-1D7D-46FA-AD0C-C7D5F9690547}" WorkUnitID="{47D4E814-D669-4A08-8AD2-F706566546E0}"/>
+														</Reference>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{23AF77D7-3FEA-409B-8E44-F5B490014C61}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Rooms" ID="{F220833B-3FC1-4DC8-9CF3-6F367C8C1EDE}" WorkUnitID="{C91EB4C6-56DC-4541-96C4-29E948904D66}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="METLFric_Long Slow High Pitched Tonal Screech Scrape Squeak 01_TT_CHSTUDIO_Neumann TLM 103" ID="{66EAE4AB-631B-49E2-994A-D5FD71EFD90D}">
+															<PropertyList>
+																<Property Name="CrossfadeDuration" Type="Real64" Value="108.565"/>
+																<Property Name="LoopBegin" Type="Real64" Value="7.64093136426868"/>
+																<Property Name="LoopEnd" Type="Real64" Value="9.7280063427398"/>
+																<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																<Property Name="TrimBegin" Type="Real64" Value="7.27907303839159"/>
+																<Property Name="TrimEnd" Type="Real64" Value="10.0841555296105"/>
+															</PropertyList>
+															<Language>SFX</Language>
+															<AudioFile>METLFric_Long Slow High Pitched Tonal Screech Scrape Squeak 01_TT_CHSTUDIO_Neumann TLM 103.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="642103741"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ObjectLists/>
+													<ActiveSourceList>
+														<ActiveSource Name="METLFric_Long Slow High Pitched Tonal Screech Scrape Squeak 01_TT_CHSTUDIO_Neumann TLM 103" ID="{66EAE4AB-631B-49E2-994A-D5FD71EFD90D}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
 											</ChildrenList>
 											<ObjectLists/>
-											<ActiveSourceList>
-												<ActiveSource Name="METLFric_Long Slow High Pitched Tonal Screech Scrape Squeak 01_TT_CHSTUDIO_Neumann TLM 103" ID="{750E47FC-FA94-4151-BFC2-20CE0225A2F5}" Platform="Linked"/>
-											</ActiveSourceList>
-										</Sound>
+										</RandomSequenceContainer>
 									</ChildrenList>
 									<ObjectLists/>
 								</ActorMixer>
@@ -3601,6 +3725,7 @@
 												<Value>11</Value>
 											</ValueList>
 										</Property>
+										<Property Name="HoldEmitterPositionOrientation" Type="bool" Value="True"/>
 										<Property Name="Lowpass" Type="int16">
 											<ValueList>
 												<Value>22</Value>
@@ -4018,7 +4143,7 @@
 											<PropertyList>
 												<Property Name="Volume" Type="Real64">
 													<ValueList>
-														<Value>-5</Value>
+														<Value>-2</Value>
 													</ValueList>
 												</Property>
 											</PropertyList>
@@ -4258,6 +4383,332 @@
 										<ItemRef Name="BF_MassiveSteamPunkDevice_01" ID="{542C8C39-9097-4235-8B32-9C95C5B2C9E6}"/>
 									</Playlist>
 								</RandomSequenceContainer>
+								<ActorMixer Name="DoorOpen" ID="{E63C78FA-A668-422B-AAD7-B8F64C23C0D3}" ShortID="162530806">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{23AF77D7-3FEA-409B-8E44-F5B490014C61}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C91EB4C6-56DC-4541-96C4-29E948904D66}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<Sound Name="Door, Metal, Open, Close, Distant, Mariott Hotel, San Jose 1" ID="{DE4FC34E-8705-449A-B5B6-5BB8768A6AA5}" ShortID="998180418">
+											<PropertyList>
+												<Property Name="3DSpatialization" Type="int16" Value="2"/>
+												<Property Name="Pitch" Type="int32">
+													<ValueList>
+														<Value>-350</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Attenuation">
+													<ObjectRef Name="10" ID="{CD38D13E-1D7D-46FA-AD0C-C7D5F9690547}" WorkUnitID="{47D4E814-D669-4A08-8AD2-F706566546E0}"/>
+												</Reference>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{23AF77D7-3FEA-409B-8E44-F5B490014C61}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Rooms" ID="{F220833B-3FC1-4DC8-9CF3-6F367C8C1EDE}" WorkUnitID="{C91EB4C6-56DC-4541-96C4-29E948904D66}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Door, Metal, Open, Close, Distant, Mariott Hotel, San Jose 1" ID="{F5442CBF-5BFD-40AC-A131-6CB3F60C64BF}">
+													<Language>SFX</Language>
+													<AudioFile>Door, Metal, Open, Close, Distant, Mariott Hotel, San Jose 1.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="826579596"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ObjectLists/>
+											<ActiveSourceList>
+												<ActiveSource Name="Door, Metal, Open, Close, Distant, Mariott Hotel, San Jose 1" ID="{F5442CBF-5BFD-40AC-A131-6CB3F60C64BF}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Creepy Door, Slow Creak_03" ID="{84BAC728-BA75-4B09-8802-750CE7AFAE12}" ShortID="548315523">
+											<PropertyList>
+												<Property Name="Pitch" Type="int32">
+													<ValueList>
+														<Value>-860</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{23AF77D7-3FEA-409B-8E44-F5B490014C61}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C91EB4C6-56DC-4541-96C4-29E948904D66}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Creepy Door, Slow Creak_03" ID="{82DD12C8-D9D9-4EFD-B2CE-4DC56EE56ABA}">
+													<PropertyList>
+														<Property Name="FadeOutDuration" Type="Real64" Value="0.676791202229298"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimEnd" Type="Real64" Value="4.6760119426752"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>Creepy Door, Slow Creak_03.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="920208633"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ObjectLists/>
+											<ActiveSourceList>
+												<ActiveSource Name="Creepy Door, Slow Creak_03" ID="{82DD12C8-D9D9-4EFD-B2CE-4DC56EE56ABA}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Earthquake_Rumble_PSEM_100" ID="{FD3B8EC6-3CE7-4F88-BBFB-8E55FD108D54}" ShortID="441695645">
+											<PropertyList>
+												<Property Name="Volume" Type="Real64">
+													<ValueList>
+														<Value>-11</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{23AF77D7-3FEA-409B-8E44-F5B490014C61}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C91EB4C6-56DC-4541-96C4-29E948904D66}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Earthquake_Rumble_PSEM_100" ID="{A5A549ED-3C34-46E2-91B3-A5D134AFAD95}">
+													<PropertyList>
+														<Property Name="ChannelConfigOverride" Type="int64" Value="49410"/>
+														<Property Name="FadeOutDuration" Type="Real64" Value="1.72032611200984"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimEnd" Type="Real64" Value="6.41632262221645"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>Earthquake_Rumble_PSEM.100.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="486089720"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ObjectLists/>
+											<ActiveSourceList>
+												<ActiveSource Name="Earthquake_Rumble_PSEM_100" ID="{A5A549ED-3C34-46E2-91B3-A5D134AFAD95}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Lever_Pull_Steam_Release_PSEM_158" ID="{58BA341D-A87A-4789-8081-6EE5470D5DC3}" ShortID="739076839">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{23AF77D7-3FEA-409B-8E44-F5B490014C61}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C91EB4C6-56DC-4541-96C4-29E948904D66}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Lever_Pull_Steam_Release_PSEM_158" ID="{48C7A204-DC6E-4A6E-BFFB-A56AC6D682CD}">
+													<PropertyList>
+														<Property Name="ChannelConfigOverride" Type="int64" Value="49410"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>Lever_Pull_Steam_Release_PSEM.158.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="279953388"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ObjectLists/>
+											<ActiveSourceList>
+												<ActiveSource Name="Lever_Pull_Steam_Release_PSEM_158" ID="{48C7A204-DC6E-4A6E-BFFB-A56AC6D682CD}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Designed Ice - RAW07" ID="{62D56A51-D13E-47E1-A8AA-6D137CDFA632}" ShortID="899280091">
+											<PropertyList>
+												<Property Name="Pitch" Type="int32">
+													<ValueList>
+														<Value>-250</Value>
+													</ValueList>
+													<RTPCList>
+														<RTPC Name="" ID="{20575CBC-7F49-4C55-8918-8876D6586E5C}" ShortID="339017255">
+															<ReferenceList>
+																<Reference Name="ControlInput">
+																	<Custom>
+																		<ModulatorTime Name="Modulator Time (Custom)" ID="{BBAD1A95-6027-4490-A618-BBAC37B045B8}" ShortID="706714576">
+																			<PropertyList>
+																				<Property Name="EnvelopeStopPlayback" Type="bool" Value="False"/>
+																				<Property Name="TimeModDuration" Type="Real64" Value="5.9"/>
+																				<Property Name="TimeModPlaybackRate" Type="Real64" Value="1.7"/>
+																			</PropertyList>
+																		</ModulatorTime>
+																	</Custom>
+																</Reference>
+															</ReferenceList>
+															<Curve Name="" ID="{3B8283E0-FDF8-4CE9-8B7C-F63B56D36E24}">
+																<PropertyList>
+																	<Property Name="Flags" Type="int32" Value="65537"/>
+																</PropertyList>
+																<PointList>
+																	<Point>
+																		<XPos>0</XPos>
+																		<YPos>-765</YPos>
+																		<Flags>5</Flags>
+																	</Point>
+																	<Point>
+																		<XPos>5.9</XPos>
+																		<YPos>424</YPos>
+																		<Flags>37</Flags>
+																	</Point>
+																</PointList>
+															</Curve>
+														</RTPC>
+													</RTPCList>
+												</Property>
+												<Property Name="Volume" Type="Real64">
+													<ValueList>
+														<Value>-4</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{23AF77D7-3FEA-409B-8E44-F5B490014C61}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C91EB4C6-56DC-4541-96C4-29E948904D66}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Designed Ice - RAW07" ID="{AB8E37F8-76CC-432A-9FE3-7317809047BD}">
+													<Language>SFX</Language>
+													<AudioFile>Designed Ice - RAW07.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="1018791543"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ObjectLists/>
+											<ActiveSourceList>
+												<ActiveSource Name="Designed Ice - RAW07" ID="{AB8E37F8-76CC-432A-9FE3-7317809047BD}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="METLFric_Long Slow High Pitched Tonal Screech Scrape Squeak_TT_CHSTUDIO_Neumann TLM 103" ID="{38ACC3EB-E3C6-46AD-AEF6-780D73588C5B}" ShortID="286461500">
+											<PropertyList>
+												<Property Name="Highpass" Type="int16">
+													<ValueList>
+														<Value>33</Value>
+													</ValueList>
+												</Property>
+												<Property Name="Pitch" Type="int32">
+													<ValueList>
+														<Value>-1140</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{23AF77D7-3FEA-409B-8E44-F5B490014C61}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C91EB4C6-56DC-4541-96C4-29E948904D66}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="METLFric_Long Slow High Pitched Tonal Screech Scrape Squeak_TT_CHSTUDIO_Neumann TLM 103" ID="{2E8148B9-E699-448D-9D19-1474F6D79CDA}">
+													<PropertyList>
+														<Property Name="FadeOutDuration" Type="Real64" Value="1.52627301453025"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimEnd" Type="Real64" Value="6.18759330214968"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>METLFric_Long Slow High Pitched Tonal Screech Scrape Squeak_TT_CHSTUDIO_Neumann TLM 103.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="696520388"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ObjectLists/>
+											<ActiveSourceList>
+												<ActiveSource Name="METLFric_Long Slow High Pitched Tonal Screech Scrape Squeak_TT_CHSTUDIO_Neumann TLM 103" ID="{2E8148B9-E699-448D-9D19-1474F6D79CDA}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Designed Ice - RAW07_01" ID="{C8B97402-48E5-46B2-8A50-6DA4ED1EB33D}" ShortID="357328104">
+											<PropertyList>
+												<Property Name="3DSpatialization" Type="int16" Value="2"/>
+												<Property Name="Pitch" Type="int32">
+													<ValueList>
+														<Value>-250</Value>
+													</ValueList>
+													<RTPCList>
+														<RTPC Name="" ID="{5B6D15D0-4CBA-4F5D-90B9-EF1DF92F66E5}" ShortID="285825896">
+															<ReferenceList>
+																<Reference Name="ControlInput">
+																	<Custom>
+																		<ModulatorTime Name="Modulator Time (Custom)" ID="{80E41973-4BDD-4E69-BD8A-A641323ADFC3}" ShortID="672368463">
+																			<PropertyList>
+																				<Property Name="EnvelopeStopPlayback" Type="bool" Value="False"/>
+																				<Property Name="TimeModDuration" Type="Real64" Value="5.9"/>
+																				<Property Name="TimeModPlaybackRate" Type="Real64" Value="1.7"/>
+																			</PropertyList>
+																		</ModulatorTime>
+																	</Custom>
+																</Reference>
+															</ReferenceList>
+															<Curve Name="" ID="{2D469FD6-0B1A-4264-940D-C6875D630BFA}">
+																<PropertyList>
+																	<Property Name="Flags" Type="int32" Value="65537"/>
+																</PropertyList>
+																<PointList>
+																	<Point>
+																		<XPos>0</XPos>
+																		<YPos>466</YPos>
+																		<Flags>5</Flags>
+																	</Point>
+																	<Point>
+																		<XPos>5.9</XPos>
+																		<YPos>-1359</YPos>
+																		<Flags>37</Flags>
+																	</Point>
+																</PointList>
+															</Curve>
+														</RTPC>
+													</RTPCList>
+												</Property>
+												<Property Name="Volume" Type="Real64">
+													<ValueList>
+														<Value>-4</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Attenuation">
+													<ObjectRef Name="10" ID="{CD38D13E-1D7D-46FA-AD0C-C7D5F9690547}" WorkUnitID="{47D4E814-D669-4A08-8AD2-F706566546E0}"/>
+												</Reference>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{23AF77D7-3FEA-409B-8E44-F5B490014C61}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Rooms" ID="{F220833B-3FC1-4DC8-9CF3-6F367C8C1EDE}" WorkUnitID="{C91EB4C6-56DC-4541-96C4-29E948904D66}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Designed Ice - RAW07" ID="{40FE4B47-94AC-4C93-BF1B-17EDB56B2628}">
+													<Language>SFX</Language>
+													<AudioFile>Designed Ice - RAW07.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="1018791543"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ObjectLists/>
+											<ActiveSourceList>
+												<ActiveSource Name="Designed Ice - RAW07" ID="{40FE4B47-94AC-4C93-BF1B-17EDB56B2628}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+									</ChildrenList>
+									<ObjectLists/>
+								</ActorMixer>
 							</ChildrenList>
 							<ObjectLists/>
 						</ActorMixer>

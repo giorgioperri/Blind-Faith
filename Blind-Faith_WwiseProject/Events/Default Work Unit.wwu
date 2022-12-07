@@ -405,10 +405,10 @@
 								</Event>
 								<Event Name="MirrorTurn" ID="{0DF3B1B6-368A-4DB0-A16F-D079D5363D92}">
 									<ChildrenList>
-										<Action Name="" ID="{C8EFC376-45E9-4656-BCAB-DC800CDA90AE}" ShortID="279880900">
+										<Action Name="" ID="{BFAB1FF9-5A6F-4320-83E8-89DC8C9CBAFC}" ShortID="362947498">
 											<ReferenceList>
 												<Reference Name="Target">
-													<ObjectRef Name="MirrorTurn" ID="{877180AF-74AB-4CDB-9AA9-CA86ADB1AC8E}" WorkUnitID="{10A75CA5-3F55-455C-A103-004D7C43FEF2}"/>
+													<ObjectRef Name="MirrorRotate" ID="{7E3F80AC-DB41-4DFC-A25D-5B0AFAA8A149}" WorkUnitID="{10A75CA5-3F55-455C-A103-004D7C43FEF2}"/>
 												</Reference>
 											</ReferenceList>
 										</Action>
@@ -422,7 +422,7 @@
 											</PropertyList>
 											<ReferenceList>
 												<Reference Name="Target">
-													<ObjectRef Name="MirrorTurn" ID="{877180AF-74AB-4CDB-9AA9-CA86ADB1AC8E}" WorkUnitID="{10A75CA5-3F55-455C-A103-004D7C43FEF2}"/>
+													<ObjectRef Name="MirrorRotate" ID="{7E3F80AC-DB41-4DFC-A25D-5B0AFAA8A149}" WorkUnitID="{10A75CA5-3F55-455C-A103-004D7C43FEF2}"/>
 												</Reference>
 											</ReferenceList>
 										</Action>
@@ -460,6 +460,79 @@
 							<ReferenceList>
 								<Reference Name="Target">
 									<ObjectRef Name="MassiveDevice" ID="{4254634E-F4EE-493F-90F2-F343FB934FDC}" WorkUnitID="{10A75CA5-3F55-455C-A103-004D7C43FEF2}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="DoorOpen" ID="{552D00B7-E5E1-40CA-BFC8-8347B18B8BFD}">
+					<ChildrenList>
+						<Action Name="" ID="{552A55E1-AD3B-4A93-8E18-3DDCA2EAE86C}" ShortID="686534830">
+							<PropertyList>
+								<Property Name="Delay" Type="Real64" Value="8"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Door, Metal, Open, Close, Distant, Mariott Hotel, San Jose 1" ID="{DE4FC34E-8705-449A-B5B6-5BB8768A6AA5}" WorkUnitID="{10A75CA5-3F55-455C-A103-004D7C43FEF2}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{5B00CCFD-A0B1-403D-A9AE-18C7DC0BCC85}" ShortID="278854396">
+							<PropertyList>
+								<Property Name="Delay" Type="Real64" Value="3"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Creepy Door, Slow Creak_03" ID="{84BAC728-BA75-4B09-8802-750CE7AFAE12}" WorkUnitID="{10A75CA5-3F55-455C-A103-004D7C43FEF2}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{5D40E191-69EA-48F9-BF63-3F99ECF1E0C4}" ShortID="231460066">
+							<PropertyList>
+								<Property Name="FadeTime" Type="Real64" Value="2"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Earthquake_Rumble_PSEM_100" ID="{FD3B8EC6-3CE7-4F88-BBFB-8E55FD108D54}" WorkUnitID="{10A75CA5-3F55-455C-A103-004D7C43FEF2}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{1032F4D8-7E34-4B30-835E-B51DD7061975}" ShortID="842754814">
+							<PropertyList>
+								<Property Name="Delay" Type="Real64" Value="2"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Lever_Pull_Steam_Release_PSEM_158" ID="{58BA341D-A87A-4789-8081-6EE5470D5DC3}" WorkUnitID="{10A75CA5-3F55-455C-A103-004D7C43FEF2}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{EB589892-1DCB-46ED-9456-3B38DBFEAF93}" ShortID="76166368">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Designed Ice - RAW07" ID="{62D56A51-D13E-47E1-A8AA-6D137CDFA632}" WorkUnitID="{10A75CA5-3F55-455C-A103-004D7C43FEF2}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{5EC18D45-0EF0-4230-9F5A-4DC416FAF7A0}" ShortID="416296540">
+							<PropertyList>
+								<Property Name="Delay" Type="Real64" Value="1.5"/>
+								<Property Name="FadeTime" Type="Real64" Value="3"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="METLFric_Long Slow High Pitched Tonal Screech Scrape Squeak_TT_CHSTUDIO_Neumann TLM 103" ID="{38ACC3EB-E3C6-46AD-AEF6-780D73588C5B}" WorkUnitID="{10A75CA5-3F55-455C-A103-004D7C43FEF2}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{24EB15FB-06BD-418D-AA4A-07FDC4A80B05}" ShortID="233687151">
+							<PropertyList>
+								<Property Name="Delay" Type="Real64" Value="9"/>
+								<Property Name="FadeTime" Type="Real64" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Designed Ice - RAW07_01" ID="{C8B97402-48E5-46B2-8A50-6DA4ED1EB33D}" WorkUnitID="{10A75CA5-3F55-455C-A103-004D7C43FEF2}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>
