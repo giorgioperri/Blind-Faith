@@ -460,7 +460,7 @@
 										<ItemRef Name="Clerk_s1__9" ID="{4875B121-CACB-4DE1-BB93-6D5460977840}"/>
 									</Playlist>
 								</RandomSequenceContainer>
-								<RandomSequenceContainer Name="Clerk_chatter2" ID="{3F52093C-3582-4076-9616-273423A7CFC9}" ShortID="495101309">
+								<RandomSequenceContainer Name="Clerk_chatter2_WithTheFatherGone" ID="{3F52093C-3582-4076-9616-273423A7CFC9}" ShortID="495101309">
 									<PropertyList>
 										<Property Name="3DSpatialization" Type="int16" Value="2"/>
 										<Property Name="OutputBusVolume" Type="Real64">
@@ -932,6 +932,7 @@
 									<PropertyList>
 										<Property Name="3DPosition" Type="int16" Value="1"/>
 										<Property Name="3DSpatialization" Type="int16" Value="2"/>
+										<Property Name="HoldEmitterPositionOrientation" Type="bool" Value="True"/>
 										<Property Name="Lowpass" Type="int16">
 											<ValueList>
 												<Value>22</Value>
@@ -1606,7 +1607,7 @@
 										<ItemRef Name="IntroVox" ID="{AB4C0808-BAB1-489B-B302-3F9B34BEC848}"/>
 									</Playlist>
 								</RandomSequenceContainer>
-								<RandomSequenceContainer Name="Clerk_2ndEncounter" ID="{2B2316E0-3E17-4ED4-8DDA-2C6A10051A21}" ShortID="196663141">
+								<RandomSequenceContainer Name="Clerk_2ndEncounter_HighPriest" ID="{2B2316E0-3E17-4ED4-8DDA-2C6A10051A21}" ShortID="196663141">
 									<PropertyList>
 										<Property Name="3DSpatialization" Type="int16" Value="2"/>
 										<Property Name="OutputBusVolume" Type="Real64">
@@ -2065,7 +2066,7 @@
 													</PropertyList>
 													<PointList>
 														<Point>
-															<XPos>-0</XPos>
+															<XPos>0</XPos>
 															<YPos>1.9774</YPos>
 															<ZPos>55</ZPos>
 															<Flags>12</Flags>
@@ -2112,7 +2113,7 @@
 										<ItemRef Name="Clerk_DungeonChatter" ID="{EF85AD03-D5D8-43BE-9578-8B6F41D87626}"/>
 									</GroupingBehavior>
 									<GroupingBehavior>
-										<ItemRef Name="Clerk_chatter2" ID="{3F52093C-3582-4076-9616-273423A7CFC9}"/>
+										<ItemRef Name="Clerk_chatter2_WithTheFatherGone" ID="{3F52093C-3582-4076-9616-273423A7CFC9}"/>
 									</GroupingBehavior>
 									<GroupingBehavior>
 										<ItemRef Name="IntroSeq" ID="{36819F54-BDA1-476B-BD4C-00E3C63320E2}"/>
@@ -2127,7 +2128,7 @@
 										<ItemRef Name="Clerk_chatter3" ID="{BC7ADABA-B3D8-4FA2-AB04-803B9892EEB2}"/>
 									</GroupingBehavior>
 									<GroupingBehavior>
-										<ItemRef Name="Clerk_2ndEncounter" ID="{2B2316E0-3E17-4ED4-8DDA-2C6A10051A21}"/>
+										<ItemRef Name="Clerk_2ndEncounter_HighPriest" ID="{2B2316E0-3E17-4ED4-8DDA-2C6A10051A21}"/>
 									</GroupingBehavior>
 									<GroupingBehavior>
 										<ItemRef Name="ClerkIntro" ID="{9FE4C1F4-0295-4857-896C-B7DD5670F34B}"/>
@@ -2143,13 +2144,13 @@
 									<Grouping>
 										<SwitchRef Name="SecondEncounter" ID="{FA252621-44C6-43C8-91A5-6ED1246A1703}"/>
 										<ItemList>
-											<ItemRef Name="Clerk_2ndEncounter" ID="{2B2316E0-3E17-4ED4-8DDA-2C6A10051A21}"/>
+											<ItemRef Name="Clerk_2ndEncounter_HighPriest" ID="{2B2316E0-3E17-4ED4-8DDA-2C6A10051A21}"/>
 										</ItemList>
 									</Grouping>
 									<Grouping>
 										<SwitchRef Name="ClerkChatter2" ID="{58DD9327-CD6D-4D21-89E5-9BF03B4ACDBA}"/>
 										<ItemList>
-											<ItemRef Name="Clerk_chatter2" ID="{3F52093C-3582-4076-9616-273423A7CFC9}"/>
+											<ItemRef Name="Clerk_chatter2_WithTheFatherGone" ID="{3F52093C-3582-4076-9616-273423A7CFC9}"/>
 										</ItemList>
 									</Grouping>
 									<Grouping>
@@ -2197,7 +2198,7 @@
 									</PropertyList>
 									<PointList>
 										<Point>
-											<XPos>-0</XPos>
+											<XPos>0</XPos>
 											<YPos>1.9774</YPos>
 											<ZPos>54</ZPos>
 											<Flags>12</Flags>

@@ -17,6 +17,7 @@ namespace AK
         static const AkUniqueID CHURCH_ALTER_AMBIENCE = 1568742100U;
         static const AkUniqueID CHURCH_AMBISONIC = 1132321458U;
         static const AkUniqueID CRAWLSFX = 3690987655U;
+        static const AkUniqueID DOOROPEN = 1404805401U;
         static const AkUniqueID DUNGEONAMB = 3254361931U;
         static const AkUniqueID DUNGEONSCREAM = 2115347266U;
         static const AkUniqueID FOOTSTEP = 1866025847U;
@@ -28,6 +29,7 @@ namespace AK
         static const AkUniqueID LIGHTBEAM = 1710262138U;
         static const AkUniqueID LOOSINGHEALTH = 938481918U;
         static const AkUniqueID LOWHEALTH = 1017222595U;
+        static const AkUniqueID MASSIVEDEVICE = 3113871599U;
         static const AkUniqueID MIRRORLIGHT = 1217934400U;
         static const AkUniqueID MIRRORLIGHT_OFF = 500177350U;
         static const AkUniqueID MIRRORTURN = 1903317937U;
@@ -76,6 +78,18 @@ namespace AK
                 static const AkUniqueID NOTLOOSINGSANITY = 3358664337U;
             } // namespace STATE
         } // namespace HEALTH_STATE
+
+        namespace HPLOSS
+        {
+            static const AkUniqueID GROUP = 133846688U;
+
+            namespace STATE
+            {
+                static const AkUniqueID DISABLED = 3248502869U;
+                static const AkUniqueID ENABLED = 4174102348U;
+                static const AkUniqueID NONE = 748895195U;
+            } // namespace STATE
+        } // namespace HPLOSS
 
     } // namespace STATES
 
