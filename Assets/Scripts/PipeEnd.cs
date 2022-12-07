@@ -96,20 +96,23 @@ public class PipeEnd : MonoBehaviour
         {
             TurnOffPipe();
         }
-
+        
         if(_previousBeam) Destroy(_previousBeam);
 
-        if (!_isPipeOn || !_isPipeInput) return;
+        if (LanternManager.Instance.lanternCharge <= 0)
+        {
+            TurnOffPipe();
+            _shouldShoot = false;
+            return;
+        }
 
-        if (LanternManager.Instance.lanternCharge <= 0) return;
+        if (!_isPipeOn || !_isPipeInput) return;
 
         if (_shouldShoot)
         {
             _beam = new LightBeam(_pipeEnd.transform.position, _pipeEnd.transform.forward, material, _laserColor, _lightMeshSpawner);
             _previousBeam = _beam.lightObj;
         }
-        _shouldShoot = true;
-
         _shouldShoot = false;
     }
 
@@ -144,5 +147,6 @@ public class PipeEnd : MonoBehaviour
         }
         
         _lightMeshSpawner.DestroyLightBeam();
+        Debug.Log("Pipe beam destroyed.");
     }
 }
