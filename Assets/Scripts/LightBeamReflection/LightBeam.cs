@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Runtime.InteropServices;
 using UnityEngine;
 
 public class LightBeam 
@@ -21,11 +22,11 @@ public class LightBeam
         _position = position;
         _direction = direction;
         _lightLaser = lightObj.AddComponent(typeof(LineRenderer)) as LineRenderer;
-        _lightLaser.startWidth = 0.1f;
-        _lightLaser.endWidth = 0.1f;
+        _lightLaser.startWidth = 0.07f;
+        _lightLaser.endWidth = 0.07f;
         _lightLaser.material = material;
-        _lightLaser.startColor = color;
-        _lightLaser.endColor = color;
+        _lightLaser.startColor = new Color(74,76,128,150);
+        _lightLaser.endColor = new Color(74,76,128,150);
 
         CastRay(position, direction, _lightLaser);
     }
@@ -57,10 +58,12 @@ public class LightBeam
             _lightLaser.SetPosition(counter, idx);
             counter++;
         }
+        
+        LightMeshSpawner.Instance.SetLightBeamPoints(_lightLaser);
     }
 
     void CheckHit(RaycastHit hitInfo, Vector3 direction, LineRenderer laser)
-    {
+    {   
         if(hitInfo.collider.gameObject.CompareTag("Mirror"))
         {
             Vector3 pos = hitInfo.point;

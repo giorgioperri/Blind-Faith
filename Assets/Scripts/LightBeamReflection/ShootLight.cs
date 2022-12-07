@@ -19,7 +19,11 @@ public class ShootLight : MonoBehaviour
     {
         if(_previousBeam) Destroy(_previousBeam);
 
-        if (LanternManager.Instance.lanternCharge <= 0) return;
+        if (LanternManager.Instance.lanternCharge <= 0)
+        {
+            LightMeshSpawner.Instance.DestroyLightBeam();
+            return;
+        }
         
         _beam = new LightBeam(gameObject.transform.position, gameObject.transform.right, material, Color.yellow);
         _previousBeam = _beam.lightObj;
