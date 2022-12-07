@@ -24,7 +24,7 @@ MonoBehaviour:
     ParentPath: Virtual Acoustics\Default Work Unit
     guid: 8157776944d252459e5c3d8483760091
     GuidInternal: 
-    m_lastTime: -8585342942743677962
+    m_lastTime: -8585337869405959275
     List: []
   AuxBusWwu:
   - PhysicalPath: Master-Mixer Hierarchy\Default Work Unit.wwu
@@ -38,7 +38,7 @@ MonoBehaviour:
     ParentPath: Master-Mixer Hierarchy\Default Work Unit
     guid: c6b41ec9dc56414596c429e948904d66
     GuidInternal: 
-    m_lastTime: -8585312702922790735
+    m_lastTime: -8585312777465365498
     List:
     - name: 2D
       guid: a0c80e6e11ef8042a411c16426d7260b
@@ -277,7 +277,7 @@ MonoBehaviour:
     ParentPath: SoundBanks\Default Work Unit
     guid: 91f3f2c2e89f4143bd59d41dc8510ab9
     GuidInternal: 
-    m_lastTime: -8585312702898828927
+    m_lastTime: -8585312777456874167
     List:
     - name: Mains
       guid: 22a5fa274c62a84d93c78d5801f30f0d
@@ -305,7 +305,7 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit
     guid: 5eb490fb28343a4fbde7e5ca0bff7b1d
     GuidInternal: 
-    m_lastTime: -8585312643260087654
+    m_lastTime: -8585311708850028108
     List:
     - name: 3D
       guid: d0312eb1e176a14c90ecba42bdd0174b
@@ -442,6 +442,23 @@ MonoBehaviour:
       maxAttenuation: 10
       maxDuration: 15.075651
       minDuration: 15.075651
+    - name: DoorOpen
+      guid: b7002d55e1e5ca40bfc88347b18b8bfd
+      id: 1404805401
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 5eb490fb28343a4fbde7e5ca0bff7b1d
+      - ElementName: DoorOpen
+        ObjectType: 3
+        guid: b7002d55e1e5ca40bfc88347b18b8bfd
+      Path: Events\Default Work Unit\DoorOpen
+      maxAttenuation: 10
+      maxDuration: 13.453642
+      minDuration: 13.453642
     - name: DungeonAmb
       guid: ee95cc838720604daa13fc1928d15ecc
       id: 3254361931
@@ -1071,7 +1088,7 @@ MonoBehaviour:
     ParentPath: Game Parameters\Default Work Unit
     guid: 7f57676cb1f5124c98483947934c3f41
     GuidInternal: 
-    m_lastTime: -8585314131012947197
+    m_lastTime: -8585313718060743788
     List:
     - name: PlayerHealth
       guid: 4a27241a62b0e74bbb905dbf43acf8c0
@@ -1099,7 +1116,7 @@ MonoBehaviour:
     ParentPath: States\Default Work Unit
     guid: 15da347adefaa443abeba8e206daca95
     GuidInternal: 
-    m_lastTime: -8585312669510545396
+    m_lastTime: -8585311743399078555
     List:
     - name: AlterAmb
       guid: 7f446b1539ffb74881108b1e3d68a471
@@ -1461,7 +1478,7 @@ MonoBehaviour:
     ParentPath: Switches\Default Work Unit
     guid: 129020783626944d87631f9c3a93f8e0
     GuidInternal: 
-    m_lastTime: -8585312702898688213
+    m_lastTime: -8585312777456864580
     List:
     - name: Locomotion
       guid: ec8b7419cfaab54dbd4aee612fa66e6b
@@ -1762,7 +1779,7 @@ MonoBehaviour:
     ParentPath: Triggers\Default Work Unit
     guid: 50b0bf7a09fe60448cd0a08f93cae076
     GuidInternal: 
-    m_lastTime: -8585342884435909085
+    m_lastTime: -8585337869406119596
     List:
     - name: New_Trigger
       guid: b52432610d4a47429784de539560cf52
@@ -1795,9 +1812,9 @@ MonoBehaviour:
         ObjectType: 4
         guid: 14a961bd002ffe41ba1f908602494c89
       Path: Triggers\Default Work Unit\VA_Test
-  ExpandedFileSystemItemIds: 
-  ExpandedWaapiItemIds: 050000000600000009000000160000001d0000001e000000260000002c000000
+  ExpandedFileSystemItemIds: 0200000003000000
+  ExpandedWaapiItemIds: 
   AutoSyncSelection: 0
   autoPopulateEnabled: 1
-  currentDataSource: 0
+  currentDataSource: 1
   CurrentPluginConfig: 
