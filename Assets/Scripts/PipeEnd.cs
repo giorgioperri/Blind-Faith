@@ -35,6 +35,13 @@ public class PipeEnd : MonoBehaviour
     private GameObject _previousBeam;
     private Color _laserColor;
     public Material material;
+    
+    private LightMeshSpawner _lightMeshSpawner;
+
+    private void Awake()
+    {
+        _lightMeshSpawner = gameObject.AddComponent<LightMeshSpawner>();
+    }
 
     [UsedImplicitly]
     public void OnCorrectBeamReceived()
@@ -98,7 +105,7 @@ public class PipeEnd : MonoBehaviour
 
         if (_shouldShoot)
         {
-            _beam = new LightBeam(_pipeEnd.transform.position, _pipeEnd.transform.forward, material, _laserColor);
+            _beam = new LightBeam(_pipeEnd.transform.position, _pipeEnd.transform.forward, material, _laserColor, _lightMeshSpawner);
             _previousBeam = _beam.lightObj;
         }
         _shouldShoot = true;

@@ -1,25 +1,40 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.IO;
 using UnityEngine;
 
 public class LightMeshSpawner : MonoBehaviour
 {
-    public GameObject lightMeshPrefab;
+    private GameObject lightMeshPrefab;
     public static LightMeshSpawner Instance;
     private List<Vector3> _locallyStoredPoints;
     private List<List<GameObject>> _lightMeshes;
-
+    
     private void Awake()
     {
+        /*
         if (Instance != null)
         {
             Destroy(this);
         }
         Instance = this;
+        */
 
         _locallyStoredPoints = new List<Vector3>();
         _lightMeshes = new List<List<GameObject>>();
+        lightMeshPrefab = LoadPrefabFromFile("lightMesh_v003");
+    }
+    
+    private GameObject LoadPrefabFromFile(string filename)
+    {
+        Debug.Log("Trying to load LightMeshPrefab from file ("+filename+ ")...");
+        GameObject loadedObject = Resources.Load<GameObject>("lightBeamMesh_v003");
+        if (loadedObject == null)
+        {
+            throw new FileNotFoundException("...no file found - please check the configuration");
+        }
+        return loadedObject;
     }
 
     public void SetLightBeamPoints(LineRenderer _laser)

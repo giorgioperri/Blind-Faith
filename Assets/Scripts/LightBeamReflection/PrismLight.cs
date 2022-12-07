@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -13,6 +14,13 @@ public class PrismLight : MonoBehaviour
 
     public PrismLight leftPrismLight;
     public PrismLight rightPrismLight;
+    
+    private LightMeshSpawner _lightMeshSpawner;
+
+    private void Awake()
+    {
+        _lightMeshSpawner = gameObject.AddComponent<LightMeshSpawner>();
+    }
 
     public void OnBeamReceived()
     {
@@ -30,7 +38,7 @@ public class PrismLight : MonoBehaviour
 
         if (shouldShoot)
         {
-            _beam = new LightBeam(gameObject.transform.position, gameObject.transform.right, material, laserColor);
+            _beam = new LightBeam(gameObject.transform.position, gameObject.transform.right, material, laserColor, _lightMeshSpawner);
             _previousBeam = _beam.lightObj;
         }
         shouldShoot = true;

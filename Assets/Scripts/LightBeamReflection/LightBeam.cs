@@ -12,8 +12,9 @@ public class LightBeam
     private LineRenderer _lightLaser;
     private List<Vector3> _lightIndices = new List<Vector3>();
     public bool hitTheDoor;
-
-    public LightBeam(Vector3 position, Vector3 direction, Material material, Color color)
+    private LightMeshSpawner _lightMeshSpawner;
+    
+    public LightBeam(Vector3 position, Vector3 direction, Material material, Color color, LightMeshSpawner _lightMeshSpawner)
     {
         _lightLaser = new LineRenderer();
         lightObj = new GameObject();
@@ -27,6 +28,8 @@ public class LightBeam
         _lightLaser.material = material;
         _lightLaser.startColor = new Color(74,76,128,150);
         _lightLaser.endColor = new Color(74,76,128,150);
+
+        this._lightMeshSpawner = _lightMeshSpawner;
 
         CastRay(position, direction, _lightLaser);
     }
@@ -58,8 +61,8 @@ public class LightBeam
             _lightLaser.SetPosition(counter, idx);
             counter++;
         }
-        
-        LightMeshSpawner.Instance.SetLightBeamPoints(_lightLaser);
+        //if(LightMeshSpawner.Instance) LightMeshSpawner.Instance.SetLightBeamPoints(_lightLaser);
+        _lightMeshSpawner.SetLightBeamPoints(_lightLaser);
     }
 
     void CheckHit(RaycastHit hitInfo, Vector3 direction, LineRenderer laser)
