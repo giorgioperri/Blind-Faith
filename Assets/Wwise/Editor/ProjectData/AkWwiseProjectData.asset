@@ -38,7 +38,7 @@ MonoBehaviour:
     ParentPath: Master-Mixer Hierarchy\Default Work Unit
     guid: c6b41ec9dc56414596c429e948904d66
     GuidInternal: 
-    m_lastTime: -8585312702922790735
+    m_lastTime: -8585311512938919807
     List:
     - name: 2D
       guid: a0c80e6e11ef8042a411c16426d7260b
@@ -277,7 +277,7 @@ MonoBehaviour:
     ParentPath: SoundBanks\Default Work Unit
     guid: 91f3f2c2e89f4143bd59d41dc8510ab9
     GuidInternal: 
-    m_lastTime: -8585311695393204665
+    m_lastTime: -8585311623646372513
     List:
     - name: Mains
       guid: 22a5fa274c62a84d93c78d5801f30f0d
@@ -305,7 +305,7 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit
     guid: 5eb490fb28343a4fbde7e5ca0bff7b1d
     GuidInternal: 
-    m_lastTime: -8585311676720824444
+    m_lastTime: -8585311489323908645
     List:
     - name: 3D
       guid: d0312eb1e176a14c90ecba42bdd0174b
@@ -353,9 +353,9 @@ MonoBehaviour:
         ObjectType: 3
         guid: 4fa377f073ff6f469e4a5759a67c72f1
       Path: Events\Default Work Unit\SFX\Ambience\3D\Amb_LightBeam
-      maxAttenuation: 10
-      maxDuration: -1
-      minDuration: -1
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
     - name: Ambience
       guid: d61574c5aefb6e4bb8be3d2e8f5c14a0
       id: 85412153
@@ -422,6 +422,23 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
+    - name: Church3DEvents
+      guid: 589d422e23afbf4598c399aa56e2aa10
+      id: 1376062894
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 5eb490fb28343a4fbde7e5ca0bff7b1d
+      - ElementName: Church3DEvents
+        ObjectType: 3
+        guid: 589d422e23afbf4598c399aa56e2aa10
+      Path: Events\Default Work Unit\Church3DEvents
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
     - name: CrawlSFX
       guid: 4a1ca33b482c4f458116a0787c4ab5fb
       id: 3690987655
@@ -456,9 +473,9 @@ MonoBehaviour:
         ObjectType: 3
         guid: b7002d55e1e5ca40bfc88347b18b8bfd
       Path: Events\Default Work Unit\DoorOpen
-      maxAttenuation: 10
-      maxDuration: 13.453642
-      minDuration: 13.453642
+      maxAttenuation: 0
+      maxDuration: 20.698334
+      minDuration: 19.862646
     - name: DungeonAmb
       guid: ee95cc838720604daa13fc1928d15ecc
       id: 3254361931
@@ -499,7 +516,7 @@ MonoBehaviour:
         ObjectType: 3
         guid: 18d63c71d975294f867cdc4a63c0a42a
       Path: Events\Default Work Unit\SFX\DungeonScream
-      maxAttenuation: 10
+      maxAttenuation: 0
       maxDuration: 124.86862
       minDuration: 54.868618
     - name: Footstep
@@ -692,9 +709,9 @@ MonoBehaviour:
         ObjectType: 3
         guid: ccc885bf23f2b34dbf2b583e204c98b3
       Path: Events\Default Work Unit\SFX\Mirror\Lightbeam
-      maxAttenuation: 10
-      maxDuration: -1
-      minDuration: -1
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
     - name: Locomotion
       guid: 57d53468c486f141a94163074cf407ff
       id: 556887514
@@ -778,9 +795,9 @@ MonoBehaviour:
         ObjectType: 3
         guid: b80de0c5c093b04faf38bbb9a629b6c4
       Path: Events\Default Work Unit\MassiveDevice
-      maxAttenuation: 50
-      maxDuration: 11.896948
-      minDuration: 11.896948
+      maxAttenuation: 0
+      maxDuration: 20.698334
+      minDuration: 19.862646
     - name: MenuMusic
       guid: 2ee4c194585d474fa31d91dccc3b960c
       id: 679636833
@@ -1846,9 +1863,9 @@ MonoBehaviour:
         ObjectType: 4
         guid: 14a961bd002ffe41ba1f908602494c89
       Path: Triggers\Default Work Unit\VA_Test
-  ExpandedFileSystemItemIds: 040000000500000006000000
-  ExpandedWaapiItemIds: 0500000006000000
+  ExpandedFileSystemItemIds: 
+  ExpandedWaapiItemIds: 0100000005000000060000000c0000000d00000022000000290000002a000000
   AutoSyncSelection: 0
   autoPopulateEnabled: 1
-  currentDataSource: 1
+  currentDataSource: 0
   CurrentPluginConfig: 

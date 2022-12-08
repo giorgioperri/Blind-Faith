@@ -11,7 +11,7 @@
 	<StreamedFiles/>
 	<MediaFilesNotInAnyBank/>
 	<SoundBanks>
-		<SoundBank Id="1355168291" Language="SFX" Hash="1499244905">
+		<SoundBank Id="1355168291" Language="SFX" Hash="3759362851">
 			<ObjectPath>Init</ObjectPath>
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
@@ -24,16 +24,37 @@
 				<AuxBus Id="2933838247" Name="SmallRoom" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Rooms\SmallRoom"/>
 			</IncludedAuxBusses>
 		</SoundBank>
-		<SoundBank Id="1764570813" Language="SFX" Hash="2660684774">
+		<SoundBank Id="1764570813" Language="SFX" Hash="3331846290">
 			<ObjectPath>\SoundBanks\Default Work Unit\Mains</ObjectPath>
 			<ShortName>Mains</ShortName>
 			<Path>Mains.bnk</Path>
 			<IncludedEvents>
-				<Event Id="1884576663" Name="Amb_LightBeam" ObjectPath="\Events\Default Work Unit\SFX\Ambience\3D\Amb_LightBeam" MaxAttenuation="10." DurationType="Infinite">
+				<Event Id="1884576663" Name="Amb_LightBeam" ObjectPath="\Events\Default Work Unit\SFX\Ambience\3D\Amb_LightBeam" MaxAttenuation="0." DurationType="OneShot" DurationMin="0." DurationMax="0."/>
+				<Event Id="1376062894" Name="Church3DEvents" ObjectPath="\Events\Default Work Unit\Church3DEvents" DurationType="Infinite">
 					<IncludedMemoryFiles>
-						<File Id="64451089" Language="SFX">
-							<ShortName>15-Electric Arc-Transformer-Static.wav</ShortName>
-							<Path>SFX\15-Electric Arc-Transformer-Static_5C3CAA10.wem</Path>
+						<File Id="264313546" Language="SFX">
+							<ShortName>Buildings_Rumble_Stairs_Plastic_Piece_Rattle.wav</ShortName>
+							<Path>SFX\Buildings_Rumble_Stairs_Plastic_Piece_Rattle_10C4C929.wem</Path>
+						</File>
+						<File Id="266172151" Language="SFX">
+							<ShortName>impact_p3_metalbox_rattle_12.wav</ShortName>
+							<Path>SFX\impact_p3_metalbox_rattle_12_10C4C929.wem</Path>
+						</File>
+						<File Id="502370908" Language="SFX">
+							<ShortName>Buildings_Rumble_Corridor_Metal_Piece_Hit_04.wav</ShortName>
+							<Path>SFX\Buildings_Rumble_Corridor_Metal_Piece_Hit_04_447A4AE1.wem</Path>
+						</File>
+						<File Id="754165073" Language="SFX">
+							<ShortName>Buildings_Rumble_Elevator_Shaft_Glass_Break_Further_03.wav</ShortName>
+							<Path>SFX\Buildings_Rumble_Elevator_Shaft_Glass_Break_Further_03_4B1DA099.wem</Path>
+						</File>
+						<File Id="900777790" Language="SFX">
+							<ShortName>impact_p2_metalbox_drop_08.wav</ShortName>
+							<Path>SFX\impact_p2_metalbox_drop_08_10C4C929.wem</Path>
+						</File>
+						<File Id="1053857507" Language="SFX">
+							<ShortName>Buildings_Rumble_Elevator_Shaft_Glass_Break_04.wav</ShortName>
+							<Path>SFX\Buildings_Rumble_Elevator_Shaft_Glass_Break_04_10C4C929.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
@@ -49,11 +70,15 @@
 					<IncludedMemoryFiles>
 						<File Id="169382249" Language="SFX">
 							<ShortName>ChurchAmbisonicAmbienceMain_loopo.wav</ShortName>
-							<Path>SFX\ChurchAmbisonicAmbienceMain_loopo_BC0EBD72.wem</Path>
+							<Path>SFX\ChurchAmbisonicAmbienceMain_loopo_C9AB8BF9.wem</Path>
 						</File>
 						<File Id="195704639" Language="SFX">
 							<ShortName>ChurchAmbisonicAmbienceMain_Intro.wav</ShortName>
-							<Path>SFX\ChurchAmbisonicAmbienceMain_Intro_10C4C929.wem</Path>
+							<Path>SFX\ChurchAmbisonicAmbienceMain_Intro_F4F455FD.wem</Path>
+						</File>
+						<File Id="337866371" Language="SFX">
+							<ShortName>ChurchAmbisonicAmbienceMain_Intro.wav</ShortName>
+							<Path>SFX\ChurchAmbisonicAmbienceMain_Intro_25D48193.wem</Path>
 						</File>
 						<File Id="652525734" Language="SFX">
 							<ShortName>Earthquake_Rumble_PSEM.100.wav</ShortName>
@@ -97,8 +122,20 @@
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
-				<Event Id="1404805401" Name="DoorOpen" ObjectPath="\Events\Default Work Unit\DoorOpen" MaxAttenuation="10." DurationType="OneShot" DurationMin="13.453642" DurationMax="13.453642">
+				<Event Id="1404805401" Name="DoorOpen" ObjectPath="\Events\Default Work Unit\DoorOpen" DurationType="OneShot" DurationMin="19.862646" DurationMax="20.698334">
 					<IncludedMemoryFiles>
+						<File Id="10992658" Language="SFX">
+							<ShortName>STINGER_Hello_Evil.wav</ShortName>
+							<Path>SFX\STINGER_Hello_Evil_10C4C929.wem</Path>
+						</File>
+						<File Id="53740118" Language="SFX">
+							<ShortName>STINGER_Let_Me_In.wav</ShortName>
+							<Path>SFX\STINGER_Let_Me_In_10C4C929.wem</Path>
+						</File>
+						<File Id="190726892" Language="SFX">
+							<ShortName>STINGER_Pew_Pew.wav</ShortName>
+							<Path>SFX\STINGER_Pew_Pew_10C4C929.wem</Path>
+						</File>
 						<File Id="279953388" Language="SFX">
 							<ShortName>Lever_Pull_Steam_Release_PSEM.158.wav</ShortName>
 							<Path>SFX\Lever_Pull_Steam_Release_PSEM.158_964618FA.wem</Path>
@@ -127,9 +164,21 @@
 				</Event>
 				<Event Id="3254361931" Name="DungeonAmb" ObjectPath="\Events\Default Work Unit\SFX\Ambience\DungeonAmb" DurationType="Infinite">
 					<IncludedMemoryFiles>
+						<File Id="102821541" Language="SFX">
+							<ShortName>Stinger_Voice_Female_Evil_Laughter_Reverb.wav</ShortName>
+							<Path>SFX\Stinger_Voice_Female_Evil_Laughter_Reverb_AD2E94F5.wem</Path>
+						</File>
+						<File Id="105835099" Language="SFX">
+							<ShortName>Stinger_Voice_Female_Evil_Laughter_Reverb.wav</ShortName>
+							<Path>SFX\Stinger_Voice_Female_Evil_Laughter_Reverb_5003C2CB.wem</Path>
+						</File>
+						<File Id="368585047" Language="SFX">
+							<ShortName>Stinger_Voice_Female_Evil_Laughter_Reverb.wav</ShortName>
+							<Path>SFX\Stinger_Voice_Female_Evil_Laughter_Reverb_CA83762F.wem</Path>
+						</File>
 						<File Id="388845278" Language="SFX">
 							<ShortName>Stinger_Voice_Female_Eerie_Whisper.wav</ShortName>
-							<Path>SFX\Stinger_Voice_Female_Eerie_Whisper_D79FB2B7.wem</Path>
+							<Path>SFX\Stinger_Voice_Female_Eerie_Whisper_597272F4.wem</Path>
 						</File>
 						<File Id="464475432" Language="SFX">
 							<ShortName>FortressBellDrone.wav</ShortName>
@@ -143,9 +192,13 @@
 							<ShortName>Earthquake_Rumble_PSEM.100.wav</ShortName>
 							<Path>SFX\Earthquake_Rumble_PSEM.100_D79FB2B7.wem</Path>
 						</File>
+						<File Id="691443408" Language="SFX">
+							<ShortName>Stinger_Voice_Female_Evil_Laughter_Reverb.wav</ShortName>
+							<Path>SFX\Stinger_Voice_Female_Evil_Laughter_Reverb_C6C24628.wem</Path>
+						</File>
 					</IncludedMemoryFiles>
 				</Event>
-				<Event Id="2115347266" Name="DungeonScream" ObjectPath="\Events\Default Work Unit\SFX\DungeonScream" MaxAttenuation="10." DurationType="OneShot" DurationMin="54.868618" DurationMax="124.868622">
+				<Event Id="2115347266" Name="DungeonScream" ObjectPath="\Events\Default Work Unit\SFX\DungeonScream" DurationType="OneShot" DurationMin="54.868618" DurationMax="124.868622">
 					<IncludedMemoryFiles>
 						<File Id="1961976" Language="SFX">
 							<ShortName>Scream,Male,Mid Thirties,Mouth Covered,Gasps,Fast,Shriek,Panic.wav</ShortName>
@@ -245,11 +298,11 @@
 						</File>
 						<File Id="802035410" Language="SFX">
 							<ShortName>RISE_Necronomicon.wav</ShortName>
-							<Path>SFX\RISE_Necronomicon_A2FA6924.wem</Path>
+							<Path>SFX\RISE_Necronomicon_084BD84A.wem</Path>
 						</File>
 						<File Id="812897878" Language="SFX">
 							<ShortName>The Tudor Consort - Epistle - Expurgate Vetus Fermentum (online-audio-converter.com).wav</ShortName>
-							<Path>SFX\The Tudor Consort - Epistle - Expurgate Vetus Fermentum (online-audio-converter.com)_99B3AC1C.wem</Path>
+							<Path>SFX\The Tudor Consort - Epistle - Expurgate Vetus Fermentum (online-audio-converter.com)_D143D26E.wem</Path>
 						</File>
 						<File Id="964259068" Language="SFX">
 							<ShortName>STINGER_Whisper_Of_Distress.wav</ShortName>
@@ -309,14 +362,7 @@
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
-				<Event Id="1710262138" Name="Lightbeam" ObjectPath="\Events\Default Work Unit\SFX\Mirror\Lightbeam" MaxAttenuation="10." DurationType="Infinite">
-					<IncludedMemoryFiles>
-						<File Id="64451089" Language="SFX">
-							<ShortName>15-Electric Arc-Transformer-Static.wav</ShortName>
-							<Path>SFX\15-Electric Arc-Transformer-Static_5C3CAA10.wem</Path>
-						</File>
-					</IncludedMemoryFiles>
-				</Event>
+				<Event Id="1710262138" Name="Lightbeam" ObjectPath="\Events\Default Work Unit\SFX\Mirror\Lightbeam" MaxAttenuation="0." DurationType="OneShot" DurationMin="0." DurationMax="0."/>
 				<Event Id="938481918" Name="LoosingHealth" ObjectPath="\Events\Default Work Unit\SFX\Player\LoosingHealth" DurationType="Infinite">
 					<IncludedMemoryFiles>
 						<File Id="113158319" Language="SFX">
@@ -341,11 +387,27 @@
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
-				<Event Id="3113871599" Name="MassiveDevice" ObjectPath="\Events\Default Work Unit\MassiveDevice" MaxAttenuation="50." DurationType="OneShot" DurationMin="11.896948" DurationMax="11.896948">
+				<Event Id="3113871599" Name="MassiveDevice" ObjectPath="\Events\Default Work Unit\MassiveDevice" DurationType="OneShot" DurationMin="19.862646" DurationMax="20.698334">
 					<IncludedMemoryFiles>
 						<File Id="6231612" Language="SFX">
 							<ShortName>BF_MassiveSteamPunkDevice.wav</ShortName>
 							<Path>SFX\BF_MassiveSteamPunkDevice_53452F46.wem</Path>
+						</File>
+						<File Id="10992658" Language="SFX">
+							<ShortName>STINGER_Hello_Evil.wav</ShortName>
+							<Path>SFX\STINGER_Hello_Evil_10C4C929.wem</Path>
+						</File>
+						<File Id="53740118" Language="SFX">
+							<ShortName>STINGER_Let_Me_In.wav</ShortName>
+							<Path>SFX\STINGER_Let_Me_In_10C4C929.wem</Path>
+						</File>
+						<File Id="190726892" Language="SFX">
+							<ShortName>STINGER_Pew_Pew.wav</ShortName>
+							<Path>SFX\STINGER_Pew_Pew_10C4C929.wem</Path>
+						</File>
+						<File Id="506611343" Language="SFX">
+							<ShortName>rockslide_02.wav</ShortName>
+							<Path>SFX\rockslide_02_23D7E4E7.wem</Path>
 						</File>
 						<File Id="627720889" Language="SFX">
 							<ShortName>BF_MassiveSteamPunkDevice.wav</ShortName>
@@ -582,13 +644,29 @@
 					<ShortName>HisChildHasReturnd.wav</ShortName>
 					<Path>SFX\HisChildHasReturnd_4CB63430.wem</Path>
 				</File>
+				<File Id="10992658" Language="SFX">
+					<ShortName>STINGER_Hello_Evil.wav</ShortName>
+					<Path>SFX\STINGER_Hello_Evil_10C4C929.wem</Path>
+				</File>
+				<File Id="53740118" Language="SFX">
+					<ShortName>STINGER_Let_Me_In.wav</ShortName>
+					<Path>SFX\STINGER_Let_Me_In_10C4C929.wem</Path>
+				</File>
 				<File Id="64451089" Language="SFX">
 					<ShortName>15-Electric Arc-Transformer-Static.wav</ShortName>
 					<Path>SFX\15-Electric Arc-Transformer-Static_5C3CAA10.wem</Path>
 				</File>
+				<File Id="102821541" Language="SFX">
+					<ShortName>Stinger_Voice_Female_Evil_Laughter_Reverb.wav</ShortName>
+					<Path>SFX\Stinger_Voice_Female_Evil_Laughter_Reverb_AD2E94F5.wem</Path>
+				</File>
 				<File Id="104070998" Language="SFX">
 					<ShortName>BF_Intro.wav</ShortName>
 					<Path>SFX\BF_Intro_FD9C03AF.wem</Path>
+				</File>
+				<File Id="105835099" Language="SFX">
+					<ShortName>Stinger_Voice_Female_Evil_Laughter_Reverb.wav</ShortName>
+					<Path>SFX\Stinger_Voice_Female_Evil_Laughter_Reverb_5003C2CB.wem</Path>
 				</File>
 				<File Id="107980118" Language="SFX">
 					<ShortName>01 Stone Footsteps, Cobblestone Male, 30 Secs Each Slow, Medium, Fast.wav</ShortName>
@@ -612,11 +690,15 @@
 				</File>
 				<File Id="169382249" Language="SFX">
 					<ShortName>ChurchAmbisonicAmbienceMain_loopo.wav</ShortName>
-					<Path>SFX\ChurchAmbisonicAmbienceMain_loopo_BC0EBD72.wem</Path>
+					<Path>SFX\ChurchAmbisonicAmbienceMain_loopo_C9AB8BF9.wem</Path>
+				</File>
+				<File Id="190726892" Language="SFX">
+					<ShortName>STINGER_Pew_Pew.wav</ShortName>
+					<Path>SFX\STINGER_Pew_Pew_10C4C929.wem</Path>
 				</File>
 				<File Id="195704639" Language="SFX">
 					<ShortName>ChurchAmbisonicAmbienceMain_Intro.wav</ShortName>
-					<Path>SFX\ChurchAmbisonicAmbienceMain_Intro_10C4C929.wem</Path>
+					<Path>SFX\ChurchAmbisonicAmbienceMain_Intro_F4F455FD.wem</Path>
 				</File>
 				<File Id="198540441" Language="SFX">
 					<ShortName>Powerup_Mutated_Drone.wav</ShortName>
@@ -650,6 +732,14 @@
 					<ShortName>METLFric_Long Slow High Pitched Tonal Screech Scrape Squeak 01_TT_CHSTUDIO_Neumann TLM 103.wav</ShortName>
 					<Path>SFX\METLFric_Long Slow High Pitched Tonal Screech Scrape Squeak 01_TT_CHSTUDIO_Neumann TLM 103_25D0FE7D.wem</Path>
 				</File>
+				<File Id="264313546" Language="SFX">
+					<ShortName>Buildings_Rumble_Stairs_Plastic_Piece_Rattle.wav</ShortName>
+					<Path>SFX\Buildings_Rumble_Stairs_Plastic_Piece_Rattle_10C4C929.wem</Path>
+				</File>
+				<File Id="266172151" Language="SFX">
+					<ShortName>impact_p3_metalbox_rattle_12.wav</ShortName>
+					<Path>SFX\impact_p3_metalbox_rattle_12_10C4C929.wem</Path>
+				</File>
 				<File Id="274880349" Language="SFX">
 					<ShortName>AncientAtmosDrone1.wav</ShortName>
 					<Path>SFX\AncientAtmosDrone1_10C4C929.wem</Path>
@@ -678,13 +768,21 @@
 					<ShortName>METLFric_Metal Plate High Pitched Tonal Screech Scrape Squeak_TT_CHSTUDIO_Neumann TLM 103.wav</ShortName>
 					<Path>SFX\METLFric_Metal Plate High Pitched Tonal Screech Scrape Squeak_TT_CHSTUDIO_Neumann TLM 103_10C4C929.wem</Path>
 				</File>
+				<File Id="337866371" Language="SFX">
+					<ShortName>ChurchAmbisonicAmbienceMain_Intro.wav</ShortName>
+					<Path>SFX\ChurchAmbisonicAmbienceMain_Intro_25D48193.wem</Path>
+				</File>
 				<File Id="345534423" Language="SFX">
 					<ShortName>Room Tone, Toilet, Fan Humming, Chiangmai, Thailand.wav</ShortName>
 					<Path>SFX\Room Tone, Toilet, Fan Humming, Chiangmai, Thailand_A6FD17C2.wem</Path>
 				</File>
+				<File Id="368585047" Language="SFX">
+					<ShortName>Stinger_Voice_Female_Evil_Laughter_Reverb.wav</ShortName>
+					<Path>SFX\Stinger_Voice_Female_Evil_Laughter_Reverb_CA83762F.wem</Path>
+				</File>
 				<File Id="388845278" Language="SFX">
 					<ShortName>Stinger_Voice_Female_Eerie_Whisper.wav</ShortName>
-					<Path>SFX\Stinger_Voice_Female_Eerie_Whisper_D79FB2B7.wem</Path>
+					<Path>SFX\Stinger_Voice_Female_Eerie_Whisper_597272F4.wem</Path>
 				</File>
 				<File Id="392707160" Language="SFX">
 					<ShortName>texture_medium_3.wav</ShortName>
@@ -733,6 +831,14 @@
 				<File Id="493705793" Language="SFX">
 					<ShortName>water2.wav</ShortName>
 					<Path>SFX\water2_10C4C929.wem</Path>
+				</File>
+				<File Id="502370908" Language="SFX">
+					<ShortName>Buildings_Rumble_Corridor_Metal_Piece_Hit_04.wav</ShortName>
+					<Path>SFX\Buildings_Rumble_Corridor_Metal_Piece_Hit_04_447A4AE1.wem</Path>
+				</File>
+				<File Id="506611343" Language="SFX">
+					<ShortName>rockslide_02.wav</ShortName>
+					<Path>SFX\rockslide_02_23D7E4E7.wem</Path>
 				</File>
 				<File Id="524158007" Language="SFX">
 					<ShortName>01 Stone Footsteps, Cobblestone Male, 30 Secs Each Slow, Medium, Fast.wav</ShortName>
@@ -798,6 +904,10 @@
 					<ShortName>water3.wav</ShortName>
 					<Path>SFX\water3_10C4C929.wem</Path>
 				</File>
+				<File Id="691443408" Language="SFX">
+					<ShortName>Stinger_Voice_Female_Evil_Laughter_Reverb.wav</ShortName>
+					<Path>SFX\Stinger_Voice_Female_Evil_Laughter_Reverb_C6C24628.wem</Path>
+				</File>
 				<File Id="696520388" Language="SFX">
 					<ShortName>METLFric_Long Slow High Pitched Tonal Screech Scrape Squeak_TT_CHSTUDIO_Neumann TLM 103.wav</ShortName>
 					<Path>SFX\METLFric_Long Slow High Pitched Tonal Screech Scrape Squeak_TT_CHSTUDIO_Neumann TLM 103_82043756.wem</Path>
@@ -822,6 +932,10 @@
 					<ShortName>Clerk_chatter\Clerk_chatter__9.wav</ShortName>
 					<Path>SFX\Clerk_chatter\Clerk_chatter__9_65745E9E.wem</Path>
 				</File>
+				<File Id="754165073" Language="SFX">
+					<ShortName>Buildings_Rumble_Elevator_Shaft_Glass_Break_Further_03.wav</ShortName>
+					<Path>SFX\Buildings_Rumble_Elevator_Shaft_Glass_Break_Further_03_4B1DA099.wem</Path>
+				</File>
 				<File Id="786073262" Language="SFX">
 					<ShortName>Mutated hammer.wav</ShortName>
 					<Path>SFX\Mutated hammer_26E4CBA8.wem</Path>
@@ -836,11 +950,11 @@
 				</File>
 				<File Id="802035410" Language="SFX">
 					<ShortName>RISE_Necronomicon.wav</ShortName>
-					<Path>SFX\RISE_Necronomicon_A2FA6924.wem</Path>
+					<Path>SFX\RISE_Necronomicon_084BD84A.wem</Path>
 				</File>
 				<File Id="812897878" Language="SFX">
 					<ShortName>The Tudor Consort - Epistle - Expurgate Vetus Fermentum (online-audio-converter.com).wav</ShortName>
-					<Path>SFX\The Tudor Consort - Epistle - Expurgate Vetus Fermentum (online-audio-converter.com)_99B3AC1C.wem</Path>
+					<Path>SFX\The Tudor Consort - Epistle - Expurgate Vetus Fermentum (online-audio-converter.com)_D143D26E.wem</Path>
 				</File>
 				<File Id="826579596" Language="SFX">
 					<ShortName>Door, Metal, Open, Close, Distant, Mariott Hotel, San Jose 1.wav</ShortName>
@@ -865,6 +979,10 @@
 				<File Id="883270094" Language="SFX">
 					<ShortName>Switch weapon.wav</ShortName>
 					<Path>SFX\Switch weapon_10C4C929.wem</Path>
+				</File>
+				<File Id="900777790" Language="SFX">
+					<ShortName>impact_p2_metalbox_drop_08.wav</ShortName>
+					<Path>SFX\impact_p2_metalbox_drop_08_10C4C929.wem</Path>
 				</File>
 				<File Id="920208633" Language="SFX">
 					<ShortName>Creepy Door, Slow Creak_03.wav</ShortName>
@@ -929,6 +1047,10 @@
 				<File Id="1052142959" Language="SFX">
 					<ShortName>water1.wav</ShortName>
 					<Path>SFX\water1_10C4C929.wem</Path>
+				</File>
+				<File Id="1053857507" Language="SFX">
+					<ShortName>Buildings_Rumble_Elevator_Shaft_Glass_Break_04.wav</ShortName>
+					<Path>SFX\Buildings_Rumble_Elevator_Shaft_Glass_Break_04_10C4C929.wem</Path>
 				</File>
 				<File Id="1054677677" Language="SFX">
 					<ShortName>Switch weapon.wav</ShortName>

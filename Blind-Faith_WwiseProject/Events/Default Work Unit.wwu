@@ -229,6 +229,9 @@
 										<Event Name="Amb_LightBeam" ID="{F077A34F-FF73-466F-9E4A-5759A67C72F1}">
 											<ChildrenList>
 												<Action Name="" ID="{3812A9FA-CBD9-45ED-8FF4-5E7F526C536A}" ShortID="278163252">
+													<PropertyList>
+														<Property Name="ActionType" Type="int16" Value="2"/>
+													</PropertyList>
 													<ReferenceList>
 														<Reference Name="Target">
 															<ObjectRef Name="LightbeamAmbience" ID="{E4A973C6-0075-4D2A-BCFE-349B69E1ABB7}" WorkUnitID="{10A75CA5-3F55-455C-A103-004D7C43FEF2}"/>
@@ -301,6 +304,13 @@
 												</Reference>
 											</ReferenceList>
 										</Action>
+										<Action Name="" ID="{C9A09B5C-F73A-413C-9BA7-BDFF5C9C556F}" ShortID="427257499">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="DungeonLaughs" ID="{E57F2464-B7B3-4045-A429-C453A29898FA}" WorkUnitID="{10A75CA5-3F55-455C-A103-004D7C43FEF2}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
 									</ChildrenList>
 								</Event>
 							</ChildrenList>
@@ -364,6 +374,7 @@
 									<ChildrenList>
 										<Action Name="" ID="{960CDD6E-1ED8-4DC2-8FD2-94BD48657CD5}" ShortID="611579329">
 											<PropertyList>
+												<Property Name="ActionType" Type="int16" Value="2"/>
 												<Property Name="FadeTime" Type="Real64" Value="0.5"/>
 											</PropertyList>
 											<ReferenceList>
@@ -512,6 +523,27 @@
 								</Reference>
 							</ReferenceList>
 						</Action>
+						<Action Name="" ID="{504CE44C-3F6F-4E2E-8B4D-D923D26F8B6E}" ShortID="609623316">
+							<PropertyList>
+								<Property Name="Delay" Type="Real64" Value="1.5"/>
+								<Property Name="FadeTime" Type="Real64" Value="2"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="StairsRumble" ID="{BEDA008E-C4AA-4FA2-8841-FEF51749CD30}" WorkUnitID="{10A75CA5-3F55-455C-A103-004D7C43FEF2}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{4B8D2392-E94B-4022-92EC-4720D55E643B}" ShortID="620089970">
+							<PropertyList>
+								<Property Name="Delay" Type="Real64" Value="10"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="StingerDeq" ID="{F8E7CC70-F7B3-4E32-B364-B5B44C8155C7}" WorkUnitID="{10A75CA5-3F55-455C-A103-004D7C43FEF2}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
 					</ChildrenList>
 				</Event>
 				<Event Name="DoorOpen" ID="{552D00B7-E5E1-40CA-BFC8-8347B18B8BFD}">
@@ -585,6 +617,16 @@
 								</Reference>
 							</ReferenceList>
 						</Action>
+						<Action Name="" ID="{8E7FE72C-84F7-4B5B-8CDF-D75DF3FF43C7}" ShortID="488876686">
+							<PropertyList>
+								<Property Name="Delay" Type="Real64" Value="10"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="StingerDeq" ID="{F8E7CC70-F7B3-4E32-B364-B5B44C8155C7}" WorkUnitID="{10A75CA5-3F55-455C-A103-004D7C43FEF2}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
 					</ChildrenList>
 				</Event>
 				<Event Name="MenuMusic" ID="{94C1E42E-5D58-4F47-A31D-91DCCC3B960C}">
@@ -608,6 +650,17 @@
 							<ReferenceList>
 								<Reference Name="Target">
 									<ObjectRef Name="WS_ExploreMusic_SFX_only" ID="{F8E29C60-6147-4A3F-9746-22F84E087746}" WorkUnitID="{10A75CA5-3F55-455C-A103-004D7C43FEF2}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Church3DEvents" ID="{2E429D58-AF23-45BF-98C3-99AA56E2AA10}">
+					<ChildrenList>
+						<Action Name="" ID="{8B6F9DCD-12D7-42E4-8F87-2D8DAC8A7F78}" ShortID="902136499">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Church3DAmb" ID="{141FA282-343A-4A68-A908-43A1BC732AA5}" WorkUnitID="{10A75CA5-3F55-455C-A103-004D7C43FEF2}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>

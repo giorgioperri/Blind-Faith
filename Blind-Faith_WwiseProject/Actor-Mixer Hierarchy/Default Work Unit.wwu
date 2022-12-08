@@ -791,7 +791,6 @@
 							<ChildrenList>
 								<SwitchContainer Name="Footsteps" ID="{6FC38BCF-E0EC-4B08-B280-0A8F18E5BBA2}" ShortID="614333517">
 									<PropertyList>
-										<Property Name="3DPosition" Type="int16" Value="1"/>
 										<Property Name="3DSpatialization" Type="int16" Value="2"/>
 										<Property Name="EnableDiffraction" Type="bool" Value="True"/>
 										<Property Name="OverridePositioning" Type="bool" Value="True"/>
@@ -1205,6 +1204,11 @@
 							<ChildrenList>
 								<RandomSequenceContainer Name="HeartbeatSeq" ID="{A1010F9D-B3B9-45AA-A844-8E209E21CCD5}" ShortID="748465204">
 									<PropertyList>
+										<Property Name="Highpass" Type="int16">
+											<ValueList>
+												<Value>16</Value>
+											</ValueList>
+										</Property>
 										<Property Name="OverrideEffect" Type="bool" Value="True"/>
 										<Property Name="PlayMechanismLoop" Type="bool" Value="True"/>
 										<Property Name="PlayMechanismSpecialTransitions" Type="bool" Value="True"/>
@@ -1251,7 +1255,7 @@
 										<Property Name="RandomOrSequence" Type="int16" Value="0"/>
 										<Property Name="Volume" Type="Real64">
 											<ValueList>
-												<Value>-6</Value>
+												<Value>-8</Value>
 											</ValueList>
 											<RTPCList>
 												<RTPC Name="" ID="{EE4DB290-888D-4C14-A8DB-5F32C80E2FA4}" ShortID="24325877">
@@ -1441,7 +1445,7 @@
 								<Sound Name="LoosingSanityLoop_02" ID="{B1A92604-DFEF-4A01-B9E1-F75380E063EC}" ShortID="67732919">
 									<PropertyList>
 										<Property Name="3DPosition" Type="int16" Value="1"/>
-										<Property Name="3DSpatialization" Type="int16" Value="1"/>
+										<Property Name="3DSpatialization" Type="int16" Value="2"/>
 										<Property Name="EnableAttenuation" Type="bool" Value="False"/>
 										<Property Name="Highpass" Type="int16">
 											<ValueList>
@@ -1475,6 +1479,7 @@
 												</RTPC>
 											</RTPCList>
 										</Property>
+										<Property Name="HoldEmitterPositionOrientation" Type="bool" Value="True"/>
 										<Property Name="IgnoreParentMaxSoundInstance" Type="bool" Value="True"/>
 										<Property Name="IsGlobalLimit" Type="int16" Value="1"/>
 										<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
@@ -1550,7 +1555,7 @@
 												</RTPC>
 											</RTPCList>
 										</Property>
-										<Property Name="SpeakerPanning3DSpatializationMix" Type="int32" Value="40"/>
+										<Property Name="SpeakerPanning3DSpatializationMix" Type="int32" Value="60"/>
 										<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
 										<Property Name="UseMaxSoundPerInstance" Type="bool">
 											<ValueList>
@@ -1558,9 +1563,6 @@
 											</ValueList>
 										</Property>
 										<Property Name="Volume" Type="Real64">
-											<ValueList>
-												<Value>3</Value>
-											</ValueList>
 											<RTPCList>
 												<RTPC Name="" ID="{AF773441-E1AF-461C-ADF6-71A0AC6643EC}" ShortID="353912544">
 													<ReferenceList>
@@ -1637,7 +1639,7 @@
 															</Point>
 															<Point>
 																<XPos>1</XPos>
-																<YPos>1.33208</YPos>
+																<YPos>-0.77246</YPos>
 																<Flags>53</Flags>
 															</Point>
 														</PointList>
@@ -1714,6 +1716,7 @@
 											<ChildrenList>
 												<Path2D Name="LoosingSanityLoop_01_Path" ID="{9210BC3A-379E-4159-B88E-904B7F64FE36}">
 													<PropertyList>
+														<Property Name="Duration" Type="Uint32" Value="10000"/>
 														<Property Name="RandomX" Type="Real64" Value="16"/>
 														<Property Name="RandomZ" Type="Real64" Value="16"/>
 													</PropertyList>
@@ -1728,30 +1731,31 @@
 															<XPos>-36.0406091370558</XPos>
 															<YPos>-71.7514124293785</YPos>
 															<Flags>0</Flags>
-															<Time>1250</Time>
+															<Time>2500</Time>
 														</Point>
 														<Point>
 															<XPos>69.5431472081218</XPos>
 															<YPos>-65.5367231638418</YPos>
 															<Flags>0</Flags>
-															<Time>2500</Time>
+															<Time>5000</Time>
 														</Point>
 														<Point>
 															<XPos>74.1116751269035</XPos>
 															<YPos>52.5423728813559</YPos>
 															<Flags>0</Flags>
-															<Time>3750</Time>
+															<Time>7500</Time>
 														</Point>
 														<Point>
 															<XPos>-49.238578680203</XPos>
 															<YPos>49.1525423728814</YPos>
 															<Flags>0</Flags>
-															<Time>5000</Time>
+															<Time>10000</Time>
 														</Point>
 													</PointList>
 												</Path2D>
 												<Path2D Name="LoosingSanityLoop_01_Path_01" ID="{0F51C953-AC08-4967-A6A7-1540C0E08D17}">
 													<PropertyList>
+														<Property Name="Duration" Type="Uint32" Value="10000"/>
 														<Property Name="RandomX" Type="Real64" Value="4"/>
 														<Property Name="RandomZ" Type="Real64" Value="17"/>
 													</PropertyList>
@@ -1766,36 +1770,37 @@
 															<XPos>53.2994923857868</XPos>
 															<YPos>39.5480225988701</YPos>
 															<Flags>0</Flags>
-															<Time>1000</Time>
+															<Time>2000</Time>
 														</Point>
 														<Point>
 															<XPos>65.4822335025381</XPos>
 															<YPos>-43.5028248587571</YPos>
 															<Flags>0</Flags>
-															<Time>2000</Time>
+															<Time>4000</Time>
 														</Point>
 														<Point>
 															<XPos>-7.10659898477157</XPos>
 															<YPos>-54.8022598870056</YPos>
 															<Flags>0</Flags>
-															<Time>3000</Time>
+															<Time>6000</Time>
 														</Point>
 														<Point>
 															<XPos>-80.2030456852792</XPos>
 															<YPos>30.5084745762712</YPos>
 															<Flags>0</Flags>
-															<Time>4000</Time>
+															<Time>8000</Time>
 														</Point>
 														<Point>
 															<XPos>-15.736040609137</XPos>
 															<YPos>41.8079096045198</YPos>
 															<Flags>0</Flags>
-															<Time>5000</Time>
+															<Time>10000</Time>
 														</Point>
 													</PointList>
 												</Path2D>
 												<Path2D Name="LoosingSanityLoop_01_Path_02" ID="{4BDF565B-9476-45C7-AD92-F8A47823CD8B}">
 													<PropertyList>
+														<Property Name="Duration" Type="Uint32" Value="10000"/>
 														<Property Name="RandomX" Type="Real64" Value="3"/>
 														<Property Name="RandomZ" Type="Real64" Value="16"/>
 													</PropertyList>
@@ -1810,36 +1815,37 @@
 															<XPos>-0.507614213197968</XPos>
 															<YPos>-83.6158192090396</YPos>
 															<Flags>0</Flags>
-															<Time>1000</Time>
+															<Time>2000</Time>
 														</Point>
 														<Point>
 															<XPos>-70.0507614213198</XPos>
 															<YPos>-25.9887005649718</YPos>
 															<Flags>0</Flags>
-															<Time>2000</Time>
+															<Time>4000</Time>
 														</Point>
 														<Point>
 															<XPos>91.3705583756345</XPos>
 															<YPos>-33.3333333333333</YPos>
 															<Flags>0</Flags>
-															<Time>3000</Time>
+															<Time>6000</Time>
 														</Point>
 														<Point>
 															<XPos>-66.497461928934</XPos>
 															<YPos>29.9435028248588</YPos>
 															<Flags>0</Flags>
-															<Time>4000</Time>
+															<Time>8000</Time>
 														</Point>
 														<Point>
 															<XPos>13.7055837563452</XPos>
 															<YPos>47.4576271186441</YPos>
 															<Flags>0</Flags>
-															<Time>5000</Time>
+															<Time>10000</Time>
 														</Point>
 													</PointList>
 												</Path2D>
 												<Path2D Name="LoosingSanityLoop_01_Path_03" ID="{C7E3A09C-D6A7-4D85-9E55-7302BE7E68C2}">
 													<PropertyList>
+														<Property Name="Duration" Type="Uint32" Value="10000"/>
 														<Property Name="RandomX" Type="Real64" Value="5"/>
 														<Property Name="RandomZ" Type="Real64" Value="21"/>
 													</PropertyList>
@@ -1854,43 +1860,43 @@
 															<XPos>60.4060913705584</XPos>
 															<YPos>-9.60451977401129</YPos>
 															<Flags>0</Flags>
-															<Time>714</Time>
+															<Time>1428</Time>
 														</Point>
 														<Point>
 															<XPos>-62.9441624365482</XPos>
 															<YPos>-63.8418079096045</YPos>
 															<Flags>0</Flags>
-															<Time>1428</Time>
+															<Time>2857</Time>
 														</Point>
 														<Point>
 															<XPos>81.2182741116751</XPos>
 															<YPos>-72.3163841807909</YPos>
 															<Flags>0</Flags>
-															<Time>2142</Time>
+															<Time>4285</Time>
 														</Point>
 														<Point>
 															<XPos>74.1116751269035</XPos>
 															<YPos>51.4124293785311</YPos>
 															<Flags>0</Flags>
-															<Time>2857</Time>
+															<Time>5714</Time>
 														</Point>
 														<Point>
 															<XPos>-85.7868020304569</XPos>
 															<YPos>90.9604519774011</YPos>
 															<Flags>0</Flags>
-															<Time>3571</Time>
+															<Time>7142</Time>
 														</Point>
 														<Point>
 															<XPos>-84.7715736040609</XPos>
 															<YPos>-41.2429378531073</YPos>
 															<Flags>0</Flags>
-															<Time>4285</Time>
+															<Time>8571</Time>
 														</Point>
 														<Point>
 															<XPos>-12.1827411167513</XPos>
 															<YPos>51.4124293785311</YPos>
 															<Flags>0</Flags>
-															<Time>5000</Time>
+															<Time>10000</Time>
 														</Point>
 													</PointList>
 												</Path2D>
@@ -1925,12 +1931,16 @@
 								</Sound>
 								<RandomSequenceContainer Name="MetalScrape" ID="{E01EE4E6-14B6-4724-94D3-806BE455B8FE}" ShortID="875879034">
 									<PropertyList>
+										<Property Name="3DSpatialization" Type="int16" Value="2"/>
+										<Property Name="EnableDiffraction" Type="bool" Value="True"/>
 										<Property Name="Lowpass" Type="int16">
 											<ValueList>
 												<Value>17</Value>
 											</ValueList>
 										</Property>
 										<Property Name="OverrideEffect" Type="bool" Value="True"/>
+										<Property Name="OverrideOutput" Type="bool" Value="True"/>
+										<Property Name="OverridePositioning" Type="bool" Value="True"/>
 										<Property Name="Pitch" Type="int32">
 											<ValueList>
 												<Value>-150</Value>
@@ -1966,7 +1976,7 @@
 															</Point>
 															<Point>
 																<XPos>1</XPos>
-																<YPos>0</YPos>
+																<YPos>-1.00333</YPos>
 																<Flags>53</Flags>
 															</Point>
 														</PointList>
@@ -2008,7 +2018,7 @@
 											<ObjectRef Name="Heavy_Metal" ID="{9104321C-9E54-4879-A29A-EF8D46BE9035}" WorkUnitID="{E8613F7D-BAD3-45CD-A3ED-505576F31277}"/>
 										</Reference>
 										<Reference Name="OutputBus">
-											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C91EB4C6-56DC-4541-96C4-29E948904D66}"/>
+											<ObjectRef Name="Rooms" ID="{F220833B-3FC1-4DC8-9CF3-6F367C8C1EDE}" WorkUnitID="{C91EB4C6-56DC-4541-96C4-29E948904D66}"/>
 										</Reference>
 									</ReferenceList>
 									<ChildrenList>
@@ -2686,10 +2696,11 @@
 				</ActorMixer>
 				<ActorMixer Name="Ambience" ID="{60AD6A78-7716-438B-B950-6ED15CC7DF49}" ShortID="547837392">
 					<PropertyList>
+						<Property Name="3DSpatialization" Type="int16" Value="2"/>
 						<Property Name="Color" Type="int16" Value="4"/>
-						<Property Name="EnableAttenuation" Type="bool" Value="False"/>
-						<Property Name="ListenerRelativeRouting" Type="bool" Value="False"/>
+						<Property Name="EnableDiffraction" Type="bool" Value="True"/>
 						<Property Name="OverrideColor" Type="bool" Value="True"/>
+						<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
 					</PropertyList>
 					<ReferenceList>
 						<Reference Name="Conversion">
@@ -2707,14 +2718,11 @@
 								<Property Name="OverridePositioning" Type="bool" Value="True"/>
 							</PropertyList>
 							<ReferenceList>
-								<Reference Name="Attenuation">
-									<ObjectRef Name="10" ID="{CD38D13E-1D7D-46FA-AD0C-C7D5F9690547}" WorkUnitID="{47D4E814-D669-4A08-8AD2-F706566546E0}"/>
-								</Reference>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{23AF77D7-3FEA-409B-8E44-F5B490014C61}"/>
 								</Reference>
 								<Reference Name="OutputBus">
-									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C91EB4C6-56DC-4541-96C4-29E948904D66}"/>
+									<ObjectRef Name="Rooms" ID="{F220833B-3FC1-4DC8-9CF3-6F367C8C1EDE}" WorkUnitID="{C91EB4C6-56DC-4541-96C4-29E948904D66}"/>
 								</Reference>
 							</ReferenceList>
 							<ChildrenList>
@@ -2852,13 +2860,16 @@
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{23AF77D7-3FEA-409B-8E44-F5B490014C61}"/>
 										</Reference>
 										<Reference Name="OutputBus">
-											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C91EB4C6-56DC-4541-96C4-29E948904D66}"/>
+											<ObjectRef Name="Rooms" ID="{F220833B-3FC1-4DC8-9CF3-6F367C8C1EDE}" WorkUnitID="{C91EB4C6-56DC-4541-96C4-29E948904D66}"/>
 										</Reference>
 									</ReferenceList>
 									<ChildrenList>
 										<RandomSequenceContainer Name="DungeonScreamLoop" ID="{4F860AAD-4AAC-4936-8D54-E64ADC32B690}" ShortID="640468463">
 											<PropertyList>
+												<Property Name="3DPosition" Type="int16" Value="1"/>
 												<Property Name="3DSpatialization" Type="int16" Value="2"/>
+												<Property Name="EnableDiffraction" Type="bool" Value="True"/>
+												<Property Name="HoldEmitterPositionOrientation" Type="bool" Value="True"/>
 												<Property Name="PlayMechanismInfiniteOrNumberOfLoops" Type="int16" Value="0"/>
 												<Property Name="PlayMechanismLoop" Type="bool" Value="True"/>
 												<Property Name="PlayMechanismSpecialTransitions" Type="bool" Value="True"/>
@@ -3179,18 +3190,42 @@
 													</ActiveSourceList>
 												</Sound>
 											</ChildrenList>
+											<PositioningInfo>
+												<Position Name="" ID="{4A8D7BB9-921A-4A7A-99AD-BB58CCD42CD0}">
+													<ChildrenList>
+														<Path2D Name="DungeonScreamLoop_Path" ID="{4105A8D0-BC57-45B2-96A7-4E7B0DB22270}">
+															<PropertyList>
+																<Property Name="Duration" Type="Uint32" Value="11000"/>
+															</PropertyList>
+															<PointList>
+																<Point>
+																	<XPos>-14.2132</XPos>
+																	<YPos>0.84746</YPos>
+																	<ZPos>20</ZPos>
+																	<Flags>12</Flags>
+																	<Time>0</Time>
+																</Point>
+															</PointList>
+														</Path2D>
+													</ChildrenList>
+												</Position>
+											</PositioningInfo>
 											<ObjectLists/>
 										</RandomSequenceContainer>
 										<Sound Name="DungeonScream" ID="{B1587511-EE97-4B7E-AA07-0A08656885F1}" ShortID="989028469">
 											<PropertyList>
-												<Property Name="3DPosition" Type="int16" Value="1"/>
 												<Property Name="3DSpatialization" Type="int16" Value="2"/>
-												<Property Name="Lowpass" Type="int16">
+												<Property Name="EnableDiffraction" Type="bool" Value="True"/>
+												<Property Name="Highpass" Type="int16">
 													<ValueList>
-														<Value>24</Value>
+														<Value>16</Value>
 													</ValueList>
 												</Property>
-												<Property Name="OverridePositioning" Type="bool" Value="True"/>
+												<Property Name="Lowpass" Type="int16">
+													<ValueList>
+														<Value>26</Value>
+													</ValueList>
+												</Property>
 												<Property Name="Volume" Type="Real64">
 													<ValueList>
 														<Value>7</Value>
@@ -3223,9 +3258,9 @@
 														<Path2D Name="DungeonScream_Path" ID="{CD2ECD20-FC18-4643-9017-DF9979BDE4A4}">
 															<PointList>
 																<Point>
-																	<XPos>-40.10152</XPos>
-																	<YPos>-0.28248</YPos>
-																	<ZPos>-26</ZPos>
+																	<XPos>-21.3198</XPos>
+																	<YPos>-1.41242</YPos>
+																	<ZPos>39</ZPos>
 																	<Flags>12</Flags>
 																	<Time>0</Time>
 																</Point>
@@ -3241,12 +3276,11 @@
 										</Sound>
 										<Sound Name="DungeonScreamDoor" ID="{E7824E1F-95EC-4B01-A9C4-8275502B3D3B}" ShortID="495164380">
 											<PropertyList>
-												<Property Name="3DPosition" Type="int16" Value="1"/>
 												<Property Name="3DSpatialization" Type="int16" Value="2"/>
-												<Property Name="OverridePositioning" Type="bool" Value="True"/>
+												<Property Name="EnableDiffraction" Type="bool" Value="True"/>
 												<Property Name="Volume" Type="Real64">
 													<ValueList>
-														<Value>10</Value>
+														<Value>2</Value>
 													</ValueList>
 												</Property>
 											</PropertyList>
@@ -3298,7 +3332,15 @@
 									<ObjectLists/>
 								</ActorMixer>
 								<ActorMixer Name="Mirror" ID="{F5EEF196-ECFD-4F8A-BCF8-C609A5DE8BD0}" ShortID="436749448">
+									<PropertyList>
+										<Property Name="3DSpatialization" Type="int16" Value="2"/>
+										<Property Name="EnableDiffraction" Type="bool" Value="True"/>
+										<Property Name="OverridePositioning" Type="bool" Value="True"/>
+									</PropertyList>
 									<ReferenceList>
+										<Reference Name="Attenuation">
+											<ObjectRef Name="10" ID="{CD38D13E-1D7D-46FA-AD0C-C7D5F9690547}" WorkUnitID="{47D4E814-D669-4A08-8AD2-F706566546E0}"/>
+										</Reference>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{23AF77D7-3FEA-409B-8E44-F5B490014C61}"/>
 										</Reference>
@@ -3539,6 +3581,9 @@
 											</ActiveSourceList>
 										</Sound>
 										<RandomSequenceContainer Name="MirrorRotate" ID="{7E3F80AC-DB41-4DFC-A25D-5B0AFAA8A149}" ShortID="494506085">
+											<PropertyList>
+												<Property Name="3DSpatialization" Type="int16" Value="2"/>
+											</PropertyList>
 											<ReferenceList>
 												<Reference Name="Conversion">
 													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{23AF77D7-3FEA-409B-8E44-F5B490014C61}"/>
@@ -3731,6 +3776,7 @@
 												<Value>22</Value>
 											</ValueList>
 										</Property>
+										<Property Name="OverrideOutput" Type="bool" Value="True"/>
 										<Property Name="OverridePositioning" Type="bool" Value="True"/>
 									</PropertyList>
 									<ReferenceList>
@@ -3741,7 +3787,7 @@
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{23AF77D7-3FEA-409B-8E44-F5B490014C61}"/>
 										</Reference>
 										<Reference Name="OutputBus">
-											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C91EB4C6-56DC-4541-96C4-29E948904D66}"/>
+											<ObjectRef Name="Rooms" ID="{F220833B-3FC1-4DC8-9CF3-6F367C8C1EDE}" WorkUnitID="{C91EB4C6-56DC-4541-96C4-29E948904D66}"/>
 										</Reference>
 									</ReferenceList>
 									<ChildrenList>
@@ -4262,7 +4308,7 @@
 								<RandomSequenceContainer Name="MassiveDevice" ID="{4254634E-F4EE-493F-90F2-F343FB934FDC}" ShortID="50010895">
 									<PropertyList>
 										<Property Name="3DPosition" Type="int16" Value="1"/>
-										<Property Name="3DSpatialization" Type="int16" Value="1"/>
+										<Property Name="3DSpatialization" Type="int16" Value="2"/>
 										<Property Name="EnableDiffraction" Type="bool" Value="True"/>
 										<Property Name="OverridePositioning" Type="bool" Value="True"/>
 										<Property Name="PlayMechanismResetPlaylistEachPlay" Type="bool" Value="False"/>
@@ -4384,7 +4430,16 @@
 									</Playlist>
 								</RandomSequenceContainer>
 								<ActorMixer Name="DoorOpen" ID="{E63C78FA-A668-422B-AAD7-B8F64C23C0D3}" ShortID="162530806">
+									<PropertyList>
+										<Property Name="3DSpatialization" Type="int16" Value="2"/>
+										<Property Name="EnableDiffraction" Type="bool" Value="True"/>
+										<Property Name="OverridePositioning" Type="bool" Value="True"/>
+										<Property Name="SpeakerPanning3DSpatializationMix" Type="int32" Value="90"/>
+									</PropertyList>
 									<ReferenceList>
+										<Reference Name="Attenuation">
+											<ObjectRef Name="20m" ID="{2CC655F3-0B42-48F7-9E53-E75E8568D30F}" WorkUnitID="{47D4E814-D669-4A08-8AD2-F706566546E0}"/>
+										</Reference>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{23AF77D7-3FEA-409B-8E44-F5B490014C61}"/>
 										</Reference>
@@ -4709,11 +4764,703 @@
 									</ChildrenList>
 									<ObjectLists/>
 								</ActorMixer>
+								<RandomSequenceContainer Name="Church3DAmb" ID="{141FA282-343A-4A68-A908-43A1BC732AA5}" ShortID="993743215">
+									<PropertyList>
+										<Property Name="3DPosition" Type="int16" Value="1"/>
+										<Property Name="3DSpatialization" Type="int16" Value="2"/>
+										<Property Name="EnableDiffraction" Type="bool" Value="True"/>
+										<Property Name="InitialDelay" Type="Real64">
+											<ValueList>
+												<Value>6.5</Value>
+											</ValueList>
+											<ModifierList>
+												<ModifierInfo>
+													<Modifier Name="" ID="{39A56D8D-746B-49B8-B17A-335FC1D10F3D}">
+														<PropertyList>
+															<Property Name="Enabled" Type="bool" Value="True"/>
+															<Property Name="Max" Type="Real64" Value="5"/>
+														</PropertyList>
+													</Modifier>
+												</ModifierInfo>
+											</ModifierList>
+										</Property>
+										<Property Name="Lowpass" Type="int16">
+											<ValueList>
+												<Value>28</Value>
+											</ValueList>
+										</Property>
+										<Property Name="OverridePositioning" Type="bool" Value="True"/>
+										<Property Name="Pitch" Type="int32">
+											<ModifierList>
+												<ModifierInfo>
+													<Modifier Name="" ID="{31E7525A-4255-4BE5-92CE-5AB0325EB9C6}">
+														<PropertyList>
+															<Property Name="Enabled" Type="bool" Value="True"/>
+															<Property Name="Min" Type="Real64" Value="-152"/>
+														</PropertyList>
+													</Modifier>
+												</ModifierInfo>
+											</ModifierList>
+										</Property>
+										<Property Name="PlayMechanismLoop" Type="bool" Value="True"/>
+										<Property Name="PlayMechanismSpecialTransitions" Type="bool" Value="True"/>
+										<Property Name="PlayMechanismSpecialTransitionsType" Type="int16" Value="1"/>
+										<Property Name="PlayMechanismSpecialTransitionsValue" Type="Real64" Value="7">
+											<ModifierList>
+												<ModifierInfo>
+													<Modifier Name="" ID="{5C116C9A-AF36-4241-83A9-A5D2ECCB2786}">
+														<PropertyList>
+															<Property Name="Enabled" Type="bool" Value="True"/>
+															<Property Name="Max" Type="Real64" Value="5"/>
+														</PropertyList>
+													</Modifier>
+												</ModifierInfo>
+											</ModifierList>
+										</Property>
+										<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
+										<Property Name="RandomAvoidRepeating" Type="bool" Value="False"/>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-4</Value>
+											</ValueList>
+											<ModifierList>
+												<ModifierInfo>
+													<Modifier Name="" ID="{D96E8E25-214D-461D-8618-790DDE1A074D}">
+														<PropertyList>
+															<Property Name="Enabled" Type="bool" Value="True"/>
+															<Property Name="Min" Type="Real64" Value="-6"/>
+														</PropertyList>
+													</Modifier>
+												</ModifierInfo>
+											</ModifierList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{23AF77D7-3FEA-409B-8E44-F5B490014C61}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C91EB4C6-56DC-4541-96C4-29E948904D66}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<Sound Name="Buildings_Rumble_Corridor_Metal_Piece_Hit_04" ID="{5B0BFCBB-9E1D-4E4C-BC6D-563B71ADE5C8}" ShortID="986063802">
+											<PropertyList>
+												<Property Name="3DSpatialization" Type="int16" Value="2"/>
+												<Property Name="Pitch" Type="int32">
+													<ModifierList>
+														<ModifierInfo>
+															<Modifier Name="" ID="{78327BC3-7225-44CA-9F3A-535E8F96814C}">
+																<PropertyList>
+																	<Property Name="Min" Type="Real64" Value="-253"/>
+																</PropertyList>
+															</Modifier>
+														</ModifierInfo>
+													</ModifierList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Attenuation">
+													<ObjectRef Name="10" ID="{CD38D13E-1D7D-46FA-AD0C-C7D5F9690547}" WorkUnitID="{47D4E814-D669-4A08-8AD2-F706566546E0}"/>
+												</Reference>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{23AF77D7-3FEA-409B-8E44-F5B490014C61}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Rooms" ID="{F220833B-3FC1-4DC8-9CF3-6F367C8C1EDE}" WorkUnitID="{C91EB4C6-56DC-4541-96C4-29E948904D66}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Buildings_Rumble_Corridor_Metal_Piece_Hit_04" ID="{8AB3A5FC-B692-4EE2-9D6A-60E9113D85A9}">
+													<PropertyList>
+														<Property Name="LoopBegin" Type="Real64" Value="0"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimEnd" Type="Real64" Value="3.56063810000002"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>Buildings_Rumble_Corridor_Metal_Piece_Hit_04.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="502370908"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ObjectLists/>
+											<ActiveSourceList>
+												<ActiveSource Name="Buildings_Rumble_Corridor_Metal_Piece_Hit_04" ID="{8AB3A5FC-B692-4EE2-9D6A-60E9113D85A9}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Buildings_Rumble_Elevator_Shaft_Glass_Break_Further_03" ID="{673F4CAE-0E48-4380-BD1F-1AF44CD5F0DA}" ShortID="1002166245">
+											<PropertyList>
+												<Property Name="Weight" Type="Real64">
+													<ValueList>
+														<Value>48</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{23AF77D7-3FEA-409B-8E44-F5B490014C61}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C91EB4C6-56DC-4541-96C4-29E948904D66}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Buildings_Rumble_Elevator_Shaft_Glass_Break_Further_03" ID="{777E6A69-8892-4F6D-87F0-0CC6A4F8A5ED}">
+													<PropertyList>
+														<Property Name="LoopBegin" Type="Real64" Value="0"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimEnd" Type="Real64" Value="6.49781126666667"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>Buildings_Rumble_Elevator_Shaft_Glass_Break_Further_03.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="754165073"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ObjectLists/>
+											<ActiveSourceList>
+												<ActiveSource Name="Buildings_Rumble_Elevator_Shaft_Glass_Break_Further_03" ID="{777E6A69-8892-4F6D-87F0-0CC6A4F8A5ED}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="impact_p3_metalbox_rattle_12" ID="{37D7E22F-1E11-4409-8694-B3E107051E17}" ShortID="522255787">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{23AF77D7-3FEA-409B-8E44-F5B490014C61}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C91EB4C6-56DC-4541-96C4-29E948904D66}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="impact_p3_metalbox_rattle_12" ID="{2C31D4AD-8819-42C1-AEFB-1E17FB6DFB33}">
+													<Language>SFX</Language>
+													<AudioFile>impact_p3_metalbox_rattle_12.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="266172151"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ObjectLists/>
+											<ActiveSourceList>
+												<ActiveSource Name="impact_p3_metalbox_rattle_12" ID="{2C31D4AD-8819-42C1-AEFB-1E17FB6DFB33}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="impact_p2_metalbox_drop_08" ID="{C974CCAE-D1C6-422F-B2A8-F961F9A743BB}" ShortID="978813647">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{23AF77D7-3FEA-409B-8E44-F5B490014C61}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C91EB4C6-56DC-4541-96C4-29E948904D66}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="impact_p2_metalbox_drop_08" ID="{30C94FC8-C2A7-4404-893B-0AC519C08361}">
+													<Language>SFX</Language>
+													<AudioFile>impact_p2_metalbox_drop_08.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="900777790"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ObjectLists/>
+											<ActiveSourceList>
+												<ActiveSource Name="impact_p2_metalbox_drop_08" ID="{30C94FC8-C2A7-4404-893B-0AC519C08361}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Buildings_Rumble_Elevator_Shaft_Glass_Break_04" ID="{1E2D378D-A2DC-4E38-B998-96AE0DC00583}" ShortID="618175876">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{23AF77D7-3FEA-409B-8E44-F5B490014C61}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C91EB4C6-56DC-4541-96C4-29E948904D66}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Buildings_Rumble_Elevator_Shaft_Glass_Break_04" ID="{B7245AA7-EFFD-4970-99AD-0191604F60E2}">
+													<Language>SFX</Language>
+													<AudioFile>Buildings_Rumble_Elevator_Shaft_Glass_Break_04.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="1053857507"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ObjectLists/>
+											<ActiveSourceList>
+												<ActiveSource Name="Buildings_Rumble_Elevator_Shaft_Glass_Break_04" ID="{B7245AA7-EFFD-4970-99AD-0191604F60E2}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Buildings_Rumble_Stairs_Plastic_Piece_Rattle" ID="{89EA9496-BB44-43E0-BF82-5D5A79BFA352}" ShortID="177157895">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{23AF77D7-3FEA-409B-8E44-F5B490014C61}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C91EB4C6-56DC-4541-96C4-29E948904D66}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Buildings_Rumble_Stairs_Plastic_Piece_Rattle" ID="{14DCFFA3-570D-4CE7-8C36-C0C00E734534}">
+													<Language>SFX</Language>
+													<AudioFile>Buildings_Rumble_Stairs_Plastic_Piece_Rattle.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="264313546"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ObjectLists/>
+											<ActiveSourceList>
+												<ActiveSource Name="Buildings_Rumble_Stairs_Plastic_Piece_Rattle" ID="{14DCFFA3-570D-4CE7-8C36-C0C00E734534}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+									</ChildrenList>
+									<PositioningInfo>
+										<Position Name="" ID="{10D47CDF-FFFD-45AC-B1B7-5050431325EF}">
+											<PropertyList>
+												<Property Name="PlayMechanismRandomOrSequence" Type="int16" Value="1"/>
+											</PropertyList>
+											<ChildrenList>
+												<Path2D Name="Church3DAmb_Path" ID="{763031C9-A200-45FA-B43A-8441BDBD99E0}">
+													<PropertyList>
+														<Property Name="RandomX" Type="Real64" Value="19"/>
+														<Property Name="RandomY" Type="Real64" Value="21"/>
+													</PropertyList>
+													<PointList>
+														<Point>
+															<XPos>-11.16751</XPos>
+															<YPos>18.36158</YPos>
+															<ZPos>65</ZPos>
+															<Flags>12</Flags>
+															<Time>0</Time>
+														</Point>
+														<Point>
+															<XPos>-17.25888</XPos>
+															<YPos>-1.12994</YPos>
+															<Flags>0</Flags>
+															<Time>5000</Time>
+														</Point>
+													</PointList>
+												</Path2D>
+												<Path2D Name="Church3DAmb_Path_01" ID="{26FC8329-8D68-41FA-9172-B2E1C8283301}">
+													<PropertyList>
+														<Property Name="RandomX" Type="Real64" Value="17"/>
+														<Property Name="RandomY" Type="Real64" Value="26"/>
+														<Property Name="RandomZ" Type="Real64" Value="15"/>
+													</PropertyList>
+													<PointList>
+														<Point>
+															<XPos>7.61422</XPos>
+															<YPos>12.1469</YPos>
+															<ZPos>82</ZPos>
+															<Flags>12</Flags>
+															<Time>0</Time>
+														</Point>
+														<Point>
+															<XPos>10.15228</XPos>
+															<YPos>-3.9548</YPos>
+															<Flags>0</Flags>
+															<Time>5000</Time>
+														</Point>
+													</PointList>
+												</Path2D>
+												<Path2D Name="Church3DAmb_Path_02" ID="{980CF6E7-7AC5-4937-A67F-AE2302687D53}">
+													<PointList>
+														<Point>
+															<XPos>23.35025</XPos>
+															<YPos>61.29944</YPos>
+															<ZPos>41</ZPos>
+															<Flags>12</Flags>
+															<Time>0</Time>
+														</Point>
+														<Point>
+															<XPos>29.4416243654822</XPos>
+															<YPos>48.0225988700565</YPos>
+															<Flags>0</Flags>
+															<Time>5000</Time>
+														</Point>
+													</PointList>
+												</Path2D>
+												<Path2D Name="Church3DAmb_Path_03" ID="{0187E70C-A866-4EB1-930A-B05C3B105063}">
+													<PointList>
+														<Point>
+															<XPos>-18.78173</XPos>
+															<YPos>-34.18079</YPos>
+															<ZPos>37</ZPos>
+															<Flags>12</Flags>
+															<Time>0</Time>
+														</Point>
+														<Point>
+															<XPos>-32.994923857868</XPos>
+															<YPos>-17.5141242937853</YPos>
+															<Flags>0</Flags>
+															<Time>5000</Time>
+														</Point>
+													</PointList>
+												</Path2D>
+											</ChildrenList>
+										</Position>
+									</PositioningInfo>
+									<StateInfo>
+										<StateGroupList>
+											<StateGroupInfo>
+												<StateGroupRef Name="DungeonAmb" ID="{82EAEF34-90E2-4BC4-9175-2A66D128273E}"/>
+											</StateGroupInfo>
+											<StateGroupInfo>
+												<StateGroupRef Name="AlterAmb" ID="{156B447F-FF39-48B7-8110-8B1E3D68A471}"/>
+											</StateGroupInfo>
+										</StateGroupList>
+										<CustomStateList>
+											<CustomState>
+												<StateRef Name="NotPlaying" ID="{F5BF4DD7-2AC8-4BE8-8EE0-30DE014144FC}"/>
+												<CustomState Name="" ID="{86B479E8-2E18-4268-B03B-87159831415E}" ShortID="1047758582"/>
+											</CustomState>
+											<CustomState>
+												<StateRef Name="NotPlaying" ID="{68FA20C0-6D85-4F86-9A80-95C198F962F8}"/>
+												<CustomState Name="" ID="{17B7BB80-7944-4F3A-A2F5-0FD79F965873}" ShortID="358159415"/>
+											</CustomState>
+											<CustomState>
+												<StateRef Name="Playing" ID="{100F90D0-17FF-4F97-AC95-3F2FE5DA2D11}"/>
+												<CustomState Name="" ID="{3B33023A-D9DC-452D-B2A5-7EB0BFD29A00}" ShortID="1015315504">
+													<PropertyList>
+														<Property Name="Volume" Type="Real64" Value="-108"/>
+													</PropertyList>
+												</CustomState>
+											</CustomState>
+											<CustomState>
+												<StateRef Name="Playing" ID="{F980FD5B-64EE-4FDB-A297-7B478A51A3B9}"/>
+												<CustomState Name="" ID="{885B578E-1F5F-4046-8A49-CA3DD42CE2A4}" ShortID="48675759">
+													<PropertyList>
+														<Property Name="Volume" Type="Real64" Value="-108"/>
+													</PropertyList>
+												</CustomState>
+											</CustomState>
+										</CustomStateList>
+									</StateInfo>
+									<ObjectLists/>
+								</RandomSequenceContainer>
+								<RandomSequenceContainer Name="DungeonLaughs" ID="{E57F2464-B7B3-4045-A429-C453A29898FA}" ShortID="987214315">
+									<PropertyList>
+										<Property Name="3DPosition" Type="int16" Value="1"/>
+										<Property Name="3DSpatialization" Type="int16" Value="2"/>
+										<Property Name="EnableDiffraction" Type="bool" Value="True"/>
+										<Property Name="Highpass" Type="int16">
+											<ValueList>
+												<Value>19</Value>
+											</ValueList>
+										</Property>
+										<Property Name="InitialDelay" Type="Real64">
+											<ValueList>
+												<Value>10.5</Value>
+											</ValueList>
+										</Property>
+										<Property Name="Lowpass" Type="int16">
+											<ValueList>
+												<Value>26</Value>
+											</ValueList>
+										</Property>
+										<Property Name="OverridePositioning" Type="bool" Value="True"/>
+										<Property Name="Pitch" Type="int32">
+											<ValueList>
+												<Value>-350</Value>
+											</ValueList>
+										</Property>
+										<Property Name="PlayMechanismLoop" Type="bool" Value="True"/>
+										<Property Name="PlayMechanismSpecialTransitions" Type="bool" Value="True"/>
+										<Property Name="PlayMechanismSpecialTransitionsType" Type="int16" Value="1"/>
+										<Property Name="PlayMechanismSpecialTransitionsValue" Type="Real64" Value="5.5">
+											<ModifierList>
+												<ModifierInfo>
+													<Modifier Name="" ID="{8D9D7C9A-888D-4FB4-AD14-5458B1638419}">
+														<PropertyList>
+															<Property Name="Enabled" Type="bool" Value="True"/>
+															<Property Name="Max" Type="Real64" Value="6"/>
+														</PropertyList>
+													</Modifier>
+												</ModifierInfo>
+											</ModifierList>
+										</Property>
+										<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-13</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{23AF77D7-3FEA-409B-8E44-F5B490014C61}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C91EB4C6-56DC-4541-96C4-29E948904D66}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<Sound Name="Stinger_Voice_Female_Evil_Laughter_Reverb" ID="{BF3039BF-C453-40EE-B774-B924D9E820E3}" ShortID="183807205">
+											<PropertyList>
+												<Property Name="3DSpatialization" Type="int16" Value="2"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Attenuation">
+													<ObjectRef Name="10" ID="{CD38D13E-1D7D-46FA-AD0C-C7D5F9690547}" WorkUnitID="{47D4E814-D669-4A08-8AD2-F706566546E0}"/>
+												</Reference>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{23AF77D7-3FEA-409B-8E44-F5B490014C61}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Rooms" ID="{F220833B-3FC1-4DC8-9CF3-6F367C8C1EDE}" WorkUnitID="{C91EB4C6-56DC-4541-96C4-29E948904D66}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Stinger_Voice_Female_Evil_Laughter_Reverb" ID="{5C2C53D2-288D-4029-AD82-8A1A53356F3C}">
+													<PropertyList>
+														<Property Name="ChannelConfigOverride" Type="int64" Value="49410"/>
+														<Property Name="LoopBegin" Type="Real64" Value="0"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimEnd" Type="Real64" Value="10.7694997670395"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>Stinger_Voice_Female_Evil_Laughter_Reverb.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="105835099"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ObjectLists/>
+											<ActiveSourceList>
+												<ActiveSource Name="Stinger_Voice_Female_Evil_Laughter_Reverb" ID="{5C2C53D2-288D-4029-AD82-8A1A53356F3C}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Stinger_Voice_Female_Evil_Laughter_Reverb_01" ID="{AD2450CC-A452-40B9-A9D6-FA941490AB38}" ShortID="60324164">
+											<PropertyList>
+												<Property Name="3DSpatialization" Type="int16" Value="2"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Attenuation">
+													<ObjectRef Name="10" ID="{CD38D13E-1D7D-46FA-AD0C-C7D5F9690547}" WorkUnitID="{47D4E814-D669-4A08-8AD2-F706566546E0}"/>
+												</Reference>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{23AF77D7-3FEA-409B-8E44-F5B490014C61}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Rooms" ID="{F220833B-3FC1-4DC8-9CF3-6F367C8C1EDE}" WorkUnitID="{C91EB4C6-56DC-4541-96C4-29E948904D66}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Stinger_Voice_Female_Evil_Laughter_Reverb" ID="{F39647E9-4D2D-4B38-8380-B67354FE4C22}">
+													<PropertyList>
+														<Property Name="ChannelConfigOverride" Type="int64" Value="49410"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimBegin" Type="Real64" Value="10.6596069122737"/>
+														<Property Name="TrimEnd" Type="Real64" Value="21.6488923888446"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>Stinger_Voice_Female_Evil_Laughter_Reverb.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="368585047"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ObjectLists/>
+											<ActiveSourceList>
+												<ActiveSource Name="Stinger_Voice_Female_Evil_Laughter_Reverb" ID="{F39647E9-4D2D-4B38-8380-B67354FE4C22}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Stinger_Voice_Female_Evil_Laughter_Reverb_02" ID="{7FF9B250-541B-4493-A196-4E2E3EA60B42}" ShortID="1060558505">
+											<PropertyList>
+												<Property Name="3DSpatialization" Type="int16" Value="2"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Attenuation">
+													<ObjectRef Name="10" ID="{CD38D13E-1D7D-46FA-AD0C-C7D5F9690547}" WorkUnitID="{47D4E814-D669-4A08-8AD2-F706566546E0}"/>
+												</Reference>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{23AF77D7-3FEA-409B-8E44-F5B490014C61}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Rooms" ID="{F220833B-3FC1-4DC8-9CF3-6F367C8C1EDE}" WorkUnitID="{C91EB4C6-56DC-4541-96C4-29E948904D66}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Stinger_Voice_Female_Evil_Laughter_Reverb" ID="{FB3C5E43-38AF-49E5-B319-A8A4B2A932EF}">
+													<PropertyList>
+														<Property Name="ChannelConfigOverride" Type="int64" Value="49410"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimBegin" Type="Real64" Value="22.0884638079073"/>
+														<Property Name="TrimEnd" Type="Real64" Value="32.1986064463526"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>Stinger_Voice_Female_Evil_Laughter_Reverb.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="102821541"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ObjectLists/>
+											<ActiveSourceList>
+												<ActiveSource Name="Stinger_Voice_Female_Evil_Laughter_Reverb" ID="{FB3C5E43-38AF-49E5-B319-A8A4B2A932EF}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Stinger_Voice_Female_Evil_Laughter_Reverb_03" ID="{5CC45A90-B32E-498B-97A5-41A5B9E06A73}" ShortID="971592840">
+											<PropertyList>
+												<Property Name="3DSpatialization" Type="int16" Value="2"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Attenuation">
+													<ObjectRef Name="10" ID="{CD38D13E-1D7D-46FA-AD0C-C7D5F9690547}" WorkUnitID="{47D4E814-D669-4A08-8AD2-F706566546E0}"/>
+												</Reference>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{23AF77D7-3FEA-409B-8E44-F5B490014C61}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Rooms" ID="{F220833B-3FC1-4DC8-9CF3-6F367C8C1EDE}" WorkUnitID="{C91EB4C6-56DC-4541-96C4-29E948904D66}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Stinger_Voice_Female_Evil_Laughter_Reverb" ID="{93770403-A110-4A17-9E5E-F037F7E39CC8}">
+													<PropertyList>
+														<Property Name="ChannelConfigOverride" Type="int64" Value="49410"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimBegin" Type="Real64" Value="32.748070720181"/>
+														<Property Name="TrimEnd" Type="Real64" Value="43.0779990681576"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>Stinger_Voice_Female_Evil_Laughter_Reverb.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="691443408"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ObjectLists/>
+											<ActiveSourceList>
+												<ActiveSource Name="Stinger_Voice_Female_Evil_Laughter_Reverb" ID="{93770403-A110-4A17-9E5E-F037F7E39CC8}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+									</ChildrenList>
+									<PositioningInfo>
+										<Position Name="" ID="{83DD605B-882C-4496-8F20-D90C4B02A8D9}">
+											<PropertyList>
+												<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
+												<Property Name="PlayMechanismTransitionTime" Type="Real64" Value="5"/>
+											</PropertyList>
+											<ChildrenList>
+												<Path2D Name="DungeonLaughs_Path" ID="{B3835877-02CC-4D04-B4EE-46A5699CB696}">
+													<PropertyList>
+														<Property Name="RandomX" Type="Real64" Value="9"/>
+														<Property Name="RandomY" Type="Real64" Value="12"/>
+														<Property Name="RandomZ" Type="Real64" Value="10"/>
+													</PropertyList>
+													<PointList>
+														<Point>
+															<XPos>-75.63452</XPos>
+															<YPos>56.77966</YPos>
+															<Flags>12</Flags>
+															<Time>0</Time>
+														</Point>
+														<Point>
+															<XPos>58.8832487309645</XPos>
+															<YPos>64.4067796610169</YPos>
+															<Flags>0</Flags>
+															<Time>5000</Time>
+														</Point>
+													</PointList>
+												</Path2D>
+												<Path2D Name="DungeonLaughs_Path_01" ID="{9419BDD9-B4FE-40A8-B216-773EE96FD7D8}">
+													<PointList>
+														<Point>
+															<XPos>-49.23858</XPos>
+															<YPos>59.60452</YPos>
+															<Flags>12</Flags>
+															<Time>0</Time>
+														</Point>
+														<Point>
+															<XPos>62.4365482233503</XPos>
+															<YPos>-46.8926553672316</YPos>
+															<Flags>0</Flags>
+															<Time>5000</Time>
+														</Point>
+													</PointList>
+												</Path2D>
+											</ChildrenList>
+										</Position>
+									</PositioningInfo>
+									<StateInfo>
+										<StateGroupList>
+											<StateGroupInfo>
+												<StateGroupRef Name="DungeonAmb" ID="{82EAEF34-90E2-4BC4-9175-2A66D128273E}"/>
+											</StateGroupInfo>
+										</StateGroupList>
+										<CustomStateList>
+											<CustomState>
+												<StateRef Name="NotPlaying" ID="{F5BF4DD7-2AC8-4BE8-8EE0-30DE014144FC}"/>
+												<CustomState Name="" ID="{BBE344C3-4B33-47CC-B19F-E0E51192C14A}" ShortID="497765969">
+													<PropertyList>
+														<Property Name="Volume" Type="Real64" Value="-108"/>
+													</PropertyList>
+												</CustomState>
+											</CustomState>
+											<CustomState>
+												<StateRef Name="Playing" ID="{100F90D0-17FF-4F97-AC95-3F2FE5DA2D11}"/>
+												<CustomState Name="" ID="{3581C359-523D-4B70-9A16-2F0BB98AFB9E}" ShortID="1008876015"/>
+											</CustomState>
+										</CustomStateList>
+									</StateInfo>
+									<ObjectLists/>
+								</RandomSequenceContainer>
+								<Sound Name="StairsRumble" ID="{BEDA008E-C4AA-4FA2-8841-FEF51749CD30}" ShortID="1036373463">
+									<PropertyList>
+										<Property Name="Highpass" Type="int16">
+											<ValueList>
+												<Value>3</Value>
+											</ValueList>
+										</Property>
+										<Property Name="Lowpass" Type="int16">
+											<ValueList>
+												<Value>24</Value>
+											</ValueList>
+										</Property>
+										<Property Name="Pitch" Type="int32">
+											<ValueList>
+												<Value>-1160</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{23AF77D7-3FEA-409B-8E44-F5B490014C61}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C91EB4C6-56DC-4541-96C4-29E948904D66}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="rockslide_02" ID="{0440FD92-0570-4B4D-B22F-A5BF96B7EB41}">
+											<PropertyList>
+												<Property Name="ChannelConfigOverride" Type="int64" Value="49410"/>
+												<Property Name="FadeOutDuration" Type="Real64" Value="0.712402153558052"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimEnd" Type="Real64" Value="4.61186657303371"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>rockslide_02.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="506611343"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ObjectLists/>
+									<ActiveSourceList>
+										<ActiveSource Name="rockslide_02" ID="{0440FD92-0570-4B4D-B22F-A5BF96B7EB41}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
 							</ChildrenList>
 							<ObjectLists/>
 						</ActorMixer>
 						<ActorMixer Name="2D" ID="{E94B8AA3-D878-4E77-9049-BDB78EAA154F}" ShortID="791378860">
 							<PropertyList>
+								<Property Name="3DSpatialization" Type="int16" Value="2"/>
 								<Property Name="Lowpass" Type="int16">
 									<RTPCList>
 										<RTPC Name="" ID="{AED2246A-C2D1-49EA-A12F-34BC36FF38D0}" ShortID="855536419">
@@ -4747,7 +5494,10 @@
 										</RTPC>
 									</RTPCList>
 								</Property>
+								<Property Name="OverrideGameAuxSends" Type="bool" Value="True"/>
 								<Property Name="OverrideOutput" Type="bool" Value="True"/>
+								<Property Name="OverridePositioning" Type="bool" Value="True"/>
+								<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
@@ -4794,7 +5544,6 @@
 											</RTPCList>
 										</Property>
 										<Property Name="OverrideOutput" Type="bool" Value="True"/>
-										<Property Name="OverrideUserAuxSends" Type="bool" Value="True"/>
 										<Property Name="PlayMechanismResetPlaylistEachPlay" Type="bool" Value="False"/>
 										<Property Name="PlayMechanismSpecialTransitions" Type="bool" Value="True"/>
 										<Property Name="PlayMechanismSpecialTransitionsValue" Type="Real64" Value="3"/>
@@ -4822,6 +5571,11 @@
 											<PropertyList>
 												<Property Name="3DSpatialization" Type="int16" Value="2"/>
 												<Property Name="OverridePositioning" Type="bool" Value="True"/>
+												<Property Name="Volume" Type="Real64">
+													<ValueList>
+														<Value>-2</Value>
+													</ValueList>
+												</Property>
 											</PropertyList>
 											<ReferenceList>
 												<Reference Name="Attenuation">
@@ -4836,10 +5590,15 @@
 											</ReferenceList>
 											<ChildrenList>
 												<AudioFileSource Name="ChurchAmbisonicAmbienceMain_Intro" ID="{6F9B1C10-AFB9-42AD-82FD-8A5E2305D475}">
+													<PropertyList>
+														<Property Name="LoopBegin" Type="Real64" Value="0"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimEnd" Type="Real64" Value="10.964764486975"/>
+													</PropertyList>
 													<Language>SFX</Language>
 													<AudioFile>ChurchAmbisonicAmbienceMain_Intro.wav</AudioFile>
 													<MediaIDList>
-														<MediaID ID="195704639"/>
+														<MediaID ID="337866371"/>
 													</MediaIDList>
 												</AudioFileSource>
 											</ChildrenList>
@@ -4851,6 +5610,7 @@
 										<Sound Name="ChurchAmbisonicAmbienceMain_loopo" ID="{AE8D3806-2D74-45E9-86DC-1CB82CE22C22}" ShortID="823043993">
 											<PropertyList>
 												<Property Name="3DSpatialization" Type="int16" Value="2"/>
+												<Property Name="EnableDiffraction" Type="bool" Value="True"/>
 												<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
 												<Property Name="OverridePositioning" Type="bool" Value="True"/>
 											</PropertyList>
@@ -4872,6 +5632,7 @@
 														<Property Name="LoopBegin" Type="Real64" Value="2.427"/>
 														<Property Name="LoopEnd" Type="Real64" Value="112.88217"/>
 														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimBegin" Type="Real64" Value="0.387429292792044"/>
 													</PropertyList>
 													<Language>SFX</Language>
 													<AudioFile>ChurchAmbisonicAmbienceMain_loopo.wav</AudioFile>
@@ -4883,6 +5644,41 @@
 											<ObjectLists/>
 											<ActiveSourceList>
 												<ActiveSource Name="ChurchAmbisonicAmbienceMain_loopo" ID="{55B771A1-3F7D-4FE3-8D54-05CD330EDBD6}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="ChurchAmbisonicAmbienceMain_Intro_01" ID="{C11837CD-4CD7-4D39-BA52-3ABE7E76A798}" ShortID="71042333">
+											<PropertyList>
+												<Property Name="3DSpatialization" Type="int16" Value="2"/>
+												<Property Name="OverridePositioning" Type="bool" Value="True"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Attenuation">
+													<ObjectRef Name="100Spread" ID="{A5BD6E03-D42D-496F-AE0F-BCC77F21EC97}" WorkUnitID="{47D4E814-D669-4A08-8AD2-F706566546E0}"/>
+												</Reference>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{23AF77D7-3FEA-409B-8E44-F5B490014C61}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="AmbisonicBus" ID="{5307706A-AD3C-4939-9A4A-17E464C2B589}" WorkUnitID="{C91EB4C6-56DC-4541-96C4-29E948904D66}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="ChurchAmbisonicAmbienceMain_Intro" ID="{6E7F4B62-3A1C-4041-BD01-703ABCD0C2BF}">
+													<PropertyList>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimBegin" Type="Real64" Value="44.6297271562781"/>
+														<Property Name="TrimEnd" Type="Real64" Value="68.9031027253613"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>ChurchAmbisonicAmbienceMain_Intro.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="195704639"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ObjectLists/>
+											<ActiveSourceList>
+												<ActiveSource Name="ChurchAmbisonicAmbienceMain_Intro" ID="{6E7F4B62-3A1C-4041-BD01-703ABCD0C2BF}" Platform="Linked"/>
 											</ActiveSourceList>
 										</Sound>
 									</ChildrenList>
@@ -4925,11 +5721,13 @@
 									<ObjectLists/>
 									<Playlist>
 										<ItemRef Name="ChurchAmbisonicAmbienceMain_Intro" ID="{F2E4F8B8-CE5B-42F7-9236-D0E8C86932ED}"/>
+										<ItemRef Name="ChurchAmbisonicAmbienceMain_Intro_01" ID="{C11837CD-4CD7-4D39-BA52-3ABE7E76A798}"/>
 										<ItemRef Name="ChurchAmbisonicAmbienceMain_loopo" ID="{AE8D3806-2D74-45E9-86DC-1CB82CE22C22}"/>
 									</Playlist>
 								</RandomSequenceContainer>
 								<Sound Name="Blind Faith Altar Ambient v2" ID="{D2A25114-1695-416F-8059-C484AADAFAED}" ShortID="482743501">
 									<PropertyList>
+										<Property Name="EnableDiffraction" Type="bool" Value="True"/>
 										<Property Name="Highpass" Type="int16">
 											<ValueList>
 												<Value>31</Value>
@@ -4938,6 +5736,7 @@
 										<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
 										<Property Name="OverrideEffect" Type="bool" Value="True"/>
 										<Property Name="OverrideOutput" Type="bool" Value="True"/>
+										<Property Name="OverridePositioning" Type="bool" Value="True"/>
 										<Property Name="Volume" Type="Real64">
 											<ValueList>
 												<Value>-7</Value>
@@ -5130,7 +5929,7 @@
 										</Property>
 										<Property Name="Volume" Type="Real64">
 											<ValueList>
-												<Value>-15</Value>
+												<Value>-5</Value>
 											</ValueList>
 										</Property>
 									</PropertyList>
@@ -5188,11 +5987,18 @@
 									<PropertyList>
 										<Property Name="3DPosition" Type="int16" Value="1"/>
 										<Property Name="3DSpatialization" Type="int16" Value="2"/>
+										<Property Name="EnableAttenuation" Type="bool" Value="False"/>
+										<Property Name="EnableDiffraction" Type="bool" Value="True"/>
 										<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+										<Property Name="Lowpass" Type="int16">
+											<ValueList>
+												<Value>39</Value>
+											</ValueList>
+										</Property>
 										<Property Name="OverridePositioning" Type="bool" Value="True"/>
 										<Property Name="Volume" Type="Real64">
 											<ValueList>
-												<Value>-2</Value>
+												<Value>-16</Value>
 											</ValueList>
 										</Property>
 									</PropertyList>
@@ -5221,7 +6027,7 @@
 											<PropertyList>
 												<Property Name="PlayMechanismRandomOrSequence" Type="int16" Value="1"/>
 												<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
-												<Property Name="PlayMechanismTransitionTime" Type="Real64" Value="2.5"/>
+												<Property Name="PlayMechanismTransitionTime" Type="Real64" Value="5"/>
 											</PropertyList>
 											<ChildrenList>
 												<Path2D Name="86 Cave With Dripping Water_Path" ID="{EB5BDAEA-E876-4EA0-A3B3-F0A6453BE65F}">
@@ -5332,20 +6138,22 @@
 									<PropertyList>
 										<Property Name="3DPosition" Type="int16" Value="1"/>
 										<Property Name="3DSpatialization" Type="int16" Value="1"/>
-										<Property Name="EnableAttenuation" Type="bool" Value="False"/>
+										<Property Name="HoldEmitterPositionOrientation" Type="bool" Value="True"/>
+										<Property Name="InitialDelay" Type="Real64">
+											<ValueList>
+												<Value>4</Value>
+											</ValueList>
+										</Property>
 										<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
 										<Property Name="OverrideOutput" Type="bool" Value="True"/>
 										<Property Name="OverridePositioning" Type="bool" Value="True"/>
 										<Property Name="Volume" Type="Real64">
 											<ValueList>
-												<Value>-23</Value>
+												<Value>-39</Value>
 											</ValueList>
 										</Property>
 									</PropertyList>
 									<ReferenceList>
-										<Reference Name="Attenuation">
-											<ObjectRef Name="10" ID="{CD38D13E-1D7D-46FA-AD0C-C7D5F9690547}" WorkUnitID="{47D4E814-D669-4A08-8AD2-F706566546E0}"/>
-										</Reference>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{23AF77D7-3FEA-409B-8E44-F5B490014C61}"/>
 										</Reference>
@@ -5355,6 +6163,9 @@
 									</ReferenceList>
 									<ChildrenList>
 										<AudioFileSource Name="Stinger_Voice_Female_Eerie_Whisper" ID="{5B7920FC-30A4-4564-8AE9-F734141025E2}">
+											<PropertyList>
+												<Property Name="ChannelConfigOverride" Type="int64" Value="49410"/>
+											</PropertyList>
 											<Language>SFX</Language>
 											<AudioFile>Stinger_Voice_Female_Eerie_Whisper.wav</AudioFile>
 											<MediaIDList>
@@ -5503,6 +6314,135 @@
 										<ActiveSource Name="Stinger_Voice_Female_Eerie_Whisper" ID="{5B7920FC-30A4-4564-8AE9-F734141025E2}" Platform="Linked"/>
 									</ActiveSourceList>
 								</Sound>
+								<ActorMixer Name="Stingers" ID="{D6F17737-CF25-49C8-9D8B-BCBFD8592A53}" ShortID="11908024">
+									<PropertyList>
+										<Property Name="EnableAttenuation" Type="bool" Value="False"/>
+										<Property Name="OverridePositioning" Type="bool" Value="True"/>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-15</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{23AF77D7-3FEA-409B-8E44-F5B490014C61}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C91EB4C6-56DC-4541-96C4-29E948904D66}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<RandomSequenceContainer Name="StingerDeq" ID="{F8E7CC70-F7B3-4E32-B364-B5B44C8155C7}" ShortID="471260507">
+											<PropertyList>
+												<Property Name="RandomOrSequence" Type="int16" Value="0"/>
+												<Property Name="Volume" Type="Real64">
+													<ValueList>
+														<Value>-13</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{23AF77D7-3FEA-409B-8E44-F5B490014C61}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C91EB4C6-56DC-4541-96C4-29E948904D66}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<Sound Name="DoorOpenStinger" ID="{441D4D1D-151A-4A56-99FF-1795FC1E0B9C}" ShortID="730733211">
+													<PropertyList>
+														<Property Name="EnableAttenuation" Type="bool" Value="False"/>
+														<Property Name="ListenerRelativeRouting" Type="bool" Value="False"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{23AF77D7-3FEA-409B-8E44-F5B490014C61}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Rooms_docking" ID="{6ED14294-29EA-4AC9-82D5-39255BF161A4}" WorkUnitID="{C91EB4C6-56DC-4541-96C4-29E948904D66}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="STINGER_Let_Me_In" ID="{69717A00-744F-48EB-914C-DB06CA8DB725}">
+															<Language>SFX</Language>
+															<AudioFile>STINGER_Let_Me_In.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="53740118"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ObjectLists/>
+													<ActiveSourceList>
+														<ActiveSource Name="STINGER_Let_Me_In" ID="{69717A00-744F-48EB-914C-DB06CA8DB725}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="STINGER_Hello_Evil" ID="{A965CEBE-AC99-4348-8B08-888C89DA3747}" ShortID="137516929">
+													<PropertyList>
+														<Property Name="EnableAttenuation" Type="bool" Value="False"/>
+														<Property Name="ListenerRelativeRouting" Type="bool" Value="False"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{23AF77D7-3FEA-409B-8E44-F5B490014C61}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Rooms_docking" ID="{6ED14294-29EA-4AC9-82D5-39255BF161A4}" WorkUnitID="{C91EB4C6-56DC-4541-96C4-29E948904D66}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="STINGER_Hello_Evil" ID="{1CB0E790-563D-40FC-9CA6-5CF5D66C6F9B}">
+															<Language>SFX</Language>
+															<AudioFile>STINGER_Hello_Evil.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="10992658"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ObjectLists/>
+													<ActiveSourceList>
+														<ActiveSource Name="STINGER_Hello_Evil" ID="{1CB0E790-563D-40FC-9CA6-5CF5D66C6F9B}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="STINGER_Pew_Pew" ID="{C87B8DB6-FBE7-446E-962E-2D410A543CE2}" ShortID="643155404">
+													<PropertyList>
+														<Property Name="EnableAttenuation" Type="bool" Value="False"/>
+														<Property Name="ListenerRelativeRouting" Type="bool" Value="False"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{23AF77D7-3FEA-409B-8E44-F5B490014C61}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Rooms_docking" ID="{6ED14294-29EA-4AC9-82D5-39255BF161A4}" WorkUnitID="{C91EB4C6-56DC-4541-96C4-29E948904D66}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="STINGER_Pew_Pew" ID="{F8561942-F677-4046-946D-B02AD8A4C8EB}">
+															<Language>SFX</Language>
+															<AudioFile>STINGER_Pew_Pew.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="190726892"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ObjectLists/>
+													<ActiveSourceList>
+														<ActiveSource Name="STINGER_Pew_Pew" ID="{F8561942-F677-4046-946D-B02AD8A4C8EB}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+											</ChildrenList>
+											<ObjectLists/>
+											<Playlist>
+												<ItemRef Name="DoorOpenStinger" ID="{441D4D1D-151A-4A56-99FF-1795FC1E0B9C}"/>
+												<ItemRef Name="STINGER_Hello_Evil" ID="{A965CEBE-AC99-4348-8B08-888C89DA3747}"/>
+												<ItemRef Name="STINGER_Pew_Pew" ID="{C87B8DB6-FBE7-446E-962E-2D410A543CE2}"/>
+											</Playlist>
+										</RandomSequenceContainer>
+									</ChildrenList>
+									<ObjectLists/>
+								</ActorMixer>
 							</ChildrenList>
 							<ObjectLists/>
 						</ActorMixer>

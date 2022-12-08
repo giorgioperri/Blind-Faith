@@ -63,7 +63,7 @@
 										<Value>21</Value>
 									</ValueList>
 								</Property>
-								<Property Name="MaxDuckVolume" Type="Real64" Value="-4.5"/>
+								<Property Name="MaxDuckVolume" Type="Real64" Value="-3.5"/>
 								<Property Name="OverrideColor" Type="bool" Value="True"/>
 								<Property Name="RecoveryTime" Type="Real64" Value="2"/>
 								<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
@@ -301,11 +301,13 @@
 								</AuxBus>
 								<Bus Name="AmbisonicBus" ID="{5307706A-AD3C-4939-9A4A-17E464C2B589}">
 									<PropertyList>
+										<Property Name="3DSpatialization" Type="int16" Value="2"/>
 										<Property Name="BusChannelConfig" Type="int32">
 											<ValueList>
 												<Value>528</Value>
 											</ValueList>
 										</Property>
+										<Property Name="ListenerRelativeRouting" Type="bool" Value="True"/>
 										<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
 										<Property Name="UserAuxSendVolume0" Type="Real64">
 											<ValueList>
@@ -313,6 +315,11 @@
 											</ValueList>
 										</Property>
 									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Attenuation">
+											<ObjectRef Name="100Spread" ID="{A5BD6E03-D42D-496F-AE0F-BCC77F21EC97}" WorkUnitID="{47D4E814-D669-4A08-8AD2-F706566546E0}"/>
+										</Reference>
+									</ReferenceList>
 									<ObjectLists/>
 								</Bus>
 							</ChildrenList>
@@ -321,9 +328,9 @@
 						<Bus Name="SFX" ID="{2B051542-74CE-4284-8CDF-6AFFA5F98C34}">
 							<PropertyList>
 								<Property Name="Color" Type="int16" Value="19"/>
-								<Property Name="MaxDuckVolume" Type="Real64" Value="-4"/>
+								<Property Name="MaxDuckVolume" Type="Real64" Value="-2"/>
 								<Property Name="OverrideColor" Type="bool" Value="True"/>
-								<Property Name="RecoveryTime" Type="Real64" Value="1.5"/>
+								<Property Name="RecoveryTime" Type="Real64" Value="2"/>
 							</PropertyList>
 							<ChildrenList>
 								<Bus Name="2D" ID="{6E0EC8A0-EF11-4280-A411-C16426D7260B}">

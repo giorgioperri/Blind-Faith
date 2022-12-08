@@ -940,6 +940,11 @@
 										</Property>
 										<Property Name="OverridePositioning" Type="bool" Value="True"/>
 										<Property Name="RandomOrSequence" Type="int16" Value="0"/>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>5</Value>
+											</ValueList>
+										</Property>
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Attenuation">
@@ -1161,25 +1166,53 @@
 									</ChildrenList>
 									<PositioningInfo>
 										<Position Name="" ID="{4490570F-BAF2-4CCF-BAB7-383D77ABCA93}">
+											<PropertyList>
+												<Property Name="PlayMechanismLoop" Type="bool" Value="False"/>
+												<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
+												<Property Name="PlayMechanismTransitionUse" Type="bool" Value="False"/>
+											</PropertyList>
 											<ChildrenList>
 												<Path2D Name="ClerkCrawl_Path" ID="{8DB7FE76-38F1-48DF-8CAD-1C8D951FD9D5}">
 													<PropertyList>
-														<Property Name="Duration" Type="Uint32" Value="12000"/>
+														<Property Name="Duration" Type="Uint32" Value="6000"/>
+														<Property Name="LinearTime" Type="bool" Value="False"/>
 													</PropertyList>
 													<PointList>
 														<Point>
-															<XPos>-52.79188</XPos>
-															<YPos>-67.51412</YPos>
+															<XPos>-58.88326</XPos>
+															<YPos>-60.16949</YPos>
 															<ZPos>2</ZPos>
 															<Flags>12</Flags>
 															<Time>0</Time>
 														</Point>
 														<Point>
-															<XPos>53.80711</XPos>
-															<YPos>67.23164</YPos>
+															<XPos>-2.03045</XPos>
+															<YPos>-1.69492</YPos>
 															<ZPos>22</ZPos>
 															<Flags>0</Flags>
-															<Time>12000</Time>
+															<Time>6000</Time>
+														</Point>
+													</PointList>
+												</Path2D>
+												<Path2D Name="ClerkCrawl_Path_01" ID="{31CA2A36-F801-449B-84A3-0AC2750610F1}">
+													<PropertyList>
+														<Property Name="Duration" Type="Uint32" Value="6000"/>
+														<Property Name="LinearTime" Type="bool" Value="False"/>
+													</PropertyList>
+													<PointList>
+														<Point>
+															<XPos>-1E-05</XPos>
+															<YPos>-0.84746</YPos>
+															<ZPos>2</ZPos>
+															<Flags>12</Flags>
+															<Time>0</Time>
+														</Point>
+														<Point>
+															<XPos>64.97463</XPos>
+															<YPos>64.97175</YPos>
+															<ZPos>22</ZPos>
+															<Flags>0</Flags>
+															<Time>6000</Time>
 														</Point>
 													</PointList>
 												</Path2D>
@@ -2274,11 +2307,18 @@
 									</PropertyList>
 									<PointList>
 										<Point>
-											<XPos>0</XPos>
-											<YPos>1.9774</YPos>
+											<XPos>-2.03046</XPos>
+											<YPos>5.9322</YPos>
 											<ZPos>54</ZPos>
 											<Flags>12</Flags>
 											<Time>0</Time>
+										</Point>
+										<Point>
+											<XPos>3.04569</XPos>
+											<YPos>5.08475</YPos>
+											<ZPos>54</ZPos>
+											<Flags>0</Flags>
+											<Time>20000</Time>
 										</Point>
 									</PointList>
 								</Path2D>
