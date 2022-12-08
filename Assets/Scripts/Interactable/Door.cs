@@ -22,17 +22,22 @@ public class Door : Interactable
         if (isPrismatic) return;
         gameObject.tag = "Untagged";
         _doorAnim.Play("DoorOpen", 0, 0.0f);
+        AkSoundEngine.PostEvent("DoorOpen", PlayerSoundController.Instance.gameObject);
         Destroy(this);
     }
 
     private void Update()
     {
         if (!isPrismatic) return;
+        
+        _doorAnim.SetBool("greenHit", greenHit);
+        _doorAnim.SetBool("redHit", redHit);
 
         if (greenHit && redHit)
         {
             gameObject.tag = "Untagged";
             _doorAnim.Play("DoorOpen", 0, 0.0f);
+            AkSoundEngine.PostEvent("DoorOpen", PlayerSoundController.Instance.gameObject);
             Destroy(this);
         }
 

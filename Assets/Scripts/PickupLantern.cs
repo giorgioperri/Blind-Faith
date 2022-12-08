@@ -6,6 +6,8 @@ using UnityEngine.InputSystem;
 
 public class PickupLantern : MonoBehaviour
 {
+    public VoiceLineSequenceSO voiceSeq;
+    
     private void OnTriggerEnter(Collider other)
     {
         if (other.CompareTag("Player"))
@@ -30,6 +32,8 @@ public class PickupLantern : MonoBehaviour
             HandAnimatorController.Instance.HandleLanternInput(true);
             if (TooltipManager.Instance.currentTooltip == TooltipTypes.LanternPickup) 
                 TooltipManager.Instance.CloseTooltip();
+            PlayerSoundController.Instance.InitVoiceLineSequence(voiceSeq);
+            GameManager.Instance.hasPickedLantern = true;
             Destroy(gameObject);
         }
     }

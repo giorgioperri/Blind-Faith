@@ -27,7 +27,7 @@ public class HandAnimatorController : MonoBehaviour
 
     private void Start()
     {
-        HandleLanternInput(true);
+        if(GameManager.Instance.debug)HandleLanternInput(true);
     }
 
     private void Update()

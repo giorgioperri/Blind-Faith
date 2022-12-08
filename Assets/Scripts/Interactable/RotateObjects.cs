@@ -15,13 +15,16 @@ public class RotateObjects : Interactable
     [SerializeField] private bool _canPlayLightSound = true;
     [SerializeField] private bool _canPlayTurnSound = true;
     [SerializeField] private bool _canShowTooltip = true;
+    [SerializeField] private bool _canPlayVoiceLine = true;
     [SerializeField] private Light _light;
     public bool shouldStabilizeY;
     public bool hasTooltip;
+    public bool hasVoiceLine;
+    public VoiceLineSequenceSO voiceSeq;
 
     private void OnTriggerEnter(Collider other)
     {
-        if (_canShowTooltip  && isEnlighted && hasTooltip)
+        if (_canShowTooltip && isEnlighted && hasTooltip)
         {
             TooltipManager.Instance.currentTooltip = TooltipTypes.RotateMirror;
             TooltipManager.Instance.ToggleTooltip("Hold and drag the Left Mouse Button to rotate enlightened objects");
@@ -85,6 +88,12 @@ public class RotateObjects : Interactable
             GameManager.Instance.isInteractingWithMirror = true;
             
             transform.Rotate(0f, Mouse.current.delta.ReadValue().x, 0f, Space.Self);
+
+            if (_canPlayVoiceLine && hasVoiceLine)
+            {
+                PlayerSoundController.Instance.InitVoiceLineSequence(voiceSeq);
+                _canPlayVoiceLine = false;
+            }
 
             if (TooltipManager.Instance.currentTooltip == TooltipTypes.RotateMirror)
             {
