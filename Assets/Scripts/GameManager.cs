@@ -60,6 +60,11 @@ public class GameManager : MonoBehaviour
 
     void Update()
     {
+        /*if (Mouse.current.leftButton.wasPressedThisFrame && !isPaused)
+        {
+            Cursor.visible = false;
+        }*/
+        
 		if (_isIntro) return;
 
         if (health <= 40 && hasPickedLantern && canPlayChatterTwo)

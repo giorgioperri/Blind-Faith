@@ -516,6 +516,11 @@ MonoBehaviour:
   mainVC: {fileID: 0}
   socketVC: {fileID: 0}
   pillarVC: {fileID: 0}
+  _isIntro: 0
+  debug: 0
+  hasPickedLantern: 0
+  canPlayChatterTwo: 0
+  chatterTwo: {fileID: 0}
 --- !u!114 &29925721
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -899,11 +904,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1375716076857292363, guid: 5408a87d45e5c4e12b038f2410063baf,
-        type: 3}
-      propertyPath: m_SortingOrder
-      value: 999
       objectReference: {fileID: 0}
     - target: {fileID: 1375716076857292365, guid: 5408a87d45e5c4e12b038f2410063baf,
         type: 3}
