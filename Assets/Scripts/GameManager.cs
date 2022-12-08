@@ -33,6 +33,12 @@ public class GameManager : MonoBehaviour
     [SerializeField] private CinemachineVirtualCamera pillarVC;
 
     [SerializeField] private bool _isIntro;
+    
+    public bool debug;
+    public bool hasPickedLantern;
+
+    public bool canPlayChatterTwo = false;
+    public VoiceLineSequenceSO chatterTwo;
 
     private void Awake()
     {
@@ -55,6 +61,12 @@ public class GameManager : MonoBehaviour
     void Update()
     {
 		if (_isIntro) return;
+
+        if (health <= 40 && hasPickedLantern && canPlayChatterTwo)
+        {
+            PlayerSoundController.Instance.InitVoiceLineSequence(chatterTwo);
+            canPlayChatterTwo = false;
+        }
 
         if (Keyboard.current.wKey.isPressed && wTime < 1.2f)
         {
@@ -134,6 +146,7 @@ public class GameManager : MonoBehaviour
         socketVC.gameObject.SetActive(false);
         TooltipManager.Instance.CloseTooltip();
         yield return new WaitForSecondsRealtime(1f);
+        canPlayChatterTwo = true;
         isInteractingWithMirror = false;
     }
     
