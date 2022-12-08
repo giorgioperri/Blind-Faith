@@ -53,6 +53,11 @@ public class GameManager : MonoBehaviour
     private void Start()
     {
         if (_isIntro) return;
+        if (debug)
+        {
+            LanternManager.Instance.lanternCharge = 1.0f;
+            health = 100.0f;
+        }
         playerInput = FindObjectOfType<StarterAssetsInputs>();
         TooltipManager.Instance.ToggleTooltip("Use the WASD keys to move");
         TooltipManager.Instance.currentTooltip = TooltipTypes.WASDMove;
