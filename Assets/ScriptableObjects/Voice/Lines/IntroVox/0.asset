@@ -18,4 +18,4 @@ MonoBehaviour:
     WwiseObjectReference: {fileID: 11400000, guid: 99d960c13f3a14a92985fce129b7cf6d,
       type: 2}
   subtitle: Intro
-  nextClipOffset: 0
+  nextClipOffset: 3

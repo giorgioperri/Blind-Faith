@@ -4,6 +4,16 @@
 		<WorkUnit Name="Default Work Unit" ID="{CF293B5B-6B28-4191-9B27-A3F3224A50E2}" PersistMode="Standalone">
 			<ChildrenList>
 				<SoundcasterSession Name="New Soundcaster Session" ID="{83876739-3880-417E-86BF-3D10F9861208}">
+					<ModuleList>
+						<Module>
+							<ObjectRef Name="MenuMusic" ID="{94C1E42E-5D58-4F47-A31D-91DCCC3B960C}" WorkUnitID="{FB90B45E-3428-4F3A-BDE7-E5CA0BFF7B1D}"/>
+							<Position X="0" Y="0"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="MenuMusic_Stop" ID="{5075AD66-8DBA-4594-9166-9FEDAA77AC26}" WorkUnitID="{FB90B45E-3428-4F3A-BDE7-E5CA0BFF7B1D}"/>
+							<Position X="1" Y="0"/>
+						</Module>
+					</ModuleList>
 					<RTPCValueList ShowAll="true">
 						<RTPCValue>
 							<GameParameterRef Name="PlayerHealth" ID="{1A24274A-B062-4BE7-BB90-5DBF43ACF8C0}"/>
@@ -11,9 +21,10 @@
 						</RTPCValue>
 					</RTPCValueList>
 					<CurrentStateList ShowAll="true">
-						<CurrentStateRef Name="None" ID="{663A99AF-8A3E-4960-8363-3779C9B07B5B}"/>
+						<CurrentStateRef Name="NotLoosingSanity" ID="{D6278C57-B60E-4AD1-8033-76B4EED867A7}"/>
 						<CurrentStateRef Name="Playing" ID="{F980FD5B-64EE-4FDB-A297-7B478A51A3B9}"/>
-						<CurrentStateRef Name="NotPlaying" ID="{F5BF4DD7-2AC8-4BE8-8EE0-30DE014144FC}"/>
+						<CurrentStateRef Name="None" ID="{1E51F8F4-A42A-4452-93E9-2F38A3D1CAF6}"/>
+						<CurrentStateRef Name="None" ID="{AC648F44-5D7F-4A3A-97FC-004FBF81D002}"/>
 					</CurrentStateList>
 					<CurrentSwitchList ShowAll="true">
 						<CurrentSwitchRef Name="ClerkChatter1" ID="{6AD5FEDC-6CD0-4A3D-91C2-9265E8947D7B}"/>

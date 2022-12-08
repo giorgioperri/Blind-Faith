@@ -940,6 +940,11 @@
 										</Property>
 										<Property Name="OverridePositioning" Type="bool" Value="True"/>
 										<Property Name="RandomOrSequence" Type="int16" Value="0"/>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>5</Value>
+											</ValueList>
+										</Property>
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Attenuation">
@@ -1161,25 +1166,53 @@
 									</ChildrenList>
 									<PositioningInfo>
 										<Position Name="" ID="{4490570F-BAF2-4CCF-BAB7-383D77ABCA93}">
+											<PropertyList>
+												<Property Name="PlayMechanismLoop" Type="bool" Value="False"/>
+												<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
+												<Property Name="PlayMechanismTransitionUse" Type="bool" Value="False"/>
+											</PropertyList>
 											<ChildrenList>
 												<Path2D Name="ClerkCrawl_Path" ID="{8DB7FE76-38F1-48DF-8CAD-1C8D951FD9D5}">
 													<PropertyList>
-														<Property Name="Duration" Type="Uint32" Value="12000"/>
+														<Property Name="Duration" Type="Uint32" Value="6000"/>
+														<Property Name="LinearTime" Type="bool" Value="False"/>
 													</PropertyList>
 													<PointList>
 														<Point>
-															<XPos>-52.79188</XPos>
-															<YPos>-67.51412</YPos>
+															<XPos>-58.88326</XPos>
+															<YPos>-60.16949</YPos>
 															<ZPos>2</ZPos>
 															<Flags>12</Flags>
 															<Time>0</Time>
 														</Point>
 														<Point>
-															<XPos>53.80711</XPos>
-															<YPos>67.23164</YPos>
+															<XPos>-2.03045</XPos>
+															<YPos>-1.69492</YPos>
 															<ZPos>22</ZPos>
 															<Flags>0</Flags>
-															<Time>12000</Time>
+															<Time>6000</Time>
+														</Point>
+													</PointList>
+												</Path2D>
+												<Path2D Name="ClerkCrawl_Path_01" ID="{31CA2A36-F801-449B-84A3-0AC2750610F1}">
+													<PropertyList>
+														<Property Name="Duration" Type="Uint32" Value="6000"/>
+														<Property Name="LinearTime" Type="bool" Value="False"/>
+													</PropertyList>
+													<PointList>
+														<Point>
+															<XPos>-1E-05</XPos>
+															<YPos>-0.84746</YPos>
+															<ZPos>2</ZPos>
+															<Flags>12</Flags>
+															<Time>0</Time>
+														</Point>
+														<Point>
+															<XPos>64.97463</XPos>
+															<YPos>64.97175</YPos>
+															<ZPos>22</ZPos>
+															<Flags>0</Flags>
+															<Time>6000</Time>
 														</Point>
 													</PointList>
 												</Path2D>
@@ -1198,11 +1231,16 @@
 										<Property Name="EnableDiffraction" Type="bool" Value="True"/>
 										<Property Name="OverrideEffect" Type="bool" Value="True"/>
 										<Property Name="OverridePositioning" Type="bool" Value="True"/>
+										<Property Name="Pitch" Type="int32">
+											<ValueList>
+												<Value>20</Value>
+											</ValueList>
+										</Property>
 										<Property Name="RandomOrSequence" Type="int16" Value="0"/>
-										<Property Name="SpeakerPanning3DSpatializationMix" Type="int32" Value="51"/>
+										<Property Name="SpeakerPanning3DSpatializationMix" Type="int32" Value="69"/>
 										<Property Name="Volume" Type="Real64">
 											<ValueList>
-												<Value>10</Value>
+												<Value>-3</Value>
 											</ValueList>
 										</Property>
 									</PropertyList>
@@ -1226,7 +1264,20 @@
 											</Custom>
 										</Reference>
 										<Reference Name="Effect1" PluginName="Wwise Harmonizer" CompanyID="0" PluginID="138" PluginType="3">
-											<ObjectRef Name="Three_Voices" ID="{71CA20BE-8C1D-4A0C-92AF-BFCE183D5651}" WorkUnitID="{E8613F7D-BAD3-45CD-A3ED-505576F31277}"/>
+											<ObjectRef Name="Fear_no_Evil" ID="{A1F17D99-0801-4F32-B74E-ADB2D9ACC556}" WorkUnitID="{E8613F7D-BAD3-45CD-A3ED-505576F31277}"/>
+										</Reference>
+										<Reference Name="Effect2">
+											<Custom CreatedFrom="{9B6E8B78-EF8C-494C-AADA-D01CF51B5FAC}">
+												<Effect Name="Large_Church1 (Custom)" ID="{425ACF00-52EC-419C-B03F-984B53D052EF}" ShortID="811160017" PluginName="Wwise Matrix Reverb" CompanyID="0" PluginID="115" PluginType="3">
+													<PropertyList>
+														<Property Name="DryLevel" Type="Real32" Value="-0.3"/>
+														<Property Name="HFRatio" Type="Real32" Value="6"/>
+														<Property Name="NumberOfDelays" Type="int32" Value="12"/>
+														<Property Name="PreDelay" Type="Real32" Value="0.1"/>
+														<Property Name="WetLevel" Type="Real32" Value="-48"/>
+													</PropertyList>
+												</Effect>
+											</Custom>
 										</Reference>
 										<Reference Name="OutputBus">
 											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C91EB4C6-56DC-4541-96C4-29E948904D66}"/>
@@ -1238,6 +1289,59 @@
 												<Property Name="3DSpatialization" Type="int16" Value="2"/>
 												<Property Name="OverrideOutput" Type="bool" Value="True"/>
 												<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+												<Property Name="Volume" Type="Real64">
+													<RTPCList>
+														<RTPC Name="" ID="{13996DF8-6BA0-436B-A2DD-9CE67E7B0B4D}" ShortID="887954908">
+															<ReferenceList>
+																<Reference Name="ControlInput">
+																	<Custom>
+																		<ModulatorTime Name="Modulator Time (Custom)" ID="{A6C77562-E8DE-417F-8BAC-96B94170D618}" ShortID="839944031">
+																			<PropertyList>
+																				<Property Name="EnvelopeStopPlayback" Type="bool" Value="False"/>
+																				<Property Name="TimeModDuration" Type="Real64" Value="11"/>
+																			</PropertyList>
+																		</ModulatorTime>
+																	</Custom>
+																</Reference>
+															</ReferenceList>
+															<Curve Name="" ID="{73C8B1B0-5527-4555-B163-B97A8829CAFA}">
+																<PropertyList>
+																	<Property Name="Flags" Type="int32" Value="3"/>
+																</PropertyList>
+																<PointList>
+																	<Point>
+																		<XPos>0</XPos>
+																		<YPos>0.11659</YPos>
+																		<Flags>5</Flags>
+																	</Point>
+																	<Point>
+																		<XPos>6.8061</XPos>
+																		<YPos>0.34538</YPos>
+																		<Flags>0</Flags>
+																		<SegmentShape>Log3</SegmentShape>
+																	</Point>
+																	<Point>
+																		<XPos>8.96296</XPos>
+																		<YPos>6.72235</YPos>
+																		<Flags>0</Flags>
+																		<SegmentShape>Exp3</SegmentShape>
+																	</Point>
+																	<Point>
+																		<XPos>10.11329</XPos>
+																		<YPos>10.61214</YPos>
+																		<Flags>0</Flags>
+																		<SegmentShape>Log3</SegmentShape>
+																	</Point>
+																	<Point>
+																		<XPos>11</XPos>
+																		<YPos>13.60167</YPos>
+																		<Flags>37</Flags>
+																	</Point>
+																</PointList>
+															</Curve>
+														</RTPC>
+													</RTPCList>
+												</Property>
 											</PropertyList>
 											<ReferenceList>
 												<Reference Name="Attenuation">
@@ -1523,6 +1627,11 @@
 										</Sound>
 										<Sound Name="Silence" ID="{E038A1BD-2933-4934-BD82-EFF1C0E1FF77}" ShortID="157559304">
 											<PropertyList>
+												<Property Name="InitialDelay" Type="Real64">
+													<ValueList>
+														<Value>3</Value>
+													</ValueList>
+												</Property>
 												<Property Name="OverrideOutput" Type="bool" Value="True"/>
 												<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
 												<Property Name="Volume" Type="Real64">
@@ -2198,11 +2307,18 @@
 									</PropertyList>
 									<PointList>
 										<Point>
-											<XPos>0</XPos>
-											<YPos>1.9774</YPos>
+											<XPos>-2.03046</XPos>
+											<YPos>5.9322</YPos>
 											<ZPos>54</ZPos>
 											<Flags>12</Flags>
 											<Time>0</Time>
+										</Point>
+										<Point>
+											<XPos>3.04569</XPos>
+											<YPos>5.08475</YPos>
+											<ZPos>54</ZPos>
+											<Flags>0</Flags>
+											<Time>20000</Time>
 										</Point>
 									</PointList>
 								</Path2D>
