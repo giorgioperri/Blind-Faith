@@ -21,14 +21,24 @@ public class RotateObjects : Interactable
     public bool hasTooltip;
     public bool hasVoiceLine;
     public VoiceLineSequenceSO voiceSeq;
-
+    public Vector3 raycastDirection = Vector3.zero;
+    public Transform rayShoot;
+    
     private void OnTriggerEnter(Collider other)
     {
-        if (_canShowTooltip && isEnlighted && hasTooltip)
+        if (other.CompareTag("Player") && _canShowTooltip && isEnlighted && hasTooltip)
         {
             TooltipManager.Instance.currentTooltip = TooltipTypes.RotateMirror;
             TooltipManager.Instance.ToggleTooltip("Hold and drag the Left Mouse Button to rotate enlightened objects");
             _canShowTooltip = false;
+        }
+    }
+
+    private void OnTriggerStay(Collider other)
+    {
+        if (other.CompareTag("Player") && _lightStored >= 0)
+        {
+            HealthSystem.Instance.Heal();
         }
     }
 
@@ -39,6 +49,14 @@ public class RotateObjects : Interactable
 
     private void Update()
     {
+        Ray ray = new Ray(rayShoot.position, raycastDirection * 999);
+        RaycastHit hit;
+
+        if(Physics.Raycast(ray, out hit, 999))
+        {
+            Debug.Log(hit.collider.name);
+        }
+
         if (_lightStored <= 0 && _canDeactivateGrab)
         {
             AkSoundEngine.PostEvent("MirrorLight_Off", gameObject);
