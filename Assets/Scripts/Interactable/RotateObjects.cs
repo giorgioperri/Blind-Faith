@@ -79,6 +79,16 @@ public class RotateObjects : Interactable
             _ => _lightStored
         };
 
+        switch (_lightStored)
+        {
+            case > 0 when !GameManager.Instance.litMirrors.Contains(this):
+                GameManager.Instance.AddMirror(this);
+                break;
+            case <= 0 when GameManager.Instance.litMirrors.Contains(this):
+                GameManager.Instance.RemoveMirror(this);
+                break;
+        }
+
         _light.intensity = math.remap(0, 100, 0, 15, _lightStored);
         GetComponent<MeshRenderer>().material.SetFloat("_GlowIntensity", math.remap(0, 100, 0, 4, _lightStored));
 
