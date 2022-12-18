@@ -20,9 +20,8 @@ public class RotateObjects : Interactable
     public bool shouldStabilizeY;
     public bool hasTooltip;
     public bool hasVoiceLine;
+    public bool snap;
     public VoiceLineSequenceSO voiceSeq;
-    public Vector3 raycastDirection = Vector3.zero;
-    public Transform rayShoot;
     
     private void OnTriggerEnter(Collider other)
     {
@@ -49,14 +48,6 @@ public class RotateObjects : Interactable
 
     private void Update()
     {
-        Ray ray = new Ray(rayShoot.position, raycastDirection * 999);
-        RaycastHit hit;
-
-        if(Physics.Raycast(ray, out hit, 999))
-        {
-            Debug.Log(hit.collider.name);
-        }
-
         if (_lightStored <= 0 && _canDeactivateGrab)
         {
             AkSoundEngine.PostEvent("MirrorLight_Off", gameObject);
@@ -115,7 +106,7 @@ public class RotateObjects : Interactable
             _grabbedMirror = true;
             GameManager.Instance.isInteractingWithMirror = true;
             
-            transform.Rotate(0f, Mouse.current.delta.ReadValue().x, 0f, Space.Self);
+            if(!snap) transform.Rotate(0f, Mouse.current.delta.ReadValue().x, 0f, Space.Self);
 
             if (_canPlayVoiceLine && hasVoiceLine)
             {

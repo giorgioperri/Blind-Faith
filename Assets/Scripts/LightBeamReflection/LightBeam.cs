@@ -93,14 +93,14 @@ public class LightBeam
         if(hitInfo.collider.gameObject.CompareTag("Mirror"))
         {
             
-            Vector3 pos = hitInfo.point;
+            Vector3 pos = Vector3.Distance(hitInfo.point, hitInfo.collider.bounds.center) < .55f
+                ? hitInfo.collider.bounds.center
+                : hitInfo.point;
             Vector3 dir = Vector3.Reflect(direction, hitInfo.normal);
             
             if (hitInfo.collider.gameObject.GetComponent<RotateObjects>())
             {
                 RotateObjects rotateScript = hitInfo.collider.gameObject.GetComponent<RotateObjects>();
-
-                hitInfo.collider.gameObject.GetComponent<RotateObjects>().raycastDirection = dir;
 
                 if (rotateScript.shouldStabilizeY)
                 {

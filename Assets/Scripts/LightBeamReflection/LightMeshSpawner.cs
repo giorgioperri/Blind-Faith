@@ -29,7 +29,6 @@ public class LightMeshSpawner : MonoBehaviour
     
     private GameObject LoadPrefabFromFile(string filename)
     {
-        Debug.Log("Trying to load LightMeshPrefab from file ("+filename+ ")...");
         GameObject loadedObject = Resources.Load<GameObject>("lightBeamMesh_v003");
         if (loadedObject == null)
         {
@@ -47,20 +46,17 @@ public class LightMeshSpawner : MonoBehaviour
             DestroyLightBeam();
             ClearAndUpdatePointList(_laser);
             CreateLightMeshes(0, _laser);
-            Debug.Log("Beam regenerated.");
         }
         // If new beam is shorter than existing one, delete tail segment(s)
         else if (_locallyStoredPoints.Count > _laser.positionCount)
         {
             DeleteTail(_laser.positionCount-1);
-            Debug.Log("Tail deleted.");
         }
         // If new beam is longer than existing one, add new segment(s)
         else if (_locallyStoredPoints.Count < _laser.positionCount)
         {
             int createFrom = _locallyStoredPoints.Count - 1;
             CreateLightMeshes(createFrom, _laser);
-            Debug.Log("Tail segments added.");
         }
         // If a reflection point changes, correct alignment for subsequent meshes
         for (int i = 0; i < _laser.positionCount; i++)
@@ -70,7 +66,6 @@ public class LightMeshSpawner : MonoBehaviour
                 int updateMeshesFrom = Mathf.Max(i-1, 0);
                 ClearAndUpdatePointList(_laser);
                 UpdateLightMeshes(updateMeshesFrom);
-                Debug.Log("Beam Updated from Mesh: " + updateMeshesFrom);
                 return;
             }
         }
