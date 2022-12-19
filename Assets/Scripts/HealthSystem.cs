@@ -17,7 +17,7 @@ public class HealthSystem : MonoBehaviour
     private Image _healthFadeEffect;
     private float _maxPlayerHealth = 100f;
     [SerializeField]
-    private float _loseHealthSpeed = 2f;
+    private float _loseHealthSpeed = 1f;
     [SerializeField]
     private float _gainHealthSpeed = 10f;
     [SerializeField]

@@ -11,9 +11,9 @@ GameObject:
   - component: {fileID: 565374451315082101}
   - component: {fileID: 565374451315082103}
   - component: {fileID: 565374451315082097}
-  - component: {fileID: 8420020229163632518}
   - component: {fileID: 6592199264429184366}
-  m_Layer: 0
+  - component: {fileID: 8914258587593933272}
+  m_Layer: 2
   m_Name: Mirror
   m_TagString: Mirror
   m_Icon: {fileID: 0}
@@ -104,20 +104,10 @@ MonoBehaviour:
   shouldStabilizeY: 0
   hasTooltip: 0
   hasVoiceLine: 0
+  snap: 0
   voiceSeq: {fileID: 0}
---- !u!65 &8420020229163632518
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 565374451315082096}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 2.0259032, y: 2.856486, z: 0.41340214}
-  m_Center: {x: -0, y: 0.1, z: 0}
+  raycastDirection: {x: 0, y: 0, z: 0}
+  rayShoot: {fileID: 0}
 --- !u!65 &6592199264429184366
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -129,8 +119,21 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 3.1674974, y: 2.6855288, z: 2.9652374}
-  m_Center: {x: -0, y: 0.18, z: 0}
+  m_Size: {x: 4.4597163, y: 2.685528, z: 4.109832}
+  m_Center: {x: 0, y: 0.17999998, z: 0}
+--- !u!65 &8914258587593933272
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 565374451315082096}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.97, y: 2.3497853, z: 0.4}
+  m_Center: {x: 0, y: -0.050104085, z: 0}
 --- !u!1 &879490792194014420
 GameObject:
   m_ObjectHideFlags: 0
@@ -140,7 +143,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5037117617603471145}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: MirrorNotRotatable (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -174,7 +177,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4503189883687368470}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: MirrorNotRotatable
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -210,7 +213,7 @@ GameObject:
   - component: {fileID: 7490119366292842649}
   - component: {fileID: 2473390409680831972}
   - component: {fileID: 7032790617866992900}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Circles
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -293,7 +296,7 @@ GameObject:
   - component: {fileID: 6056467784461758719}
   - component: {fileID: 6532925071606543046}
   - component: {fileID: 7947967361116039242}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Mirror
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -376,7 +379,7 @@ GameObject:
   - component: {fileID: 4456675000982843159}
   - component: {fileID: 5357282407783279359}
   - component: {fileID: 7482962328721608968}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: OutstideFrame
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -459,7 +462,7 @@ GameObject:
   - component: {fileID: 4540008697266191421}
   - component: {fileID: 2510380263095266968}
   - component: {fileID: 3517920077166819158}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Mirror
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -542,7 +545,7 @@ GameObject:
   - component: {fileID: 4707017202047733571}
   - component: {fileID: 877935377220967922}
   - component: {fileID: 834264430311963448}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Wires
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -625,7 +628,7 @@ GameObject:
   - component: {fileID: 1493246627224128155}
   - component: {fileID: 3613547122338464530}
   - component: {fileID: 6925718978592936155}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Point Light
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -740,7 +743,7 @@ GameObject:
   - component: {fileID: 904966732236206734}
   - component: {fileID: 3063733413025628417}
   - component: {fileID: 3900557961569203712}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Circles
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -823,7 +826,7 @@ GameObject:
   - component: {fileID: 7037619018261228402}
   - component: {fileID: 2782103362953996900}
   - component: {fileID: 143397162915740739}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Wires
   m_TagString: Untagged
   m_Icon: {fileID: 0}

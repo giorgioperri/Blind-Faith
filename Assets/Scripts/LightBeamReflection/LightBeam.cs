@@ -92,7 +92,10 @@ public class LightBeam
     {   
         if(hitInfo.collider.gameObject.CompareTag("Mirror"))
         {
-            Vector3 pos = hitInfo.point;
+            
+            Vector3 pos = Vector3.Distance(hitInfo.point, hitInfo.collider.bounds.center) < .55f
+                ? hitInfo.collider.bounds.center
+                : hitInfo.point;
             Vector3 dir = Vector3.Reflect(direction, hitInfo.normal);
             
             if (hitInfo.collider.gameObject.GetComponent<RotateObjects>())
@@ -129,11 +132,6 @@ public class LightBeam
             
             hitTheDoor = true;
             hitInfo.collider.gameObject.SendMessage("OnBeamReceived");
-            _lightIndices.Add(hitInfo.point);
-            UpdateLaser();
-        } else if (hitInfo.collider.gameObject.CompareTag("Player"))
-        {
-            HealthSystem.Instance.Heal(); 
             _lightIndices.Add(hitInfo.point);
             UpdateLaser();
         }
@@ -178,7 +176,8 @@ public class LightBeam
             
             _lightIndices.Add(hitInfo.point);
             UpdateLaser();
-        } else if (hitInfo.collider.gameObject.CompareTag("YellowTarget"))
+        } 
+        else if (hitInfo.collider.gameObject.CompareTag("YellowTarget"))
         {
             if (laserColor == LaserColor.Yellow)
             {
@@ -187,7 +186,8 @@ public class LightBeam
             
             _lightIndices.Add(hitInfo.point);
             UpdateLaser();
-        } else if (hitInfo.collider.gameObject.CompareTag("Pillar"))
+        } 
+        else if (hitInfo.collider.gameObject.CompareTag("Pillar"))
         {
             hitInfo.transform.parent.SendMessage("OnBeamReceived");
             hitInfo.transform.tag = "Untagged";
