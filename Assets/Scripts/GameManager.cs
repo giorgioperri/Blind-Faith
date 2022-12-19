@@ -129,6 +129,7 @@ public class GameManager : MonoBehaviour
 
     private void FixedUpdate()
     {
+        if (_isIntro) return;
         Ray ray = Camera.main.ViewportPointToRay(new Vector3(0.5f, 0.5f, 0));
         Debug.DrawRay(ray.origin, ray.direction *= 100, Color.green);
         RaycastHit hit;   
