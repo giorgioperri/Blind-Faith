@@ -24,7 +24,7 @@
 				<AuxBus Id="2933838247" Name="SmallRoom" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Rooms\SmallRoom"/>
 			</IncludedAuxBusses>
 		</SoundBank>
-		<SoundBank Id="1764570813" Language="SFX" Hash="3331846290">
+		<SoundBank Id="1764570813" Language="SFX" Hash="2813148155">
 			<ObjectPath>\SoundBanks\Default Work Unit\Mains</ObjectPath>
 			<ShortName>Mains</ShortName>
 			<Path>Mains.bnk</Path>
@@ -407,7 +407,7 @@
 						</File>
 						<File Id="506611343" Language="SFX">
 							<ShortName>rockslide_02.wav</ShortName>
-							<Path>SFX\rockslide_02_23D7E4E7.wem</Path>
+							<Path>SFX\rockslide_02_BFF57268.wem</Path>
 						</File>
 						<File Id="627720889" Language="SFX">
 							<ShortName>BF_MassiveSteamPunkDevice.wav</ShortName>
@@ -465,6 +465,10 @@
 							<ShortName>HisChildHasReturnd.wav</ShortName>
 							<Path>SFX\HisChildHasReturnd_4CB63430.wem</Path>
 						</File>
+						<File Id="59958060" Language="SFX">
+							<ShortName>OFaithfullChildren.wav</ShortName>
+							<Path>SFX\OFaithfullChildren_10C4C929.wem</Path>
+						</File>
 						<File Id="104070998" Language="SFX">
 							<ShortName>BF_Intro.wav</ShortName>
 							<Path>SFX\BF_Intro_FD9C03AF.wem</Path>
@@ -472,6 +476,10 @@
 						<File Id="124409414" Language="SFX">
 							<ShortName>Clerk_s1_.wav</ShortName>
 							<Path>SFX\Clerk_s1__478E5631.wem</Path>
+						</File>
+						<File Id="182582057" Language="SFX">
+							<ShortName>TheChurchISAlmostRestored.wav</ShortName>
+							<Path>SFX\TheChurchISAlmostRestored_10C4C929.wem</Path>
 						</File>
 						<File Id="211299271" Language="SFX">
 							<ShortName>Clerk_chatter\Clerk_chatter__2.wav</ShortName>
@@ -493,6 +501,10 @@
 							<ShortName>Clerk_s1__5.wav</ShortName>
 							<Path>SFX\Clerk_s1__5_E507363E.wem</Path>
 						</File>
+						<File Id="340459899" Language="SFX">
+							<ShortName>YesTheLightGrowsStronger.wav</ShortName>
+							<Path>SFX\YesTheLightGrowsStronger_10C4C929.wem</Path>
+						</File>
 						<File Id="413924883" Language="SFX">
 							<ShortName>Clerk_chatter\Clerk_chatter__7.wav</ShortName>
 							<Path>SFX\Clerk_chatter\Clerk_chatter__7_5A0A0824.wem</Path>
@@ -508,6 +520,10 @@
 						<File Id="480689921" Language="SFX">
 							<ShortName>BF_Intro.wav</ShortName>
 							<Path>SFX\BF_Intro_70C8A12F.wem</Path>
+						</File>
+						<File Id="507273905" Language="SFX">
+							<ShortName>ScornedForUsing.wav</ShortName>
+							<Path>SFX\ScornedForUsing_10C4C929.wem</Path>
 						</File>
 						<File Id="529285034" Language="SFX">
 							<ShortName>Clerk_chatter\Clerk_chatter__5.wav</ShortName>
@@ -537,9 +553,29 @@
 							<ShortName>Clerk_chatter\Clerk_chatter__9.wav</ShortName>
 							<Path>SFX\Clerk_chatter\Clerk_chatter__9_65745E9E.wem</Path>
 						</File>
+						<File Id="746861646" Language="SFX">
+							<ShortName>AngelCondemnedMan.wav</ShortName>
+							<Path>SFX\AngelCondemnedMan_10C4C929.wem</Path>
+						</File>
+						<File Id="749227419" Language="SFX">
+							<ShortName>TheHighPriestwouldBeProud.wav</ShortName>
+							<Path>SFX\TheHighPriestwouldBeProud_10C4C929.wem</Path>
+						</File>
+						<File Id="800967046" Language="SFX">
+							<ShortName>ThePriestWouldBeDissapointed.wav</ShortName>
+							<Path>SFX\ThePriestWouldBeDissapointed_10C4C929.wem</Path>
+						</File>
+						<File Id="829065497" Language="SFX">
+							<ShortName>StepIntoTheLight.wav</ShortName>
+							<Path>SFX\StepIntoTheLight_10C4C929.wem</Path>
+						</File>
 						<File Id="833554346" Language="SFX">
 							<ShortName>Clerk_chatter\Clerk_chatter__1.wav</ShortName>
 							<Path>SFX\Clerk_chatter\Clerk_chatter__1_C12CA77B.wem</Path>
+						</File>
+						<File Id="858874798" Language="SFX">
+							<ShortName>FOLLOWTHELIGHT.wav</ShortName>
+							<Path>SFX\FOLLOWTHELIGHT_10C4C929.wem</Path>
 						</File>
 						<File Id="881047039" Language="SFX">
 							<ShortName>HisChildHasReturnd.wav</ShortName>
@@ -556,6 +592,10 @@
 						<File Id="949409495" Language="SFX">
 							<ShortName>Clerk_s1__3.wav</ShortName>
 							<Path>SFX\Clerk_s1__3_5B766E21.wem</Path>
+						</File>
+						<File Id="998215553" Language="SFX">
+							<ShortName>ThisChurchIsOneOfTheLast.wav</ShortName>
+							<Path>SFX\ThisChurchIsOneOfTheLast_10C4C929.wem</Path>
 						</File>
 						<File Id="1010559949" Language="SFX">
 							<ShortName>Clerk_s1__2.wav</ShortName>
@@ -602,10 +642,47 @@
 								<File Id="1066600936"/>
 							</Media>
 						</SwitchContainer>
+						<SwitchContainer SwitchValue="{35FDBA3F-535D-446D-B825-AE076D1E6484}">
+							<Media>
+								<File Id="59958060"/>
+							</Media>
+						</SwitchContainer>
+						<SwitchContainer SwitchValue="{606A8447-69B1-453C-B248-1555000DA6EF}">
+							<Media>
+								<File Id="858874798"/>
+							</Media>
+						</SwitchContainer>
+						<SwitchContainer SwitchValue="{C3C8B14F-B61D-4AE0-9511-DB70521A87E9}">
+							<Media>
+								<File Id="507273905"/>
+								<File Id="746861646"/>
+								<File Id="998215553"/>
+							</Media>
+						</SwitchContainer>
+						<SwitchContainer SwitchValue="{B812DC5B-7DD7-4516-B147-A7FD27DD57C1}">
+							<Media>
+								<File Id="829065497"/>
+							</Media>
+						</SwitchContainer>
+						<SwitchContainer SwitchValue="{804CCD66-9527-4383-BA41-EF081670F781}">
+							<Media>
+								<File Id="340459899"/>
+							</Media>
+						</SwitchContainer>
 						<SwitchContainer SwitchValue="{64EADD76-180B-4140-9FDB-667A47D077E2}">
 							<Media>
 								<File Id="9205079"/>
 								<File Id="881047039"/>
+							</Media>
+						</SwitchContainer>
+						<SwitchContainer SwitchValue="{0BF4F391-5C1D-4C1C-A0F5-59D0A73CBC9D}">
+							<Media>
+								<File Id="800967046"/>
+							</Media>
+						</SwitchContainer>
+						<SwitchContainer SwitchValue="{F2AAE894-C7DE-4A33-9373-AF044FB25D57}">
+							<Media>
+								<File Id="182582057"/>
 							</Media>
 						</SwitchContainer>
 						<SwitchContainer SwitchValue="{E334D896-7052-4A0C-8FBE-2DCCF747A2AC}">
@@ -620,6 +697,11 @@
 							<Media>
 								<File Id="218572068"/>
 								<File Id="930652008"/>
+							</Media>
+						</SwitchContainer>
+						<SwitchContainer SwitchValue="{89EFADE0-CD3D-4B63-84E4-809CFC526727}">
+							<Media>
+								<File Id="749227419"/>
 							</Media>
 						</SwitchContainer>
 					</SwitchContainers>
@@ -651,6 +733,10 @@
 				<File Id="53740118" Language="SFX">
 					<ShortName>STINGER_Let_Me_In.wav</ShortName>
 					<Path>SFX\STINGER_Let_Me_In_10C4C929.wem</Path>
+				</File>
+				<File Id="59958060" Language="SFX">
+					<ShortName>OFaithfullChildren.wav</ShortName>
+					<Path>SFX\OFaithfullChildren_10C4C929.wem</Path>
 				</File>
 				<File Id="64451089" Language="SFX">
 					<ShortName>15-Electric Arc-Transformer-Static.wav</ShortName>
@@ -691,6 +777,10 @@
 				<File Id="169382249" Language="SFX">
 					<ShortName>ChurchAmbisonicAmbienceMain_loopo.wav</ShortName>
 					<Path>SFX\ChurchAmbisonicAmbienceMain_loopo_C9AB8BF9.wem</Path>
+				</File>
+				<File Id="182582057" Language="SFX">
+					<ShortName>TheChurchISAlmostRestored.wav</ShortName>
+					<Path>SFX\TheChurchISAlmostRestored_10C4C929.wem</Path>
 				</File>
 				<File Id="190726892" Language="SFX">
 					<ShortName>STINGER_Pew_Pew.wav</ShortName>
@@ -772,6 +862,10 @@
 					<ShortName>ChurchAmbisonicAmbienceMain_Intro.wav</ShortName>
 					<Path>SFX\ChurchAmbisonicAmbienceMain_Intro_25D48193.wem</Path>
 				</File>
+				<File Id="340459899" Language="SFX">
+					<ShortName>YesTheLightGrowsStronger.wav</ShortName>
+					<Path>SFX\YesTheLightGrowsStronger_10C4C929.wem</Path>
+				</File>
 				<File Id="345534423" Language="SFX">
 					<ShortName>Room Tone, Toilet, Fan Humming, Chiangmai, Thailand.wav</ShortName>
 					<Path>SFX\Room Tone, Toilet, Fan Humming, Chiangmai, Thailand_A6FD17C2.wem</Path>
@@ -838,7 +932,11 @@
 				</File>
 				<File Id="506611343" Language="SFX">
 					<ShortName>rockslide_02.wav</ShortName>
-					<Path>SFX\rockslide_02_23D7E4E7.wem</Path>
+					<Path>SFX\rockslide_02_BFF57268.wem</Path>
+				</File>
+				<File Id="507273905" Language="SFX">
+					<ShortName>ScornedForUsing.wav</ShortName>
+					<Path>SFX\ScornedForUsing_10C4C929.wem</Path>
 				</File>
 				<File Id="524158007" Language="SFX">
 					<ShortName>01 Stone Footsteps, Cobblestone Male, 30 Secs Each Slow, Medium, Fast.wav</ShortName>
@@ -932,6 +1030,14 @@
 					<ShortName>Clerk_chatter\Clerk_chatter__9.wav</ShortName>
 					<Path>SFX\Clerk_chatter\Clerk_chatter__9_65745E9E.wem</Path>
 				</File>
+				<File Id="746861646" Language="SFX">
+					<ShortName>AngelCondemnedMan.wav</ShortName>
+					<Path>SFX\AngelCondemnedMan_10C4C929.wem</Path>
+				</File>
+				<File Id="749227419" Language="SFX">
+					<ShortName>TheHighPriestwouldBeProud.wav</ShortName>
+					<Path>SFX\TheHighPriestwouldBeProud_10C4C929.wem</Path>
+				</File>
 				<File Id="754165073" Language="SFX">
 					<ShortName>Buildings_Rumble_Elevator_Shaft_Glass_Break_Further_03.wav</ShortName>
 					<Path>SFX\Buildings_Rumble_Elevator_Shaft_Glass_Break_Further_03_4B1DA099.wem</Path>
@@ -948,6 +1054,10 @@
 					<ShortName>Scream,Male,Mid Thirties,Mouth Covered,Gasps,Fast,Shriek,Panic.wav</ShortName>
 					<Path>SFX\Scream,Male,Mid Thirties,Mouth Covered,Gasps,Fast,Shriek,Panic_10C4C929.wem</Path>
 				</File>
+				<File Id="800967046" Language="SFX">
+					<ShortName>ThePriestWouldBeDissapointed.wav</ShortName>
+					<Path>SFX\ThePriestWouldBeDissapointed_10C4C929.wem</Path>
+				</File>
 				<File Id="802035410" Language="SFX">
 					<ShortName>RISE_Necronomicon.wav</ShortName>
 					<Path>SFX\RISE_Necronomicon_084BD84A.wem</Path>
@@ -960,6 +1070,10 @@
 					<ShortName>Door, Metal, Open, Close, Distant, Mariott Hotel, San Jose 1.wav</ShortName>
 					<Path>SFX\Door, Metal, Open, Close, Distant, Mariott Hotel, San Jose 1_10C4C929.wem</Path>
 				</File>
+				<File Id="829065497" Language="SFX">
+					<ShortName>StepIntoTheLight.wav</ShortName>
+					<Path>SFX\StepIntoTheLight_10C4C929.wem</Path>
+				</File>
 				<File Id="830999437" Language="SFX">
 					<ShortName>01 Stone Footsteps, Cobblestone Male, 30 Secs Each Slow, Medium, Fast.wav</ShortName>
 					<Path>SFX\01 Stone Footsteps, Cobblestone Male, 30 Secs Each Slow, Medium, Fast_5FF7441C.wem</Path>
@@ -967,6 +1081,10 @@
 				<File Id="833554346" Language="SFX">
 					<ShortName>Clerk_chatter\Clerk_chatter__1.wav</ShortName>
 					<Path>SFX\Clerk_chatter\Clerk_chatter__1_C12CA77B.wem</Path>
+				</File>
+				<File Id="858874798" Language="SFX">
+					<ShortName>FOLLOWTHELIGHT.wav</ShortName>
+					<Path>SFX\FOLLOWTHELIGHT_10C4C929.wem</Path>
 				</File>
 				<File Id="861805956" Language="SFX">
 					<ShortName>01 Stone Footsteps, Cobblestone Male, 30 Secs Each Slow, Medium, Fast.wav</ShortName>
@@ -1032,6 +1150,10 @@
 					<ShortName>1806 - Footsteps - Sneakers on Carpet - 90 fpm - Loop.wav</ShortName>
 					<Path>SFX\1806 - Footsteps - Sneakers on Carpet - 90 fpm - Loop_F2E4E4FE.wem</Path>
 				</File>
+				<File Id="998215553" Language="SFX">
+					<ShortName>ThisChurchIsOneOfTheLast.wav</ShortName>
+					<Path>SFX\ThisChurchIsOneOfTheLast_10C4C929.wem</Path>
+				</File>
 				<File Id="1010559949" Language="SFX">
 					<ShortName>Clerk_s1__2.wav</ShortName>
 					<Path>SFX\Clerk_s1__2_52A7C0CC.wem</Path>
@@ -1080,6 +1202,14 @@
 						<Switch Id="1703442692" Name="SecondEncounter" ObjectPath="\Switches\Default Work Unit\VA\VA_Clerk_Switch_Group\SecondEncounter" GUID="{FA252621-44C6-43C8-91A5-6ED1246A1703}"/>
 						<Switch Id="994602288" Name="DungeonChatter" ObjectPath="\Switches\Default Work Unit\VA\VA_Clerk_Switch_Group\DungeonChatter" GUID="{83372DDE-E890-4272-87B3-B3DDD9E6D533}"/>
 						<Switch Id="3682658335" Name="ThirdEncounter" ObjectPath="\Switches\Default Work Unit\VA\VA_Clerk_Switch_Group\ThirdEncounter" GUID="{C3C8B14F-B61D-4AE0-9511-DB70521A87E9}"/>
+						<Switch Id="2318992283" Name="Tower_FOLLOWTHELIGHT" ObjectPath="\Switches\Default Work Unit\VA\VA_Clerk_Switch_Group\Tower_FOLLOWTHELIGHT" GUID="{606A8447-69B1-453C-B248-1555000DA6EF}"/>
+						<Switch Id="317582866" Name="Tower_Prayer" ObjectPath="\Switches\Default Work Unit\VA\VA_Clerk_Switch_Group\Tower_Prayer" GUID="{35FDBA3F-535D-446D-B825-AE076D1E6484}"/>
+						<Switch Id="2889570721" Name="Tower_TheChurchIsAlmostRestored" ObjectPath="\Switches\Default Work Unit\VA\VA_Clerk_Switch_Group\Tower_TheChurchIsAlmostRestored" GUID="{F2AAE894-C7DE-4A33-9373-AF044FB25D57}"/>
+						<Switch Id="2448125293" Name="Tower_YesTheLightGrowsStronger" ObjectPath="\Switches\Default Work Unit\VA\VA_Clerk_Switch_Group\Tower_YesTheLightGrowsStronger" GUID="{804CCD66-9527-4383-BA41-EF081670F781}"/>
+						<Switch Id="2903908110" Name="Tower_StepIntoTheLight_finale" ObjectPath="\Switches\Default Work Unit\VA\VA_Clerk_Switch_Group\Tower_StepIntoTheLight_finale" GUID="{B812DC5B-7DD7-4516-B147-A7FD27DD57C1}"/>
+						<Switch Id="3419523551" Name="Tower_Proud" ObjectPath="\Switches\Default Work Unit\VA\VA_Clerk_Switch_Group\Tower_Proud" GUID="{89EFADE0-CD3D-4B63-84E4-809CFC526727}"/>
+						<Switch Id="4085445222" Name="Tower_Dissapointed" ObjectPath="\Switches\Default Work Unit\VA\VA_Clerk_Switch_Group\Tower_Dissapointed" GUID="{0BF4F391-5C1D-4C1C-A0F5-59D0A73CBC9D}"/>
+						<Switch Id="1337305014" Name="Tower_LetTheLightGuide_Grimly" ObjectPath="\Switches\Default Work Unit\VA\VA_Clerk_Switch_Group\Tower_LetTheLightGuide_Grimly" GUID="{7B219077-EB24-46ED-A8B0-C034F0C1D7FD}"/>
 					</Switches>
 				</SwitchGroup>
 				<SwitchGroup Id="1730208058" Name="Player_Footsteps" ObjectPath="\Switches\Default Work Unit\Locomotion\Player_Footsteps" GUID="{A706E7EA-CCEF-4788-AE6F-F3659BEF4932}">
