@@ -1,0 +1,13 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <Style src="project://database/Assets/Scenes/Scenes_Rafal/MenuStyles.uss?fileID=7433441132597879392&amp;guid=6fb9bdb2e65864741bdcb0d7e38e0090&amp;type=3#MenuStyles" />
+    <ui:VisualElement name="Menu" style="flex-grow: 1; flex-direction: row;">
+        <ui:VisualElement name="LeftSection" style="background-color: rgba(0, 0, 0, 0.94); width: 25%; height: 100%; margin-left: 50px; align-items: center; justify-content: flex-start;">
+            <ui:VisualElement name="Logo" style="justify-content: flex-end; align-items: flex-start; flex-direction: row; background-image: url(&apos;project://database/Assets/Img/logoLantern.png?fileID=2800000&amp;guid=ddb1e9d0cbd440a4c8e961d615c7c931&amp;type=3#logoLantern&apos;); width: 100%; height: 30%;" />
+            <ui:VisualElement name="Buttons" style="flex-grow: 1; justify-content: center; padding-bottom: 50%; font-size: 40px; -unity-font-style: normal;">
+                <ui:Button text="Play" display-tooltip-when-elided="true" name="PlayButton" class="menu-button" style="opacity: 1; padding-left: 10px; padding-right: 10px; padding-top: 10px; padding-bottom: 10px;" />
+                <ui:Button text="Quit" display-tooltip-when-elided="true" name="QuitButton" class="menu-button" style="padding-left: 10px; padding-right: 10px; padding-top: 10px; padding-bottom: 10px;" />
+            </ui:VisualElement>
+        </ui:VisualElement>
+        <ui:VisualElement name="RightSection" style="flex-grow: 1;" />
+    </ui:VisualElement>
+</ui:UXML>

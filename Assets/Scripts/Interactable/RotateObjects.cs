@@ -20,15 +20,24 @@ public class RotateObjects : Interactable
     public bool shouldStabilizeY;
     public bool hasTooltip;
     public bool hasVoiceLine;
+    public bool snap;
     public VoiceLineSequenceSO voiceSeq;
-
+    
     private void OnTriggerEnter(Collider other)
     {
-        if (_canShowTooltip && isEnlighted && hasTooltip)
+        if (other.CompareTag("Player") && _canShowTooltip && isEnlighted && hasTooltip)
         {
             TooltipManager.Instance.currentTooltip = TooltipTypes.RotateMirror;
             TooltipManager.Instance.ToggleTooltip("Hold and drag the Left Mouse Button to rotate enlightened objects");
             _canShowTooltip = false;
+        }
+    }
+
+    private void OnTriggerStay(Collider other)
+    {
+        if (other.CompareTag("Player") && _lightStored >= 0)
+        {
+            HealthSystem.Instance.Heal();
         }
     }
 
@@ -79,6 +88,16 @@ public class RotateObjects : Interactable
             _ => _lightStored
         };
 
+        switch (_lightStored)
+        {
+            case > 0 when !GameManager.Instance.litMirrors.Contains(this):
+                GameManager.Instance.AddMirror(this);
+                break;
+            case <= 0 when GameManager.Instance.litMirrors.Contains(this):
+                GameManager.Instance.RemoveMirror(this);
+                break;
+        }
+
         _light.intensity = math.remap(0, 100, 0, 15, _lightStored);
         GetComponent<MeshRenderer>().material.SetFloat("_GlowIntensity", math.remap(0, 100, 0, 4, _lightStored));
 
@@ -87,7 +106,7 @@ public class RotateObjects : Interactable
             _grabbedMirror = true;
             GameManager.Instance.isInteractingWithMirror = true;
             
-            transform.Rotate(0f, Mouse.current.delta.ReadValue().x, 0f, Space.Self);
+            if(!snap) transform.Rotate(0f, Mouse.current.delta.ReadValue().x, 0f, Space.Self);
 
             if (_canPlayVoiceLine && hasVoiceLine)
             {

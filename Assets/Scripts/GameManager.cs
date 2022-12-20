@@ -1,7 +1,9 @@
 using System;
 using System.Collections;
+using System.Collections.Generic;
 using Cinemachine;
 using StarterAssets;
+using Unity.Mathematics;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.InputSystem;
@@ -40,6 +42,8 @@ public class GameManager : MonoBehaviour
     public bool canPlayChatterTwo = false;
     public VoiceLineSequenceSO chatterTwo;
 
+    public List<RotateObjects> litMirrors = new();
+
     private void Awake()
     {
         if (Instance != null)
@@ -50,6 +54,20 @@ public class GameManager : MonoBehaviour
         Instance = this;
     }
 
+    public void AddMirror(RotateObjects item)
+    {
+        litMirrors.Add(item);
+        LanternManager.Instance.lanternCharge += math.remap(0, 60, 0, 1, 5);
+        health += 2;
+    }
+
+    public void RemoveMirror(RotateObjects item)
+    {
+        litMirrors.Remove(item);
+        LanternManager.Instance.lanternCharge -= math.remap(0, 60, 0, 1, 5);
+        health -= 2;
+    }
+    
     private void Start()
     {
         if (_isIntro) return;
@@ -111,6 +129,7 @@ public class GameManager : MonoBehaviour
 
     private void FixedUpdate()
     {
+        if (_isIntro) return;
         Ray ray = Camera.main.ViewportPointToRay(new Vector3(0.5f, 0.5f, 0));
         Debug.DrawRay(ray.origin, ray.direction *= 100, Color.green);
         RaycastHit hit;   

@@ -147,6 +147,5 @@ public class PipeEnd : MonoBehaviour
         }
         
         _lightMeshSpawner.DestroyLightBeam();
-        Debug.Log("Pipe beam destroyed.");
     }
 }
