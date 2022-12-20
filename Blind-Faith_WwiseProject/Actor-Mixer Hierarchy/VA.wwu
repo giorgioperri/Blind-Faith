@@ -2126,7 +2126,7 @@
 										<ItemRef Name="ListenCloslyNow" ID="{7D6E0512-C46A-46B1-8C88-795677ABB8EB}"/>
 									</Playlist>
 								</RandomSequenceContainer>
-								<RandomSequenceContainer Name="Clerk_3ndEncounter" ID="{57C7799B-932E-44A2-B451-CFC404973AB0}" ShortID="587244783">
+								<RandomSequenceContainer Name="Clerk_3rdEncounter" ID="{57C7799B-932E-44A2-B451-CFC404973AB0}" ShortID="587244783">
 									<PropertyList>
 										<Property Name="3DPosition" Type="int16" Value="2"/>
 										<Property Name="3DSpatialization" Type="int16" Value="2"/>
@@ -2164,6 +2164,248 @@
 											<ObjectRef Name="Rooms" ID="{F220833B-3FC1-4DC8-9CF3-6F367C8C1EDE}" WorkUnitID="{C91EB4C6-56DC-4541-96C4-29E948904D66}"/>
 										</Reference>
 									</ReferenceList>
+									<ChildrenList>
+										<Sound Name="AngelCondemnedMan" ID="{E57A65C8-54D0-4769-AD18-A915E1E264C2}" ShortID="761094250">
+											<PropertyList>
+												<Property Name="3DPosition" Type="int16" Value="1"/>
+												<Property Name="3DSpatialization" Type="int16" Value="2"/>
+												<Property Name="OutputBusVolume" Type="Real64">
+													<ValueList>
+														<Value>3</Value>
+													</ValueList>
+												</Property>
+												<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Attenuation">
+													<ObjectRef Name="10" ID="{CD38D13E-1D7D-46FA-AD0C-C7D5F9690547}" WorkUnitID="{47D4E814-D669-4A08-8AD2-F706566546E0}"/>
+												</Reference>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{23AF77D7-3FEA-409B-8E44-F5B490014C61}"/>
+												</Reference>
+												<Reference Name="Effect0">
+													<Custom>
+														<Effect Name="Wwise Parametric EQ (Custom)" ID="{CDB2DE1F-10E5-418C-96FE-5D59740232FA}" ShortID="658757561" PluginName="Wwise Parametric EQ" CompanyID="0" PluginID="105" PluginType="3">
+															<PropertyList>
+																<Property Name="FrequencyBand1" Type="Real32" Value="175"/>
+																<Property Name="FrequencyBand2" Type="Real32" Value="132"/>
+																<Property Name="FrequencyBand3" Type="Real32" Value="9397"/>
+																<Property Name="GainBand1" Type="Real32" Value="-1.5"/>
+																<Property Name="GainBand2" Type="Real32" Value="-5"/>
+																<Property Name="GainBand3" Type="Real32" Value="1.5"/>
+																<Property Name="QFactorBand2" Type="Real32" Value="1.5"/>
+															</PropertyList>
+														</Effect>
+													</Custom>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Rooms" ID="{F220833B-3FC1-4DC8-9CF3-6F367C8C1EDE}" WorkUnitID="{C91EB4C6-56DC-4541-96C4-29E948904D66}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="AngelCondemnedMan" ID="{42C7B576-10CA-4737-A93D-9EAE3B89EDFE}">
+													<Language>SFX</Language>
+													<AudioFile>AngelCondemnedMan.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="746861646"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<PositioningInfo>
+												<Position Name="" ID="{46F8195E-190E-45D2-8A8F-7ED7E1067181}">
+													<ChildrenList>
+														<Path2D Name="VA_Mixer_Path" ID="{7742551F-5F40-4A57-9DB0-4818082C6D16}">
+															<PropertyList>
+																<Property Name="Duration" Type="Uint32" Value="20000"/>
+																<Property Name="RandomX" Type="Real64" Value="4"/>
+																<Property Name="RandomY" Type="Real64" Value="5"/>
+															</PropertyList>
+															<PointList>
+																<Point>
+																	<XPos>-2.03046</XPos>
+																	<YPos>5.9322</YPos>
+																	<ZPos>54</ZPos>
+																	<Flags>12</Flags>
+																	<Time>0</Time>
+																</Point>
+																<Point>
+																	<XPos>3.04569</XPos>
+																	<YPos>5.08475</YPos>
+																	<ZPos>54</ZPos>
+																	<Flags>0</Flags>
+																	<Time>20000</Time>
+																</Point>
+															</PointList>
+														</Path2D>
+													</ChildrenList>
+												</Position>
+											</PositioningInfo>
+											<ObjectLists/>
+											<ActiveSourceList>
+												<ActiveSource Name="AngelCondemnedMan" ID="{42C7B576-10CA-4737-A93D-9EAE3B89EDFE}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="ScornedForUsing" ID="{F67741E1-1D20-4FEC-B028-2D6FBFAC2145}" ShortID="314131614">
+											<PropertyList>
+												<Property Name="3DPosition" Type="int16" Value="1"/>
+												<Property Name="3DSpatialization" Type="int16" Value="2"/>
+												<Property Name="OutputBusVolume" Type="Real64">
+													<ValueList>
+														<Value>3</Value>
+													</ValueList>
+												</Property>
+												<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Attenuation">
+													<ObjectRef Name="10" ID="{CD38D13E-1D7D-46FA-AD0C-C7D5F9690547}" WorkUnitID="{47D4E814-D669-4A08-8AD2-F706566546E0}"/>
+												</Reference>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{23AF77D7-3FEA-409B-8E44-F5B490014C61}"/>
+												</Reference>
+												<Reference Name="Effect0">
+													<Custom>
+														<Effect Name="Wwise Parametric EQ (Custom)" ID="{9CDC5247-92D0-4780-AB7F-07E51E4A97CE}" ShortID="105825784" PluginName="Wwise Parametric EQ" CompanyID="0" PluginID="105" PluginType="3">
+															<PropertyList>
+																<Property Name="FrequencyBand1" Type="Real32" Value="175"/>
+																<Property Name="FrequencyBand2" Type="Real32" Value="132"/>
+																<Property Name="FrequencyBand3" Type="Real32" Value="9397"/>
+																<Property Name="GainBand1" Type="Real32" Value="-1.5"/>
+																<Property Name="GainBand2" Type="Real32" Value="-5"/>
+																<Property Name="GainBand3" Type="Real32" Value="1.5"/>
+																<Property Name="QFactorBand2" Type="Real32" Value="1.5"/>
+															</PropertyList>
+														</Effect>
+													</Custom>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Rooms" ID="{F220833B-3FC1-4DC8-9CF3-6F367C8C1EDE}" WorkUnitID="{C91EB4C6-56DC-4541-96C4-29E948904D66}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="ScornedForUsing" ID="{D5F991F9-20DD-4106-B7B5-9256F94B5422}">
+													<Language>SFX</Language>
+													<AudioFile>ScornedForUsing.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="507273905"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<PositioningInfo>
+												<Position Name="" ID="{83393AB3-073B-42E3-9383-30DADC584A95}">
+													<ChildrenList>
+														<Path2D Name="VA_Mixer_Path" ID="{08C0D71A-ECE8-4338-A676-50A035808E8F}">
+															<PropertyList>
+																<Property Name="Duration" Type="Uint32" Value="20000"/>
+																<Property Name="RandomX" Type="Real64" Value="4"/>
+																<Property Name="RandomY" Type="Real64" Value="5"/>
+															</PropertyList>
+															<PointList>
+																<Point>
+																	<XPos>-2.03046</XPos>
+																	<YPos>5.9322</YPos>
+																	<ZPos>54</ZPos>
+																	<Flags>12</Flags>
+																	<Time>0</Time>
+																</Point>
+																<Point>
+																	<XPos>3.04569</XPos>
+																	<YPos>5.08475</YPos>
+																	<ZPos>54</ZPos>
+																	<Flags>0</Flags>
+																	<Time>20000</Time>
+																</Point>
+															</PointList>
+														</Path2D>
+													</ChildrenList>
+												</Position>
+											</PositioningInfo>
+											<ObjectLists/>
+											<ActiveSourceList>
+												<ActiveSource Name="ScornedForUsing" ID="{D5F991F9-20DD-4106-B7B5-9256F94B5422}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="ThisChurchIsOneOfTheLast" ID="{D99131FF-4938-4C64-9A3D-D0B5281F2365}" ShortID="492138420">
+											<PropertyList>
+												<Property Name="3DPosition" Type="int16" Value="1"/>
+												<Property Name="3DSpatialization" Type="int16" Value="2"/>
+												<Property Name="OutputBusVolume" Type="Real64">
+													<ValueList>
+														<Value>3</Value>
+													</ValueList>
+												</Property>
+												<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Attenuation">
+													<ObjectRef Name="10" ID="{CD38D13E-1D7D-46FA-AD0C-C7D5F9690547}" WorkUnitID="{47D4E814-D669-4A08-8AD2-F706566546E0}"/>
+												</Reference>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{23AF77D7-3FEA-409B-8E44-F5B490014C61}"/>
+												</Reference>
+												<Reference Name="Effect0">
+													<Custom>
+														<Effect Name="Wwise Parametric EQ (Custom)" ID="{728EAEDC-1413-4FF2-9AD8-904CE4EAF400}" ShortID="498967588" PluginName="Wwise Parametric EQ" CompanyID="0" PluginID="105" PluginType="3">
+															<PropertyList>
+																<Property Name="FrequencyBand1" Type="Real32" Value="175"/>
+																<Property Name="FrequencyBand2" Type="Real32" Value="132"/>
+																<Property Name="FrequencyBand3" Type="Real32" Value="9397"/>
+																<Property Name="GainBand1" Type="Real32" Value="-1.5"/>
+																<Property Name="GainBand2" Type="Real32" Value="-5"/>
+																<Property Name="GainBand3" Type="Real32" Value="1.5"/>
+																<Property Name="QFactorBand2" Type="Real32" Value="1.5"/>
+															</PropertyList>
+														</Effect>
+													</Custom>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Rooms" ID="{F220833B-3FC1-4DC8-9CF3-6F367C8C1EDE}" WorkUnitID="{C91EB4C6-56DC-4541-96C4-29E948904D66}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="ThisChurchIsOneOfTheLast" ID="{C870A0F7-FD94-4F93-9CEF-5CE0B9A14681}">
+													<Language>SFX</Language>
+													<AudioFile>ThisChurchIsOneOfTheLast.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="998215553"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<PositioningInfo>
+												<Position Name="" ID="{04AEE10E-7A46-4151-AB60-1F502C4337AB}">
+													<ChildrenList>
+														<Path2D Name="VA_Mixer_Path" ID="{EB5255A8-3448-4CB6-AC57-789FD30CB0DD}">
+															<PropertyList>
+																<Property Name="Duration" Type="Uint32" Value="20000"/>
+																<Property Name="RandomX" Type="Real64" Value="4"/>
+																<Property Name="RandomY" Type="Real64" Value="5"/>
+															</PropertyList>
+															<PointList>
+																<Point>
+																	<XPos>-2.03046</XPos>
+																	<YPos>5.9322</YPos>
+																	<ZPos>54</ZPos>
+																	<Flags>12</Flags>
+																	<Time>0</Time>
+																</Point>
+																<Point>
+																	<XPos>3.04569</XPos>
+																	<YPos>5.08475</YPos>
+																	<ZPos>54</ZPos>
+																	<Flags>0</Flags>
+																	<Time>20000</Time>
+																</Point>
+															</PointList>
+														</Path2D>
+													</ChildrenList>
+												</Position>
+											</PositioningInfo>
+											<ObjectLists/>
+											<ActiveSourceList>
+												<ActiveSource Name="ThisChurchIsOneOfTheLast" ID="{C870A0F7-FD94-4F93-9CEF-5CE0B9A14681}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+									</ChildrenList>
 									<PositioningInfo>
 										<Position Name="" ID="{5E6B4EF1-E7DB-4ABD-B10C-703A4BC82C79}">
 											<ChildrenList>
@@ -2180,6 +2422,1292 @@
 															<ZPos>55</ZPos>
 															<Flags>12</Flags>
 															<Time>0</Time>
+														</Point>
+													</PointList>
+												</Path2D>
+											</ChildrenList>
+										</Position>
+									</PositioningInfo>
+									<ObjectLists/>
+								</RandomSequenceContainer>
+								<Sound Name="BeforeDepartiingOurFaather" ID="{E2D4187F-435C-447A-AFDF-076174091AC9}" ShortID="717880278">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{23AF77D7-3FEA-409B-8E44-F5B490014C61}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C91EB4C6-56DC-4541-96C4-29E948904D66}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="BeforeDepartiingOurFaather" ID="{08A0A10E-31AF-4B38-9935-AC4E16E7E7CB}">
+											<Language>SFX</Language>
+											<AudioFile>BeforeDepartiingOurFaather.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="772620925"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ObjectLists/>
+									<ActiveSourceList>
+										<ActiveSource Name="BeforeDepartiingOurFaather" ID="{08A0A10E-31AF-4B38-9935-AC4E16E7E7CB}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="LetTheLightGuideThyWay_Grimly" ID="{50930A12-76CC-4CFD-8FF8-0DA22D12632A}" ShortID="397553464">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{23AF77D7-3FEA-409B-8E44-F5B490014C61}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C91EB4C6-56DC-4541-96C4-29E948904D66}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="intro" ID="{E449AEB6-8CDB-4EB5-8D3D-1F03ACFE4831}">
+											<Language>SFX</Language>
+											<AudioFile>intro.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="783980927"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ObjectLists/>
+									<ActiveSourceList>
+										<ActiveSource Name="intro" ID="{E449AEB6-8CDB-4EB5-8D3D-1F03ACFE4831}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<RandomSequenceContainer Name="ClerkTaunt" ID="{0EDCDA8B-20C8-4283-9C3B-936BCE30B707}" ShortID="453024474">
+									<PropertyList>
+										<Property Name="RandomOrSequence" Type="int16" Value="0"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{23AF77D7-3FEA-409B-8E44-F5B490014C61}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C91EB4C6-56DC-4541-96C4-29E948904D66}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<Sound Name="DidYouNotHaveMirrorsThatNeed" ID="{099C1253-A983-4005-BED0-10EB2908C918}" ShortID="1035023050">
+											<PropertyList>
+												<Property Name="3DPosition" Type="int16" Value="1"/>
+												<Property Name="3DSpatialization" Type="int16" Value="2"/>
+												<Property Name="OutputBusVolume" Type="Real64">
+													<ValueList>
+														<Value>3</Value>
+													</ValueList>
+												</Property>
+												<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Attenuation">
+													<ObjectRef Name="10" ID="{CD38D13E-1D7D-46FA-AD0C-C7D5F9690547}" WorkUnitID="{47D4E814-D669-4A08-8AD2-F706566546E0}"/>
+												</Reference>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{23AF77D7-3FEA-409B-8E44-F5B490014C61}"/>
+												</Reference>
+												<Reference Name="Effect0">
+													<Custom>
+														<Effect Name="Wwise Parametric EQ (Custom)" ID="{404F4824-4F2D-4084-9EF0-E7CA5A759145}" ShortID="438656973" PluginName="Wwise Parametric EQ" CompanyID="0" PluginID="105" PluginType="3">
+															<PropertyList>
+																<Property Name="FrequencyBand1" Type="Real32" Value="175"/>
+																<Property Name="FrequencyBand2" Type="Real32" Value="132"/>
+																<Property Name="FrequencyBand3" Type="Real32" Value="9397"/>
+																<Property Name="GainBand1" Type="Real32" Value="-1.5"/>
+																<Property Name="GainBand2" Type="Real32" Value="-5"/>
+																<Property Name="GainBand3" Type="Real32" Value="1.5"/>
+																<Property Name="QFactorBand2" Type="Real32" Value="1.5"/>
+															</PropertyList>
+														</Effect>
+													</Custom>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Rooms" ID="{F220833B-3FC1-4DC8-9CF3-6F367C8C1EDE}" WorkUnitID="{C91EB4C6-56DC-4541-96C4-29E948904D66}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="DidYouNotHaveMirrorsThatNeed" ID="{613CDD81-C6A3-4AC6-B633-C24C6C06699B}">
+													<Language>SFX</Language>
+													<AudioFile>DidYouNotHaveMirrorsThatNeed.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="928382123"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<PositioningInfo>
+												<Position Name="" ID="{7955C513-C4AD-4DEA-975C-BA97A4C1189C}">
+													<ChildrenList>
+														<Path2D Name="VA_Mixer_Path" ID="{406460E1-488B-40D2-B1A9-108C8678E1CE}">
+															<PropertyList>
+																<Property Name="Duration" Type="Uint32" Value="20000"/>
+																<Property Name="RandomX" Type="Real64" Value="4"/>
+																<Property Name="RandomY" Type="Real64" Value="5"/>
+															</PropertyList>
+															<PointList>
+																<Point>
+																	<XPos>-2.03046</XPos>
+																	<YPos>5.9322</YPos>
+																	<ZPos>54</ZPos>
+																	<Flags>12</Flags>
+																	<Time>0</Time>
+																</Point>
+																<Point>
+																	<XPos>3.04569</XPos>
+																	<YPos>5.08475</YPos>
+																	<ZPos>54</ZPos>
+																	<Flags>0</Flags>
+																	<Time>20000</Time>
+																</Point>
+															</PointList>
+														</Path2D>
+													</ChildrenList>
+												</Position>
+											</PositioningInfo>
+											<ObjectLists/>
+											<ActiveSourceList>
+												<ActiveSource Name="DidYouNotHaveMirrorsThatNeed" ID="{613CDD81-C6A3-4AC6-B633-C24C6C06699B}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="ThourLookingInQuiteTerrible" ID="{D2138000-AC39-4FEC-BF0C-0A945E83435C}" ShortID="822777444">
+											<PropertyList>
+												<Property Name="3DPosition" Type="int16" Value="1"/>
+												<Property Name="3DSpatialization" Type="int16" Value="2"/>
+												<Property Name="OutputBusVolume" Type="Real64">
+													<ValueList>
+														<Value>3</Value>
+													</ValueList>
+												</Property>
+												<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Attenuation">
+													<ObjectRef Name="10" ID="{CD38D13E-1D7D-46FA-AD0C-C7D5F9690547}" WorkUnitID="{47D4E814-D669-4A08-8AD2-F706566546E0}"/>
+												</Reference>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{23AF77D7-3FEA-409B-8E44-F5B490014C61}"/>
+												</Reference>
+												<Reference Name="Effect0">
+													<Custom>
+														<Effect Name="Wwise Parametric EQ (Custom)" ID="{50AC8E58-5793-44D7-9538-633E522A1575}" ShortID="592587037" PluginName="Wwise Parametric EQ" CompanyID="0" PluginID="105" PluginType="3">
+															<PropertyList>
+																<Property Name="FrequencyBand1" Type="Real32" Value="175"/>
+																<Property Name="FrequencyBand2" Type="Real32" Value="132"/>
+																<Property Name="FrequencyBand3" Type="Real32" Value="9397"/>
+																<Property Name="GainBand1" Type="Real32" Value="-1.5"/>
+																<Property Name="GainBand2" Type="Real32" Value="-5"/>
+																<Property Name="GainBand3" Type="Real32" Value="1.5"/>
+																<Property Name="QFactorBand2" Type="Real32" Value="1.5"/>
+															</PropertyList>
+														</Effect>
+													</Custom>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Rooms" ID="{F220833B-3FC1-4DC8-9CF3-6F367C8C1EDE}" WorkUnitID="{C91EB4C6-56DC-4541-96C4-29E948904D66}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="ThourLookingInQuiteTerrible" ID="{13DB3F41-FDE9-43F1-8E0B-9C90EBB2D12E}">
+													<Language>SFX</Language>
+													<AudioFile>ThourLookingInQuiteTerrible.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="875559848"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<PositioningInfo>
+												<Position Name="" ID="{C410F8C5-8E1A-4D9E-BCD5-656C1DC0D813}">
+													<ChildrenList>
+														<Path2D Name="VA_Mixer_Path" ID="{7598F940-AA5F-408E-8161-5E8A5D5A80D8}">
+															<PropertyList>
+																<Property Name="Duration" Type="Uint32" Value="20000"/>
+																<Property Name="RandomX" Type="Real64" Value="4"/>
+																<Property Name="RandomY" Type="Real64" Value="5"/>
+															</PropertyList>
+															<PointList>
+																<Point>
+																	<XPos>-2.03046</XPos>
+																	<YPos>5.9322</YPos>
+																	<ZPos>54</ZPos>
+																	<Flags>12</Flags>
+																	<Time>0</Time>
+																</Point>
+																<Point>
+																	<XPos>3.04569</XPos>
+																	<YPos>5.08475</YPos>
+																	<ZPos>54</ZPos>
+																	<Flags>0</Flags>
+																	<Time>20000</Time>
+																</Point>
+															</PointList>
+														</Path2D>
+													</ChildrenList>
+												</Position>
+											</PositioningInfo>
+											<ObjectLists/>
+											<ActiveSourceList>
+												<ActiveSource Name="ThourLookingInQuiteTerrible" ID="{13DB3F41-FDE9-43F1-8E0B-9C90EBB2D12E}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+									</ChildrenList>
+									<ObjectLists/>
+									<Playlist>
+										<ItemRef Name="DidYouNotHaveMirrorsThatNeed" ID="{099C1253-A983-4005-BED0-10EB2908C918}"/>
+										<ItemRef Name="ThourLookingInQuiteTerrible" ID="{D2138000-AC39-4FEC-BF0C-0A945E83435C}"/>
+									</Playlist>
+								</RandomSequenceContainer>
+								<RandomSequenceContainer Name="Clerk_4thEncounter" ID="{4ACD829C-CF64-468E-83F5-F860958C6674}" ShortID="905436881">
+									<PropertyList>
+										<Property Name="3DPosition" Type="int16" Value="1"/>
+										<Property Name="3DSpatialization" Type="int16" Value="2"/>
+										<Property Name="OutputBusVolume" Type="Real64">
+											<ValueList>
+												<Value>3</Value>
+											</ValueList>
+										</Property>
+										<Property Name="RandomOrSequence" Type="int16" Value="0"/>
+										<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Attenuation">
+											<ObjectRef Name="10" ID="{CD38D13E-1D7D-46FA-AD0C-C7D5F9690547}" WorkUnitID="{47D4E814-D669-4A08-8AD2-F706566546E0}"/>
+										</Reference>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{23AF77D7-3FEA-409B-8E44-F5B490014C61}"/>
+										</Reference>
+										<Reference Name="Effect0">
+											<Custom>
+												<Effect Name="Wwise Parametric EQ (Custom)" ID="{D983B471-F287-4D80-AC31-01A06BB9CBEE}" ShortID="143246104" PluginName="Wwise Parametric EQ" CompanyID="0" PluginID="105" PluginType="3">
+													<PropertyList>
+														<Property Name="FrequencyBand1" Type="Real32" Value="175"/>
+														<Property Name="FrequencyBand2" Type="Real32" Value="132"/>
+														<Property Name="FrequencyBand3" Type="Real32" Value="9397"/>
+														<Property Name="GainBand1" Type="Real32" Value="-1.5"/>
+														<Property Name="GainBand2" Type="Real32" Value="-5"/>
+														<Property Name="GainBand3" Type="Real32" Value="1.5"/>
+														<Property Name="QFactorBand2" Type="Real32" Value="1.5"/>
+													</PropertyList>
+												</Effect>
+											</Custom>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Rooms" ID="{F220833B-3FC1-4DC8-9CF3-6F367C8C1EDE}" WorkUnitID="{C91EB4C6-56DC-4541-96C4-29E948904D66}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<Sound Name="FOLLOWTHELIGHT" ID="{E204D980-CF6C-4EE9-B1F2-528548ADB8AC}" ShortID="10455">
+											<PropertyList>
+												<Property Name="3DPosition" Type="int16" Value="1"/>
+												<Property Name="3DSpatialization" Type="int16" Value="2"/>
+												<Property Name="OutputBusVolume" Type="Real64">
+													<ValueList>
+														<Value>3</Value>
+													</ValueList>
+												</Property>
+												<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Attenuation">
+													<ObjectRef Name="10" ID="{CD38D13E-1D7D-46FA-AD0C-C7D5F9690547}" WorkUnitID="{47D4E814-D669-4A08-8AD2-F706566546E0}"/>
+												</Reference>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{23AF77D7-3FEA-409B-8E44-F5B490014C61}"/>
+												</Reference>
+												<Reference Name="Effect0">
+													<Custom>
+														<Effect Name="Wwise Parametric EQ (Custom)" ID="{8A694EE9-8896-4DF5-93D2-E0353779A7B8}" ShortID="137390821" PluginName="Wwise Parametric EQ" CompanyID="0" PluginID="105" PluginType="3">
+															<PropertyList>
+																<Property Name="FrequencyBand1" Type="Real32" Value="175"/>
+																<Property Name="FrequencyBand2" Type="Real32" Value="132"/>
+																<Property Name="FrequencyBand3" Type="Real32" Value="9397"/>
+																<Property Name="GainBand1" Type="Real32" Value="-1.5"/>
+																<Property Name="GainBand2" Type="Real32" Value="-5"/>
+																<Property Name="GainBand3" Type="Real32" Value="1.5"/>
+																<Property Name="QFactorBand2" Type="Real32" Value="1.5"/>
+															</PropertyList>
+														</Effect>
+													</Custom>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Rooms" ID="{F220833B-3FC1-4DC8-9CF3-6F367C8C1EDE}" WorkUnitID="{C91EB4C6-56DC-4541-96C4-29E948904D66}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="FOLLOWTHELIGHT" ID="{82FCB5E5-1DE4-4DA3-9854-B34DF12B92D2}">
+													<Language>SFX</Language>
+													<AudioFile>FOLLOWTHELIGHT.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="858874798"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<PositioningInfo>
+												<Position Name="" ID="{C13E6C1B-FA17-40AC-A691-DA4B97240424}">
+													<ChildrenList>
+														<Path2D Name="VA_Mixer_Path" ID="{3FE34BA0-27B9-4A51-BF40-61AB93716575}">
+															<PropertyList>
+																<Property Name="Duration" Type="Uint32" Value="20000"/>
+																<Property Name="RandomX" Type="Real64" Value="4"/>
+																<Property Name="RandomY" Type="Real64" Value="5"/>
+															</PropertyList>
+															<PointList>
+																<Point>
+																	<XPos>-2.03046</XPos>
+																	<YPos>5.9322</YPos>
+																	<ZPos>54</ZPos>
+																	<Flags>12</Flags>
+																	<Time>0</Time>
+																</Point>
+																<Point>
+																	<XPos>3.04569</XPos>
+																	<YPos>5.08475</YPos>
+																	<ZPos>54</ZPos>
+																	<Flags>0</Flags>
+																	<Time>20000</Time>
+																</Point>
+															</PointList>
+														</Path2D>
+													</ChildrenList>
+												</Position>
+											</PositioningInfo>
+											<ObjectLists/>
+											<ActiveSourceList>
+												<ActiveSource Name="FOLLOWTHELIGHT" ID="{82FCB5E5-1DE4-4DA3-9854-B34DF12B92D2}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+									</ChildrenList>
+									<PositioningInfo>
+										<Position Name="" ID="{10322FDA-6291-40BB-A220-11F1B382E70B}">
+											<ChildrenList>
+												<Path2D Name="VA_Mixer_Path" ID="{07A48C03-A0EB-41F4-8346-A5CA5ACA1BFE}">
+													<PropertyList>
+														<Property Name="Duration" Type="Uint32" Value="20000"/>
+														<Property Name="RandomX" Type="Real64" Value="4"/>
+														<Property Name="RandomY" Type="Real64" Value="5"/>
+													</PropertyList>
+													<PointList>
+														<Point>
+															<XPos>-2.03046</XPos>
+															<YPos>5.9322</YPos>
+															<ZPos>54</ZPos>
+															<Flags>12</Flags>
+															<Time>0</Time>
+														</Point>
+														<Point>
+															<XPos>3.04569</XPos>
+															<YPos>5.08475</YPos>
+															<ZPos>54</ZPos>
+															<Flags>0</Flags>
+															<Time>20000</Time>
+														</Point>
+													</PointList>
+												</Path2D>
+											</ChildrenList>
+										</Position>
+									</PositioningInfo>
+									<ObjectLists/>
+									<Playlist>
+										<ItemRef Name="FOLLOWTHELIGHT" ID="{E204D980-CF6C-4EE9-B1F2-528548ADB8AC}"/>
+									</Playlist>
+								</RandomSequenceContainer>
+								<RandomSequenceContainer Name="Clerk_4thEncounter_01" ID="{05135CD1-473D-4844-9871-EED7762EF23D}" ShortID="527808617">
+									<PropertyList>
+										<Property Name="3DPosition" Type="int16" Value="1"/>
+										<Property Name="3DSpatialization" Type="int16" Value="2"/>
+										<Property Name="OutputBusVolume" Type="Real64">
+											<ValueList>
+												<Value>3</Value>
+											</ValueList>
+										</Property>
+										<Property Name="RandomOrSequence" Type="int16" Value="0"/>
+										<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Attenuation">
+											<ObjectRef Name="10" ID="{CD38D13E-1D7D-46FA-AD0C-C7D5F9690547}" WorkUnitID="{47D4E814-D669-4A08-8AD2-F706566546E0}"/>
+										</Reference>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{23AF77D7-3FEA-409B-8E44-F5B490014C61}"/>
+										</Reference>
+										<Reference Name="Effect0">
+											<Custom>
+												<Effect Name="Wwise Parametric EQ (Custom)" ID="{2D8F710D-86E1-48A4-9FDF-9282D9AD6EE8}" ShortID="468375604" PluginName="Wwise Parametric EQ" CompanyID="0" PluginID="105" PluginType="3">
+													<PropertyList>
+														<Property Name="FrequencyBand1" Type="Real32" Value="175"/>
+														<Property Name="FrequencyBand2" Type="Real32" Value="132"/>
+														<Property Name="FrequencyBand3" Type="Real32" Value="9397"/>
+														<Property Name="GainBand1" Type="Real32" Value="-1.5"/>
+														<Property Name="GainBand2" Type="Real32" Value="-5"/>
+														<Property Name="GainBand3" Type="Real32" Value="1.5"/>
+														<Property Name="QFactorBand2" Type="Real32" Value="1.5"/>
+													</PropertyList>
+												</Effect>
+											</Custom>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Rooms" ID="{F220833B-3FC1-4DC8-9CF3-6F367C8C1EDE}" WorkUnitID="{C91EB4C6-56DC-4541-96C4-29E948904D66}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<Sound Name="OFaithfullChildren" ID="{C10CC85A-E8F6-41B6-A7B8-71016C075A10}" ShortID="492543855">
+											<PropertyList>
+												<Property Name="3DPosition" Type="int16" Value="1"/>
+												<Property Name="3DSpatialization" Type="int16" Value="2"/>
+												<Property Name="OutputBusVolume" Type="Real64">
+													<ValueList>
+														<Value>3</Value>
+													</ValueList>
+												</Property>
+												<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Attenuation">
+													<ObjectRef Name="10" ID="{CD38D13E-1D7D-46FA-AD0C-C7D5F9690547}" WorkUnitID="{47D4E814-D669-4A08-8AD2-F706566546E0}"/>
+												</Reference>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{23AF77D7-3FEA-409B-8E44-F5B490014C61}"/>
+												</Reference>
+												<Reference Name="Effect0">
+													<Custom>
+														<Effect Name="Wwise Parametric EQ (Custom)" ID="{DAB407BA-8C58-4703-8CEC-448593D9875C}" ShortID="439867817" PluginName="Wwise Parametric EQ" CompanyID="0" PluginID="105" PluginType="3">
+															<PropertyList>
+																<Property Name="FrequencyBand1" Type="Real32" Value="175"/>
+																<Property Name="FrequencyBand2" Type="Real32" Value="132"/>
+																<Property Name="FrequencyBand3" Type="Real32" Value="9397"/>
+																<Property Name="GainBand1" Type="Real32" Value="-1.5"/>
+																<Property Name="GainBand2" Type="Real32" Value="-5"/>
+																<Property Name="GainBand3" Type="Real32" Value="1.5"/>
+																<Property Name="QFactorBand2" Type="Real32" Value="1.5"/>
+															</PropertyList>
+														</Effect>
+													</Custom>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Rooms" ID="{F220833B-3FC1-4DC8-9CF3-6F367C8C1EDE}" WorkUnitID="{C91EB4C6-56DC-4541-96C4-29E948904D66}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="OFaithfullChildren" ID="{94A30D04-4F5E-417E-85CA-55873B625C0D}">
+													<Language>SFX</Language>
+													<AudioFile>OFaithfullChildren.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="59958060"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<PositioningInfo>
+												<Position Name="" ID="{F9A1011D-6C97-4EF3-8A4D-5CE148043720}">
+													<ChildrenList>
+														<Path2D Name="VA_Mixer_Path" ID="{60FF5099-5B06-4075-8E88-104BEA1D50C7}">
+															<PropertyList>
+																<Property Name="Duration" Type="Uint32" Value="20000"/>
+																<Property Name="RandomX" Type="Real64" Value="4"/>
+																<Property Name="RandomY" Type="Real64" Value="5"/>
+															</PropertyList>
+															<PointList>
+																<Point>
+																	<XPos>-2.03046</XPos>
+																	<YPos>5.9322</YPos>
+																	<ZPos>54</ZPos>
+																	<Flags>12</Flags>
+																	<Time>0</Time>
+																</Point>
+																<Point>
+																	<XPos>3.04569</XPos>
+																	<YPos>5.08475</YPos>
+																	<ZPos>54</ZPos>
+																	<Flags>0</Flags>
+																	<Time>20000</Time>
+																</Point>
+															</PointList>
+														</Path2D>
+													</ChildrenList>
+												</Position>
+											</PositioningInfo>
+											<ObjectLists/>
+											<ActiveSourceList>
+												<ActiveSource Name="OFaithfullChildren" ID="{94A30D04-4F5E-417E-85CA-55873B625C0D}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+									</ChildrenList>
+									<PositioningInfo>
+										<Position Name="" ID="{CFBDA8E2-9922-4F5B-B78D-D9E6F5DE0902}">
+											<ChildrenList>
+												<Path2D Name="VA_Mixer_Path" ID="{ED363C6F-B50D-4D7E-BAFF-A0328752DA62}">
+													<PropertyList>
+														<Property Name="Duration" Type="Uint32" Value="20000"/>
+														<Property Name="RandomX" Type="Real64" Value="4"/>
+														<Property Name="RandomY" Type="Real64" Value="5"/>
+													</PropertyList>
+													<PointList>
+														<Point>
+															<XPos>-2.03046</XPos>
+															<YPos>5.9322</YPos>
+															<ZPos>54</ZPos>
+															<Flags>12</Flags>
+															<Time>0</Time>
+														</Point>
+														<Point>
+															<XPos>3.04569</XPos>
+															<YPos>5.08475</YPos>
+															<ZPos>54</ZPos>
+															<Flags>0</Flags>
+															<Time>20000</Time>
+														</Point>
+													</PointList>
+												</Path2D>
+											</ChildrenList>
+										</Position>
+									</PositioningInfo>
+									<ObjectLists/>
+								</RandomSequenceContainer>
+								<RandomSequenceContainer Name="Clerk_4thEncounter_02" ID="{713A0C6C-863E-4C34-A1EC-578B746839A5}" ShortID="1019851063">
+									<PropertyList>
+										<Property Name="3DPosition" Type="int16" Value="1"/>
+										<Property Name="3DSpatialization" Type="int16" Value="2"/>
+										<Property Name="OutputBusVolume" Type="Real64">
+											<ValueList>
+												<Value>3</Value>
+											</ValueList>
+										</Property>
+										<Property Name="RandomOrSequence" Type="int16" Value="0"/>
+										<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Attenuation">
+											<ObjectRef Name="10" ID="{CD38D13E-1D7D-46FA-AD0C-C7D5F9690547}" WorkUnitID="{47D4E814-D669-4A08-8AD2-F706566546E0}"/>
+										</Reference>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{23AF77D7-3FEA-409B-8E44-F5B490014C61}"/>
+										</Reference>
+										<Reference Name="Effect0">
+											<Custom>
+												<Effect Name="Wwise Parametric EQ (Custom)" ID="{3FE39CCB-22C4-4FC6-A319-9FDDF1C0949A}" ShortID="849137790" PluginName="Wwise Parametric EQ" CompanyID="0" PluginID="105" PluginType="3">
+													<PropertyList>
+														<Property Name="FrequencyBand1" Type="Real32" Value="175"/>
+														<Property Name="FrequencyBand2" Type="Real32" Value="132"/>
+														<Property Name="FrequencyBand3" Type="Real32" Value="9397"/>
+														<Property Name="GainBand1" Type="Real32" Value="-1.5"/>
+														<Property Name="GainBand2" Type="Real32" Value="-5"/>
+														<Property Name="GainBand3" Type="Real32" Value="1.5"/>
+														<Property Name="QFactorBand2" Type="Real32" Value="1.5"/>
+													</PropertyList>
+												</Effect>
+											</Custom>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Rooms" ID="{F220833B-3FC1-4DC8-9CF3-6F367C8C1EDE}" WorkUnitID="{C91EB4C6-56DC-4541-96C4-29E948904D66}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<Sound Name="TheChurchISAlmostRestored" ID="{C048AD79-0AE6-4A35-88E5-B2C3A31167ED}" ShortID="241138033">
+											<PropertyList>
+												<Property Name="3DPosition" Type="int16" Value="1"/>
+												<Property Name="3DSpatialization" Type="int16" Value="2"/>
+												<Property Name="OutputBusVolume" Type="Real64">
+													<ValueList>
+														<Value>3</Value>
+													</ValueList>
+												</Property>
+												<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Attenuation">
+													<ObjectRef Name="10" ID="{CD38D13E-1D7D-46FA-AD0C-C7D5F9690547}" WorkUnitID="{47D4E814-D669-4A08-8AD2-F706566546E0}"/>
+												</Reference>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{23AF77D7-3FEA-409B-8E44-F5B490014C61}"/>
+												</Reference>
+												<Reference Name="Effect0">
+													<Custom>
+														<Effect Name="Wwise Parametric EQ (Custom)" ID="{1B1B5261-8DB3-4BBF-95FE-8B53F6FAFB2B}" ShortID="124386680" PluginName="Wwise Parametric EQ" CompanyID="0" PluginID="105" PluginType="3">
+															<PropertyList>
+																<Property Name="FrequencyBand1" Type="Real32" Value="175"/>
+																<Property Name="FrequencyBand2" Type="Real32" Value="132"/>
+																<Property Name="FrequencyBand3" Type="Real32" Value="9397"/>
+																<Property Name="GainBand1" Type="Real32" Value="-1.5"/>
+																<Property Name="GainBand2" Type="Real32" Value="-5"/>
+																<Property Name="GainBand3" Type="Real32" Value="1.5"/>
+																<Property Name="QFactorBand2" Type="Real32" Value="1.5"/>
+															</PropertyList>
+														</Effect>
+													</Custom>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Rooms" ID="{F220833B-3FC1-4DC8-9CF3-6F367C8C1EDE}" WorkUnitID="{C91EB4C6-56DC-4541-96C4-29E948904D66}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="TheChurchISAlmostRestored" ID="{041013CA-5D9B-4DE7-B934-6D3B7D4F76E0}">
+													<Language>SFX</Language>
+													<AudioFile>TheChurchISAlmostRestored.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="182582057"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<PositioningInfo>
+												<Position Name="" ID="{7960F96C-F0E8-4233-AAEA-5A7EDBA5AB49}">
+													<ChildrenList>
+														<Path2D Name="VA_Mixer_Path" ID="{D571AA95-0FE0-4853-AC5F-1A0C20872131}">
+															<PropertyList>
+																<Property Name="Duration" Type="Uint32" Value="20000"/>
+																<Property Name="RandomX" Type="Real64" Value="4"/>
+																<Property Name="RandomY" Type="Real64" Value="5"/>
+															</PropertyList>
+															<PointList>
+																<Point>
+																	<XPos>-2.03046</XPos>
+																	<YPos>5.9322</YPos>
+																	<ZPos>54</ZPos>
+																	<Flags>12</Flags>
+																	<Time>0</Time>
+																</Point>
+																<Point>
+																	<XPos>3.04569</XPos>
+																	<YPos>5.08475</YPos>
+																	<ZPos>54</ZPos>
+																	<Flags>0</Flags>
+																	<Time>20000</Time>
+																</Point>
+															</PointList>
+														</Path2D>
+													</ChildrenList>
+												</Position>
+											</PositioningInfo>
+											<ObjectLists/>
+											<ActiveSourceList>
+												<ActiveSource Name="TheChurchISAlmostRestored" ID="{041013CA-5D9B-4DE7-B934-6D3B7D4F76E0}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+									</ChildrenList>
+									<PositioningInfo>
+										<Position Name="" ID="{2DEBFFE0-1CE3-4011-8383-2BBDAE0AF363}">
+											<ChildrenList>
+												<Path2D Name="VA_Mixer_Path" ID="{356CD121-3502-40BF-AC21-E5FE0B578EF3}">
+													<PropertyList>
+														<Property Name="Duration" Type="Uint32" Value="20000"/>
+														<Property Name="RandomX" Type="Real64" Value="4"/>
+														<Property Name="RandomY" Type="Real64" Value="5"/>
+													</PropertyList>
+													<PointList>
+														<Point>
+															<XPos>-2.03046</XPos>
+															<YPos>5.9322</YPos>
+															<ZPos>54</ZPos>
+															<Flags>12</Flags>
+															<Time>0</Time>
+														</Point>
+														<Point>
+															<XPos>3.04569</XPos>
+															<YPos>5.08475</YPos>
+															<ZPos>54</ZPos>
+															<Flags>0</Flags>
+															<Time>20000</Time>
+														</Point>
+													</PointList>
+												</Path2D>
+											</ChildrenList>
+										</Position>
+									</PositioningInfo>
+									<ObjectLists/>
+								</RandomSequenceContainer>
+								<RandomSequenceContainer Name="Clerk_4thEncounter_03" ID="{401FCD07-F075-4FB2-A4A8-0A0EADFDA920}" ShortID="167599859">
+									<PropertyList>
+										<Property Name="3DPosition" Type="int16" Value="1"/>
+										<Property Name="3DSpatialization" Type="int16" Value="2"/>
+										<Property Name="OutputBusVolume" Type="Real64">
+											<ValueList>
+												<Value>3</Value>
+											</ValueList>
+										</Property>
+										<Property Name="RandomOrSequence" Type="int16" Value="0"/>
+										<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Attenuation">
+											<ObjectRef Name="10" ID="{CD38D13E-1D7D-46FA-AD0C-C7D5F9690547}" WorkUnitID="{47D4E814-D669-4A08-8AD2-F706566546E0}"/>
+										</Reference>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{23AF77D7-3FEA-409B-8E44-F5B490014C61}"/>
+										</Reference>
+										<Reference Name="Effect0">
+											<Custom>
+												<Effect Name="Wwise Parametric EQ (Custom)" ID="{0A824E6C-99CC-43F4-BB62-FFF713A9D394}" ShortID="393570143" PluginName="Wwise Parametric EQ" CompanyID="0" PluginID="105" PluginType="3">
+													<PropertyList>
+														<Property Name="FrequencyBand1" Type="Real32" Value="175"/>
+														<Property Name="FrequencyBand2" Type="Real32" Value="132"/>
+														<Property Name="FrequencyBand3" Type="Real32" Value="9397"/>
+														<Property Name="GainBand1" Type="Real32" Value="-1.5"/>
+														<Property Name="GainBand2" Type="Real32" Value="-5"/>
+														<Property Name="GainBand3" Type="Real32" Value="1.5"/>
+														<Property Name="QFactorBand2" Type="Real32" Value="1.5"/>
+													</PropertyList>
+												</Effect>
+											</Custom>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Rooms" ID="{F220833B-3FC1-4DC8-9CF3-6F367C8C1EDE}" WorkUnitID="{C91EB4C6-56DC-4541-96C4-29E948904D66}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<Sound Name="YesTheLightGrowsStronger" ID="{56F6D062-BB09-4A28-8406-D231AFCF3C66}" ShortID="516377222">
+											<PropertyList>
+												<Property Name="3DPosition" Type="int16" Value="1"/>
+												<Property Name="3DSpatialization" Type="int16" Value="2"/>
+												<Property Name="OutputBusVolume" Type="Real64">
+													<ValueList>
+														<Value>3</Value>
+													</ValueList>
+												</Property>
+												<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Attenuation">
+													<ObjectRef Name="10" ID="{CD38D13E-1D7D-46FA-AD0C-C7D5F9690547}" WorkUnitID="{47D4E814-D669-4A08-8AD2-F706566546E0}"/>
+												</Reference>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{23AF77D7-3FEA-409B-8E44-F5B490014C61}"/>
+												</Reference>
+												<Reference Name="Effect0">
+													<Custom>
+														<Effect Name="Wwise Parametric EQ (Custom)" ID="{3B59C5B7-9F92-468C-B97C-56DFF03B7601}" ShortID="682829667" PluginName="Wwise Parametric EQ" CompanyID="0" PluginID="105" PluginType="3">
+															<PropertyList>
+																<Property Name="FrequencyBand1" Type="Real32" Value="175"/>
+																<Property Name="FrequencyBand2" Type="Real32" Value="132"/>
+																<Property Name="FrequencyBand3" Type="Real32" Value="9397"/>
+																<Property Name="GainBand1" Type="Real32" Value="-1.5"/>
+																<Property Name="GainBand2" Type="Real32" Value="-5"/>
+																<Property Name="GainBand3" Type="Real32" Value="1.5"/>
+																<Property Name="QFactorBand2" Type="Real32" Value="1.5"/>
+															</PropertyList>
+														</Effect>
+													</Custom>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Rooms" ID="{F220833B-3FC1-4DC8-9CF3-6F367C8C1EDE}" WorkUnitID="{C91EB4C6-56DC-4541-96C4-29E948904D66}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="YesTheLightGrowsStronger" ID="{5157A2DD-0E23-4262-B3A7-0F90A4EE3E73}">
+													<Language>SFX</Language>
+													<AudioFile>YesTheLightGrowsStronger.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="340459899"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<PositioningInfo>
+												<Position Name="" ID="{F24322B0-F2A6-4327-863F-6E1F4C624EE0}">
+													<ChildrenList>
+														<Path2D Name="VA_Mixer_Path" ID="{E8975C3C-008A-4C17-A669-5DDC6EA25D91}">
+															<PropertyList>
+																<Property Name="Duration" Type="Uint32" Value="20000"/>
+																<Property Name="RandomX" Type="Real64" Value="4"/>
+																<Property Name="RandomY" Type="Real64" Value="5"/>
+															</PropertyList>
+															<PointList>
+																<Point>
+																	<XPos>-2.03046</XPos>
+																	<YPos>5.9322</YPos>
+																	<ZPos>54</ZPos>
+																	<Flags>12</Flags>
+																	<Time>0</Time>
+																</Point>
+																<Point>
+																	<XPos>3.04569</XPos>
+																	<YPos>5.08475</YPos>
+																	<ZPos>54</ZPos>
+																	<Flags>0</Flags>
+																	<Time>20000</Time>
+																</Point>
+															</PointList>
+														</Path2D>
+													</ChildrenList>
+												</Position>
+											</PositioningInfo>
+											<ObjectLists/>
+											<ActiveSourceList>
+												<ActiveSource Name="YesTheLightGrowsStronger" ID="{5157A2DD-0E23-4262-B3A7-0F90A4EE3E73}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+									</ChildrenList>
+									<PositioningInfo>
+										<Position Name="" ID="{75D58507-368D-461A-AB9D-0D988C0AA711}">
+											<ChildrenList>
+												<Path2D Name="VA_Mixer_Path" ID="{D2B683B0-F901-440C-847B-6F98989E1009}">
+													<PropertyList>
+														<Property Name="Duration" Type="Uint32" Value="20000"/>
+														<Property Name="RandomX" Type="Real64" Value="4"/>
+														<Property Name="RandomY" Type="Real64" Value="5"/>
+													</PropertyList>
+													<PointList>
+														<Point>
+															<XPos>-2.03046</XPos>
+															<YPos>5.9322</YPos>
+															<ZPos>54</ZPos>
+															<Flags>12</Flags>
+															<Time>0</Time>
+														</Point>
+														<Point>
+															<XPos>3.04569</XPos>
+															<YPos>5.08475</YPos>
+															<ZPos>54</ZPos>
+															<Flags>0</Flags>
+															<Time>20000</Time>
+														</Point>
+													</PointList>
+												</Path2D>
+											</ChildrenList>
+										</Position>
+									</PositioningInfo>
+									<ObjectLists/>
+								</RandomSequenceContainer>
+								<RandomSequenceContainer Name="Clerk_4thEncounter_04" ID="{49D44F4B-E611-40D4-9076-4E43B2B4D4CB}" ShortID="1011730709">
+									<PropertyList>
+										<Property Name="3DPosition" Type="int16" Value="1"/>
+										<Property Name="3DSpatialization" Type="int16" Value="2"/>
+										<Property Name="OutputBusVolume" Type="Real64">
+											<ValueList>
+												<Value>3</Value>
+											</ValueList>
+										</Property>
+										<Property Name="RandomOrSequence" Type="int16" Value="0"/>
+										<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Attenuation">
+											<ObjectRef Name="10" ID="{CD38D13E-1D7D-46FA-AD0C-C7D5F9690547}" WorkUnitID="{47D4E814-D669-4A08-8AD2-F706566546E0}"/>
+										</Reference>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{23AF77D7-3FEA-409B-8E44-F5B490014C61}"/>
+										</Reference>
+										<Reference Name="Effect0">
+											<Custom>
+												<Effect Name="Wwise Parametric EQ (Custom)" ID="{9C3D4E81-6E6E-42D7-95AC-C80706747D1B}" ShortID="744918710" PluginName="Wwise Parametric EQ" CompanyID="0" PluginID="105" PluginType="3">
+													<PropertyList>
+														<Property Name="FrequencyBand1" Type="Real32" Value="175"/>
+														<Property Name="FrequencyBand2" Type="Real32" Value="132"/>
+														<Property Name="FrequencyBand3" Type="Real32" Value="9397"/>
+														<Property Name="GainBand1" Type="Real32" Value="-1.5"/>
+														<Property Name="GainBand2" Type="Real32" Value="-5"/>
+														<Property Name="GainBand3" Type="Real32" Value="1.5"/>
+														<Property Name="QFactorBand2" Type="Real32" Value="1.5"/>
+													</PropertyList>
+												</Effect>
+											</Custom>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Rooms" ID="{F220833B-3FC1-4DC8-9CF3-6F367C8C1EDE}" WorkUnitID="{C91EB4C6-56DC-4541-96C4-29E948904D66}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<Sound Name="StepIntoTheLight" ID="{82B6DBDC-870E-4820-A86E-89A5945B8995}" ShortID="229530699">
+											<PropertyList>
+												<Property Name="3DPosition" Type="int16" Value="1"/>
+												<Property Name="3DSpatialization" Type="int16" Value="2"/>
+												<Property Name="OutputBusVolume" Type="Real64">
+													<ValueList>
+														<Value>3</Value>
+													</ValueList>
+												</Property>
+												<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Attenuation">
+													<ObjectRef Name="10" ID="{CD38D13E-1D7D-46FA-AD0C-C7D5F9690547}" WorkUnitID="{47D4E814-D669-4A08-8AD2-F706566546E0}"/>
+												</Reference>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{23AF77D7-3FEA-409B-8E44-F5B490014C61}"/>
+												</Reference>
+												<Reference Name="Effect0">
+													<Custom>
+														<Effect Name="Wwise Parametric EQ (Custom)" ID="{3A41BEEE-C64E-4A3E-BA61-B49FE5C33B42}" ShortID="351822303" PluginName="Wwise Parametric EQ" CompanyID="0" PluginID="105" PluginType="3">
+															<PropertyList>
+																<Property Name="FrequencyBand1" Type="Real32" Value="175"/>
+																<Property Name="FrequencyBand2" Type="Real32" Value="132"/>
+																<Property Name="FrequencyBand3" Type="Real32" Value="9397"/>
+																<Property Name="GainBand1" Type="Real32" Value="-1.5"/>
+																<Property Name="GainBand2" Type="Real32" Value="-5"/>
+																<Property Name="GainBand3" Type="Real32" Value="1.5"/>
+																<Property Name="QFactorBand2" Type="Real32" Value="1.5"/>
+															</PropertyList>
+														</Effect>
+													</Custom>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Rooms" ID="{F220833B-3FC1-4DC8-9CF3-6F367C8C1EDE}" WorkUnitID="{C91EB4C6-56DC-4541-96C4-29E948904D66}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="StepIntoTheLight" ID="{31535139-CB16-4B1E-B8E1-4F70043DD494}">
+													<Language>SFX</Language>
+													<AudioFile>StepIntoTheLight.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="829065497"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<PositioningInfo>
+												<Position Name="" ID="{F36A1220-5732-4255-AF08-84F121DE971C}">
+													<ChildrenList>
+														<Path2D Name="VA_Mixer_Path" ID="{360CC98C-976B-49C7-B714-CD11422C58DF}">
+															<PropertyList>
+																<Property Name="Duration" Type="Uint32" Value="20000"/>
+																<Property Name="RandomX" Type="Real64" Value="4"/>
+																<Property Name="RandomY" Type="Real64" Value="5"/>
+															</PropertyList>
+															<PointList>
+																<Point>
+																	<XPos>-2.03046</XPos>
+																	<YPos>5.9322</YPos>
+																	<ZPos>54</ZPos>
+																	<Flags>12</Flags>
+																	<Time>0</Time>
+																</Point>
+																<Point>
+																	<XPos>3.04569</XPos>
+																	<YPos>5.08475</YPos>
+																	<ZPos>54</ZPos>
+																	<Flags>0</Flags>
+																	<Time>20000</Time>
+																</Point>
+															</PointList>
+														</Path2D>
+													</ChildrenList>
+												</Position>
+											</PositioningInfo>
+											<ObjectLists/>
+											<ActiveSourceList>
+												<ActiveSource Name="StepIntoTheLight" ID="{31535139-CB16-4B1E-B8E1-4F70043DD494}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+									</ChildrenList>
+									<PositioningInfo>
+										<Position Name="" ID="{90CA76C3-306F-4999-89EA-55D3E6E0DE19}">
+											<ChildrenList>
+												<Path2D Name="VA_Mixer_Path" ID="{F1B08BEC-DB2D-4622-AF1A-91EE3423DB14}">
+													<PropertyList>
+														<Property Name="Duration" Type="Uint32" Value="20000"/>
+														<Property Name="RandomX" Type="Real64" Value="4"/>
+														<Property Name="RandomY" Type="Real64" Value="5"/>
+													</PropertyList>
+													<PointList>
+														<Point>
+															<XPos>-2.03046</XPos>
+															<YPos>5.9322</YPos>
+															<ZPos>54</ZPos>
+															<Flags>12</Flags>
+															<Time>0</Time>
+														</Point>
+														<Point>
+															<XPos>3.04569</XPos>
+															<YPos>5.08475</YPos>
+															<ZPos>54</ZPos>
+															<Flags>0</Flags>
+															<Time>20000</Time>
+														</Point>
+													</PointList>
+												</Path2D>
+											</ChildrenList>
+										</Position>
+									</PositioningInfo>
+									<ObjectLists/>
+								</RandomSequenceContainer>
+								<RandomSequenceContainer Name="Clerk_4thEncounter_05" ID="{2B040FFE-007A-4BA8-8403-0313124D9D23}" ShortID="508914967">
+									<PropertyList>
+										<Property Name="3DPosition" Type="int16" Value="1"/>
+										<Property Name="3DSpatialization" Type="int16" Value="2"/>
+										<Property Name="OutputBusVolume" Type="Real64">
+											<ValueList>
+												<Value>3</Value>
+											</ValueList>
+										</Property>
+										<Property Name="RandomOrSequence" Type="int16" Value="0"/>
+										<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Attenuation">
+											<ObjectRef Name="10" ID="{CD38D13E-1D7D-46FA-AD0C-C7D5F9690547}" WorkUnitID="{47D4E814-D669-4A08-8AD2-F706566546E0}"/>
+										</Reference>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{23AF77D7-3FEA-409B-8E44-F5B490014C61}"/>
+										</Reference>
+										<Reference Name="Effect0">
+											<Custom>
+												<Effect Name="Wwise Parametric EQ (Custom)" ID="{852C31A4-B506-43A0-9727-92727DE455CC}" ShortID="380755097" PluginName="Wwise Parametric EQ" CompanyID="0" PluginID="105" PluginType="3">
+													<PropertyList>
+														<Property Name="FrequencyBand1" Type="Real32" Value="175"/>
+														<Property Name="FrequencyBand2" Type="Real32" Value="132"/>
+														<Property Name="FrequencyBand3" Type="Real32" Value="9397"/>
+														<Property Name="GainBand1" Type="Real32" Value="-1.5"/>
+														<Property Name="GainBand2" Type="Real32" Value="-5"/>
+														<Property Name="GainBand3" Type="Real32" Value="1.5"/>
+														<Property Name="QFactorBand2" Type="Real32" Value="1.5"/>
+													</PropertyList>
+												</Effect>
+											</Custom>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Rooms" ID="{F220833B-3FC1-4DC8-9CF3-6F367C8C1EDE}" WorkUnitID="{C91EB4C6-56DC-4541-96C4-29E948904D66}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<Sound Name="TheHighPriestwouldBeProud" ID="{B7CFD255-EB0F-4BA3-BFD9-4402637D1E96}" ShortID="343399922">
+											<PropertyList>
+												<Property Name="3DPosition" Type="int16" Value="1"/>
+												<Property Name="3DSpatialization" Type="int16" Value="2"/>
+												<Property Name="OutputBusVolume" Type="Real64">
+													<ValueList>
+														<Value>3</Value>
+													</ValueList>
+												</Property>
+												<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Attenuation">
+													<ObjectRef Name="10" ID="{CD38D13E-1D7D-46FA-AD0C-C7D5F9690547}" WorkUnitID="{47D4E814-D669-4A08-8AD2-F706566546E0}"/>
+												</Reference>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{23AF77D7-3FEA-409B-8E44-F5B490014C61}"/>
+												</Reference>
+												<Reference Name="Effect0">
+													<Custom>
+														<Effect Name="Wwise Parametric EQ (Custom)" ID="{0A358FBC-15BB-4710-90D3-FE0BC06FF41E}" ShortID="480112448" PluginName="Wwise Parametric EQ" CompanyID="0" PluginID="105" PluginType="3">
+															<PropertyList>
+																<Property Name="FrequencyBand1" Type="Real32" Value="175"/>
+																<Property Name="FrequencyBand2" Type="Real32" Value="132"/>
+																<Property Name="FrequencyBand3" Type="Real32" Value="9397"/>
+																<Property Name="GainBand1" Type="Real32" Value="-1.5"/>
+																<Property Name="GainBand2" Type="Real32" Value="-5"/>
+																<Property Name="GainBand3" Type="Real32" Value="1.5"/>
+																<Property Name="QFactorBand2" Type="Real32" Value="1.5"/>
+															</PropertyList>
+														</Effect>
+													</Custom>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Rooms" ID="{F220833B-3FC1-4DC8-9CF3-6F367C8C1EDE}" WorkUnitID="{C91EB4C6-56DC-4541-96C4-29E948904D66}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="TheHighPriestwouldBeProud" ID="{3B72CD8D-1A31-4333-89A7-6C47A6CD37B1}">
+													<Language>SFX</Language>
+													<AudioFile>TheHighPriestwouldBeProud.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="749227419"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<PositioningInfo>
+												<Position Name="" ID="{8806524E-9F1D-4E1D-8D99-B6DA9F978863}">
+													<ChildrenList>
+														<Path2D Name="VA_Mixer_Path" ID="{DD064DAB-1C0E-4608-8EC7-6250075007FF}">
+															<PropertyList>
+																<Property Name="Duration" Type="Uint32" Value="20000"/>
+																<Property Name="RandomX" Type="Real64" Value="4"/>
+																<Property Name="RandomY" Type="Real64" Value="5"/>
+															</PropertyList>
+															<PointList>
+																<Point>
+																	<XPos>-2.03046</XPos>
+																	<YPos>5.9322</YPos>
+																	<ZPos>54</ZPos>
+																	<Flags>12</Flags>
+																	<Time>0</Time>
+																</Point>
+																<Point>
+																	<XPos>3.04569</XPos>
+																	<YPos>5.08475</YPos>
+																	<ZPos>54</ZPos>
+																	<Flags>0</Flags>
+																	<Time>20000</Time>
+																</Point>
+															</PointList>
+														</Path2D>
+													</ChildrenList>
+												</Position>
+											</PositioningInfo>
+											<ObjectLists/>
+											<ActiveSourceList>
+												<ActiveSource Name="TheHighPriestwouldBeProud" ID="{3B72CD8D-1A31-4333-89A7-6C47A6CD37B1}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+									</ChildrenList>
+									<PositioningInfo>
+										<Position Name="" ID="{AE158F6D-BFB7-4189-8842-3161C8C4CCC4}">
+											<ChildrenList>
+												<Path2D Name="VA_Mixer_Path" ID="{D17CFCA8-8096-4FF0-A64D-8E88E944541D}">
+													<PropertyList>
+														<Property Name="Duration" Type="Uint32" Value="20000"/>
+														<Property Name="RandomX" Type="Real64" Value="4"/>
+														<Property Name="RandomY" Type="Real64" Value="5"/>
+													</PropertyList>
+													<PointList>
+														<Point>
+															<XPos>-2.03046</XPos>
+															<YPos>5.9322</YPos>
+															<ZPos>54</ZPos>
+															<Flags>12</Flags>
+															<Time>0</Time>
+														</Point>
+														<Point>
+															<XPos>3.04569</XPos>
+															<YPos>5.08475</YPos>
+															<ZPos>54</ZPos>
+															<Flags>0</Flags>
+															<Time>20000</Time>
+														</Point>
+													</PointList>
+												</Path2D>
+											</ChildrenList>
+										</Position>
+									</PositioningInfo>
+									<ObjectLists/>
+								</RandomSequenceContainer>
+								<RandomSequenceContainer Name="Clerk_4thEncounter_06" ID="{96963C1B-86BD-4605-AFD7-E4D0A1B55240}" ShortID="128334402">
+									<PropertyList>
+										<Property Name="3DPosition" Type="int16" Value="1"/>
+										<Property Name="3DSpatialization" Type="int16" Value="2"/>
+										<Property Name="OutputBusVolume" Type="Real64">
+											<ValueList>
+												<Value>3</Value>
+											</ValueList>
+										</Property>
+										<Property Name="RandomOrSequence" Type="int16" Value="0"/>
+										<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Attenuation">
+											<ObjectRef Name="10" ID="{CD38D13E-1D7D-46FA-AD0C-C7D5F9690547}" WorkUnitID="{47D4E814-D669-4A08-8AD2-F706566546E0}"/>
+										</Reference>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{23AF77D7-3FEA-409B-8E44-F5B490014C61}"/>
+										</Reference>
+										<Reference Name="Effect0">
+											<Custom>
+												<Effect Name="Wwise Parametric EQ (Custom)" ID="{6843D542-D411-4EEB-93B8-BCE703FCBD05}" ShortID="546214253" PluginName="Wwise Parametric EQ" CompanyID="0" PluginID="105" PluginType="3">
+													<PropertyList>
+														<Property Name="FrequencyBand1" Type="Real32" Value="175"/>
+														<Property Name="FrequencyBand2" Type="Real32" Value="132"/>
+														<Property Name="FrequencyBand3" Type="Real32" Value="9397"/>
+														<Property Name="GainBand1" Type="Real32" Value="-1.5"/>
+														<Property Name="GainBand2" Type="Real32" Value="-5"/>
+														<Property Name="GainBand3" Type="Real32" Value="1.5"/>
+														<Property Name="QFactorBand2" Type="Real32" Value="1.5"/>
+													</PropertyList>
+												</Effect>
+											</Custom>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Rooms" ID="{F220833B-3FC1-4DC8-9CF3-6F367C8C1EDE}" WorkUnitID="{C91EB4C6-56DC-4541-96C4-29E948904D66}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<Sound Name="ThePriestWouldBeDissapointed" ID="{29FAB564-A07F-4773-8DDF-E18ED3626DB0}" ShortID="258189453">
+											<PropertyList>
+												<Property Name="3DPosition" Type="int16" Value="1"/>
+												<Property Name="3DSpatialization" Type="int16" Value="2"/>
+												<Property Name="OutputBusVolume" Type="Real64">
+													<ValueList>
+														<Value>3</Value>
+													</ValueList>
+												</Property>
+												<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Attenuation">
+													<ObjectRef Name="10" ID="{CD38D13E-1D7D-46FA-AD0C-C7D5F9690547}" WorkUnitID="{47D4E814-D669-4A08-8AD2-F706566546E0}"/>
+												</Reference>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{23AF77D7-3FEA-409B-8E44-F5B490014C61}"/>
+												</Reference>
+												<Reference Name="Effect0">
+													<Custom>
+														<Effect Name="Wwise Parametric EQ (Custom)" ID="{77D098FB-D918-4646-99F1-AAF8647A409D}" ShortID="462378668" PluginName="Wwise Parametric EQ" CompanyID="0" PluginID="105" PluginType="3">
+															<PropertyList>
+																<Property Name="FrequencyBand1" Type="Real32" Value="175"/>
+																<Property Name="FrequencyBand2" Type="Real32" Value="132"/>
+																<Property Name="FrequencyBand3" Type="Real32" Value="9397"/>
+																<Property Name="GainBand1" Type="Real32" Value="-1.5"/>
+																<Property Name="GainBand2" Type="Real32" Value="-5"/>
+																<Property Name="GainBand3" Type="Real32" Value="1.5"/>
+																<Property Name="QFactorBand2" Type="Real32" Value="1.5"/>
+															</PropertyList>
+														</Effect>
+													</Custom>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Rooms" ID="{F220833B-3FC1-4DC8-9CF3-6F367C8C1EDE}" WorkUnitID="{C91EB4C6-56DC-4541-96C4-29E948904D66}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="ThePriestWouldBeDissapointed" ID="{50062391-4C57-482A-86CB-362A02643F9A}">
+													<Language>SFX</Language>
+													<AudioFile>ThePriestWouldBeDissapointed.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="800967046"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<PositioningInfo>
+												<Position Name="" ID="{833BF33F-1CE0-4478-A277-617437F79866}">
+													<ChildrenList>
+														<Path2D Name="VA_Mixer_Path" ID="{C25D0272-9194-4D58-93FF-91571499972E}">
+															<PropertyList>
+																<Property Name="Duration" Type="Uint32" Value="20000"/>
+																<Property Name="RandomX" Type="Real64" Value="4"/>
+																<Property Name="RandomY" Type="Real64" Value="5"/>
+															</PropertyList>
+															<PointList>
+																<Point>
+																	<XPos>-2.03046</XPos>
+																	<YPos>5.9322</YPos>
+																	<ZPos>54</ZPos>
+																	<Flags>12</Flags>
+																	<Time>0</Time>
+																</Point>
+																<Point>
+																	<XPos>3.04569</XPos>
+																	<YPos>5.08475</YPos>
+																	<ZPos>54</ZPos>
+																	<Flags>0</Flags>
+																	<Time>20000</Time>
+																</Point>
+															</PointList>
+														</Path2D>
+													</ChildrenList>
+												</Position>
+											</PositioningInfo>
+											<ObjectLists/>
+											<ActiveSourceList>
+												<ActiveSource Name="ThePriestWouldBeDissapointed" ID="{50062391-4C57-482A-86CB-362A02643F9A}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+									</ChildrenList>
+									<PositioningInfo>
+										<Position Name="" ID="{7032EEF9-AA87-4E09-B6AD-AF92EB32639B}">
+											<ChildrenList>
+												<Path2D Name="VA_Mixer_Path" ID="{5F294D9B-259E-4116-B11D-BD48CC9CCA59}">
+													<PropertyList>
+														<Property Name="Duration" Type="Uint32" Value="20000"/>
+														<Property Name="RandomX" Type="Real64" Value="4"/>
+														<Property Name="RandomY" Type="Real64" Value="5"/>
+													</PropertyList>
+													<PointList>
+														<Point>
+															<XPos>-2.03046</XPos>
+															<YPos>5.9322</YPos>
+															<ZPos>54</ZPos>
+															<Flags>12</Flags>
+															<Time>0</Time>
+														</Point>
+														<Point>
+															<XPos>3.04569</XPos>
+															<YPos>5.08475</YPos>
+															<ZPos>54</ZPos>
+															<Flags>0</Flags>
+															<Time>20000</Time>
 														</Point>
 													</PointList>
 												</Path2D>
@@ -2222,25 +3750,55 @@
 										<ItemRef Name="Clerk_DungeonChatter" ID="{EF85AD03-D5D8-43BE-9578-8B6F41D87626}"/>
 									</GroupingBehavior>
 									<GroupingBehavior>
+										<ItemRef Name="Clerk_4thEncounter_03" ID="{401FCD07-F075-4FB2-A4A8-0A0EADFDA920}"/>
+									</GroupingBehavior>
+									<GroupingBehavior>
+										<ItemRef Name="LetTheLightGuideThyWay_Grimly" ID="{50930A12-76CC-4CFD-8FF8-0DA22D12632A}"/>
+									</GroupingBehavior>
+									<GroupingBehavior>
+										<ItemRef Name="Clerk_4thEncounter_06" ID="{96963C1B-86BD-4605-AFD7-E4D0A1B55240}"/>
+									</GroupingBehavior>
+									<GroupingBehavior>
 										<ItemRef Name="Clerk_chatter2_WithTheFatherGone" ID="{3F52093C-3582-4076-9616-273423A7CFC9}"/>
+									</GroupingBehavior>
+									<GroupingBehavior>
+										<ItemRef Name="Clerk_4thEncounter_04" ID="{49D44F4B-E611-40D4-9076-4E43B2B4D4CB}"/>
 									</GroupingBehavior>
 									<GroupingBehavior>
 										<ItemRef Name="IntroSeq" ID="{36819F54-BDA1-476B-BD4C-00E3C63320E2}"/>
 									</GroupingBehavior>
 									<GroupingBehavior>
+										<ItemRef Name="Clerk_4thEncounter_02" ID="{713A0C6C-863E-4C34-A1EC-578B746839A5}"/>
+									</GroupingBehavior>
+									<GroupingBehavior>
 										<ItemRef Name="ClerkCrawl" ID="{DCC2F470-3DD6-4A7C-AA4F-A486B85A7616}"/>
 									</GroupingBehavior>
 									<GroupingBehavior>
-										<ItemRef Name="Clerk_3ndEncounter" ID="{57C7799B-932E-44A2-B451-CFC404973AB0}"/>
+										<ItemRef Name="BeforeDepartiingOurFaather" ID="{E2D4187F-435C-447A-AFDF-076174091AC9}"/>
+									</GroupingBehavior>
+									<GroupingBehavior>
+										<ItemRef Name="ClerkTaunt" ID="{0EDCDA8B-20C8-4283-9C3B-936BCE30B707}"/>
+									</GroupingBehavior>
+									<GroupingBehavior>
+										<ItemRef Name="Clerk_3rdEncounter" ID="{57C7799B-932E-44A2-B451-CFC404973AB0}"/>
+									</GroupingBehavior>
+									<GroupingBehavior>
+										<ItemRef Name="Clerk_4thEncounter" ID="{4ACD829C-CF64-468E-83F5-F860958C6674}"/>
 									</GroupingBehavior>
 									<GroupingBehavior>
 										<ItemRef Name="Clerk_chatter3" ID="{BC7ADABA-B3D8-4FA2-AB04-803B9892EEB2}"/>
+									</GroupingBehavior>
+									<GroupingBehavior>
+										<ItemRef Name="Clerk_4thEncounter_01" ID="{05135CD1-473D-4844-9871-EED7762EF23D}"/>
 									</GroupingBehavior>
 									<GroupingBehavior>
 										<ItemRef Name="Clerk_2ndEncounter_HighPriest" ID="{2B2316E0-3E17-4ED4-8DDA-2C6A10051A21}"/>
 									</GroupingBehavior>
 									<GroupingBehavior>
 										<ItemRef Name="ClerkIntro" ID="{9FE4C1F4-0295-4857-896C-B7DD5670F34B}"/>
+									</GroupingBehavior>
+									<GroupingBehavior>
+										<ItemRef Name="Clerk_4thEncounter_05" ID="{2B040FFE-007A-4BA8-8403-0313124D9D23}"/>
 									</GroupingBehavior>
 								</GroupingBehaviorList>
 								<GroupingList>
@@ -2269,15 +3827,51 @@
 										</ItemList>
 									</Grouping>
 									<Grouping>
+										<SwitchRef Name="Tower_Prayer" ID="{35FDBA3F-535D-446D-B825-AE076D1E6484}"/>
+										<ItemList>
+											<ItemRef Name="Clerk_4thEncounter_01" ID="{05135CD1-473D-4844-9871-EED7762EF23D}"/>
+										</ItemList>
+									</Grouping>
+									<Grouping>
+										<SwitchRef Name="Tower_FOLLOWTHELIGHT" ID="{606A8447-69B1-453C-B248-1555000DA6EF}"/>
+										<ItemList>
+											<ItemRef Name="Clerk_4thEncounter" ID="{4ACD829C-CF64-468E-83F5-F860958C6674}"/>
+										</ItemList>
+									</Grouping>
+									<Grouping>
 										<SwitchRef Name="ThirdEncounter" ID="{C3C8B14F-B61D-4AE0-9511-DB70521A87E9}"/>
 										<ItemList>
-											<ItemRef Name="Clerk_3ndEncounter" ID="{57C7799B-932E-44A2-B451-CFC404973AB0}"/>
+											<ItemRef Name="Clerk_3rdEncounter" ID="{57C7799B-932E-44A2-B451-CFC404973AB0}"/>
+										</ItemList>
+									</Grouping>
+									<Grouping>
+										<SwitchRef Name="Tower_StepIntoTheLight_finale" ID="{B812DC5B-7DD7-4516-B147-A7FD27DD57C1}"/>
+										<ItemList>
+											<ItemRef Name="Clerk_4thEncounter_04" ID="{49D44F4B-E611-40D4-9076-4E43B2B4D4CB}"/>
+										</ItemList>
+									</Grouping>
+									<Grouping>
+										<SwitchRef Name="Tower_YesTheLightGrowsStronger" ID="{804CCD66-9527-4383-BA41-EF081670F781}"/>
+										<ItemList>
+											<ItemRef Name="Clerk_4thEncounter_03" ID="{401FCD07-F075-4FB2-A4A8-0A0EADFDA920}"/>
 										</ItemList>
 									</Grouping>
 									<Grouping>
 										<SwitchRef Name="ClerkCrawl" ID="{64EADD76-180B-4140-9FDB-667A47D077E2}"/>
 										<ItemList>
 											<ItemRef Name="ClerkCrawl" ID="{DCC2F470-3DD6-4A7C-AA4F-A486B85A7616}"/>
+										</ItemList>
+									</Grouping>
+									<Grouping>
+										<SwitchRef Name="Tower_Dissapointed" ID="{0BF4F391-5C1D-4C1C-A0F5-59D0A73CBC9D}"/>
+										<ItemList>
+											<ItemRef Name="Clerk_4thEncounter_06" ID="{96963C1B-86BD-4605-AFD7-E4D0A1B55240}"/>
+										</ItemList>
+									</Grouping>
+									<Grouping>
+										<SwitchRef Name="Tower_TheChurchIsAlmostRestored" ID="{F2AAE894-C7DE-4A33-9373-AF044FB25D57}"/>
+										<ItemList>
+											<ItemRef Name="Clerk_4thEncounter_02" ID="{713A0C6C-863E-4C34-A1EC-578B746839A5}"/>
 										</ItemList>
 									</Grouping>
 									<Grouping>
@@ -2290,6 +3884,12 @@
 										<SwitchRef Name="DungeonChatter" ID="{83372DDE-E890-4272-87B3-B3DDD9E6D533}"/>
 										<ItemList>
 											<ItemRef Name="Clerk_DungeonChatter" ID="{EF85AD03-D5D8-43BE-9578-8B6F41D87626}"/>
+										</ItemList>
+									</Grouping>
+									<Grouping>
+										<SwitchRef Name="Tower_Proud" ID="{89EFADE0-CD3D-4B63-84E4-809CFC526727}"/>
+										<ItemList>
+											<ItemRef Name="Clerk_4thEncounter_05" ID="{2B040FFE-007A-4BA8-8403-0313124D9D23}"/>
 										</ItemList>
 									</Grouping>
 								</GroupingList>

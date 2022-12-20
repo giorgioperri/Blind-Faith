@@ -124,6 +124,14 @@ namespace AK
                 static const AkUniqueID INTRO = 1125500713U;
                 static const AkUniqueID SECONDENCOUNTER = 1703442692U;
                 static const AkUniqueID THIRDENCOUNTER = 3682658335U;
+                static const AkUniqueID TOWER_DISSAPOINTED = 4085445222U;
+                static const AkUniqueID TOWER_FOLLOWTHELIGHT = 2318992283U;
+                static const AkUniqueID TOWER_LETTHELIGHTGUIDE_GRIMLY = 1337305014U;
+                static const AkUniqueID TOWER_PRAYER = 317582866U;
+                static const AkUniqueID TOWER_PROUD = 3419523551U;
+                static const AkUniqueID TOWER_STEPINTOTHELIGHT_FINALE = 2903908110U;
+                static const AkUniqueID TOWER_THECHURCHISALMOSTRESTORED = 2889570721U;
+                static const AkUniqueID TOWER_YESTHELIGHTGROWSSTRONGER = 2448125293U;
             } // namespace SWITCH
         } // namespace VA_CLERK_SWITCH_GROUP
 
