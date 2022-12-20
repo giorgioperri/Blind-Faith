@@ -24,7 +24,7 @@ MonoBehaviour:
     ParentPath: Virtual Acoustics\Default Work Unit
     guid: 8157776944d252459e5c3d8483760091
     GuidInternal: 
-    m_lastTime: -8585342942743677962
+    m_lastTime: -8585337696155371816
     List: []
   AuxBusWwu:
   - PhysicalPath: Master-Mixer Hierarchy\Default Work Unit.wwu
@@ -38,7 +38,7 @@ MonoBehaviour:
     ParentPath: Master-Mixer Hierarchy\Default Work Unit
     guid: c6b41ec9dc56414596c429e948904d66
     GuidInternal: 
-    m_lastTime: -8585311130882535694
+    m_lastTime: -8585300734854832553
     List:
     - name: 2D
       guid: a0c80e6e11ef8042a411c16426d7260b
@@ -277,7 +277,7 @@ MonoBehaviour:
     ParentPath: SoundBanks\Default Work Unit
     guid: 91f3f2c2e89f4143bd59d41dc8510ab9
     GuidInternal: 
-    m_lastTime: -8585311130850457466
+    m_lastTime: -8585300734845986704
     List:
     - name: Mains
       guid: 22a5fa274c62a84d93c78d5801f30f0d
@@ -305,7 +305,7 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit
     guid: 5eb490fb28343a4fbde7e5ca0bff7b1d
     GuidInternal: 
-    m_lastTime: -8585311130908138878
+    m_lastTime: -8585300734891540381
     List:
     - name: 3D
       guid: d0312eb1e176a14c90ecba42bdd0174b
@@ -1167,7 +1167,7 @@ MonoBehaviour:
     ParentPath: States\Default Work Unit
     guid: 15da347adefaa443abeba8e206daca95
     GuidInternal: 
-    m_lastTime: -8585312669510545396
+    m_lastTime: -8585300734845975830
     List:
     - name: AlterAmb
       guid: 7f446b1539ffb74881108b1e3d68a471
@@ -1529,7 +1529,7 @@ MonoBehaviour:
     ParentPath: Switches\Default Work Unit
     guid: 129020783626944d87631f9c3a93f8e0
     GuidInternal: 
-    m_lastTime: -8585312702898688213
+    m_lastTime: -8585300678224202632
     List:
     - name: Locomotion
       guid: ec8b7419cfaab54dbd4aee612fa66e6b
@@ -1815,6 +1815,158 @@ MonoBehaviour:
         - ElementName: ThirdEncounter
           ObjectType: 10
           guid: 4fb1c8c31db6e04a9511db70521a87e9
+      - name: Tower_Dissapointed
+        guid: 91f3f40b1d5c1c4ca0f559d0a73cbc9d
+        id: 4085445222
+        PathAndIcons:
+        - ElementName: Switches
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: 129020783626944d87631f9c3a93f8e0
+        - ElementName: VA
+          ObjectType: 4
+          guid: 72aefdfe10b4f645a01820f025eaef72
+        - ElementName: VA_Clerk_Switch_Group
+          ObjectType: 11
+          guid: f60e6d600d208144b08366f3c0d6c337
+        - ElementName: Tower_Dissapointed
+          ObjectType: 10
+          guid: 91f3f40b1d5c1c4ca0f559d0a73cbc9d
+      - name: Tower_FOLLOWTHELIGHT
+        guid: 47846a60b1693c45b2481555000da6ef
+        id: 2318992283
+        PathAndIcons:
+        - ElementName: Switches
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: 129020783626944d87631f9c3a93f8e0
+        - ElementName: VA
+          ObjectType: 4
+          guid: 72aefdfe10b4f645a01820f025eaef72
+        - ElementName: VA_Clerk_Switch_Group
+          ObjectType: 11
+          guid: f60e6d600d208144b08366f3c0d6c337
+        - ElementName: Tower_FOLLOWTHELIGHT
+          ObjectType: 10
+          guid: 47846a60b1693c45b2481555000da6ef
+      - name: Tower_LetTheLightGuide_Grimly
+        guid: 7790217b24ebed46a8b0c034f0c1d7fd
+        id: 1337305014
+        PathAndIcons:
+        - ElementName: Switches
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: 129020783626944d87631f9c3a93f8e0
+        - ElementName: VA
+          ObjectType: 4
+          guid: 72aefdfe10b4f645a01820f025eaef72
+        - ElementName: VA_Clerk_Switch_Group
+          ObjectType: 11
+          guid: f60e6d600d208144b08366f3c0d6c337
+        - ElementName: Tower_LetTheLightGuide_Grimly
+          ObjectType: 10
+          guid: 7790217b24ebed46a8b0c034f0c1d7fd
+      - name: Tower_Prayer
+        guid: 3fbafd355d536d44b825ae076d1e6484
+        id: 317582866
+        PathAndIcons:
+        - ElementName: Switches
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: 129020783626944d87631f9c3a93f8e0
+        - ElementName: VA
+          ObjectType: 4
+          guid: 72aefdfe10b4f645a01820f025eaef72
+        - ElementName: VA_Clerk_Switch_Group
+          ObjectType: 11
+          guid: f60e6d600d208144b08366f3c0d6c337
+        - ElementName: Tower_Prayer
+          ObjectType: 10
+          guid: 3fbafd355d536d44b825ae076d1e6484
+      - name: Tower_Proud
+        guid: e0adef893dcd634b84e4809cfc526727
+        id: 3419523551
+        PathAndIcons:
+        - ElementName: Switches
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: 129020783626944d87631f9c3a93f8e0
+        - ElementName: VA
+          ObjectType: 4
+          guid: 72aefdfe10b4f645a01820f025eaef72
+        - ElementName: VA_Clerk_Switch_Group
+          ObjectType: 11
+          guid: f60e6d600d208144b08366f3c0d6c337
+        - ElementName: Tower_Proud
+          ObjectType: 10
+          guid: e0adef893dcd634b84e4809cfc526727
+      - name: Tower_StepIntoTheLight_finale
+        guid: 5bdc12b8d77d1645b147a7fd27dd57c1
+        id: 2903908110
+        PathAndIcons:
+        - ElementName: Switches
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: 129020783626944d87631f9c3a93f8e0
+        - ElementName: VA
+          ObjectType: 4
+          guid: 72aefdfe10b4f645a01820f025eaef72
+        - ElementName: VA_Clerk_Switch_Group
+          ObjectType: 11
+          guid: f60e6d600d208144b08366f3c0d6c337
+        - ElementName: Tower_StepIntoTheLight_finale
+          ObjectType: 10
+          guid: 5bdc12b8d77d1645b147a7fd27dd57c1
+      - name: Tower_TheChurchIsAlmostRestored
+        guid: 94e8aaf2dec7334a9373af044fb25d57
+        id: 2889570721
+        PathAndIcons:
+        - ElementName: Switches
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: 129020783626944d87631f9c3a93f8e0
+        - ElementName: VA
+          ObjectType: 4
+          guid: 72aefdfe10b4f645a01820f025eaef72
+        - ElementName: VA_Clerk_Switch_Group
+          ObjectType: 11
+          guid: f60e6d600d208144b08366f3c0d6c337
+        - ElementName: Tower_TheChurchIsAlmostRestored
+          ObjectType: 10
+          guid: 94e8aaf2dec7334a9373af044fb25d57
+      - name: Tower_YesTheLightGrowsStronger
+        guid: 66cd4c8027958343ba41ef081670f781
+        id: 2448125293
+        PathAndIcons:
+        - ElementName: Switches
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: 129020783626944d87631f9c3a93f8e0
+        - ElementName: VA
+          ObjectType: 4
+          guid: 72aefdfe10b4f645a01820f025eaef72
+        - ElementName: VA_Clerk_Switch_Group
+          ObjectType: 11
+          guid: f60e6d600d208144b08366f3c0d6c337
+        - ElementName: Tower_YesTheLightGrowsStronger
+          ObjectType: 10
+          guid: 66cd4c8027958343ba41ef081670f781
       ValueGuids: []
       ValueIcons: []
       valuesInternal: []
@@ -1830,7 +1982,7 @@ MonoBehaviour:
     ParentPath: Triggers\Default Work Unit
     guid: 50b0bf7a09fe60448cd0a08f93cae076
     GuidInternal: 
-    m_lastTime: -8585342884435909085
+    m_lastTime: -8585337696155381822
     List:
     - name: New_Trigger
       guid: b52432610d4a47429784de539560cf52
