@@ -190,4 +190,13 @@ public class GameManager : MonoBehaviour
         yield return new WaitForSecondsRealtime(1f);
         isInteractingWithMirror = false;
     }
+
+    public void DestroyAllLightBeams()
+    {
+        foreach (var obj in GameObject.FindObjectsOfType<LineRenderer>())
+        {
+            Destroy(obj.gameObject);
+        }
+
+    }
 }

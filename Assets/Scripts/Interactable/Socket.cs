@@ -29,7 +29,7 @@ public class Socket : Interactable
         
         // The implementation works for now, but probably needs improvements in future
         if (!LanternManager.Instance.isInsideSocket && _handController.GetComponent<HandAnimatorController>().hasRaisedLantern && 
-            (Mouse.current.leftButton.wasPressedThisFrame /* Keyboard.current.eKey.wasPressedThisFrame || Gamepad.current.buttonWest.wasPressedThisFrame) */))
+            Mouse.current.leftButton.wasPressedThisFrame)
         {
             _lightSourceLantern.SetActive(true);
             _lanternObject.transform.parent = transform;
@@ -41,18 +41,17 @@ public class Socket : Interactable
 
         }
         else if (LanternManager.Instance.isInsideSocket && _handController.GetComponent<HandAnimatorController>().hasRaisedLantern &&
-            (Mouse.current.leftButton.wasPressedThisFrame /* Keyboard.current.eKey.wasPressedThisFrame || Gamepad.current.buttonWest.wasPressedThisFrame)*/))
+            Mouse.current.leftButton.wasPressedThisFrame)
         {
-            _lightBeam = GameObject.Find("Light Beam");
-            Destroy(_lightBeam);
             _lightSourceLantern.GetComponent<ShootLight>().lightMeshSpawner.DestroyLightBeam();
             _lightSourceLantern.SetActive(false);
             _lanternObject.transform.parent = _lanternFollowSocket.transform;
             _lanternObject.transform.position = _lanternFollowSocket.transform.position;
             _lanternObject.transform.rotation = _lanternFollowSocket.transform.rotation;
             LanternManager.Instance.isInsideSocket = !LanternManager.Instance.isInsideSocket;
-
             HandAnimatorController.Instance.HandleLanternInput(true);
+            GameManager.Instance.DestroyAllLightBeams();
+
         }
     }
 }
