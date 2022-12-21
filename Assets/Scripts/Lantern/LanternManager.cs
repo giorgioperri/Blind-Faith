@@ -56,7 +56,7 @@ public class LanternManager : MonoBehaviour
             playerVC.GetCinemachineComponent<CinemachineBasicMultiChannelPerlin>().m_FrequencyGain = 0;
         }
         
-        if (GameManager.Instance.isBathingInLight && lanternIsRaised)
+        if (GameManager.Instance.isBathingInLight && lanternIsRaised && !isInsideSocket)
         {
             if (GameManager.Instance.isLookingAtAngel && lanternCharge <= 1 && Mouse.current.leftButton.isPressed)
             {
