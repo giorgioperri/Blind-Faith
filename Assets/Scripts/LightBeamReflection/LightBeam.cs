@@ -133,6 +133,8 @@ public class LightBeam
             hitTheDoor = true;
             hitInfo.collider.gameObject.SendMessage("OnBeamReceived");
             _lightIndices.Add(hitInfo.point);
+            GameManager.Instance.hasVisitedCatacombs = true;
+            GameManager.Instance.canPlayHealthTooltip = false;
             UpdateLaser();
         }
         else if(hitInfo.collider.gameObject.CompareTag("Prism"))

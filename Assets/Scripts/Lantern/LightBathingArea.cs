@@ -36,6 +36,7 @@ public class LightBathingArea : MonoBehaviour
             if (LanternManager.Instance.lanternCharge > .5f && _canTriggerSocketEvent)
             {
                 GameManager.Instance.InitSocketEvent();
+                GameManager.Instance.canPlayHealthTooltip = true;
                 _canTriggerSocketEvent = false;
             }
         }

@@ -44,6 +44,9 @@ public class GameManager : MonoBehaviour
 
     public List<RotateObjects> litMirrors = new();
 
+    public bool canPlayHealthTooltip;
+    public bool hasVisitedCatacombs;
+
     private void Awake()
     {
         if (Instance != null)
@@ -83,12 +86,7 @@ public class GameManager : MonoBehaviour
 
     void Update()
     {
-        /*if (Mouse.current.leftButton.wasPressedThisFrame && !isPaused)
-        {
-            Cursor.visible = false;
-        }*/
-        
-		if (_isIntro) return;
+        if (_isIntro) return;
 
         if (health <= 40 && hasPickedLantern && canPlayChatterTwo)
         {
@@ -124,6 +122,17 @@ public class GameManager : MonoBehaviour
                 ResumeVA.Post(PlayerSoundController.Instance.gameObject);
             }
             playerInput.pause = false;
+        }
+
+        if (canPlayHealthTooltip && health < 30)
+        {
+            TooltipManager.Instance.StartCoroutine(nameof(TooltipManager.StartHealthTooltip));
+            canPlayHealthTooltip = false;
+        }
+
+        if (health > 40 && !hasVisitedCatacombs)
+        {
+            canPlayHealthTooltip = true;
         }
     }
 

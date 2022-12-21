@@ -13,6 +13,7 @@ public enum TooltipTypes
     SeeSocket,
     PlaceSocket,
     Sprint,
+    Health
 }
 
 public class TooltipManager : MonoBehaviour
@@ -68,6 +69,14 @@ public class TooltipManager : MonoBehaviour
         currentTooltip = TooltipTypes.Sprint;
         ToggleTooltip("Use the Left Shift key to sprint");
         yield return new WaitForSecondsRealtime(2.5f);
+        CloseTooltip();
+    }
+    
+    public IEnumerator StartHealthTooltip()
+    {
+        currentTooltip = TooltipTypes.Sprint;
+        ToggleTooltip("Stay close to the light to regain sanity");
+        yield return new WaitForSecondsRealtime(3f);
         CloseTooltip();
     }
 }
