@@ -40,6 +40,8 @@ public class LanternManager : MonoBehaviour
 
     private void Update()
     {
+        if (GameManager.Instance.isPaused) return;
+        
         lanternCharge = Mathf.Clamp01(lanternCharge);
         lightMaterial.SetFloat("_Opacity", lanternCharge);
         _orb.localScale = _originalOrbScale * lanternCharge;

@@ -239,4 +239,13 @@ public class GameManager : MonoBehaviour
         }
 
     }
+
+    public void Resume()
+    {
+        isPaused = false;
+        PauseManager.Instance.Unpause();
+        ResumeVA.Post(PlayerSoundController.Instance.gameObject);
+        playerInput.pause = false;
+        Cursor.lockState = CursorLockMode.Locked;
+    }
 }
