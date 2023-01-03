@@ -50,6 +50,8 @@ public class GameManager : MonoBehaviour
     public GameObject tutorialCutscene;
     public GameObject playerCamera;
 
+    public Animator EndAnimator;
+
     private void Awake()
     {
         if (Instance != null)
@@ -93,6 +95,11 @@ public class GameManager : MonoBehaviour
         TooltipManager.Instance.ToggleTooltip("Use the WASD keys to move");
         TooltipManager.Instance.currentTooltip = TooltipTypes.WASDMove;
         isPaused = false;
+    }
+    
+    public void Unpossess()
+    {
+        isPaused = true;
     }
     
     public void DeactivateTutorialCamera()
@@ -191,8 +198,10 @@ public class GameManager : MonoBehaviour
 
     public void InitEndEvent()
     {
-        
+        Unpossess();
+        EndAnimator.enabled = true;
     }
+        
 
     private IEnumerator StartSocketEvent()
     {
