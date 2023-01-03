@@ -1,8 +1,14 @@
 fileFormatVersion: 2
+<<<<<<<< HEAD:Assets/Scenes/Scenes_Felix/towerRoofCrack/LightingData.asset.meta
+guid: 57fbd36af6b77466f93f27f528d90cf1
+NativeFormatImporter:
+========
 guid: 49bd13ace5a9fe849b6ace5d92a4260c
 folderAsset: yes
 DefaultImporter:
+>>>>>>>> dev:Assets/3D/00_SketchFab/bench/WithColliders.meta
   externalObjects: {}
+  mainObjectFileID: 112000000
   userData: 
   assetBundleName: 
   assetBundleVariant: 
