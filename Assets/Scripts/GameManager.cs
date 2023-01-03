@@ -189,6 +189,11 @@ public class GameManager : MonoBehaviour
         StartCoroutine(StartPillarEvent());
     }
 
+    public void InitEndEvent()
+    {
+        
+    }
+
     private IEnumerator StartSocketEvent()
     {
         TooltipManager.Instance.currentTooltip = TooltipTypes.SeeSocket;
