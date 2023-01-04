@@ -38,7 +38,7 @@ Material:
     - _ElectricityAmount: 3
     - _ElectricityScale: 70
     - _ElectricityThickness: 4
-    - _Opacity: 0.83675706
+    - _Opacity: 1
     - _QueueControl: 0
     - _QueueOffset: 0
     m_Colors:
