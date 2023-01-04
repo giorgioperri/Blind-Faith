@@ -107,13 +107,13 @@
 									<PointList>
 										<Point>
 											<XPos>0</XPos>
-											<YPos>90.04329</YPos>
+											<YPos>63.31062</YPos>
 											<Flags>5</Flags>
 											<SegmentShape>Log3</SegmentShape>
 										</Point>
 										<Point>
-											<XPos>4.00114</XPos>
-											<YPos>65.83508</YPos>
+											<XPos>3.83088</XPos>
+											<YPos>44.54795</YPos>
 											<Flags>0</Flags>
 											<SegmentShape>Log3</SegmentShape>
 										</Point>

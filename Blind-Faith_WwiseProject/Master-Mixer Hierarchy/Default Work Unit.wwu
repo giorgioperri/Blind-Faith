@@ -20,7 +20,7 @@
 								<Effect Name="Hard_Knee_Minus_3dB_RMS (Custom)" ID="{41CC8433-4FE0-42EE-B417-E9990C065237}" ShortID="790902848" PluginName="Wwise Compressor" CompanyID="0" PluginID="108" PluginType="3">
 									<PropertyList>
 										<Property Name="AttackTime" Type="Real32" Value="0.31"/>
-										<Property Name="OutputGain" Type="Real32" Value="8.9"/>
+										<Property Name="OutputGain" Type="Real32" Value="6.9"/>
 										<Property Name="Ratio" Type="Real32" Value="2"/>
 										<Property Name="ReleaseTime" Type="Real32" Value="0.61"/>
 										<Property Name="Threshold" Type="Real32" Value="-21.8"/>
@@ -28,17 +28,26 @@
 								</Effect>
 							</Custom>
 						</Reference>
-						<Reference Name="Effect1" PluginName="Wwise Parametric EQ" CompanyID="0" PluginID="105" PluginType="3">
-							<ObjectRef Name="Low_Pass_20KHz" ID="{830124FB-B9D5-4AE8-846E-E94A74652666}" WorkUnitID="{E8613F7D-BAD3-45CD-A3ED-505576F31277}"/>
-						</Reference>
-						<Reference Name="Effect2">
+						<Reference Name="Effect1">
 							<Custom>
-								<Effect Name="Wwise Meter (Custom)" ID="{79E6C13D-168E-4D88-81DC-EBA99C752B0F}" ShortID="184228500" PluginName="Wwise Meter" CompanyID="0" PluginID="129" PluginType="3">
+								<Effect Name="Wwise Parametric EQ (Custom)" ID="{D70C4A2C-5CA4-48FE-9BC6-165CCC2F5BBD}" ShortID="947933604" PluginName="Wwise Parametric EQ" CompanyID="0" PluginID="105" PluginType="3">
 									<PropertyList>
-										<Property Name="MeterMode" Type="int32" Value="1"/>
+										<Property Name="FilterTypeBand1" Type="int32" Value="6"/>
+										<Property Name="FilterTypeBand2" Type="int32" Value="1"/>
+										<Property Name="FilterTypeBand3" Type="int32" Value="6"/>
+										<Property Name="FrequencyBand1" Type="Real32" Value="132"/>
+										<Property Name="FrequencyBand2" Type="Real32" Value="47"/>
+										<Property Name="FrequencyBand3" Type="Real32" Value="6813"/>
+										<Property Name="GainBand1" Type="Real32" Value="-3.5"/>
+										<Property Name="GainBand3" Type="Real32" Value="-5"/>
+										<Property Name="QFactorBand1" Type="Real32" Value="10.5"/>
+										<Property Name="QFactorBand3" Type="Real32" Value="11.5"/>
 									</PropertyList>
 								</Effect>
 							</Custom>
+						</Reference>
+						<Reference Name="Effect2" PluginName="Wwise Parametric EQ" CompanyID="0" PluginID="105" PluginType="3">
+							<ObjectRef Name="Low_Pass_20KHz" ID="{830124FB-B9D5-4AE8-846E-E94A74652666}" WorkUnitID="{E8613F7D-BAD3-45CD-A3ED-505576F31277}"/>
 						</Reference>
 						<Reference Name="Effect3" PluginName="Wwise Peak Limiter" CompanyID="0" PluginID="110" PluginType="3">
 							<ObjectRef Name="Brick_Wall_Minus_1dB_Peak_Fast_Release" ID="{2144284E-7ADD-4341-86A4-4E468BEC9A2D}" WorkUnitID="{E8613F7D-BAD3-45CD-A3ED-505576F31277}"/>
@@ -360,6 +369,28 @@
 							</DuckingList>
 						</Bus>
 					</ChildrenList>
+					<StateInfo>
+						<StateGroupList>
+							<StateGroupInfo>
+								<StateGroupRef Name="GameState" ID="{099D7E50-BDEF-428C-8C84-FE7979AC1E49}"/>
+							</StateGroupInfo>
+						</StateGroupList>
+						<CustomStateList>
+							<CustomState>
+								<StateRef Name="Paused" ID="{7E9E0727-D372-4B8E-A10A-B4BDF5D510B3}"/>
+								<CustomState Name="" ID="{54BD1A24-2AE8-4808-8F55-CA2F9C855CAE}" ShortID="712379189">
+									<PropertyList>
+										<Property Name="BusVolume" Type="Real64" Value="-6"/>
+										<Property Name="Lowpass" Type="int16" Value="48"/>
+									</PropertyList>
+								</CustomState>
+							</CustomState>
+							<CustomState>
+								<StateRef Name="Unpaused" ID="{E67D0600-13F7-4E42-A765-DF6E74FC6942}"/>
+								<CustomState Name="" ID="{F5845C49-C0E3-43BB-8FF0-6066C62F62B0}" ShortID="1060494154"/>
+							</CustomState>
+						</CustomStateList>
+					</StateInfo>
 					<ObjectLists/>
 				</Bus>
 			</ChildrenList>
