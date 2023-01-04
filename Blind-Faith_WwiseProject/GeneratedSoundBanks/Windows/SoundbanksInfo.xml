@@ -11,7 +11,7 @@
 	<StreamedFiles/>
 	<MediaFilesNotInAnyBank/>
 	<SoundBanks>
-		<SoundBank Id="1355168291" Language="SFX" Hash="1546498325">
+		<SoundBank Id="1355168291" Language="SFX" Hash="654493811">
 			<ObjectPath>Init</ObjectPath>
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
@@ -23,8 +23,17 @@
 				<AuxBus Id="2743004395" Name="SmallRoom_01" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Rooms_docking\SmallRoom_01"/>
 				<AuxBus Id="2933838247" Name="SmallRoom" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Rooms\SmallRoom"/>
 			</IncludedAuxBusses>
+			<StateGroups>
+				<StateGroup Id="4091656514" Name="GameState" ObjectPath="\States\Default Work Unit\GameState" GUID="{099D7E50-BDEF-428C-8C84-FE7979AC1E49}">
+					<States>
+						<State Id="748895195" Name="None" ObjectPath="\States\Default Work Unit\GameState\None" GUID="{04A4D442-EBB2-4D25-A596-D048AA74E727}"/>
+						<State Id="1365518790" Name="Unpaused" ObjectPath="\States\Default Work Unit\GameState\Unpaused" GUID="{E67D0600-13F7-4E42-A765-DF6E74FC6942}"/>
+						<State Id="319258907" Name="Paused" ObjectPath="\States\Default Work Unit\GameState\Paused" GUID="{7E9E0727-D372-4B8E-A10A-B4BDF5D510B3}"/>
+					</States>
+				</StateGroup>
+			</StateGroups>
 		</SoundBank>
-		<SoundBank Id="1764570813" Language="SFX" Hash="2813148155">
+		<SoundBank Id="1764570813" Language="SFX" Hash="3801282382">
 			<ObjectPath>\SoundBanks\Default Work Unit\Mains</ObjectPath>
 			<ShortName>Mains</ShortName>
 			<Path>Mains.bnk</Path>
@@ -86,7 +95,7 @@
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
-				<Event Id="3690987655" Name="CrawlSFX" ObjectPath="\Events\Default Work Unit\SFX\CrawlSFX" MaxAttenuation="10." DurationType="OneShot" DurationMin="15.075651" DurationMax="15.075651">
+				<Event Id="3690987655" Name="CrawlSFX" ObjectPath="\Events\Default Work Unit\SFX\CrawlSFX" MaxAttenuation="15." DurationType="OneShot" DurationMin="15.075651" DurationMax="15.075651">
 					<IncludedMemoryFiles>
 						<File Id="253584912" Language="SFX">
 							<ShortName>rockslide_02.wav</ShortName>
@@ -150,7 +159,7 @@
 						</File>
 						<File Id="826579596" Language="SFX">
 							<ShortName>Door, Metal, Open, Close, Distant, Mariott Hotel, San Jose 1.wav</ShortName>
-							<Path>SFX\Door, Metal, Open, Close, Distant, Mariott Hotel, San Jose 1_10C4C929.wem</Path>
+							<Path>SFX\Door, Metal, Open, Close, Distant, Mariott Hotel, San Jose 1_0CD43D3E.wem</Path>
 						</File>
 						<File Id="920208633" Language="SFX">
 							<ShortName>Creepy Door, Slow Creak_03.wav</ShortName>
@@ -387,7 +396,7 @@
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
-				<Event Id="3113871599" Name="MassiveDevice" ObjectPath="\Events\Default Work Unit\MassiveDevice" DurationType="OneShot" DurationMin="19.862646" DurationMax="20.698334">
+				<Event Id="3113871599" Name="MassiveDevice" ObjectPath="\Events\Default Work Unit\MassiveDevice" DurationType="OneShot" DurationMin="17.862646" DurationMax="18.698334">
 					<IncludedMemoryFiles>
 						<File Id="6231612" Language="SFX">
 							<ShortName>BF_MassiveSteamPunkDevice.wav</ShortName>
@@ -404,6 +413,10 @@
 						<File Id="190726892" Language="SFX">
 							<ShortName>STINGER_Pew_Pew.wav</ShortName>
 							<Path>SFX\STINGER_Pew_Pew_10C4C929.wem</Path>
+						</File>
+						<File Id="279953388" Language="SFX">
+							<ShortName>Lever_Pull_Steam_Release_PSEM.158.wav</ShortName>
+							<Path>SFX\Lever_Pull_Steam_Release_PSEM.158_964618FA.wem</Path>
 						</File>
 						<File Id="506611343" Language="SFX">
 							<ShortName>rockslide_02.wav</ShortName>
@@ -459,7 +472,7 @@
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
-				<Event Id="1398273777" Name="VA_Clerk_Play" ObjectPath="\Events\Default Work Unit\VA\VA_Clerk\VA_Clerk_Play" DurationType="OneShot" DurationMin="0." DurationMax="16.172623">
+				<Event Id="1398273777" Name="VA_Clerk_Play" ObjectPath="\Events\Default Work Unit\VA\VA_Clerk\VA_Clerk_Play" DurationType="OneShot" DurationMin="1.125419" DurationMax="16.172623">
 					<IncludedMemoryFiles>
 						<File Id="9205079" Language="SFX">
 							<ShortName>HisChildHasReturnd.wav</ShortName>
@@ -561,6 +574,14 @@
 							<ShortName>TheHighPriestwouldBeProud.wav</ShortName>
 							<Path>SFX\TheHighPriestwouldBeProud_10C4C929.wem</Path>
 						</File>
+						<File Id="772620925" Language="SFX">
+							<ShortName>BeforeDepartiingOurFaather.wav</ShortName>
+							<Path>SFX\BeforeDepartiingOurFaather_10C4C929.wem</Path>
+						</File>
+						<File Id="783980927" Language="SFX">
+							<ShortName>intro.wav</ShortName>
+							<Path>SFX\intro_10C4C929.wem</Path>
+						</File>
 						<File Id="800967046" Language="SFX">
 							<ShortName>ThePriestWouldBeDissapointed.wav</ShortName>
 							<Path>SFX\ThePriestWouldBeDissapointed_10C4C929.wem</Path>
@@ -642,6 +663,11 @@
 								<File Id="1066600936"/>
 							</Media>
 						</SwitchContainer>
+						<SwitchContainer SwitchValue="{E4131F3A-5229-4490-B1C3-59A1B7ED8496}">
+							<Media>
+								<File Id="772620925"/>
+							</Media>
+						</SwitchContainer>
 						<SwitchContainer SwitchValue="{35FDBA3F-535D-446D-B825-AE076D1E6484}">
 							<Media>
 								<File Id="59958060"/>
@@ -673,6 +699,11 @@
 							<Media>
 								<File Id="9205079"/>
 								<File Id="881047039"/>
+							</Media>
+						</SwitchContainer>
+						<SwitchContainer SwitchValue="{7B219077-EB24-46ED-A8B0-C034F0C1D7FD}">
+							<Media>
+								<File Id="783980927"/>
 							</Media>
 						</SwitchContainer>
 						<SwitchContainer SwitchValue="{0BF4F391-5C1D-4C1C-A0F5-59D0A73CBC9D}">
@@ -1042,6 +1073,14 @@
 					<ShortName>Buildings_Rumble_Elevator_Shaft_Glass_Break_Further_03.wav</ShortName>
 					<Path>SFX\Buildings_Rumble_Elevator_Shaft_Glass_Break_Further_03_4B1DA099.wem</Path>
 				</File>
+				<File Id="772620925" Language="SFX">
+					<ShortName>BeforeDepartiingOurFaather.wav</ShortName>
+					<Path>SFX\BeforeDepartiingOurFaather_10C4C929.wem</Path>
+				</File>
+				<File Id="783980927" Language="SFX">
+					<ShortName>intro.wav</ShortName>
+					<Path>SFX\intro_10C4C929.wem</Path>
+				</File>
 				<File Id="786073262" Language="SFX">
 					<ShortName>Mutated hammer.wav</ShortName>
 					<Path>SFX\Mutated hammer_26E4CBA8.wem</Path>
@@ -1068,7 +1107,7 @@
 				</File>
 				<File Id="826579596" Language="SFX">
 					<ShortName>Door, Metal, Open, Close, Distant, Mariott Hotel, San Jose 1.wav</ShortName>
-					<Path>SFX\Door, Metal, Open, Close, Distant, Mariott Hotel, San Jose 1_10C4C929.wem</Path>
+					<Path>SFX\Door, Metal, Open, Close, Distant, Mariott Hotel, San Jose 1_0CD43D3E.wem</Path>
 				</File>
 				<File Id="829065497" Language="SFX">
 					<ShortName>StepIntoTheLight.wav</ShortName>
@@ -1210,6 +1249,7 @@
 						<Switch Id="3419523551" Name="Tower_Proud" ObjectPath="\Switches\Default Work Unit\VA\VA_Clerk_Switch_Group\Tower_Proud" GUID="{89EFADE0-CD3D-4B63-84E4-809CFC526727}"/>
 						<Switch Id="4085445222" Name="Tower_Dissapointed" ObjectPath="\Switches\Default Work Unit\VA\VA_Clerk_Switch_Group\Tower_Dissapointed" GUID="{0BF4F391-5C1D-4C1C-A0F5-59D0A73CBC9D}"/>
 						<Switch Id="1337305014" Name="Tower_LetTheLightGuide_Grimly" ObjectPath="\Switches\Default Work Unit\VA\VA_Clerk_Switch_Group\Tower_LetTheLightGuide_Grimly" GUID="{7B219077-EB24-46ED-A8B0-C034F0C1D7FD}"/>
+						<Switch Id="2645581302" Name="BeforeDeparting" ObjectPath="\Switches\Default Work Unit\VA\VA_Clerk_Switch_Group\BeforeDeparting" GUID="{E4131F3A-5229-4490-B1C3-59A1B7ED8496}"/>
 					</Switches>
 				</SwitchGroup>
 				<SwitchGroup Id="1730208058" Name="Player_Footsteps" ObjectPath="\Switches\Default Work Unit\Locomotion\Player_Footsteps" GUID="{A706E7EA-CCEF-4788-AE6F-F3659BEF4932}">

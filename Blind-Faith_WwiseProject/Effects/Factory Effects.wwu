@@ -629,11 +629,11 @@
 									<PropertyList>
 										<Property Name="FilterTypeBand2" Type="int32" Value="5"/>
 										<Property Name="FilterTypeBand3" Type="int32" Value="0"/>
-										<Property Name="FrequencyBand1" Type="Real32" Value="246"/>
-										<Property Name="FrequencyBand2" Type="Real32" Value="6670"/>
-										<Property Name="FrequencyBand3" Type="Real32" Value="20000"/>
-										<Property Name="GainBand1" Type="Real32" Value="3.5"/>
-										<Property Name="GainBand2" Type="Real32" Value="7"/>
+										<Property Name="FrequencyBand1" Type="Real32" Value="175"/>
+										<Property Name="FrequencyBand2" Type="Real32" Value="7244"/>
+										<Property Name="FrequencyBand3" Type="Real32" Value="19123"/>
+										<Property Name="GainBand1" Type="Real32" Value="5"/>
+										<Property Name="GainBand2" Type="Real32" Value="5"/>
 										<Property Name="OutputLevel" Type="Real32" Value="5"/>
 									</PropertyList>
 								</Effect>

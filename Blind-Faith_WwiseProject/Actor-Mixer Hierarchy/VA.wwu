@@ -12,6 +12,7 @@
 						<Property Name="3DPosition" Type="int16" Value="1"/>
 						<Property Name="3DSpatialization" Type="int16" Value="2"/>
 						<Property Name="Color" Type="int16" Value="21"/>
+						<Property Name="EnableAttenuation" Type="bool" Value="False"/>
 						<Property Name="EnableDiffraction" Type="bool" Value="True"/>
 						<Property Name="Highpass" Type="int16">
 							<ValueList>
@@ -932,7 +933,6 @@
 									<PropertyList>
 										<Property Name="3DPosition" Type="int16" Value="1"/>
 										<Property Name="3DSpatialization" Type="int16" Value="2"/>
-										<Property Name="HoldEmitterPositionOrientation" Type="bool" Value="True"/>
 										<Property Name="Lowpass" Type="int16">
 											<ValueList>
 												<Value>22</Value>
@@ -948,7 +948,7 @@
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Attenuation">
-											<ObjectRef Name="10" ID="{CD38D13E-1D7D-46FA-AD0C-C7D5F9690547}" WorkUnitID="{47D4E814-D669-4A08-8AD2-F706566546E0}"/>
+											<ObjectRef Name="20m" ID="{2CC655F3-0B42-48F7-9E53-E75E8568D30F}" WorkUnitID="{47D4E814-D669-4A08-8AD2-F706566546E0}"/>
 										</Reference>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{23AF77D7-3FEA-409B-8E44-F5B490014C61}"/>
@@ -1179,15 +1179,15 @@
 													</PropertyList>
 													<PointList>
 														<Point>
-															<XPos>-58.88326</XPos>
-															<YPos>-60.16949</YPos>
+															<XPos>-17.25889</XPos>
+															<YPos>-22.31638</YPos>
 															<ZPos>2</ZPos>
 															<Flags>12</Flags>
 															<Time>0</Time>
 														</Point>
 														<Point>
-															<XPos>-2.03045</XPos>
-															<YPos>-1.69492</YPos>
+															<XPos>-1.01523</XPos>
+															<YPos>2.25988</YPos>
 															<ZPos>22</ZPos>
 															<Flags>0</Flags>
 															<Time>6000</Time>
@@ -1201,15 +1201,15 @@
 													</PropertyList>
 													<PointList>
 														<Point>
-															<XPos>-1E-05</XPos>
-															<YPos>-0.84746</YPos>
+															<XPos>10.65989</XPos>
+															<YPos>2.54237</YPos>
 															<ZPos>2</ZPos>
 															<Flags>12</Flags>
 															<Time>0</Time>
 														</Point>
 														<Point>
-															<XPos>64.97463</XPos>
-															<YPos>64.97175</YPos>
+															<XPos>47.20813</XPos>
+															<YPos>37.28813</YPos>
 															<ZPos>22</ZPos>
 															<Flags>0</Flags>
 															<Time>6000</Time>
@@ -2429,6 +2429,11 @@
 										</Position>
 									</PositioningInfo>
 									<ObjectLists/>
+									<Playlist>
+										<ItemRef Name="AngelCondemnedMan" ID="{E57A65C8-54D0-4769-AD18-A915E1E264C2}"/>
+										<ItemRef Name="ScornedForUsing" ID="{F67741E1-1D20-4FEC-B028-2D6FBFAC2145}"/>
+										<ItemRef Name="ThisChurchIsOneOfTheLast" ID="{D99131FF-4938-4C64-9A3D-D0B5281F2365}"/>
+									</Playlist>
 								</RandomSequenceContainer>
 								<Sound Name="BeforeDepartiingOurFaather" ID="{E2D4187F-435C-447A-AFDF-076174091AC9}" ShortID="717880278">
 									<ReferenceList>
@@ -2960,6 +2965,9 @@
 										</Position>
 									</PositioningInfo>
 									<ObjectLists/>
+									<Playlist>
+										<ItemRef Name="OFaithfullChildren" ID="{C10CC85A-E8F6-41B6-A7B8-71016C075A10}"/>
+									</Playlist>
 								</RandomSequenceContainer>
 								<RandomSequenceContainer Name="Clerk_4thEncounter_02" ID="{713A0C6C-863E-4C34-A1EC-578B746839A5}" ShortID="1019851063">
 									<PropertyList>
@@ -3111,6 +3119,9 @@
 										</Position>
 									</PositioningInfo>
 									<ObjectLists/>
+									<Playlist>
+										<ItemRef Name="TheChurchISAlmostRestored" ID="{C048AD79-0AE6-4A35-88E5-B2C3A31167ED}"/>
+									</Playlist>
 								</RandomSequenceContainer>
 								<RandomSequenceContainer Name="Clerk_4thEncounter_03" ID="{401FCD07-F075-4FB2-A4A8-0A0EADFDA920}" ShortID="167599859">
 									<PropertyList>
@@ -3262,6 +3273,9 @@
 										</Position>
 									</PositioningInfo>
 									<ObjectLists/>
+									<Playlist>
+										<ItemRef Name="YesTheLightGrowsStronger" ID="{56F6D062-BB09-4A28-8406-D231AFCF3C66}"/>
+									</Playlist>
 								</RandomSequenceContainer>
 								<RandomSequenceContainer Name="Clerk_4thEncounter_04" ID="{49D44F4B-E611-40D4-9076-4E43B2B4D4CB}" ShortID="1011730709">
 									<PropertyList>
@@ -3413,6 +3427,9 @@
 										</Position>
 									</PositioningInfo>
 									<ObjectLists/>
+									<Playlist>
+										<ItemRef Name="StepIntoTheLight" ID="{82B6DBDC-870E-4820-A86E-89A5945B8995}"/>
+									</Playlist>
 								</RandomSequenceContainer>
 								<RandomSequenceContainer Name="Clerk_4thEncounter_05" ID="{2B040FFE-007A-4BA8-8403-0313124D9D23}" ShortID="508914967">
 									<PropertyList>
@@ -3564,6 +3581,9 @@
 										</Position>
 									</PositioningInfo>
 									<ObjectLists/>
+									<Playlist>
+										<ItemRef Name="TheHighPriestwouldBeProud" ID="{B7CFD255-EB0F-4BA3-BFD9-4402637D1E96}"/>
+									</Playlist>
 								</RandomSequenceContainer>
 								<RandomSequenceContainer Name="Clerk_4thEncounter_06" ID="{96963C1B-86BD-4605-AFD7-E4D0A1B55240}" ShortID="128334402">
 									<PropertyList>
@@ -3715,6 +3735,9 @@
 										</Position>
 									</PositioningInfo>
 									<ObjectLists/>
+									<Playlist>
+										<ItemRef Name="ThePriestWouldBeDissapointed" ID="{29FAB564-A07F-4773-8DDF-E18ED3626DB0}"/>
+									</Playlist>
 								</RandomSequenceContainer>
 							</ChildrenList>
 							<PositioningInfo>
@@ -3827,6 +3850,12 @@
 										</ItemList>
 									</Grouping>
 									<Grouping>
+										<SwitchRef Name="BeforeDeparting" ID="{E4131F3A-5229-4490-B1C3-59A1B7ED8496}"/>
+										<ItemList>
+											<ItemRef Name="BeforeDepartiingOurFaather" ID="{E2D4187F-435C-447A-AFDF-076174091AC9}"/>
+										</ItemList>
+									</Grouping>
+									<Grouping>
 										<SwitchRef Name="Tower_Prayer" ID="{35FDBA3F-535D-446D-B825-AE076D1E6484}"/>
 										<ItemList>
 											<ItemRef Name="Clerk_4thEncounter_01" ID="{05135CD1-473D-4844-9871-EED7762EF23D}"/>
@@ -3860,6 +3889,12 @@
 										<SwitchRef Name="ClerkCrawl" ID="{64EADD76-180B-4140-9FDB-667A47D077E2}"/>
 										<ItemList>
 											<ItemRef Name="ClerkCrawl" ID="{DCC2F470-3DD6-4A7C-AA4F-A486B85A7616}"/>
+										</ItemList>
+									</Grouping>
+									<Grouping>
+										<SwitchRef Name="Tower_LetTheLightGuide_Grimly" ID="{7B219077-EB24-46ED-A8B0-C034F0C1D7FD}"/>
+										<ItemList>
+											<ItemRef Name="LetTheLightGuideThyWay_Grimly" ID="{50930A12-76CC-4CFD-8FF8-0DA22D12632A}"/>
 										</ItemList>
 									</Grouping>
 									<Grouping>
@@ -3907,16 +3942,16 @@
 									</PropertyList>
 									<PointList>
 										<Point>
-											<XPos>-2.03046</XPos>
+											<XPos>-1.52285</XPos>
 											<YPos>5.9322</YPos>
-											<ZPos>54</ZPos>
+											<ZPos>76</ZPos>
 											<Flags>12</Flags>
 											<Time>0</Time>
 										</Point>
 										<Point>
 											<XPos>3.04569</XPos>
 											<YPos>5.08475</YPos>
-											<ZPos>54</ZPos>
+											<ZPos>74</ZPos>
 											<Flags>0</Flags>
 											<Time>20000</Time>
 										</Point>

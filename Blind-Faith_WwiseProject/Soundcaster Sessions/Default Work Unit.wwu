@@ -21,13 +21,14 @@
 						</RTPCValue>
 					</RTPCValueList>
 					<CurrentStateList ShowAll="true">
-						<CurrentStateRef Name="NotLoosingSanity" ID="{D6278C57-B60E-4AD1-8033-76B4EED867A7}"/>
-						<CurrentStateRef Name="Playing" ID="{F980FD5B-64EE-4FDB-A297-7B478A51A3B9}"/>
-						<CurrentStateRef Name="None" ID="{1E51F8F4-A42A-4452-93E9-2F38A3D1CAF6}"/>
-						<CurrentStateRef Name="None" ID="{AC648F44-5D7F-4A3A-97FC-004FBF81D002}"/>
+						<CurrentStateRef Name="Paused" ID="{7E9E0727-D372-4B8E-A10A-B4BDF5D510B3}"/>
+						<CurrentStateRef Name="None" ID="{663A99AF-8A3E-4960-8363-3779C9B07B5B}"/>
+						<CurrentStateRef Name="NotPlaying" ID="{68FA20C0-6D85-4F86-9A80-95C198F962F8}"/>
+						<CurrentStateRef Name="NotPlaying" ID="{F5BF4DD7-2AC8-4BE8-8EE0-30DE014144FC}"/>
+						<CurrentStateRef Name="Enabled" ID="{37CD6093-12BC-473E-8D33-C80A70DC1BB0}"/>
 					</CurrentStateList>
 					<CurrentSwitchList ShowAll="true">
-						<CurrentSwitchRef Name="ClerkChatter1" ID="{6AD5FEDC-6CD0-4A3D-91C2-9265E8947D7B}"/>
+						<CurrentSwitchRef Name="Tower_Dissapointed" ID="{0BF4F391-5C1D-4C1C-A0F5-59D0A73CBC9D}"/>
 						<CurrentSwitchRef Name="Cloth" ID="{E9732CE8-4FF9-41FE-BD0F-8C37DC5FC301}"/>
 					</CurrentSwitchList>
 				</SoundcasterSession>

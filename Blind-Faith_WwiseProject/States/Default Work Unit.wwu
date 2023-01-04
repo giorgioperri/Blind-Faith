@@ -78,6 +78,24 @@
 						</StateGroup>
 					</ChildrenList>
 				</Folder>
+				<StateGroup Name="GameState" ID="{099D7E50-BDEF-428C-8C84-FE7979AC1E49}">
+					<PropertyList>
+						<Property Name="DefaultTransitionTime" Type="Real64" Value="0.5"/>
+					</PropertyList>
+					<ChildrenList>
+						<State Name="None" ID="{04A4D442-EBB2-4D25-A596-D048AA74E727}"/>
+						<State Name="Unpaused" ID="{E67D0600-13F7-4E42-A765-DF6E74FC6942}"/>
+						<State Name="Paused" ID="{7E9E0727-D372-4B8E-A10A-B4BDF5D510B3}"/>
+					</ChildrenList>
+					<TransitionList>
+						<Transition>
+							<StartState Name="None" ID="{04A4D442-EBB2-4D25-A596-D048AA74E727}"/>
+							<EndState Name="Unpaused" ID="{E67D0600-13F7-4E42-A765-DF6E74FC6942}"/>
+							<Time>0.5</Time>
+							<IsShared>false</IsShared>
+						</Transition>
+					</TransitionList>
+				</StateGroup>
 			</ChildrenList>
 		</WorkUnit>
 	</States>
