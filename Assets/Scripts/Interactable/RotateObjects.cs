@@ -35,7 +35,7 @@ public class RotateObjects : Interactable
 
     private void OnTriggerStay(Collider other)
     {
-        if (other.CompareTag("Player") && _lightStored >= 0)
+        if (other.CompareTag("Player") && _lightStored > 0)
         {
             HealthSystem.Instance.Heal();
         }
