@@ -14,6 +14,8 @@ namespace AK
     namespace EVENTS
     {
         static const AkUniqueID AMB_LIGHTBEAM = 1884576663U;
+        static const AkUniqueID CHAINSVOLDOWN = 1774501446U;
+        static const AkUniqueID CHAINSVOLUP = 64064109U;
         static const AkUniqueID CHURCH3DEVENTS = 1376062894U;
         static const AkUniqueID CHURCH_ALTER_AMBIENCE = 1568742100U;
         static const AkUniqueID CHURCH_AMBISONIC = 1132321458U;

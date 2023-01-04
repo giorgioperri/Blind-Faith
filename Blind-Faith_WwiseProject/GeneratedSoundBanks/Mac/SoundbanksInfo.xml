@@ -33,14 +33,20 @@
 				</StateGroup>
 			</StateGroups>
 		</SoundBank>
-		<SoundBank Id="1764570813" Language="SFX" Hash="103443448">
+		<SoundBank Id="1764570813" Language="SFX" Hash="2304167591">
 			<ObjectPath>\SoundBanks\Default Work Unit\Mains</ObjectPath>
 			<ShortName>Mains</ShortName>
 			<Path>Mains.bnk</Path>
 			<IncludedEvents>
 				<Event Id="1884576663" Name="Amb_LightBeam" ObjectPath="\Events\Default Work Unit\SFX\Ambience\3D\Amb_LightBeam" MaxAttenuation="0." DurationType="OneShot" DurationMin="0." DurationMax="0."/>
+				<Event Id="1774501446" Name="ChainsVolDown" ObjectPath="\Events\Default Work Unit\ChainsVolDown" MaxAttenuation="0." DurationType="OneShot" DurationMin="0." DurationMax="0."/>
+				<Event Id="64064109" Name="ChainsVolUp" ObjectPath="\Events\Default Work Unit\ChainsVolUp" MaxAttenuation="0." DurationType="OneShot" DurationMin="0." DurationMax="0."/>
 				<Event Id="1376062894" Name="Church3DEvents" ObjectPath="\Events\Default Work Unit\Church3DEvents" DurationType="Infinite">
 					<IncludedMemoryFiles>
+						<File Id="164709067" Language="SFX">
+							<ShortName>Chain_Rattles_PSEM.062.wav</ShortName>
+							<Path>SFX\Chain_Rattles_PSEM.062_F532E14A.wem</Path>
+						</File>
 						<File Id="264313546" Language="SFX">
 							<ShortName>Buildings_Rumble_Stairs_Plastic_Piece_Rattle.wav</ShortName>
 							<Path>SFX\Buildings_Rumble_Stairs_Plastic_Piece_Rattle_10C4C929.wem</Path>
@@ -48,6 +54,10 @@
 						<File Id="266172151" Language="SFX">
 							<ShortName>impact_p3_metalbox_rattle_12.wav</ShortName>
 							<Path>SFX\impact_p3_metalbox_rattle_12_10C4C929.wem</Path>
+						</File>
+						<File Id="367166774" Language="SFX">
+							<ShortName>Chain_Rattles_PSEM.062.wav</ShortName>
+							<Path>SFX\Chain_Rattles_PSEM.062_D2E89481.wem</Path>
 						</File>
 						<File Id="502370908" Language="SFX">
 							<ShortName>Buildings_Rumble_Corridor_Metal_Piece_Hit_04.wav</ShortName>
@@ -60,6 +70,10 @@
 						<File Id="900777790" Language="SFX">
 							<ShortName>impact_p2_metalbox_drop_08.wav</ShortName>
 							<Path>SFX\impact_p2_metalbox_drop_08_10C4C929.wem</Path>
+						</File>
+						<File Id="971087245" Language="SFX">
+							<ShortName>Chain_Rattles_PSEM.062.wav</ShortName>
+							<Path>SFX\Chain_Rattles_PSEM.062_05789238.wem</Path>
 						</File>
 						<File Id="1053857507" Language="SFX">
 							<ShortName>Buildings_Rumble_Elevator_Shaft_Glass_Break_04.wav</ShortName>
@@ -806,6 +820,10 @@
 					<ShortName>cm183_sweetener_sub_heartbeat.wav</ShortName>
 					<Path>SFX\cm183_sweetener_sub_heartbeat_119AEEB2.wem</Path>
 				</File>
+				<File Id="164709067" Language="SFX">
+					<ShortName>Chain_Rattles_PSEM.062.wav</ShortName>
+					<Path>SFX\Chain_Rattles_PSEM.062_F532E14A.wem</Path>
+				</File>
 				<File Id="169382249" Language="SFX">
 					<ShortName>ChurchAmbisonicAmbienceMain_loopo.wav</ShortName>
 					<Path>SFX\ChurchAmbisonicAmbienceMain_loopo_C9AB8BF9.wem</Path>
@@ -901,6 +919,10 @@
 				<File Id="345534423" Language="SFX">
 					<ShortName>Room Tone, Toilet, Fan Humming, Chiangmai, Thailand.wav</ShortName>
 					<Path>SFX\Room Tone, Toilet, Fan Humming, Chiangmai, Thailand_A6FD17C2.wem</Path>
+				</File>
+				<File Id="367166774" Language="SFX">
+					<ShortName>Chain_Rattles_PSEM.062.wav</ShortName>
+					<Path>SFX\Chain_Rattles_PSEM.062_D2E89481.wem</Path>
 				</File>
 				<File Id="368585047" Language="SFX">
 					<ShortName>Stinger_Voice_Female_Evil_Laughter_Reverb.wav</ShortName>
@@ -1177,6 +1199,10 @@
 				<File Id="964259068" Language="SFX">
 					<ShortName>STINGER_Whisper_Of_Distress.wav</ShortName>
 					<Path>SFX\STINGER_Whisper_Of_Distress_10C4C929.wem</Path>
+				</File>
+				<File Id="971087245" Language="SFX">
+					<ShortName>Chain_Rattles_PSEM.062.wav</ShortName>
+					<Path>SFX\Chain_Rattles_PSEM.062_05789238.wem</Path>
 				</File>
 				<File Id="974181242" Language="SFX">
 					<ShortName>Teleport.wav</ShortName>

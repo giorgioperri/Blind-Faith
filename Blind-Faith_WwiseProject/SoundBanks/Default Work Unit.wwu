@@ -7,14 +7,18 @@
 					<ObjectInclusionList>
 						<ObjectRef Name="LowHealth" ID="{D964366F-A312-403B-A443-A6FD061D426A}" WorkUnitID="{FB90B45E-3428-4F3A-BDE7-E5CA0BFF7B1D}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="VA" ID="{405E6D03-D34E-40A5-8665-1A1025CDCBEB}" WorkUnitID="{405E6D03-D34E-40A5-8665-1A1025CDCBEB}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="ChainsVolUp" ID="{512FBF3A-A8C2-4378-8369-7A8F1E0FD0EB}" WorkUnitID="{FB90B45E-3428-4F3A-BDE7-E5CA0BFF7B1D}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Ambience" ID="{60AD6A78-7716-438B-B950-6ED15CC7DF49}" WorkUnitID="{10A75CA5-3F55-455C-A103-004D7C43FEF2}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="ChainsVolDown" ID="{FF4E9259-9B10-439D-89C0-8C93EC15B142}" WorkUnitID="{FB90B45E-3428-4F3A-BDE7-E5CA0BFF7B1D}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Intro" ID="{763AEB30-E4AD-44C8-A6E3-D163D9B16CF2}" WorkUnitID="{10A75CA5-3F55-455C-A103-004D7C43FEF2}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Default Work Unit" ID="{10A75CA5-3F55-455C-A103-004D7C43FEF2}" WorkUnitID="{10A75CA5-3F55-455C-A103-004D7C43FEF2}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="ChainsLoop" ID="{5C790382-1BEA-4570-9B3D-D3632F1ED82C}" WorkUnitID="{10A75CA5-3F55-455C-A103-004D7C43FEF2}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="MenuMusic_Stop" ID="{5075AD66-8DBA-4594-9166-9FEDAA77AC26}" WorkUnitID="{FB90B45E-3428-4F3A-BDE7-E5CA0BFF7B1D}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="NotLoosingHealth" ID="{DF719655-18E0-4757-9D39-F21D0D6B7D39}" WorkUnitID="{FB90B45E-3428-4F3A-BDE7-E5CA0BFF7B1D}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="LoosingHealth" ID="{AE63352F-34E5-4994-ADA3-05A795496886}" WorkUnitID="{FB90B45E-3428-4F3A-BDE7-E5CA0BFF7B1D}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="ClerkCrawl" ID="{DCC2F470-3DD6-4A7C-AA4F-A486B85A7616}" WorkUnitID="{405E6D03-D34E-40A5-8665-1A1025CDCBEB}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Player" ID="{731D5E07-1F0B-4AAE-A0D8-195D31F04659}" WorkUnitID="{10A75CA5-3F55-455C-A103-004D7C43FEF2}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Footsteps" ID="{6FC38BCF-E0EC-4B08-B280-0A8F18E5BBA2}" WorkUnitID="{10A75CA5-3F55-455C-A103-004D7C43FEF2}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Default Work Unit" ID="{FB90B45E-3428-4F3A-BDE7-E5CA0BFF7B1D}" WorkUnitID="{FB90B45E-3428-4F3A-BDE7-E5CA0BFF7B1D}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="MenuMusic" ID="{94C1E42E-5D58-4F47-A31D-91DCCC3B960C}" WorkUnitID="{FB90B45E-3428-4F3A-BDE7-E5CA0BFF7B1D}" Origin="Manual" Filter="7"/>
 					</ObjectInclusionList>
