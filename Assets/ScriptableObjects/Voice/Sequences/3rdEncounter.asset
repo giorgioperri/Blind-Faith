@@ -14,6 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   sequenceLines:
   - {fileID: 11400000, guid: ea1089d36bb89456f8229bc2dea85f0e, type: 2}
+  - {fileID: 11400000, guid: dca8c5a22594944e5a663192d2511f87, type: 2}
+  - {fileID: 11400000, guid: 88f858e0003fd40a590bafabf4f72d7a, type: 2}
   sequenceSwitch:
     idInternal: 0
     valueGuidInternal: 
