@@ -95,6 +95,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isEnlighted: 0
   _lightStored: 0
+  _minLightIntensity: 10
+  _minGlowIntensity: 1
   _canDeactivateGrab: 1
   _canPlayLightSound: 1
   _canPlayTurnSound: 1
@@ -106,8 +108,6 @@ MonoBehaviour:
   hasVoiceLine: 0
   snap: 0
   voiceSeq: {fileID: 0}
-  raycastDirection: {x: 0, y: 0, z: 0}
-  rayShoot: {fileID: 0}
 --- !u!65 &6592199264429184366
 BoxCollider:
   m_ObjectHideFlags: 0
