@@ -127,6 +127,7 @@ namespace AK
 
             namespace SWITCH
             {
+                static const AkUniqueID BEFOREDEPARTING = 2645581302U;
                 static const AkUniqueID CLERKCHATTER1 = 711493436U;
                 static const AkUniqueID CLERKCHATTER2 = 711493439U;
                 static const AkUniqueID CLERKCHATTER3 = 711493438U;
