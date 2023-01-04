@@ -1240,7 +1240,7 @@
 										<Property Name="SpeakerPanning3DSpatializationMix" Type="int32" Value="69"/>
 										<Property Name="Volume" Type="Real64">
 											<ValueList>
-												<Value>-3</Value>
+												<Value>4</Value>
 											</ValueList>
 										</Property>
 									</PropertyList>
@@ -1267,14 +1267,19 @@
 											<ObjectRef Name="Fear_no_Evil" ID="{A1F17D99-0801-4F32-B74E-ADB2D9ACC556}" WorkUnitID="{E8613F7D-BAD3-45CD-A3ED-505576F31277}"/>
 										</Reference>
 										<Reference Name="Effect2">
-											<Custom CreatedFrom="{9B6E8B78-EF8C-494C-AADA-D01CF51B5FAC}">
-												<Effect Name="Large_Church1 (Custom)" ID="{425ACF00-52EC-419C-B03F-984B53D052EF}" ShortID="811160017" PluginName="Wwise Matrix Reverb" CompanyID="0" PluginID="115" PluginType="3">
+											<Custom CreatedFrom="{30319A92-C5AC-437A-9864-430059762933}">
+												<Effect Name="LR_Slap_with_CrossFeed (Custom)" ID="{D6F621BD-1F48-4262-ACD1-E0E9D9352AFC}" ShortID="1013271054" PluginName="Wwise Stereo Delay" CompanyID="0" PluginID="135" PluginType="3">
 													<PropertyList>
-														<Property Name="DryLevel" Type="Real32" Value="-0.3"/>
-														<Property Name="HFRatio" Type="Real32" Value="6"/>
-														<Property Name="NumberOfDelays" Type="int32" Value="12"/>
-														<Property Name="PreDelay" Type="Real32" Value="0.1"/>
-														<Property Name="WetLevel" Type="Real32" Value="-48"/>
+														<Property Name="EnableCrossFeed" Type="bool" Value="True"/>
+														<Property Name="EnableFeedback" Type="bool" Value="True"/>
+														<Property Name="FilterFrequency" Type="Real32" Value="275"/>
+														<Property Name="FilterGain" Type="Real32" Value="10.5"/>
+														<Property Name="FilterType" Type="int32" Value="5"/>
+														<Property Name="LeftCrossfeed" Type="Real32" Value="-20"/>
+														<Property Name="LeftDelayTime" Type="Real32" Value="0.29"/>
+														<Property Name="RightCrossfeed" Type="Real32" Value="-20"/>
+														<Property Name="RightDelayTime" Type="Real32" Value="0.43"/>
+														<Property Name="WetLevel" Type="Real32" Value="-25"/>
 													</PropertyList>
 												</Effect>
 											</Custom>

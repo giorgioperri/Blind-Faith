@@ -22,6 +22,7 @@ Event	ID	Name			Wwise Object Path	Notes
 	1903317937	MirrorTurn			\Default Work Unit\SFX\Mirror\MirrorTurn	
 	2115347266	DungeonScream			\Default Work Unit\SFX\DungeonScream	
 	2271674691	IntroEvent			\Default Work Unit\IntroEvent	
+	3086540886	StopAll			\Default Work Unit\StopAll	
 	3113871599	MassiveDevice			\Default Work Unit\MassiveDevice	
 	3134013836	TowerAmb			\Default Work Unit\SFX\Ambience\TowerAmb	
 	3254361931	DungeonAmb			\Default Work Unit\SFX\Ambience\DungeonAmb	
@@ -119,8 +120,8 @@ Effect plug-ins	ID	Name	Type				Notes
 	74280984	Wwise Parametric EQ (Custom)	Wwise Parametric EQ			
 	239393478	Aliasing (Custom)	Wwise Tremolo			
 	293256131	Wwise Parametric EQ (Custom)	Wwise Parametric EQ			
-	811160017	Large_Church1 (Custom)	Wwise Matrix Reverb			
 	819943492	Fear_no_Evil	Wwise Harmonizer			
+	1013271054	LR_Slap_with_CrossFeed (Custom)	Wwise Stereo Delay			
 	4269441574	Heavy_Metal	Wwise Flanger			
 
 Source plug-ins	ID	Name	Type		Wwise Object Path	Notes

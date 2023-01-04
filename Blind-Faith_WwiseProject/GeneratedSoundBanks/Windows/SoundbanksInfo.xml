@@ -11,7 +11,7 @@
 	<StreamedFiles/>
 	<MediaFilesNotInAnyBank/>
 	<SoundBanks>
-		<SoundBank Id="1355168291" Language="SFX" Hash="654493811">
+		<SoundBank Id="1355168291" Language="SFX" Hash="4159298964">
 			<ObjectPath>Init</ObjectPath>
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
@@ -33,7 +33,7 @@
 				</StateGroup>
 			</StateGroups>
 		</SoundBank>
-		<SoundBank Id="1764570813" Language="SFX" Hash="3801282382">
+		<SoundBank Id="1764570813" Language="SFX" Hash="103443448">
 			<ObjectPath>\SoundBanks\Default Work Unit\Mains</ObjectPath>
 			<ShortName>Mains</ShortName>
 			<Path>Mains.bnk</Path>
@@ -464,6 +464,7 @@
 				</Event>
 				<Event Id="3962630019" Name="MirrorTurn_Off" ObjectPath="\Events\Default Work Unit\SFX\Mirror\MirrorTurn_Off" MaxAttenuation="0." DurationType="OneShot" DurationMin="0." DurationMax="0."/>
 				<Event Id="340196141" Name="NotLoosingHealth" ObjectPath="\Events\Default Work Unit\SFX\Player\NotLoosingHealth" MaxAttenuation="0." DurationType="OneShot" DurationMin="0." DurationMax="0."/>
+				<Event Id="3086540886" Name="StopAll" ObjectPath="\Events\Default Work Unit\StopAll" MaxAttenuation="0." DurationType="OneShot" DurationMin="0." DurationMax="0."/>
 				<Event Id="3134013836" Name="TowerAmb" ObjectPath="\Events\Default Work Unit\SFX\Ambience\TowerAmb" DurationType="OneShot" DurationMin="70.983864" DurationMax="70.983864">
 					<IncludedMemoryFiles>
 						<File Id="274880349" Language="SFX">

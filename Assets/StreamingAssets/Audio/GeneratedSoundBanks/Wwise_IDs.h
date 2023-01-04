@@ -38,6 +38,7 @@ namespace AK
         static const AkUniqueID MIRRORTURN = 1903317937U;
         static const AkUniqueID MIRRORTURN_OFF = 3962630019U;
         static const AkUniqueID NOTLOOSINGHEALTH = 340196141U;
+        static const AkUniqueID STOPALL = 3086540886U;
         static const AkUniqueID TOWERAMB = 3134013836U;
         static const AkUniqueID VA_CLERK_PLAY = 1398273777U;
         static const AkUniqueID VA_PAUSE = 938429017U;

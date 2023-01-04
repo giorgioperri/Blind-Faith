@@ -654,11 +654,26 @@
 						<Action Name="" ID="{4B63BC81-DB32-43B3-B184-A1827EFDDC14}" ShortID="979364554">
 							<PropertyList>
 								<Property Name="ActionType" Type="int16" Value="2"/>
-								<Property Name="FadeTime" Type="Real64" Value="4"/>
+								<Property Name="FadeTime" Type="Real64" Value="3"/>
+								<Property Name="Scope" Type="int16" Value="1"/>
+								<Property Name="Volume" Type="Real64" Value="-96"/>
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Target">
 									<ObjectRef Name="WS_ExploreMusic_SFX_only" ID="{F8E29C60-6147-4A3F-9746-22F84E087746}" WorkUnitID="{10A75CA5-3F55-455C-A103-004D7C43FEF2}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{45B6C9C1-7257-4E98-9560-A8E179018336}" ShortID="889583293">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="2"/>
+								<Property Name="FadeTime" Type="Real64" Value="3"/>
+								<Property Name="Scope" Type="int16" Value="1"/>
+								<Property Name="Volume" Type="Real64" Value="-96"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="MenuMusic" ID="{38AEAD52-0B0F-4163-82E2-486BCBC1FBB8}" WorkUnitID="{10A75CA5-3F55-455C-A103-004D7C43FEF2}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>
@@ -672,6 +687,26 @@
 									<ObjectRef Name="Church3DAmb" ID="{141FA282-343A-4A68-A908-43A1BC732AA5}" WorkUnitID="{10A75CA5-3F55-455C-A103-004D7C43FEF2}"/>
 								</Reference>
 							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="StopAll" ID="{4F174DA9-A429-4A3B-958F-F5D4EF247A88}">
+					<ChildrenList>
+						<Action Name="" ID="{78BC7B62-F263-4BA7-91FD-0758E1E62F0E}" ShortID="124026012">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="3"/>
+								<Property Name="Scope" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList/>
+							<ChildrenList>
+								<EventActionException Name="" ID="{7C4FA8A1-A300-407D-BF8C-F3441C186073}">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="MenuMusic" ID="{38AEAD52-0B0F-4163-82E2-486BCBC1FBB8}" WorkUnitID="{10A75CA5-3F55-455C-A103-004D7C43FEF2}"/>
+										</Reference>
+									</ReferenceList>
+								</EventActionException>
+							</ChildrenList>
 						</Action>
 					</ChildrenList>
 				</Event>
