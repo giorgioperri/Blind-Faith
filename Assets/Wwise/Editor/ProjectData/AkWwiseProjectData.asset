@@ -305,7 +305,7 @@ MonoBehaviour:
     ParentPath: Events/Default Work Unit
     guid: 5eb490fb28343a4fbde7e5ca0bff7b1d
     GuidInternal: 
-    m_lastTime: -8585287442457596222
+    m_lastTime: -8585287380431949315
     List:
     - name: 3D
       guid: d0312eb1e176a14c90ecba42bdd0174b
@@ -1001,6 +1001,23 @@ MonoBehaviour:
         ObjectType: 4
         guid: f50ab3c4f820c44896ff11baa26a0745
       Path: Events/Default Work Unit/SFX
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: StopAll
+      guid: ed8360052df56c4cbaa28c427add1430
+      id: 3086540886
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 5eb490fb28343a4fbde7e5ca0bff7b1d
+      - ElementName: StopAll
+        ObjectType: 3
+        guid: ed8360052df56c4cbaa28c427add1430
+      Path: Events/Default Work Unit/StopAll
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
