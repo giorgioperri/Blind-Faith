@@ -11,7 +11,7 @@
 	<StreamedFiles/>
 	<MediaFilesNotInAnyBank/>
 	<SoundBanks>
-		<SoundBank Id="1355168291" Language="SFX" Hash="3759362851">
+		<SoundBank Id="1355168291" Language="SFX" Hash="4286201629">
 			<ObjectPath>Init</ObjectPath>
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
@@ -23,8 +23,17 @@
 				<AuxBus Id="2743004395" Name="SmallRoom_01" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Rooms_docking\SmallRoom_01"/>
 				<AuxBus Id="2933838247" Name="SmallRoom" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Rooms\SmallRoom"/>
 			</IncludedAuxBusses>
+			<StateGroups>
+				<StateGroup Id="4091656514" Name="GameState" ObjectPath="\States\Default Work Unit\GameState" GUID="{099D7E50-BDEF-428C-8C84-FE7979AC1E49}">
+					<States>
+						<State Id="748895195" Name="None" ObjectPath="\States\Default Work Unit\GameState\None" GUID="{04A4D442-EBB2-4D25-A596-D048AA74E727}"/>
+						<State Id="1365518790" Name="Unpaused" ObjectPath="\States\Default Work Unit\GameState\Unpaused" GUID="{E67D0600-13F7-4E42-A765-DF6E74FC6942}"/>
+						<State Id="319258907" Name="Paused" ObjectPath="\States\Default Work Unit\GameState\Paused" GUID="{7E9E0727-D372-4B8E-A10A-B4BDF5D510B3}"/>
+					</States>
+				</StateGroup>
+			</StateGroups>
 		</SoundBank>
-		<SoundBank Id="1764570813" Language="SFX" Hash="2813148155">
+		<SoundBank Id="1764570813" Language="SFX" Hash="2562273615">
 			<ObjectPath>\SoundBanks\Default Work Unit\Mains</ObjectPath>
 			<ShortName>Mains</ShortName>
 			<Path>Mains.bnk</Path>
@@ -86,7 +95,7 @@
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
-				<Event Id="3690987655" Name="CrawlSFX" ObjectPath="\Events\Default Work Unit\SFX\CrawlSFX" MaxAttenuation="10." DurationType="OneShot" DurationMin="15.075651" DurationMax="15.075651">
+				<Event Id="3690987655" Name="CrawlSFX" ObjectPath="\Events\Default Work Unit\SFX\CrawlSFX" MaxAttenuation="15." DurationType="OneShot" DurationMin="15.075651" DurationMax="15.075651">
 					<IncludedMemoryFiles>
 						<File Id="253584912" Language="SFX">
 							<ShortName>rockslide_02.wav</ShortName>
@@ -150,7 +159,7 @@
 						</File>
 						<File Id="826579596" Language="SFX">
 							<ShortName>Door, Metal, Open, Close, Distant, Mariott Hotel, San Jose 1.wav</ShortName>
-							<Path>SFX\Door, Metal, Open, Close, Distant, Mariott Hotel, San Jose 1_10C4C929.wem</Path>
+							<Path>SFX\Door, Metal, Open, Close, Distant, Mariott Hotel, San Jose 1_742B3F34.wem</Path>
 						</File>
 						<File Id="920208633" Language="SFX">
 							<ShortName>Creepy Door, Slow Creak_03.wav</ShortName>
@@ -387,7 +396,7 @@
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
-				<Event Id="3113871599" Name="MassiveDevice" ObjectPath="\Events\Default Work Unit\MassiveDevice" DurationType="OneShot" DurationMin="19.862646" DurationMax="20.698334">
+				<Event Id="3113871599" Name="MassiveDevice" ObjectPath="\Events\Default Work Unit\MassiveDevice" DurationType="OneShot" DurationMin="17.862646" DurationMax="18.698334">
 					<IncludedMemoryFiles>
 						<File Id="6231612" Language="SFX">
 							<ShortName>BF_MassiveSteamPunkDevice.wav</ShortName>
@@ -404,6 +413,10 @@
 						<File Id="190726892" Language="SFX">
 							<ShortName>STINGER_Pew_Pew.wav</ShortName>
 							<Path>SFX\STINGER_Pew_Pew_10C4C929.wem</Path>
+						</File>
+						<File Id="279953388" Language="SFX">
+							<ShortName>Lever_Pull_Steam_Release_PSEM.158.wav</ShortName>
+							<Path>SFX\Lever_Pull_Steam_Release_PSEM.158_964618FA.wem</Path>
 						</File>
 						<File Id="506611343" Language="SFX">
 							<ShortName>rockslide_02.wav</ShortName>
@@ -1068,7 +1081,7 @@
 				</File>
 				<File Id="826579596" Language="SFX">
 					<ShortName>Door, Metal, Open, Close, Distant, Mariott Hotel, San Jose 1.wav</ShortName>
-					<Path>SFX\Door, Metal, Open, Close, Distant, Mariott Hotel, San Jose 1_10C4C929.wem</Path>
+					<Path>SFX\Door, Metal, Open, Close, Distant, Mariott Hotel, San Jose 1_742B3F34.wem</Path>
 				</File>
 				<File Id="829065497" Language="SFX">
 					<ShortName>StepIntoTheLight.wav</ShortName>
