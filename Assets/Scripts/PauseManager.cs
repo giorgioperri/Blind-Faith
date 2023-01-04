@@ -22,6 +22,11 @@ public class PauseManager : MonoBehaviour
         _pauseMenu.SetActive(shouldOpen);
     }
 
+    public void Unpause()
+    {
+        _pauseMenu.SetActive(false);
+    }
+
     private void ToggleValueChanged(bool isOn)
     {
         GameManager.Instance.areSubtitlesActivated = isOn;

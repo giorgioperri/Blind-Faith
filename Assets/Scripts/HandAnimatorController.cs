@@ -32,6 +32,8 @@ public class HandAnimatorController : MonoBehaviour
 
     private void Update()
     {
+        if (GameManager.Instance.isPaused) return;
+        
         if (FirstPersonController.Instance.currentInteractable &&
             FirstPersonController.Instance.currentInteractable.GetType() == typeof(Socket))
         {

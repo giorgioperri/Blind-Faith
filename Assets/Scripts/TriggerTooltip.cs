@@ -20,6 +20,10 @@ public class TriggerTooltip : MonoBehaviour
                     TooltipManager.Instance.currentTooltip = TooltipTypes.PlaceSocket;
                     TooltipManager.Instance.ToggleTooltip("While close to the Socket, press the Left Mouse Button to place or pick up the Lantern");
                     break;
+                case TooltipTypes.Sprint:
+                    TooltipManager.Instance.currentTooltip = TooltipTypes.Sprint;
+                    TooltipManager.Instance.ToggleTooltip("Use the Left Shift key to sprint");
+                    break;
                 default:
                     break;
             }

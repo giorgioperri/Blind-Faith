@@ -6,13 +6,16 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/# Scenes_Final_Release/0 MainMenu.unity
+    path: Assets/Scenes/# Scenes_Final_Release/0 SplashScreens.unity
+    guid: e919abecc64f44b66a9285072eefc3a5
+  - enabled: 1
+    path: Assets/Scenes/# Scenes_Final_Release/1 MainMenu.unity
     guid: 20827c6728eec45629d988bacda7aae6
   - enabled: 1
-    path: Assets/Scenes/# Scenes_Final_Release/1 Intro.unity
+    path: Assets/Scenes/# Scenes_Final_Release/2 Intro.unity
     guid: e11e6303fac74479b85fa57eaa594ada
   - enabled: 1
-    path: Assets/Scenes/# Scenes_Final_Release/2 Church.unity
+    path: Assets/Scenes/# Scenes_Final_Release/3 Church.unity
     guid: 5071ab7b828ab4b49a4fed1b31f328a6
   m_configObjects:
     com.unity.input.settings: {fileID: 11400000, guid: 9e7be553448fa2546aea5752021cbcf7,

@@ -10,7 +10,7 @@ using UnityEngine.InputSystem;
 
 public class GameManager : MonoBehaviour
 {
-    [HideInInspector] public bool isPaused;
+    public bool isPaused = true;
     public bool isBathingInLight;
     public bool isLookingAtAngel;
     public bool areSubtitlesActivated = true;
@@ -47,6 +47,11 @@ public class GameManager : MonoBehaviour
     public bool canPlayHealthTooltip;
     public bool hasVisitedCatacombs;
 
+    public GameObject tutorialCutscene;
+    public GameObject playerCamera;
+
+    public Animator EndAnimator;
+
     private void Awake()
     {
         if (Instance != null)
@@ -78,10 +83,29 @@ public class GameManager : MonoBehaviour
         {
             LanternManager.Instance.lanternCharge = 1.0f;
             health = 100.0f;
+            tutorialCutscene.SetActive(false);
+            isPaused = false;
+            playerCamera.SetActive(true);
         }
         playerInput = FindObjectOfType<StarterAssetsInputs>();
+    }
+
+    public void Possess()
+    {
         TooltipManager.Instance.ToggleTooltip("Use the WASD keys to move");
         TooltipManager.Instance.currentTooltip = TooltipTypes.WASDMove;
+        isPaused = false;
+    }
+    
+    public void Unpossess()
+    {
+        isPaused = true;
+    }
+    
+    public void DeactivateTutorialCamera()
+    {
+        tutorialCutscene.SetActive(false);
+        playerCamera.SetActive(true);
     }
 
     void Update()
@@ -130,7 +154,7 @@ public class GameManager : MonoBehaviour
             canPlayHealthTooltip = false;
         }
 
-        if (health > 40 && !hasVisitedCatacombs)
+        if (health > 65 && !hasVisitedCatacombs)
         {
             canPlayHealthTooltip = true;
         }
@@ -172,6 +196,13 @@ public class GameManager : MonoBehaviour
         StartCoroutine(StartPillarEvent());
     }
 
+    public void InitEndEvent()
+    {
+        Unpossess();
+        EndAnimator.enabled = true;
+    }
+        
+
     private IEnumerator StartSocketEvent()
     {
         TooltipManager.Instance.currentTooltip = TooltipTypes.SeeSocket;
@@ -207,5 +238,14 @@ public class GameManager : MonoBehaviour
             Destroy(obj.gameObject);
         }
 
+    }
+
+    public void Resume()
+    {
+        isPaused = false;
+        PauseManager.Instance.Unpause();
+        ResumeVA.Post(PlayerSoundController.Instance.gameObject);
+        playerInput.pause = false;
+        Cursor.lockState = CursorLockMode.Locked;
     }
 }

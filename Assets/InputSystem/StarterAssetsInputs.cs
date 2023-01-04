@@ -1,3 +1,4 @@
+using System;
 using UnityEngine;
 #if ENABLE_INPUT_SYSTEM && STARTER_ASSETS_PACKAGES_CHECKED
 using UnityEngine.InputSystem;
@@ -23,7 +24,6 @@ namespace StarterAssets
 		public bool analogMovement;
 
 		[Header("Mouse Cursor Settings")]
-		public bool cursorLocked = true;
 		public bool cursorInputForLook = true;
 
 #if ENABLE_INPUT_SYSTEM && STARTER_ASSETS_PACKAGES_CHECKED
@@ -98,10 +98,13 @@ namespace StarterAssets
 		{
 			hasRaisedLantern = newRaiseLanternState;
 		}
-		
-		private void OnApplicationFocus(bool hasFocus)
+
+		private void Update()
 		{
-			SetCursorState(cursorLocked);
+			if (Mouse.current.leftButton.wasPressedThisFrame)
+			{
+				SetCursorState(!GameManager.Instance.isPaused);
+			}
 		}
 
 		private void SetCursorState(bool newState)

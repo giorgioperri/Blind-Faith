@@ -327,6 +327,12 @@ namespace StarterAssets
 		{
 			if (GameManager.Instance.isPaused) return;
 			// set target speed based on move speed, sprint speed and if sprint is pressed
+
+			if (_input.sprint && TooltipManager.Instance.currentTooltip == TooltipTypes.Sprint)
+			{
+				TooltipManager.Instance.CloseTooltip();
+			}
+			
 			float targetSpeed = _input.sprint ? SprintSpeed : MoveSpeed;
 
 			// a simplistic acceleration and deceleration designed to be easy to remove, replace, or iterate upon
