@@ -5,18 +5,7 @@ using UnityEngine;
 
 public class LightBathingArea : MonoBehaviour
 {
-    public static LightBathingArea Instance;
-    private bool _canTriggerSocketEvent = true;
-
-    private void Awake()
-    {
-        if (Instance != null)
-        {
-            Destroy(this);
-        }
-        
-        Instance = this;
-    }
+    public bool _canTriggerSocketEvent = true;
 
     private void OnTriggerEnter(Collider other)
     {

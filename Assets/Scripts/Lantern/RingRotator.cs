@@ -14,6 +14,8 @@ public class RingRotator : MonoBehaviour
     [SerializeField] private float _rotationSpeed = .4f;
     private Quaternion originalRotation;
 
+    public Transform lightBathingArea;
+
     private void Start()
     {
         originalRotation = transform.localRotation;
@@ -21,10 +23,10 @@ public class RingRotator : MonoBehaviour
 
     void Update()
     {
-        if (LightBathingArea.Instance == null) return;
+        if (lightBathingArea == null) return;
         
         float distanceFromBathingAreaOffset = 
-            Vector3.Distance(transform.position, LightBathingArea.Instance.transform.position);
+            Vector3.Distance(transform.position, lightBathingArea.position);
 
         if (distanceFromBathingAreaOffset > 5)
         {
