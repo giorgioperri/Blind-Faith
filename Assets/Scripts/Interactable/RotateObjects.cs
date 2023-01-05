@@ -35,7 +35,7 @@ public class RotateObjects : Interactable
 
     private void OnTriggerStay(Collider other)
     {
-        if (other.CompareTag("Player") && _lightStored >= 0)
+        if (other.CompareTag("Player") && _lightStored > 0)
         {
             HealthSystem.Instance.Heal();
         }
@@ -58,6 +58,9 @@ public class RotateObjects : Interactable
                 _canDeactivateGrab = false;
             }
         }
+        
+        _light.intensity = math.remap(0, 100, 0.5f, 10, _lightStored);
+        GetComponent<MeshRenderer>().material.SetFloat("_GlowIntensity", math.remap(0, 100, 0, 4, _lightStored));
         
         if ((GameManager.Instance.areMirrorsStep || !isEnlighted) && _lightStored <= 0) 
         {
@@ -98,8 +101,6 @@ public class RotateObjects : Interactable
                 break;
         }
 
-        _light.intensity = math.remap(0, 100, 0, 15, _lightStored);
-        GetComponent<MeshRenderer>().material.SetFloat("_GlowIntensity", math.remap(0, 100, 0, 4, _lightStored));
 
         if ((Mouse.current.leftButton.isPressed && FirstPersonController.Instance.currentInteractable == this) || _grabbedMirror)
         {

@@ -751,6 +751,26 @@
 						</Action>
 					</ChildrenList>
 				</Event>
+				<Event Name="StopAll" ID="{056083ED-F52D-4C6C-BAA2-8C427ADD1430}">
+					<ChildrenList>
+						<Action Name="" ID="{F4A0C6CE-17FA-4E99-BF32-19482E8EB5CA}" ShortID="756804456">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="3"/>
+								<Property Name="Scope" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList/>
+							<ChildrenList>
+								<EventActionException Name="" ID="{23493BE7-BA1F-4969-98BF-6F3ED7145960}">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="MenuMusic" ID="{38AEAD52-0B0F-4163-82E2-486BCBC1FBB8}" WorkUnitID="{10A75CA5-3F55-455C-A103-004D7C43FEF2}"/>
+										</Reference>
+									</ReferenceList>
+								</EventActionException>
+							</ChildrenList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

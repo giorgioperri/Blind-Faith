@@ -73,6 +73,8 @@ public class HealthSystem : MonoBehaviour
 
     void Update()
     {
+        if (GameManager.Instance.isPaused) return;
+        
         if (GameManager.Instance.health <= 100)
         {
             UpdateHealthFadeEffect();
@@ -109,6 +111,7 @@ public class HealthSystem : MonoBehaviour
 
     public void Heal()
     {
+        if (GameManager.Instance.isPaused) return;
         GameManager.Instance.health += Time.deltaTime * _gainHealthSpeed;
     }
 
