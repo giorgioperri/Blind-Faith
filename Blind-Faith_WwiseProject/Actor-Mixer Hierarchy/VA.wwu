@@ -4302,6 +4302,27 @@
 							</ChildrenList>
 						</Position>
 					</PositioningInfo>
+					<StateInfo>
+						<StateGroupList>
+							<StateGroupInfo>
+								<StateGroupRef Name="EndState" ID="{5D7A3B0A-586C-487B-8812-C8A5F63F01C6}"/>
+							</StateGroupInfo>
+						</StateGroupList>
+						<CustomStateList>
+							<CustomState>
+								<StateRef Name="End" ID="{E2C68931-67A9-42A2-B09E-861D4E155184}"/>
+								<CustomState Name="" ID="{FB302757-C235-441B-AEE6-FE1B728F7F88}" ShortID="1058665568">
+									<PropertyList>
+										<Property Name="Volume" Type="Real64" Value="4"/>
+									</PropertyList>
+								</CustomState>
+							</CustomState>
+							<CustomState>
+								<StateRef Name="NotEnd" ID="{033996E3-F5E0-4337-BB46-D458069F0495}"/>
+								<CustomState Name="" ID="{78A77DED-491E-48FC-9347-DB61AFD66D22}" ShortID="607219108"/>
+							</CustomState>
+						</CustomStateList>
+					</StateInfo>
 					<ObjectLists/>
 				</ActorMixer>
 			</ChildrenList>

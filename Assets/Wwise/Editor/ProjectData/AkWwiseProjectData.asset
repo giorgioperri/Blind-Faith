@@ -24,7 +24,7 @@ MonoBehaviour:
     ParentPath: Virtual Acoustics/Default Work Unit
     guid: 8157776944d252459e5c3d8483760091
     GuidInternal: 
-    m_lastTime: -8585287604270466012
+    m_lastTime: -8585337899198645024
     List: []
   AuxBusWwu:
   - PhysicalPath: Master-Mixer Hierarchy/Default Work Unit.wwu
@@ -38,7 +38,7 @@ MonoBehaviour:
     ParentPath: Master-Mixer Hierarchy/Default Work Unit
     guid: c6b41ec9dc56414596c429e948904d66
     GuidInternal: 
-    m_lastTime: -8585286858278985295
+    m_lastTime: -8585286909117878654
     List:
     - name: 2D
       guid: a0c80e6e11ef8042a411c16426d7260b
@@ -277,7 +277,7 @@ MonoBehaviour:
     ParentPath: SoundBanks/Default Work Unit
     guid: 91f3f2c2e89f4143bd59d41dc8510ab9
     GuidInternal: 
-    m_lastTime: -8585286858278975037
+    m_lastTime: -8585286821712783271
     List:
     - name: Mains
       guid: 22a5fa274c62a84d93c78d5801f30f0d
@@ -305,7 +305,7 @@ MonoBehaviour:
     ParentPath: Events/Default Work Unit
     guid: 5eb490fb28343a4fbde7e5ca0bff7b1d
     GuidInternal: 
-    m_lastTime: -8585286858280931351
+    m_lastTime: -8585286821719283127
     List:
     - name: 3D
       guid: d0312eb1e176a14c90ecba42bdd0174b
@@ -519,6 +519,23 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: 124.86862
       minDuration: 54.868618
+    - name: EndEvent
+      guid: 9031c25e56f3d449932b192e9753a727
+      id: 228553356
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 5eb490fb28343a4fbde7e5ca0bff7b1d
+      - ElementName: EndEvent
+        ObjectType: 3
+        guid: 9031c25e56f3d449932b192e9753a727
+      Path: Events/Default Work Unit/EndEvent
+      maxAttenuation: 0
+      maxDuration: 62.9738
+      minDuration: 62.9738
     - name: Footstep
       guid: 8fb216569b92754ea89555326fc46c90
       id: 1866025847
@@ -1173,7 +1190,7 @@ MonoBehaviour:
     ParentPath: Game Parameters/Default Work Unit
     guid: 7f57676cb1f5124c98483947934c3f41
     GuidInternal: 
-    m_lastTime: -8585287604291135860
+    m_lastTime: -8585316145134251181
     List:
     - name: PlayerHealth
       guid: 4a27241a62b0e74bbb905dbf43acf8c0
@@ -1201,7 +1218,7 @@ MonoBehaviour:
     ParentPath: States/Default Work Unit
     guid: 15da347adefaa443abeba8e206daca95
     GuidInternal: 
-    m_lastTime: -8585287442451149091
+    m_lastTime: -8585286821712763384
     List:
     - name: AlterAmb
       guid: 7f446b1539ffb74881108b1e3d68a471
@@ -1356,6 +1373,72 @@ MonoBehaviour:
         - ElementName: Playing
           ObjectType: 8
           guid: d0900f10ff17974fac953f2fe5da2d11
+      ValueGuids: []
+      ValueIcons: []
+      valuesInternal: []
+    - name: EndState
+      guid: 0a3b7a5d6c587b488812c8a5f63f01c6
+      id: 1596234923
+      PathAndIcons:
+      - ElementName: States
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 15da347adefaa443abeba8e206daca95
+      - ElementName: EndState
+        ObjectType: 9
+        guid: 0a3b7a5d6c587b488812c8a5f63f01c6
+      Path: States/Default Work Unit/EndState
+      values:
+      - name: End
+        guid: 3189c6e2a967a242b09e861d4e155184
+        id: 529726532
+        PathAndIcons:
+        - ElementName: States
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: 15da347adefaa443abeba8e206daca95
+        - ElementName: EndState
+          ObjectType: 9
+          guid: 0a3b7a5d6c587b488812c8a5f63f01c6
+        - ElementName: End
+          ObjectType: 8
+          guid: 3189c6e2a967a242b09e861d4e155184
+      - name: None
+        guid: 50cc0c3b66c16743a4e6654b3633bc19
+        id: 748895195
+        PathAndIcons:
+        - ElementName: States
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: 15da347adefaa443abeba8e206daca95
+        - ElementName: EndState
+          ObjectType: 9
+          guid: 0a3b7a5d6c587b488812c8a5f63f01c6
+        - ElementName: None
+          ObjectType: 8
+          guid: 50cc0c3b66c16743a4e6654b3633bc19
+      - name: NotEnd
+        guid: e3963903e0f53743bb46d458069f0495
+        id: 2393614615
+        PathAndIcons:
+        - ElementName: States
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: 15da347adefaa443abeba8e206daca95
+        - ElementName: EndState
+          ObjectType: 9
+          guid: 0a3b7a5d6c587b488812c8a5f63f01c6
+        - ElementName: NotEnd
+          ObjectType: 8
+          guid: e3963903e0f53743bb46d458069f0495
       ValueGuids: []
       ValueIcons: []
       valuesInternal: []
@@ -1629,7 +1712,7 @@ MonoBehaviour:
     ParentPath: Switches/Default Work Unit
     guid: 129020783626944d87631f9c3a93f8e0
     GuidInternal: 
-    m_lastTime: -8585286858278971906
+    m_lastTime: -8585286909117839786
     List:
     - name: Locomotion
       guid: ec8b7419cfaab54dbd4aee612fa66e6b
@@ -2139,7 +2222,7 @@ MonoBehaviour:
     ParentPath: Triggers/Default Work Unit
     guid: 50b0bf7a09fe60448cd0a08f93cae076
     GuidInternal: 
-    m_lastTime: -8585287604270466824
+    m_lastTime: -8585337899198646155
     List:
     - name: New_Trigger
       guid: b52432610d4a47429784de539560cf52
@@ -2173,7 +2256,7 @@ MonoBehaviour:
         guid: 14a961bd002ffe41ba1f908602494c89
       Path: Triggers/Default Work Unit/VA_Test
   ExpandedFileSystemItemIds: 
-  ExpandedWaapiItemIds: 
+  ExpandedWaapiItemIds: 0500000006000000120000001300000014000000
   AutoSyncSelection: 0
   autoPopulateEnabled: 1
   currentDataSource: 0

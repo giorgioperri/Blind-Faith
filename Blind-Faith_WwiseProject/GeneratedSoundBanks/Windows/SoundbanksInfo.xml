@@ -11,7 +11,7 @@
 	<StreamedFiles/>
 	<MediaFilesNotInAnyBank/>
 	<SoundBanks>
-		<SoundBank Id="1355168291" Language="SFX" Hash="2189575453">
+		<SoundBank Id="1355168291" Language="SFX" Hash="2870634945">
 			<ObjectPath>Init</ObjectPath>
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
@@ -33,7 +33,7 @@
 				</StateGroup>
 			</StateGroups>
 		</SoundBank>
-		<SoundBank Id="1764570813" Language="SFX" Hash="900405883">
+		<SoundBank Id="1764570813" Language="SFX" Hash="3978727455">
 			<ObjectPath>\SoundBanks\Default Work Unit\Mains</ObjectPath>
 			<ShortName>Mains</ShortName>
 			<Path>Mains.bnk</Path>
@@ -193,6 +193,14 @@
 							<ShortName>Stinger_Voice_Female_Evil_Laughter_Reverb.wav</ShortName>
 							<Path>SFX\Stinger_Voice_Female_Evil_Laughter_Reverb_5003C2CB.wem</Path>
 						</File>
+						<File Id="164709067" Language="SFX">
+							<ShortName>Chain_Rattles_PSEM.062.wav</ShortName>
+							<Path>SFX\Chain_Rattles_PSEM.062_25D2BADB.wem</Path>
+						</File>
+						<File Id="367166774" Language="SFX">
+							<ShortName>Chain_Rattles_PSEM.062.wav</ShortName>
+							<Path>SFX\Chain_Rattles_PSEM.062_39879AEA.wem</Path>
+						</File>
 						<File Id="368585047" Language="SFX">
 							<ShortName>Stinger_Voice_Female_Evil_Laughter_Reverb.wav</ShortName>
 							<Path>SFX\Stinger_Voice_Female_Evil_Laughter_Reverb_CA83762F.wem</Path>
@@ -216,6 +224,10 @@
 						<File Id="691443408" Language="SFX">
 							<ShortName>Stinger_Voice_Female_Evil_Laughter_Reverb.wav</ShortName>
 							<Path>SFX\Stinger_Voice_Female_Evil_Laughter_Reverb_C6C24628.wem</Path>
+						</File>
+						<File Id="971087245" Language="SFX">
+							<ShortName>Chain_Rattles_PSEM.062.wav</ShortName>
+							<Path>SFX\Chain_Rattles_PSEM.062_13F8D02D.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
@@ -250,6 +262,17 @@
 							<Path>SFX\Impacts_SIMPLE_176_10C4C929.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="228553356" Name="EndEvent" ObjectPath="\Events\Default Work Unit\EndEvent" DurationType="OneShot" DurationMin="62.973801" DurationMax="62.973801">
+					<IncludedMemoryFiles>
+						<File Id="835254602" Language="SFX">
+							<ShortName>ReaperDrone.wav</ShortName>
+							<Path>SFX\ReaperDrone_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+					<ActionSetState>
+						<ActionSetStateEntry Id="529726532" Name="End" ObjectPath="\States\Default Work Unit\EndState\End"/>
+					</ActionSetState>
 				</Event>
 				<Event Id="1866025847" Name="Footstep" ObjectPath="\Events\Default Work Unit\SFX\Player\Locomotion\Footstep" DurationType="OneShot" DurationMin="0.199419" DurationMax="0.651027">
 					<IncludedMemoryFiles>
@@ -1210,6 +1233,10 @@
 					<ShortName>Clerk_chatter\Clerk_chatter__1.wav</ShortName>
 					<Path>SFX\Clerk_chatter\Clerk_chatter__1_C12CA77B.wem</Path>
 				</File>
+				<File Id="835254602" Language="SFX">
+					<ShortName>ReaperDrone.wav</ShortName>
+					<Path>SFX\ReaperDrone_10C4C929.wem</Path>
+				</File>
 				<File Id="858874798" Language="SFX">
 					<ShortName>FOLLOWTHELIGHT.wav</ShortName>
 					<Path>SFX\FOLLOWTHELIGHT_5F6BFA51.wem</Path>
@@ -1326,6 +1353,11 @@
 			<GameParameters>
 				<GameParameter Id="151362964" Name="PlayerHealth" ObjectPath="\Game Parameters\Default Work Unit\PlayerHealth"/>
 			</GameParameters>
+			<StateGroups>
+				<StateGroup Id="529726532" Name="End" ObjectPath="\States\Default Work Unit\EndState\End" GUID="{E2C68931-67A9-42A2-B09E-861D4E155184}">
+					<States/>
+				</StateGroup>
+			</StateGroups>
 			<SwitchGroups>
 				<SwitchGroup Id="232330383" Name="VA_Clerk_Switch_Group" ObjectPath="\Switches\Default Work Unit\VA\VA_Clerk_Switch_Group" GUID="{606D0EF6-200D-4481-B083-66F3C0D6C337}">
 					<Switches>
