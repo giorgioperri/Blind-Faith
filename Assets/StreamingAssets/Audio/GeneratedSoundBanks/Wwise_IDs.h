@@ -21,6 +21,7 @@ namespace AK
         static const AkUniqueID DOOROPEN = 1404805401U;
         static const AkUniqueID DUNGEONAMB = 3254361931U;
         static const AkUniqueID DUNGEONSCREAM = 2115347266U;
+        static const AkUniqueID ENDEVENT = 228553356U;
         static const AkUniqueID FOOTSTEP = 1866025847U;
         static const AkUniqueID INTROEVENT = 2271674691U;
         static const AkUniqueID LANTEREN_CHARGING = 3651057560U;
@@ -71,6 +72,18 @@ namespace AK
                 static const AkUniqueID PLAYING = 1852808225U;
             } // namespace STATE
         } // namespace DUNGEONAMB
+
+        namespace ENDSTATE
+        {
+            static const AkUniqueID GROUP = 1596234923U;
+
+            namespace STATE
+            {
+                static const AkUniqueID END = 529726532U;
+                static const AkUniqueID NONE = 748895195U;
+                static const AkUniqueID NOTEND = 2393614615U;
+            } // namespace STATE
+        } // namespace ENDSTATE
 
         namespace GAMESTATE
         {

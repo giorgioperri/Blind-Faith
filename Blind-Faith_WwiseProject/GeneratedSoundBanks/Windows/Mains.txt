@@ -1,4 +1,5 @@
 Event	ID	Name			Wwise Object Path	Notes
+	228553356	EndEvent			\Default Work Unit\EndEvent	
 	340196141	NotLoosingHealth			\Default Work Unit\SFX\Player\NotLoosingHealth	
 	500177350	MirrorLight_Off			\Default Work Unit\SFX\Mirror\MirrorLight_Off	
 	662947992	VA_Resume			\Default Work Unit\VA\VA_Resume	
@@ -62,6 +63,7 @@ Switch	ID	Name	Switch Group			Notes
 State Group	ID	Name			Wwise Object Path	Notes
 	133846688	HPLoss			\Default Work Unit\PlayerState\HPLoss	
 	1264560589	Health_State			\Default Work Unit\PlayerState\Health_State	
+	1596234923	EndState			\Default Work Unit\EndState	
 	2677818465	AlterAmb			\Default Work Unit\Music\AlterAmb	
 	3254361931	DungeonAmb			\Default Work Unit\Music\DungeonAmb	
 
@@ -72,6 +74,9 @@ State	ID	Name	State Group			Notes
 	748895195	None	Health_State			
 	2627361338	LoosingSanity	Health_State			
 	3358664337	NotLoosingSanity	Health_State			
+	529726532	End	EndState			
+	748895195	None	EndState			
+	2393614615	NotEnd	EndState			
 	748895195	None	AlterAmb			
 	1227244058	NotPlaying	AlterAmb			
 	1852808225	Playing	AlterAmb			
@@ -82,20 +87,24 @@ State	ID	Name	State Group			Notes
 Custom State	ID	Name	State Group	Owner		Notes
 	48675759	Playing	AlterAmb	\Actor-Mixer Hierarchy\Default Work Unit\Ambience\3D\Church3DAmb		
 	263106354	Disabled	HPLoss	\Actor-Mixer Hierarchy\Default Work Unit\Player\Player2D		
+	266284622	End	EndState	\Actor-Mixer Hierarchy\Default Work Unit\Ambience\3D		
 	308903889	NotPlaying	AlterAmb	\Actor-Mixer Hierarchy\Default Work Unit\Ambience\2D\Blind Faith Altar Ambient v2		
 	380473656	Playing	DungeonAmb	\Actor-Mixer Hierarchy\Default Work Unit\Ambience\2D\ChurchAmbienceSeq		
 	430186056	NotPlaying	DungeonAmb	\Actor-Mixer Hierarchy\Default Work Unit\Ambience\2D\Stinger_Voice_Female_Eerie_Whisper		
+	449006586	End	EndState	\Actor-Mixer Hierarchy\Default Work Unit\Player		
 	477042271	NotPlaying	DungeonAmb	\Actor-Mixer Hierarchy\Default Work Unit\Ambience\2D\DungeonAmbience		
 	497765969	NotPlaying	DungeonAmb	\Actor-Mixer Hierarchy\Default Work Unit\Ambience\3D\DungeonLaughs		
 	499127428	Playing	DungeonAmb	\Actor-Mixer Hierarchy\Default Work Unit\Ambience\2D\Earthquake_Rumble_PSEM_100		
 	741205569	NotPlaying	DungeonAmb	\Actor-Mixer Hierarchy\Default Work Unit\Ambience\2D\86 Cave With Dripping Water		
 	748701343	NotLoosingSanity	Health_State	\Actor-Mixer Hierarchy\Default Work Unit\Player\Player2D\MetalScrape\LoosingSanityLoop_01		
+	803534559	End	EndState	\Actor-Mixer Hierarchy\Default Work Unit\Ambience\2D\ChurchAmbienceSeq		
 	904936361	NotLoosingSanity	Health_State	\Actor-Mixer Hierarchy\Default Work Unit\Player\Player2D\MetalScrape\LoosingSanityLoop_02		
 	955267660	Playing	AlterAmb	\Actor-Mixer Hierarchy\Default Work Unit\Ambience\2D\ChurchAmbienceSeq		
 	989362814	NotLoosingSanity	Health_State	\Actor-Mixer Hierarchy\Default Work Unit\Player\Player2D\LoosingSanityLoop_02		
 	1015315504	Playing	DungeonAmb	\Actor-Mixer Hierarchy\Default Work Unit\Ambience\3D\Church3DAmb		
 	1042231168	Playing	AlterAmb	\Actor-Mixer Hierarchy\Default Work Unit\Ambience\2D\Earthquake_Rumble_PSEM_100		
 	1056768589	NotLoosingSanity	Health_State	\Actor-Mixer Hierarchy\Default Work Unit\Player\Player2D\MetalScrape		
+	1058665568	End	EndState	\Actor-Mixer Hierarchy\VA\VA_Mixer		
 
 Game Parameter	ID	Name			Wwise Object Path	Notes
 	151362964	PlayerHealth			\Default Work Unit\PlayerHealth	
@@ -235,6 +244,7 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	829065497	StepIntoTheLight	C:\Users\kille\Blind-Faith\Blind-Faith_WwiseProject\.cache\Windows\SFX\StepIntoTheLight_81C04153.wem		\Actor-Mixer Hierarchy\VA\VA_Mixer\VA_Clerk_Switch_Container\Clerk_4thEncounter_04\StepIntoTheLight		415650
 	830999437	01 Stone Footsteps, Cobblestone Male, 30 Secs Each Slow, Medium, Fast_01	C:\Users\kille\Blind-Faith\Blind-Faith_WwiseProject\.cache\Windows\SFX\01 Stone Footsteps, Cobblestone Male, 30 Secs Each Slow, Medium, Fast_5FF7441C.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\PlayerLocomotion\Footsteps\Stone\01 Stone Footsteps, Cobblestone Male, 30 Secs Each Slow, Medium, Fast_01		57160
 	833554346	Clerk_chatter__1	C:\Users\kille\Blind-Faith\Blind-Faith_WwiseProject\.cache\Windows\SFX\Clerk_chatter\Clerk_chatter__1_C12CA77B.wem		\Actor-Mixer Hierarchy\VA\VA_Mixer\VA_Clerk_Switch_Container\Clerk_2ndEncounter_HighPriest\Clerk_chatter__1		407252
+	835254602	EndStinger	C:\Users\kille\Blind-Faith\Blind-Faith_WwiseProject\.cache\Windows\SFX\ReaperDrone_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ambience\2D\EndStinger		12091032
 	858874798	FOLLOWTHELIGHT	C:\Users\kille\Blind-Faith\Blind-Faith_WwiseProject\.cache\Windows\SFX\FOLLOWTHELIGHT_5F6BFA51.wem		\Actor-Mixer Hierarchy\VA\VA_Mixer\VA_Clerk_Switch_Container\Clerk_4thEncounter\FOLLOWTHELIGHT		284514
 	861805956	01 Stone Footsteps, Cobblestone Male, 30 Secs Each Slow, Medium, Fast	C:\Users\kille\Blind-Faith\Blind-Faith_WwiseProject\.cache\Windows\SFX\01 Stone Footsteps, Cobblestone Male, 30 Secs Each Slow, Medium, Fast_9D8C4D80.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\PlayerLocomotion\Footsteps\Stone\01 Stone Footsteps, Cobblestone Male, 30 Secs Each Slow, Medium, Fast		35240
 	881047039	HisChildHasReturnd_01	C:\Users\kille\Blind-Faith\Blind-Faith_WwiseProject\.cache\Windows\SFX\HisChildHasReturnd_8EBD0B63.wem		\Actor-Mixer Hierarchy\VA\VA_Mixer\VA_Clerk_Switch_Container\ClerkCrawl\HisChildHasReturnd_01		411148

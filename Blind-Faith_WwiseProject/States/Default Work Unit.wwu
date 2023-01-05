@@ -96,6 +96,13 @@
 						</Transition>
 					</TransitionList>
 				</StateGroup>
+				<StateGroup Name="EndState" ID="{5D7A3B0A-586C-487B-8812-C8A5F63F01C6}">
+					<ChildrenList>
+						<State Name="None" ID="{3B0CCC50-C166-4367-A4E6-654B3633BC19}"/>
+						<State Name="End" ID="{E2C68931-67A9-42A2-B09E-861D4E155184}"/>
+						<State Name="NotEnd" ID="{033996E3-F5E0-4337-BB46-D458069F0495}"/>
+					</ChildrenList>
+				</StateGroup>
 			</ChildrenList>
 		</WorkUnit>
 	</States>

@@ -3023,6 +3023,27 @@
 							<ObjectLists/>
 						</ActorMixer>
 					</ChildrenList>
+					<StateInfo>
+						<StateGroupList>
+							<StateGroupInfo>
+								<StateGroupRef Name="EndState" ID="{5D7A3B0A-586C-487B-8812-C8A5F63F01C6}"/>
+							</StateGroupInfo>
+						</StateGroupList>
+						<CustomStateList>
+							<CustomState>
+								<StateRef Name="End" ID="{E2C68931-67A9-42A2-B09E-861D4E155184}"/>
+								<CustomState Name="" ID="{498FE074-2D7E-4245-9744-D1B66AE60FEC}" ShortID="449006586">
+									<PropertyList>
+										<Property Name="Volume" Type="Real64" Value="-108"/>
+									</PropertyList>
+								</CustomState>
+							</CustomState>
+							<CustomState>
+								<StateRef Name="NotEnd" ID="{033996E3-F5E0-4337-BB46-D458069F0495}"/>
+								<CustomState Name="" ID="{95D6A038-6EA9-40BD-B03C-6A62CEB68D4C}" ShortID="482464773"/>
+							</CustomState>
+						</CustomStateList>
+					</StateInfo>
 					<ObjectLists/>
 				</ActorMixer>
 				<ActorMixer Name="Ambience" ID="{60AD6A78-7716-438B-B950-6ED15CC7DF49}" ShortID="547837392">
@@ -5638,7 +5659,7 @@
 										<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
 										<Property Name="Volume" Type="Real64">
 											<ValueList>
-												<Value>-13</Value>
+												<Value>-9</Value>
 											</ValueList>
 										</Property>
 									</PropertyList>
@@ -5912,7 +5933,6 @@
 									<PropertyList>
 										<Property Name="3DPosition" Type="int16" Value="1"/>
 										<Property Name="3DSpatialization" Type="int16" Value="2"/>
-										<Property Name="EnableAttenuation" Type="bool" Value="False"/>
 										<Property Name="EnableDiffraction" Type="bool" Value="True"/>
 										<Property Name="Highpass" Type="int16">
 											<ValueList>
@@ -5921,19 +5941,19 @@
 										</Property>
 										<Property Name="InitialDelay" Type="Real64">
 											<ValueList>
-												<Value>4</Value>
+												<Value>3</Value>
 											</ValueList>
 										</Property>
 										<Property Name="Lowpass" Type="int16">
 											<ValueList>
-												<Value>25</Value>
+												<Value>31</Value>
 											</ValueList>
 										</Property>
 										<Property Name="OverridePositioning" Type="bool" Value="True"/>
 										<Property Name="PlayMechanismLoop" Type="bool" Value="True"/>
 										<Property Name="PlayMechanismSpecialTransitions" Type="bool" Value="True"/>
 										<Property Name="PlayMechanismSpecialTransitionsType" Type="int16" Value="1"/>
-										<Property Name="PlayMechanismSpecialTransitionsValue" Type="Real64" Value="7.5">
+										<Property Name="PlayMechanismSpecialTransitionsValue" Type="Real64" Value="6.5">
 											<ModifierList>
 												<ModifierInfo>
 													<Modifier Name="" ID="{C1869AE9-021F-43AA-846C-855E7495F6DC}">
@@ -5948,14 +5968,11 @@
 										<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
 										<Property Name="Volume" Type="Real64">
 											<ValueList>
-												<Value>-15</Value>
+												<Value>-11</Value>
 											</ValueList>
 										</Property>
 									</PropertyList>
 									<ReferenceList>
-										<Reference Name="Attenuation">
-											<ObjectRef Name="20m" ID="{2CC655F3-0B42-48F7-9E53-E75E8568D30F}" WorkUnitID="{47D4E814-D669-4A08-8AD2-F706566546E0}"/>
-										</Reference>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{23AF77D7-3FEA-409B-8E44-F5B490014C61}"/>
 										</Reference>
@@ -6170,6 +6187,27 @@
 									<ObjectLists/>
 								</RandomSequenceContainer>
 							</ChildrenList>
+							<StateInfo>
+								<StateGroupList>
+									<StateGroupInfo>
+										<StateGroupRef Name="EndState" ID="{5D7A3B0A-586C-487B-8812-C8A5F63F01C6}"/>
+									</StateGroupInfo>
+								</StateGroupList>
+								<CustomStateList>
+									<CustomState>
+										<StateRef Name="End" ID="{E2C68931-67A9-42A2-B09E-861D4E155184}"/>
+										<CustomState Name="" ID="{52BF8620-20B6-485B-9472-B36B98129FD1}" ShortID="266284622">
+											<PropertyList>
+												<Property Name="Volume" Type="Real64" Value="-20"/>
+											</PropertyList>
+										</CustomState>
+									</CustomState>
+									<CustomState>
+										<StateRef Name="NotEnd" ID="{033996E3-F5E0-4337-BB46-D458069F0495}"/>
+										<CustomState Name="" ID="{2D21343C-35C4-4930-970F-A52EFD756788}" ShortID="826856390"/>
+									</CustomState>
+								</CustomStateList>
+							</StateInfo>
 							<ObjectLists/>
 						</ActorMixer>
 						<ActorMixer Name="2D" ID="{E94B8AA3-D878-4E77-9049-BDB78EAA154F}" ShortID="791378860">
@@ -6419,8 +6457,23 @@
 											<StateGroupInfo>
 												<StateGroupRef Name="DungeonAmb" ID="{82EAEF34-90E2-4BC4-9175-2A66D128273E}"/>
 											</StateGroupInfo>
+											<StateGroupInfo>
+												<StateGroupRef Name="EndState" ID="{5D7A3B0A-586C-487B-8812-C8A5F63F01C6}"/>
+											</StateGroupInfo>
 										</StateGroupList>
 										<CustomStateList>
+											<CustomState>
+												<StateRef Name="End" ID="{E2C68931-67A9-42A2-B09E-861D4E155184}"/>
+												<CustomState Name="" ID="{73813D67-CC88-4CA8-8E34-1A8C8472D2F5}" ShortID="803534559">
+													<PropertyList>
+														<Property Name="Volume" Type="Real64" Value="-108"/>
+													</PropertyList>
+												</CustomState>
+											</CustomState>
+											<CustomState>
+												<StateRef Name="NotEnd" ID="{033996E3-F5E0-4337-BB46-D458069F0495}"/>
+												<CustomState Name="" ID="{97B9DEBB-8F49-4902-9A87-106757B46430}" ShortID="594793654"/>
+											</CustomState>
 											<CustomState>
 												<StateRef Name="NotPlaying" ID="{F5BF4DD7-2AC8-4BE8-8EE0-30DE014144FC}"/>
 												<CustomState Name="" ID="{87995432-A7A6-4F36-9F0E-AC4910288CE0}" ShortID="112616772"/>
@@ -6845,7 +6898,7 @@
 									<PropertyList>
 										<Property Name="Highpass" Type="int16">
 											<ValueList>
-												<Value>8</Value>
+												<Value>3</Value>
 											</ValueList>
 										</Property>
 										<Property Name="OverridePositioning" Type="bool" Value="True"/>
@@ -7186,6 +7239,42 @@
 									</ChildrenList>
 									<ObjectLists/>
 								</ActorMixer>
+								<Sound Name="EndStinger" ID="{62D15EC6-7DDE-4777-B294-620DDCD77346}" ShortID="598079339">
+									<PropertyList>
+										<Property Name="Highpass" Type="int16">
+											<ValueList>
+												<Value>14</Value>
+											</ValueList>
+										</Property>
+										<Property Name="OverridePositioning" Type="bool" Value="True"/>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-17</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{23AF77D7-3FEA-409B-8E44-F5B490014C61}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C91EB4C6-56DC-4541-96C4-29E948904D66}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="ReaperDrone" ID="{345C6274-C0BA-4677-82B8-EC06DE74EFAF}">
+											<Language>SFX</Language>
+											<AudioFile>ReaperDrone.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="835254602"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ObjectLists/>
+									<ActiveSourceList>
+										<ActiveSource Name="ReaperDrone" ID="{345C6274-C0BA-4677-82B8-EC06DE74EFAF}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
 							</ChildrenList>
 							<ObjectLists/>
 						</ActorMixer>
