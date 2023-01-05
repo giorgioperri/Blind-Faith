@@ -311,6 +311,16 @@
 												</Reference>
 											</ReferenceList>
 										</Action>
+										<Action Name="" ID="{0DA3D16E-0153-4398-AF17-0509AF3C01F2}" ShortID="896859392">
+											<PropertyList>
+												<Property Name="Delay" Type="Real64" Value="10"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="ChainsLoop" ID="{5C790382-1BEA-4570-9B3D-D3632F1ED82C}" WorkUnitID="{10A75CA5-3F55-455C-A103-004D7C43FEF2}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
 									</ChildrenList>
 								</Event>
 							</ChildrenList>
@@ -713,6 +723,13 @@
 										</Reference>
 									</ReferenceList>
 								</EventActionException>
+								<EventActionException Name="" ID="{620A68EF-9DB8-4243-93D2-8CB605DAFA36}">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="EndStinger" ID="{62D15EC6-7DDE-4777-B294-620DDCD77346}" WorkUnitID="{10A75CA5-3F55-455C-A103-004D7C43FEF2}"/>
+										</Reference>
+									</ReferenceList>
+								</EventActionException>
 							</ChildrenList>
 						</Action>
 					</ChildrenList>
@@ -733,7 +750,35 @@
 										</Reference>
 									</ReferenceList>
 								</EventActionException>
+								<EventActionException Name="" ID="{0381299A-32D9-4430-9E03-73CB13289914}">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="EndStinger" ID="{62D15EC6-7DDE-4777-B294-620DDCD77346}" WorkUnitID="{10A75CA5-3F55-455C-A103-004D7C43FEF2}"/>
+										</Reference>
+									</ReferenceList>
+								</EventActionException>
 							</ChildrenList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="EndEvent" ID="{5EC23190-F356-49D4-932B-192E9753A727}">
+					<ChildrenList>
+						<Action Name="" ID="{55DE3FDD-2941-4DCC-9B77-CB3636CFEA39}" ShortID="863150127">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="EndStinger" ID="{62D15EC6-7DDE-4777-B294-620DDCD77346}" WorkUnitID="{10A75CA5-3F55-455C-A103-004D7C43FEF2}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{539E954B-EC83-408A-8F56-5566F56BD4EB}" ShortID="331160659">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="22"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="End" ID="{E2C68931-67A9-42A2-B09E-861D4E155184}" WorkUnitID="{7A34DA15-FADE-43A4-ABEB-A8E206DACA95}"/>
+								</Reference>
+							</ReferenceList>
 						</Action>
 					</ChildrenList>
 				</Event>
