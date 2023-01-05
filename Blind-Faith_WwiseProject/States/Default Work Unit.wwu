@@ -103,6 +103,16 @@
 						<State Name="NotEnd" ID="{033996E3-F5E0-4337-BB46-D458069F0495}"/>
 					</ChildrenList>
 				</StateGroup>
+				<StateGroup Name="Footsteps_Vol" ID="{B53FCF90-715A-41BD-A66D-B42ECF9902C9}">
+					<PropertyList>
+						<Property Name="DefaultTransitionTime" Type="Real64" Value="0"/>
+					</PropertyList>
+					<ChildrenList>
+						<State Name="None" ID="{3295DDB3-B6E3-4C44-9482-D1E3994CA61C}"/>
+						<State Name="On" ID="{76B70248-16A0-4089-92A9-04BFA7504135}"/>
+						<State Name="Off" ID="{97190052-8FE9-4830-9BD5-34141BB3B086}"/>
+					</ChildrenList>
+				</StateGroup>
 			</ChildrenList>
 		</WorkUnit>
 	</States>

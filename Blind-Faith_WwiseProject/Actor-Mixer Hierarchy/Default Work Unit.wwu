@@ -1473,6 +1473,27 @@
 									<PositioningInfo>
 										<Position Name="" ID="{13A27FEF-04A3-4651-A450-A10B2A23A6BD}"/>
 									</PositioningInfo>
+									<StateInfo>
+										<StateGroupList>
+											<StateGroupInfo>
+												<StateGroupRef Name="Footsteps_Vol" ID="{B53FCF90-715A-41BD-A66D-B42ECF9902C9}"/>
+											</StateGroupInfo>
+										</StateGroupList>
+										<CustomStateList>
+											<CustomState>
+												<StateRef Name="On" ID="{76B70248-16A0-4089-92A9-04BFA7504135}"/>
+												<CustomState Name="" ID="{A86A3757-8C81-4FE4-B952-32607A3001D4}" ShortID="515456654"/>
+											</CustomState>
+											<CustomState>
+												<StateRef Name="Off" ID="{97190052-8FE9-4830-9BD5-34141BB3B086}"/>
+												<CustomState Name="" ID="{60DD0486-F8A2-4880-9503-8831EA7C5465}" ShortID="836580169">
+													<PropertyList>
+														<Property Name="Volume" Type="Real64" Value="-108"/>
+													</PropertyList>
+												</CustomState>
+											</CustomState>
+										</CustomStateList>
+									</StateInfo>
 									<ObjectLists/>
 									<GroupingInfo>
 										<GroupingBehaviorList>

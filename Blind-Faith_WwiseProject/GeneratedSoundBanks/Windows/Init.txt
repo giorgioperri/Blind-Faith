@@ -2,6 +2,7 @@ State Group	ID	Name			Wwise Object Path	Notes
 	133846688	HPLoss			\Default Work Unit\PlayerState\HPLoss	
 	1264560589	Health_State			\Default Work Unit\PlayerState\Health_State	
 	1596234923	EndState			\Default Work Unit\EndState	
+	2562838104	Footsteps_Vol			\Default Work Unit\Footsteps_Vol	
 	2677818465	AlterAmb			\Default Work Unit\Music\AlterAmb	
 	3254361931	DungeonAmb			\Default Work Unit\Music\DungeonAmb	
 	4091656514	GameState			\Default Work Unit\GameState	
@@ -16,6 +17,9 @@ State	ID	Name	State Group			Notes
 	529726532	End	EndState			
 	748895195	None	EndState			
 	2393614615	NotEnd	EndState			
+	748895195	None	Footsteps_Vol			
+	930712164	Off	Footsteps_Vol			
+	1651971902	On	Footsteps_Vol			
 	748895195	None	AlterAmb			
 	1227244058	NotPlaying	AlterAmb			
 	1852808225	Playing	AlterAmb			

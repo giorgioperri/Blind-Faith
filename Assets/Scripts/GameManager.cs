@@ -211,12 +211,14 @@ public class GameManager : MonoBehaviour
         socketVC.gameObject.SetActive(true);
         mainVC.gameObject.SetActive(false);
         isInteractingWithMirror = true;
+        AkSoundEngine.SetState("Footsteps_Vol", "Off");
         yield return new WaitForSecondsRealtime(2f);
         TooltipManager.Instance.CloseTooltip();
         yield return new WaitForSecondsRealtime(1f);
         mainVC.gameObject.SetActive(true);
         socketVC.gameObject.SetActive(false);
         isPaused = false;
+        AkSoundEngine.SetState("Footsteps_Vol", "On");
         yield return new WaitForSecondsRealtime(1f);
         canPlayChatterTwo = true;
         isInteractingWithMirror = false;

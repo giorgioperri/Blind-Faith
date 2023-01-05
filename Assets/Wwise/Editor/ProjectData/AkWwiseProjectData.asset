@@ -1218,7 +1218,7 @@ MonoBehaviour:
     ParentPath: States/Default Work Unit
     guid: 15da347adefaa443abeba8e206daca95
     GuidInternal: 
-    m_lastTime: -8585286785599848057
+    m_lastTime: -8585286748627368488
     List:
     - name: AlterAmb
       guid: 7f446b1539ffb74881108b1e3d68a471
@@ -1439,6 +1439,72 @@ MonoBehaviour:
         - ElementName: NotEnd
           ObjectType: 8
           guid: e3963903e0f53743bb46d458069f0495
+      ValueGuids: []
+      ValueIcons: []
+      valuesInternal: []
+    - name: Footsteps_Vol
+      guid: 90cf3fb55a71bd41a66db42ecf9902c9
+      id: 2562838104
+      PathAndIcons:
+      - ElementName: States
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 15da347adefaa443abeba8e206daca95
+      - ElementName: Footsteps_Vol
+        ObjectType: 9
+        guid: 90cf3fb55a71bd41a66db42ecf9902c9
+      Path: States/Default Work Unit/Footsteps_Vol
+      values:
+      - name: None
+        guid: b3dd9532e3b6444c9482d1e3994ca61c
+        id: 748895195
+        PathAndIcons:
+        - ElementName: States
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: 15da347adefaa443abeba8e206daca95
+        - ElementName: Footsteps_Vol
+          ObjectType: 9
+          guid: 90cf3fb55a71bd41a66db42ecf9902c9
+        - ElementName: None
+          ObjectType: 8
+          guid: b3dd9532e3b6444c9482d1e3994ca61c
+      - name: Off
+        guid: 52001997e98f30489bd534141bb3b086
+        id: 930712164
+        PathAndIcons:
+        - ElementName: States
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: 15da347adefaa443abeba8e206daca95
+        - ElementName: Footsteps_Vol
+          ObjectType: 9
+          guid: 90cf3fb55a71bd41a66db42ecf9902c9
+        - ElementName: Off
+          ObjectType: 8
+          guid: 52001997e98f30489bd534141bb3b086
+      - name: On
+        guid: 4802b776a016894092a904bfa7504135
+        id: 1651971902
+        PathAndIcons:
+        - ElementName: States
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: 15da347adefaa443abeba8e206daca95
+        - ElementName: Footsteps_Vol
+          ObjectType: 9
+          guid: 90cf3fb55a71bd41a66db42ecf9902c9
+        - ElementName: On
+          ObjectType: 8
+          guid: 4802b776a016894092a904bfa7504135
       ValueGuids: []
       ValueIcons: []
       valuesInternal: []
