@@ -1491,6 +1491,12 @@
 										</GroupingBehaviorList>
 										<GroupingList>
 											<Grouping>
+												<SwitchRef Name="Metal" ID="{5AD3EF83-7CEC-4A9C-9BFE-BB6A0777997A}"/>
+												<ItemList>
+													<ItemRef Name="Metal" ID="{116B99E4-3B71-4D38-91F1-E74B0CBD2826}"/>
+												</ItemList>
+											</Grouping>
+											<Grouping>
 												<SwitchRef Name="Stone" ID="{2E3C3ED9-BC8E-4C45-959F-BA4228CA15E0}"/>
 												<ItemList>
 													<ItemRef Name="Stone" ID="{7A7CC761-A137-4CA4-B8CE-19A284996E23}"/>
@@ -1500,6 +1506,12 @@
 												<SwitchRef Name="Cloth" ID="{E9732CE8-4FF9-41FE-BD0F-8C37DC5FC301}"/>
 												<ItemList>
 													<ItemRef Name="Cloth" ID="{A3ABF9D5-DAD4-4460-A475-D0918DAA8EF3}"/>
+												</ItemList>
+											</Grouping>
+											<Grouping>
+												<SwitchRef Name="Wood" ID="{5F1E9AFE-7FFB-40F1-83BB-8CBAAC29C59E}"/>
+												<ItemList>
+													<ItemRef Name="Wood" ID="{0ECE8BCA-ADF6-42C7-A1B4-5C7F2C6642B2}"/>
 												</ItemList>
 											</Grouping>
 										</GroupingList>
@@ -5907,21 +5919,36 @@
 												<Value>19</Value>
 											</ValueList>
 										</Property>
-										<Property Name="ListenerRelativeRouting" Type="bool" Value="False"/>
+										<Property Name="InitialDelay" Type="Real64">
+											<ValueList>
+												<Value>4</Value>
+											</ValueList>
+										</Property>
 										<Property Name="Lowpass" Type="int16">
 											<ValueList>
-												<Value>12</Value>
+												<Value>25</Value>
 											</ValueList>
 										</Property>
 										<Property Name="OverridePositioning" Type="bool" Value="True"/>
 										<Property Name="PlayMechanismLoop" Type="bool" Value="True"/>
 										<Property Name="PlayMechanismSpecialTransitions" Type="bool" Value="True"/>
 										<Property Name="PlayMechanismSpecialTransitionsType" Type="int16" Value="1"/>
-										<Property Name="PlayMechanismSpecialTransitionsValue" Type="Real64" Value="5"/>
+										<Property Name="PlayMechanismSpecialTransitionsValue" Type="Real64" Value="7.5">
+											<ModifierList>
+												<ModifierInfo>
+													<Modifier Name="" ID="{C1869AE9-021F-43AA-846C-855E7495F6DC}">
+														<PropertyList>
+															<Property Name="Enabled" Type="bool" Value="True"/>
+															<Property Name="Max" Type="Real64" Value="5"/>
+														</PropertyList>
+													</Modifier>
+												</ModifierInfo>
+											</ModifierList>
+										</Property>
 										<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
 										<Property Name="Volume" Type="Real64">
 											<ValueList>
-												<Value>-96</Value>
+												<Value>-15</Value>
 											</ValueList>
 										</Property>
 									</PropertyList>
@@ -6041,23 +6068,29 @@
 											</PropertyList>
 										</Panner>
 										<Position Name="" ID="{AB5426F5-E978-4253-9C08-3EAAE746148A}">
+											<PropertyList>
+												<Property Name="NewPathForEachSound" Type="bool" Value="True"/>
+												<Property Name="PlayMechanismRandomOrSequence" Type="int16" Value="1"/>
+											</PropertyList>
 											<ChildrenList>
 												<Path2D Name="ChainsLoop_Path" ID="{7F85B542-8FAA-4223-8942-C74918E5AAD1}">
 													<PropertyList>
-														<Property Name="RandomX" Type="Real64" Value="8"/>
-														<Property Name="RandomY" Type="Real64" Value="5"/>
+														<Property Name="RandomX" Type="Real64" Value="16"/>
+														<Property Name="RandomY" Type="Real64" Value="18"/>
 														<Property Name="RandomZ" Type="Real64" Value="6"/>
 													</PropertyList>
 													<PointList>
 														<Point>
-															<XPos>11.16751</XPos>
-															<YPos>-0.28249</YPos>
+															<XPos>-47.20812</XPos>
+															<YPos>66.38417</YPos>
+															<ZPos>52</ZPos>
 															<Flags>12</Flags>
 															<Time>0</Time>
 														</Point>
 														<Point>
-															<XPos>-11.1675126903553</XPos>
-															<YPos>1.12994350282486</YPos>
+															<XPos>-80.71066</XPos>
+															<YPos>41.24294</YPos>
+															<ZPos>57</ZPos>
 															<Flags>0</Flags>
 															<Time>5000</Time>
 														</Point>
@@ -6065,20 +6098,67 @@
 												</Path2D>
 												<Path2D Name="ChainsLoop_Path_01" ID="{804E5876-A953-4F94-A164-8A13F510ACAE}">
 													<PropertyList>
-														<Property Name="RandomX" Type="Real64" Value="11"/>
-														<Property Name="RandomY" Type="Real64" Value="6"/>
+														<Property Name="RandomX" Type="Real64" Value="19"/>
+														<Property Name="RandomY" Type="Real64" Value="27"/>
 														<Property Name="RandomZ" Type="Real64" Value="8"/>
 													</PropertyList>
 													<PointList>
 														<Point>
-															<XPos>14.2132</XPos>
-															<YPos>0.84746</YPos>
+															<XPos>-74.61929</XPos>
+															<YPos>-34.18079</YPos>
+															<ZPos>34</ZPos>
 															<Flags>12</Flags>
 															<Time>0</Time>
 														</Point>
 														<Point>
-															<XPos>-13.19797</XPos>
-															<YPos>-0.56497</YPos>
+															<XPos>-34.01015</XPos>
+															<YPos>-75.14124</YPos>
+															<ZPos>34</ZPos>
+															<Flags>0</Flags>
+															<Time>5000</Time>
+														</Point>
+													</PointList>
+												</Path2D>
+												<Path2D Name="ChainsLoop_Path_02" ID="{9D96E2BE-6E46-471C-83FE-097826F0E446}">
+													<PropertyList>
+														<Property Name="RandomX" Type="Real64" Value="7"/>
+														<Property Name="RandomY" Type="Real64" Value="10"/>
+													</PropertyList>
+													<PointList>
+														<Point>
+															<XPos>29.44163</XPos>
+															<YPos>77.11864</YPos>
+															<ZPos>29</ZPos>
+															<Flags>12</Flags>
+															<Time>0</Time>
+														</Point>
+														<Point>
+															<XPos>64.97462</XPos>
+															<YPos>44.06779</YPos>
+															<ZPos>29</ZPos>
+															<Flags>0</Flags>
+															<Time>5000</Time>
+														</Point>
+													</PointList>
+												</Path2D>
+												<Path2D Name="ChainsLoop_Path_03" ID="{FADB503B-5071-4C9F-9C05-8D9173EC434A}">
+													<PropertyList>
+														<Property Name="RandomX" Type="Real64" Value="11"/>
+														<Property Name="RandomY" Type="Real64" Value="10"/>
+														<Property Name="RandomZ" Type="Real64" Value="13"/>
+													</PropertyList>
+													<PointList>
+														<Point>
+															<XPos>35.02538</XPos>
+															<YPos>-75.9887</YPos>
+															<ZPos>15</ZPos>
+															<Flags>12</Flags>
+															<Time>0</Time>
+														</Point>
+														<Point>
+															<XPos>69.54314</XPos>
+															<YPos>-44.0678</YPos>
+															<ZPos>15</ZPos>
 															<Flags>0</Flags>
 															<Time>5000</Time>
 														</Point>
@@ -6246,6 +6326,7 @@
 												<Property Name="3DSpatialization" Type="int16" Value="2"/>
 												<Property Name="EnableDiffraction" Type="bool" Value="True"/>
 												<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+												<Property Name="OverrideEffect" Type="bool" Value="True"/>
 												<Property Name="OverridePositioning" Type="bool" Value="True"/>
 											</PropertyList>
 											<ReferenceList>
@@ -6254,6 +6335,20 @@
 												</Reference>
 												<Reference Name="Conversion">
 													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{23AF77D7-3FEA-409B-8E44-F5B490014C61}"/>
+												</Reference>
+												<Reference Name="Effect0">
+													<Custom>
+														<Effect Name="Wwise Parametric EQ (Custom)" ID="{95C075CB-30C3-446D-9163-2DD5ED5C9A65}" ShortID="113273269" PluginName="Wwise Parametric EQ" CompanyID="0" PluginID="105" PluginType="3">
+															<PropertyList>
+																<Property Name="FilterTypeBand1" Type="int32" Value="6"/>
+																<Property Name="FrequencyBand1" Type="Real32" Value="115"/>
+																<Property Name="GainBand1" Type="Real32" Value="-4"/>
+																<Property Name="OnOffBand2" Type="bool" Value="False"/>
+																<Property Name="OnOffBand3" Type="bool" Value="False"/>
+																<Property Name="QFactorBand1" Type="Real32" Value="3.6"/>
+															</PropertyList>
+														</Effect>
+													</Custom>
 												</Reference>
 												<Reference Name="OutputBus">
 													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C91EB4C6-56DC-4541-96C4-29E948904D66}"/>
@@ -6750,13 +6845,13 @@
 									<PropertyList>
 										<Property Name="Highpass" Type="int16">
 											<ValueList>
-												<Value>12</Value>
+												<Value>8</Value>
 											</ValueList>
 										</Property>
 										<Property Name="OverridePositioning" Type="bool" Value="True"/>
 										<Property Name="Volume" Type="Real64">
 											<ValueList>
-												<Value>-16</Value>
+												<Value>-11</Value>
 											</ValueList>
 										</Property>
 									</PropertyList>

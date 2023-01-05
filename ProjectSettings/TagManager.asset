@@ -19,6 +19,8 @@ TagManager:
   - Redirector
   - YellowTarget
   - Pillar
+  - Footsteps/Metal
+  - Footsteps/Wood
   layers:
   - Default
   - TransparentFX

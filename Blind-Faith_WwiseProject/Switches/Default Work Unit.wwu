@@ -35,6 +35,8 @@
 							<ChildrenList>
 								<Switch Name="Stone" ID="{2E3C3ED9-BC8E-4C45-959F-BA4228CA15E0}"/>
 								<Switch Name="Cloth" ID="{E9732CE8-4FF9-41FE-BD0F-8C37DC5FC301}"/>
+								<Switch Name="Metal" ID="{5AD3EF83-7CEC-4A9C-9BFE-BB6A0777997A}"/>
+								<Switch Name="Wood" ID="{5F1E9AFE-7FFB-40F1-83BB-8CBAAC29C59E}"/>
 							</ChildrenList>
 						</SwitchGroup>
 					</ChildrenList>
