@@ -6,7 +6,7 @@ using UnityEngine;
 public class LightBathingArea : MonoBehaviour
 {
     public static LightBathingArea Instance;
-    private bool _canTriggerSocketEvent = true;
+    public bool _canTriggerSocketEvent = true;
 
     private void Awake()
     {
