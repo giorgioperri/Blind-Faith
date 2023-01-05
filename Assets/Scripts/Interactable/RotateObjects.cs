@@ -59,7 +59,7 @@ public class RotateObjects : Interactable
             }
         }
         
-        _light.intensity = math.remap(0, 100, 0.5f, 15, _lightStored);
+        _light.intensity = math.remap(0, 100, 0.5f, 10, _lightStored);
         GetComponent<MeshRenderer>().material.SetFloat("_GlowIntensity", math.remap(0, 100, 0, 4, _lightStored));
         
         if ((GameManager.Instance.areMirrorsStep || !isEnlighted) && _lightStored <= 0) 
