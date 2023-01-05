@@ -12,6 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d0b283e4ef7b635458f37b0c79d86857, type: 3}
   m_Name: 056083ED-F52D-4C6C-BAA2-8C427ADD1430
   m_EditorClassIdentifier: 
-  objectName: StopAll
-  id: 3086540886
+  objectName: StopAll_01
+  id: 4256069028
   guid: 056083ED-F52D-4C6C-BAA2-8C427ADD1430

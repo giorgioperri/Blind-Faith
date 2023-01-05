@@ -717,41 +717,7 @@
 						</Action>
 					</ChildrenList>
 				</Event>
-				<Event Name="ChainsVolUp" ID="{512FBF3A-A8C2-4378-8369-7A8F1E0FD0EB}">
-					<ChildrenList>
-						<Action Name="" ID="{81518608-E9B8-46AB-8BF6-D98259F6A800}" ShortID="41393965">
-							<PropertyList>
-								<Property Name="ActionType" Type="int16" Value="12"/>
-								<Property Name="FadeTime" Type="Real64" Value="3"/>
-								<Property Name="Scope" Type="int16" Value="1"/>
-								<Property Name="Volume" Type="Real64" Value="-4"/>
-							</PropertyList>
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="ChainsLoop" ID="{5C790382-1BEA-4570-9B3D-D3632F1ED82C}" WorkUnitID="{10A75CA5-3F55-455C-A103-004D7C43FEF2}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
-					</ChildrenList>
-				</Event>
-				<Event Name="ChainsVolDown" ID="{FF4E9259-9B10-439D-89C0-8C93EC15B142}">
-					<ChildrenList>
-						<Action Name="" ID="{F0F82F6B-B47B-4D9B-9B6C-7834AD52CAAD}" ShortID="262041153">
-							<PropertyList>
-								<Property Name="ActionType" Type="int16" Value="12"/>
-								<Property Name="FadeTime" Type="Real64" Value="3"/>
-								<Property Name="Scope" Type="int16" Value="1"/>
-								<Property Name="Volume" Type="Real64" Value="-96"/>
-							</PropertyList>
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="ChainsLoop" ID="{5C790382-1BEA-4570-9B3D-D3632F1ED82C}" WorkUnitID="{10A75CA5-3F55-455C-A103-004D7C43FEF2}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
-					</ChildrenList>
-				</Event>
-				<Event Name="StopAll" ID="{056083ED-F52D-4C6C-BAA2-8C427ADD1430}">
+				<Event Name="StopAll_01" ID="{056083ED-F52D-4C6C-BAA2-8C427ADD1430}">
 					<ChildrenList>
 						<Action Name="" ID="{F4A0C6CE-17FA-4E99-BF32-19482E8EB5CA}" ShortID="756804456">
 							<PropertyList>

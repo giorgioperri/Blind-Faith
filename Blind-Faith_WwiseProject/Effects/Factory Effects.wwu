@@ -628,13 +628,14 @@
 								<Effect Name="Low_Pass_20KHz" ID="{830124FB-B9D5-4AE8-846E-E94A74652666}" PluginName="Wwise Parametric EQ" CompanyID="0" PluginID="105" PluginType="3">
 									<PropertyList>
 										<Property Name="FilterTypeBand2" Type="int32" Value="5"/>
-										<Property Name="FilterTypeBand3" Type="int32" Value="0"/>
+										<Property Name="FilterTypeBand3" Type="int32" Value="6"/>
 										<Property Name="FrequencyBand1" Type="Real32" Value="175"/>
-										<Property Name="FrequencyBand2" Type="Real32" Value="7244"/>
-										<Property Name="FrequencyBand3" Type="Real32" Value="19123"/>
-										<Property Name="GainBand1" Type="Real32" Value="5"/>
-										<Property Name="GainBand2" Type="Real32" Value="5"/>
-										<Property Name="OutputLevel" Type="Real32" Value="5"/>
+										<Property Name="FrequencyBand2" Type="Real32" Value="5234"/>
+										<Property Name="FrequencyBand3" Type="Real32" Value="1646"/>
+										<Property Name="GainBand1" Type="Real32" Value="9"/>
+										<Property Name="GainBand2" Type="Real32" Value="5.5"/>
+										<Property Name="GainBand3" Type="Real32" Value="-3"/>
+										<Property Name="OutputLevel" Type="Real32" Value="5.5"/>
 									</PropertyList>
 								</Effect>
 							</ChildrenList>

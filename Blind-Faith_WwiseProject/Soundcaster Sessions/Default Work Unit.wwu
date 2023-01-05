@@ -24,12 +24,12 @@
 						<CurrentStateRef Name="Paused" ID="{7E9E0727-D372-4B8E-A10A-B4BDF5D510B3}"/>
 						<CurrentStateRef Name="None" ID="{663A99AF-8A3E-4960-8363-3779C9B07B5B}"/>
 						<CurrentStateRef Name="NotPlaying" ID="{68FA20C0-6D85-4F86-9A80-95C198F962F8}"/>
-						<CurrentStateRef Name="NotPlaying" ID="{F5BF4DD7-2AC8-4BE8-8EE0-30DE014144FC}"/>
+						<CurrentStateRef Name="None" ID="{1E51F8F4-A42A-4452-93E9-2F38A3D1CAF6}"/>
 						<CurrentStateRef Name="Enabled" ID="{37CD6093-12BC-473E-8D33-C80A70DC1BB0}"/>
 					</CurrentStateList>
 					<CurrentSwitchList ShowAll="true">
 						<CurrentSwitchRef Name="BeforeDeparting" ID="{E4131F3A-5229-4490-B1C3-59A1B7ED8496}"/>
-						<CurrentSwitchRef Name="Cloth" ID="{E9732CE8-4FF9-41FE-BD0F-8C37DC5FC301}"/>
+						<CurrentSwitchRef Name="Metal" ID="{5AD3EF83-7CEC-4A9C-9BFE-BB6A0777997A}"/>
 					</CurrentSwitchList>
 				</SoundcasterSession>
 			</ChildrenList>

@@ -35,13 +35,13 @@
 										<Property Name="FilterTypeBand1" Type="int32" Value="6"/>
 										<Property Name="FilterTypeBand2" Type="int32" Value="1"/>
 										<Property Name="FilterTypeBand3" Type="int32" Value="6"/>
-										<Property Name="FrequencyBand1" Type="Real32" Value="132"/>
+										<Property Name="FrequencyBand1" Type="Real32" Value="304"/>
 										<Property Name="FrequencyBand2" Type="Real32" Value="47"/>
-										<Property Name="FrequencyBand3" Type="Real32" Value="6813"/>
-										<Property Name="GainBand1" Type="Real32" Value="-3.5"/>
-										<Property Name="GainBand3" Type="Real32" Value="-5"/>
-										<Property Name="QFactorBand1" Type="Real32" Value="10.5"/>
-										<Property Name="QFactorBand3" Type="Real32" Value="11.5"/>
+										<Property Name="FrequencyBand3" Type="Real32" Value="8823"/>
+										<Property Name="GainBand1" Type="Real32" Value="-2.5"/>
+										<Property Name="GainBand3" Type="Real32" Value="-3"/>
+										<Property Name="QFactorBand1" Type="Real32" Value="9.4"/>
+										<Property Name="QFactorBand3" Type="Real32" Value="13.6"/>
 									</PropertyList>
 								</Effect>
 							</Custom>

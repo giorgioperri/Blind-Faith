@@ -14,8 +14,6 @@ namespace AK
     namespace EVENTS
     {
         static const AkUniqueID AMB_LIGHTBEAM = 1884576663U;
-        static const AkUniqueID CHAINSVOLDOWN = 1774501446U;
-        static const AkUniqueID CHAINSVOLUP = 64064109U;
         static const AkUniqueID CHURCH3DEVENTS = 1376062894U;
         static const AkUniqueID CHURCH_ALTER_AMBIENCE = 1568742100U;
         static const AkUniqueID CHURCH_AMBISONIC = 1132321458U;
@@ -41,6 +39,7 @@ namespace AK
         static const AkUniqueID MIRRORTURN_OFF = 3962630019U;
         static const AkUniqueID NOTLOOSINGHEALTH = 340196141U;
         static const AkUniqueID STOPALL = 3086540886U;
+        static const AkUniqueID STOPALL_01 = 4256069028U;
         static const AkUniqueID TOWERAMB = 3134013836U;
         static const AkUniqueID VA_CLERK_PLAY = 1398273777U;
         static const AkUniqueID VA_PAUSE = 938429017U;
@@ -120,7 +119,9 @@ namespace AK
             namespace SWITCH
             {
                 static const AkUniqueID CLOTH = 1367384683U;
+                static const AkUniqueID METAL = 2473969246U;
                 static const AkUniqueID STONE = 1216965916U;
+                static const AkUniqueID WOOD = 2058049674U;
             } // namespace SWITCH
         } // namespace PLAYER_FOOTSTEPS
 

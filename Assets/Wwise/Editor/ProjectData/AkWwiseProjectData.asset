@@ -24,7 +24,7 @@ MonoBehaviour:
     ParentPath: Virtual Acoustics\Default Work Unit
     guid: 8157776944d252459e5c3d8483760091
     GuidInternal: 
-    m_lastTime: -8585288409832023570
+    m_lastTime: -8585342942743677962
     List: []
   AuxBusWwu:
   - PhysicalPath: Master-Mixer Hierarchy\Default Work Unit.wwu
@@ -38,7 +38,7 @@ MonoBehaviour:
     ParentPath: Master-Mixer Hierarchy\Default Work Unit
     guid: c6b41ec9dc56414596c429e948904d66
     GuidInternal: 
-    m_lastTime: -8585287490531841216
+    m_lastTime: -8585286921136211611
     List:
     - name: 2D
       guid: a0c80e6e11ef8042a411c16426d7260b
@@ -277,7 +277,7 @@ MonoBehaviour:
     ParentPath: SoundBanks\Default Work Unit
     guid: 91f3f2c2e89f4143bd59d41dc8510ab9
     GuidInternal: 
-    m_lastTime: -8585287029329758320
+    m_lastTime: -8585286921136321327
     List:
     - name: Mains
       guid: 22a5fa274c62a84d93c78d5801f30f0d
@@ -305,7 +305,7 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit
     guid: 5eb490fb28343a4fbde7e5ca0bff7b1d
     GuidInternal: 
-    m_lastTime: -8585287029336188271
+    m_lastTime: -8585286921135752554
     List:
     - name: 3D
       guid: d0312eb1e176a14c90ecba42bdd0174b
@@ -354,8 +354,8 @@ MonoBehaviour:
         guid: 4fa377f073ff6f469e4a5759a67c72f1
       Path: Events\Default Work Unit\SFX\Ambience\3D\Amb_LightBeam
       maxAttenuation: 0
-      maxDuration: 0
-      minDuration: 0
+      maxDuration: -1
+      minDuration: -1
     - name: Ambience
       guid: d61574c5aefb6e4bb8be3d2e8f5c14a0
       id: 85412153
@@ -373,40 +373,6 @@ MonoBehaviour:
         ObjectType: 4
         guid: d61574c5aefb6e4bb8be3d2e8f5c14a0
       Path: Events\Default Work Unit\SFX\Ambience
-      maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
-    - name: ChainsVolDown
-      guid: 59924eff109b9d4389c08c93ec15b142
-      id: 1774501446
-      PathAndIcons:
-      - ElementName: Events
-        ObjectType: 5
-        guid: 00000000000000000000000000000000
-      - ElementName: Default Work Unit
-        ObjectType: 12
-        guid: 5eb490fb28343a4fbde7e5ca0bff7b1d
-      - ElementName: ChainsVolDown
-        ObjectType: 3
-        guid: 59924eff109b9d4389c08c93ec15b142
-      Path: Events\Default Work Unit\ChainsVolDown
-      maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
-    - name: ChainsVolUp
-      guid: 3abf2f51c2a8784383697a8f1e0fd0eb
-      id: 64064109
-      PathAndIcons:
-      - ElementName: Events
-        ObjectType: 5
-        guid: 00000000000000000000000000000000
-      - ElementName: Default Work Unit
-        ObjectType: 12
-        guid: 5eb490fb28343a4fbde7e5ca0bff7b1d
-      - ElementName: ChainsVolUp
-        ObjectType: 3
-        guid: 3abf2f51c2a8784383697a8f1e0fd0eb
-      Path: Events\Default Work Unit\ChainsVolUp
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
@@ -490,9 +456,9 @@ MonoBehaviour:
         ObjectType: 3
         guid: 4a1ca33b482c4f458116a0787c4ab5fb
       Path: Events\Default Work Unit\SFX\CrawlSFX
-      maxAttenuation: 15
-      maxDuration: 15.075651
-      minDuration: 15.075651
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
     - name: DoorOpen
       guid: b7002d55e1e5ca40bfc88347b18b8bfd
       id: 1404805401
@@ -508,8 +474,8 @@ MonoBehaviour:
         guid: b7002d55e1e5ca40bfc88347b18b8bfd
       Path: Events\Default Work Unit\DoorOpen
       maxAttenuation: 0
-      maxDuration: 20.698334
-      minDuration: 19.862646
+      maxDuration: -1
+      minDuration: -1
     - name: DungeonAmb
       guid: ee95cc838720604daa13fc1928d15ecc
       id: 3254361931
@@ -551,8 +517,8 @@ MonoBehaviour:
         guid: 18d63c71d975294f867cdc4a63c0a42a
       Path: Events\Default Work Unit\SFX\DungeonScream
       maxAttenuation: 0
-      maxDuration: 124.86862
-      minDuration: 54.868618
+      maxDuration: -1
+      minDuration: -1
     - name: Footstep
       guid: 8fb216569b92754ea89555326fc46c90
       id: 1866025847
@@ -577,8 +543,8 @@ MonoBehaviour:
         guid: 8fb216569b92754ea89555326fc46c90
       Path: Events\Default Work Unit\SFX\Player\Locomotion\Footstep
       maxAttenuation: 0
-      maxDuration: 0.651027
-      minDuration: 0.199419
+      maxDuration: -1
+      minDuration: -1
     - name: IntroEvent
       guid: f6687b10eef1e043a75cc5b1e7fa626b
       id: 2271674691
@@ -594,8 +560,8 @@ MonoBehaviour:
         guid: f6687b10eef1e043a75cc5b1e7fa626b
       Path: Events\Default Work Unit\IntroEvent
       maxAttenuation: 0
-      maxDuration: 61.958282
-      minDuration: 61.958282
+      maxDuration: -1
+      minDuration: -1
     - name: Lanteren
       guid: 9df5e175dfba1742bc7642b96b7eb864
       id: 1148743742
@@ -642,7 +608,7 @@ MonoBehaviour:
         ObjectType: 3
         guid: 8e8b0e017831c648a06f41ea9f4e623c
       Path: Events\Default Work Unit\SFX\Player\Lanteren\Lanteren_Charging
-      maxAttenuation: 10
+      maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
     - name: Lanteren_Deploy_Loop
@@ -668,7 +634,7 @@ MonoBehaviour:
         ObjectType: 3
         guid: 090eb9618f87b34e88118081defed65f
       Path: Events\Default Work Unit\SFX\Player\Lanteren\Lanteren_Deploy_Loop
-      maxAttenuation: 10
+      maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
     - name: Lanteren_discharge
@@ -694,9 +660,9 @@ MonoBehaviour:
         ObjectType: 3
         guid: b9055e86b47d5342abdf5a1245400c54
       Path: Events\Default Work Unit\SFX\Player\Lanteren\Lanteren_discharge
-      maxAttenuation: 10
-      maxDuration: 3.185225
-      minDuration: 3.185225
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
     - name: Lanteren_Undeploy
       guid: 62a79bc35454b847be61a0506fa443ea
       id: 740769089
@@ -720,9 +686,9 @@ MonoBehaviour:
         ObjectType: 3
         guid: 62a79bc35454b847be61a0506fa443ea
       Path: Events\Default Work Unit\SFX\Player\Lanteren\Lanteren_Undeploy
-      maxAttenuation: 10
-      maxDuration: 2.79757
-      minDuration: 2.79757
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
     - name: Lightbeam
       guid: ccc885bf23f2b34dbf2b583e204c98b3
       id: 1710262138
@@ -744,8 +710,8 @@ MonoBehaviour:
         guid: ccc885bf23f2b34dbf2b583e204c98b3
       Path: Events\Default Work Unit\SFX\Mirror\Lightbeam
       maxAttenuation: 0
-      maxDuration: 0
-      minDuration: 0
+      maxDuration: -1
+      minDuration: -1
     - name: Locomotion
       guid: 57d53468c486f141a94163074cf407ff
       id: 556887514
@@ -812,7 +778,7 @@ MonoBehaviour:
         ObjectType: 3
         guid: 6f3664d912a33b40a443a6fd061d426a
       Path: Events\Default Work Unit\SFX\Player\LowHealth
-      maxAttenuation: 10
+      maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
     - name: MassiveDevice
@@ -830,8 +796,8 @@ MonoBehaviour:
         guid: b80de0c5c093b04faf38bbb9a629b6c4
       Path: Events\Default Work Unit\MassiveDevice
       maxAttenuation: 0
-      maxDuration: 18.698334
-      minDuration: 17.862646
+      maxDuration: -1
+      minDuration: -1
     - name: MenuMusic
       guid: 2ee4c194585d474fa31d91dccc3b960c
       id: 679636833
@@ -864,8 +830,8 @@ MonoBehaviour:
         guid: 66ad7550ba8d944591669fedaa77ac26
       Path: Events\Default Work Unit\MenuMusic_Stop
       maxAttenuation: 0
-      maxDuration: 0
-      minDuration: 0
+      maxDuration: -1
+      minDuration: -1
     - name: Mirror
       guid: 29a7b1fdbebfe84a8502e0655cd7ce83
       id: 2039020852
@@ -906,7 +872,7 @@ MonoBehaviour:
         ObjectType: 3
         guid: 0a6ac5d56bd22c4a9c7984e1f9444477
       Path: Events\Default Work Unit\SFX\Mirror\MirrorLight
-      maxAttenuation: 10
+      maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
     - name: MirrorLight_Off
@@ -930,8 +896,8 @@ MonoBehaviour:
         guid: 416336d61189244baa744805cb3c0aee
       Path: Events\Default Work Unit\SFX\Mirror\MirrorLight_Off
       maxAttenuation: 0
-      maxDuration: 0
-      minDuration: 0
+      maxDuration: -1
+      minDuration: -1
     - name: MirrorTurn
       guid: b6b1f30d8a36b04da16fd079d5363d92
       id: 1903317937
@@ -952,7 +918,7 @@ MonoBehaviour:
         ObjectType: 3
         guid: b6b1f30d8a36b04da16fd079d5363d92
       Path: Events\Default Work Unit\SFX\Mirror\MirrorTurn
-      maxAttenuation: 10
+      maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
     - name: MirrorTurn_Off
@@ -976,8 +942,8 @@ MonoBehaviour:
         guid: 3817a9aab1494040b478dba4e4ae6c9a
       Path: Events\Default Work Unit\SFX\Mirror\MirrorTurn_Off
       maxAttenuation: 0
-      maxDuration: 0
-      minDuration: 0
+      maxDuration: -1
+      minDuration: -1
     - name: NotLoosingHealth
       guid: 559671dfe01857479d39f21d0d6b7d39
       id: 340196141
@@ -999,8 +965,8 @@ MonoBehaviour:
         guid: 559671dfe01857479d39f21d0d6b7d39
       Path: Events\Default Work Unit\SFX\Player\NotLoosingHealth
       maxAttenuation: 0
-      maxDuration: 0
-      minDuration: 0
+      maxDuration: -1
+      minDuration: -1
     - name: Player
       guid: f8b01a7ee68008409845c82dbe000cfb
       id: 1069431850
@@ -1053,11 +1019,11 @@ MonoBehaviour:
         guid: a94d174f29a43b4a958ff5d4ef247a88
       Path: Events\Default Work Unit\StopAll
       maxAttenuation: 0
-      maxDuration: 0
-      minDuration: 0
-    - name: StopAll
+      maxDuration: -1
+      minDuration: -1
+    - name: StopAll_01
       guid: ed8360052df56c4cbaa28c427add1430
-      id: 3086540886
+      id: 4256069028
       PathAndIcons:
       - ElementName: Events
         ObjectType: 5
@@ -1065,10 +1031,10 @@ MonoBehaviour:
       - ElementName: Default Work Unit
         ObjectType: 12
         guid: 5eb490fb28343a4fbde7e5ca0bff7b1d
-      - ElementName: StopAll
+      - ElementName: StopAll_01
         ObjectType: 3
         guid: ed8360052df56c4cbaa28c427add1430
-      Path: Events\Default Work Unit\StopAll
+      Path: Events\Default Work Unit\StopAll_01
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
@@ -1093,8 +1059,8 @@ MonoBehaviour:
         guid: c60f04e5cb05d64a8d786ebca956bf76
       Path: Events\Default Work Unit\SFX\Ambience\TowerAmb
       maxAttenuation: 0
-      maxDuration: 70.983864
-      minDuration: 70.983864
+      maxDuration: -1
+      minDuration: -1
     - name: VA
       guid: 962c1cf8524efa4d9e07284d538ea186
       id: 1534528554
@@ -1153,8 +1119,8 @@ MonoBehaviour:
         guid: 4415bc8e58ba4848a9771366cdd39cee
       Path: Events\Default Work Unit\VA\VA_Clerk\VA_Clerk_Play
       maxAttenuation: 0
-      maxDuration: 16.172623
-      minDuration: 1.125419
+      maxDuration: -1
+      minDuration: -1
     - name: VA_Pause
       guid: c9bf07d16212704a96bfebfab9f0e214
       id: 938429017
@@ -1173,8 +1139,8 @@ MonoBehaviour:
         guid: c9bf07d16212704a96bfebfab9f0e214
       Path: Events\Default Work Unit\VA\VA_Pause
       maxAttenuation: 0
-      maxDuration: 0
-      minDuration: 0
+      maxDuration: -1
+      minDuration: -1
     - name: VA_Resume
       guid: ff552b59fb615f4e9a9d0a7a57d4f533
       id: 662947992
@@ -1193,8 +1159,8 @@ MonoBehaviour:
         guid: ff552b59fb615f4e9a9d0a7a57d4f533
       Path: Events\Default Work Unit\VA\VA_Resume
       maxAttenuation: 0
-      maxDuration: 0
-      minDuration: 0
+      maxDuration: -1
+      minDuration: -1
   RtpcWwu:
   - PhysicalPath: Game Parameters\Default Work Unit.wwu
     PathAndIcons:
@@ -1207,7 +1173,7 @@ MonoBehaviour:
     ParentPath: Game Parameters\Default Work Unit
     guid: 7f57676cb1f5124c98483947934c3f41
     GuidInternal: 
-    m_lastTime: -8585288409838681375
+    m_lastTime: -8585314131012947197
     List:
     - name: PlayerHealth
       guid: 4a27241a62b0e74bbb905dbf43acf8c0
@@ -1235,7 +1201,7 @@ MonoBehaviour:
     ParentPath: States\Default Work Unit
     guid: 15da347adefaa443abeba8e206daca95
     GuidInternal: 
-    m_lastTime: -8585287490531831215
+    m_lastTime: -8585287645968260102
     List:
     - name: AlterAmb
       guid: 7f446b1539ffb74881108b1e3d68a471
@@ -1663,7 +1629,7 @@ MonoBehaviour:
     ParentPath: Switches\Default Work Unit
     guid: 129020783626944d87631f9c3a93f8e0
     GuidInternal: 
-    m_lastTime: -8585287490531821231
+    m_lastTime: -8585286921136052046
     List:
     - name: Locomotion
       guid: ec8b7419cfaab54dbd4aee612fa66e6b
@@ -1720,6 +1686,25 @@ MonoBehaviour:
         - ElementName: Cloth
           ObjectType: 10
           guid: e82c73e9f94ffe41bd0f8c37dc5fc301
+      - name: Metal
+        guid: 83efd35aec7c9c4a9bfebb6a0777997a
+        id: 2473969246
+        PathAndIcons:
+        - ElementName: Switches
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: 129020783626944d87631f9c3a93f8e0
+        - ElementName: Locomotion
+          ObjectType: 4
+          guid: ec8b7419cfaab54dbd4aee612fa66e6b
+        - ElementName: Player_Footsteps
+          ObjectType: 11
+          guid: eae706a7efcc8847ae6ff3659bef4932
+        - ElementName: Metal
+          ObjectType: 10
+          guid: 83efd35aec7c9c4a9bfebb6a0777997a
       - name: Stone
         guid: d93e3c2e8ebc454c959fba4228ca15e0
         id: 1216965916
@@ -1739,6 +1724,25 @@ MonoBehaviour:
         - ElementName: Stone
           ObjectType: 10
           guid: d93e3c2e8ebc454c959fba4228ca15e0
+      - name: Wood
+        guid: fe9a1e5ffb7ff14083bb8cbaac29c59e
+        id: 2058049674
+        PathAndIcons:
+        - ElementName: Switches
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: 129020783626944d87631f9c3a93f8e0
+        - ElementName: Locomotion
+          ObjectType: 4
+          guid: ec8b7419cfaab54dbd4aee612fa66e6b
+        - ElementName: Player_Footsteps
+          ObjectType: 11
+          guid: eae706a7efcc8847ae6ff3659bef4932
+        - ElementName: Wood
+          ObjectType: 10
+          guid: fe9a1e5ffb7ff14083bb8cbaac29c59e
       ValueGuids: []
       ValueIcons: []
       valuesInternal: []
@@ -2135,7 +2139,7 @@ MonoBehaviour:
     ParentPath: Triggers\Default Work Unit
     guid: 50b0bf7a09fe60448cd0a08f93cae076
     GuidInternal: 
-    m_lastTime: -8585288409832034527
+    m_lastTime: -8585342884435909085
     List:
     - name: New_Trigger
       guid: b52432610d4a47429784de539560cf52
@@ -2169,7 +2173,7 @@ MonoBehaviour:
         guid: 14a961bd002ffe41ba1f908602494c89
       Path: Triggers\Default Work Unit\VA_Test
   ExpandedFileSystemItemIds: 
-  ExpandedWaapiItemIds: 
+  ExpandedWaapiItemIds: 190000001a0000001b00000023000000
   AutoSyncSelection: 0
   autoPopulateEnabled: 1
   currentDataSource: 0

@@ -49,6 +49,9 @@ namespace StarterAssets
 		public AK.Wwise.Event footstepPlayEvent;
 		public AK.Wwise.Switch setStoneSwitch;
 		public AK.Wwise.Switch setClothSwitch;
+		public AK.Wwise.Switch setMetalSwitch;
+		public AK.Wwise.Switch setWoodSwitch;
+
 		private float footstepTimer = 0;
 		private float GetCurrentOffset => Grounded ? baseStepSpeed * notGroundedMultiplayer : baseStepSpeed;
 		
@@ -209,6 +212,14 @@ namespace StarterAssets
 							break;
 						case "Footsteps/Cloth":
 							setClothSwitch.SetValue(PlayerSoundController.Instance.gameObject);
+							footstepPlayEvent.Post(PlayerSoundController.Instance.gameObject);
+							break;
+						case "Footsteps/Wood":
+							setWoodSwitch.SetValue(PlayerSoundController.Instance.gameObject);
+							footstepPlayEvent.Post(PlayerSoundController.Instance.gameObject);
+							break;
+						case "Footsteps/Metal":
+							setMetalSwitch.SetValue(PlayerSoundController.Instance.gameObject);
 							footstepPlayEvent.Post(PlayerSoundController.Instance.gameObject);
 							break;
 					}
