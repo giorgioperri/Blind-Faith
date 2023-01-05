@@ -12,6 +12,6 @@ public class SceneLoader : MonoBehaviour
 
     public void RollCredits()
     {
-        SceneManager.LoadScene(0);
+        SceneManager.LoadScene(4);
     }
 }

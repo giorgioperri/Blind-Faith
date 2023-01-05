@@ -1240,7 +1240,7 @@
 										<Property Name="SpeakerPanning3DSpatializationMix" Type="int32" Value="69"/>
 										<Property Name="Volume" Type="Real64">
 											<ValueList>
-												<Value>4</Value>
+												<Value>-3</Value>
 											</ValueList>
 										</Property>
 									</PropertyList>
@@ -1267,19 +1267,14 @@
 											<ObjectRef Name="Fear_no_Evil" ID="{A1F17D99-0801-4F32-B74E-ADB2D9ACC556}" WorkUnitID="{E8613F7D-BAD3-45CD-A3ED-505576F31277}"/>
 										</Reference>
 										<Reference Name="Effect2">
-											<Custom CreatedFrom="{30319A92-C5AC-437A-9864-430059762933}">
-												<Effect Name="LR_Slap_with_CrossFeed (Custom)" ID="{D6F621BD-1F48-4262-ACD1-E0E9D9352AFC}" ShortID="1013271054" PluginName="Wwise Stereo Delay" CompanyID="0" PluginID="135" PluginType="3">
+											<Custom CreatedFrom="{9B6E8B78-EF8C-494C-AADA-D01CF51B5FAC}">
+												<Effect Name="Large_Church1 (Custom)" ID="{425ACF00-52EC-419C-B03F-984B53D052EF}" ShortID="811160017" PluginName="Wwise Matrix Reverb" CompanyID="0" PluginID="115" PluginType="3">
 													<PropertyList>
-														<Property Name="EnableCrossFeed" Type="bool" Value="True"/>
-														<Property Name="EnableFeedback" Type="bool" Value="True"/>
-														<Property Name="FilterFrequency" Type="Real32" Value="275"/>
-														<Property Name="FilterGain" Type="Real32" Value="10.5"/>
-														<Property Name="FilterType" Type="int32" Value="5"/>
-														<Property Name="LeftCrossfeed" Type="Real32" Value="-20"/>
-														<Property Name="LeftDelayTime" Type="Real32" Value="0.29"/>
-														<Property Name="RightCrossfeed" Type="Real32" Value="-20"/>
-														<Property Name="RightDelayTime" Type="Real32" Value="0.43"/>
-														<Property Name="WetLevel" Type="Real32" Value="-25"/>
+														<Property Name="DryLevel" Type="Real32" Value="-0.3"/>
+														<Property Name="HFRatio" Type="Real32" Value="6"/>
+														<Property Name="NumberOfDelays" Type="int32" Value="12"/>
+														<Property Name="PreDelay" Type="Real32" Value="0.1"/>
+														<Property Name="WetLevel" Type="Real32" Value="-48"/>
 													</PropertyList>
 												</Effect>
 											</Custom>
@@ -3319,16 +3314,6 @@
 													</MediaIDList>
 													<PluginInnerObjectList>
 														<List Name="Markers">
-															<PluginInnerObject Name="" ID="{7ECAE847-F315-49C1-AA14-974D8910C332}" PluginName="Marker" CompanyID="0" PluginID="993">
-																<PropertyList>
-																	<Property Name="Label" Type="string" Value="Tempo: 120.0"/>
-																</PropertyList>
-															</PluginInnerObject>
-															<PluginInnerObject Name="" ID="{F87331C1-C576-40A1-8DD0-78CEAEBA5152}" PluginName="Marker" CompanyID="0" PluginID="993">
-																<PropertyList>
-																	<Property Name="Label" Type="string" Value="end"/>
-																</PropertyList>
-															</PluginInnerObject>
 															<PluginInnerObject Name="" ID="{6D67DFFA-7C45-4FC9-BDA0-4F6AC1F741F4}" PluginName="Marker" CompanyID="0" PluginID="993">
 																<PropertyList>
 																	<Property Name="Label" Type="string" Value="end"/>
@@ -3673,16 +3658,6 @@
 													</MediaIDList>
 													<PluginInnerObjectList>
 														<List Name="Markers">
-															<PluginInnerObject Name="" ID="{E93C34E7-963B-4182-9705-8DBCFAACF9BA}" PluginName="Marker" CompanyID="0" PluginID="993">
-																<PropertyList>
-																	<Property Name="Label" Type="string" Value="Tempo: 120.0"/>
-																</PropertyList>
-															</PluginInnerObject>
-															<PluginInnerObject Name="" ID="{9C78FE48-620C-4BCB-BA6A-56406C2A2CB7}" PluginName="Marker" CompanyID="0" PluginID="993">
-																<PropertyList>
-																	<Property Name="Label" Type="string" Value="end"/>
-																</PropertyList>
-															</PluginInnerObject>
 															<PluginInnerObject Name="" ID="{AFCD1883-47D6-44DF-9D74-7912579B5F88}" PluginName="Marker" CompanyID="0" PluginID="993">
 																<PropertyList>
 																	<Property Name="Label" Type="string" Value="end"/>
@@ -3850,16 +3825,6 @@
 													</MediaIDList>
 													<PluginInnerObjectList>
 														<List Name="Markers">
-															<PluginInnerObject Name="" ID="{6E7FB8B0-2E0C-46A9-B8AF-1410C8D83ABC}" PluginName="Marker" CompanyID="0" PluginID="993">
-																<PropertyList>
-																	<Property Name="Label" Type="string" Value="Tempo: 120.0"/>
-																</PropertyList>
-															</PluginInnerObject>
-															<PluginInnerObject Name="" ID="{EDC32FFE-6026-4DE4-9D0C-1DE2C7D45631}" PluginName="Marker" CompanyID="0" PluginID="993">
-																<PropertyList>
-																	<Property Name="Label" Type="string" Value="end"/>
-																</PropertyList>
-															</PluginInnerObject>
 															<PluginInnerObject Name="" ID="{D49566BD-AE27-4C56-96B1-C1A9E67A1A53}" PluginName="Marker" CompanyID="0" PluginID="993">
 																<PropertyList>
 																	<Property Name="Label" Type="string" Value="end"/>
