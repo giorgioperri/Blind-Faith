@@ -35,9 +35,12 @@ public class RotateObjects : Interactable
 
     private void OnTriggerExit(Collider other)
     {
-        if (TooltipManager.Instance.currentTooltip == TooltipTypes.RotateMirror)
+        if (other.CompareTag("Player"))
         {
-            TooltipManager.Instance.CloseTooltip();
+            if (TooltipManager.Instance.currentTooltip == TooltipTypes.RotateMirror)
+            {
+                TooltipManager.Instance.CloseTooltip();
+            }
         }
     }
 
@@ -125,11 +128,6 @@ public class RotateObjects : Interactable
             {
                 PlayerSoundController.Instance.InitVoiceLineSequence(voiceSeq);
                 _canPlayVoiceLine = false;
-            }
-
-            if (TooltipManager.Instance.currentTooltip == TooltipTypes.RotateMirror)
-            {
-                TooltipManager.Instance.CloseTooltip();
             }
             
             if (_canPlayTurnSound)

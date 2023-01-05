@@ -201,7 +201,6 @@ public class GameManager : MonoBehaviour
         Unpossess();
         EndAnimator.enabled = true;
     }
-        
 
     private IEnumerator StartSocketEvent()
     {
