@@ -33,6 +33,14 @@ public class RotateObjects : Interactable
         }
     }
 
+    private void OnTriggerExit(Collider other)
+    {
+        if (TooltipManager.Instance.currentTooltip == TooltipTypes.RotateMirror)
+        {
+            TooltipManager.Instance.CloseTooltip();
+        }
+    }
+
     private void OnTriggerStay(Collider other)
     {
         if (other.CompareTag("Player") && _lightStored > 0)
@@ -91,16 +99,20 @@ public class RotateObjects : Interactable
             _ => _lightStored
         };
 
-        switch (_lightStored)
+        if (isEnlighted)
         {
-            case > 0 when !GameManager.Instance.litMirrors.Contains(this):
+            if (!GameManager.Instance.litMirrors.Contains(this))
+            {
                 GameManager.Instance.AddMirror(this);
-                break;
-            case <= 0 when GameManager.Instance.litMirrors.Contains(this):
-                GameManager.Instance.RemoveMirror(this);
-                break;
+            }
         }
-
+        else
+        {
+            if (GameManager.Instance.litMirrors.Contains(this))
+            {
+                GameManager.Instance.RemoveMirror(this);
+            }
+        }
 
         if ((Mouse.current.leftButton.isPressed && FirstPersonController.Instance.currentInteractable == this) || _grabbedMirror)
         {

@@ -205,15 +205,18 @@ public class GameManager : MonoBehaviour
 
     private IEnumerator StartSocketEvent()
     {
+        isPaused = true;
         TooltipManager.Instance.currentTooltip = TooltipTypes.SeeSocket;
         TooltipManager.Instance.ToggleTooltip("Place the Lantern in the Socket to shine a light beam");
         socketVC.gameObject.SetActive(true);
         mainVC.gameObject.SetActive(false);
         isInteractingWithMirror = true;
         yield return new WaitForSecondsRealtime(2f);
+        TooltipManager.Instance.CloseTooltip();
+        yield return new WaitForSecondsRealtime(1f);
         mainVC.gameObject.SetActive(true);
         socketVC.gameObject.SetActive(false);
-        TooltipManager.Instance.CloseTooltip();
+        isPaused = false;
         yield return new WaitForSecondsRealtime(1f);
         canPlayChatterTwo = true;
         isInteractingWithMirror = false;
