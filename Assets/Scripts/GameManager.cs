@@ -52,6 +52,9 @@ public class GameManager : MonoBehaviour
 
     public Animator EndAnimator;
 
+    [Range(0.0f, 1.0f)]
+    public float MouseSensitivity = .5f;
+
     private void Awake()
     {
         if (Instance != null)

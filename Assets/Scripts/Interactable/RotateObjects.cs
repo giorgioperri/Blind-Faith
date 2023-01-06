@@ -122,7 +122,7 @@ public class RotateObjects : Interactable
             _grabbedMirror = true;
             GameManager.Instance.isInteractingWithMirror = true;
             
-            if(!snap) transform.Rotate(0f, Mouse.current.delta.ReadValue().x, 0f, Space.Self);
+            if(!snap) transform.Rotate(0f, Mouse.current.delta.ReadValue().x * GameManager.Instance.MouseSensitivity, 0f, Space.Self);
 
             if (_canPlayVoiceLine && hasVoiceLine)
             {
