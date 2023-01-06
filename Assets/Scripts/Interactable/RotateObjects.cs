@@ -59,6 +59,8 @@ public class RotateObjects : Interactable
 
     private void Update()
     {
+        if (GameManager.Instance.isPaused) return;
+        
         if (_lightStored <= 0 && _canDeactivateGrab)
         {
             AkSoundEngine.PostEvent("MirrorLight_Off", gameObject);

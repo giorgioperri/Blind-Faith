@@ -1,8 +1,11 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Globalization;
 using Cinemachine;
+using JetBrains.Annotations;
 using StarterAssets;
+using TMPro;
 using Unity.Mathematics;
 using UnityEngine;
 using UnityEngine.SceneManagement;
@@ -52,8 +55,10 @@ public class GameManager : MonoBehaviour
 
     public Animator EndAnimator;
 
-    [Range(0.0f, 1.0f)]
-    public float MouseSensitivity = .5f;
+    [Range(0.1f, 1.0f)]
+    public float MouseSensitivity = .2f;
+
+    public TextMeshProUGUI SensSliderValue;
 
     private void Awake()
     {
@@ -254,5 +259,12 @@ public class GameManager : MonoBehaviour
         ResumeVA.Post(PlayerSoundController.Instance.gameObject);
         playerInput.pause = false;
         Cursor.lockState = CursorLockMode.Locked;
+    }
+
+    [UsedImplicitly]
+    public void SetMouseSensitivity(float value)
+    {
+        MouseSensitivity = value;
+        SensSliderValue.text = ((int)(MouseSensitivity * 100)).ToString(CultureInfo.InvariantCulture) + "%";
     }
 }

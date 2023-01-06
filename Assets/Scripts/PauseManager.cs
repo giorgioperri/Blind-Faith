@@ -20,6 +20,7 @@ public class PauseManager : MonoBehaviour
     public void ToggleMenu(bool shouldOpen)
     {
         _pauseMenu.SetActive(shouldOpen);
+        Cursor.lockState = shouldOpen ? CursorLockMode.None : CursorLockMode.Locked;
     }
 
     public void Unpause()

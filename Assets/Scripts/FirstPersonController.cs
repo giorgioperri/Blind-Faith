@@ -286,7 +286,7 @@ namespace StarterAssets
 		// Logic for handling headBob, if player is on ground then begin HeadBob, check the state (walk/sprint/crouch - if we want to implement it)
 		private void HandleHeadBob()
 		{
-			if (!_controller.isGrounded) return;
+			if (!_controller.isGrounded || GameManager.Instance.isPaused) return;
 
 			if (Mathf.Abs(_moveDirection.x) > 0.1f || Mathf.Abs(_moveDirection.z) > 0.1f)
 			{
