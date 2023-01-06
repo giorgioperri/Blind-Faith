@@ -267,4 +267,10 @@ public class GameManager : MonoBehaviour
         MouseSensitivity = value;
         SensSliderValue.text = ((int)(MouseSensitivity * 100)).ToString(CultureInfo.InvariantCulture) + "%";
     }
+
+    [UsedImplicitly]
+    public void SetSubtitles(bool value)
+    {
+        areSubtitlesActivated = value;
+    }
 }
