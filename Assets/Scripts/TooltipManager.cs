@@ -36,12 +36,12 @@ public class TooltipManager : MonoBehaviour
     public void ToggleTooltip(string text)
     {
         tooltipObject.text = text;
-        tooltipAnimator.SetTrigger("Toggle");
+        tooltipAnimator.SetBool("Open", true);
     }
     
     public void CloseTooltip()
     {
-        tooltipAnimator.SetTrigger("Toggle");
+        tooltipAnimator.SetBool("Open", false);
 
         if (currentTooltip == TooltipTypes.LanternPickup)
         {
